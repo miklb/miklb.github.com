@@ -3,7 +3,7 @@ layout: post
 title: ""
 tags: aside
 published: true
-permalink: 270
+permalink: dooce-shirts
 date: 2006-05-11
 ---
 

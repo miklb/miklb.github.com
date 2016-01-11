@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "State challenges ?No Child? law"
+title: "State challenges No Child law"
 tags: politics
 published: true
-permalink: state-challenges-25e225802598no-child25e225802599-law
+permalink: state-challenges-no-child-left-behind-law
 date: 2005-08-23
 ---
 
