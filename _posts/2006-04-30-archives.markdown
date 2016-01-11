@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Archives"
+tags: my-site
+published: true
+permalink: archives
+date: 2006-04-30
+---
+
+

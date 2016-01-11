@@ -1,0 +1,14 @@
+---
+layout: post
+title: "I'm Back\u2026"
+tags: 
+published: true
+permalink: im-back
+date: 2013-01-08
+---
+
+This site has been down for several months due to a multitude of reasons. That said, I'm still not 100% what I'm going to do next, but I'm leaning towards keeping it completely free of any and all content that I accumulated the first seven years. While there is something to be said for posterity, an equal argument can be made for clean starts.
+
+Currently I'm running the latest stable version of [Habari](http://habariproject.org) on an inexpensive VPS that is only running Ngnix and Sqlite. No Apache, no Mysql. That part will stay.  From there, I'm just not quite sure, other than I will not have a filter on my content ever again.
+
+For the one or two people who stumble into this new incarnation, I am no longer doing any type of web work/development professionally, save for a business that I'm helping *ehem*, "bootstrap". I'll be writing more about that for sure, suffice to say this *NY Times* [article](http://www.nytimes.com/2009/05/24/magazine/24labor-t.html?_r=5&amp;pagewanted=all) touches on where I've been mentally and professionally the last couple of months.

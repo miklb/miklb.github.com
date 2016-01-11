@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Around the Web 02-20-2013 "
+tags: links
+published: true
+permalink: around-the-web-02-20-2013
+date: 2013-02-20
+---
+
+### [​S​e​c​u​r​i​n​g​ ​y​o​u​r​ ​d​i​g​i​t​s​ ​—​ ​S​t​e​v​e​n​ ​G​.​ ​S​o​m​m​e​r](http://sommer.co/blog/2013/2/securing-your-digits) 
+Handy little tip for a more secure passcode on your iOS device(s).
+### [​F​i​r​s​t​ ​L​i​s​t​e​n​:​ ​'​S​o​n​ ​O​f​ ​R​o​g​u​e​s​ ​G​a​l​l​e​r​y​:​ ​P​i​r​a​t​e​ ​B​a​l​l​a​d​s​,​ ​S​e​a​ ​S​o​n​g​s​](http://www.npr.org/2013/02/10/171309504/first-listen-son-of-rogues-gallery-pirate-ballads-sea-songs-chanteys#playlist) 
+Some interesting combinations of artists on this one. 
+
+### [​M​a​r​k​d​o​w​n​.​c​s​s​ ​-​ ​m​a​k​e​ ​H​T​M​L​ ​l​o​o​k​ ​l​i​k​e​ ​p​l​a​i​n​-​t​e​x​t](http://mrcoles.com/demo/markdown-css/) 
+Not sure of the practicality of this, but I do like the bookmarklet. Could be handy for taking info on a website and convert to markdown for plain text editing.
+### [​G​r​o​u​n​d​w​o​r​k​ ​C​S​S​ ​♥​ ​S​a​y​ ​H​e​l​l​o​ ​t​o​ ​R​e​s​p​o​n​s​i​v​e​ ​D​e​s​i​g​n​ ​M​a​d​e​ ​E​a​s​y](http://groundwork.sidereel.com/home) 
+another responsive framework. Mostly interested in the templates they share.

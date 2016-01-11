@@ -1,0 +1,10 @@
+---
+layout: post
+title: "A New Goal?"
+tags: blogging my-site geek-life the-world-at-large cnn wordpress-1
+published: true
+permalink: a-new-goal
+date: 2005-07-20
+---
+
+So CNN has this feature in their afternoon politics show, where these two chicks are surfin' the web for blogs and what's being discussed about the current events.  So I realize all they are really doing is searching Technorati for keywords. And though I know Technorati pulls categories as tags, a politics rant may not show up in a search about Tom DeLay.  Thus, I installed a tag generator for the site (via a <a href="http://vapourtrails.ca/wp-keywords">WordPress plugin, Jerome's keywords</a>) so that I can start adding tags to my posts, and possibly get some hotty on CNN to read my post on air.  Is that not the most geeky thing to strive for?

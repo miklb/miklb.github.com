@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Around the Web 02-3-2013"
+tags: links
+published: true
+permalink: around-the-web-02-3-2013
+date: 2013-02-03
+---
+
+### [​G​e​t​t​i​n​g​ ​S​t​a​r​t​e​d​ ​o​r​ ​J​u​s​t​ ​G​e​t​t​i​n​g​ ​B​e​t​t​e​r​ ​W​i​t​h​ ​O​m​n​i​F​o​c​u​s](http://bettermess.com/getting-started-or-just-getting-better-with-omnifocus/) 
+I'm tempted to test out Omni Focus since they are offering a free license until 2.0 is released. Seems like a nice starting point for jumping into the system. Just not sure ready for the outlay of cash for iOS versions and desktop since I've bought Things already…
+### [​R​e​s​p​o​n​s​i​v​e​ ​D​e​s​i​g​n​ ​B​o​o​k​m​a​r​k​l​e​t](http://responsive.victorcoulon.fr/) 
+Nice little bookmarklet for testing your design in common resolutions. Provides a handy *toolbar* to click between layouts or add your own custom size.
+### [​R​e​c​i​p​e​s​ ​f​o​r​ ​u​n​d​e​r​ ​£​5​:​ ​b​a​k​e​d​ ​m​a​c​k​e​r​e​l​ ​w​i​t​h​ ​p​o​t​a​t​o​e​s​,​ ​t​h​y​m​e​ ​a​n​d​ ​o](http://www.guardian.co.uk/lifeandstyle/2013/jan/19/recipes-under-5-baked-mackerel) 
+Always nice to have a couple of mackerel recipes. This one reminds me of Lyonnaise Potatoes, which I learned to brush the potatoes with a little dijon mustard. I think it would be a nice touch to brush the mackerel with the mustard in this recipe.
+### [​T​h​e​ ​S​e​c​o​n​d​ ​A​m​e​n​d​m​e​n​t​ ​w​a​s​ ​R​a​t​i​f​i​e​d​ ​t​o​ ​P​r​e​s​e​r​v​e​ ​S​l​a​v​e​r​y](http://truth-out.org/news/item/13890-the-second-amendment-was-ratified-to-preserve-slavery) 
+why am I not surprised?
+### [​M​y​ ​n​v​A​L​T​ ​S​e​t​u​p​ ​—​ ​R​o​c​k​e​t​I​N​K](http://rocketink.net/2013/01/my-nvalt-setup.html) 
+Always interesting to see how others are using nvAlt. Not sure where I'd be without it.

@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Mzingi 0.3"
+tags: habari theme mzingi
+published: true
+permalink: mzingi-0-3
+date: 2008-01-12
+---
+
+I've made some small changes to <a href="/mzingi">the mzingi</a> theme, most notably a few code changes to work with the most current revision. (1267 at time of writing).
+
+This includes fixing the atom feed link, addressing plugin hooks in the header and footer, and removing some extraneous code in the commentform that has been moved to the theme class.
+
+Also, some minor styling for the date has been added, as well as a screenshot and license.
+
+Also added is the conditional code in the header to show the title on the home page as the blog title, or the post title followed by the blog title in single post pages.
+
+A few things I'm looking to do in the next revision is to remove the Asides code, and add a template for the linkoid plugin, so if a user doesn't want to use Asides, they don't have to edit the theme, as well as leverage the ability of the plugin to allow the user to chose their own tags to be used in the feature and excluded from the primary content.
+
+Also planned is author comment highlighting.
+
+Suggestions are always warmly welcomed.
+
+You can download the file from the <a href="/mzingi">original post</a>.

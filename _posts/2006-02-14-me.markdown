@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Me"
+tags: my-site
+published: true
+permalink: me
+date: 2006-02-14
+---
+
+snapshot of moi

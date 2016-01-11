@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Around the Web 03-13-2013 "
+tags: links
+published: true
+permalink: around-the-web-03-13-2013
+date: 2013-03-13
+---
+
+### [​F​r​e​e​ ​W​e​b​s​i​t​e​ ​M​o​n​i​t​o​r​i​n​g​ ​T​o​o​l​ ​w​i​t​h​ ​U​n​l​i​m​i​t​e​d​ ​T​e​x​t​ ​a​n​d​ ​E​m​a​i​l​ ​A​l​e​r​](http://www.labnol.org/internet/website-uptime-monitor/21060/) 
+nifty
+### [​T​h​i​s​ ​W​e​e​k​'​s​ ​L​i​n​k​s​ ​-​ ​N​Y​T​i​m​e​s​.​c​o​m](http://open.blogs.nytimes.com/2013/03/12/this-weeks-links/) 
+Always curious to see what the NY Times dev team finds as interesting and resourceful.
+### [​M​o​r​e​ ​M​a​r​k​d​o​w​n​ ​f​o​r​ ​P​o​p​C​l​i​p​ ​-​ ​B​r​e​t​t​ ​T​e​r​p​s​t​r​a](http://brettterpstra.com/2013/03/12/more-markdown-for-popclip/) 
+I've mentioned Brett's markdown services, here he's made a few into handy Popclip extensions. If you're not familiar with popclip, think the iOS popover when you select text on your desktop.
+### [​O​T​L​:​ ​T​h​e​ ​e​n​d​u​r​i​n​g​ ​m​y​s​t​e​r​y​ ​o​f​ ​R​o​b​e​r​t​o​ ​C​l​e​m​e​n​t​e​'​s​ ​b​a​t​ ​-​ ​M​L​B​ ​-​ ​E​S​P​](http://espn.go.com/espn/story/_/page/Roberto-Clemente-bat/enduring-mystery-roberto-clemente-bat) 
+If you love baseball anywhere near as much as  I do, this is a must read.

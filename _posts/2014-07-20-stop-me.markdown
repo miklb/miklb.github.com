@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Stop Me If\u2026"
+tags: blogging broken-record
+published: true
+permalink: stop-me
+date: 2014-07-20
+---
+
+<img src="http://cdn.miklb.com/images/stop.jpg" alt="Stop Sign">
+…you've heard this before. I'm going to try to use this damn blog more. I've been tweaking it behind the scenes in my rare spare time the last couple of months, and I think I've gotten enough of what I want to be able to use this little corner of the web as it was intended–my digital hub. While i have found myself using Facebook more and more due to keeping tabs on IRL friends, I've used Twitter less and less due to a busy schedule and finding it difficult to follow conversations. I'd love to find an interface that made it easy to see all of the accounts I follow and put them into lists (does that exist on twitter.com?), in the mean time, I simply want to start collecting everything back here and sharing it to social media as I see fit.

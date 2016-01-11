@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Reboot 2014 Style"
+tags: blogging
+published: true
+permalink: reboot-2014-style
+date: 2013-12-30
+---
+
+I'll have a lot more to say in the coming days, but suffice to say once again things are wonky/broken around here. I am sporting a nice new look that I completely fell in love with, compliments of [Mark Otto](http://markdotto.com). I'm porting his theme to Habari and will write more about that soon too.
+
+Here's to kicking 2014 off on the right foot.

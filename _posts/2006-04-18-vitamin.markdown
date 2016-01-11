@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Vitamin"
+tags: links web-design aside
+published: true
+permalink: vitamin
+date: 2006-04-18
+---
+
+<a href="http://www.thinkvitamin.com/">Vitamin</a>, a new site dedicated to web design and development.  Worth the read, and already in my RSS reader.

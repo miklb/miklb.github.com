@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Around the Web 02-11-2013 "
+tags: links
+published: true
+permalink: around-the-web-2-11-13
+date: 2013-02-11
+---
+
+### [​C​o​n​f​i​g​u​r​i​n​g​ ​a​n​d​ ​O​p​t​i​m​i​z​i​n​g​ ​P​H​P​-​F​P​M​ ​a​n​d​ ​N​g​i​n​x​ ​o​n​ ​U​b​u​n​t​u​ ​(​o​r​ ​D​e​b​i​](http://blog.chrismeller.com/configuring-and-optimizing-php-fpm-and-nginx-on-ubuntu-or-debian) 
+Well written post demystifying running nginx with php-fpm. Wish this was around when I set up my server, but won't be long until I take note and adjust my setup.
+### [​M​a​k​i​n​g​ ​a​ ​m​i​c​r​o​w​a​v​e​ ​r​o​u​x​ ​w​i​t​h​ ​C​o​l​l​e​t​t​e​ ​W​e​a​v​e​r​ ​-​ ​V​i​d​e​o​ ​|​ ​N​O​L​A​.​c​o​m](http://videos.nola.com/times-picayune/2012/10/making_a_roux.html) 
+Just fucking brilliant. I also learned when I first started cooking that you can cook a roux in the oven at 325° and it will never burn. Restaurants in New Orleans that serve massive amounts of gumbos and étouffée use the technique over night.
+### [​E​m​m​e​t​ ​D​o​c​u​m​e​n​t​a​t​i​o​n](http://docs.emmet.io/) 
+The evolution of Zen Coding. Looking forward to running this through some paces this weekend.
+### [​R​e​c​i​p​e​:​ ​Q​u​i​c​k​ ​C​i​n​n​a​m​o​n​ ​R​o​l​l​s​ ​-​ ​S​a​n​ ​J​o​s​e​ ​M​e​r​c​u​r​y​ ​N​e​w​s](http://www.mercurynews.com/recipes/ci_22523664/recipe-quick-cinnamon-rolls?source=rss) 
+I like the idea of being able to make the dough the night before and bake fresh in the morning. Not sure can be as good as yeast version, but definitely will try it soon.
+### [​i​O​S​ ​A​u​t​o​m​a​t​i​o​n​ ​a​n​d​ ​W​o​r​k​f​l​o​w​s​ ​w​i​t​h​ ​D​r​a​f​t​s](http://www.macstories.net/reviews/ios-automation-and-workflows-with-drafts/) 
+I am totally in love with the Dropbox actions in the latest version of Drafts. This is the best overview I've seen so far outlining the workflow.
+### [​O​b​j​e​k​t​i​v](http://nthloop.github.com/Objektiv/) 
+Nifty looking utility to let you switch your default browser in OS X.
+### [​H​o​w​ ​t​o​ ​m​a​k​e​ ​s​p​a​e​t​z​l​e​ ​-​ ​c​h​i​c​a​g​o​t​r​i​b​u​n​e​.​c​o​m](http://www.chicagotribune.com/features/food/sc-food-0125-prep-spaetzle-20130130,0,5548688.story?track=rss) 
+More *recipes* should be written like this. Less about the specific amounts, more about the why and how.

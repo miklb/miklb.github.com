@@ -1,0 +1,10 @@
+---
+layout: post
+title: "New Theme"
+tags: my-site
+published: true
+permalink: new-theme
+date: 2005-03-13
+---
+
+well, I was impressed with the <a href="http://www.thoughtmechanics.com/blog/2005/02/18/not-so-minima/">Minima Plus</a> theme, so I went and got it.  Unfortunately, do to my lack of understanding of CSS and PHP, I don't quite know how to fix the columns so they appear side by side.  I'm sure I'll get it fixed with the help of the creator.

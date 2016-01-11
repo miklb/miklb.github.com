@@ -1,0 +1,23 @@
+---
+layout: post
+title: "mzingi .2"
+tags: habari theme mzingi
+published: true
+permalink: mzingi-2
+date: 2007-12-01
+---
+
+A bit later than I thought it would be, but I've updated <a href="/mzingi">Mzingi</a> to reflect quite a few changes in Habari's code.  Among the changes and additions for .2 are:
+<ul>
+<li>added header and footer hooks for plugins</li>
+<li>added post status class, to allow for styling drafts differently than published posts</li>
+<li>added a 404 template, including a search box on that page</li>
+<li>updated the pagination code and styling on home.php and other multiple entry pages</li>
+<li>added the pingback filtering on comments.  Though a plugin, I'm assuming most people will use this feature</li>
+<li>added recent posts to sidebar.  This code will reflect which page you are on, and show the next five.  Meaning, if you are on page/2, it will show you the posts of page/3.</li>
+<li>added comment moderation code.  Visitors who's comments go into moderation will see their comment marked in moderation</li>
+</ul>
+
+Now to make these changes on this design (though I plan on a complete overhaul before the end of the year, so it might wait).  That said, I'm looking forward to feedback, and possibly seeing this go into the default download as another optional theme as has been suggested to me.  I'll leave that to others to decide, but I'm certainly not against the idea one bit.
+
+Please visit the <a href="/mzingi">Mzingi home page</a> for the download link.

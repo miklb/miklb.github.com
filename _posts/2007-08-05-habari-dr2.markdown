@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Habari DR2"
+tags: habari community open-source
+published: true
+permalink: habari-dr2
+date: 2007-08-05
+---
+
+I've already mentioned, this blog is powered by a new blogging engine, <a href="http://habariproject.org/en/">Habari</a>.  A second developer release is out the door, and can be <a href="http://code.google.com/p/habari/downloads/list">downloaded now</a>.
+
+As a developer release, it's still not guaranteed for everyday, production level blogging, however it's stable enough that you can certainly install it and get a feel for how far it's come, and where it's going.  For the less faint of heart, you certainly can follow along using <a href="http://code.google.com/p/habari/source">SVN</a>.
+
+This release among opening up many new features that have been in core for some time, also realizes a goal of having docs shipped with the release.  It was a primary goal of the project from the start, and recent discussion about using the aforementioned TiddlyWiki as a means of distributing the documentation brought me into the fold on that aspect.  Thanks to the initial work by <a href="http://www.brokenkode.com/">Khaled</a>, including customizing the CSS to match Habari's proposed new admin interface, I was able to incorporate the basics from Habari's wiki, and do some initial leg work on getting license agreements to use some TW community released plugins for future releases.
+
+I must say it is quite satisfying to have contributed in some meaningful way to such a project, and certainly fueled the fires to more actively involve myself in documentation writing for the project, as well as any other positive contributions I can make.  I'd really like to thank all of the project members, and additional community members who've brought Habari this far, as well as in general thank them for creating such a welcoming community.  At this juncture in the development, it's quite refreshing for there not to be a divide between users and coders, unlike an unnamed project I volunteered with in the past.  This certainly is a goal for Habari, and I sincerely believe them when they say it will continue in that fashion.  Alienation is the quickest, surefire way of loosing morale support and non code contributions to a community, and as I said, I whole heartedly believe the core of Habari understand that, and will avoid the culture of elitism that I'm sure permeates many other open source projects.
+
+If you are looking for something new to get your thoughts onto the web, I'd seriously suggest considering Habari and getting involved in the community.

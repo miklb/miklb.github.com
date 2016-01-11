@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Installing Ubuntu on my Mac"
+tags: mac ubuntu virtual-box vm
+published: true
+permalink: installing-ubuntu-on-my-mac
+date: 2007-10-21
+---
+
+<a href="/user/images/3_operating_systems.jpg"><img class="right" src="/user/images/3_operating_systems_sm.jpg" alt=""></a>The "blogosphere" has been abuzz the last few weeks with news of the latest release of <a href="http://www.ubuntu.com/">Ubuntu, 7.10, <em>Gutsy Gibbon</em></a>, and curiosity got the best of me, and I decided to see if I could install it on my mac mini, since I didn't have another machine to try it out on.  I'm quite happy with Mac OS, but it never hurts to be familiar with other operating systems.  So I thought aloud on the Habari IRC channel if I could use <a href="http://www.virtualbox.org/">Virtual Box</a>, which I use to run Windows XP, only so I can test websites in Internet Explorer 6.  Survey said, "why not", and I gave it a go.
+<!-- more -->
+First step was to download the installer disc from the Ubuntu site, which is in the .iso format.  There are many ways to create an actual CD from this, or a .dmg file, however I didn't want to bother with that step, so after another question to the IRC channel, my friend <a href="http://h0bbel.p0ggel.org">Christian</a> said Virual Box should load from the .iso, and quickly found a <a href="http://www.flickr.com/photos/vincentt/416553085/">Flickr image</a> showing how to set the VM to load from the .iso. (After you've created the new VM, click the settings button, then for CD/DVD-ROM, check the mount CD/DVD-ROM, then check the ISO image, and find the file you downloaded.)  I haven't gone through the steps to setting up a new VM in Virtual Box as I just used their wizard for a new VM.  I did give a bit more RAM for the VM than the default setting, as I've got 2GB, and won't be using the VM that often, so figured I could spare some. I'm sure I did the same thing for the XP install as well.
+
+Now that the VM is set to run off of the .iso, I started the VM, and Ubuntu quickly loaded, with a prompt to Install/Boot from disc (I think that's what it said), hitting enter, Ubuntu booted up.  You can run just off of the CD image, if your curiosity is small, however, you can actually run the installer from the icon on the desktop, to get the full experience.
+
+Clicking on the installer walks you through the basic installer, not unlike installing Mac OS or Windows.  The installer took just under an hour in the VM from the CD image, I'm not sure more RAM or an actual CD would have sped the process up or not.  After the installer is done running, you will be prompted to restart, with a notice to eject the CD, so that you don't run off of the CD.  Since Virtual Box is set to use the ISO, you will need to shut down the VM, change the setting to use the host CD/DVD-ROM, and restart the Ubuntu VM.  You should be prompted to enter your username and password that you set up during the installation process, and Ubuntu should now be running in your VM.
+
+My initial reaction to Ubuntu 7.1 is that it's a mix of Tiger and Windows XP in feel, maybe 75% Mac, 25% XP.  I haven't explored much more yet, but have looked a bit at a <a href="http://www.howtoforge.com/the_perfect_desktop_ubuntu_gutsy_gibbon">tutorial for the "perfect desktop"</a>, and will certainly poke around.  I think I'm more interested now in exploring virtual machines, and other operating systems than I am with playing with Ubuntu, however, I don't see myself leaving Mac OS any time soon.    Feel free to comment if you have any problems with Virtual Box, though I only have a basic understanding of it, but I'll try to share my experience.
