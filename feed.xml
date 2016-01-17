@@ -5,13 +5,30 @@
     <description></description>
     <link>miklb.com/</link>
     <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Jan 2016 20:06:52 +0000</pubDate>
-    <lastBuildDate>Sun, 17 Jan 2016 20:06:52 +0000</lastBuildDate>
+    <pubDate>Sun, 17 Jan 2016 22:22:45 +0000</pubDate>
+    <lastBuildDate>Sun, 17 Jan 2016 22:22:45 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>Making the Move to Jekyll</title>
-        <description>&lt;p&gt;Testing primarily at this point, but hoping to see if this is working. Going to keep trying this until something breaks.  And keep trying. And trying. And one last try.&lt;/p&gt;
+        <description>&lt;p&gt;I’ve officially made the change from Habari to Jekyll. I will certainly have more to share on the move, both a post-mortem on Habari, as well as the process I’m using currently for using Jekyll.&lt;/p&gt;
+
+&lt;p&gt;My basic workflow currently is serving the page from GitHub pages, however I’m using Travis CI to build the site and  publish to master branch&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; , there by bypassing the restrictions of gh-pages (specifically, their need for using –safe mode and not up-to-date version of Jekyll). Currently my use case would probably work within their parameters, however I had already started using 3.x and at the time of writing GitHub is using 2.x.&lt;/p&gt;
+
+&lt;p&gt;More importantly to me, I want to be able to blog from my phone. It something that I feel has limited me in sharing interesting items I come across as well as stopping me from making time to put thoughts down as they come. I had originally wrote up &lt;a href=&quot;http://miklb.com/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll&quot;&gt;some thoughts on using iOS and Jekyll&lt;/a&gt;, but later came across a better workflow&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, there are still some wonkiness around, I’m sure my Atom feed is broken and am not sure how to redirect that yet using GitHub. I doubt I had many subscribers, so if you stumble on this and previously read my random posts, you may need to update while I investigate options. Certainly there are some styling issues that I want to address as well as some under the hood improvements.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;This &lt;a href=&quot;http://eshepelyuk.github.io/2014/10/28/automate-github-pages-travisci.html&quot;&gt;tutorial&lt;/a&gt; was an invaluable starting point. A &lt;a href=&quot;http://mlota.github.io/2015/11/23/automating-deployment-github-pages-jekyll-travis.html&quot;&gt;follow up tutorial from the comments&lt;/a&gt; has great information as well. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Since I already own Drafts, Workflow and Working Copy &lt;a href=&quot;http://www.matteocappadonna.org/Posting-with-Drafts,-Working-Copy-and-Workflow&quot;&gt;integrating all 3&lt;/a&gt; makes sense. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
         <link>miklb.com/making-the-move-to-jekyll</link>
