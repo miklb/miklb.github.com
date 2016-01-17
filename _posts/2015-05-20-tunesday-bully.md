@@ -19,7 +19,7 @@ Bands I missed out when I was doing stuff? I want to know them too.
 
 Please, more music like this.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/kq3rNIYUwU0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/kq3rNIYUwU0" frameborder="0" allowfullscreen></iframe></div>
 
 
 That bass line. Be still the 23 year old still in my heart.
