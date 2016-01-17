@@ -8,11 +8,15 @@ paginate: 5
 title:               Miklb's Mindless Ramblings
 tagline:            chronicling life in a digital world
 description:
-url: 
+url: miklb.com
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 baseurl:             ""
 timezone:       America/New_York.
 
+twitter:
+  username: miklb
+
+logo: public/favicon.png
 # be sure that you use kramdown as markdown processor
 markdown: kramdown
 
@@ -20,7 +24,7 @@ markdown: kramdown
 
 # Plugins
 
-gems: [jekyll-gist, jekyll-paginate]
+gems: [jekyll-gist, jekyll-paginate, jekyll-seo-tag]
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
