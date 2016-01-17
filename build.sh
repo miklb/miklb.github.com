@@ -10,7 +10,6 @@ fi
 set -e
 
 # build site with jekyll, by default to `_site' folder
-require 'bundler/setup'
 bundle exec jekyll build
 
 # cleanup
