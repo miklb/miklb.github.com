@@ -6,16 +6,17 @@ regenerate: true
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="dt-time post-date">{{ post.date | date_to_string }}</time>
+    <div class="e-content">
+        {{ post.content }}
+    </div>
   </article>
   {% endfor %}
 </div>
