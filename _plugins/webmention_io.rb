@@ -1,13 +1,13 @@
 #  (c) Aaron Gustafson
-#  https://github.com/aarongustafson/jekyll-webmention_io 
+#  https://github.com/aarongustafson/jekyll-webmention_io
 #  Licence : MIT
-#  
+#
 #  this liquid plugin insert a webmentions into your Octopress or Jekill blog
 #  using http://webmention.io/ and the following syntax:
 #
 #    {% webmentions URL %}
 #    {% webmention_count URL %}
-#   
+#
 require 'json'
 require 'net/http'
 require 'uri'
@@ -16,21 +16,21 @@ WEBMENTION_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
 FileUtils.mkdir_p(WEBMENTION_CACHE_DIR)
 
 module Jekyll
-  
+
   class Webmentions < Liquid::Tag
-    
+
     def initialize(tagName, text, tokens)
       super
       @text = text
       @api_endpoint = ''
       @api_suffix = ''
     end
-    
+
     def render(context)
       output = super
-      
+
       targets = []
-      
+
       args = @text.split(/\s+/).map(&:strip)
       args.each do |url|
         target = lookup(context, url)
@@ -39,14 +39,14 @@ module Jekyll
         legacy = target.sub 'www.', ''
         targets.push(legacy)
       end
-      
+
       api_params = targets.collect { |v| "target[]=#{v}" }.join('&')
       api_params << @api_suffix
 
       response = get_response(api_params)
 
       site = context.registers[:site]
-      @converter = site.getConverterImpl(::Jekyll::Converters::Markdown)
+      @converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
 
       html_output_for(response)
     end
@@ -54,7 +54,7 @@ module Jekyll
     def html_output_for(response)
       ""
     end
-    
+
     def url_params_for(api_params)
       api_params.keys.sort.map do |k|
         "#{CGI::escape(k)}=#{CGI::escape(api_params[k])}"
@@ -73,7 +73,7 @@ module Jekyll
         ""
       end
     end
-    
+
     def lookup(context, name)
       lookup = context
 
@@ -85,9 +85,9 @@ module Jekyll
     end
 
   end
-  
+
   class WebmentionsTag < Webmentions
-  
+
     def initialize(tagName, text, tokens)
       super
       @api_endpoint = 'http://webmention.io/api/mentions'
@@ -97,7 +97,7 @@ module Jekyll
 
     def html_output_for(response)
       body = '<p class="webmentions__not-found">No webmentions were found</p>'
-      
+
       if response and response['links']
         webmentions = parse_links(response['links'])
       end
@@ -105,12 +105,12 @@ module Jekyll
       if webmentions
         body = webmentions
       end
-      
+
       "<div class=\"webmentions\">#{body}</div>"
     end
-    
+
     def parse_links(links)
-      
+
       # load from the cache
       cache_file = File.join(WEBMENTION_CACHE_DIR, 'webmentions_received.yml')
       if File.exists?(cache_file)
@@ -118,11 +118,11 @@ module Jekyll
       else
         cached_webmentions = {}
       end
-      
+
       targets = []
 
       links.reverse_each { |link|
-        
+
         id = link['id']
         target = link['target'].sub(/\?.*$/, '')
         pubdate = link['data']['published_ts']
@@ -157,10 +157,10 @@ module Jekyll
 
         # Make sure we have the webmention
         if ! cached_webmentions[target][the_date][id]
-          
+
           webmention = ''
           webmention_classes = 'webmention'
-          
+
           title = link['data']['name']
           content = link['data']['content']
           url = link['data']['url'] || link["source"]
@@ -171,17 +171,17 @@ module Jekyll
           if type == 'like' or type == 'repost'
             activity = true
           end
-          
+
           link_title = false
           if !( title and content ) and url
             url = link['source']
-            
+
             status = `curl -s -I -L -o /dev/null -w "%{http_code}" --location "#{url}"`
             next if status != '200'
-            
+
             # print "checking #{url}\r\n"
             html_source = `curl -s --location "#{url}"`
-            
+
             if ! html_source.valid_encoding?
               html_source = html_source.encode('UTF-16be', :invalid=>:replace, :replace=>"?").encode('UTF-8')
             end
@@ -197,7 +197,7 @@ module Jekyll
                 title = 'No title available'
               end
             end
-            
+
             title = title.gsub(%r{</?[^>]+?>}, '')
             link_title = title
           end
@@ -219,7 +219,7 @@ module Jekyll
           end
 
           # truncation
-          if content and content.length > 200 
+          if content and content.length > 200
             content = content[0..200].gsub(/\s\w+\s*$/, '...')
           end
 
@@ -297,18 +297,18 @@ module Jekyll
           if link_title
 
             link_title = link_title.sub 'reposts', 'reposted'
-            
+
             webmention_classes << ' webmention--title-only'
 
             content_block = "<a href=\"#{url}\">#{link_title}</a>"
-            
+
             # build the block
             content_block = " <div class=\"webmention__title p-name\">#{content_block}</div>"
-            
+
           else
-            
+
             webmention_classes << ' webmention--content-only'
-            
+
             # like, repost
             if activity and sentence
               content = sentence.sub /href/, 'class="p-author h-card" href'
@@ -323,24 +323,24 @@ module Jekyll
 
           # meta
           content_block << meta_block
-            
+
           # put it together
           webmention << "<li id=\"webmention-#{id}\" class=\"webmentions__item\">"
           webmention << "<article class=\"h-cite #{webmention_classes}\">"
-          
+
           webmention << author_block
           webmention << content_block
           webmention << '</article></li>'
 
           cached_webmentions[target][the_date][id] = webmention
-          
+
         end
-        
+
       }
-      
+
       # store it all back in the cache
       File.open(cache_file, 'w') { |f| YAML.dump(cached_webmentions, f) }
-      
+
       all_webmentions = {}
 
       # merge & organize by day
@@ -375,7 +375,7 @@ module Jekyll
   end
 
   class WebmentionCountTag < Webmentions
-    
+
     def initialize(tagName, text, tokens)
       super
       @api_endpoint = 'http://webmention.io/api/count'
@@ -385,13 +385,13 @@ module Jekyll
       count = response['count'] || '0'
       "<span class=\"webmention-count\">#{count}</span>"
     end
-    
+
   end
-  
+
   class WebmentionGenerator < Generator
     safe true
     priority :low
-    
+
     def generate(site)
       webmentions = {}
       if defined?(WEBMENTION_CACHE_DIR)
@@ -413,7 +413,7 @@ module Jekyll
       end
     end
   end
-  
+
 end
 
 Liquid::Template.register_tag('webmentions', Jekyll::WebmentionsTag)

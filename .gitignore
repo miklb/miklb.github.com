@@ -18,3 +18,5 @@ tmp/*
 .jekyll-metadata
 vendor/
 _config_dev.yml
+
+.cache/webmentions_received.yml
