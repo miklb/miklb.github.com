@@ -5,7 +5,7 @@ before_script:
 script: "./build.sh"
 install: bundle install
 after_script:
-  - bundle exec rake webmention
+  - travis_wait bundle exec rake webmention
 branches:
   only:
   - jekyll
