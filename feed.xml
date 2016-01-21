@@ -5,13 +5,13 @@
     <description></description>
     <link>miklb.com/</link>
     <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jan 2016 14:02:46 +0000</pubDate>
-    <lastBuildDate>Thu, 21 Jan 2016 14:02:46 +0000</lastBuildDate>
+    <pubDate>Thu, 21 Jan 2016 14:28:01 +0000</pubDate>
+    <lastBuildDate>Thu, 21 Jan 2016 14:28:01 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
         <title>Testing Sending Webmentions</title>
-        <description>&lt;p&gt;This is either going to go well, or well, not so well. But we are getting there. Slowly.  Last one for the night. Take 2&lt;a href=&quot;https://kartikprabhu.com/notes/test-note-totally-te&quot; class=&quot;u-in-reply-to&quot;&gt;Thanks for the help Kartik&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;This is either going to go well, or well, not so well. But we are getting there. Slowly.  Last one for the night. Take 2&lt;a href=&quot;https://kartikprabhu.com/notes/test-note-totally-te&quot; class=&quot;u-in-reply-to&quot;&gt;Thanks for the help Kartik&lt;/a&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
         <link>miklb.com/testing-sending-webmentions</link>
