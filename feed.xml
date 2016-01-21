@@ -5,9 +5,24 @@
     <description></description>
     <link>miklb.com/</link>
     <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jan 2016 04:10:53 +0000</pubDate>
-    <lastBuildDate>Thu, 21 Jan 2016 04:10:53 +0000</lastBuildDate>
+    <pubDate>Thu, 21 Jan 2016 04:31:15 +0000</pubDate>
+    <lastBuildDate>Thu, 21 Jan 2016 04:31:15 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Testing Sending Webmentions</title>
+        <description>&lt;p&gt;This is either going to go well, or well, not so well.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+        <link>miklb.com/title</link>
+        <guid isPermaLink="true">miklb.com/title</guid>
+        
+        <category>test</category>
+        
+        <category>webmention</category>
+        
+        
+      </item>
     
       <item>
         <title>Making the Move to Jekyll</title>
@@ -267,26 +282,6 @@
         <category>diy</category>
         
         <category>thermostat</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Apple Pay,  CurrentC and Profits</title>
-        <description>&lt;p&gt;Earlier today over on &lt;a href=&quot;last post on Apple Pay&quot;&gt;Pencil Note&lt;/a&gt; there was a post about Apple Pay and the author spoke to their opinion on how the CurrentC plan from retailers like CVS and Walmart would actually &lt;em&gt;benefit&lt;/em&gt; consumers. Upon reading the post in my RSS reader, I quickly &lt;a href=&quot;https://twitter.com/miklb/status/527099202103697408&quot;&gt;tweeted a question&lt;/a&gt; asking if he really though the retailers would pass the savings onto customers. Their response was &amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;Yes. Less credit cards means lower prices.&amp;lt;/p&amp;gt;&amp;lt;/blockquote&amp;gt;
-—&lt;cite&gt; &lt;a href=&quot;https://twitter.com/pencil_line/status/527176352794165248&quot;&gt;Pencil Note&lt;/a&gt; &lt;/cite&gt;&lt;/p&gt;
-
-&lt;p&gt;And then, in an old fashioned blogging style, they posted a more-than-140-character reply - &lt;a href=&quot;http://www.pencilnote.com/pencilnote/2014/10/28/r2c95cwsnaoikrzdizm3ecyr6xynfd&quot;&gt;Why fewer credit cards mean lower prices&lt;/a&gt;. While my formal education on economics is limited to 101 level micro &amp;amp; macro economics courses, I’ve been an informed consumer for long enough to follow the train of thought in that post. While it makes sense that the retailers are fueled by growth, and there is already a race to the bottom for pricing, the end result is still more profit for the owners/shareholders. If the price drops a few cents here or there, it is my opinion that is purely a by-product of profit growth and not the intention.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 28 Oct 2014 00:00:00 +0000</pubDate>
-        <link>miklb.com/apple-pay-currentc-and-profits</link>
-        <guid isPermaLink="true">miklb.com/apple-pay-currentc-and-profits</guid>
-        
-        <category>apple</category>
-        
-        <category>economics</category>
-        
-        <category>currentc</category>
         
         
       </item>
