@@ -1,6 +1,6 @@
 # Caches
 # you may need to update this to point to the right folder
-cache = File.expand_path('../../../.cache', __FILE__)
+cache = File.expand_path('../.cache', __FILE__)
 FileUtils.mkdir_p( cache )
 cache_all_webmentions = "#{cache}/webmentions.yml"
 cache_sent_webmentions = "#{cache}/webmentions_sent.yml"
