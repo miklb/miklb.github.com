@@ -2,6 +2,7 @@ sudo: false
 language: ruby
 before_script:
 - chmod +x "./build.sh"
+- bundle exec rake webmention
 script: "./build.sh"
 install: bundle install
 branches:
