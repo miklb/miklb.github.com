@@ -93,6 +93,10 @@
       
         
           
+        
+      
+        
+          
             <a class="sidebar-nav-item" href="/about/">About</a>
           
         
@@ -479,6 +483,7 @@
   <h1 class="post-title p-name">Making the Move to Jekyll</h1>
   <time datetime="2016-01-13T00:00:00+00:00" class="dt-time post-date">13 Jan 2016</time>
   <div class="e-content">
+    <p class="lede p-bridgy-twitter-content">{page.summary}</p>
       <p>I’ve officially made the change from Habari to Jekyll. I will certainly have more to share on the move, both a post-mortem on Habari, as well as the process I’m using currently for using Jekyll.</p>
 
 <p>My basic workflow currently is serving the page from GitHub pages, however I’m using Travis CI to build the site and  publish to master branch<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> , there by bypassing the restrictions of gh-pages (specifically, their need for using –safe mode and not up-to-date version of Jekyll). Currently my use case would probably work within their parameters, however I had already started using 3.x and at the time of writing GitHub is using 2.x.</p>
