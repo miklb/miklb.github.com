@@ -29,6 +29,5 @@ git config user.name "miklb"
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --quiet origin master > /dev/null 2>&1
-do
-    rake webmention
-done
+
+sleep 2m
