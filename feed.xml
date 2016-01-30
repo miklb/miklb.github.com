@@ -5,8 +5,8 @@
     <description></description>
     <link>miklb.com/</link>
     <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Jan 2016 21:30:42 +0000</pubDate>
-    <lastBuildDate>Sat, 30 Jan 2016 21:30:42 +0000</lastBuildDate>
+    <pubDate>Sat, 30 Jan 2016 21:38:22 +0000</pubDate>
+    <lastBuildDate>Sat, 30 Jan 2016 21:38:22 +0000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -22,6 +22,25 @@
         <pubDate>Sat, 30 Jan 2016 00:00:00 +0000</pubDate>
         <link>miklb.com/focused-blogs</link>
         <guid isPermaLink="true">miklb.com/focused-blogs</guid>
+        
+        <category>blogging</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Breaking Out of the Silo</title>
+        <description>&lt;p&gt;In my never ending quest to make this site all things “miklb”, one of the goals of the IndieWeb is to &lt;a href=&quot;http://indiewebcamp.com/POSSE&quot;&gt;POSSE&lt;/a&gt;, that is, Publish on your own site, syndicate elsewhere. Breaking the habit of using Twitter without posting first on my site is going to be a hard one, but it’s a goal. While debates rage about extending character counts to 10,000 words, if we only were to use our blog for long form thoughts and link back to Twitter, this wouldn’t be an issue. Consider this an exercise in&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 Jan 2016 00:00:00 +0000</pubDate>
+        <link>miklb.com/breaking-out-of-the-silo</link>
+        <guid isPermaLink="true">miklb.com/breaking-out-of-the-silo</guid>
+        
+        <category>twitter,</category>
+        
+        <category>indieweb,</category>
         
         <category>blogging</category>
         
@@ -251,35 +270,6 @@
         <category>facebook</category>
         
         <category>social-media</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Technology Fatigue</title>
-        <description>&lt;p&gt;A piece at &lt;cite&gt;A List Apart&lt;/cite&gt; today struck a nerve with a lot of developers today, myself included (if I can really call myself a developer these days.) &lt;a href=&quot;http://alistapart.com/blog/post/overwhelmed-by-code&quot;&gt;Overwhelmed by Code&lt;/a&gt; touches on the constant bombardment to developers from new technologies popping up seemingly daily. The author discusses&lt;/p&gt;
-&lt;blockquote&gt;It used to be that knowing CSS and HTML was enough, then jQuery came along, then responsive techniques, then Node.js and then Angular, Ember, etc., etc., etc. That list, right there, it tires me out.&lt;/blockquote&gt;
-&lt;p&gt;To that I can completely relate. When I stumbled into making websites, they were still teaching how to use Photoshop and tables to build sites at my local community college, not pure CSS. The big revelation at &lt;cite&gt;A List Apart&lt;/cite&gt; was &lt;a href=&quot;http://alistapart.com/article/fauxcolumns&quot;&gt;Faux Columns&lt;/a&gt;. So fast forward 10 years, take a sabbatical for 2 of those, and you can imagine how overwhelming stepping back into grunt, gulp, coffee script, node and Luce&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is.&lt;/p&gt;
-&lt;blockquote&gt;What do I want to focus on, what do I love about the web? What do I actually want to learn, versus what I think I should learn. &lt;/blockquote&gt;
-&lt;p&gt;So if I am to do more than dip my toes back into the world of building websites, I too need to focus on what I I think will best benefit me professionally, not try and keep up with kids.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Actually, Luce is a &lt;a href=&quot;http://open.blogs.nytimes.com/2014/10/30/programming-language-or-shakespeare-character/?_r=0&quot;&gt;Shakespeare character, not a programming language&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
-        <link>miklb.com/technology-fatigue</link>
-        <guid isPermaLink="true">miklb.com/technology-fatigue</guid>
-        
-        <category>technology</category>
-        
-        <category>development</category>
-        
-        <category>growth</category>
         
         
       </item>
