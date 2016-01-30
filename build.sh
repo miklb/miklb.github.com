@@ -30,4 +30,4 @@ git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --quiet origin master > /dev/null 2>&1
 
-sleep 2m  
+## sleep 2m  Is this keeping the webmention from working
