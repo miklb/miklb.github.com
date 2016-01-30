@@ -661,6 +661,8 @@ miklb.com/mzingi:
 - http://miklb.com/user/downloads/mzingi_0.4.zip
 - http://miklb.com/user/downloads/mzingi_0.5.1.zip
 - http://themes.bloggingmetat.com
+- http://cookingwith.miklb.com
+- http://cookingwith.miklb.com
 miklb.com/scribefire:
 - http://www.scribefire.com/
 - http://scribefire.com/
@@ -1305,11 +1307,15 @@ miklb.com/use-pythonista-to-get-weather-of-current-location-into-drafts-app:
 - https://gist.github.com/omz/4076735
 - http://ioctocat.com
 - https://twitter.com/miklb
+- http://py_forecast?action=run&argv=[[draft]]`.
+- http://py_forecast?action=run&argv=[[draft]]`.
 miklb.com/i-choose-to:
 - http://davidseah.com/blog/2014/02/the-quest-for-productivity-enhancing-programming-pants/
 miklb.com/grand-ole-opry:
 - http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 - http://gardenandgun.com/blog/lordy-lordy-oprys-40
+- http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
+- http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 miklb.com/new-but-not-new-laptop:
 - https://twitter.com/jptoto
 - http://eshop.macsales.com/articles/how-to-transfer-your-data-from-your-old-drive-to-a-new-drive
@@ -1364,3 +1370,6 @@ miklb.com/making-the-move-to-jekyll:
 - http://www.matteocappadonna.org/Posting-with-Drafts,-Working-Copy-and-Workflow
 miklb.com/testing-sending-webmentions:
 - https://kartikprabhu.com/notes/test-note-totally-te
+miklb.com/focused-blogs:
+- https://indiewebcamp.com
+- https://brid.gy/publish/twitter
