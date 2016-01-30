@@ -5,9 +5,28 @@
     <description></description>
     <link>miklb.com/</link>
     <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jan 2016 16:28:24 +0000</pubDate>
-    <lastBuildDate>Thu, 21 Jan 2016 16:28:24 +0000</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <pubDate>Sat, 30 Jan 2016 07:15:16 +0000</pubDate>
+    <lastBuildDate>Sat, 30 Jan 2016 07:15:16 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Focused Blogs</title>
+        <description>&lt;p&gt;In my ever revolving attempt to reboot my blog, one thing that has always slowed me down was my concern with being too esoteric in my topics. I want to talk about food, technology and everything in between.&lt;/p&gt;
+
+&lt;p&gt;However, if I want to build any readership (isn’t that a part of blogging, sharing your thoughts with others?) I can’t be mixing in posts about forays into Python with posts about cooking vegetables sous-vide. Sure, there might be a readership that is interested in both topics as I am, but not enough to say “screw it.” So as I continue to work towards a true &lt;a href=&quot;https://indiewebcamp.com&quot;&gt;indieweb&lt;/a&gt;, I’m pivoting a bit in my approach and will use this as domain, now 11 years old, as my base identifier and central clearing house. I’ve acquired several domains, 2 of which will be good to split the topics. Those too will be static Jekyll built sites, with links from this site to new posts.&lt;/p&gt;
+
+&lt;p&gt;Certainly this is more me thinking out loud and putting it out there, as I intend for this domain to be, but my goal is to continue to do such here, rather than bottle  up my thoughts in my head.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 Jan 2016 00:00:00 +0000</pubDate>
+        <link>miklb.com/focused-blogs</link>
+        <guid isPermaLink="true">miklb.com/focused-blogs</guid>
+        
+        <category>blogging</category>
+        
+        
+      </item>
     
       <item>
         <title>Testing Sending Webmentions</title>
@@ -261,27 +280,6 @@
         <category>development</category>
         
         <category>growth</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>How to Really Install a New Thermostat</title>
-        <description>&lt;p&gt;Going through my RSS reader this morning, I came across this article at the Art of Manliness, &lt;a href=&quot;http://www.artofmanliness.com/2014/10/30/how-to-replace-a-thermostat/&quot;&gt;How to Install a New Thermostat&lt;/a&gt;. I couldn’t disagree more with 80% of what that article instructs.&lt;/p&gt;
-
-&lt;p&gt;First, while they are on the right track on turning off power, but mentioning “flipping power switch off” is inaccurate. Also, it is obvious that this was written by someone from the north in only referencing “furnace”. Generally speaking, the breaker panel will have both an “AC” and either “heat” or “air handler” when it is not a furnace. These need to be off, as the 24 volt current is constant and if the heat/air handler isn’t off, then you can at the minimum blow a fuse, the worst, fry a transformer. By code, both items should have a disconnect for service, and pulling that is equally effective in making sure the power is off.&lt;/p&gt;
-
-&lt;p&gt;Second, while they mention taking a photo of the wiring on your thermostat, they ignore it and simply (and wrongly) state the colors on the new thermostat match the wire color. WRONG. The terminals relate to specific functionality, and I’ve seen every color under the sun wired to a terminal. Blue to the Y terminal isn’t uncommon. The O and B terminal? Those are used in heat pumps for the reversing valve and depending on the manufacturer, either one can be used. The B can be brown, or the orange wire can be used for either one. See where this is going? Also note that the C terminal is for common, and most new “smart” thermostats require this, so make sure you have a C wire before even making the purchase. And even if there is a wire (often blue if yellow is used for the Y terminal) that doesn’t mean that it is wired to the furnace/air handler. So while it’s not beyond DIY, there’s a lot more to it than just “matching colors”. And don’t get me started about what color wires may be wired into the furnace/air handler from the outdoor condensing unit. I haven’t touched on what happens if you have a two stage compressor or heat pump with backup emergency heat.&lt;/p&gt;
-
-&lt;p&gt;Bottom line, if you are going to spend hundreds of dollars for a smart thermostat, spend the extra money to hire a professional or at the minimum, do your homework regarding your specific unit and be damned sure that it will handle that $250 investment before attempting a DIY&lt;/p&gt;
-</description>
-        <pubDate>Fri, 31 Oct 2014 00:00:00 +0000</pubDate>
-        <link>miklb.com/how-to-really-install-a-new-thermostat</link>
-        <guid isPermaLink="true">miklb.com/how-to-really-install-a-new-thermostat</guid>
-        
-        <category>diy</category>
-        
-        <category>thermostat</category>
         
         
       </item>
