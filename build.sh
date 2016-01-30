@@ -32,7 +32,7 @@ git push --quiet origin master > /dev/null 2>&1
 
 sleep 2m
 
-rake webmentions
+rake webmention
 
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER webmention cache"
