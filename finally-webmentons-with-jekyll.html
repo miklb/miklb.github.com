@@ -11,7 +11,7 @@
   <meta name="HandheldFriendly" content="true">
   <title>
     
-      IE8 Compatibility Mode &middot; Miklb's Mindless Ramblings
+      Finally Webmentions with Jekyll &middot; Miklb's Mindless Ramblings
     
   </title>
   <!-- Webmentions -->
@@ -28,10 +28,10 @@
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
   <!-- Begin Jekyll SEO tag -->
-<title>IE8 Compatibility Mode - Miklb’s Mindless Ramblings</title>
-<meta property="og:title" content="IE8 Compatibility Mode" />
-<link rel="canonical" href="miklb.com/ie8-compatibility-mode" itemprop="url" />
-<meta property='og:url' content='miklb.com/ie8-compatibility-mode' />
+<title>Finally Webmentions with Jekyll - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Finally Webmentions with Jekyll" />
+<link rel="canonical" href="miklb.com/finally-webmentons-with-jekyll" itemprop="url" />
+<meta property='og:url' content='miklb.com/finally-webmentons-with-jekyll' />
 <meta property="og:site_name" content="Miklb's Mindless Ramblings" />
 <script type="application/ld+json">
     {
@@ -42,21 +42,21 @@
     }
   </script>
 <meta property="og:type" content="article" />
-<link rel="next" href="miklb.com/excellent-design-bookmarklet-suite" title="Excellent Design Bookmarklet Suite" />
-<link rel="prev" href="miklb.com/whatthefont-for-iphone" title="WhatTheFont for iPhone" />
+<link rel="next" href="miklb.com/focused-blogs" title="Focused Blogs" />
+<link rel="prev" href="miklb.com/breaking-out-of-the-silo" title="Breaking Out of the Silo" />
 <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "NewsArticle",
-      "headline": "IE8 Compatibility Mode",
+      "headline": "Finally Webmentions with Jekyll",
       "image": null,
-      "datePublished": "2009-02-18T00:00:00+00:00",
+      "datePublished": "2016-01-30T00:00:00+00:00",
       "description": null
     }
   </script>
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@miklb" />
-<meta name="twitter:title" content="IE8 Compatibility Mode - Miklb’s Mindless Ramblings" />
+<meta name="twitter:title" content="Finally Webmentions with Jekyll - Miklb’s Mindless Ramblings" />
 <meta name="twitter:description" content="" />
 <script type="application/ld+json">
     {
@@ -476,19 +476,14 @@
 
     <main class="container content">
       <article class="post h-entry">
-  <h1 class="post-title p-name">IE8 Compatibility Mode</h1>
-  <time datetime="2009-02-18T00:00:00+00:00" class="dt-time post-date">18 Feb 2009</time>
+  <h1 class="post-title p-name">Finally Webmentions with Jekyll</h1>
+  <time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
   <div class="e-content">
     <p class="lead p-bridgy-twitter-content">
-      
+      I think I've finally nailed getting webmention working with Jekyll
     </p>
-      <p>A post came through Twitter from <a href="http://www.sitepoint.com/blogs/2009/02/19/ie8-standards-mode-opt-in/">SitePoint</a> regarding a recent decision by Microsoft and the IE team to add a new compatibility mode to IE8.  The post they link to is from December, and the IE Blog has updated the blog with a <a href="http://blogs.msdn.com/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx">recap of the compatibility view</a>.  At first read, this sounded like a stupid idea.  Just another layer of crap that would keep sites from getting up to speed on standards compliance.</p>
-
-<p>Upon a bit more thought, I think it’s not a bad idea.  One of the biggest reasons I found people didn’t adopt IE 7 was that sites that they regularly visited didn’t render properly in IE 7, so they reverted back to IE 6. <span class="pquote-r"> I think it’s still one of the biggest reasons people haven’t upgraded.  They upgraded once, a site didn’t work, so they stuck with 6.  A vicious cycle ensued</span>.  Sites saw the stats, saw a big IE 6 crowd, and kept support.  The reality of business is going to say that some numbers cruncher is going to say it’s not economically feasible to update the site for IE 8, regardless of the chorus from the web team.  These are the sites that compatibility mode is geared towards.</p>
-
-<p>Adding this compatibility view will allow people to upgrade to 8, still visit sites that haven’t been updated, but get the standards compliance of 8 for sites that have.  Sure, getting blacklisted as incompatible is possible, but a single line of code in the header will remove the compatibility view from visitors, and for those of us that want to build sites that are strictly IE 8 compatible, ignoring 7 (6 is whole different can of worms) is possible.  It’s very easy to tell a client, “Just upgrade to 8, and click the compatibility view option, your old sites will still work the same”, versus having to make a site backward compatible to 7 because people won’t upgrade or are reluctant. Worse, having to have 2 or more conditional style sheets to accommodate multiple versions of IE.</p>
-
-<p>I would say this compatibility mode list shouldn’t be built off of how a site renders in a beta version of a browser, and reading through the comments and glossing over the latest post I’m not sure if that’s the case, but again, I’d rather it be an opt in setting that allows people to view the rest of the web in a more standards compliant mode than having to wrestle as as a developer with yet another version of IE.</p>
+      <p>If you can’t tell by previous posts, I’ve been working on getting
+<a href="https://indiewebcamp.com/Webmention">Webmentions</a> to work with my new Jekyll site. I <em>think</em> I’ve finally nailed. If you take a look at my initial post <a href="http://miklb.com/making-the-move-to-jekyll">on moving to Jekyll</a>, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s <a href="https://github.com/aarongustafson/jekyll-webmention_io">Webmention.io plugin</a> I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a <code class="highlighter-rouge">sleep 2m</code> in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.</p>
 
   </div>
 </article>
@@ -521,8 +516,8 @@
     
       <li>
         <h3>
-          <a href="/finally-webmentons-with-jekyll">
-            Finally Webmentions with Jekyll
+          <a href="/breaking-out-of-the-silo">
+            Breaking Out of the Silo
             <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
           </a>
         </h3>
@@ -530,9 +525,9 @@
     
       <li>
         <h3>
-          <a href="/breaking-out-of-the-silo">
-            Breaking Out of the Silo
-            <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
+          <a href="/testing-sending-webmentions">
+            Testing Sending Webmentions
+            <small><time datetime="2016-01-20T00:00:00+00:00">20 Jan 2016</time></small>
           </a>
         </h3>
       </li>

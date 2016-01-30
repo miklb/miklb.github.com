@@ -466,6 +466,22 @@
   
   <article class="post h-entry">
     <h1 class="post-title p-name">
+      <a class="u-url" href="/leave-it-to-the-wayback-machine">
+        Leave it to the Wayback Machine
+      </a>
+    </h1>
+
+    <time datetime="2013-01-20T00:00:00+00:00" class="dt-time post-date">20 Jan 2013</time>
+    <div class="e-content">
+        <p>I have been lamenting on whether or not I wanted to bring back my old content or start completely from scratch. I’d been leaning towards starting over, but today in Habari IRC channel, someone linked to their blog on the <a href="http://archive.org/web/web.php">Wayback Machine</a>, which led me to checking this blog. My <a href="http://web.archive.org/web/20050319093337/http://www.miklb.com/blog/">earliest records</a> are sans any theme. I’m not sure what determined what got cached visually, but the earliest version of this site that <a href="http://web.archive.org/web/20051030021240/http://www.miklb.com/blog/">includes design</a> got me feeling nostalgic about having had this site active off and on for almost 8 years. Between that old theme and <a href="http://web.archive.org/web/20060814212436/http://www.miklb.com/blog/">this one</a> I think I will work out bringing back the old content.</p>
+
+<p>For reference, I’ve been running on Habari since September 2008, never looking back.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
       <a class="u-url" href="/terminalapp-solarized">
         Terminal.app &amp; Solarized
       </a>
@@ -527,26 +543,6 @@
         <p>In the process of moving the site over from Slicehost to Linode, so there may be some issues while I sort things out. Pardon the dust.</p>
 
 <p>Still having problems.</p>
-
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/using-apc-and-subversion-checkouts">
-        Using APC and Subversion Checkouts
-      </a>
-    </h1>
-
-    <time datetime="2011-06-05T00:00:00+00:00" class="dt-time post-date">05 Jun 2011</time>
-    <div class="e-content">
-        <p>I am in the process of moving my sites from Slicehost to Linode, as most are aware Slicehost is being phased out for Rackspace Cloud.  Anyway, I upgraded my VPS at Linode last night to Debian “Squeeze” and installed APC, which created a problem with the WordPress installations I had there.  Basically, I couldn’t access the admin.  Through the power of Twitter and the invaluable help of <a href="http://markjaquith.com/">Mark Jaquith</a>, I learned that by default APC doesn’t play nice with files that are checked out via Subversion.  I think the root of my problem was a stray apc config for overriding include once, but certainly the subversion issue could have been at play too.</p>
-
-<p>Anyway, a little Googling on the subject, I discovered there’s a configuration option for APC to use <a href="http://www.php.net/manual/en/apc.configuration.php#ini.apc.stat-ctime">ctime</a>  instead of the default mtime.  Adding <code class="highlighter-rouge">apc.stat_ctime=1</code> is all that is required.</p>
-
-<p>While I’m on the subject of migrating from Slicehost to Linode, <a href="http://developerkarma.com/">Andrew RIley</a> pointed out that someone had written a ruby script to <a href="https://github.com/Schultz/slicedns2linode">migrate the DNS information</a> for you.</p>
-
-<p><em>Addendum</em> To be clear, I install WordPress using Subversion and the appropriate tag. My Habari installs are also all Subversion checkouts from trunk.</p>
 
     </div>
   </article>
