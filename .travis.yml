@@ -5,12 +5,12 @@ before_script:
 script: "./build.sh"
 install: bundle install
 after_script:
-  - bundle exec rake webmention
+- bundle exec rake webmention
 branches:
   only:
   - jekyll
 rvm:
-- 2.2.3
+- 2.2.4
 env:
   global:
   - secure: ebAcMhKL1rhclMjNXO1zvX2JwuvwIcTyIKE7BdvBzOF4tUGj19+E6A3v12QDro+pX8IF2e1X8gck6z035VtRf37O1flWo4+fKWww8AbeHXxYWr+ZJrtqyoaQFtMlbQiKTEEKBGghayzCHQvQU3OmyjAusCoCHUl9Ip1O1dPLgb8r2yvD4Z5FNWFyOV1CbHfoeBkiI1KFHwhBrLtf2YY+FEjgZXe3sGSuILYO7w2Q724dMxSya51vMZuv+Zj8PXNjARa0Prl5rp7Qt4HXI5GOHzWtIpKHLHfU0LS7XrJYPrlg0h1F9dKf/t6Aalx7P09fOfqNu7L+fa6CEW6SPjvnJPuIONwb5OaWYoe6hpAmhXwT6bAYdw3SNwNclRoSss0BVipDXZMSxktvDECUGkZ1lo3E5JvhtIyzPT1ePEYcO5xJieF5DZbTuGj0bEvxSKXWKnmzQK9uPPBwrVEj7jxlM7FpOoMjjQltQhod9oDWQQCuWlVWKqY0OJlgC2KvY5MsMEBkkWcwmj3CjLSz8vxeJ3hS6dnnyC+2SO0PtmgufoMbfCkmOXN/IYZIRKC3AfY30uW9Xmq1dh8yvsYM4nK4QsFE5v3DUvI8vQtXBYCQMUB+wLcHT2BFbRzf7RVbUZTvuAFqprItpNe+Qknk1zmnid+36bWTOqFtECJQ5DxOxCU=
