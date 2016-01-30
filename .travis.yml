@@ -4,8 +4,8 @@ before_script:
 - chmod +x "./build.sh"
 script: "./build.sh"
 install: bundle install
-after_script:
-  - bundle exec rake webmention
+# after_script:
+#  - bundle exec rake webmention
 branches:
   only:
   - jekyll
