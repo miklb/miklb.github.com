@@ -663,6 +663,7 @@ miklb.com/mzingi:
 - http://themes.bloggingmetat.com
 - http://cookingwith.miklb.com
 - http://cookingwith.miklb.com
+- http://cookingwith.miklb.com
 miklb.com/scribefire:
 - http://www.scribefire.com/
 - http://scribefire.com/
@@ -1309,11 +1310,13 @@ miklb.com/use-pythonista-to-get-weather-of-current-location-into-drafts-app:
 - https://twitter.com/miklb
 - http://py_forecast?action=run&argv=[[draft]]`.
 - http://py_forecast?action=run&argv=[[draft]]`.
+- http://py_forecast?action=run&argv=[[draft]]`.
 miklb.com/i-choose-to:
 - http://davidseah.com/blog/2014/02/the-quest-for-productivity-enhancing-programming-pants/
 miklb.com/grand-ole-opry:
 - http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 - http://gardenandgun.com/blog/lordy-lordy-oprys-40
+- http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 - http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 - http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 miklb.com/new-but-not-new-laptop:
@@ -1373,3 +1376,10 @@ miklb.com/testing-sending-webmentions:
 miklb.com/focused-blogs:
 - https://indiewebcamp.com
 - https://brid.gy/publish/twitter
+miklb.com/breaking-out-of-the-silo:
+- http://indiewebcamp.com/POSSE
+- https://brid.gy/publish/twitter
+miklb.com/finally-webmentons-with-jekyll:
+- https://indiewebcamp.com/Webmention
+- http://miklb.com/making-the-move-to-jekyll
+- https://github.com/aarongustafson/jekyll-webmention_io
