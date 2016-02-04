@@ -11,6 +11,7 @@ set -e
 
 # build site with jekyll, by default to `_site' folder
 bundle exec jekyll build
+find ./_site -name "*.html" -exec bundle exec htmlbeautifier {} \;
 
 # cleanup
 rm -rf ../miklb.github.com.master
@@ -30,4 +31,4 @@ git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --quiet origin master > /dev/null 2>&1
 
-sleep 2m  
+sleep 2m

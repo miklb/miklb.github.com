@@ -1,547 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-  <meta charset="UTF-8">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="MobileOptimized" content="width">
-  <meta name="HandheldFriendly" content="true">
-  <title>
-    
+    <meta charset="UTF-8">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <title>
       Experiences with TiddlyWiki &middot; Miklb's Mindless Ramblings
     
   </title>
-  <!-- Webmentions -->
-  <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-  <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/styles.css">
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.png">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
-  <!-- Begin Jekyll SEO tag -->
-<title>Experiences with TiddlyWiki - Miklb’s Mindless Ramblings</title>
-<meta property="og:title" content="Experiences with TiddlyWiki" />
-<link rel="canonical" href="miklb.com/experiences-with-tiddlywiki" itemprop="url" />
-<meta property='og:url' content='miklb.com/experiences-with-tiddlywiki' />
-<meta property="og:site_name" content="Miklb's Mindless Ramblings" />
-<script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "WebSite",
-      "name" : "Miklb's Mindless Ramblings",
-      "url" : "miklb.com"
-    }
-  </script>
-<meta property="og:type" content="article" />
-<link rel="next" href="miklb.com/habari-dr2" title="Habari DR2" />
-<link rel="prev" href="miklb.com/cleaning-house" title="Cleaning House" />
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "NewsArticle",
-      "headline": "Experiences with TiddlyWiki",
-      "image": null,
-      "datePublished": "2007-08-05T00:00:00+00:00",
-      "description": null
-    }
-  </script>
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@miklb" />
-<meta name="twitter:title" content="Experiences with TiddlyWiki - Miklb’s Mindless Ramblings" />
-<meta name="twitter:description" content="" />
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "miklb.com",
-      "logo": "miklb.com/public/favicon.png"
-    }
-  </script>
-<!-- End Jekyll SEO tag -->
-</head>
-
-
+    <!-- Webmentions -->
+    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="/public/favicon.png">
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
+    <!-- Begin Jekyll SEO tag -->
+    <title>Experiences with TiddlyWiki - Miklb’s Mindless Ramblings</title>
+    <meta property="og:title" content="Experiences with TiddlyWiki" />
+    <meta name="description" content="Recently it was suggested that the Habari project think about using Tiddlywiki as a means to ship documentation with new releases.  At first, I wasn’t sure about the idea, but after about 15 minutes of working with it, I was hooked.  For those not familiar with Tiddlywiki, it’s a very light weight (single file) mini wiki.  I’ve seen it described as “guerrilla” wiki, or the “ipod nano” of wikis.  It highly leverages javascript to hide and show “tiddlers”, or the individual entries.  With lots of available plugins and custom themes, not to mention a very active community, TW is certainly a great contribution to the web community, and something worth checking out.  Those that are into the Getting Things Done, there’s a couple of GTD inspired adaptation, GTDTiddlyWiki, and MonkeyGTD.  There’s also a FireFox extension, TiddlySnip that allows you to save snippets to your TW as a scrapbook of sorts, though I haven’t tested this extension yet." />
+    <meta property='og:description' content="Recently it was suggested that the Habari project think about using Tiddlywiki as a means to ship documentation with new releases.  At first, I wasn’t sure about the idea, but after about 15 minutes of working with it, I was hooked.  For those not familiar with Tiddlywiki, it’s a very light weight (single file) mini wiki.  I’ve seen it described as “guerrilla” wiki, or the “ipod nano” of wikis.  It highly leverages javascript to hide and show “tiddlers”, or the individual entries.  With lots of available plugins and custom themes, not to mention a very active community, TW is certainly a great contribution to the web community, and something worth checking out.  Those that are into the Getting Things Done, there’s a couple of GTD inspired adaptation, GTDTiddlyWiki, and MonkeyGTD.  There’s also a FireFox extension, TiddlySnip that allows you to save snippets to your TW as a scrapbook of sorts, though I haven’t tested this extension yet." />
+    <link rel="canonical" href="miklb.com/experiences-with-tiddlywiki" />
+    <meta property='og:url' content='miklb.com/experiences-with-tiddlywiki' />
+    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+    <script type="application/ld+json">
+      {
+            "@context" : "http://schema.org",
+            "@type" : "WebSite",
+            "name" : "Miklb’s Mindless Ramblings",
+            "url" : "miklb.com"
+          }
+    </script>
+    <meta property="og:type" content="article" />
+    <link rel="next" href="miklb.com/habari-dr2" title="Habari DR2" />
+    <link rel="prev" href="miklb.com/cleaning-house" title="Cleaning House" />
+    <script type="application/ld+json">
+      {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Experiences with TiddlyWiki",
+            "image": null,
+            "datePublished": "2007-08-05T00:00:00+00:00",
+            "description": "Recently it was suggested that the Habari project think about using Tiddlywiki as a means to ship documentation with new releases.  At first, I wasn’t sure about the idea, but after about 15 minutes of working with it, I was hooked.  For those not familiar with Tiddlywiki, it’s a very light weight (single file) mini wiki.  I’ve seen it described as “guerrilla” wiki, or the “ipod nano” of wikis.  It highly leverages javascript to hide and show “tiddlers”, or the individual entries.  With lots of available plugins and custom themes, not to mention a very active community, TW is certainly a great contribution to the web community, and something worth checking out.  Those that are into the Getting Things Done, there’s a couple of GTD inspired adaptation, GTDTiddlyWiki, and MonkeyGTD.  There’s also a FireFox extension, TiddlySnip that allows you to save snippets to your TW as a scrapbook of sorts, though I haven’t tested this extension yet."
+          }
+    </script>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@miklb" />
+    <meta name="twitter:title" content="Experiences with TiddlyWiki - Miklb’s Mindless Ramblings" />
+    <meta name="twitter:description" content="Recently it was suggested that the Habari project think about using Tiddlywiki as a means to ship documentation with new releases.  At first, I wasn’t sure about the idea, but after about 15 minutes of working with it, I was hooked.  For those not familiar with Tiddlywiki, it’s a very light weight (single file) mini wiki.  I’ve seen it described as “guerrilla” wiki, or the “ipod nano” of wikis.  It highly leverages javascript to hide and show “tiddlers”, or the individual entries.  With lots of available plugins and custom themes, not to mention a very active community, TW is certainly a great contribution to the web community, and something worth checking out.  Those that are into the Getting Things Done, there’s a couple of GTD inspired adaptation, GTDTiddlyWiki, and MonkeyGTD.  There’s also a FireFox extension, TiddlySnip that allows you to save snippets to your TW as a scrapbook of sorts, though I haven’t tested this extension yet." />
+    <script type="application/ld+json">
+      {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "miklb.com",
+            "logo": "miklb.com/public/favicon.png"
+          }
+    </script>
+    <!-- End Jekyll SEO tag -->
+  </head>
   <body class="layout-reverse">
-
     <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about h-card">
-      <h1>
-        <a class="u-url"href="/index.html">
-          Miklb's Mindless Ramblings
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about h-card">
+          <h1>
+            <a class="u-url"href="/index.html">
+              Miklb's Mindless Ramblings
         </a>
-      </h1>
-      <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-      and this is my little slice of the web. </p>
+          </h1>
+          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
+            and this is my little slice of the web. </p>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
+          <a class="sidebar-nav-item" href="/about/">About</a>
+          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
+          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
+        </nav>
+        <p>&copy; 2016. All rights reserved.</p>
+      </div>
     </div>
-
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
-
-      
-
-      
-      
-        
-          
-            <a class="sidebar-nav-item" href="/about/">About</a>
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-      <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-      <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-
-
-    </nav>
-
-    <p>&copy; 2016. All rights reserved.</p>
-  </div>
-</div>
-
-
     <main class="container content">
       <article class="post h-entry">
-  <h1 class="post-title p-name">Experiences with TiddlyWiki</h1>
-  <time datetime="2007-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2007</time>
-  <div class="e-content">
-    <p class="lead p-bridgy-twitter-content">
-      
-    </p>
-      <p>Recently it was suggested that the Habari project think about using <a href="http://www.tiddlywiki.com/">Tiddlywiki</a> as a means to ship documentation with new releases.  At first, I wasn’t sure about the idea, but after about 15 minutes of working with it, I was hooked.  For those not familiar with Tiddlywiki, it’s a very light weight (single file) mini wiki.  I’ve seen it described as “guerrilla” wiki, or the “ipod nano” of wikis.  It highly leverages javascript to hide and show “tiddlers”, or the individual entries.  With lots of available plugins and custom themes, not to mention a very active community, TW is certainly a great contribution to the web community, and something worth checking out.  Those that are into the Getting Things Done, there’s a couple of GTD inspired adaptation, <a href="http://shared.snapgrid.com/index.html">GTDTiddlyWiki, and <a href="http://monkeygtd.tiddlyspot.com/">MonkeyGTD.  There’s also a FireFox extension, <a href="http://tiddlysnip.com/#About">TiddlySnip</a> that allows you to save snippets to your TW as a scrapbook of sorts, though I haven’t tested this extension yet.</a></a></p>
-
-<p>The formatting in TW is different than MediaWiki, though it’s fairly easy to get used to.  There’s also a <a href="http://martinswiki.com/prereleases.html#MediaWikiFormatterPlugin">MediaWiki formatter</a>, which allows you to use that formatting in your TW (which is handy if you are copying info from a MW page.  The same plugin author is working on an importer, which I am investigating, which actually allows you to scrape MW entries right into your TW.</p>
-
-<p>All in all, I find TW a great tool, and something I will continue to work with for a variety of uses, and hopefully will open my eyes to learning more javascripting along the way.</p>
-
-  </div>
-</article>
-
-<section id="webmentions" class="entry__comments">
-
-				<h1>Webmentions</h1>
-      
-      
-
-      
-	   <div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
-     
-	</section>
-
-
-
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/focused-blogs">
-            Focused Blogs
+        <h1 class="post-title p-name">Experiences with TiddlyWiki</h1>
+        <time datetime="2007-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2007</time>
+        <div class="e-content">
+          <p class="lead p-bridgy-twitter-content">
+          </p>
+          <p>Recently it was suggested that the Habari project think about using <a href="http://www.tiddlywiki.com/">Tiddlywiki</a> as a means to ship documentation with new releases.  At first, I wasn’t sure about the idea, but after about 15 minutes of working with it, I was hooked.  For those not familiar with Tiddlywiki, it’s a very light weight (single file) mini wiki.  I’ve seen it described as “guerrilla” wiki, or the “ipod nano” of wikis.  It highly leverages javascript to hide and show “tiddlers”, or the individual entries.  With lots of available plugins and custom themes, not to mention a very active community, TW is certainly a great contribution to the web community, and something worth checking out.  Those that are into the Getting Things Done, there’s a couple of GTD inspired adaptation, <a href="http://shared.snapgrid.com/index.html">GTDTiddlyWiki, and <a href="http://monkeygtd.tiddlyspot.com/">MonkeyGTD.  There’s also a FireFox extension, <a href="http://tiddlysnip.com/#About">TiddlySnip</a> that allows you to save snippets to your TW as a scrapbook of sorts, though I haven’t tested this extension yet.</a></a></p>
+          <p>The formatting in TW is different than MediaWiki, though it’s fairly easy to get used to.  There’s also a <a href="http://martinswiki.com/prereleases.html#MediaWikiFormatterPlugin">MediaWiki formatter</a>, which allows you to use that formatting in your TW (which is handy if you are copying info from a MW page.  The same plugin author is working on an importer, which I am investigating, which actually allows you to scrape MW entries right into your TW.</p>
+          <p>All in all, I find TW a great tool, and something I will continue to work with for a variety of uses, and hopefully will open my eyes to learning more javascripting along the way.</p>
+        </div>
+      </article>
+      <section id="webmentions" class="entry__comments">
+        <h1>Webmentions</h1>
+        <div class="webmentions">
+          <p class="webmentions__not-found">No webmentions were found</p>
+        </div>
+      </section>
+      <aside class="related">
+        <h2>Related Posts</h2>
+        <ul class="related-posts">
+          <li>
+            <h3>
+              <a href="/first-listen-luther-dickinson">
+                First Listen: Luther Dickinson
+            <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/focused-blogs">
+                Focused Blogs
             <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/finally-webmentons-with-jekyll-part-duex">
-            Finally Webmentions with Jekyll
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/finally-webmentons-with-jekyll-part-duex">
+                Finally Webmentions with Jekyll
             <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/breaking-out-of-the-silo">
-            Breaking Out of the Silo
-            <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
-</aside>
-
-
-<script src="/js/webmention_io.js"></script>
-
+              </a>
+            </h3>
+          </li>
+        </ul>
+      </aside>
+      <script src="/js/webmention_io.js"></script>
     </main>
-
   </body>
 </html>

@@ -1,549 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-  <meta charset="UTF-8">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="MobileOptimized" content="width">
-  <meta name="HandheldFriendly" content="true">
-  <title>
-    
+    <meta charset="UTF-8">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <title>
       Thunderbird and Gmail IMAP &middot; Miklb's Mindless Ramblings
     
   </title>
-  <!-- Webmentions -->
-  <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-  <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/styles.css">
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.png">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
-  <!-- Begin Jekyll SEO tag -->
-<title>Thunderbird and Gmail IMAP - Miklb’s Mindless Ramblings</title>
-<meta property="og:title" content="Thunderbird and Gmail IMAP" />
-<link rel="canonical" href="miklb.com/thunderbird-and-gmail-imap" itemprop="url" />
-<meta property='og:url' content='miklb.com/thunderbird-and-gmail-imap' />
-<meta property="og:site_name" content="Miklb's Mindless Ramblings" />
-<script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "WebSite",
-      "name" : "Miklb's Mindless Ramblings",
-      "url" : "miklb.com"
-    }
-  </script>
-<meta property="og:type" content="article" />
-<link rel="next" href="miklb.com/prism-for-mac" title="Prism for Mac" />
-<link rel="prev" href="miklb.com/textmate-and-projects" title="TextMate and Projects" />
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "NewsArticle",
-      "headline": "Thunderbird and Gmail IMAP",
-      "image": null,
-      "datePublished": "2007-10-29T00:00:00+00:00",
-      "description": null
-    }
-  </script>
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@miklb" />
-<meta name="twitter:title" content="Thunderbird and Gmail IMAP - Miklb’s Mindless Ramblings" />
-<meta name="twitter:description" content="" />
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "miklb.com",
-      "logo": "miklb.com/public/favicon.png"
-    }
-  </script>
-<!-- End Jekyll SEO tag -->
-</head>
-
-
+    <!-- Webmentions -->
+    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="/public/favicon.png">
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
+    <!-- Begin Jekyll SEO tag -->
+    <title>Thunderbird and Gmail IMAP - Miklb’s Mindless Ramblings</title>
+    <meta property="og:title" content="Thunderbird and Gmail IMAP" />
+    <meta name="description" content="With the recent buzz around the ‘net about gmail adding IMAP, I was anxious to finally give it a go.  I’ve read a bit about IMAP, but had never had the opportunity to try it out.  My work requires almost constant monitoring of email, and since I employ Google Apps for your domain to manage my email account, and prefer to use Apple’s Mail, I’d all but stopped using my old, but reliable clamshell ibook.  Thus the excitement of being able to monitor my email from my laptop, the Nokia e62, and the desktop computer.After seeing post at Lifehacker about Thunderbird, I figured it would be worth checking out.  I knew that Thunderbird had reecently been updated; I hadn’t tested it in over a year.  Being a quasi Mac fanboy, after following the instructions for using TB with the gmail IMAP, I sought a more “Apple” type theme.  The only two I found, were outdated, with a max verson of 1.6.  A  couple of failed attempts to change the version number, I went hunting the intarweb for another version.  (I also was having problems connecting to addons.mozilla.org, lots of times outs.  Not sure if it’s a latency issue, or what.) (update)seems to be resolved, not sure what the problem was" />
+    <meta property='og:description' content="With the recent buzz around the ‘net about gmail adding IMAP, I was anxious to finally give it a go.  I’ve read a bit about IMAP, but had never had the opportunity to try it out.  My work requires almost constant monitoring of email, and since I employ Google Apps for your domain to manage my email account, and prefer to use Apple’s Mail, I’d all but stopped using my old, but reliable clamshell ibook.  Thus the excitement of being able to monitor my email from my laptop, the Nokia e62, and the desktop computer.After seeing post at Lifehacker about Thunderbird, I figured it would be worth checking out.  I knew that Thunderbird had reecently been updated; I hadn’t tested it in over a year.  Being a quasi Mac fanboy, after following the instructions for using TB with the gmail IMAP, I sought a more “Apple” type theme.  The only two I found, were outdated, with a max verson of 1.6.  A  couple of failed attempts to change the version number, I went hunting the intarweb for another version.  (I also was having problems connecting to addons.mozilla.org, lots of times outs.  Not sure if it’s a latency issue, or what.) (update)seems to be resolved, not sure what the problem was" />
+    <link rel="canonical" href="miklb.com/thunderbird-and-gmail-imap" />
+    <meta property='og:url' content='miklb.com/thunderbird-and-gmail-imap' />
+    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+    <script type="application/ld+json">
+      {
+            "@context" : "http://schema.org",
+            "@type" : "WebSite",
+            "name" : "Miklb’s Mindless Ramblings",
+            "url" : "miklb.com"
+          }
+    </script>
+    <meta property="og:type" content="article" />
+    <link rel="next" href="miklb.com/prism-for-mac" title="Prism for Mac" />
+    <link rel="prev" href="miklb.com/textmate-and-projects" title="TextMate and Projects" />
+    <script type="application/ld+json">
+      {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Thunderbird and Gmail IMAP",
+            "image": null,
+            "datePublished": "2007-10-29T00:00:00+00:00",
+            "description": "With the recent buzz around the ‘net about gmail adding IMAP, I was anxious to finally give it a go.  I’ve read a bit about IMAP, but had never had the opportunity to try it out.  My work requires almost constant monitoring of email, and since I employ Google Apps for your domain to manage my email account, and prefer to use Apple’s Mail, I’d all but stopped using my old, but reliable clamshell ibook.  Thus the excitement of being able to monitor my email from my laptop, the Nokia e62, and the desktop computer.After seeing post at Lifehacker about Thunderbird, I figured it would be worth checking out.  I knew that Thunderbird had reecently been updated; I hadn’t tested it in over a year.  Being a quasi Mac fanboy, after following the instructions for using TB with the gmail IMAP, I sought a more “Apple” type theme.  The only two I found, were outdated, with a max verson of 1.6.  A  couple of failed attempts to change the version number, I went hunting the intarweb for another version.  (I also was having problems connecting to addons.mozilla.org, lots of times outs.  Not sure if it’s a latency issue, or what.) (update)seems to be resolved, not sure what the problem was"
+          }
+    </script>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@miklb" />
+    <meta name="twitter:title" content="Thunderbird and Gmail IMAP - Miklb’s Mindless Ramblings" />
+    <meta name="twitter:description" content="With the recent buzz around the ‘net about gmail adding IMAP, I was anxious to finally give it a go.  I’ve read a bit about IMAP, but had never had the opportunity to try it out.  My work requires almost constant monitoring of email, and since I employ Google Apps for your domain to manage my email account, and prefer to use Apple’s Mail, I’d all but stopped using my old, but reliable clamshell ibook.  Thus the excitement of being able to monitor my email from my laptop, the Nokia e62, and the desktop computer.After seeing post at Lifehacker about Thunderbird, I figured it would be worth checking out.  I knew that Thunderbird had reecently been updated; I hadn’t tested it in over a year.  Being a quasi Mac fanboy, after following the instructions for using TB with the gmail IMAP, I sought a more “Apple” type theme.  The only two I found, were outdated, with a max verson of 1.6.  A  couple of failed attempts to change the version number, I went hunting the intarweb for another version.  (I also was having problems connecting to addons.mozilla.org, lots of times outs.  Not sure if it’s a latency issue, or what.) (update)seems to be resolved, not sure what the problem was" />
+    <script type="application/ld+json">
+      {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "miklb.com",
+            "logo": "miklb.com/public/favicon.png"
+          }
+    </script>
+    <!-- End Jekyll SEO tag -->
+  </head>
   <body class="layout-reverse">
-
     <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about h-card">
-      <h1>
-        <a class="u-url"href="/index.html">
-          Miklb's Mindless Ramblings
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about h-card">
+          <h1>
+            <a class="u-url"href="/index.html">
+              Miklb's Mindless Ramblings
         </a>
-      </h1>
-      <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-      and this is my little slice of the web. </p>
+          </h1>
+          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
+            and this is my little slice of the web. </p>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
+          <a class="sidebar-nav-item" href="/about/">About</a>
+          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
+          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
+        </nav>
+        <p>&copy; 2016. All rights reserved.</p>
+      </div>
     </div>
-
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
-
-      
-
-      
-      
-        
-          
-            <a class="sidebar-nav-item" href="/about/">About</a>
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-      <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-      <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-
-
-    </nav>
-
-    <p>&copy; 2016. All rights reserved.</p>
-  </div>
-</div>
-
-
     <main class="container content">
       <article class="post h-entry">
-  <h1 class="post-title p-name">Thunderbird and Gmail IMAP</h1>
-  <time datetime="2007-10-29T00:00:00+00:00" class="dt-time post-date">29 Oct 2007</time>
-  <div class="e-content">
-    <p class="lead p-bridgy-twitter-content">
-      
-    </p>
-      <p>With the recent buzz around the ‘net about gmail adding IMAP, I was anxious to finally give it a go.  I’ve read a bit about IMAP, but had never had the opportunity to try it out.  My work requires almost constant monitoring of email, and since I employ Google Apps for your domain to manage my email account, and prefer to use Apple’s Mail, I’d all but stopped using my old, but reliable clamshell ibook.  Thus the excitement of being able to monitor my email from my laptop, the <a href="http://miklb.com/nokia-e62-and-the-mac">Nokia e62</a>, and the desktop computer.
-<!--more-->
-After seeing <a href="http://lifehacker.com/software/geek-to-live/turn-thunderbird-into-the-ultimate-gmail-imap-client.php">post at Lifehacker</a> about Thunderbird, I figured it would be worth checking out.  I knew that Thunderbird had reecently been updated; I hadn’t tested it in over a year.  Being a quasi Mac fanboy, after following the instructions for using TB with the gmail IMAP, I sought a more “Apple” type theme.  The only two I found, were outdated, with a max verson of 1.6.  A  couple of failed attempts to change the version number, I went hunting the intarweb for another version.  (I also was having problems connecting to addons.mozilla.org, lots of times outs.  Not sure if it’s a latency issue, or what.) <em>(update)seems to be resolved, not sure what the problem was</em></p>
-
-<p>After a few failed links, I found one that works.  <a href="http://www.twistermc.com/blog/2007/06/26/iv-beta1">Twister MC</a> had a beta version that worked just fine.  It’s not an exact replica of Apple Mail, but certainly a better feel (not that the default TB theme is as bad as the default FF theme).  I’m still not sold on TB, as it doesn’t integrate with Address Book, and I haven’t found a good solution for importing mine into TB, but I certainly like it better on this older Mac than the Panther Mail.  I’ll continue to use TB on the ibook, keeping my eye out for extensions and improvements.  As soon as I can afford Leopard, I’m sure all bets will be off though on the desktop, as I’m anxious to give that a whirl.  Any TB extensions I should look for?  I read another post @ Lifehacker, but none of the ones mentioned got my fancy.</p>
-
-<p><em>update</em>: This <a href="https://addons.update.mozilla.org/en-US/thunderbird/addon/421">MR Tech</a> will allow you to override the max version check and install either of the more common Apple Mail-like themes.</p>
-
-  </div>
-</article>
-
-<section id="webmentions" class="entry__comments">
-
-				<h1>Webmentions</h1>
-      
-      
-
-      
-	   <div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
-     
-	</section>
-
-
-
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/focused-blogs">
-            Focused Blogs
+        <h1 class="post-title p-name">Thunderbird and Gmail IMAP</h1>
+        <time datetime="2007-10-29T00:00:00+00:00" class="dt-time post-date">29 Oct 2007</time>
+        <div class="e-content">
+          <p class="lead p-bridgy-twitter-content">
+          </p>
+          <p>With the recent buzz around the ‘net about gmail adding IMAP, I was anxious to finally give it a go.  I’ve read a bit about IMAP, but had never had the opportunity to try it out.  My work requires almost constant monitoring of email, and since I employ Google Apps for your domain to manage my email account, and prefer to use Apple’s Mail, I’d all but stopped using my old, but reliable clamshell ibook.  Thus the excitement of being able to monitor my email from my laptop, the <a href="http://miklb.com/nokia-e62-and-the-mac">Nokia e62</a>, and the desktop computer.
+            <!--more-->
+            After seeing <a href="http://lifehacker.com/software/geek-to-live/turn-thunderbird-into-the-ultimate-gmail-imap-client.php">post at Lifehacker</a> about Thunderbird, I figured it would be worth checking out.  I knew that Thunderbird had reecently been updated; I hadn’t tested it in over a year.  Being a quasi Mac fanboy, after following the instructions for using TB with the gmail IMAP, I sought a more “Apple” type theme.  The only two I found, were outdated, with a max verson of 1.6.  A  couple of failed attempts to change the version number, I went hunting the intarweb for another version.  (I also was having problems connecting to addons.mozilla.org, lots of times outs.  Not sure if it’s a latency issue, or what.) <em>(update)seems to be resolved, not sure what the problem was</em></p>
+          <p>After a few failed links, I found one that works.  <a href="http://www.twistermc.com/blog/2007/06/26/iv-beta1">Twister MC</a> had a beta version that worked just fine.  It’s not an exact replica of Apple Mail, but certainly a better feel (not that the default TB theme is as bad as the default FF theme).  I’m still not sold on TB, as it doesn’t integrate with Address Book, and I haven’t found a good solution for importing mine into TB, but I certainly like it better on this older Mac than the Panther Mail.  I’ll continue to use TB on the ibook, keeping my eye out for extensions and improvements.  As soon as I can afford Leopard, I’m sure all bets will be off though on the desktop, as I’m anxious to give that a whirl.  Any TB extensions I should look for?  I read another post @ Lifehacker, but none of the ones mentioned got my fancy.</p>
+          <p><em>update</em>: This <a href="https://addons.update.mozilla.org/en-US/thunderbird/addon/421">MR Tech</a> will allow you to override the max version check and install either of the more common Apple Mail-like themes.</p>
+        </div>
+      </article>
+      <section id="webmentions" class="entry__comments">
+        <h1>Webmentions</h1>
+        <div class="webmentions">
+          <p class="webmentions__not-found">No webmentions were found</p>
+        </div>
+      </section>
+      <aside class="related">
+        <h2>Related Posts</h2>
+        <ul class="related-posts">
+          <li>
+            <h3>
+              <a href="/first-listen-luther-dickinson">
+                First Listen: Luther Dickinson
+            <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/focused-blogs">
+                Focused Blogs
             <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/finally-webmentons-with-jekyll-part-duex">
-            Finally Webmentions with Jekyll
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/finally-webmentons-with-jekyll-part-duex">
+                Finally Webmentions with Jekyll
             <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/breaking-out-of-the-silo">
-            Breaking Out of the Silo
-            <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
-</aside>
-
-
-<script src="/js/webmention_io.js"></script>
-
+              </a>
+            </h3>
+          </li>
+        </ul>
+      </aside>
+      <script src="/js/webmention_io.js"></script>
     </main>
-
   </body>
 </html>
