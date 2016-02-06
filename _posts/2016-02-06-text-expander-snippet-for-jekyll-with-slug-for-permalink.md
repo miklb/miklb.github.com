@@ -15,3 +15,5 @@ Also note, I have a blank variable for *summary*. Since I'm using webmentions, I
 I would love feedback on how to make the snippet better as it's my first javascript snippet. Just leave a comment on the gist.
 
 {% gist miklb/53a93032fb8cc669b1fa %}
+
+<a href="https://brid.gy/publish/twitter"></a>

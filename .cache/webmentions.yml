@@ -1367,10 +1367,15 @@ miklb.com/testing-sending-webmentions:
 miklb.com/breaking-out-of-the-silo:
 - http://indiewebcamp.com/POSSE
 - https://brid.gy/publish/twitter
-miklb.com/finally-webmentons-with-jekyll:
+miklb.com/finally-webmentons-with-jekyll-part-duex:
 - https://indiewebcamp.com/Webmention
 - http://miklb.com/making-the-move-to-jekyll
 - https://github.com/aarongustafson/jekyll-webmention_io
+- https://brid.gy/publish/twitter
 miklb.com/focused-blogs:
 - https://indiewebcamp.com
 - https://brid.gy/publish/twitter
+miklb.com/first-listen-luther-dickinson:
+- http://gardenandgun.com/blog/first-listen-luther-dickinson-blues-ballads
+- https://brid.gy/publish/twitter
+miklb.com/text-expander-snippet-for-jekyll-with-slug-for-permalink: []
