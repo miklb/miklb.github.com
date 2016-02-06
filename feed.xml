@@ -5,9 +5,50 @@
     <description></description>
     <link>miklb.com/</link>
     <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Feb 2016 20:34:34 +0000</pubDate>
-    <lastBuildDate>Thu, 04 Feb 2016 20:34:34 +0000</lastBuildDate>
+    <pubDate>Sat, 06 Feb 2016 18:54:41 +0000</pubDate>
+    <lastBuildDate>Sat, 06 Feb 2016 18:54:41 +0000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Text Expander snippet for Jekyll With Slug for Permalink</title>
+        <description>&lt;p&gt;There are plenty of TextExpander snippets floating around for creating Jekyll Front Matter, however, I wanted to take it a step further, and auto-create a slugified permalink with no additional work. The other part of the equation was that I wanted it to be able to use it on TE touch, which meant it had to be done in javascript. After a little Googling, some trial and error, I came up with one that takes a text input for the post title, generates a slug from that, and includes the current date. I understand that the date in the file can be used, however I may not always publish when the file was initially created. Not to mention, when I imported all of my posts from Habari, I needed to be able to use the original post date, not the date the file was created, so I continue to use that. You can certainly modify the snippet for your needs.&lt;/p&gt;
+
+&lt;p&gt;Also note, I have a blank variable for &lt;em&gt;summary&lt;/em&gt;. Since I’m using webmentions, I use the summary as the text for a tweet, which would be different than an excerpt. Some of this may change when I redo the site redesign, but for now, it’s how I roll.&lt;/p&gt;
+
+&lt;p&gt;I would love feedback on how to make the snippet better as it’s my first javascript snippet. Just leave a comment on the gist.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;var title = &amp;#39;%filltext:name=Title%&amp;#39;;
+slug = title.replace(/[^\w\s]/gi, &amp;#39;&amp;#39;);
+var newslug = title.split(&amp;quot; &amp;quot;).join(&amp;quot;-&amp;quot;);
+
+var dt = new Date();
+
+TextExpander.appendOutput(&amp;quot;---\n&amp;quot;);
+TextExpander.appendOutput(&amp;quot;layout: post \n&amp;quot;);
+TextExpander.appendOutput(&amp;quot;title: &amp;quot; + &amp;#39;&amp;quot;&amp;#39; +title + &amp;#39;&amp;quot;&amp;#39;+ &amp;quot;\n&amp;quot;);
+TextExpander.appendOutput(&amp;quot;tags: \n&amp;quot;);
+TextExpander.appendOutput(&amp;quot;published: true \n&amp;quot;);
+TextExpander.appendOutput(&amp;quot;permalink: &amp;quot;) +TextExpander.appendOutput(newslug.toLowerCase()); + TextExpander.appendOutput(&amp;quot; \n&amp;quot;);
+TextExpander.appendOutput(&amp;quot;date: &amp;quot;) + TextExpander.appendOutput(dt.getFullYear() + &amp;quot;-&amp;quot; +(dt.getMonth() +1) + &amp;quot;-&amp;quot; + dt.getDate()) + TextExpander.appendOutput(&amp;quot;\n&amp;quot;);
+TextExpander.appendOutput(&amp;quot;summary: \n&amp;quot;);
+TextExpander.appendOutput(&amp;quot;--- \n&amp;quot;);
+
+// %filltop%&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/miklb/53a93032fb8cc669b1fa.js&quot;&gt; &lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
+        <link>miklb.com/text-expander-snippet-for-jekyll-with-slug-for-permalink</link>
+        <guid isPermaLink="true">miklb.com/text-expander-snippet-for-jekyll-with-slug-for-permalink</guid>
+        
+        <category>Jekyll,</category>
+        
+        <category>TextExpander,</category>
+        
+        <category>javascript</category>
+        
+        
+      </item>
     
       <item>
         <title>First Listen: Luther Dickinson</title>
@@ -214,35 +255,6 @@
         <category>Tunesday</category>
         
         <category>Bully</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>First Thoughts: Holy Grail of Blogging from iOS with Jekyll</title>
-        <description>&lt;p&gt;I have been researching and thinking seriously about moving away from database driven blog engines to &lt;em&gt;static file&lt;/em&gt; blogging for quite awhile. My extensive research has me convinced for my ideal workflow, &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; will be the answer—except for my goal to somewhat easily blog from my phone. All of the &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;front matter&lt;/a&gt; could be handled by TextExpander snippets or custom keyboard shortcuts in Drafts or Editorial. The issue has been that with an iOS device, you are basically confined to using Dropbox or iCloud for the text/markdown files. Wanting to keep everything in a Git repo under version control, I hadn’t found a way to automagically push a Dropbox file to a Git repo without having an always on machine at home using some listening app like &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;Hazel&lt;/a&gt; to do this. While that isn’t out of the question, I want something &lt;strong&gt;straight from the device&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Extensive Googling finally led me to Zappier. Similar to IFTTT, they have a &lt;a href=&quot;https://zapier.com/zapbook/dropbox/github/&quot;&gt;Github/Dropbox workflow&lt;/a&gt; that allows you to send a pull request to Github when a new file is added to a directory in Dropbox. And while if I was simply using Github pages to host a Jekyll site, that would be the end to a simple solution.&lt;/p&gt;
-
-&lt;p&gt;However, I still want to host my own data on my own VPS (more on that later). Enter &lt;a href=&quot;https://github.com/developmentseed/jekyll-hook&quot;&gt;Jekyll Hook&lt;/a&gt;, which, while not seemingly for the faint of heart, allows one to run their own “Github Pages” on their own server.&lt;/p&gt;
-
-&lt;p&gt;So, while all untested at this point, on paper it seems I can have a dedicated Dropbox folder synced with an iOS editor that when a markdown file is saved to it, Zapier will attempt to send a pull request and merge it to a Github hosted repo of my blog [footnote, possibly need to have iOS app to approve pull request but option is in the &lt;em&gt;recipe&lt;/em&gt; for the workflow. I assume it will work save for any previous files by same name causing a merge conflict]. From that, the Jekyll Hook script/solution will fire and rebuild the the site, all without leaving the convenience of my iOS device.&lt;/p&gt;
-
-&lt;p&gt;Potential magic I tell you.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 04 May 2015 00:00:00 +0000</pubDate>
-        <link>miklb.com/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll</link>
-        <guid isPermaLink="true">miklb.com/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll</guid>
-        
-        <category>blogging</category>
-        
-        <category>Jekyll</category>
-        
-        <category>Github</category>
-        
-        <category>Dropbox</category>
-        
-        <category>Zappier</category>
         
         
       </item>

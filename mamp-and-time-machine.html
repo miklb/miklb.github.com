@@ -91,6 +91,7 @@
         <time datetime="2009-06-11T00:00:00+00:00" class="dt-time post-date">11 Jun 2009</time>
         <div class="e-content">
           <p class="lead p-bridgy-twitter-content">
+            <a href="https://brid.gy/publish/twitter"></a>
           </p>
           <p><img src="http://miklb.com/user/files/time_machine.png" class="right" alt="Time Machine" />Well, it’s taken me what seems like forever, but I finally determined that MAMP has been the cause of all of my Time Machine woes.  Basically Time Machine would get to a certain point, in my case it was around 29 GB, and simply stall, not allowing me to stop the backup process.  I would basically have to restart the machine to get it to stop.  I originally thought it was a problem with the formatting of the external drive, however I’d done all of the troubleshoot tips I’ve found on the web, to no avail.  Finally let me say, I’m not a Unix expert, nor am I that well versed in file permissions.  I know just enough to get myself in trouble, but I believe I understand this problem well enough at this point that I thought sharing my discoveries might help someone else avoid a similar headache.</p>
           <p>In a nut shell, it seems that by default MAMP’s Apache instance doesn’t set a group owner for files created by the Apache server.  Time Machine chokes on these files, which results in a stalled backup.  After much Googling, I came across this <a href="http://blog.mirthlab.com/2008/04/05/mamp-might-break-your-time-machine-backups/">blog post about MAMP Pro and Time Machine</a>.  I then used the Time Machine options to exclude the directory that I created for my document root (I believe MAMP defaults to /Users/foo/Sites/).  Excluding my MAMP directory allowed Time Machine to completely backup my system.  In the aforementioned blog post about MAMP Pro, it appears there is a preference pane in the pro version to choose your user/group for the Apache server.  The free version of MAMP doesn’t offer this same preference, so I had to do a bit more digging.</p>
@@ -116,6 +117,14 @@
         <ul class="related-posts">
           <li>
             <h3>
+              <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
+                Text Expander snippet for Jekyll With Slug for Permalink
+            <small><time datetime="2016-02-06T00:00:00+00:00">06 Feb 2016</time></small>
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
               <a href="/first-listen-luther-dickinson">
                 First Listen: Luther Dickinson
             <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
@@ -126,14 +135,6 @@
             <h3>
               <a href="/focused-blogs">
                 Focused Blogs
-            <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/finally-webmentons-with-jekyll-part-duex">
-                Finally Webmentions with Jekyll
             <small><time datetime="2016-01-30T00:00:00+00:00">30 Jan 2016</time></small>
               </a>
             </h3>
