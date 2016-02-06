@@ -5,8 +5,8 @@
     <description></description>
     <link>miklb.com/</link>
     <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Feb 2016 18:54:41 +0000</pubDate>
-    <lastBuildDate>Sat, 06 Feb 2016 18:54:41 +0000</lastBuildDate>
+    <pubDate>Sat, 06 Feb 2016 19:14:53 +0000</pubDate>
+    <lastBuildDate>Sat, 06 Feb 2016 19:14:53 +0000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -36,6 +36,7 @@ TextExpander.appendOutput(&amp;quot;--- \n&amp;quot;);
 // %filltop%&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/miklb/53a93032fb8cc669b1fa.js&quot;&gt; &lt;/script&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
         <link>miklb.com/text-expander-snippet-for-jekyll-with-slug-for-permalink</link>
