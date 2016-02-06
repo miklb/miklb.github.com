@@ -24,7 +24,7 @@ markdown: kramdown
 
 # Plugins
 
-gems: [ jekyll-paginate, jekyll-seo-tag]
+gems: [ jekyll-paginate, jekyll-seo-tag, jekyll-gist]
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
