@@ -5,9 +5,39 @@
     <description></description>
     <link>miklb.com/</link>
     <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Feb 2016 19:14:53 +0000</pubDate>
-    <lastBuildDate>Sat, 06 Feb 2016 19:14:53 +0000</lastBuildDate>
+    <pubDate>Fri, 12 Feb 2016 10:12:12 +0000</pubDate>
+    <lastBuildDate>Fri, 12 Feb 2016 10:12:12 +0000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>A Few Thoughts About WordPress REST API and Core</title>
+        <description>&lt;p&gt;There has been much written about the ~drama~ discussions surrounding the &lt;a href=&quot;http://v2.wp-api.org&quot;&gt;WordPress REST API&lt;/a&gt; and inclusion in core. Or exclusion, depending on who’s take you are reading. &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; Suffice to say, the gist I’ve gathered is that there are two competing perspectives, one side wants to incrementally add the API, the other wants a fully fleshed out, complete API before inclusion in core.&lt;/p&gt;
+
+&lt;p&gt;I guess my 2¢ on the matter is this—the core tenet of the &lt;a href=&quot;http://wordpressfoundation.org&quot;&gt;WordPress Foundation&lt;/a&gt; is “to democratize publishing through Open Source, GPL software.” From what I’ve gathered reading on the subject, the REST API team have the publishing portion of the API covered and ready for inclusion in core. The parts that would come (much) later would be things like the customizer, file editing, more site &lt;strong&gt;management&lt;/strong&gt; tools, less about actually publishing.&lt;/p&gt;
+
+&lt;p&gt;If democratized publishing is still the guiding principle for WordPress the project, then I don’t see how there is any debate. Opening up the methods to publish beyond what has been the only means available for basically the entire life of the project seems like a no brainer to this guy who’s been around it for 11 years this year. No one will truly know how much is opened up until it is in the hands of creative developers and then in the hands of content creators.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I’m specifically not linking to any of the &lt;em&gt;hot takes&lt;/em&gt; on the subject. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 12 Feb 2016 00:00:00 +0000</pubDate>
+        <link>miklb.com/a-few-thoughts-about-wordpress-rest-api-and-core</link>
+        <guid isPermaLink="true">miklb.com/a-few-thoughts-about-wordpress-rest-api-and-core</guid>
+        
+        <category>WordPress,</category>
+        
+        <category>REST</category>
+        
+        <category>API</category>
+        
+        
+      </item>
     
       <item>
         <title>Text Expander snippet for Jekyll With Slug for Permalink</title>
@@ -225,37 +255,6 @@ TextExpander.appendOutput(&amp;quot;--- \n&amp;quot;);
         <category>web</category>
         
         <category>advertising</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Tunesday: Bully</title>
-        <description>&lt;p&gt;This band just rocks me. I can not wait for the whole record. God knows what bands they listen to.&lt;/p&gt;
-
-&lt;p&gt;Steve Albini, do your homework.&lt;/p&gt;
-
-&lt;p&gt;Pixies? Sure.&lt;/p&gt;
-
-&lt;p&gt;Nirvana? Had to.&lt;/p&gt;
-
-&lt;p&gt;Bands I missed out when I was doing stuff? I want to know them too.&lt;/p&gt;
-
-&lt;p&gt;Please, more music like this.&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;&lt;iframe width=&quot;853&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/kq3rNIYUwU0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-&lt;p&gt;That bass line. Be still the 23 year old still in my heart.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 20 May 2015 00:00:00 +0000</pubDate>
-        <link>miklb.com/tunesday-bully</link>
-        <guid isPermaLink="true">miklb.com/tunesday-bully</guid>
-        
-        <category>music</category>
-        
-        <category>Tunesday</category>
-        
-        <category>Bully</category>
         
         
       </item>
