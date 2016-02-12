@@ -5,6 +5,7 @@ tags: WordPress, REST API
 published: true
 permalink: a-few-thoughts-about-wordpress-rest-api-and-core
 date : 2016-2-12
+summary: "My take on the debate of WordPress REST API and Core"
 ---
 
 There has been much written about the ~drama~ discussions surrounding the [WordPress REST API](http://v2.wp-api.org) and inclusion in core. Or exclusion, depending on who's take you are reading. [^1] Suffice to say, the gist I've gathered is that there are two competing perspectives, one side wants to incrementally add the API, the other wants a fully fleshed out, complete API before inclusion in core.
