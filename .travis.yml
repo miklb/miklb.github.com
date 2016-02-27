@@ -3,7 +3,7 @@ language: ruby
 rvm:
   - 2.2.4
 addons:
-  ssh_known_hosts: miklb.com
+  ssh_known_hosts: 162.243.37.62
 branches:
   only:
   - jekyll
