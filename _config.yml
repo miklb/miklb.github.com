@@ -17,8 +17,8 @@ twitter:
   username: miklb
 
 logo: public/favicon.png
-# be sure that you use kramdown as markdown processor
-markdown: kramdown
+
+
 
 # configure kramdown
 

@@ -1,18 +1,4 @@
 #!/bin/bash
-
-# only proceed script when started not by pull request (PR)
-if [ $TRAVIS_PULL_REQUEST == "true" ]; then
-  echo "this is PR, exiting"
-  exit 0
-fi
-
-# enable error reporting to the console
-set -e
-
-# build site with jekyll, by default to `_site' folder
-bundle exec jekyll build
-find ./_site -name "*.html" -exec bundle exec htmlbeautifier {} \;
-
 # cleanup
 rm -rf ../miklb.github.com.master
 
@@ -30,5 +16,3 @@ git config user.name "miklb"
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --quiet origin master > /dev/null 2>&1
-
-sleep 2m
