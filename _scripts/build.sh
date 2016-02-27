@@ -7,7 +7,7 @@ if [ $TRAVIS_PULL_REQUEST == "true" ]; then
 fi
 
 # enable error reporting to the console
-set -e
+set -ev
 
 # build site with jekyll, by default to `_site' folder
 bundle exec jekyll build

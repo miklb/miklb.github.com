@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ev
 # cleanup
 rm -rf ../miklb.github.com.master
 
