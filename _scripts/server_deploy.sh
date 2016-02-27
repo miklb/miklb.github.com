@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+set -ev
 if [ $TRAVIS_BRANCH == 'jekyll' ] ; then
     # Initialize a new git repo in _site, and push it to our server.
     cd _site
