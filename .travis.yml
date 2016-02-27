@@ -6,7 +6,7 @@ addons:
   ssh_known_hosts: 162.243.37.62
 branches:
   only:
-  - jekyll
+    - jekyll
 before_install:
 - bash _scripts/install.sh
 script:
