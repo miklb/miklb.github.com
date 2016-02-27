@@ -8,12 +8,12 @@ branches:
   only:
   - jekyll
 before_install:
-  - bash_scripts/install.sh
+  - bash _scripts/install.sh
 script:
-  - bash_scripts/build.sh
+  - bash _scripts/build.sh
 after_script:
-- bash_scripts/server_deploy.sh
-- bash_scripts/gh_deploy.sh
+- bash _scripts/server_deploy.sh
+- bash _scripts/gh_deploy.sh
 
 env:
   global:
