@@ -11,7 +11,7 @@ before_install:
   - bash _scripts/install.sh
 script:
   - bash _scripts/build.sh
-after_script:
+after_success:
 - bash _scripts/server_deploy.sh
 - bash _scripts/gh_deploy.sh
 
