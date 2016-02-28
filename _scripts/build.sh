@@ -11,4 +11,4 @@ set -ev
 
 # build site with jekyll, by default to `_site' folder
 bundle exec jekyll build
-find ./_site -name "*.html" -exec bundle exec htmlbeautifier {} \;
+# find ./_site -name "*.html" -exec bundle exec htmlbeautifier {} \;
