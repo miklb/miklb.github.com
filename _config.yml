@@ -7,7 +7,7 @@ paginate: 5
 # Setup
 title:               Miklb's Mindless Ramblings
 tagline:            chronicling life in a digital world
-description:
+description: A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between.
 url: miklb.com
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 baseurl:             ""
