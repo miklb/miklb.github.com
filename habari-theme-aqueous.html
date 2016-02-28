@@ -1,138 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <title>
+    
       Habari Theme: Aqueous &middot; Miklb's Mindless Ramblings
     
   </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
-    <!-- Begin Jekyll SEO tag v1.3.1 -->
-    <title>Habari Theme: Aqueous - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Habari Theme: Aqueous" />
-    <meta name="description" content="Updated!I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has $theme-&gt;footer(); added, which can be a useful plugin hook." />
-    <meta property='og:description' content="Updated!I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has $theme-&gt;footer(); added, which can be a useful plugin hook." />
-    <link rel="canonical" href="miklb.com/habari-theme-aqueous" />
-    <meta property='og:url' content='miklb.com/habari-theme-aqueous' />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2009-03-03T00:00:00+00:00" />
-    <link rel="next" href="miklb.com/free-custom-handwriting-fonts" title="Free Custom Handwriting Fonts" />
-    <link rel="prev" href="miklb.com/habari-theme-swanky-05beta-released" title="Habari Theme: Swanky 0.5beta Released" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
-    <meta name="twitter:title" content="Habari Theme: Aqueous - Miklb’s Mindless Ramblings" />
-    <meta name="twitter:description" content="Updated!I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has $theme-&gt;footer(); added, which can be a useful plugin hook." />
-    <meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
-    <script type="application/ld+json">
-      {
-          "@context" : "http://schema.org",
-      
-      
-          "@type" : "BlogPosting",
-      
-          "headline": "Habari Theme: Aqueous",
-      
-          "datePublished": "2009-03-03T00:00:00+00:00",
-      
-          "description": "Updated!I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has $theme-&gt;footer(); added, which can be a useful plugin hook.",
-      
-          "logo": "miklb.com/public/favicon.png",
-      
-      
-          "url" : "miklb.com/habari-theme-aqueous"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
+  <!-- Webmentions -->
+  <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
+  <!-- Begin Jekyll SEO tag v1.3.1 -->
+<title>Habari Theme: Aqueous - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Habari Theme: Aqueous" />
+<meta name="description" content="Updated!I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has $theme-&gt;footer(); added, which can be a useful plugin hook." />
+<meta property='og:description' content="Updated!I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has $theme-&gt;footer(); added, which can be a useful plugin hook." />
+<link rel="canonical" href="miklb.com/habari-theme-aqueous" />
+<meta property='og:url' content='miklb.com/habari-theme-aqueous' />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2009-03-03T00:00:00+00:00" />
+<link rel="next" href="miklb.com/free-custom-handwriting-fonts" title="Free Custom Handwriting Fonts" />
+<link rel="prev" href="miklb.com/habari-theme-swanky-05beta-released" title="Habari Theme: Swanky 0.5beta Released" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@miklb" />
+<meta name="twitter:title" content="Habari Theme: Aqueous - Miklb’s Mindless Ramblings" />
+<meta name="twitter:description" content="Updated!I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has $theme-&gt;footer(); added, which can be a useful plugin hook." />
+<meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+
+
+    "@type" : "BlogPosting",
+
+    "headline": "Habari Theme: Aqueous",
+
+    "datePublished": "2009-03-03T00:00:00+00:00",
+
+    "description": "Updated!I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has $theme-&gt;footer(); added, which can be a useful plugin hook.",
+
+    "logo": "miklb.com/public/favicon.png",
+
+
+    "url" : "miklb.com/habari-theme-aqueous"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+
   <body class="layout-reverse">
+
     <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/index.html">
-              Miklb's Mindless Ramblings
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about h-card">
+      <h1>
+        <a class="u-url"href="/index.html">
+          Miklb's Mindless Ramblings
         </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
+      </h1>
+      <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
+      and this is my little slice of the web. </p>
     </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
+
+      
+
+      
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
+      <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
+
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
     <main class="container content">
       <article class="post h-entry">
-        <h1 class="post-title p-name">Habari Theme: Aqueous</h1>
-        <time datetime="2009-03-03T00:00:00+00:00" class="dt-time post-date">03 Mar 2009</time>
-        <div class="e-content">
-          <p class="lead p-bridgy-twitter-content">
-          </p>
-          <h4><strong>Updated!</strong></h4>
-          <p>I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has <code>$theme-&gt;footer();</code> added, which can be a useful plugin hook.</p>
-          <p><img src="http://miklb.com/user/files/aqueous_ss.png" class="right" alt="Aqueous screen shot" />I’m proud to release my fourth Habari theme, the third port, Aqueous.  Based on an open source design by <a href="http://www.sixshootermedia.com/">Six Shooter Media</a>, this 3 column theme sports a fluid width middle column.  The original icons have been redone with custom icons that I created so there’s no issue with redistribution.  I also have restyled the comments and comment form from the original design, as well as a few other modifications for a working blog, but it still maintains the original integrity of the design, which I’ve always liked.  It has that clean, modern feel to it, despite being several years old now.</p>
-          <p>I had originally ported this theme for a personal site when I first switched over to Habari, and have just never gotten around to releasing it.  Now that I’m not using that site, it seemed only logical to make it available to other Habari users, especially with the lack of themes in the community.  I hope that changes sooner than later, hopefully after .6 gets released and .7 starts focusing more on the theme engine.  I’m curious to see what people have in mind for it, but that’s for another blog post.</p>
-          <p>I’m releasing this as an alpha release, because I really haven’t tested it in other browsers aside from Safari 4beta, but wanted to get it out and see if there was any real interest before putting too much more time into it.</p>
-          <p>One idea that I have for future a release is author comment styling, as it currently styles the comments all the same.  Again, this will happen if I see that’s there is actually any interest in the theme.</p>
-          <p>The original design was released under a Creative Commons license, so there’s no chance of the theme moving to the Habari extras repository, so any comments, bugs, feature requests should be left in the comments on this post.  Future posts about releases will direct comments to this post.  There’s nothing worse than a site having comments scattered about the same theme/plugin.</p>
-          <p><a href="http://miklb.com/downloads/Aqueous0.3.1.zip" onclick="javascript: pageTracker._trackPageview('/downloads/Aqueous0.3.1'); ">Download Aqueous 0.3.1 alpha now</a>.</p>
-        </div>
-      </article>
-      <section id="webmentions" class="entry__comments">
-        <h1>Webmentions</h1>
-        <div class="webmentions">
-          <p class="webmentions__not-found">No webmentions were found</p>
-        </div>
-      </section>
-      <aside class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          <li>
-            <h3>
-              <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
-                A Few Thoughts About WordPress REST API and Core
+  <h1 class="post-title p-name">Habari Theme: Aqueous</h1>
+  <time datetime="2009-03-03T00:00:00+00:00" class="dt-time post-date">03 Mar 2009</time>
+  <div class="e-content">
+    <p class="lead p-bridgy-twitter-content">
+      
+    </p>
+      <h4><strong>Updated!</strong></h4>
+<p>I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has <code>$theme-&gt;footer();</code> added, which can be a useful plugin hook.</p>
+
+<p><img src="http://miklb.com/user/files/aqueous_ss.png" class="right" alt="Aqueous screen shot" />I’m proud to release my fourth Habari theme, the third port, Aqueous.  Based on an open source design by <a href="http://www.sixshootermedia.com/">Six Shooter Media</a>, this 3 column theme sports a fluid width middle column.  The original icons have been redone with custom icons that I created so there’s no issue with redistribution.  I also have restyled the comments and comment form from the original design, as well as a few other modifications for a working blog, but it still maintains the original integrity of the design, which I’ve always liked.  It has that clean, modern feel to it, despite being several years old now.</p>
+
+<p>I had originally ported this theme for a personal site when I first switched over to Habari, and have just never gotten around to releasing it.  Now that I’m not using that site, it seemed only logical to make it available to other Habari users, especially with the lack of themes in the community.  I hope that changes sooner than later, hopefully after .6 gets released and .7 starts focusing more on the theme engine.  I’m curious to see what people have in mind for it, but that’s for another blog post.</p>
+
+<p>I’m releasing this as an alpha release, because I really haven’t tested it in other browsers aside from Safari 4beta, but wanted to get it out and see if there was any real interest before putting too much more time into it.</p>
+
+<p>One idea that I have for future a release is author comment styling, as it currently styles the comments all the same.  Again, this will happen if I see that’s there is actually any interest in the theme.</p>
+
+<p>The original design was released under a Creative Commons license, so there’s no chance of the theme moving to the Habari extras repository, so any comments, bugs, feature requests should be left in the comments on this post.  Future posts about releases will direct comments to this post.  There’s nothing worse than a site having comments scattered about the same theme/plugin.</p>
+
+<p><a href="http://miklb.com/downloads/Aqueous0.3.1.zip" onclick="javascript: pageTracker._trackPageview('/downloads/Aqueous0.3.1'); ">Download Aqueous 0.3.1 alpha now</a>.</p>
+
+  </div>
+</article>
+
+<section id="webmentions" class="entry__comments">
+
+				<h1>Webmentions</h1>
+      
+      
+
+      
+	   <div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
+     
+	</section>
+
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
+            A Few Thoughts About WordPress REST API and Core
             <small><time datetime="2016-02-12T00:00:00+00:00">12 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
-                Text Expander snippet for Jekyll With Slug for Permalink
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
+            Text Expander snippet for Jekyll With Slug for Permalink
             <small><time datetime="2016-02-06T00:00:00+00:00">06 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/first-listen-luther-dickinson">
-                First Listen: Luther Dickinson
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/first-listen-luther-dickinson">
+            First Listen: Luther Dickinson
             <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-        </ul>
-      </aside>
-      <script src="/js/webmention_io.js"></script>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+<script src="/js/webmention_io.js"></script>
+
     </main>
+
   </body>
 </html>

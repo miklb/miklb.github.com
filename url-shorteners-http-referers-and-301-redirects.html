@@ -1,139 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <title>
+    
       URL Shorteners, HTTP Referers and 301 Redirects &middot; Miklb's Mindless Ramblings
     
   </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
-    <!-- Begin Jekyll SEO tag v1.3.1 -->
-    <title>URL Shorteners, HTTP Referers and 301 Redirects - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="URL Shorteners, HTTP Referers and 301 Redirects" />
-    <meta name="description" content="I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of BigJibby in the Habari IRC channel, I was able to get it working with Habari." />
-    <meta property='og:description' content="I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of BigJibby in the Habari IRC channel, I was able to get it working with Habari." />
-    <link rel="canonical" href="miklb.com/url-shorteners-http-referers-and-301-redirects" />
-    <meta property='og:url' content='miklb.com/url-shorteners-http-referers-and-301-redirects' />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2009-06-29T00:00:00+00:00" />
-    <link rel="next" href="miklb.com/procrastinating-to-get-things-done" title="Procrastinating to Get Things Done" />
-    <link rel="prev" href="miklb.com/how-about-giving-me-some-credit-hosers" title="How About Giving Me Some Credit Hosers" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
-    <meta name="twitter:title" content="URL Shorteners, HTTP Referers and 301 Redirects - Miklb’s Mindless Ramblings" />
-    <meta name="twitter:description" content="I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of BigJibby in the Habari IRC channel, I was able to get it working with Habari." />
-    <meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
-    <script type="application/ld+json">
-      {
-          "@context" : "http://schema.org",
-      
-      
-          "@type" : "BlogPosting",
-      
-          "headline": "URL Shorteners, HTTP Referers and 301 Redirects",
-      
-          "datePublished": "2009-06-29T00:00:00+00:00",
-      
-          "description": "I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of BigJibby in the Habari IRC channel, I was able to get it working with Habari.",
-      
-          "logo": "miklb.com/public/favicon.png",
-      
-      
-          "url" : "miklb.com/url-shorteners-http-referers-and-301-redirects"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
+  <!-- Webmentions -->
+  <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
+  <!-- Begin Jekyll SEO tag v1.3.1 -->
+<title>URL Shorteners, HTTP Referers and 301 Redirects - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="URL Shorteners, HTTP Referers and 301 Redirects" />
+<meta name="description" content="I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of BigJibby in the Habari IRC channel, I was able to get it working with Habari." />
+<meta property='og:description' content="I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of BigJibby in the Habari IRC channel, I was able to get it working with Habari." />
+<link rel="canonical" href="miklb.com/url-shorteners-http-referers-and-301-redirects" />
+<meta property='og:url' content='miklb.com/url-shorteners-http-referers-and-301-redirects' />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2009-06-29T00:00:00+00:00" />
+<link rel="next" href="miklb.com/procrastinating-to-get-things-done" title="Procrastinating to Get Things Done" />
+<link rel="prev" href="miklb.com/how-about-giving-me-some-credit-hosers" title="How About Giving Me Some Credit Hosers" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@miklb" />
+<meta name="twitter:title" content="URL Shorteners, HTTP Referers and 301 Redirects - Miklb’s Mindless Ramblings" />
+<meta name="twitter:description" content="I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of BigJibby in the Habari IRC channel, I was able to get it working with Habari." />
+<meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+
+
+    "@type" : "BlogPosting",
+
+    "headline": "URL Shorteners, HTTP Referers and 301 Redirects",
+
+    "datePublished": "2009-06-29T00:00:00+00:00",
+
+    "description": "I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of BigJibby in the Habari IRC channel, I was able to get it working with Habari.",
+
+    "logo": "miklb.com/public/favicon.png",
+
+
+    "url" : "miklb.com/url-shorteners-http-referers-and-301-redirects"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+
   <body class="layout-reverse">
+
     <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/index.html">
-              Miklb's Mindless Ramblings
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about h-card">
+      <h1>
+        <a class="u-url"href="/index.html">
+          Miklb's Mindless Ramblings
         </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
+      </h1>
+      <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
+      and this is my little slice of the web. </p>
     </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
+
+      
+
+      
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
+      <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
+
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
     <main class="container content">
       <article class="post h-entry">
-        <h1 class="post-title p-name">URL Shorteners, HTTP Referers and 301 Redirects</h1>
-        <time datetime="2009-06-29T00:00:00+00:00" class="dt-time post-date">29 Jun 2009</time>
-        <div class="e-content">
-          <p class="lead p-bridgy-twitter-content">
-          </p>
-          <p>I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of <a href="http://mattread.com/">BigJibby</a> in the Habari IRC channel, I was able to get it working with Habari.</p>
-          <p>I more or less forgot about it, until a few people noticed it and asked if it was a plugin.  When I replied it wasn’t, they asked if I could make it into one.  So it went into a to-do list I keep of Habari related ideas.  This evening I began working on it, and while troubleshooting how to actually output something to the entry single template (that’s a whole other can of worms), I discovered the code snippet wasn’t working.  With the help of <a href="http://twofishcreative.com/michael/blog/">Michael</a>, we discovered the problem wasn’t with the code snippet, rather it was with the URL shorteners.  Twitter recently started defaulting to <a href="http://bit.ly">Bit.ly</a>, and I recently began experimenting with <a href="http://tr.im">Tr.im</a>,  <span class="pquote-r">both of which weren’t sending twitter.com as the referrer.  Rather, due to their 301 redirect they return <strong>NULL</strong>.  Which in a nut shell sucks. </span></p>
-          <p>Somehow Google Analytics is able to track referrals from Twitter, as last week when I had a huge upsurge in traffic from the popularity of the <a href="http://miklb.com/infinite-summer-bookmarks">Infinite Summer Bookmarks</a>, I’m seeing 50 visitors from Twitter the first day (of the 785, by far a record for this little weblog).</p>
-          <p>At this point, finishing the plugin seems moot, as the only way to be sure that visitors will actually see the message would be to use a URL shortener that doesn’t return NULL, of which, the only one we found that to not be the case was Owen’s <a href="http://pastoid.com">Pastoid</a>.  I didn’t test Tinyurl, nor was I interested in looking for others.  The disappointment had already set in.  Besides that, if you are auto posting to Twitter with a plugin, you wouldn’t have the option to use a different shortener.</p>
-          <p>So kind readers/stumble-uponers, if anyone has a solution to this problem, please enlighten me.  Meanwhile, I’ll work out the issue with Habari and my desire to output content on a single entry template within the content output, not above the body tag.</p>
-          <p>For anyone interested in the snippet of code I am using:</p>
-          <p><code>if ( parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) == 'twitter.com' ) {
+  <h1 class="post-title p-name">URL Shorteners, HTTP Referers and 301 Redirects</h1>
+  <time datetime="2009-06-29T00:00:00+00:00" class="dt-time post-date">29 Jun 2009</time>
+  <div class="e-content">
+    <p class="lead p-bridgy-twitter-content">
+      
+    </p>
+      <p>I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of <a href="http://mattread.com/">BigJibby</a> in the Habari IRC channel, I was able to get it working with Habari.</p>
+
+<p>I more or less forgot about it, until a few people noticed it and asked if it was a plugin.  When I replied it wasn’t, they asked if I could make it into one.  So it went into a to-do list I keep of Habari related ideas.  This evening I began working on it, and while troubleshooting how to actually output something to the entry single template (that’s a whole other can of worms), I discovered the code snippet wasn’t working.  With the help of <a href="http://twofishcreative.com/michael/blog/">Michael</a>, we discovered the problem wasn’t with the code snippet, rather it was with the URL shorteners.  Twitter recently started defaulting to <a href="http://bit.ly">Bit.ly</a>, and I recently began experimenting with <a href="http://tr.im">Tr.im</a>,  <span class="pquote-r">both of which weren’t sending twitter.com as the referrer.  Rather, due to their 301 redirect they return <strong>NULL</strong>.  Which in a nut shell sucks. </span></p>
+
+<p>Somehow Google Analytics is able to track referrals from Twitter, as last week when I had a huge upsurge in traffic from the popularity of the <a href="http://miklb.com/infinite-summer-bookmarks">Infinite Summer Bookmarks</a>, I’m seeing 50 visitors from Twitter the first day (of the 785, by far a record for this little weblog).</p>
+
+<p>At this point, finishing the plugin seems moot, as the only way to be sure that visitors will actually see the message would be to use a URL shortener that doesn’t return NULL, of which, the only one we found that to not be the case was Owen’s <a href="http://pastoid.com">Pastoid</a>.  I didn’t test Tinyurl, nor was I interested in looking for others.  The disappointment had already set in.  Besides that, if you are auto posting to Twitter with a plugin, you wouldn’t have the option to use a different shortener.</p>
+
+<p>So kind readers/stumble-uponers, if anyone has a solution to this problem, please enlighten me.  Meanwhile, I’ll work out the issue with Habari and my desire to output content on a single entry template within the content output, not above the body tag.</p>
+
+<p>For anyone interested in the snippet of code I am using:</p>
+
+<p><code>if ( parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) == 'twitter.com' ) {
 	    echo "&lt;h2 class='twittervisit'&gt;Welcome, Twitter visitor! If this post is useful, don't hesitate to retweet!&lt;/h2&gt;";
-            </code></p>
-        </div>
-      </article>
-      <section id="webmentions" class="entry__comments">
-        <h1>Webmentions</h1>
-        <div class="webmentions">
-          <p class="webmentions__not-found">No webmentions were found</p>
-        </div>
-      </section>
-      <aside class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          <li>
-            <h3>
-              <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
-                A Few Thoughts About WordPress REST API and Core
+</code></p>
+
+  </div>
+</article>
+
+<section id="webmentions" class="entry__comments">
+
+				<h1>Webmentions</h1>
+      
+      
+
+      
+	   <div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
+     
+	</section>
+
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
+            A Few Thoughts About WordPress REST API and Core
             <small><time datetime="2016-02-12T00:00:00+00:00">12 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
-                Text Expander snippet for Jekyll With Slug for Permalink
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
+            Text Expander snippet for Jekyll With Slug for Permalink
             <small><time datetime="2016-02-06T00:00:00+00:00">06 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/first-listen-luther-dickinson">
-                First Listen: Luther Dickinson
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/first-listen-luther-dickinson">
+            First Listen: Luther Dickinson
             <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-        </ul>
-      </aside>
-      <script src="/js/webmention_io.js"></script>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+<script src="/js/webmention_io.js"></script>
+
     </main>
+
   </body>
 </html>

@@ -1,133 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <title>
+    
       Beyond Barcamp Tampa Bay &middot; Miklb's Mindless Ramblings
     
   </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
-    <!-- Begin Jekyll SEO tag v1.3.1 -->
-    <title>Beyond Barcamp Tampa Bay - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Beyond Barcamp Tampa Bay" />
-    <meta name="description" content="This past weekend was the 3rd Barcamp Tampa Bay. Afterwords, Peter Radizeski one of the original organizers tweeted “how do we keep the community talking between BarCamps?”, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area." />
-    <meta property='og:description' content="This past weekend was the 3rd Barcamp Tampa Bay. Afterwords, Peter Radizeski one of the original organizers tweeted “how do we keep the community talking between BarCamps?”, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area." />
-    <link rel="canonical" href="miklb.com/beyond-barcamp-tampa-bay" />
-    <meta property='og:url' content='miklb.com/beyond-barcamp-tampa-bay' />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2010-09-28T00:00:00+00:00" />
-    <link rel="next" href="miklb.com/less-twitter-more-me" title="Less Twitter, More Me" />
-    <link rel="prev" href="miklb.com/shooting-manual-with-the-canon-sx-20-is" title="Shooting Manual with the Canon SX-20 IS" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
-    <meta name="twitter:title" content="Beyond Barcamp Tampa Bay - Miklb’s Mindless Ramblings" />
-    <meta name="twitter:description" content="This past weekend was the 3rd Barcamp Tampa Bay. Afterwords, Peter Radizeski one of the original organizers tweeted “how do we keep the community talking between BarCamps?”, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area." />
-    <meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
-    <script type="application/ld+json">
-      {
-          "@context" : "http://schema.org",
-      
-      
-          "@type" : "BlogPosting",
-      
-          "headline": "Beyond Barcamp Tampa Bay",
-      
-          "datePublished": "2010-09-28T00:00:00+00:00",
-      
-          "description": "This past weekend was the 3rd Barcamp Tampa Bay. Afterwords, Peter Radizeski one of the original organizers tweeted “how do we keep the community talking between BarCamps?”, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area.",
-      
-          "logo": "miklb.com/public/favicon.png",
-      
-      
-          "url" : "miklb.com/beyond-barcamp-tampa-bay"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
+  <!-- Webmentions -->
+  <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
+  <!-- Begin Jekyll SEO tag v1.3.1 -->
+<title>Beyond Barcamp Tampa Bay - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Beyond Barcamp Tampa Bay" />
+<meta name="description" content="This past weekend was the 3rd Barcamp Tampa Bay. Afterwords, Peter Radizeski one of the original organizers tweeted “how do we keep the community talking between BarCamps?”, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area." />
+<meta property='og:description' content="This past weekend was the 3rd Barcamp Tampa Bay. Afterwords, Peter Radizeski one of the original organizers tweeted “how do we keep the community talking between BarCamps?”, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area." />
+<link rel="canonical" href="miklb.com/beyond-barcamp-tampa-bay" />
+<meta property='og:url' content='miklb.com/beyond-barcamp-tampa-bay' />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2010-09-28T00:00:00+00:00" />
+<link rel="next" href="miklb.com/less-twitter-more-me" title="Less Twitter, More Me" />
+<link rel="prev" href="miklb.com/shooting-manual-with-the-canon-sx-20-is" title="Shooting Manual with the Canon SX-20 IS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@miklb" />
+<meta name="twitter:title" content="Beyond Barcamp Tampa Bay - Miklb’s Mindless Ramblings" />
+<meta name="twitter:description" content="This past weekend was the 3rd Barcamp Tampa Bay. Afterwords, Peter Radizeski one of the original organizers tweeted “how do we keep the community talking between BarCamps?”, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area." />
+<meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+
+
+    "@type" : "BlogPosting",
+
+    "headline": "Beyond Barcamp Tampa Bay",
+
+    "datePublished": "2010-09-28T00:00:00+00:00",
+
+    "description": "This past weekend was the 3rd Barcamp Tampa Bay. Afterwords, Peter Radizeski one of the original organizers tweeted “how do we keep the community talking between BarCamps?”, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area.",
+
+    "logo": "miklb.com/public/favicon.png",
+
+
+    "url" : "miklb.com/beyond-barcamp-tampa-bay"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+
   <body class="layout-reverse">
+
     <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/index.html">
-              Miklb's Mindless Ramblings
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about h-card">
+      <h1>
+        <a class="u-url"href="/index.html">
+          Miklb's Mindless Ramblings
         </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
+      </h1>
+      <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
+      and this is my little slice of the web. </p>
     </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
+
+      
+
+      
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
+      <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
+
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
     <main class="container content">
       <article class="post h-entry">
-        <h1 class="post-title p-name">Beyond Barcamp Tampa Bay</h1>
-        <time datetime="2010-09-28T00:00:00+00:00" class="dt-time post-date">28 Sep 2010</time>
-        <div class="e-content">
-          <p class="lead p-bridgy-twitter-content">
-          </p>
-          <p><a href="http://www.flickr.com/photos/riverspring/5028694522/"><img src="http://farm5.static.flickr.com/4092/5028694522_b364c8b4d9.jpg" class="right" /></a>This past weekend was the 3rd <a href="http://barcamptampabay.org/">Barcamp Tampa Bay</a>. Afterwords, Peter Radizeski one of the original organizers tweeted <a href="http://twitter.com/radinfo/status/25640430439">“how do we keep the community talking between BarCamps?”</a>, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area.</p>
-          <p>I was someone who had switched careers, was working from home freelancing, and all of my interaction was online.  I used to joke that I had more friends in the industry overseas than I did in the Bay area.  Now that is not the case.  Perhaps partly from the proliferation of services like Twitter, but I now know real live human beings living in the Bay area who work with similar technologies as myself.  That circle grows larger every time I attend a local event, be it Barcamp or more recently, the local <a href="http://tampabaywordpress.org/">WordPress User Group</a>.  I don’t get to <em>hang out</em> with these people as much as I’d like, but that’s the case with my friends not in the industry too.  Life just gets in the way.</p>
-          <p>I do think there is a responsibility for those who want to see a more thriving community locally to as I said, foster the smaller communities and try and bring the Barcamp sharing and nurturing mentality to their smaller circles.  Perhaps it’s time someone reaches out to Ryan and the <a href="http://floridacreatives.com/category/tags/tampa">Florida Creatives</a> to start an active, local chapter to help bring the smaller communities together.  Maybe there’s another umbrella organization that just hasn’t been started.  Are people put off by the term “creative”? I honestly don’t have the answer.  I know earlier this year myself and several others discussed what possible umbrella organization could help achieve this, and nothing came of it.  Maybe it’s time to revisit the conversation in a broader scope?  I was speaking with an organizer of BarCamp Sarasota and they do events year round under the BarCamp moniker.  Is BarCamp evolving from the DIY stick-it-to-the-man un-conference into a “brand” that people can associate with and can be that umbrella?  Again, I don’t claim to have all of the answers, but certainly would love to see the discussion continue, and will continue to make efforts in my smaller circles to build a local community of web technologist for the Tampa Bay area.</p>
-        </div>
-      </article>
-      <section id="webmentions" class="entry__comments">
-        <h1>Webmentions</h1>
-        <div class="webmentions">
-          <p class="webmentions__not-found">No webmentions were found</p>
-        </div>
-      </section>
-      <aside class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          <li>
-            <h3>
-              <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
-                A Few Thoughts About WordPress REST API and Core
+  <h1 class="post-title p-name">Beyond Barcamp Tampa Bay</h1>
+  <time datetime="2010-09-28T00:00:00+00:00" class="dt-time post-date">28 Sep 2010</time>
+  <div class="e-content">
+    <p class="lead p-bridgy-twitter-content">
+      
+    </p>
+      <p><a href="http://www.flickr.com/photos/riverspring/5028694522/"><img src="http://farm5.static.flickr.com/4092/5028694522_b364c8b4d9.jpg" class="right" /></a>This past weekend was the 3rd <a href="http://barcamptampabay.org/">Barcamp Tampa Bay</a>. Afterwords, Peter Radizeski one of the original organizers tweeted <a href="http://twitter.com/radinfo/status/25640430439">“how do we keep the community talking between BarCamps?”</a>, to which my answer was that I believe the key is to foster the “mini” communities that come together at Barcamps, and that cross pollination amongst the smaller communities will keep the discussions going.  To which Peter replied he didn’t think the cross pollination was working.  I respect all of the work that Peter has done to help build Tampa Bay tech communities.  I think we move in slightly different “mini” communities, so perhaps there are some that don’t cross over as much as others, but I will say in the 2 years since BarCamp 2008, I genuinely believe that it is happening.  Perhaps not as fast as some would like, but it wasn’t that long ago that I didn’t know a single person in real life working with WordPress, web development or web technologies in the Tampa Bay area.</p>
+
+<p>I was someone who had switched careers, was working from home freelancing, and all of my interaction was online.  I used to joke that I had more friends in the industry overseas than I did in the Bay area.  Now that is not the case.  Perhaps partly from the proliferation of services like Twitter, but I now know real live human beings living in the Bay area who work with similar technologies as myself.  That circle grows larger every time I attend a local event, be it Barcamp or more recently, the local <a href="http://tampabaywordpress.org/">WordPress User Group</a>.  I don’t get to <em>hang out</em> with these people as much as I’d like, but that’s the case with my friends not in the industry too.  Life just gets in the way.</p>
+
+<p>I do think there is a responsibility for those who want to see a more thriving community locally to as I said, foster the smaller communities and try and bring the Barcamp sharing and nurturing mentality to their smaller circles.  Perhaps it’s time someone reaches out to Ryan and the <a href="http://floridacreatives.com/category/tags/tampa">Florida Creatives</a> to start an active, local chapter to help bring the smaller communities together.  Maybe there’s another umbrella organization that just hasn’t been started.  Are people put off by the term “creative”? I honestly don’t have the answer.  I know earlier this year myself and several others discussed what possible umbrella organization could help achieve this, and nothing came of it.  Maybe it’s time to revisit the conversation in a broader scope?  I was speaking with an organizer of BarCamp Sarasota and they do events year round under the BarCamp moniker.  Is BarCamp evolving from the DIY stick-it-to-the-man un-conference into a “brand” that people can associate with and can be that umbrella?  Again, I don’t claim to have all of the answers, but certainly would love to see the discussion continue, and will continue to make efforts in my smaller circles to build a local community of web technologist for the Tampa Bay area.</p>
+
+  </div>
+</article>
+
+<section id="webmentions" class="entry__comments">
+
+				<h1>Webmentions</h1>
+      
+      
+
+      
+	   <div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
+     
+	</section>
+
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
+            A Few Thoughts About WordPress REST API and Core
             <small><time datetime="2016-02-12T00:00:00+00:00">12 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
-                Text Expander snippet for Jekyll With Slug for Permalink
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
+            Text Expander snippet for Jekyll With Slug for Permalink
             <small><time datetime="2016-02-06T00:00:00+00:00">06 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/first-listen-luther-dickinson">
-                First Listen: Luther Dickinson
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/first-listen-luther-dickinson">
+            First Listen: Luther Dickinson
             <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-        </ul>
-      </aside>
-      <script src="/js/webmention_io.js"></script>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+<script src="/js/webmention_io.js"></script>
+
     </main>
+
   </body>
 </html>

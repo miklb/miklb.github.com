@@ -1,131 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <title>
+    
       Construct &middot; Miklb's Mindless Ramblings
     
   </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
-    <!-- Begin Jekyll SEO tag v1.3.1 -->
-    <title>Construct - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Construct" />
-    <meta name="description" content="bad ass! Construct - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS" />
-    <meta property='og:description' content="bad ass! Construct - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS" />
-    <link rel="canonical" href="miklb.com/construct" />
-    <meta property='og:url' content='miklb.com/construct' />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2008-01-28T00:00:00+00:00" />
-    <link rel="next" href="miklb.com/links-for-2008-01-29" title="links for 2008-01-29" />
-    <link rel="prev" href="miklb.com/mzingi-0-3" title="Mzingi 0.3" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
-    <meta name="twitter:title" content="Construct - Miklb’s Mindless Ramblings" />
-    <meta name="twitter:description" content="bad ass! Construct - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS" />
-    <meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
-    <script type="application/ld+json">
-      {
-          "@context" : "http://schema.org",
-      
-      
-          "@type" : "BlogPosting",
-      
-          "headline": "Construct",
-      
-          "datePublished": "2008-01-28T00:00:00+00:00",
-      
-          "description": "bad ass! Construct - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS",
-      
-          "logo": "miklb.com/public/favicon.png",
-      
-      
-          "url" : "miklb.com/construct"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
+  <!-- Webmentions -->
+  <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
+  <!-- Begin Jekyll SEO tag v1.3.1 -->
+<title>Construct - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Construct" />
+<meta name="description" content="bad ass! Construct - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS" />
+<meta property='og:description' content="bad ass! Construct - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS" />
+<link rel="canonical" href="miklb.com/construct" />
+<meta property='og:url' content='miklb.com/construct' />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2008-01-28T00:00:00+00:00" />
+<link rel="next" href="miklb.com/links-for-2008-01-29" title="links for 2008-01-29" />
+<link rel="prev" href="miklb.com/mzingi-0-3" title="Mzingi 0.3" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@miklb" />
+<meta name="twitter:title" content="Construct - Miklb’s Mindless Ramblings" />
+<meta name="twitter:description" content="bad ass! Construct - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS" />
+<meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+
+
+    "@type" : "BlogPosting",
+
+    "headline": "Construct",
+
+    "datePublished": "2008-01-28T00:00:00+00:00",
+
+    "description": "bad ass! Construct - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS",
+
+    "logo": "miklb.com/public/favicon.png",
+
+
+    "url" : "miklb.com/construct"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+
   <body class="layout-reverse">
+
     <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/index.html">
-              Miklb's Mindless Ramblings
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about h-card">
+      <h1>
+        <a class="u-url"href="/index.html">
+          Miklb's Mindless Ramblings
         </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
+      </h1>
+      <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
+      and this is my little slice of the web. </p>
     </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
+
+      
+
+      
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
+      <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
+
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
     <main class="container content">
       <article class="post h-entry">
-        <h1 class="post-title p-name">Construct</h1>
-        <time datetime="2008-01-28T00:00:00+00:00" class="dt-time post-date">28 Jan 2008</time>
-        <div class="e-content">
-          <p class="lead p-bridgy-twitter-content">
-          </p>
-          <p>bad ass! <a href="http://www.christianmontoya.com/2008/01/28/construct-04-beta-is-something-i-am-seriously-proud-of/">Construct</a> - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS</p>
-        </div>
-      </article>
-      <section id="webmentions" class="entry__comments">
-        <h1>Webmentions</h1>
-        <div class="webmentions">
-          <p class="webmentions__not-found">No webmentions were found</p>
-        </div>
-      </section>
-      <aside class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          <li>
-            <h3>
-              <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
-                A Few Thoughts About WordPress REST API and Core
+  <h1 class="post-title p-name">Construct</h1>
+  <time datetime="2008-01-28T00:00:00+00:00" class="dt-time post-date">28 Jan 2008</time>
+  <div class="e-content">
+    <p class="lead p-bridgy-twitter-content">
+      
+    </p>
+      <p>bad ass! <a href="http://www.christianmontoya.com/2008/01/28/construct-04-beta-is-something-i-am-seriously-proud-of/">Construct</a> - a BluePrint custom grid maker that allows the addition of semantic classes and parses the html AND CSS</p>
+
+  </div>
+</article>
+
+<section id="webmentions" class="entry__comments">
+
+				<h1>Webmentions</h1>
+      
+      
+
+      
+	   <div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
+     
+	</section>
+
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
+            A Few Thoughts About WordPress REST API and Core
             <small><time datetime="2016-02-12T00:00:00+00:00">12 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
-                Text Expander snippet for Jekyll With Slug for Permalink
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
+            Text Expander snippet for Jekyll With Slug for Permalink
             <small><time datetime="2016-02-06T00:00:00+00:00">06 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/first-listen-luther-dickinson">
-                First Listen: Luther Dickinson
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/first-listen-luther-dickinson">
+            First Listen: Luther Dickinson
             <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-        </ul>
-      </aside>
-      <script src="/js/webmention_io.js"></script>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+<script src="/js/webmention_io.js"></script>
+
     </main>
+
   </body>
 </html>

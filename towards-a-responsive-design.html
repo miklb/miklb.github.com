@@ -1,135 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <title>
+    
       Towards a Responsive Design &middot; Miklb's Mindless Ramblings
     
   </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
-    <!-- Begin Jekyll SEO tag v1.3.1 -->
-    <title>Towards a Responsive Design - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Towards a Responsive Design" />
-    <meta name="description" content="I am not sure I had really paid attention to the term responsive design when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now." />
-    <meta property='og:description' content="I am not sure I had really paid attention to the term responsive design when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now." />
-    <link rel="canonical" href="miklb.com/towards-a-responsive-design" />
-    <meta property='og:url' content='miklb.com/towards-a-responsive-design' />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2011-03-13T00:00:00+00:00" />
-    <link rel="next" href="miklb.com/miklbcom-turns-6" title="Miklb.com Turns 6" />
-    <link rel="prev" href="miklb.com/speaking-of-twitter" title="Speaking of Twitter" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
-    <meta name="twitter:title" content="Towards a Responsive Design - Miklb’s Mindless Ramblings" />
-    <meta name="twitter:description" content="I am not sure I had really paid attention to the term responsive design when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now." />
-    <meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
-    <script type="application/ld+json">
-      {
-          "@context" : "http://schema.org",
-      
-      
-          "@type" : "BlogPosting",
-      
-          "headline": "Towards a Responsive Design",
-      
-          "datePublished": "2011-03-13T00:00:00+00:00",
-      
-          "description": "I am not sure I had really paid attention to the term responsive design when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now.",
-      
-          "logo": "miklb.com/public/favicon.png",
-      
-      
-          "url" : "miklb.com/towards-a-responsive-design"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
+  <!-- Webmentions -->
+  <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml">
+  <!-- Begin Jekyll SEO tag v1.3.1 -->
+<title>Towards a Responsive Design - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Towards a Responsive Design" />
+<meta name="description" content="I am not sure I had really paid attention to the term responsive design when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now." />
+<meta property='og:description' content="I am not sure I had really paid attention to the term responsive design when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now." />
+<link rel="canonical" href="miklb.com/towards-a-responsive-design" />
+<meta property='og:url' content='miklb.com/towards-a-responsive-design' />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2011-03-13T00:00:00+00:00" />
+<link rel="next" href="miklb.com/miklbcom-turns-6" title="Miklb.com Turns 6" />
+<link rel="prev" href="miklb.com/speaking-of-twitter" title="Speaking of Twitter" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@miklb" />
+<meta name="twitter:title" content="Towards a Responsive Design - Miklb’s Mindless Ramblings" />
+<meta name="twitter:description" content="I am not sure I had really paid attention to the term responsive design when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now." />
+<meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+
+
+    "@type" : "BlogPosting",
+
+    "headline": "Towards a Responsive Design",
+
+    "datePublished": "2011-03-13T00:00:00+00:00",
+
+    "description": "I am not sure I had really paid attention to the term responsive design when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now.",
+
+    "logo": "miklb.com/public/favicon.png",
+
+
+    "url" : "miklb.com/towards-a-responsive-design"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+
   <body class="layout-reverse">
+
     <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/index.html">
-              Miklb's Mindless Ramblings
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about h-card">
+      <h1>
+        <a class="u-url"href="/index.html">
+          Miklb's Mindless Ramblings
         </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
+      </h1>
+      <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
+      and this is my little slice of the web. </p>
     </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/index.html" rel="me">Home</a>
+
+      
+
+      
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
+      <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
+
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
     <main class="container content">
       <article class="post h-entry">
-        <h1 class="post-title p-name">Towards a Responsive Design</h1>
-        <time datetime="2011-03-13T00:00:00+00:00" class="dt-time post-date">13 Mar 2011</time>
-        <div class="e-content">
-          <p class="lead p-bridgy-twitter-content">
-          </p>
-          <p>I am not sure I had really paid attention to the term <em>responsive design</em> when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now.</p>
-          <p>I also wanted to learn more about HTML5 and CSS3.  For my own site, I’m completely not interested in supporting old browsers, save for using a HTML5 polyfill for &lt; IE 9.  If someone is using IE 6, they probably don’t have much interest in what I’m sharing anyway.  So I played with some max-widths and widths based on percentage until I found something that worked for me.  Perhaps that’s not the best way to approach it, as the site really should be about those visiting, but I guess <span class="pquote-r">I made an assumption my browsers/screen resolutions/mobile devices were common enough that if it looked OK to me, it should look OK to visitors.</span>  Up until today, I was fairly happy with what I had come up with, save for the Youtube videos I’ve been posting.  I have been experimenting with using the HTML5 iframe wrapper Youtube offers, and choosing a very large version of the video.  Which wasn’t working out for smaller screens.</p>
-          <p>But as I’m studying more about the advanced concepts of responsive design and using media queries, I ran across Ethan Marcotte’s <a href="http://unstoppablerobotninja.com/entry/fluid-images/">fluid images</a> post.  Lo and behold, I set &lt;pre&gt;<code>iframe {max-width: 100%}</code>&lt;/pre&gt; and my video posts scale along with the surrounding content.</p>
-          <p>I’m not sure I will mess with this site anytime soon code or design wise, but I do intend to experiment with using the <a href="http://lessframework.com/">Less Framework</a> and possibly the intriguing <a href="http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/">context aware responsive images</a> script over on my <a href="http://cookingwith.miklb.com">cooking site</a>, which is a blueprint based grid design spun off of the markup of this site.  I don’t think it would take much to convert the grid to the Less Framework.  I may think about a design that’s not quite as similar to this in the process.</p>
-          <p>Regardless of the direction, I’d like to thank Kevin Zurawel for his <a href="http://arborwebsolutions.com/2011/03/wordcamp-miami-2011/">WordCamp Miami session on responsive design</a> and piquing my interest on the subject even more.</p>
-        </div>
-      </article>
-      <section id="webmentions" class="entry__comments">
-        <h1>Webmentions</h1>
-        <div class="webmentions">
-          <p class="webmentions__not-found">No webmentions were found</p>
-        </div>
-      </section>
-      <aside class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          <li>
-            <h3>
-              <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
-                A Few Thoughts About WordPress REST API and Core
+  <h1 class="post-title p-name">Towards a Responsive Design</h1>
+  <time datetime="2011-03-13T00:00:00+00:00" class="dt-time post-date">13 Mar 2011</time>
+  <div class="e-content">
+    <p class="lead p-bridgy-twitter-content">
+      
+    </p>
+      <p>I am not sure I had really paid attention to the term <em>responsive design</em> when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now.</p>
+
+<p>I also wanted to learn more about HTML5 and CSS3.  For my own site, I’m completely not interested in supporting old browsers, save for using a HTML5 polyfill for &lt; IE 9.  If someone is using IE 6, they probably don’t have much interest in what I’m sharing anyway.  So I played with some max-widths and widths based on percentage until I found something that worked for me.  Perhaps that’s not the best way to approach it, as the site really should be about those visiting, but I guess <span class="pquote-r">I made an assumption my browsers/screen resolutions/mobile devices were common enough that if it looked OK to me, it should look OK to visitors.</span>  Up until today, I was fairly happy with what I had come up with, save for the Youtube videos I’ve been posting.  I have been experimenting with using the HTML5 iframe wrapper Youtube offers, and choosing a very large version of the video.  Which wasn’t working out for smaller screens.</p>
+
+<p>But as I’m studying more about the advanced concepts of responsive design and using media queries, I ran across Ethan Marcotte’s <a href="http://unstoppablerobotninja.com/entry/fluid-images/">fluid images</a> post.  Lo and behold, I set &lt;pre&gt;<code>iframe {max-width: 100%}</code>&lt;/pre&gt; and my video posts scale along with the surrounding content.</p>
+
+<p>I’m not sure I will mess with this site anytime soon code or design wise, but I do intend to experiment with using the <a href="http://lessframework.com/">Less Framework</a> and possibly the intriguing <a href="http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/">context aware responsive images</a> script over on my <a href="http://cookingwith.miklb.com">cooking site</a>, which is a blueprint based grid design spun off of the markup of this site.  I don’t think it would take much to convert the grid to the Less Framework.  I may think about a design that’s not quite as similar to this in the process.</p>
+
+<p>Regardless of the direction, I’d like to thank Kevin Zurawel for his <a href="http://arborwebsolutions.com/2011/03/wordcamp-miami-2011/">WordCamp Miami session on responsive design</a> and piquing my interest on the subject even more.</p>
+
+  </div>
+</article>
+
+<section id="webmentions" class="entry__comments">
+
+				<h1>Webmentions</h1>
+      
+      
+
+      
+	   <div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
+     
+	</section>
+
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
+            A Few Thoughts About WordPress REST API and Core
             <small><time datetime="2016-02-12T00:00:00+00:00">12 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
-                Text Expander snippet for Jekyll With Slug for Permalink
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
+            Text Expander snippet for Jekyll With Slug for Permalink
             <small><time datetime="2016-02-06T00:00:00+00:00">06 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/first-listen-luther-dickinson">
-                First Listen: Luther Dickinson
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/first-listen-luther-dickinson">
+            First Listen: Luther Dickinson
             <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
-              </a>
-            </h3>
-          </li>
-        </ul>
-      </aside>
-      <script src="/js/webmention_io.js"></script>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+<script src="/js/webmention_io.js"></script>
+
     </main>
+
   </body>
 </html>
