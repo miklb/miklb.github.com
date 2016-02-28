@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<link rel="hub" href="https://miklb.superfeedr.com"/>
+
+  <title type="text" xml:lang="en"></title>
+    <link type="application/atom+xml" href="/atom.xml" rel="self"/>
+    <link href="/"/>
+  <updated>2016-02-28T02:55:32Z</updated>
+  <id>/</id>
+  <author>
+    <name>Michael Bishop</name>
+    <email>miklb@miklb.com</email>
+  </author>
+  <rights type="text">Copyright © 2016 {"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklb@miklb.com"}. All rights reserved.</rights>
+  
+  <entry>
+    <title>A Few Thoughts About WordPress REST API and Core</title>
+    <link rel="alternate" type="text/html" href="/a-few-thoughts-about-wordpress-rest-api-and-core/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=AFewThoughtsAboutWordPressRESTAPIandCore" />
+    <published>2016-02-12T00:00:00Z</published>
+    <updated>2016-02-12T00:00:00+00:00</updated>
+    <id>/a-few-thoughts-about-wordpress-rest-api-and-core</id>
+    <content type="html"><![CDATA[ <p>There has been much written about the ~drama~ discussions surrounding the <a href="http://v2.wp-api.org">WordPress REST API</a> and inclusion in core. Or exclusion, depending on who’s take you are reading. <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> Suffice to say, the gist I’ve gathered is that there are two competing perspectives, one side wants to incrementally add the API, the other wants a fully fleshed out, complete API before inclusion in core.</p>
+
+<p>I guess my 2¢ on the matter is this—the core tenet of the <a href="http://wordpressfoundation.org">WordPress Foundation</a> is “to democratize publishing through Open Source, GPL software.” From what I’ve gathered reading on the subject, the REST API team have the publishing portion of the API covered and ready for inclusion in core. The parts that would come (much) later would be things like the customizer, file editing, more site <strong>management</strong> tools, less about actually publishing.</p>
+
+<p>If democratized publishing is still the guiding principle for WordPress the project, then I don’t see how there is any debate. Opening up the methods to publish beyond what has been the only means available for basically the entire life of the project seems like a no brainer to this guy who’s been around it for 11 years this year. No one will truly know how much is opened up until it is in the hands of creative developers and then in the hands of content creators.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I’m specifically not linking to any of the <em>hot takes</em> on the subject. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Text Expander snippet for Jekyll With Slug for Permalink</title>
+    <link rel="alternate" type="text/html" href="/text-expander-snippet-for-jekyll-with-slug-for-permalink/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=TextExpandersnippetforJekyllWithSlugforPermalink" />
+    <published>2016-02-06T00:00:00Z</published>
+    <updated>2016-02-06T00:00:00+00:00</updated>
+    <id>/text-expander-snippet-for-jekyll-with-slug-for-permalink</id>
+    <content type="html"><![CDATA[ <p>There are plenty of TextExpander snippets floating around for creating Jekyll Front Matter, however, I wanted to take it a step further, and auto-create a slugified permalink with no additional work. The other part of the equation was that I wanted it to be able to use it on TE touch, which meant it had to be done in javascript. After a little Googling, some trial and error, I came up with one that takes a text input for the post title, generates a slug from that, and includes the current date. I understand that the date in the file can be used, however I may not always publish when the file was initially created. Not to mention, when I imported all of my posts from Habari, I needed to be able to use the original post date, not the date the file was created, so I continue to use that. You can certainly modify the snippet for your needs.</p>
+
+<p>Also note, I have a blank variable for <em>summary</em>. Since I’m using webmentions, I use the summary as the text for a tweet, which would be different than an excerpt. Some of this may change when I redo the site redesign, but for now, it’s how I roll.</p>
+
+<p>I would love feedback on how to make the snippet better as it’s my first javascript snippet. Just leave a comment on the gist.</p>
+
+<noscript><pre>var title = &#39;%filltext:name=Title%&#39;;
+slug = title.replace(/[^\w\s]/gi, &#39;&#39;);
+var newslug = title.split(&quot; &quot;).join(&quot;-&quot;);
+
+var dt = new Date();
+
+TextExpander.appendOutput(&quot;---\n&quot;);
+TextExpander.appendOutput(&quot;layout: post \n&quot;);
+TextExpander.appendOutput(&quot;title: &quot; + &#39;&quot;&#39; +title + &#39;&quot;&#39;+ &quot;\n&quot;);
+TextExpander.appendOutput(&quot;tags: \n&quot;);
+TextExpander.appendOutput(&quot;published: true \n&quot;);
+TextExpander.appendOutput(&quot;permalink: &quot;) +TextExpander.appendOutput(newslug.toLowerCase()); + TextExpander.appendOutput(&quot; \n&quot;);
+TextExpander.appendOutput(&quot;date: &quot;) + TextExpander.appendOutput(dt.getFullYear() + &quot;-&quot; +(dt.getMonth() +1) + &quot;-&quot; + dt.getDate()) + TextExpander.appendOutput(&quot;\n&quot;);
+TextExpander.appendOutput(&quot;summary: \n&quot;);
+TextExpander.appendOutput(&quot;--- \n&quot;);
+
+// %filltop%</pre></noscript>
+<script src="https://gist.github.com/miklb/53a93032fb8cc669b1fa.js"> </script>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>First Listen: Luther Dickinson</title>
+    <link rel="alternate" type="text/html" href="/first-listen-luther-dickinson/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=FirstListen:LutherDickinson" />
+    <published>2016-02-04T00:00:00Z</published>
+    <updated>2016-02-04T00:00:00+00:00</updated>
+    <id>/first-listen-luther-dickinson</id>
+    <content type="html"><![CDATA[ <p><cite>Garden &amp; Gun</cite> have a <a href="http://gardenandgun.com/blog/first-listen-luther-dickinson-blues-ballads">first listen of Luther Dickinson’s</a> solo album <cite>Blues &amp; Ballads.</cite> If you’re not familiar with Dickinson, he was a founding member of the band North Missippi All-Stars, a raucous blues band hailing from their name sake Mississippi. Founded with his brother, they played a modern version of the blues soaked southern rock, with an emphasis on the former. I had the pleasure of seeing them both in a smaller outdoor club setting as well as a larger festival type setting, both times blowing the doors off the crowd. Not sure his vocals will ever be considered above average, but the accompanying vocals from the likes of Mavis Staples balances it out. The lyrics and guitars more than make up for his singing, and its obvious the apple didn’t fall from the tree, as you can tell he knows his way around the studio.</p>
+
+<p>As first listens go, I’m enjoying it and will certainly be added to the rotation the next week.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Focused Blogs</title>
+    <link rel="alternate" type="text/html" href="/focused-blogs/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=FocusedBlogs" />
+    <published>2016-01-30T00:00:00Z</published>
+    <updated>2016-01-30T00:00:00+00:00</updated>
+    <id>/focused-blogs</id>
+    <content type="html"><![CDATA[ <p>In my ever revolving attempt to reboot my blog, one thing that has always slowed me down was my concern with being too esoteric in my topics. I want to talk about food, technology and everything in between.</p>
+
+<p>However, if I want to build any readership (isn’t that a part of blogging, sharing your thoughts with others?) I can’t be mixing in posts about forays into Python with posts about cooking vegetables sous-vide. Sure, there might be a readership that is interested in both topics as I am, but not enough to say “screw it.” So as I continue to work towards a true <a href="https://indiewebcamp.com">indieweb</a>, I’m pivoting a bit in my approach and will use this as domain, now 11 years old, as my base identifier and central clearing house. I’ve acquired several domains, 2 of which will be good to split the topics. Those too will be static Jekyll built sites, with links from this site to new posts.</p>
+
+<p>Certainly this is more me thinking out loud and putting it out there, as I intend for this domain to be, but my goal is to continue to do such here, rather than bottle  up my thoughts in my head.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Finally Webmentions with Jekyll</title>
+    <link rel="alternate" type="text/html" href="/finally-webmentons-with-jekyll-part-duex/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=FinallyWebmentionswithJekyll" />
+    <published>2016-01-30T00:00:00Z</published>
+    <updated>2016-01-30T00:00:00+00:00</updated>
+    <id>/finally-webmentions-with-jekyll</id>
+    <content type="html"><![CDATA[ <p>If you can’t tell by previous posts, I’ve been working on getting
+<a href="https://indiewebcamp.com/Webmention">Webmentions</a> to work with my new Jekyll site. I <em>think</em> I’ve finally nailed. If you take a look at my initial post <a href="http://miklb.com/making-the-move-to-jekyll">on moving to Jekyll</a>, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s <a href="https://github.com/aarongustafson/jekyll-webmention_io">Webmention.io plugin</a> I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a <code class="highlighter-rouge">sleep 2m</code> in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Breaking Out of the Silo</title>
+    <link rel="alternate" type="text/html" href="/breaking-out-of-the-silo/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=BreakingOutoftheSilo" />
+    <published>2016-01-30T00:00:00Z</published>
+    <updated>2016-01-30T00:00:00+00:00</updated>
+    <id>/breaking-out-of-the-silo</id>
+    <content type="html"><![CDATA[ <p>In my never ending quest to make this site all things “miklb”, one of the goals of the IndieWeb is to <a href="http://indiewebcamp.com/POSSE">POSSE</a>, that is, Publish on your own site, syndicate elsewhere. Breaking the habit of using Twitter without posting first on my site is going to be a hard one, but it’s a goal. While debates rage about extending character counts to 10,000 words, if we only were to use our blog for long form thoughts and link back to Twitter, this wouldn’t be an issue. Consider this an exercise in</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Testing Sending Webmentions</title>
+    <link rel="alternate" type="text/html" href="/testing-sending-webmentions/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=TestingSendingWebmentions" />
+    <published>2016-01-20T00:00:00Z</published>
+    <updated>2016-01-20T00:00:00+00:00</updated>
+    <id>/testing-sending-webmentions</id>
+    <content type="html"><![CDATA[ <p>This is either going to go well, or well, not so well. But we are getting there. Slowly.  Last one for the night. Take 2. Day 2.<a href="https://kartikprabhu.com/notes/test-note-totally-te" class="u-in-reply-to">Thanks for the help Kartik</a></p>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Making the Move to Jekyll</title>
+    <link rel="alternate" type="text/html" href="/making-the-move-to-jekyll/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=MakingtheMovetoJekyll" />
+    <published>2016-01-13T00:00:00Z</published>
+    <updated>2016-01-13T00:00:00+00:00</updated>
+    <id>/moving-to-jekyll</id>
+    <content type="html"><![CDATA[ <p>I’ve officially made the change from Habari to Jekyll. I will certainly have more to share on the move, both a post-mortem on Habari, as well as the process I’m using currently for using Jekyll.</p>
+
+<p>My basic workflow currently is serving the page from GitHub pages, however I’m using Travis CI to build the site and  publish to master branch<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> , there by bypassing the restrictions of gh-pages (specifically, their need for using –safe mode and not up-to-date version of Jekyll). Currently my use case would probably work within their parameters, however I had already started using 3.x and at the time of writing GitHub is using 2.x.</p>
+
+<p>More importantly to me, I want to be able to blog from my phone. It something that I feel has limited me in sharing interesting items I come across as well as stopping me from making time to put thoughts down as they come. I had originally wrote up <a href="http://miklb.com/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll">some thoughts on using iOS and Jekyll</a>, but later came across a better workflow<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<p>Finally, there are still some wonkiness around, I’m sure my Atom feed is broken and am not sure how to redirect that yet using GitHub. I doubt I had many subscribers, so if you stumble on this and previously read my random posts, you may need to update while I investigate options. Certainly there are some styling issues that I want to address as well as some under the hood improvements.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>This <a href="http://eshepelyuk.github.io/2014/10/28/automate-github-pages-travisci.html">tutorial</a> was an invaluable starting point. A <a href="http://mlota.github.io/2015/11/23/automating-deployment-github-pages-jekyll-travis.html">follow up tutorial from the comments</a> has great information as well. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Since I already own Drafts, Workflow and Working Copy <a href="http://www.matteocappadonna.org/Posting-with-Drafts,-Working-Copy-and-Workflow">integrating all 3</a> makes sense. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Embracing My Suckiness</title>
+    <link rel="alternate" type="text/html" href="/embracing-my-suckiness/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=EmbracingMySuckiness" />
+    <published>2015-05-30T00:00:00Z</published>
+    <updated>2015-05-30T00:00:00+00:00</updated>
+    <id>/embracing-my-suckiness</id>
+    <content type="html"><![CDATA[ <p>Some know I used to cook for a living. I’d like to think I was pretty good at it too. I started before the Food Network and all the other cooking shows on TV (save for old Julia Childs and Jacques Pepin shows on PBS and the like), before the internet blew up. Cooking in Tampa was almost like being in a vacuum.  You’d see what your peers were doing, maybe find a little time to travel to Miami or New Orleans, but otherwise, we were left to our own curiosity, a few books from some of the chefs on the cutting edge (Mark Miller and the staff at Coyote Cafe, Norma Van Aiken and his contemporaries like Allen Susser &amp; Mark Militello) and the occasional <em>Food &amp; Wine</em> article.</p>
+
+<p>We explored other cuisines via ethnic dining, scoured Oceanic Market for Asian ingredients, the markets of West Tampa for authentic Latin/Caribbean staples, and the open air markets outside the commercial produce market. We were then left to our imagination, creativity, and abilities to marry flavors together.</p>
+
+<p>That was kinda like how it was when I first started building websites. You’d look at someone’s source code. Someone might have written a blog post, or shared a tip in a forum somewhere. You bought Zeldman’s book on HTML standards, or Andy Budd’s CSS Mastery. It was a path of discovery and learning.</p>
+
+<p>Now, in this “age of information”, we (I), am bombarded with all of the latest tricks and best practices, cutting edge designs and techniques.  The external pressure to live up to these can be overwhelming. I’m no longer experimenting and discovering on my own, I’m drowning in information. It’s like having an elevator straight to the top of the mountain without experiencing the journey (I think that’s a paraphrase of something I read once about doing LSD, but I digress.)</p>
+
+<p>So what I’m finding is that I’m a deer in the headlights, afraid that I’ll be judged for not using the latest markup techniques. That someone will see my code and think I suck. And rather than embrace my suckiness, learn from it, I freeze. I stare at blank pages in my text editor. Meanwhile, new and more information continues to bombard me from every angle, and the cycle perpetuates.</p>
+
+<p>Today, when I cook at home, I’m not worried about having all the fancy ingredients or flashy sous vide machine. I’m confident in my skills and <strong>know</strong> the finished dish will look appetizing and taste better. Or, I might <em>just</em> miss the mark, but will recognize what I did wrong or forgot, storing it away in my memory bank or nowadays, jotted into a text file for the next time I make a similar dish. That’s not to say when time permits I don’t use those fancy ingredients or make my pasta from scratch but a good meal shouldn’t be passed up simply because I didn’t have artisanal cheese and didn’t make my pasta from scratch.</p>
+
+<p>So while I struggle to reboot my personal site and convert it to Jekyll, I need to recognize that I don’t have to follow every new trend. So what if it wasn’t built in Sass. The work I put into making it responsive, and FAST is more important in the long run. There are plenty of sites/devs out there that have well structured Sass directories and all the right mixins, but load slow as hell. There is plenty of time in the future to revisit converting it. The end goal for this site isn’t about being a Sass master, but an outlet to share my thoughts and experiences on the web. Why create an artificial hurdle?</p>
+
+<p>Which also means I need to document my failures, as well as successes. Whether that means publicly, or internally. Not only document them, but celebrate them. I need to reconnect with that ambitious kid who would spend every waking hour in the kitchen experimenting, enjoying the journey. Thus starts my journey of documenting this phase of my site.</p>
+ ]]></content>
+  </entry>
+  
+  <entry>
+    <title>The Web Ad Dilemma</title>
+    <link rel="alternate" type="text/html" href="/the-web-ad-dilemma/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=TheWebAdDilemma" />
+    <published>2015-05-23T00:00:00Z</published>
+    <updated>2015-05-23T00:00:00+00:00</updated>
+    <id>/the-web-ad-dilemma</id>
+    <content type="html"><![CDATA[ <p>I’ve been thinking about this subject quite a bit lately. While tools like Safari’s <em>Reader View</em> can help, the desire to support advertising on the web is impossible to square with the current implementation on most web sites.</p>
+
+<p>Fortunately, <a href="https://twitter.com/jimray">Jim Ray</a> breaks it down much more succinctly than I have been able to. <a href="http://flickerfusion.com/blocking-ad-blockers-with-better-ads.html">Blocking ad-blockers with better ads</a></p>
+
+<blockquote>The problem may be murky, but the solution is a bit more clear, if not exactly novel: build a better product. Not a fancier iPad app, a better ad product. For all the haranguing about native ads, they have the advantage of being immune to filters and, when done right, a genuinely better experience, certainly better than green double-underlines or the “content marketing platform” ads at the bottom of far too many web pages.</blockquote>
+
+<p>Just give me a well designed, compelling advertisement. Hell, I’ll share my browsing history if that is what it takes to serve me something I’m genuinely interested in.</p>
+ ]]></content>
+  </entry>
+  
+
+</feed>
