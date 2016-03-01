@@ -15,7 +15,8 @@ timezone:       America/New_York.
 
 twitter:
   username: miklb
-
+  creator: Michael Bishop
+  
 logo: public/favicon.png
 
 
