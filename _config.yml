@@ -35,8 +35,8 @@ sass:
 # About/contact
 author:
   name:              Michael Bishop
-  url:               https://twitter.com/miklb
-  email:             miklb@miklb.com
+  url:               https://miklb.com
+
 
 # Custom vars
 version:             3.0.0
