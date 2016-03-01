@@ -15,7 +15,7 @@ timezone:       America/New_York.
 
 twitter:
   username: miklb
-  
+
 logo: public/favicon.png
 
 
@@ -33,9 +33,9 @@ sass:
   style:            :compressed
 
 # About/contact
-author:
-  name: Michael Bishop
-  url: https://miklb.com
+#author:
+#  name: Michael Bishop
+#  url: https://miklb.com
 
 
 # Custom vars
