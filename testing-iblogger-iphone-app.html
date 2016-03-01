@@ -1,562 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-  <meta charset="UTF-8">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="MobileOptimized" content="width">
-  <meta name="HandheldFriendly" content="true">
-  <title>
-    
+    <meta charset="UTF-8">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <title>
       iBlogger iPhone App &middot; Miklb's Mindless Ramblings
     
   </title>
-  <!-- Webmentions -->
-  <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-  <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/styles.css">
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.png">
-
-  <!-- Feed -->
-  <link href="https://miklb.superfeedr.com" rel="hub"/>
-  <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-
-  <!-- SEO/Twitter/FB -->
-  <!-- Begin Jekyll SEO tag v1.3.1 -->
-<title>iBlogger iPhone App - Miklb’s Mindless Ramblings</title>
-<meta property="og:title" content="iBlogger iPhone App" />
-<meta name="description" content="Prior to my discovery that you can post to a Habari blog with Safari on the iPhone, I purchased iBlogger for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only priced at $0.99, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available." />
-<meta property='og:description' content="Prior to my discovery that you can post to a Habari blog with Safari on the iPhone, I purchased iBlogger for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only priced at $0.99, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available." />
-<link rel="canonical" href="miklb.com/testing-iblogger-iphone-app" />
-<meta property='og:url' content='miklb.com/testing-iblogger-iphone-app' />
-<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2009-01-28T00:00:00+00:00" />
-<link rel="next" href="miklb.com/freshbooks-getting-customer-service-right" title="Freshbooks, Getting Customer Service Right" />
-<link rel="prev" href="miklb.com/posting-with-iphone" title="Posting With iPhone" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@miklb" />
-<meta name="twitter:title" content="iBlogger iPhone App - Miklb’s Mindless Ramblings" />
-<meta name="twitter:description" content="Prior to my discovery that you can post to a Habari blog with Safari on the iPhone, I purchased iBlogger for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only priced at $0.99, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available." />
-<meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
-<script type="application/ld+json">
-  {
-    "@context" : "http://schema.org",
-
-
-    "@type" : "BlogPosting",
-
-    "headline": "iBlogger iPhone App",
-
-    "datePublished": "2009-01-28T00:00:00+00:00",
-
-    "description": "Prior to my discovery that you can post to a Habari blog with Safari on the iPhone, I purchased iBlogger for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only priced at $0.99, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available.",
-
-    "logo": "miklb.com/public/favicon.png",
-
-
-    "url" : "miklb.com/testing-iblogger-iphone-app"
-  }
-</script>
-<!-- End Jekyll SEO tag -->
-</head>
-
-
+    <!-- Webmentions -->
+    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="/public/favicon.png">
+    <!-- Feed -->
+    <link href="https://miklb.superfeedr.com" rel="hub"/>
+    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
+    <!-- SEO/Twitter/FB -->
+    <!-- Begin Jekyll SEO tag v1.3.1 -->
+    <title>iBlogger iPhone App - Miklb’s Mindless Ramblings</title>
+    <meta property="og:title" content="iBlogger iPhone App" />
+    <meta name="description" content="Prior to my discovery that you can post to a Habari blog with Safari on the iPhone, I purchased iBlogger for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only priced at $0.99, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available." />
+    <meta property='og:description' content="Prior to my discovery that you can post to a Habari blog with Safari on the iPhone, I purchased iBlogger for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only priced at $0.99, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available." />
+    <link rel="canonical" href="miklb.com/testing-iblogger-iphone-app" />
+    <meta property='og:url' content='miklb.com/testing-iblogger-iphone-app' />
+    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2009-01-28T00:00:00+00:00" />
+    <link rel="next" href="miklb.com/freshbooks-getting-customer-service-right" title="Freshbooks, Getting Customer Service Right" />
+    <link rel="prev" href="miklb.com/posting-with-iphone" title="Posting With iPhone" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@miklb" />
+    <meta name="twitter:title" content="iBlogger iPhone App - Miklb’s Mindless Ramblings" />
+    <meta name="twitter:description" content="Prior to my discovery that you can post to a Habari blog with Safari on the iPhone, I purchased iBlogger for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only priced at $0.99, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available." />
+    <meta name="twitter:creator" content="@{"name"=>"Michael Bishop", "url"=>"https://twitter.com/miklb", "email"=>"miklbmiklb.com"}" />
+    <script type="application/ld+json">
+      {
+          "@context" : "http://schema.org",
+      
+      
+          "@type" : "BlogPosting",
+      
+          "headline": "iBlogger iPhone App",
+      
+          "datePublished": "2009-01-28T00:00:00+00:00",
+      
+          "description": "Prior to my discovery that you can post to a Habari blog with Safari on the iPhone, I purchased iBlogger for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only priced at $0.99, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available.",
+      
+          "logo": "miklb.com/public/favicon.png",
+      
+      
+          "url" : "miklb.com/testing-iblogger-iphone-app"
+        }
+    </script>
+    <!-- End Jekyll SEO tag -->
+  </head>
   <body class="layout-reverse">
-
     <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about h-card">
-      <h1>
-        <a class="u-url"href="/">
-          Miklb's Mindless Ramblings
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about h-card">
+          <h1>
+            <a class="u-url"href="/">
+              Miklb's Mindless Ramblings
         </a>
-      </h1>
-      <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-      and this is my little slice of the web. </p>
+          </h1>
+          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
+            and this is my little slice of the web. </p>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
+          <a class="sidebar-nav-item" href="/about/">About</a>
+          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
+          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
+        </nav>
+        <p>&copy; 2016. All rights reserved.</p>
+      </div>
     </div>
-
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-
-      
-
-      
-      
-        
-          
-            <a class="sidebar-nav-item" href="/about/">About</a>
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-      <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-      <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-
-
-    </nav>
-
-    <p>&copy; 2016. All rights reserved.</p>
-  </div>
-</div>
-
-
     <main class="container content">
       <article class="post h-entry">
-  <h1 class="post-title p-name">iBlogger iPhone App</h1>
-  <time datetime="2009-01-28T00:00:00+00:00" class="dt-time post-date">28 Jan 2009</time>
-  <div class="e-content">
-    <p class="lead p-bridgy-twitter-content">
-      
-    </p>
-      <p>Prior to my discovery that you can post to a <a href="http://miklb.com/posting-with-iphone">Habari blog with Safari on the iPhone</a>, I purchased <a href="http://illuminex.com/iphone/iblogger/">iBlogger</a> for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only <strong>priced at $0.99</strong>, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available.</p>
-
-<p>Connecting the app to my Habari install was very easy, if I recall it even auto discovered the endpoint (example.com/xmlrpc).</p>
-
-<p>As far as functionality, I do not know if because the generic metaweblog API is being used, and sites using engines like Moveable Type or WordPress, but the options are currently pretty sparse (as of v 1.0.7).  Habari’s plugin doesn’t support posting images, so the only options really are:</p>
-<ul>
-<li><strong>adding your location</strong> - the app inserts a link which opens to a Google map</li>
-<li><strong>adding links</strong> - an easy UI for adding a hyperlink.</li>
-<li><strong>tagging</strong> - this "feature" seems very weak.  It doesn't pull the existing tags from the site, a common feature in desktop blogging clients, and in my testing, keeps the previous post's tags on subsequent posts.  Might be handy if you expect to tag all of your on-the-go posts the same thing, but I don't see it that way.</li>
-</ul>
-
-<p>iBlogger does support multiple blogs, otherwise, I have not found any additional elements.  For $0.99, I suppose one can’t complain.  Since all of my personal sites are on Habari, I haven’t had cause to look at any of the other iPhone blogging clients.  I understand the WordPress app is free and open-sourced, I’m sure at some point, most likely out of boredom, I will look at it.  Ultimately, as many people have pointed out, typing on the iPhone doesn’t lend itself to the phone being a real blogging device.</p>
-
-<p>However to get that in the moment feel, having a stable option with with a decent feature set would be nice to have.  Thank goodness with Habari and in iPhone, you don’t need a secondary app.</p>
-
-  </div>
-</article>
-
-<section id="webmentions" class="entry__comments">
-
-				<h1>Webmentions</h1>
-      
-      
-
-      
-	   <div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
-     
-	</section>
-
-
-
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
-            A Few Thoughts About WordPress REST API and Core
+        <h1 class="post-title p-name">iBlogger iPhone App</h1>
+        <time datetime="2009-01-28T00:00:00+00:00" class="dt-time post-date">28 Jan 2009</time>
+        <div class="e-content">
+          <p class="lead p-bridgy-twitter-content">
+          </p>
+          <p>Prior to my discovery that you can post to a <a href="http://miklb.com/posting-with-iphone">Habari blog with Safari on the iPhone</a>, I purchased <a href="http://illuminex.com/iphone/iblogger/">iBlogger</a> for the iPhone.  It’s from the same developers of ecto, a desktop blogging client.  It’s currently only <strong>priced at $0.99</strong>, which for me is a price I’m willing to pay to test an app.  It supports all of the popular blogging platforms, as well as the generic metaweblog API, for which Habari has a plugin available.</p>
+          <p>Connecting the app to my Habari install was very easy, if I recall it even auto discovered the endpoint (example.com/xmlrpc).</p>
+          <p>As far as functionality, I do not know if because the generic metaweblog API is being used, and sites using engines like Moveable Type or WordPress, but the options are currently pretty sparse (as of v 1.0.7).  Habari’s plugin doesn’t support posting images, so the only options really are:</p>
+          <ul>
+            <li><strong>adding your location</strong> - the app inserts a link which opens to a Google map</li>
+            <li><strong>adding links</strong> - an easy UI for adding a hyperlink.</li>
+            <li><strong>tagging</strong> - this "feature" seems very weak.  It doesn't pull the existing tags from the site, a common feature in desktop blogging clients, and in my testing, keeps the previous post's tags on subsequent posts.  Might be handy if you expect to tag all of your on-the-go posts the same thing, but I don't see it that way.</li>
+          </ul>
+          <p>iBlogger does support multiple blogs, otherwise, I have not found any additional elements.  For $0.99, I suppose one can’t complain.  Since all of my personal sites are on Habari, I haven’t had cause to look at any of the other iPhone blogging clients.  I understand the WordPress app is free and open-sourced, I’m sure at some point, most likely out of boredom, I will look at it.  Ultimately, as many people have pointed out, typing on the iPhone doesn’t lend itself to the phone being a real blogging device.</p>
+          <p>However to get that in the moment feel, having a stable option with with a decent feature set would be nice to have.  Thank goodness with Habari and in iPhone, you don’t need a secondary app.</p>
+        </div>
+      </article>
+      <section id="webmentions" class="entry__comments">
+        <h1>Webmentions</h1>
+        <div class="webmentions">
+          <p class="webmentions__not-found">No webmentions were found</p>
+        </div>
+      </section>
+      <aside class="related">
+        <h2>Related Posts</h2>
+        <ul class="related-posts">
+          <li>
+            <h3>
+              <a href="/a-few-thoughts-about-wordpress-rest-api-and-core">
+                A Few Thoughts About WordPress REST API and Core
             <small><time datetime="2016-02-12T00:00:00+00:00">12 Feb 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
-            Text Expander snippet for Jekyll With Slug for Permalink
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
+                Text Expander snippet for Jekyll With Slug for Permalink
             <small><time datetime="2016-02-06T00:00:00+00:00">06 Feb 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/first-listen-luther-dickinson">
-            First Listen: Luther Dickinson
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/first-listen-luther-dickinson">
+                First Listen: Luther Dickinson
             <small><time datetime="2016-02-04T00:00:00+00:00">04 Feb 2016</time></small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
-</aside>
-
-
-<script src="/js/webmention_io.js"></script>
-
+              </a>
+            </h3>
+          </li>
+        </ul>
+      </aside>
+      <script src="/js/webmention_io.js"></script>
     </main>
-
   </body>
 </html>
