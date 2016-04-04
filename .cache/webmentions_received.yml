@@ -1,1 +1,23 @@
---- {}
+---
+https://miklb.com/first-listen-luther-dickinson:
+  '2016-02-28':
+    '703740605776572416': <li id="webmention-703740605776572416" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/NormaltownRec"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/00bcd4b4b3b04adcf644b883e057fa718db70600e5b9aeb7651e22c3af74d250.jpeg"
+      alt="" title="Normaltown Records"><b class="p-name">Normaltown Records</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/miklb/703740605776572416/558178068">Normaltown
+      Records Normaltown Records</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-02-28T21:17:27+00:00">28 February 2016</time></div></article></li>
+https://miklb.com/text-expander-snippet-for-jekyll-with-slug-for-permalink:
+  '2016-03-01':
+    '703740638580207616': <li id="webmention-703740638580207616" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/jekyllrb"><img class="webmention__author__photo u-photo"
+      src="https://webmention.io/avatar/twitter.com/2f86c748332f00db16473dbba691bd2e3d7c9dd1eca1de98d33531216aa09bdc.jpeg"
+      alt="" title="jekyll"><b class="p-name">jekyll</b></a></div> <div class="webmention__title
+      p-name"><a href="https://brid-gy.appspot.com/like/twitter/miklb/703740638580207616/1143789606">jekyll
+      jekyll</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-03-01T09:33:00+00:00">1 March 2016</time></div></article></li>
