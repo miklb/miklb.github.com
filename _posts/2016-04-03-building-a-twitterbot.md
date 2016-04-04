@@ -4,7 +4,7 @@ title: "Building a Twitterbot"
 tags: Twitter, Flickr, python
 published: true
 permalink: building-a-twitterbot
-date :2016-4-3
+date: 2016-4-3
 summary: In which I outline my desire to learn some python & build a Twitterbot.
 ---
  I had an interest to learn the programming language python for quite some time. I've played around with it a little using [Pythonista](https://geo.itunes.apple.com/us/app/pythonista/id528579881?at=10lKmy) in iOS to [build a fishing log](https://miklb.com/use-pythonista-to-get-weather-of-current-location-into-drafts-app), but otherwise have only done some cursory reading. Since I do best learning by doing, I needed an idea to **use** python. I've seen some interesting Twitterbots built with it, [@pomological](https://twitter.com/pomological) being my recent favorite, but wasn't sure what to build. Ultimately, the idea came to me to build a bot that retrieves an image from Flickr and builds a color scheme from that and post the scheme and original image. I've done some basic research and found some libraries to connect (you didn't think I was going to write the whole thing from scratch?).
@@ -15,4 +15,4 @@ summary: In which I outline my desire to learn some python & build a Twitterbot.
 
  Stay tuned for more adventures.
 
- <a href="https://brid.gy/publish/twitter"></a> 
+ <a href="https://brid.gy/publish/twitter"></a>
