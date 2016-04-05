@@ -69,6 +69,20 @@
       <div class="posts">
         <article class="post h-entry">
           <h1 class="post-title p-name">
+            <a class="u-url" href="/using-apc-and-subversion-checkouts">
+              Using APC and Subversion Checkouts
+      </a>
+          </h1>
+          <time datetime="2011-06-05T00:00:00+00:00" class="dt-time post-date">05 Jun 2011</time>
+          <div class="e-content">
+            <p>I am in the process of moving my sites from Slicehost to Linode, as most are aware Slicehost is being phased out for Rackspace Cloud.  Anyway, I upgraded my VPS at Linode last night to Debian “Squeeze” and installed APC, which created a problem with the WordPress installations I had there.  Basically, I couldn’t access the admin.  Through the power of Twitter and the invaluable help of <a href="http://markjaquith.com/">Mark Jaquith</a>, I learned that by default APC doesn’t play nice with files that are checked out via Subversion.  I think the root of my problem was a stray apc config for overriding include once, but certainly the subversion issue could have been at play too.</p>
+            <p>Anyway, a little Googling on the subject, I discovered there’s a configuration option for APC to use <a href="http://www.php.net/manual/en/apc.configuration.php#ini.apc.stat-ctime">ctime</a>  instead of the default mtime.  Adding <code class="highlighter-rouge">apc.stat_ctime=1</code> is all that is required.</p>
+            <p>While I’m on the subject of migrating from Slicehost to Linode, <a href="http://developerkarma.com/">Andrew RIley</a> pointed out that someone had written a ruby script to <a href="https://github.com/Schultz/slicedns2linode">migrate the DNS information</a> for you.</p>
+            <p><em>Addendum</em> To be clear, I install WordPress using Subversion and the appropriate tag. My Habari installs are also all Subversion checkouts from trunk.</p>
+          </div>
+        </article>
+        <article class="post h-entry">
+          <h1 class="post-title p-name">
             <a class="u-url" href="/technology-civil-war-parallels">
               Technology, Civil War &amp; Parallels
       </a>
@@ -123,26 +137,6 @@
             <p>You can also swap small, with medium or large.  The one  downside is that their images are not square, rather they are rectangular, which doesn’t work in most ‘profile’ environments.  I experimented with taking it a step further and using that latest image link with Gravatar, however from what I can tell, while Gravatar will allow you to choose the latest image, for performance reasons, they cache the various size images and don’t ever check that source again.</p>
             <p>This may not be useful to many people, but in my case, with my ever changing long hair/short hair and various states of facial hair, I often find that I’ve had a photo on my about page that becomes outdated. When I meet someone in person, they hardly recognize me.  It happened when I met my current employer. Due to the nature of working on the web these days, in person meetings may not occur often or right away as most correspondences occur via email and the phone.  Having an outdated image that people are using as a visual reference isn’t necessarily bad, but it’s nice to be able to really put a face with a name, even if it’s from 2000 miles away.  Thus, I’ve updated my <a href="http://miklb.com/about">about me page</a> with my latest Dailybooth shot, so I don’t have to remember to change it.  I’m also experimenting with using it for the author bio pic at the bottom of posts, but as you can see, the aforementioned issue with rectangle vs square is an issue. I may investigate the CSS <code>clip</code> property for a short term solution.</p>
             <p>It would be nice if there was a mashup somewhere between a service like Dailybooth and Gravatar where you could keep an up-to-date profile pic handy.  Possibly even being able to update your Twitter avatar at the same time.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/firefox-4-html5-forms-input-types">
-              Firefox 4 HTML5 Forms - Input Types
-      </a>
-          </h1>
-          <time datetime="2011-03-26T00:00:00+00:00" class="dt-time post-date">26 Mar 2011</time>
-          <div class="e-content">
-            <p>Speaking of Firefox 4, I’ve gotten a few comments on my post about <a href="http://miklb.com/firefox-4-app-tab">Firefox 4 app tabs</a>, and while trying to respond, I discovered another new ‘feature’ in Firefox 4, support for HTML 5 input types.  Inadvertently I was using the same input for my URL field as my email. I had created some custom formcontrols for  <a href="http://wiki.habariproject.org/en/Dev:FormUI">Habari’s FormUI templates</a> for HTML5 support, which had the right input types, so at first I didn’t see why I was getting the error. However with help in Habari’s IRC channel from Mike Lietz, he pointed out in my theme.php file I was calling the email formcontrol for URL as well as Email.  Fixing that, I was able to submit my comment.</p>
-            <p><img src="http://miklb.com/user/images/html5_input-type_email.png" alt="Firefox4 HTML 5 input type email error" class="right" />A quick Google search turned up that , indeed, <a href="https://developer.mozilla.org/en/HTML/HTML5/Forms_in_HTML5">Gecko 2 (Firefox 4) supports HTML5 input types</a>.  I had also checked in Chrome 10.x and it too gave the same error, which means it also supports the input types. IE 9 nor Safari 5 have support for the input types (Mac, ironically the Windows version seems to support it).  Finally, Opera 10 has supported this for a while, as well as iOS Safari.</p>
-            <p>So what does it all mean?  Why use it if it’s not really supported in all major browsers?  Well, first, using <code> type="email"</code> or <code>type="url"</code> won’t break anything. Browsers that don’t support it treat it like a text input.  But those that do, well, as you can see in the screenshot, you get instant validation without any heavy lifting by your site.  As support grows, you won’t have to update any code.  iOS Safari support includes providing a different default keyboard layout (the ampersand and .com keys are on the home screen). I can’t speak to Android’s browser, though I’d suspect it has similar behavior.  Really there’s no reason <em>not</em> to start using them.</p>
-            <p>Additional Resources:</p>
-            <ul>
-              <li><a href="http://diveintohtml5.org/forms.html">Dive Into HTML5 - Web Forms</a></li>
-              <li><a href="http://www.quirksmode.org/html5/inputs.html">Quirksmode - HTML5 tests - inputs</a></li>
-              <li><a href="http://blog.mozilla.com/webdev/2011/03/14/html5-form-validation-on-sumo/">Mozilla Support - HTML5 Form Validation</a></li>
-              <li>,<a href="http://wufoo.com/html5/">Wufoo - Current State of HTML5 Forms</a></li>
-            </ul>
           </div>
         </article>
       </div>

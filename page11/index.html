@@ -69,6 +69,26 @@
       <div class="posts">
         <article class="post h-entry">
           <h1 class="post-title p-name">
+            <a class="u-url" href="/firefox-4-html5-forms-input-types">
+              Firefox 4 HTML5 Forms - Input Types
+      </a>
+          </h1>
+          <time datetime="2011-03-26T00:00:00+00:00" class="dt-time post-date">26 Mar 2011</time>
+          <div class="e-content">
+            <p>Speaking of Firefox 4, I’ve gotten a few comments on my post about <a href="http://miklb.com/firefox-4-app-tab">Firefox 4 app tabs</a>, and while trying to respond, I discovered another new ‘feature’ in Firefox 4, support for HTML 5 input types.  Inadvertently I was using the same input for my URL field as my email. I had created some custom formcontrols for  <a href="http://wiki.habariproject.org/en/Dev:FormUI">Habari’s FormUI templates</a> for HTML5 support, which had the right input types, so at first I didn’t see why I was getting the error. However with help in Habari’s IRC channel from Mike Lietz, he pointed out in my theme.php file I was calling the email formcontrol for URL as well as Email.  Fixing that, I was able to submit my comment.</p>
+            <p><img src="http://miklb.com/user/images/html5_input-type_email.png" alt="Firefox4 HTML 5 input type email error" class="right" />A quick Google search turned up that , indeed, <a href="https://developer.mozilla.org/en/HTML/HTML5/Forms_in_HTML5">Gecko 2 (Firefox 4) supports HTML5 input types</a>.  I had also checked in Chrome 10.x and it too gave the same error, which means it also supports the input types. IE 9 nor Safari 5 have support for the input types (Mac, ironically the Windows version seems to support it).  Finally, Opera 10 has supported this for a while, as well as iOS Safari.</p>
+            <p>So what does it all mean?  Why use it if it’s not really supported in all major browsers?  Well, first, using <code> type="email"</code> or <code>type="url"</code> won’t break anything. Browsers that don’t support it treat it like a text input.  But those that do, well, as you can see in the screenshot, you get instant validation without any heavy lifting by your site.  As support grows, you won’t have to update any code.  iOS Safari support includes providing a different default keyboard layout (the ampersand and .com keys are on the home screen). I can’t speak to Android’s browser, though I’d suspect it has similar behavior.  Really there’s no reason <em>not</em> to start using them.</p>
+            <p>Additional Resources:</p>
+            <ul>
+              <li><a href="http://diveintohtml5.org/forms.html">Dive Into HTML5 - Web Forms</a></li>
+              <li><a href="http://www.quirksmode.org/html5/inputs.html">Quirksmode - HTML5 tests - inputs</a></li>
+              <li><a href="http://blog.mozilla.com/webdev/2011/03/14/html5-form-validation-on-sumo/">Mozilla Support - HTML5 Form Validation</a></li>
+              <li>,<a href="http://wufoo.com/html5/">Wufoo - Current State of HTML5 Forms</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="post h-entry">
+          <h1 class="post-title p-name">
             <a class="u-url" href="/firefox-4-app-tab">
               Firefox 4 App Tab
       </a>
@@ -129,21 +149,6 @@ So Facebook prevails (again)?  God help us all.
             <p>I  <a href="http://www.flickr.com/photos/36112884@N07/3787346825/" title="Birthday Cake by Im a terrible photographer, on Flickr"><img src="http://farm3.static.flickr.com/2640/3787346825_57a6001c20.jpg" class="right" width="500" height="333" alt="Birthday Cake" /></a>knew it was right around this time, but it seems that this little slice of the web turned 6 this weekend, as did my twisting adventure of making a living building web sites.  Seems like yesterday still I was purchasing my first tiny plan from A Small Orange and installing WordPress 1.2.  Now I have 2 different VPS’s, manage 100’s of WordPress sites for work on a dedicated server (<em>managed</em>, I’m not that much a masochist), and moved onto Habari for my personal sites.  Ironically or not, those that started Habari were some of the very ones that welcomed me into WordPress and were the ones that probably have helped me the most to get where I’ve gotten today.</p>
             <p>So I’d like to share this virtual cake particularly with <a href="http://chrisjdavis.org/">Chis J Davis</a>, as the first theme I tore apart to customize was one of his (among many others down the road), <a href="http://asymptomatic.net/">Owen Winkler</a> for the many plugins I used to get started as well as the many hours of tutelage over the years on a variety of subjects, and <a href="http://skippy.net/">Scott Merrill</a>, because in addition to his many plugins and welcoming nature, his patience in helping walk me through setting up my first VPS.</p>
             <p>There are many, many more who’ve helped me through these past six years I couldn’t begin to name them all, but please know I’m eternally grateful to each and every one.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/towards-a-responsive-design">
-              Towards a Responsive Design
-      </a>
-          </h1>
-          <time datetime="2011-03-13T00:00:00+00:00" class="dt-time post-date">13 Mar 2011</time>
-          <div class="e-content">
-            <p>I am not sure I had really paid attention to the term <em>responsive design</em> when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now.</p>
-            <p>I also wanted to learn more about HTML5 and CSS3.  For my own site, I’m completely not interested in supporting old browsers, save for using a HTML5 polyfill for &lt; IE 9.  If someone is using IE 6, they probably don’t have much interest in what I’m sharing anyway.  So I played with some max-widths and widths based on percentage until I found something that worked for me.  Perhaps that’s not the best way to approach it, as the site really should be about those visiting, but I guess <span class="pquote-r">I made an assumption my browsers/screen resolutions/mobile devices were common enough that if it looked OK to me, it should look OK to visitors.</span>  Up until today, I was fairly happy with what I had come up with, save for the Youtube videos I’ve been posting.  I have been experimenting with using the HTML5 iframe wrapper Youtube offers, and choosing a very large version of the video.  Which wasn’t working out for smaller screens.</p>
-            <p>But as I’m studying more about the advanced concepts of responsive design and using media queries, I ran across Ethan Marcotte’s <a href="http://unstoppablerobotninja.com/entry/fluid-images/">fluid images</a> post.  Lo and behold, I set &lt;pre&gt;<code>iframe {max-width: 100%}</code>&lt;/pre&gt; and my video posts scale along with the surrounding content.</p>
-            <p>I’m not sure I will mess with this site anytime soon code or design wise, but I do intend to experiment with using the <a href="http://lessframework.com/">Less Framework</a> and possibly the intriguing <a href="http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/">context aware responsive images</a> script over on my <a href="http://cookingwith.miklb.com">cooking site</a>, which is a blueprint based grid design spun off of the markup of this site.  I don’t think it would take much to convert the grid to the Less Framework.  I may think about a design that’s not quite as similar to this in the process.</p>
-            <p>Regardless of the direction, I’d like to thank Kevin Zurawel for his <a href="http://arborwebsolutions.com/2011/03/wordcamp-miami-2011/">WordCamp Miami session on responsive design</a> and piquing my interest on the subject even more.</p>
           </div>
         </article>
       </div>
