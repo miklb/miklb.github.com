@@ -1,24 +1,24 @@
 /**
  *  WebMentions.io JS
  *  A re-tooling of Aaron Parecki’s recommended JS for using the WebMention.io API
- * 
+ *
  *  Updates Webmentions on a static site immediately when the page is loaded and
  *  in real-time (using WebSockets) as the user engages with the page.
- * 
- * To inform the JavaScript of additional URLs to check (e.g. when the current page 
+ *
+ * To inform the JavaScript of additional URLs to check (e.g. when the current page
  * receives redirects from old URLs), use the following meta element:
- * 
+ *
  *  <meta property="webmention:redirected_from" content="URL_1,URL_2">
- * 
+ *
  * The content should be a single URL or multiple, separated by commas.
  */
-    
+
 ;(function(window,document){
-    
+
     if ( ! 'querySelectorAll' in document ){ return; }
-    
+
     if ( !( 'AG' in window ) ){ window.AG = {}; }
-    
+
     if ( ! window.location.origin )
     {
        window.location.origin = window.location.protocol + "//" + window.location.host;
@@ -29,7 +29,7 @@
             a:          document.createElement('a'),
             author_name:document.createElement('b'),
             article:    document.createElement('article'),
-            div:        document.createElement('div'), 
+            div:        document.createElement('div'),
             photo:      document.createElement('img'),
             li:         document.createElement('li'),
             time:       document.createElement('time')
@@ -41,7 +41,7 @@
         ],
         json_webmentions,
         targets = [
-            window.location.href.replace( 'localhost', 'www.aaron-gustafson.com' )
+            window.location.href.replace( 'localhost', 'https:/miklb.com' )
         ],
         $none = false,
         $redirects = document.querySelector('meta[property="webmention:redirected_from"]'),
@@ -50,12 +50,12 @@
         $existing_webmentions,
         existing_webmentions = [],
         e = 0;
-    
+
     if ( $redirects )
     {
         redirects = $redirects.getAttribute('content').split(',');
         redirects.forEach(function( value, i ){
-            targets.push( 
+            targets.push(
                 value.indexOf('//') < 0 ? base_url + value : value
             );
         });
@@ -86,7 +86,7 @@
         while ( e-- )
         {
             existing_webmentions.push(
-                parseInt( 
+                parseInt(
                     $existing_webmentions[e]
                         .getAttribute( 'id' )
                         .replace( 'webmention-', '' ),
@@ -96,7 +96,7 @@
         }
         $existing_webmentions = null;
     }
-    
+
     // Set up the markup
     elements.li.className = 'webmentions__item';
     elements.article.className = 'h-cite webmention';
@@ -117,7 +117,7 @@
     elements.content.className = 'webmention__content p-content';
     elements.meta = elements.div.cloneNode();
     elements.meta.className = 'webmention__meta';
-    
+
     function addMention( mention )
     {
         var streaming = !( 'data' in mention ),
@@ -135,7 +135,7 @@
         {
             return;
         }
-        
+
         var $existing_mention = document.querySelectorAll( '#webmention-' + id  ),
             $item = elements.li.cloneNode( true ),
             $mention = elements.article.cloneNode( true ),
@@ -157,7 +157,7 @@
             author_photo = data.author.photo,
             pubdate = data.published || mention.verified_date,
             display_date = '';
-        
+
         $item.id = 'webmention-' + id;
         $item.appendChild( $mention );
 
@@ -191,7 +191,7 @@
             display_date += pubdate.getUTCFullYear();
             $pubdate.appendChild( document.createTextNode( display_date ) );
             $meta.appendChild( $pubdate );
-            
+
             if ( url & ! activity )
             {
                 $meta.appendChild( document.createTextNode( ' | ' ) );
@@ -244,7 +244,7 @@
 
             // TODO: Add Markdown
             $block = elements.content.cloneNode( true );
-            
+
             if ( activity && sentence )
             {
                 $block.innerHTML = sentence.replace( /href/, 'class="p-author h-card" href' );
@@ -260,7 +260,7 @@
         {
             $mention.appendChild( $meta );
         }
-        
+
         if ( $existing_mention.length < 1 )
         {
             if ( !! $none )
@@ -277,7 +277,7 @@
 
         // Store the id
         existing_webmentions.push( id );
-        
+
         // Release
         $item = null;
         $existing_mention = null;
@@ -290,7 +290,7 @@
         $meta = null;
         $pubdate = null;
     }
-    
+
     window.AG.processWebmentions = function( data ){
         if ( ! ( 'error' in data ) )
         {
@@ -298,20 +298,20 @@
             data.links.forEach( addMention );
         }
     };
-    
+
     // Load up any unpublished webmentions on load
     json_webmentions = document.createElement('script');
     json_webmentions.async = true;
     json_webmentions.src = 'http://webmention.io/api/mentions?jsonp=window.AG.processWebmentions&amp;target[]=' +
                             targets.join( '&amp;target[]' );
     document.getElementsByTagName('head')[0].appendChild( json_webmentions );
-    
+
     // Listen for new ones
     if ( $webmentions_list.length &&
         "WebSocket" in window )
     {
         var ws = new WebSocket('ws://webmention.io:8080');
-        
+
         ws.onopen = function( event ){
             // Send the current window URL to the server to register to receive notifications about this URL
             ws.send( this_page );
@@ -320,5 +320,5 @@
             addMention( JSON.parse( event.data ) );
         };
     }
-    
+
 }(this,this.document));
