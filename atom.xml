@@ -5,13 +5,31 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-04-09T19:29:19Z</updated>
+  <updated>2016-04-13T01:03:33Z</updated>
   <id>/</id>
   <author>
     <name></name>
     <email></email>
   </author>
   <rights type="text">Copyright © 2016 . All rights reserved.</rights>
+  
+  <entry>
+    <title>Rough Take on Jekyll</title>
+    <link rel="alternate" type="text/html" href="/rough-take-on-jekyll/?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-04-12T00:00:00Z</published>
+    <updated>2016-04-12T00:00:00+00:00</updated>
+    <id>/rough-take-on-jekyll</id>
+    <content type="html"><![CDATA[ <p>In a longer discussion about the recent pitch by Medium to content creators to move to their platform and options for new companies to build a site on, this nugget on whether Jekyll is an option:</p>
+
+<blockquote>
+Only usable by developers. About as accessible as improv Klingon slam poetry to anybody else.
+
+- <cite><a href="https://www.baldurbjarnason.com/notes/choosing-a-host">Baldur Bjarnason</a> </cite>
+</blockquote>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
   
   <entry>
     <title>Solving the Mysterious Relaunching iTunes</title>
@@ -165,33 +183,6 @@ TextExpander.appendOutput(&quot;--- \n&quot;);
     <updated>2016-01-20T00:00:00+00:00</updated>
     <id>/testing-sending-webmentions</id>
     <content type="html"><![CDATA[ <p>This is either going to go well, or well, not so well. But we are getting there. Slowly.  Last one for the night. Take 2. Day 2.<a href="https://kartikprabhu.com/notes/test-note-totally-te" class="u-in-reply-to">Thanks for the help Kartik</a></p>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Making the Move to Jekyll</title>
-    <link rel="alternate" type="text/html" href="/making-the-move-to-jekyll/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-01-13T00:00:00Z</published>
-    <updated>2016-01-13T00:00:00+00:00</updated>
-    <id>/moving-to-jekyll</id>
-    <content type="html"><![CDATA[ <p>I’ve officially made the change from Habari to Jekyll. I will certainly have more to share on the move, both a post-mortem on Habari, as well as the process I’m using currently for using Jekyll.</p>
-
-<p>My basic workflow currently is serving the page from GitHub pages, however I’m using Travis CI to build the site and  publish to master branch<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> , there by bypassing the restrictions of gh-pages (specifically, their need for using –safe mode and not up-to-date version of Jekyll). Currently my use case would probably work within their parameters, however I had already started using 3.x and at the time of writing GitHub is using 2.x.</p>
-
-<p>More importantly to me, I want to be able to blog from my phone. It something that I feel has limited me in sharing interesting items I come across as well as stopping me from making time to put thoughts down as they come. I had originally wrote up <a href="http://miklb.com/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll">some thoughts on using iOS and Jekyll</a>, but later came across a better workflow<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
-
-<p>Finally, there are still some wonkiness around, I’m sure my Atom feed is broken and am not sure how to redirect that yet using GitHub. I doubt I had many subscribers, so if you stumble on this and previously read my random posts, you may need to update while I investigate options. Certainly there are some styling issues that I want to address as well as some under the hood improvements.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>This <a href="http://eshepelyuk.github.io/2014/10/28/automate-github-pages-travisci.html">tutorial</a> was an invaluable starting point. A <a href="http://mlota.github.io/2015/11/23/automating-deployment-github-pages-jekyll-travis.html">follow up tutorial from the comments</a> has great information as well. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>Since I already own Drafts, Workflow and Working Copy <a href="http://www.matteocappadonna.org/Posting-with-Drafts,-Working-Copy-and-Workflow">integrating all 3</a> makes sense. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
  ]]></content>
   </entry>
   

@@ -69,6 +69,30 @@
       <div class="posts">
         <article class="post h-entry">
           <h1 class="post-title p-name">
+            <a class="u-url" href="/making-the-move-to-jekyll">
+              Making the Move to Jekyll
+      </a>
+          </h1>
+          <time datetime="2016-01-13T00:00:00+00:00" class="dt-time post-date">13 Jan 2016</time>
+          <div class="e-content">
+            <p>I’ve officially made the change from Habari to Jekyll. I will certainly have more to share on the move, both a post-mortem on Habari, as well as the process I’m using currently for using Jekyll.</p>
+            <p>My basic workflow currently is serving the page from GitHub pages, however I’m using Travis CI to build the site and  publish to master branch<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> , there by bypassing the restrictions of gh-pages (specifically, their need for using –safe mode and not up-to-date version of Jekyll). Currently my use case would probably work within their parameters, however I had already started using 3.x and at the time of writing GitHub is using 2.x.</p>
+            <p>More importantly to me, I want to be able to blog from my phone. It something that I feel has limited me in sharing interesting items I come across as well as stopping me from making time to put thoughts down as they come. I had originally wrote up <a href="http://miklb.com/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll">some thoughts on using iOS and Jekyll</a>, but later came across a better workflow<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+            <p>Finally, there are still some wonkiness around, I’m sure my Atom feed is broken and am not sure how to redirect that yet using GitHub. I doubt I had many subscribers, so if you stumble on this and previously read my random posts, you may need to update while I investigate options. Certainly there are some styling issues that I want to address as well as some under the hood improvements.</p>
+            <div class="footnotes">
+              <ol>
+                <li id="fn:1">
+                  <p>This <a href="http://eshepelyuk.github.io/2014/10/28/automate-github-pages-travisci.html">tutorial</a> was an invaluable starting point. A <a href="http://mlota.github.io/2015/11/23/automating-deployment-github-pages-jekyll-travis.html">follow up tutorial from the comments</a> has great information as well. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+                </li>
+                <li id="fn:2">
+                  <p>Since I already own Drafts, Workflow and Working Copy <a href="http://www.matteocappadonna.org/Posting-with-Drafts,-Working-Copy-and-Workflow">integrating all 3</a> makes sense. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="post h-entry">
+          <h1 class="post-title p-name">
             <a class="u-url" href="/embracing-my-suckiness">
               Embracing My Suckiness
       </a>
@@ -130,22 +154,6 @@
             <p>However, I still want to host my own data on my own VPS (more on that later). Enter <a href="https://github.com/developmentseed/jekyll-hook">Jekyll Hook</a>, which, while not seemingly for the faint of heart, allows one to run their own “Github Pages” on their own server.</p>
             <p>So, while all untested at this point, on paper it seems I can have a dedicated Dropbox folder synced with an iOS editor that when a markdown file is saved to it, Zapier will attempt to send a pull request and merge it to a Github hosted repo of my blog [footnote, possibly need to have iOS app to approve pull request but option is in the <em>recipe</em> for the workflow. I assume it will work save for any previous files by same name causing a merge conflict]. From that, the Jekyll Hook script/solution will fire and rebuild the the site, all without leaving the convenience of my iOS device.</p>
             <p>Potential magic I tell you.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/email-is-so-2015">
-              Email is so 2015
-      </a>
-          </h1>
-          <time datetime="2014-12-02T00:00:00+00:00" class="dt-time post-date">02 Dec 2014</time>
-          <div class="e-content">
-            <div class="tldr">tl;dr Wouldn't it be nice if in the newfound popularity of email newsletters, the signup form had an option "I regularly consume your content via another means, but would love to win your cool thing"</div>
-            <p>Back in the dark days of the internet, websites would have simple sign up forms for users to get updates about the site. Unless you used RSS (or Atom) to read the sites. Even then, online marketers and brands would offer specials not advertised on their site to build the engagement via email. The size of your mailing list was a badge of honor for those marketers.</p>
-            <p>Then came along social media, and email lists were pushed aside for the shiny new thing. In the beginning, there was a glut of social media options, and it was almost impossible for a brand to engage on <strong>every</strong> outlet. Facebook likes and Twitter followers became the new badge of honor. And while social media is still a great way to engage users, brands and marketers soon discovered they couldn’t always control the message, especially with Facebook. So what did they do? They realized the most common form of communication available to the web is the venerable method of email. <em>Cyber Monday</em> was a perfect example. I couldn’t count the number of comments I read on Twitter about people weeding their email of offers from long ago forgotten sites. But I mostly follow web professionals who know the ins-and-outs of online marketing and get their information from, (well, probably Twitter, but they are an anomalous subset of the Twittersphere.) The point being, millions of people woke to an inbox of offers. Many people clicked those links, some bought stuff. It works.</p>
-            <p><img class="left" src="http://cdn.miklb.com/images/wirecutter_form.png" alt="Sign up form for The Wirecutter" />RSS/Atom syndication in its purest form is not a common method of reading websites today (unless you are part of the aforementioned anomalous subset of Twitter users), but still provides the backbone of many ways content is consumed. But this isn’t about syndication. It is about the rebirth of mailing lists, and more specifically, the forms that sites now deploy to get you in. Those lists sign-ups are generally there year round, but right about the holiday season, sites/brands begin offering “free stuff.” Be it a book, a song or a full suite of electronics, sign up for their mailing list, enter a chance to win. I’m not an expert on this subject, didn’t even play an email marketer on TV. <img class="right" src="http://cdn.miklb.com/images/seriouseats_form.png" alt="Sign up form for The Wirecutter" />But my understanding is you can’t force people into subscribing, just like contests have the small disclaimer, “no purchase necessary.” Generally what these forms do is pre-populate the subscribe checkbox, which is still a slippery slope in my opinion of conforming to the spirit of opting in. But hey, a free TV is a free TV?</p>
-            <p>More to the point, there is never an option (at least one I’ve encountered) that says, “I love your content and regularly read it so I don’t need an email reminder. However, I’d love to win your cool stuff.” Hell, provide a short text box to allow the user to optionally add <strong>how</strong> they consume it. It very well might be a great insight into your audience and their online consumption habits. Because at some point, inundating your readers/consumers will call into play the law of diminishing returns.</p>
-            <p>Unfortunately, I’m afraid the new badge of honor is the hydra of social media followers guarding the treasure chest of email subscribers.</p>
           </div>
         </article>
       </div>
