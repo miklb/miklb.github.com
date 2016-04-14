@@ -18,3 +18,4 @@ tmp/*
 .jekyll-metadata
 vendor/
 _config_dev.yml
+_drafts/
