@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "First Listen: Luther Dickinson"
-tags: music
+tags:
+ - music
 published: true
 permalink: first-listen-luther-dickinson
 date: 2016-02-04
@@ -12,4 +13,4 @@ summary: Check the the first listen of Luther Dickinson's new solo album Blues &
 
 As first listens go, I'm enjoying it and will certainly be added to the rotation the next week.
 
-<a href="https://brid.gy/publish/twitter"></a> 
+<a href="https://brid.gy/publish/twitter"></a>

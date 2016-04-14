@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Focused Blogs"
-tags: blogging
+tags:
+ - blogging
 published: true
 permalink: focused-blogs
 date: 2016-01-30
@@ -13,4 +14,4 @@ However, if I want to build any readership (isn't that a part of blogging, shari
 
 Certainly this is more me thinking out loud and putting it out there, as I intend for this domain to be, but my goal is to continue to do such here, rather than bottle  up my thoughts in my head.
 
-<a href="https://brid.gy/publish/twitter"></a> 
+<a href="https://brid.gy/publish/twitter"></a>

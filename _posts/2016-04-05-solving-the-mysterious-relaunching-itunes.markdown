@@ -1,7 +1,9 @@
 ---
 layout: "post"
 title: "Solving the Mysterious Relaunching iTunes"
-tags: iTunes, Mac
+tags:
+ - iTunes
+ - Mac
 permalink: solving-the-mysterious-relaunching-itunes
 date: "2016-04-05 14:57"
 summary: Thanks to @shep I think I solved my issue with mysterious iTunes relaunch.

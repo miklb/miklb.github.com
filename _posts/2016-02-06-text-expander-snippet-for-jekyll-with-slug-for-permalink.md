@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Text Expander snippet for Jekyll With Slug for Permalink"
-tags: Jekyll, TextExpander, javascript
+tags:
+ - Jekyll
+ - TextExpander
+  - javascript
 published: true
 permalink: text-expander-snippet-for-jekyll-with-slug-for-permalink
 date: 2016-2-6

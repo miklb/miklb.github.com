@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Finally Webmentions with Jekyll"
-tags: webmention, Jekyll
+tags:
+ - webmention
+ - Jekyll
 published: true
 permalink: finally-webmentons-with-jekyll-part-duex
 date: 2016-01-30

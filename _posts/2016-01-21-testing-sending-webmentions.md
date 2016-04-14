@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Testing Sending Webmentions"
-tags: test webmention
+tags:
+ - webmention
 published: true
 permalink: testing-sending-webmentions
 date: 2016-01-20

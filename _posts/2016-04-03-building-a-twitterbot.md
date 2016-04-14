@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Building a Twitterbot"
-tags: Twitter, Flickr, python
+tags:
+ - Twitter,
+  - Flickr
+  - python
 published: true
 permalink: building-a-twitterbot
 date: 2016-4-3

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "A Few Thoughts About WordPress REST API and Core"
-tags: WordPress, REST API
+tags:
+ - WordPress
+ - REST API
 published: true
 permalink: a-few-thoughts-about-wordpress-rest-api-and-core
 date : 2016-2-12

@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Breaking Out of the Silo"
-tags: twitter, indieweb, blogging
+tags:
+ - twitter
+ - indieweb
+ - blogging
 published: true
 permalink: breaking-out-of-the-silo
 date: 2016-01-30
