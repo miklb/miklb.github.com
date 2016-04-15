@@ -1,0 +1,11 @@
+ --- 
+layout: post 
+title: "Posting From iOS"
+tags: 
+published: true 
+permalink: posting-from-ios 
+date: 2016-4-15 18:11
+summary: 
+ ---
+
+Working on my workflow for posting from iPhone. First pass.
