@@ -74,7 +74,7 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    yell (2.0.5)
+    yell (2.0.6)
 
 PLATFORMS
   ruby
