@@ -3,42 +3,32 @@
 permalink: title
 paginate: 5
 
-
 # Setup
-title:               Miklb's Mindless Ramblings
-tagline:            chronicling life in a digital world
-description: A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between.
+title: Miklb's Mindless Ramblings
+author: Michael Bishop
+author_img: http://cdn.miklb.com/images/profile_4_16.jpg
+description:  Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.
 url: https://miklb.com
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 baseurl:             ""
 timezone:       America/New_York.
 
-twitter:
-  username: miklb
+twitter_username: miklb
+github_username: miklb
+
 
 logo: public/favicon.png
 
-
-
-# configure kramdown
+webmentions: yes
 
 # Plugins
+gems:
+ - jekyll-paginate
+ - jekyll-seo-tag
+ - jekyll-gist
 
-gems: [ jekyll-paginate, jekyll-seo-tag, jekyll-gist]
 # Assets
-#
 # We specify the directory for Jekyll so we can use @imports.
 sass:
   sass_dir:          _sass
   style:            :compressed
-
-# About/contact
-#author:
-#  name: Michael Bishop
-#  url: https://miklb.com
-
-
-# Custom vars
-version:             3.0.0
-github:
-  repo:              https://github.com/poole/hyde
