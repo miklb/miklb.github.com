@@ -1,153 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
-      Miklb's Mindless Ramblings &middot; chronicling life in a digital world
-    
-  </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.">
+    <link rel="stylesheet" href= "/css/main.css">
+    <link rel="canonical" href="https://miklb.com/page27/">
+    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
     <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- Feed -->
-    <link href="https://miklb.superfeedr.com" rel="hub"/>
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-    <!-- SEO/Twitter/FB -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
     <!-- Begin Jekyll SEO tag v1.3.3 -->
+    <title>Home - Miklb’s Mindless Ramblings</title>
     <meta property="og:title" content="Home" />
-    <meta name="description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
+    <meta property="og:description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
     <link rel="canonical" href="https://miklb.com/page27/" />
     <meta property="og:url" content="https://miklb.com/page27/" />
     <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
     <script type="application/ld+json">
       {
           "@context": "http://schema.org",
           "@type": "WebPage",
           "headline": "Home",
-          "description": "A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between.",
+          "description": "Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.",
           "logo": "https://miklb.compublic/favicon.png",
           "url": "https://miklb.com/page27/"
         }
     </script>
     <!-- End Jekyll SEO tag -->
   </head>
-  <body class="layout-reverse">
-    <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/">
-              Miklb's Mindless Ramblings
-        </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
+  <body class="h-feed">
+    <header class="site-header" role="banner">
+      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li itemprop="url"><a  class="" href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main role="main">
+        <div class="content">
+          <div class="posts">
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/consolidating-focusing-and-rookie-mistakes">
+                  Consolidating, Focusing, and Rookie Mistakes
+      </a>
+              </h1>
+              <time datetime="2008-12-06T00:00:00+00:00" class="dt-time post-date">06 Dec 2008</time>
+              <div class="e-content">
+                <p>As my online endeavors grow, I find myself with different sites floating around, doing nothing, as I have so many ideas for each site, I wind up not posting to any of them.  I originally started Blogging Meta because I thought I wanted to have a personal site, and a site that I could focus on tech related blogging.  Well, as I’ve said, neither came to fruition, and I’ve found myself lately feeling as if I had some dual personality that were just spinning their wheels.</p>
+                <p>So tonight I decided to merge the two sites, and really try to gain some focus.  I still have my cooking site, which I still intend to further focus on, but hopefully by committing to using this site again for everything not cooking related, I just might be able to accomplish both.</p>
+                <p>The rookie mistakes came from the fact that since Habari doesn’t have an importer in place yet to import one Habari install into another, I was faced with the only option of deleting the existing database, which was basically an import from the original WordPress installation, then dumping the bloggingmeta database, doing a quick search and replace for urls, importing that file directly into the database, then re-importing the old wordpress database using the importer plugin.  What I failed to do was check what was active in the plugins.  I already had the twitter plugin installed, so I’m guessing that it kept the settings from the old site, thus upon import, all the new posts were twittered.  Complete…rookie…mistake.  Couple with that that I also left the pingback plugin active, it tried to ping all the posts while importing.  Another party foul.  So not only did I spam Twitter, my import royally failed, so I was faced with doing the whole process over again, albeit this time I deactivated the offending plugins, and the import went off mostly without a hitch.  I might have lost a few old posts and/or comments, but all in all, I’m pleased with the outcome considering I’m doing this at 2 a.m. in the morning, and my focus might not be what it should be.  I wish I could write it off as having had a few adult beverages, but alas, I would be lying.</p>
+                <p>Over the next few days I will be doing some tweaking here and there, and shutting down the other site (and doing a 301 redirect).  I really like the typography of Ali’s <a href="http://www.awhitebox.com/dark-autumn-a-new-habari-theme">theme</a>, so I most likely will try to find the custom image I had made for the bottom, and trick out a few plugins.  At least for now.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/roku-netflix-player-first-impressions">
+                  Roku Netflix Player First Impressions
+      </a>
+              </h1>
+              <time datetime="2008-06-12T00:00:00+00:00" class="dt-time post-date">12 Jun 2008</time>
+              <div class="e-content">
+                <p><img src="http://miklb.com/user/images/roku_netflix.jpg" class="left" alt="Netflix Player" />I had read a few things about the <a href="http://www.roku.com/netflixplayer/">Roku Netflix Player</a>, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try.</p>
+                <p>This was last Thursday.  We were given an option of spending an extra $10 on 2-day Fedex (on top of the $10 ground), so be the anxious geek, I pony up the extra money, thinking I’d have it on Monday.  Well, Roku sent an email saying the player would be shipped from the warehouse in the next 7-10 days on Friday, which rubbed me the wrong way, as that wasn’t mentioned in the order process, but OK.  Nothing else to my knowledge was emailed out (we used her email address).  So I was resolved to not see it for 2 weeks.  However, when I returned from running errands today, there it was sitting on my porch.</p>
+                <p>Since ordering, I had done a bit more research, and the one downfall I have seen repeated over and over is the limited amount of content available, as Netflix has to obtain digital rights to the content before being able to offer it.  Consensus seemed to say that it is mostly older TV series, indie/foreign films, and few older major releases tossed in here and there.  I wasn’t too anxious to really look at the selection, as I wasn’t expecting to receive it for another week at least, but I’m more an indie/foreign film kinda fan than Spiderman 3 anyway, so as I said, I’ve got 30 days.</p>
+                <p>As other reviews mention, it’s nothing but a simple little black box, with an external power supply.  A small, boxy remote and RCA cables fill out the included items.  Again, as I wasn’t expecting it so soon now, I hadn’t obtained additional cables (like optical audio to connect to the receiver or component video, which are all supported, as well as HDMI and  s-video).  I admit right up front I’m not the techno-geek when it comes to these aspects, so I’m not really qualified to say one thing or the other about the supported connections, etc.  The player can connect via wireless or ethernet (however, as I understand it, it doesn’t support 802.11n).  I gave the wireless a shot first, but figured I might have to run an ethernet cable.</p>
+                <p>Set up was really easy, a simple onscreen walk through entering my WEP key, a quick connection to Netflix, update some (firmware??) and restart, it gives a code that you then enter into your Netflix account.  Maybe 5 minutes total, and my account was connected to the TV, any movies in my queue that were available for the Instant Viewing was added to that queue as well, and I could see them on the screen.  I poked around quickly on the site, looking for something to add.  Dexter season 1 was there, I never saw the first season, and figured it would be a good test.  I added it to my queue, and within 30 seconds or so, it showed up on the TV.  TV seasons only need the season added, all episodes are available, whereas with DVD’s you have to add each disc.  I navigated to episode one, clicked play, a few seconds later it starts downloading, I see <strong>•••• quality</strong> after it loads (still not sure what that means, but I think it has something to do with my connection.  I generally get 18Mb/s or better with my wireless connection, even faster wired).  All told, roughly a minute before the show started playing.</p>
+                <p>Episode played fine, no skipping, no jumping, quality was as good as my FIOS cable (even with the included RCA cables).  Fast forwarding is a bit different, as they break shows up into little chapters of sorts, with stills for each section.  I haven’t really paid close enough attention yet to see what the time frame of each are, but they seem like 1 minute or so apiece. Different, but easy enough to adapt to.</p>
+                <p>Being the TV junky that I am, I poked around a bit more, and found that a lot of Law and Order SVU/CI seasons were available.  I often find myself watching reruns on TNT and USA Network, as I never really watched the show during it’s first runs, and heck, why not just watch it in order without the annoying commercials on those networks?  I added SVU season one, and watched the first two episodes.  Again, quality was fine (once I switched the perspective back to 4:3 from 16:9), with no skipping/jumping.  One criticism I’ve read about the player is that there’s no hard drive and no real buffering.  ( A interview with a Roku exec I read said they did some research, and found people didn’t want to hear a fan/HD spinning, thus one  reason it doesn’t have one.  Plus, they wanted to hit a price point, as well as eliminate as many parts that could fail.  Regardless of the reasons, so far, I don’t see a need for any of that with the connection speed I have.)</p>
+                <p><strong>Final Thoughts</strong>
+                  All in all, first day in, it seems like a fine investment.  I found several more movies quickly browsing through the instant available selections (this has to be done on the computer, you can’t search for movies from the TV), so not counting the TV shows, I have 7 films queued up.  Plus the 3 DVD’s collecting dust, so I think I’ll be fine for the short term, they seem to be actively adding more content, and I’m sure as the player(s) gain popularity, they will be in a better bargaining position to obtain more.  If your goal is to watch a lot of new releases,  don’t plan on dropping your regular subscription down anytime soon.  However,  at $100, the player seems like a fair investment if you are a TV/movie junkie.  Also, there seems to be quite a bit of children’s content as well as History channel type documentaries, so the cost might be enticing to parents as well.</p>
+                <p>I’m sure I’ll discover more as I use it, please don’t hesitate to ask questions if you are interested in the player.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/obligatory-response-to-new-iphone">
+                  Obligatory Response to New iPhone
+      </a>
+              </h1>
+              <time datetime="2008-06-09T00:00:00+00:00" class="dt-time post-date">09 Jun 2008</time>
+              <div class="e-content">
+                <p>I was really looking forward to today’s confirmation of the lower price 3G iPhone.  I purposely held off (for a change) on adopting a 1st gen Apple product, knowing the 3G service would be coming.  However, now that reports have confirmed that you will <strong>have</strong> to sign a contract, I’m not so sure now that I will be adopting the new phone.  I genuinely do not use a cell phone for talking enough to justify signing such a contract, and being required to have such a plan (what $70 a month?).  The previous $20 a month data plan plus minimal talk time per minute was fine with me, as I have used it with other “smartphones”.</p>
+                <p>I will be curious to see how they treat 1st gen iPhone users who currently are doing pay as you go plus data plans.  Perhaps those will still be allowed to use the prepay, and I’ll pick one up on teh cheap, until I can justify signing a contract paying for that much phone usage.</p>
+                <p>My other option is to wait to see what happens to iPod Touch prices, as I may get just as much use out of one of those as an iPhone.</p>
+                <p>If anyone has a suggestion for a smartphone that can be used with pay as you go and unlimited data plan with AT&amp;T, has a great web browser support, bluetooth, and is iSync capable, I’d love to hear about it. <em>edit</em>:  and can be purchased new/used for $200 or less without a contract.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/words-of-wisdom">
+                  Words of Wisdom
+      </a>
+              </h1>
+              <time datetime="2008-05-05T00:00:00+00:00" class="dt-time post-date">05 May 2008</time>
+              <div class="e-content">
+                <p>Without getting into the whys and hows this statement came about, I find it very simple, yet poignant and applicable to many of life’s situations.</p>
+                <blockquote>
+                  We're still learning to walk, and we're going to trip every now and then and sometimes when we run, we're going to fall on our faces. But as long as we get up, try again, and learn something from the experience, in the end, skinned knees and all, it'll be worth it.
+                </blockquote>
+                <p>Thanks <a href="http://www.morydd.net/">Sean.</a></p>
+                <p><em>edit</em> - might I add, I’m in a new-ish romantic relationship, which <strong>very</strong> recently hit a bump, and perhaps this analogy hit home there more than anywhere.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/mac-svn-monitoring-widget">
+                  Mac SVN Monitoring Widget
+      </a>
+              </h1>
+              <time datetime="2008-04-30T00:00:00+00:00" class="dt-time post-date">30 Apr 2008</time>
+              <div class="e-content">
+                <p><a href="http://lab.arc90.com/2008/04/svn_notifier.php">SVN Notifiier</a> is a handy little Mac Dashboard widget that, using Growl, will notify you when a local working copy is out of date.  I’ve not quite gotten the “sticky” notice to work, but I just might need to edit the actual Growl settings.</p>
+                <p>Still, it’s nice to be able at a glance check your dashboard, or see a little growl notice pop up.</p>
+              </div>
+            </article>
+          </div>
+          <div class="pagination">
+            <a class="pagination-item older" href="/page28">Older</a>
+            <a class="pagination-item newer" href="/page26">Newer</a>
+          </div>
         </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
+      </main>
     </div>
-    <main class="container content">
-      <div class="posts">
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/consolidating-focusing-and-rookie-mistakes">
-              Consolidating, Focusing, and Rookie Mistakes
-      </a>
-          </h1>
-          <time datetime="2008-12-06T00:00:00+00:00" class="dt-time post-date">06 Dec 2008</time>
-          <div class="e-content">
-            <p>As my online endeavors grow, I find myself with different sites floating around, doing nothing, as I have so many ideas for each site, I wind up not posting to any of them.  I originally started Blogging Meta because I thought I wanted to have a personal site, and a site that I could focus on tech related blogging.  Well, as I’ve said, neither came to fruition, and I’ve found myself lately feeling as if I had some dual personality that were just spinning their wheels.</p>
-            <p>So tonight I decided to merge the two sites, and really try to gain some focus.  I still have my cooking site, which I still intend to further focus on, but hopefully by committing to using this site again for everything not cooking related, I just might be able to accomplish both.</p>
-            <p>The rookie mistakes came from the fact that since Habari doesn’t have an importer in place yet to import one Habari install into another, I was faced with the only option of deleting the existing database, which was basically an import from the original WordPress installation, then dumping the bloggingmeta database, doing a quick search and replace for urls, importing that file directly into the database, then re-importing the old wordpress database using the importer plugin.  What I failed to do was check what was active in the plugins.  I already had the twitter plugin installed, so I’m guessing that it kept the settings from the old site, thus upon import, all the new posts were twittered.  Complete…rookie…mistake.  Couple with that that I also left the pingback plugin active, it tried to ping all the posts while importing.  Another party foul.  So not only did I spam Twitter, my import royally failed, so I was faced with doing the whole process over again, albeit this time I deactivated the offending plugins, and the import went off mostly without a hitch.  I might have lost a few old posts and/or comments, but all in all, I’m pleased with the outcome considering I’m doing this at 2 a.m. in the morning, and my focus might not be what it should be.  I wish I could write it off as having had a few adult beverages, but alas, I would be lying.</p>
-            <p>Over the next few days I will be doing some tweaking here and there, and shutting down the other site (and doing a 301 redirect).  I really like the typography of Ali’s <a href="http://www.awhitebox.com/dark-autumn-a-new-habari-theme">theme</a>, so I most likely will try to find the custom image I had made for the bottom, and trick out a few plugins.  At least for now.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/roku-netflix-player-first-impressions">
-              Roku Netflix Player First Impressions
-      </a>
-          </h1>
-          <time datetime="2008-06-12T00:00:00+00:00" class="dt-time post-date">12 Jun 2008</time>
-          <div class="e-content">
-            <p><img src="http://miklb.com/user/images/roku_netflix.jpg" class="left" alt="Netflix Player" />I had read a few things about the <a href="http://www.roku.com/netflixplayer/">Roku Netflix Player</a>, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try.</p>
-            <p>This was last Thursday.  We were given an option of spending an extra $10 on 2-day Fedex (on top of the $10 ground), so be the anxious geek, I pony up the extra money, thinking I’d have it on Monday.  Well, Roku sent an email saying the player would be shipped from the warehouse in the next 7-10 days on Friday, which rubbed me the wrong way, as that wasn’t mentioned in the order process, but OK.  Nothing else to my knowledge was emailed out (we used her email address).  So I was resolved to not see it for 2 weeks.  However, when I returned from running errands today, there it was sitting on my porch.</p>
-            <p>Since ordering, I had done a bit more research, and the one downfall I have seen repeated over and over is the limited amount of content available, as Netflix has to obtain digital rights to the content before being able to offer it.  Consensus seemed to say that it is mostly older TV series, indie/foreign films, and few older major releases tossed in here and there.  I wasn’t too anxious to really look at the selection, as I wasn’t expecting to receive it for another week at least, but I’m more an indie/foreign film kinda fan than Spiderman 3 anyway, so as I said, I’ve got 30 days.</p>
-            <p>As other reviews mention, it’s nothing but a simple little black box, with an external power supply.  A small, boxy remote and RCA cables fill out the included items.  Again, as I wasn’t expecting it so soon now, I hadn’t obtained additional cables (like optical audio to connect to the receiver or component video, which are all supported, as well as HDMI and  s-video).  I admit right up front I’m not the techno-geek when it comes to these aspects, so I’m not really qualified to say one thing or the other about the supported connections, etc.  The player can connect via wireless or ethernet (however, as I understand it, it doesn’t support 802.11n).  I gave the wireless a shot first, but figured I might have to run an ethernet cable.</p>
-            <p>Set up was really easy, a simple onscreen walk through entering my WEP key, a quick connection to Netflix, update some (firmware??) and restart, it gives a code that you then enter into your Netflix account.  Maybe 5 minutes total, and my account was connected to the TV, any movies in my queue that were available for the Instant Viewing was added to that queue as well, and I could see them on the screen.  I poked around quickly on the site, looking for something to add.  Dexter season 1 was there, I never saw the first season, and figured it would be a good test.  I added it to my queue, and within 30 seconds or so, it showed up on the TV.  TV seasons only need the season added, all episodes are available, whereas with DVD’s you have to add each disc.  I navigated to episode one, clicked play, a few seconds later it starts downloading, I see <strong>•••• quality</strong> after it loads (still not sure what that means, but I think it has something to do with my connection.  I generally get 18Mb/s or better with my wireless connection, even faster wired).  All told, roughly a minute before the show started playing.</p>
-            <p>Episode played fine, no skipping, no jumping, quality was as good as my FIOS cable (even with the included RCA cables).  Fast forwarding is a bit different, as they break shows up into little chapters of sorts, with stills for each section.  I haven’t really paid close enough attention yet to see what the time frame of each are, but they seem like 1 minute or so apiece. Different, but easy enough to adapt to.</p>
-            <p>Being the TV junky that I am, I poked around a bit more, and found that a lot of Law and Order SVU/CI seasons were available.  I often find myself watching reruns on TNT and USA Network, as I never really watched the show during it’s first runs, and heck, why not just watch it in order without the annoying commercials on those networks?  I added SVU season one, and watched the first two episodes.  Again, quality was fine (once I switched the perspective back to 4:3 from 16:9), with no skipping/jumping.  One criticism I’ve read about the player is that there’s no hard drive and no real buffering.  ( A interview with a Roku exec I read said they did some research, and found people didn’t want to hear a fan/HD spinning, thus one  reason it doesn’t have one.  Plus, they wanted to hit a price point, as well as eliminate as many parts that could fail.  Regardless of the reasons, so far, I don’t see a need for any of that with the connection speed I have.)</p>
-            <p><strong>Final Thoughts</strong>
-              All in all, first day in, it seems like a fine investment.  I found several more movies quickly browsing through the instant available selections (this has to be done on the computer, you can’t search for movies from the TV), so not counting the TV shows, I have 7 films queued up.  Plus the 3 DVD’s collecting dust, so I think I’ll be fine for the short term, they seem to be actively adding more content, and I’m sure as the player(s) gain popularity, they will be in a better bargaining position to obtain more.  If your goal is to watch a lot of new releases,  don’t plan on dropping your regular subscription down anytime soon.  However,  at $100, the player seems like a fair investment if you are a TV/movie junkie.  Also, there seems to be quite a bit of children’s content as well as History channel type documentaries, so the cost might be enticing to parents as well.</p>
-            <p>I’m sure I’ll discover more as I use it, please don’t hesitate to ask questions if you are interested in the player.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/obligatory-response-to-new-iphone">
-              Obligatory Response to New iPhone
-      </a>
-          </h1>
-          <time datetime="2008-06-09T00:00:00+00:00" class="dt-time post-date">09 Jun 2008</time>
-          <div class="e-content">
-            <p>I was really looking forward to today’s confirmation of the lower price 3G iPhone.  I purposely held off (for a change) on adopting a 1st gen Apple product, knowing the 3G service would be coming.  However, now that reports have confirmed that you will <strong>have</strong> to sign a contract, I’m not so sure now that I will be adopting the new phone.  I genuinely do not use a cell phone for talking enough to justify signing such a contract, and being required to have such a plan (what $70 a month?).  The previous $20 a month data plan plus minimal talk time per minute was fine with me, as I have used it with other “smartphones”.</p>
-            <p>I will be curious to see how they treat 1st gen iPhone users who currently are doing pay as you go plus data plans.  Perhaps those will still be allowed to use the prepay, and I’ll pick one up on teh cheap, until I can justify signing a contract paying for that much phone usage.</p>
-            <p>My other option is to wait to see what happens to iPod Touch prices, as I may get just as much use out of one of those as an iPhone.</p>
-            <p>If anyone has a suggestion for a smartphone that can be used with pay as you go and unlimited data plan with AT&amp;T, has a great web browser support, bluetooth, and is iSync capable, I’d love to hear about it. <em>edit</em>:  and can be purchased new/used for $200 or less without a contract.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/words-of-wisdom">
-              Words of Wisdom
-      </a>
-          </h1>
-          <time datetime="2008-05-05T00:00:00+00:00" class="dt-time post-date">05 May 2008</time>
-          <div class="e-content">
-            <p>Without getting into the whys and hows this statement came about, I find it very simple, yet poignant and applicable to many of life’s situations.</p>
-            <blockquote>
-              We're still learning to walk, and we're going to trip every now and then and sometimes when we run, we're going to fall on our faces. But as long as we get up, try again, and learn something from the experience, in the end, skinned knees and all, it'll be worth it.
-            </blockquote>
-            <p>Thanks <a href="http://www.morydd.net/">Sean.</a></p>
-            <p><em>edit</em> - might I add, I’m in a new-ish romantic relationship, which <strong>very</strong> recently hit a bump, and perhaps this analogy hit home there more than anywhere.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/mac-svn-monitoring-widget">
-              Mac SVN Monitoring Widget
-      </a>
-          </h1>
-          <time datetime="2008-04-30T00:00:00+00:00" class="dt-time post-date">30 Apr 2008</time>
-          <div class="e-content">
-            <p><a href="http://lab.arc90.com/2008/04/svn_notifier.php">SVN Notifiier</a> is a handy little Mac Dashboard widget that, using Growl, will notify you when a local working copy is out of date.  I’ve not quite gotten the “sticky” notice to work, but I just might need to edit the actual Growl settings.</p>
-            <p>Still, it’s nice to be able at a glance check your dashboard, or see a little growl notice pop up.</p>
-          </div>
-        </article>
-      </div>
-      <div class="pagination">
-        <a class="pagination-item older" href="/page28">Older</a>
-        <a class="pagination-item newer" href="/page26">Newer</a>
-      </div>
-    </main>
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+">IndieWeb principles</a>
+      </p>
+    </footer>
   </body>
 </html>

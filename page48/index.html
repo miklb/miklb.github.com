@@ -1,161 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
-      Miklb's Mindless Ramblings &middot; chronicling life in a digital world
-    
-  </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.">
+    <link rel="stylesheet" href= "/css/main.css">
+    <link rel="canonical" href="https://miklb.com/page48/">
+    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
     <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- Feed -->
-    <link href="https://miklb.superfeedr.com" rel="hub"/>
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-    <!-- SEO/Twitter/FB -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
     <!-- Begin Jekyll SEO tag v1.3.3 -->
+    <title>Home - Miklb’s Mindless Ramblings</title>
     <meta property="og:title" content="Home" />
-    <meta name="description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
+    <meta property="og:description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
     <link rel="canonical" href="https://miklb.com/page48/" />
     <meta property="og:url" content="https://miklb.com/page48/" />
     <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
     <script type="application/ld+json">
       {
           "@context": "http://schema.org",
           "@type": "WebPage",
           "headline": "Home",
-          "description": "A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between.",
+          "description": "Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.",
           "logo": "https://miklb.compublic/favicon.png",
           "url": "https://miklb.com/page48/"
         }
     </script>
     <!-- End Jekyll SEO tag -->
   </head>
-  <body class="layout-reverse">
-    <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/">
-              Miklb's Mindless Ramblings
-        </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
-    </div>
-    <main class="container content">
-      <div class="posts">
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/category-archives-plugin">
-              Category Archives Plugin
+  <body class="h-feed">
+    <header class="site-header" role="banner">
+      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li itemprop="url"><a  class="" href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main role="main">
+        <div class="content">
+          <div class="posts">
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/category-archives-plugin">
+                  Category Archives Plugin
       </a>
-          </h1>
-          <time datetime="2006-09-09T00:00:00+00:00" class="dt-time post-date">09 Sep 2006</time>
-          <div class="e-content">
-            <p><em>(disclaimer)</em>I’m not a coder, and this is my first attempt, I apologize if this isn’t properly documented or presented.</p>
-            <p>My very first WordPress Plugin!  I’ve dabbled with a lot of areas of WP, but until this <a href="http://wordpress.org/support/topic/86463?replies=2">post</a> in the support forums, I never really had an idea or need to write one.  But after doing some reading, I found that there wasn’t a simple way to accomplish this task.  All of WP’s archive features  are based on date.</p>
-            <p>So with the help of alphaoide via #wordpress on IRC, I put together this simple plugin to accomplish the task.  It worked fine on my test site, but may need some TLC before being good to go.  Basically it outputs categories by name in an h2 tag, then lists post titles with a permalink to the post.</p>
-            <p>I tested this by creating a <a href="http://codex.wordpress.org/Pages#Page_Templates">Page Template</a>, then inserting the plugin code within the content div of the theme.
+              </h1>
+              <time datetime="2006-09-09T00:00:00+00:00" class="dt-time post-date">09 Sep 2006</time>
+              <div class="e-content">
+                <p><em>(disclaimer)</em>I’m not a coder, and this is my first attempt, I apologize if this isn’t properly documented or presented.</p>
+                <p>My very first WordPress Plugin!  I’ve dabbled with a lot of areas of WP, but until this <a href="http://wordpress.org/support/topic/86463?replies=2">post</a> in the support forums, I never really had an idea or need to write one.  But after doing some reading, I found that there wasn’t a simple way to accomplish this task.  All of WP’s archive features  are based on date.</p>
+                <p>So with the help of alphaoide via #wordpress on IRC, I put together this simple plugin to accomplish the task.  It worked fine on my test site, but may need some TLC before being good to go.  Basically it outputs categories by name in an h2 tag, then lists post titles with a permalink to the post.</p>
+                <p>I tested this by creating a <a href="http://codex.wordpress.org/Pages#Page_Templates">Page Template</a>, then inserting the plugin code within the content div of the theme.
 The code to insert is
  <code>&lt; ?php mb_cat_archive(); ?&gt;</code>
-              (remove the space between the &lt; and ?, I’m not sure why that is getting reformatted in the post)
+                  (remove the space between the &lt; and ?, I’m not sure why that is getting reformatted in the post)
 I suppose this could be used in a sidebar, however it may create a very long list…
 So to summarize, download the file, unzip, and upload to your wp-content/plugins directory.
 Activate the plugin in the dashboard.  Create the page template, inserting the above code, save, and upload to your themes directory.
 Go to Write-&gt;Page, and choose the template you uploaded.
 The new page should now list your categories with their appropriate posts.
 I haven’t looked into how it handles posts with multiple categories, that will be on my todo list, I’m sure, if the plugin proves useful or popular.  I’d also like to add some AJAX to hide the posts until you click on the category (that would make it much more sidebar friendly), and the ability to change the h2 tag to whatever one likes.</p>
-            <p>You can download the file via:
-              <a href="http://www.miklb.com/blog/cat_archive.zip">http://www.miklb.com/blog/cat_archive.zip</a></p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/great-political-prank">
-              Great Political Prank
+                <p>You can download the file via:
+                  <a href="http://www.miklb.com/blog/cat_archive.zip">http://www.miklb.com/blog/cat_archive.zip</a></p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/great-political-prank">
+                  Great Political Prank
       </a>
-          </h1>
-          <time datetime="2006-09-08T00:00:00+00:00" class="dt-time post-date">08 Sep 2006</time>
-          <div class="e-content">
-            <p><a href="http://www.vanityfair.com/features/general/articles/060907fege01">VANITY FAIR</a>
-              What a great idea from a main stream media source.  Vanity Fair has a fake cover for <em>The Weekly Standard</em> which dogs the current efforts in Iraq.  Simply detach the fake cover from the Vanity Fair, and fold it over a copy on the newsstand, sit back, and watch the shock of the next neocon that approaches the newsstand.  Brilliant!</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/25c225bb-silver-mac">
-              » Silver Mac
+              </h1>
+              <time datetime="2006-09-08T00:00:00+00:00" class="dt-time post-date">08 Sep 2006</time>
+              <div class="e-content">
+                <p><a href="http://www.vanityfair.com/features/general/articles/060907fege01">VANITY FAIR</a>
+                  What a great idea from a main stream media source.  Vanity Fair has a fake cover for <em>The Weekly Standard</em> which dogs the current efforts in Iraq.  Simply detach the fake cover from the Vanity Fair, and fold it over a copy on the newsstand, sit back, and watch the shock of the next neocon that approaches the newsstand.  Brilliant!</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/25c225bb-silver-mac">
+                  » Silver Mac
       </a>
-          </h1>
-          <time datetime="2006-09-08T00:00:00+00:00" class="dt-time post-date">08 Sep 2006</time>
-          <div class="e-content">
-            <p><a href="http://www.silvermac.com/">» Silver Mac</a> a great Mac tips site, with several recent tips I didn’t know about.  I really like the recent tip on using a dashboard widget on the desktop.  As much as I like the idea of widgets, I rarely use them as it requires a few keystrokes.  Perhaps if I learn how to use Quicksilver with them…</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/looks-like-i-jinxed-us">
-              Looks Like I Jinxed Us
+              </h1>
+              <time datetime="2006-09-08T00:00:00+00:00" class="dt-time post-date">08 Sep 2006</time>
+              <div class="e-content">
+                <p><a href="http://www.silvermac.com/">» Silver Mac</a> a great Mac tips site, with several recent tips I didn’t know about.  I really like the recent tip on using a dashboard widget on the desktop.  As much as I like the idea of widgets, I rarely use them as it requires a few keystrokes.  Perhaps if I learn how to use Quicksilver with them…</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/looks-like-i-jinxed-us">
+                  Looks Like I Jinxed Us
       </a>
-          </h1>
-          <time datetime="2006-08-27T00:00:00+00:00" class="dt-time post-date">27 Aug 2006</time>
-          <div class="e-content">
-            <p><a href="http://icons.wunderground.com/data/images/at200605_model.gif">Hurricane Ernesto Computer Models</a></p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/5-quotes">
-              5 Quotes
+              </h1>
+              <time datetime="2006-08-27T00:00:00+00:00" class="dt-time post-date">27 Aug 2006</time>
+              <div class="e-content">
+                <p><a href="http://icons.wunderground.com/data/images/at200605_model.gif">Hurricane Ernesto Computer Models</a></p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/5-quotes">
+                  5 Quotes
       </a>
-          </h1>
-          <time datetime="2006-08-26T00:00:00+00:00" class="dt-time post-date">26 Aug 2006</time>
-          <div class="e-content">
-            <p>Saw this idea over at <a href="http://www.kottke.org/06/08/five-quotes">Jason Kottke’s site</a>, and thought it was a fun idea.  Sorta a meme, but not really.  At least there’s no tagging, <em> yet</em>.
+              </h1>
+              <time datetime="2006-08-26T00:00:00+00:00" class="dt-time post-date">26 Aug 2006</time>
+              <div class="e-content">
+                <p>Saw this idea over at <a href="http://www.kottke.org/06/08/five-quotes">Jason Kottke’s site</a>, and thought it was a fun idea.  Sorta a meme, but not really.  At least there’s no tagging, <em> yet</em>.
 So here goes:</p>
-            <p><strong>5 Quotes</strong></p>
-            <ul>
-              <li>You cannot acquire experience by making experiments. You cannot create experience. You must undergo it.
+                <p><strong>5 Quotes</strong></p>
+                <ul>
+                  <li>You cannot acquire experience by making experiments. You cannot create experience. You must undergo it.
     Albert Camus (1913 - 1960)</li>
-              <li>The only way to get rid of a temptation is to yield to it. Resist it, and your soul grows sick with longing for the things it has forbidden to itself.
+                  <li>The only way to get rid of a temptation is to yield to it. Resist it, and your soul grows sick with longing for the things it has forbidden to itself.
     Oscar Wilde (1854 - 1900)</li>
-              <li>We only do well the things we like doing.
+                  <li>We only do well the things we like doing.
     Colette (1873 - 1954)</li>
-              <li>It is not wealth one asks for, but just enough to preserve one's dignity, to work unhampered, to be generous, frank and independent.
+                  <li>It is not wealth one asks for, but just enough to preserve one's dignity, to work unhampered, to be generous, frank and independent.
     W. Somerset Maugham (1874 - 1965)</li>
-              <li>Only he is free who cultivates his own thoughts, and strives without fear to do justice to them.
+                  <li>Only he is free who cultivates his own thoughts, and strives without fear to do justice to them.
     Berthold Auerbach (1812 - 1882)</li>
-            </ul>
+                </ul>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
-      <div class="pagination">
-        <a class="pagination-item older" href="/page49">Older</a>
-        <a class="pagination-item newer" href="/page47">Newer</a>
-      </div>
-    </main>
+          <div class="pagination">
+            <a class="pagination-item older" href="/page49">Older</a>
+            <a class="pagination-item newer" href="/page47">Newer</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+">IndieWeb principles</a>
+      </p>
+    </footer>
   </body>
 </html>

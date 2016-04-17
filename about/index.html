@@ -1,76 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
-      About &middot; Miklb's Mindless Ramblings
-    
-  </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.">
+    <link rel="stylesheet" href= "/css/main.css">
+    <link rel="canonical" href="https://miklb.com/about/">
+    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
     <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- Feed -->
-    <link href="https://miklb.superfeedr.com" rel="hub"/>
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-    <!-- SEO/Twitter/FB -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
     <!-- Begin Jekyll SEO tag v1.3.3 -->
+    <title>About - Miklb’s Mindless Ramblings</title>
     <meta property="og:title" content="About" />
-    <meta name="description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
+    <meta property="og:description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
     <link rel="canonical" href="https://miklb.com/about/" />
     <meta property="og:url" content="https://miklb.com/about/" />
     <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
     <script type="application/ld+json">
       {
           "@context": "http://schema.org",
           "@type": "WebSite",
           "name": "Miklb’s Mindless Ramblings",
           "headline": "About",
-          "description": "A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between.",
+          "description": "Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.",
           "logo": "https://miklb.compublic/favicon.png",
           "url": "https://miklb.com/about/"
         }
     </script>
     <!-- End Jekyll SEO tag -->
   </head>
-  <body class="layout-reverse">
-    <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/">
-              Miklb's Mindless Ramblings
-        </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
+  <body class="h-feed">
+    <header class="site-header" role="banner">
+      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li itemprop="url"><a  class=" active" href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main role="main">
+        <div class="content">
+          <article class="post">
+            <header class="entry-header">
+              <h1 class="post-title">About</h1>
+            </header>
+            <div class="post-content">
+              <p>I’m Michael Bishop, lover of food, the web and a lot in between. More to come with this page as I finish the migration to Jekyll.</p>
+            </div>
+          </article>
         </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-          <a class="sidebar-nav-item active" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
+      </main>
     </div>
-    <main class="container content">
-      <article class="page">
-        <h1 class="page-title">About</h1>
-        <p>I’m Michael Bishop, lover of food, the web and a lot in between. More to come with this page as I finish the migration to Jekyll.</p>
-      </article>
-    </main>
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+">IndieWeb principles</a>
+      </p>
+    </footer>
   </body>
 </html>

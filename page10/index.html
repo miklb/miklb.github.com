@@ -1,145 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
-      Miklb's Mindless Ramblings &middot; chronicling life in a digital world
-    
-  </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.">
+    <link rel="stylesheet" href= "/css/main.css">
+    <link rel="canonical" href="https://miklb.com/page10/">
+    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
     <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- Feed -->
-    <link href="https://miklb.superfeedr.com" rel="hub"/>
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-    <!-- SEO/Twitter/FB -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
     <!-- Begin Jekyll SEO tag v1.3.3 -->
+    <title>Home - Miklb’s Mindless Ramblings</title>
     <meta property="og:title" content="Home" />
-    <meta name="description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
+    <meta property="og:description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
     <link rel="canonical" href="https://miklb.com/page10/" />
     <meta property="og:url" content="https://miklb.com/page10/" />
     <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
     <script type="application/ld+json">
       {
           "@context": "http://schema.org",
           "@type": "WebPage",
           "headline": "Home",
-          "description": "A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between.",
+          "description": "Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.",
           "logo": "https://miklb.compublic/favicon.png",
           "url": "https://miklb.com/page10/"
         }
     </script>
     <!-- End Jekyll SEO tag -->
   </head>
-  <body class="layout-reverse">
-    <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/">
-              Miklb's Mindless Ramblings
-        </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
+  <body class="h-feed">
+    <header class="site-header" role="banner">
+      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li itemprop="url"><a  class="" href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main role="main">
+        <div class="content">
+          <div class="posts">
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/pardon-the-mess">
+                  Pardon the Mess
+      </a>
+              </h1>
+              <time datetime="2011-06-28T00:00:00+00:00" class="dt-time post-date">28 Jun 2011</time>
+              <div class="e-content">
+                <p>In the process of moving the site over from Slicehost to Linode, so there may be some issues while I sort things out. Pardon the dust.</p>
+                <p>Still having problems.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/using-apc-and-subversion-checkouts">
+                  Using APC and Subversion Checkouts
+      </a>
+              </h1>
+              <time datetime="2011-06-05T00:00:00+00:00" class="dt-time post-date">05 Jun 2011</time>
+              <div class="e-content">
+                <p>I am in the process of moving my sites from Slicehost to Linode, as most are aware Slicehost is being phased out for Rackspace Cloud.  Anyway, I upgraded my VPS at Linode last night to Debian “Squeeze” and installed APC, which created a problem with the WordPress installations I had there.  Basically, I couldn’t access the admin.  Through the power of Twitter and the invaluable help of <a href="http://markjaquith.com/">Mark Jaquith</a>, I learned that by default APC doesn’t play nice with files that are checked out via Subversion.  I think the root of my problem was a stray apc config for overriding include once, but certainly the subversion issue could have been at play too.</p>
+                <p>Anyway, a little Googling on the subject, I discovered there’s a configuration option for APC to use <a href="http://www.php.net/manual/en/apc.configuration.php#ini.apc.stat-ctime">ctime</a>  instead of the default mtime.  Adding <code class="highlighter-rouge">apc.stat_ctime=1</code> is all that is required.</p>
+                <p>While I’m on the subject of migrating from Slicehost to Linode, <a href="http://developerkarma.com/">Andrew RIley</a> pointed out that someone had written a ruby script to <a href="https://github.com/Schultz/slicedns2linode">migrate the DNS information</a> for you.</p>
+                <p><em>Addendum</em> To be clear, I install WordPress using Subversion and the appropriate tag. My Habari installs are also all Subversion checkouts from trunk.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/technology-civil-war-parallels">
+                  Technology, Civil War &amp; Parallels
+      </a>
+              </h1>
+              <time datetime="2011-05-29T00:00:00+00:00" class="dt-time post-date">29 May 2011</time>
+              <div class="e-content">
+                <p><a href="http://www.flickr.com/photos/imageclectic/5604423448/" title="Telegraph Key by wblj, on Flickr"><img src="http://farm6.static.flickr.com/5230/5604423448_7acc49ff46.jpg" class="right" alt="Telegraph Key" /></a>I’ve been really enjoying both the <a href="http://www.lib.unc.edu/blogs/civilwar/">Civil War Day By Day</a> Blog, as well as the Disunion series in the Opininator from the <cite>NY Times</cite>.  Earlier this week Disunion had an article,  <a href="http://opinionator.blogs.nytimes.com/2011/05/21/communication-breakdown/?ref=opinion">Morse, The Telegraph &amp; Civil War</a>.  The gist of the article is that the advent of the Telegraph allowed for quicker and faster communication, and coupled with advances of the printing press, allowed for more newspapers to take hold, each with their own <quote>partisan orientation.</quote></p>
+                <p>This speed of communication allowed for the schism between North and South to broaden.</p>
+                <blockquote>Instead, of course, national unity unraveled as antagonistic North-South stereotypes hardened during the 1850s.  The dominant modern narrative of mid-19th century American history suggests that North and South began to see each other more clearly — and that each discovered how genuinely different the other had become. While a fast-changing North embraced progress and improvement, the South remained wedded to an archaic, retrogressive labor system. Under the circumstances, Northern and Southern outlooks and values necessarily diverged.</blockquote>
+                <p>What struck me most though about this article is how it parallels today’s current events and how the advances in technology and the internet can be directly attributed to the uprising in the Middle East, as well as to some degree the political discourse in our own country.  The 24 hour news cycle, and the fact that anyone can start a blog/website to argue their stance has really changed the way politics is done in the United States. We just had our first presidential candidate announce his candidacy via Twitter.  A politician was run out of Washington due to his use of Craigslist and the ability of a website to get a hold of the email exchange and image to quickly get it out, being picked up by mainstream media, resulting in his resignation within days of the story hitting the web.</p>
+                <p>Guess it goes to prove the old adage, <em>The more things change, the more they stay the same.</em></p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/blog-blogs-blogging-a-rant">
+                  Blog, Blogs, Blogging - A Rant
+      </a>
+              </h1>
+              <time datetime="2011-04-23T00:00:00+00:00" class="dt-time post-date">23 Apr 2011</time>
+              <div class="e-content">
+                <p>I have had this draft sitting around for awhile, but in the last two days I’ve seen the word “blog” used incorrectly several times, and decided to dust this off and publish it.</p>
+                <p>You have a <a href="http://en.wikipedia.org/wiki/Blog">blog</a>.  When writing for this web log, you are blogging, “I think I’m going to <strong>blog</strong> about the movie we saw last night”, I <em>blogged</em> about how I built the best mouse trap. You can call yourself a blogger.  <span class="pquote-r"> A blog however is not each individual entry or post you write.</span> Please do not tell me you wrote 3 blogs last night.  You can tell me you blogged 3 articles, or you wrote 3 entries for your blog, but you did not write 3 blogs. Do not tweet “my new blog” and link to an entry. When I see “new blog” I’m expecting a completely new site from the one you already have.</p>
+                <p>Now, I don’t claim to be a grammar nazi or even have the best grammar. But this is less about grammar and more about semantics and something that simply gets my goat.  Feel free to contradict or refute my position. I’m all ears.  Also, I came across a great blog <strong>post</strong> sometime back, <a href="http://www.rebeccablood.net/essays/weblog_history.html">on the history of weblogs</a> you may find interesting.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/a-loquat-by-any-other-name">
+                  A Loquat By Any Other Name…
+      </a>
+              </h1>
+              <time datetime="2011-03-29T00:00:00+00:00" class="dt-time post-date">29 Mar 2011</time>
+              <div class="e-content">
+                <p>So <a href="http://en.wikipedia.org/wiki/File:Eriobotrya_japonica2.jpg"><img src="http://miklb.com/user/images/loquat.png" alt="Loquat" class="right" /></a>I <a href="http://twitter.com/miklb/status/52856084532166656">tweeted</a>  <!-- http://twitter.com/miklb/status/52856084532166660 --> <style type="text/css">
+                    .bbpBox{background:url(http://a3.twimg.com/profile_background_images/3112038/wood.jpg) #8B542B;padding:20px;}
+                  </style>&lt;div id='tweet_52856084532166660' class='bbpBox' style='background:url(http://a3.twimg.com/profile_background_images/3112038/wood.jpg) #8B542B;padding:20px;'&gt;&lt;p class='bbpTweet' style='background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:16px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px;'&gt;I’m thinking most folks in <a href="http://search.twitter.com/search?q=%23SHeights" target="_new">#SHeights</a> &amp; <a href="http://search.twitter.com/search?q=%23Tampa" target="_new">#Tampa</a> are confusing kumquats with loquats. <a href="http://en.wikipedia.org/wiki/Loquat" target="_new">http://en.wikipedia.org/wiki/Loquat</a><span class="timestamp" style="font-size:12px;display:block;"><a title="Tue Mar 29 22:14:07 " href="http://twitter.com/miklb/status/52856084532166660">Tue Mar 29 22:14:07 </a> via <a href="http://kiwi-app.net" rel="nofollow">Kiwi</a></span><span class="metadata" style="display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6;"><span class="author" style="line-height:19px;"><a href="http://twitter.com/miklb"><img src="http://a1.twimg.com/profile_images/1266011995/wcmia_normal.jpg" style="float:left;margin:0 7px 0 0px;width:38px;height:38px;" /></a><strong><a href="http://twitter.com/miklb">Michael Bishop</a></strong><br />
+                      miklb</span></span>&lt;/p&gt;&lt;/div&gt; <!-- end of tweet -->that I’m guessing folks in Seminole Heights and Tampa might be confusing kumquats with loquats. Why? It’s a little late for citrus in general. Also, my native ass says kumquats are an even earlier citrus.  Also, they look similar (not really).  Taste: no comparison.  A super ripe loquat to me is a cross between a mango and peach. And heaven. Relish the wild loquats our fore fathers planted and the birds have spread Ybor and Seminole Heights neighbors. They are a treat.</p>
+              </div>
+            </article>
+          </div>
+          <div class="pagination">
+            <a class="pagination-item older" href="/page11">Older</a>
+            <a class="pagination-item newer" href="/page9">Newer</a>
+          </div>
         </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
+      </main>
     </div>
-    <main class="container content">
-      <div class="posts">
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/pardon-the-mess">
-              Pardon the Mess
-      </a>
-          </h1>
-          <time datetime="2011-06-28T00:00:00+00:00" class="dt-time post-date">28 Jun 2011</time>
-          <div class="e-content">
-            <p>In the process of moving the site over from Slicehost to Linode, so there may be some issues while I sort things out. Pardon the dust.</p>
-            <p>Still having problems.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/using-apc-and-subversion-checkouts">
-              Using APC and Subversion Checkouts
-      </a>
-          </h1>
-          <time datetime="2011-06-05T00:00:00+00:00" class="dt-time post-date">05 Jun 2011</time>
-          <div class="e-content">
-            <p>I am in the process of moving my sites from Slicehost to Linode, as most are aware Slicehost is being phased out for Rackspace Cloud.  Anyway, I upgraded my VPS at Linode last night to Debian “Squeeze” and installed APC, which created a problem with the WordPress installations I had there.  Basically, I couldn’t access the admin.  Through the power of Twitter and the invaluable help of <a href="http://markjaquith.com/">Mark Jaquith</a>, I learned that by default APC doesn’t play nice with files that are checked out via Subversion.  I think the root of my problem was a stray apc config for overriding include once, but certainly the subversion issue could have been at play too.</p>
-            <p>Anyway, a little Googling on the subject, I discovered there’s a configuration option for APC to use <a href="http://www.php.net/manual/en/apc.configuration.php#ini.apc.stat-ctime">ctime</a>  instead of the default mtime.  Adding <code class="highlighter-rouge">apc.stat_ctime=1</code> is all that is required.</p>
-            <p>While I’m on the subject of migrating from Slicehost to Linode, <a href="http://developerkarma.com/">Andrew RIley</a> pointed out that someone had written a ruby script to <a href="https://github.com/Schultz/slicedns2linode">migrate the DNS information</a> for you.</p>
-            <p><em>Addendum</em> To be clear, I install WordPress using Subversion and the appropriate tag. My Habari installs are also all Subversion checkouts from trunk.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/technology-civil-war-parallels">
-              Technology, Civil War &amp; Parallels
-      </a>
-          </h1>
-          <time datetime="2011-05-29T00:00:00+00:00" class="dt-time post-date">29 May 2011</time>
-          <div class="e-content">
-            <p><a href="http://www.flickr.com/photos/imageclectic/5604423448/" title="Telegraph Key by wblj, on Flickr"><img src="http://farm6.static.flickr.com/5230/5604423448_7acc49ff46.jpg" class="right" alt="Telegraph Key" /></a>I’ve been really enjoying both the <a href="http://www.lib.unc.edu/blogs/civilwar/">Civil War Day By Day</a> Blog, as well as the Disunion series in the Opininator from the <cite>NY Times</cite>.  Earlier this week Disunion had an article,  <a href="http://opinionator.blogs.nytimes.com/2011/05/21/communication-breakdown/?ref=opinion">Morse, The Telegraph &amp; Civil War</a>.  The gist of the article is that the advent of the Telegraph allowed for quicker and faster communication, and coupled with advances of the printing press, allowed for more newspapers to take hold, each with their own <quote>partisan orientation.</quote></p>
-            <p>This speed of communication allowed for the schism between North and South to broaden.</p>
-            <blockquote>Instead, of course, national unity unraveled as antagonistic North-South stereotypes hardened during the 1850s.  The dominant modern narrative of mid-19th century American history suggests that North and South began to see each other more clearly — and that each discovered how genuinely different the other had become. While a fast-changing North embraced progress and improvement, the South remained wedded to an archaic, retrogressive labor system. Under the circumstances, Northern and Southern outlooks and values necessarily diverged.</blockquote>
-            <p>What struck me most though about this article is how it parallels today’s current events and how the advances in technology and the internet can be directly attributed to the uprising in the Middle East, as well as to some degree the political discourse in our own country.  The 24 hour news cycle, and the fact that anyone can start a blog/website to argue their stance has really changed the way politics is done in the United States. We just had our first presidential candidate announce his candidacy via Twitter.  A politician was run out of Washington due to his use of Craigslist and the ability of a website to get a hold of the email exchange and image to quickly get it out, being picked up by mainstream media, resulting in his resignation within days of the story hitting the web.</p>
-            <p>Guess it goes to prove the old adage, <em>The more things change, the more they stay the same.</em></p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/blog-blogs-blogging-a-rant">
-              Blog, Blogs, Blogging - A Rant
-      </a>
-          </h1>
-          <time datetime="2011-04-23T00:00:00+00:00" class="dt-time post-date">23 Apr 2011</time>
-          <div class="e-content">
-            <p>I have had this draft sitting around for awhile, but in the last two days I’ve seen the word “blog” used incorrectly several times, and decided to dust this off and publish it.</p>
-            <p>You have a <a href="http://en.wikipedia.org/wiki/Blog">blog</a>.  When writing for this web log, you are blogging, “I think I’m going to <strong>blog</strong> about the movie we saw last night”, I <em>blogged</em> about how I built the best mouse trap. You can call yourself a blogger.  <span class="pquote-r"> A blog however is not each individual entry or post you write.</span> Please do not tell me you wrote 3 blogs last night.  You can tell me you blogged 3 articles, or you wrote 3 entries for your blog, but you did not write 3 blogs. Do not tweet “my new blog” and link to an entry. When I see “new blog” I’m expecting a completely new site from the one you already have.</p>
-            <p>Now, I don’t claim to be a grammar nazi or even have the best grammar. But this is less about grammar and more about semantics and something that simply gets my goat.  Feel free to contradict or refute my position. I’m all ears.  Also, I came across a great blog <strong>post</strong> sometime back, <a href="http://www.rebeccablood.net/essays/weblog_history.html">on the history of weblogs</a> you may find interesting.</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/a-loquat-by-any-other-name">
-              A Loquat By Any Other Name…
-      </a>
-          </h1>
-          <time datetime="2011-03-29T00:00:00+00:00" class="dt-time post-date">29 Mar 2011</time>
-          <div class="e-content">
-            <p>So <a href="http://en.wikipedia.org/wiki/File:Eriobotrya_japonica2.jpg"><img src="http://miklb.com/user/images/loquat.png" alt="Loquat" class="right" /></a>I <a href="http://twitter.com/miklb/status/52856084532166656">tweeted</a>  <!-- http://twitter.com/miklb/status/52856084532166660 --> <style type="text/css">
-                .bbpBox{background:url(http://a3.twimg.com/profile_background_images/3112038/wood.jpg) #8B542B;padding:20px;}
-              </style>&lt;div id='tweet_52856084532166660' class='bbpBox' style='background:url(http://a3.twimg.com/profile_background_images/3112038/wood.jpg) #8B542B;padding:20px;'&gt;&lt;p class='bbpTweet' style='background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:16px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px;'&gt;I’m thinking most folks in <a href="http://search.twitter.com/search?q=%23SHeights" target="_new">#SHeights</a> &amp; <a href="http://search.twitter.com/search?q=%23Tampa" target="_new">#Tampa</a> are confusing kumquats with loquats. <a href="http://en.wikipedia.org/wiki/Loquat" target="_new">http://en.wikipedia.org/wiki/Loquat</a><span class="timestamp" style="font-size:12px;display:block;"><a title="Tue Mar 29 22:14:07 " href="http://twitter.com/miklb/status/52856084532166660">Tue Mar 29 22:14:07 </a> via <a href="http://kiwi-app.net" rel="nofollow">Kiwi</a></span><span class="metadata" style="display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6;"><span class="author" style="line-height:19px;"><a href="http://twitter.com/miklb"><img src="http://a1.twimg.com/profile_images/1266011995/wcmia_normal.jpg" style="float:left;margin:0 7px 0 0px;width:38px;height:38px;" /></a><strong><a href="http://twitter.com/miklb">Michael Bishop</a></strong><br />
-                  miklb</span></span>&lt;/p&gt;&lt;/div&gt; <!-- end of tweet -->that I’m guessing folks in Seminole Heights and Tampa might be confusing kumquats with loquats. Why? It’s a little late for citrus in general. Also, my native ass says kumquats are an even earlier citrus.  Also, they look similar (not really).  Taste: no comparison.  A super ripe loquat to me is a cross between a mango and peach. And heaven. Relish the wild loquats our fore fathers planted and the birds have spread Ybor and Seminole Heights neighbors. They are a treat.</p>
-          </div>
-        </article>
-      </div>
-      <div class="pagination">
-        <a class="pagination-item older" href="/page11">Older</a>
-        <a class="pagination-item newer" href="/page9">Newer</a>
-      </div>
-    </main>
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+">IndieWeb principles</a>
+      </p>
+    </footer>
   </body>
 </html>

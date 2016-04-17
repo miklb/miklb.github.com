@@ -1,171 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
-      Miklb's Mindless Ramblings &middot; chronicling life in a digital world
-    
-  </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.">
+    <link rel="stylesheet" href= "/css/main.css">
+    <link rel="canonical" href="https://miklb.com/page29/">
+    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
     <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- Feed -->
-    <link href="https://miklb.superfeedr.com" rel="hub"/>
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-    <!-- SEO/Twitter/FB -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
     <!-- Begin Jekyll SEO tag v1.3.3 -->
+    <title>Home - Miklb’s Mindless Ramblings</title>
     <meta property="og:title" content="Home" />
-    <meta name="description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between." />
+    <meta name="description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
+    <meta property="og:description" content="Chronicling life in a digital world, touching on web dev, food, and a little of everything in between." />
     <link rel="canonical" href="https://miklb.com/page29/" />
     <meta property="og:url" content="https://miklb.com/page29/" />
     <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
     <script type="application/ld+json">
       {
           "@context": "http://schema.org",
           "@type": "WebPage",
           "headline": "Home",
-          "description": "A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between.",
+          "description": "Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.",
           "logo": "https://miklb.compublic/favicon.png",
           "url": "https://miklb.com/page29/"
         }
     </script>
     <!-- End Jekyll SEO tag -->
   </head>
-  <body class="layout-reverse">
-    <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/">
-              Miklb's Mindless Ramblings
-        </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
-    </div>
-    <main class="container content">
-      <div class="posts">
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/migrating-servers">
-              Migrating Servers
+  <body class="h-feed">
+    <header class="site-header" role="banner">
+      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li itemprop="url"><a  class="" href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main role="main">
+        <div class="content">
+          <div class="posts">
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/migrating-servers">
+                  Migrating Servers
       </a>
-          </h1>
-          <time datetime="2008-04-15T00:00:00+00:00" class="dt-time post-date">15 Apr 2008</time>
-          <div class="e-content">
-            <p>What an experience this has been.  I hope to write a comprehensive post at some point about the experience, but suffice to say, it’s been quite the crash course on Apache, Debian, and DNS.</p>
-            <p>It all started with some curiosity, in which I purchased a <a href="http://slicehost.com">Slice</a>, and began poking around with the many tutorials they offer.  Ultimately, <a href="http://asymptomatic.net/">Owen</a> provided me with his LAMPME script that did the basic setup for a debain, apache2, PHP 5, MySQL 5 set up, using mod_vhost (please don’t quote me on any of this :-D ), which sorta got me going.  I got a bit sidetracked, and confused with setting up phpMyAdmin (I’m not that comfortable with CLI yet), and let the whole thing just sit, unused for a month or so.  However, due to the persistent <a href="http://weblog.mediatemple.net/weblog/category/system-incidents/gs-grid-service-intermittent-service-availability/">problems with MediaTemple</a> grid-servers, I vowed to stop shelling out money to them for the hassles.  If my sites go down, I want to be the one to blame, and no one else.  Besides, it’s high time that I learn more about this aspect of web development.<br />
-              <br />
-              So, armed with help from<span style="text-decoration: underline;"> </span><a href="http://skippy.net">Skippy</a>, and some new found confidence, I got everything set up so as to have a basic understanding of how/where things go, and started moving domains.  I’m just about done, with this being one of the last.  If anyone notices anything wonky, assuming I have visitors, please let me know.<br />
-              <br />
-              Also which is quite cool so far, is that I’m going to deploy the <a href="http://wiki.habariproject.org/en/Multisite">multi-site</a> functionality of Habari to minimize the number of actual installs I have on the server, as I run everything off of head, this means less outdated installs.  Right now I’m looking at having just 2 actual installations, with everything else running off of those.  So far it’s worked out fine, though it took a little playing to get paths for things like images and files sorted out.  More on that later.  Certainly something that needs more attention, especially as silos mature.<br />
-              <br />
-              Thanks to everyone who’ve helped in the process.<br />
-            </p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/verizon-fios-experiences">
-              Verizon Fios Experiences
+              </h1>
+              <time datetime="2008-04-15T00:00:00+00:00" class="dt-time post-date">15 Apr 2008</time>
+              <div class="e-content">
+                <p>What an experience this has been.  I hope to write a comprehensive post at some point about the experience, but suffice to say, it’s been quite the crash course on Apache, Debian, and DNS.</p>
+                <p>It all started with some curiosity, in which I purchased a <a href="http://slicehost.com">Slice</a>, and began poking around with the many tutorials they offer.  Ultimately, <a href="http://asymptomatic.net/">Owen</a> provided me with his LAMPME script that did the basic setup for a debain, apache2, PHP 5, MySQL 5 set up, using mod_vhost (please don’t quote me on any of this :-D ), which sorta got me going.  I got a bit sidetracked, and confused with setting up phpMyAdmin (I’m not that comfortable with CLI yet), and let the whole thing just sit, unused for a month or so.  However, due to the persistent <a href="http://weblog.mediatemple.net/weblog/category/system-incidents/gs-grid-service-intermittent-service-availability/">problems with MediaTemple</a> grid-servers, I vowed to stop shelling out money to them for the hassles.  If my sites go down, I want to be the one to blame, and no one else.  Besides, it’s high time that I learn more about this aspect of web development.<br />
+                  <br />
+                  So, armed with help from<span style="text-decoration: underline;"> </span><a href="http://skippy.net">Skippy</a>, and some new found confidence, I got everything set up so as to have a basic understanding of how/where things go, and started moving domains.  I’m just about done, with this being one of the last.  If anyone notices anything wonky, assuming I have visitors, please let me know.<br />
+                  <br />
+                  Also which is quite cool so far, is that I’m going to deploy the <a href="http://wiki.habariproject.org/en/Multisite">multi-site</a> functionality of Habari to minimize the number of actual installs I have on the server, as I run everything off of head, this means less outdated installs.  Right now I’m looking at having just 2 actual installations, with everything else running off of those.  So far it’s worked out fine, though it took a little playing to get paths for things like images and files sorted out.  More on that later.  Certainly something that needs more attention, especially as silos mature.<br />
+                  <br />
+                  Thanks to everyone who’ve helped in the process.<br />
+                </p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/verizon-fios-experiences">
+                  Verizon Fios Experiences
       </a>
-          </h1>
-          <time datetime="2008-04-02T00:00:00+00:00" class="dt-time post-date">02 Apr 2008</time>
-          <div class="e-content">
-            <p>I just got off the phone with Verizon customer <s>migraine</s> service, and am left completely mystified.  My story starts with the fact that Verizon didn’t notify us that their was a shortage of HD DVR boxes when we placed our order.  It continued to the installation process, where the affable technician, albeit sporting the classic plumber’s crack while installing, failed to explain to us that while he was connecting the DVR to the HD TV, that in fact, we wouldn’t be able to watch any HD programming.  I had to wait until the next business day to speak to anyone about the problem (installation was on a Saturday, and though they advertise 24/7 support, that doesn’t apply to most FIOS issues).  I was then explained to that there was a back order on the Motorola HD DVR boxes, and that it would probably be the end of the month (February) before they were in.  Sounded fair.  They would discount our account the price of the DVR until then, we’d get the new DVR via UPS, swap them out, mail back the standard box at no cost.  OK, slightly inconveniencing, but fair.</p>
-            <p>First of March, I hadn’t heard anything, so I called customer service again.  I was given the same basic information, but this time, I was told middle of March.  Frustration is growing.</p>
-            <p>Mid March, I call again, I’d really like to be watching some of the movies and programming I enjoy in HD.  This time, I was told it would be the end of the month, and that some boxes had already been swapped out, but there was still a back order.  Frustration is reaching the point of wanting to yell and reach through the phone and choke the people on the other end of the line, but I managed to remain calm.</p>
-            <p>Which brings me to today.  I call to ask about this issue, as well as to inquire about picture-in-picture.  I get a tech support person who I’m sure isn’t based in the U.S., perhaps Mexico City?  Regardless, I inquire about the PIP.  This gentleman insists that if my TV supports PIP, then I should have PIP.  I explain to him that sure, with an antenna, I can watch PIP, but that PIP with the cable would require the box to split the signal, and when would this be introduced.  He doesn’t have a clue to what I’m talking about.  I ask to speak to someone else.</p>
-            <p>The next gentleman I speak with is most likely Indian, again, the primary problem is communication, not nationality for me.  This person informs me that if I want PIP, I would need a second box, or use a splitter from the coax entering the house and would get PIP for the first 50 channels.  Again, I try to explain that for instance, BrightHouse supports PIP within their DVR boxes, but he doesn’t believe me.  After another tech question about using the “last” (previous) button.  The Verizon Fios boxes support 9999 channels, so if you want to watch, say channel 8, you can just enter 8, but there’s a delay, so I got into the habit of hitting 0008.  Well, to me it’s a bug, to them, I’m stupid, but if you type 0008, then 0084, the previous/last button won’t work.  If I do 8/84 it works.  What ever.  I then asked to be transferred to customer service, as tech support doesn’t know anything about FIOS DVR boxes.  Oh, and he comes back and says, “they are working on the PIP as we speak, and might be available in 6 months”, obviously someone was listening in and corrected him to a degree.</p>
-            <p>I get a very nice lady, most likely U.S. based.  She tells me she’s not been given any timeframes for the the swap out, and that she’s been collecting names to call back when she has information.  At this point, I’m completely frustrated, and want to just cancel the package, without penalty (technically, we signed a 2 year contract, with a $199 cancellation fee) because they are not providing all the services outlined in the contract.  I was transferred to a “retention specialist”, again, most likely American, who said she didn’t know anything about PIP, nor did she have any time frames for when the boxes would be swapped.  I said I’d like to confirm I could cancel without penalty, and she said, no, you are still be provided with the bundled service.  I then outlined that I had been lied to about the time frame of replacement during the first month when I could have cancelled the service.  She simply ignored me.  Had I been told in mid February that it might 4 months before HD boxes would be available, I might not have signed on with Verizon at the time.  I could have gotten BrightHouse, without a contract, and simply switched when HD was available.  But no, Verizon felt is was better to lie and hide information and con us into keeping the contract for a short term gain, and the loss of long term satisfaction.</p>
-            <p>I will say I have no qualms with the other two services provided, internet connection is as fast as advertised,  and the phone service is fine.  I don’t like the fact that to use the provided voice mail, I have to call a separate number to check my voice mail, I can’t simply call my own number to do so, but what ever, that’s what the memory is for on the phone I suppose.</p>
-            <p>I’d love to know just for personal satisfaction if indeed Verizon could be sued for their unscrupulous actions regarding the hiding/lying about HD service.  I highly doubt I would have much of a case, as I don’t have any real documentation as to who/when I spoke with about the time frames, which I generally tend to do, and will start doing again when speaking with customer service reps.</p>
-            <p><em>Ahh, now I feel better.</em></p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/testing-diigo-and-habari">
-              Testing Diigo and Habari
+              </h1>
+              <time datetime="2008-04-02T00:00:00+00:00" class="dt-time post-date">02 Apr 2008</time>
+              <div class="e-content">
+                <p>I just got off the phone with Verizon customer <s>migraine</s> service, and am left completely mystified.  My story starts with the fact that Verizon didn’t notify us that their was a shortage of HD DVR boxes when we placed our order.  It continued to the installation process, where the affable technician, albeit sporting the classic plumber’s crack while installing, failed to explain to us that while he was connecting the DVR to the HD TV, that in fact, we wouldn’t be able to watch any HD programming.  I had to wait until the next business day to speak to anyone about the problem (installation was on a Saturday, and though they advertise 24/7 support, that doesn’t apply to most FIOS issues).  I was then explained to that there was a back order on the Motorola HD DVR boxes, and that it would probably be the end of the month (February) before they were in.  Sounded fair.  They would discount our account the price of the DVR until then, we’d get the new DVR via UPS, swap them out, mail back the standard box at no cost.  OK, slightly inconveniencing, but fair.</p>
+                <p>First of March, I hadn’t heard anything, so I called customer service again.  I was given the same basic information, but this time, I was told middle of March.  Frustration is growing.</p>
+                <p>Mid March, I call again, I’d really like to be watching some of the movies and programming I enjoy in HD.  This time, I was told it would be the end of the month, and that some boxes had already been swapped out, but there was still a back order.  Frustration is reaching the point of wanting to yell and reach through the phone and choke the people on the other end of the line, but I managed to remain calm.</p>
+                <p>Which brings me to today.  I call to ask about this issue, as well as to inquire about picture-in-picture.  I get a tech support person who I’m sure isn’t based in the U.S., perhaps Mexico City?  Regardless, I inquire about the PIP.  This gentleman insists that if my TV supports PIP, then I should have PIP.  I explain to him that sure, with an antenna, I can watch PIP, but that PIP with the cable would require the box to split the signal, and when would this be introduced.  He doesn’t have a clue to what I’m talking about.  I ask to speak to someone else.</p>
+                <p>The next gentleman I speak with is most likely Indian, again, the primary problem is communication, not nationality for me.  This person informs me that if I want PIP, I would need a second box, or use a splitter from the coax entering the house and would get PIP for the first 50 channels.  Again, I try to explain that for instance, BrightHouse supports PIP within their DVR boxes, but he doesn’t believe me.  After another tech question about using the “last” (previous) button.  The Verizon Fios boxes support 9999 channels, so if you want to watch, say channel 8, you can just enter 8, but there’s a delay, so I got into the habit of hitting 0008.  Well, to me it’s a bug, to them, I’m stupid, but if you type 0008, then 0084, the previous/last button won’t work.  If I do 8/84 it works.  What ever.  I then asked to be transferred to customer service, as tech support doesn’t know anything about FIOS DVR boxes.  Oh, and he comes back and says, “they are working on the PIP as we speak, and might be available in 6 months”, obviously someone was listening in and corrected him to a degree.</p>
+                <p>I get a very nice lady, most likely U.S. based.  She tells me she’s not been given any timeframes for the the swap out, and that she’s been collecting names to call back when she has information.  At this point, I’m completely frustrated, and want to just cancel the package, without penalty (technically, we signed a 2 year contract, with a $199 cancellation fee) because they are not providing all the services outlined in the contract.  I was transferred to a “retention specialist”, again, most likely American, who said she didn’t know anything about PIP, nor did she have any time frames for when the boxes would be swapped.  I said I’d like to confirm I could cancel without penalty, and she said, no, you are still be provided with the bundled service.  I then outlined that I had been lied to about the time frame of replacement during the first month when I could have cancelled the service.  She simply ignored me.  Had I been told in mid February that it might 4 months before HD boxes would be available, I might not have signed on with Verizon at the time.  I could have gotten BrightHouse, without a contract, and simply switched when HD was available.  But no, Verizon felt is was better to lie and hide information and con us into keeping the contract for a short term gain, and the loss of long term satisfaction.</p>
+                <p>I will say I have no qualms with the other two services provided, internet connection is as fast as advertised,  and the phone service is fine.  I don’t like the fact that to use the provided voice mail, I have to call a separate number to check my voice mail, I can’t simply call my own number to do so, but what ever, that’s what the memory is for on the phone I suppose.</p>
+                <p>I’d love to know just for personal satisfaction if indeed Verizon could be sued for their unscrupulous actions regarding the hiding/lying about HD service.  I highly doubt I would have much of a case, as I don’t have any real documentation as to who/when I spoke with about the time frames, which I generally tend to do, and will start doing again when speaking with customer service reps.</p>
+                <p><em>Ahh, now I feel better.</em></p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/testing-diigo-and-habari">
+                  Testing Diigo and Habari
       </a>
-          </h1>
-          <time datetime="2008-03-23T00:00:00+00:00" class="dt-time post-date">23 Mar 2008</time>
-          <div class="e-content">
-            <p><a href="http://h0bbel.p0ggel.org/habari-themes">Habari Themes :: h0bbel.p0ggel.org</a></p>
-            <p>I recently discovered <a href="http://diigo.com">Diigo</a>, and am testing their post to blog feature built into their toolbar with Habari.  Figured h0bbel was a good link to use :-D</p>
-            <blockquote>
-              Did you know that currently there are thirteen publicly available themes ready for download and usage for your Habari install? Some of the themes that are available are ported from other blogging platforms, others are &quot;pure&quot; Habari themes that doesn't originate anywhere else.
+              </h1>
+              <time datetime="2008-03-23T00:00:00+00:00" class="dt-time post-date">23 Mar 2008</time>
+              <div class="e-content">
+                <p><a href="http://h0bbel.p0ggel.org/habari-themes">Habari Themes :: h0bbel.p0ggel.org</a></p>
+                <p>I recently discovered <a href="http://diigo.com">Diigo</a>, and am testing their post to blog feature built into their toolbar with Habari.  Figured h0bbel was a good link to use :-D</p>
+                <blockquote>
+                  Did you know that currently there are thirteen publicly available themes ready for download and usage for your Habari install? Some of the themes that are available are ported from other blogging platforms, others are &quot;pure&quot; Habari themes that doesn't originate anywhere else.
 
 Did you know that currently there are thirteen publicly available themes ready for download and usage for your Habari install? Some of the themes that are available are ported from other blogging platforms, others are &quot;pure&quot; Habari themes that doesn't originate anywhere else.
-            </blockquote>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/swanky-theme">
-              Swanky Theme
+                </blockquote>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/swanky-theme">
+                  Swanky Theme
       </a>
-          </h1>
-          <time datetime="2008-03-01T00:00:00+00:00" class="dt-time post-date">01 Mar 2008</time>
-          <div class="e-content">
-            <p><strong>Updated! See the <a href="http://miklb.com/habari-theme-swanky-05beta-released">latest post on details&lt;/strong&gt;</a></strong></p>
-            <p><img src="http://miklb.com/user/images/swanky_screenshot.jpg" alt="screenshot" class="left" />This week an <a href="http://www.freecsstemplates.org/preview/swanky">open source design </a> came across my feed reader, and something about it caught my eye.  Immediately however, I didn’t think the header matched the design name, so I set about creating something a bit more  <em>“swanky”</em>.  From there, I began porting it to <a href="http://habariproject.org">Habari</a>.  The goal was a ready to go theme, with support for several of the popular available plugins.  To that end, Swanky supports half a dozen plugins, a couple of which are recommended.</p>
-            <p>For recommended plugins, Raman Ng’s <a href="http://blog.tinyau.net/archives/2007/07/02/habari-rn-related-posts-plugin/"> Related Posts plugin </a> and his <a href="http://blog.tinyau.net/archives/2007/08/30/habari-rn-tag-cloud-plugin">Tag Cloud plugin</a> will provide full intent and functionality of the theme.</p>
-            <p>The theme also supports the Credit Due plugin that is available from the <a href="http://www.habariproject.org/dist/plugins/">Habari Extras repository.</a>  Activation of the plugin and the addition of a Credits page will automatically move the credits from the footer, and create a link to a page on your site at  example.com /credits, which will contain the original design credits which are asked to be kept in place, as well as credits for all plugins and the Habari theme itself. (It will also exclude the page /credits from the top navigation)  You do not need to add any content to the page, simply creating the page will suffice.  If you have any other “shout outs” you’d like to add in addition to the plugins output, that will appear above the default output.  Without the plugin and page, the link for the original design and theme design will be shown in the footer.</p>
-            <p>Suggested plugins include the aforementioned Credit Due, as well as the pingback plugin bundled with Habari, Gravatars (also in Habari Extras), and the Recent Comments plugin in Extras.  If the Recent Comments plugin is not installed, it will default to included code in the theme.  Using the Recent Comments plugin allows for user definition of some output, including adding a date, and how many recent comments to show. The default code simply displays 5 most recent, comment author and post.  The theme is coded to use the unordered list if you use the plugin, changing that would require editing the sidebar.php template.</p>
-            <p>The theme also supports the Twitter plugin (also in the Extras Repo), and will show on pages that recent posts show.  (see below regarding dynamic display).</p>
-            <p>One small feature of the theme is that the middle sidebar is dynamic based on certain templates being viewed.  Single post views will not show the recent posts, rather the posts meta, as well as related posts (if that plugin is active).  If the Twitter plugin is active and configured, pages that show recent posts will also show above them your most recent tweet, twitter icon, and a link to your twitter page.</p>
-            <p>This is considered a .1alpha release, future versions, aside from bug fixing, will support more dynamic options for plugins to output content in the 2nd sidebar, among any other suggestions.</p>
-            <p>Please direct any comments, bugs, suggestions to the comments on this post.</p>
-            <p><a href="http://miklb.com/user/downloads/swanky_0.2.zip">Download Swanky</a> 0.2.</p>
-            <p><strong>Users of trunk &gt;r1574</strong></p>
-            <p><a href="http://miklb.com/user/downloads/swanky_0.3.1.zip">Download Swanky 0.3.1</a></p>
-            <p><a href="http://themes.miklb.com/">Current Demo</a></p>
-            <p><strong>Edit</strong> I failed to mention, if you use the gravatar plugin, there is a default gravatar in the theme’s images directory that you can point to that matches the header (in the plugin options you can point to the image).</p>
-          </div>
-        </article>
-        <article class="post h-entry">
-          <h1 class="post-title p-name">
-            <a class="u-url" href="/habari-4-released">
-              Habari .4 released
+              </h1>
+              <time datetime="2008-03-01T00:00:00+00:00" class="dt-time post-date">01 Mar 2008</time>
+              <div class="e-content">
+                <p><strong>Updated! See the <a href="http://miklb.com/habari-theme-swanky-05beta-released">latest post on details&lt;/strong&gt;</a></strong></p>
+                <p><img src="http://miklb.com/user/images/swanky_screenshot.jpg" alt="screenshot" class="left" />This week an <a href="http://www.freecsstemplates.org/preview/swanky">open source design </a> came across my feed reader, and something about it caught my eye.  Immediately however, I didn’t think the header matched the design name, so I set about creating something a bit more  <em>“swanky”</em>.  From there, I began porting it to <a href="http://habariproject.org">Habari</a>.  The goal was a ready to go theme, with support for several of the popular available plugins.  To that end, Swanky supports half a dozen plugins, a couple of which are recommended.</p>
+                <p>For recommended plugins, Raman Ng’s <a href="http://blog.tinyau.net/archives/2007/07/02/habari-rn-related-posts-plugin/"> Related Posts plugin </a> and his <a href="http://blog.tinyau.net/archives/2007/08/30/habari-rn-tag-cloud-plugin">Tag Cloud plugin</a> will provide full intent and functionality of the theme.</p>
+                <p>The theme also supports the Credit Due plugin that is available from the <a href="http://www.habariproject.org/dist/plugins/">Habari Extras repository.</a>  Activation of the plugin and the addition of a Credits page will automatically move the credits from the footer, and create a link to a page on your site at  example.com /credits, which will contain the original design credits which are asked to be kept in place, as well as credits for all plugins and the Habari theme itself. (It will also exclude the page /credits from the top navigation)  You do not need to add any content to the page, simply creating the page will suffice.  If you have any other “shout outs” you’d like to add in addition to the plugins output, that will appear above the default output.  Without the plugin and page, the link for the original design and theme design will be shown in the footer.</p>
+                <p>Suggested plugins include the aforementioned Credit Due, as well as the pingback plugin bundled with Habari, Gravatars (also in Habari Extras), and the Recent Comments plugin in Extras.  If the Recent Comments plugin is not installed, it will default to included code in the theme.  Using the Recent Comments plugin allows for user definition of some output, including adding a date, and how many recent comments to show. The default code simply displays 5 most recent, comment author and post.  The theme is coded to use the unordered list if you use the plugin, changing that would require editing the sidebar.php template.</p>
+                <p>The theme also supports the Twitter plugin (also in the Extras Repo), and will show on pages that recent posts show.  (see below regarding dynamic display).</p>
+                <p>One small feature of the theme is that the middle sidebar is dynamic based on certain templates being viewed.  Single post views will not show the recent posts, rather the posts meta, as well as related posts (if that plugin is active).  If the Twitter plugin is active and configured, pages that show recent posts will also show above them your most recent tweet, twitter icon, and a link to your twitter page.</p>
+                <p>This is considered a .1alpha release, future versions, aside from bug fixing, will support more dynamic options for plugins to output content in the 2nd sidebar, among any other suggestions.</p>
+                <p>Please direct any comments, bugs, suggestions to the comments on this post.</p>
+                <p><a href="http://miklb.com/user/downloads/swanky_0.2.zip">Download Swanky</a> 0.2.</p>
+                <p><strong>Users of trunk &gt;r1574</strong></p>
+                <p><a href="http://miklb.com/user/downloads/swanky_0.3.1.zip">Download Swanky 0.3.1</a></p>
+                <p><a href="http://themes.miklb.com/">Current Demo</a></p>
+                <p><strong>Edit</strong> I failed to mention, if you use the gravatar plugin, there is a default gravatar in the theme’s images directory that you can point to that matches the header (in the plugin options you can point to the image).</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
+                <a class="u-url" href="/habari-4-released">
+                  Habari .4 released
       </a>
-          </h1>
-          <time datetime="2008-02-22T00:00:00+00:00" class="dt-time post-date">22 Feb 2008</time>
-          <div class="e-content">
-            <p><a href="http://habariproject.org/en/0-4-released">It’s official</a>, Habari 0.4 DR has been released.  It’s <em>hopefully </em>, the last developer release, and with .5 will enter beta status.</p>
-            <p>I’ve <a href="http://miklb.com/habari-0-3-released">previously discussed</a> what it is about the community that gives me that <em>warm fuzzy</em> feeling, and that continues to be the case as the project grows.  It’s especially enriching to see new community members contributing.</p>
-            <p>Thanks to everyone who helped make this release possible.</p>
-            <p>For a little more info about the new release, I’ll let one of the newer community members, Michael Harris, <a href="http://www.twofishcreative.com/michael/blog/2008/02/22/habari">outline some of the big changes</a>.</p>
-            <p>I’m very excited about where this project is going, and can only imagine where it will be a year from now.</p>
+              </h1>
+              <time datetime="2008-02-22T00:00:00+00:00" class="dt-time post-date">22 Feb 2008</time>
+              <div class="e-content">
+                <p><a href="http://habariproject.org/en/0-4-released">It’s official</a>, Habari 0.4 DR has been released.  It’s <em>hopefully </em>, the last developer release, and with .5 will enter beta status.</p>
+                <p>I’ve <a href="http://miklb.com/habari-0-3-released">previously discussed</a> what it is about the community that gives me that <em>warm fuzzy</em> feeling, and that continues to be the case as the project grows.  It’s especially enriching to see new community members contributing.</p>
+                <p>Thanks to everyone who helped make this release possible.</p>
+                <p>For a little more info about the new release, I’ll let one of the newer community members, Michael Harris, <a href="http://www.twofishcreative.com/michael/blog/2008/02/22/habari">outline some of the big changes</a>.</p>
+                <p>I’m very excited about where this project is going, and can only imagine where it will be a year from now.</p>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
-      <div class="pagination">
-        <a class="pagination-item older" href="/page30">Older</a>
-        <a class="pagination-item newer" href="/page28">Newer</a>
-      </div>
-    </main>
+          <div class="pagination">
+            <a class="pagination-item older" href="/page30">Older</a>
+            <a class="pagination-item newer" href="/page28">Newer</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+">IndieWeb principles</a>
+      </p>
+    </footer>
   </body>
 </html>

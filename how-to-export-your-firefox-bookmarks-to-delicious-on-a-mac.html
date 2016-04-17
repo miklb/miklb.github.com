@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
-      How to Export your FireFox Bookmarks to Del.icio.us on a Mac &middot; Miklb's Mindless Ramblings
-    
-  </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Export your FireFox Bookmarks to Del.icio.us on a Mac</title>
+    <meta name="description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.">
+    <link rel="stylesheet" href= "/css/main.css">
+    <link rel="canonical" href="https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac">
+    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
     <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- Feed -->
-    <link href="https://miklb.superfeedr.com" rel="hub"/>
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-    <!-- SEO/Twitter/FB -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
     <!-- Begin Jekyll SEO tag v1.3.3 -->
+    <title>How to Export your FireFox Bookmarks to Del.icio.us on a Mac - Miklb’s Mindless Ramblings</title>
     <meta property="og:title" content="How to Export your FireFox Bookmarks to Del.icio.us on a Mac" />
     <meta name="description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV." />
     <meta property="og:description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV." />
@@ -34,8 +23,6 @@
     <meta property="article:published_time" content="2005-11-18T00:00:00+00:00" />
     <link rel="next" href="https://miklb.com/milk-for-oil" title="Milk for Oil?" />
     <link rel="prev" href="https://miklb.com/who-hired-this-guy" title="Who Hired This Guy??" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
     <script type="application/ld+json">
       {
           "@context": "http://schema.org",
@@ -49,84 +36,78 @@
     </script>
     <!-- End Jekyll SEO tag -->
   </head>
-  <body class="layout-reverse">
-    <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/">
-              Miklb's Mindless Ramblings
-        </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
-    </div>
-    <main class="container content">
-      <article class="post h-entry">
-        <h1 class="post-title p-name">How to Export your FireFox Bookmarks to Del.icio.us on a Mac</h1>
-        <time datetime="2005-11-18T00:00:00+00:00" class="dt-time post-date">18 Nov 2005</time>
-        <div class="e-content">
-          <p class="lead p-bridgy-twitter-content">
-          </p>
-          <p>This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.</p>
-          <p>First, head over to SourceForge and grab this <a href="http://sourceforge.net/projects/bkmrk2dlcs/">script</a>.    This is assuming your downloads go to your desktop.  Second, export your FF bookmarks, for ease of explanation, to your desktop as well(make sure you select all the folders you want to export, by default, the Toolbar bookmarks are the only ones highlighted).  You should have a Folder then on your desktop BookmarksToDelicious and your bookmarks.html file (and what ever else you have on your desktop).  Now go to your Utilities folder, and open the Terminal application.  For those who are not familiar with it, you  are now officially venturing into the Unix core that you’ve heard about.
+  <body class="h-feed">
+    <header class="site-header" role="banner">
+      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li itemprop="url"><a  class="" href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main role="main">
+        <div class="content">
+          <article class="post h-entry">
+            <header class="entry-header">
+              <h1 class="post-title p-name">
+                <a class="u-url" rel="bookmark" href="/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac">
+                  How to Export your FireFox Bookmarks to Del.icio.us on a Mac
+		  </a>
+              </h1>
+            </header>
+            <div class="e-content">
+              <p>This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.</p>
+              <p>First, head over to SourceForge and grab this <a href="http://sourceforge.net/projects/bkmrk2dlcs/">script</a>.    This is assuming your downloads go to your desktop.  Second, export your FF bookmarks, for ease of explanation, to your desktop as well(make sure you select all the folders you want to export, by default, the Toolbar bookmarks are the only ones highlighted).  You should have a Folder then on your desktop BookmarksToDelicious and your bookmarks.html file (and what ever else you have on your desktop).  Now go to your Utilities folder, and open the Terminal application.  For those who are not familiar with it, you  are now officially venturing into the Unix core that you’ve heard about.
 Once the terminal is open, you should see a prompt that looks something like $miklb:~ miklb$.  Where miklb is the User name that you use on your machine.  The first step is to move to the actual directory where the python script is, which is your BookmarksToDelicious folder on the desktop.  Again, this is a bare bones explanation, for non-technical users, so feel free to comment if there’s a quicker way.
 To get to the folder, first type: cd Desktop.  The prompt should now be miklb$:~/Desktop miklb$. (Don’t forget, yours won’t be miklb, it will be what ever your user name is).
 Next, type cd BookmarksToDelicious.
 We are now in the folder the file is we want to execute.  Almost there.
 At this point you need to know your del.icio.us user name and password.  For example purposes, I’m going to use the fictional user name of Alice, and password of Wonderland.  Again, this is assuming your bookmarks are on the desktop.  If not, you need to know the full path to that file.  But if you’re following along, the next command to type into terminal is:
-            <strong>python BookmarksToDelicious.py – –username Alice – –password Wonderland –submit –debug /Users/miklb/Desktop/bookmarks.html</strong></p>
-          <p>Where miklb is again the username you have on your machine, which is going to be the same as your prompt in the terminal.
+                <strong>python BookmarksToDelicious.py – –username Alice – –password Wonderland –submit –debug /Users/miklb/Desktop/bookmarks.html</strong></p>
+              <p>Where miklb is again the username you have on your machine, which is going to be the same as your prompt in the terminal.
 If all goes well, you will begin to a lot of action scrolling down the page, and then the actual bookmarks going into del.icio.us, with a line saying “Getting”, then some code, then  	&#38; result code =”done” /,  	&#38; for each bookmark.
 The script will put tags on each bookmark with the folder name for that bookmark.  So if you have a folder called Apple in the folder toolbar-bookmarks, that will be the tag structure you get for the bookmark.  You can then edit that in del.icio.us, or, you can redo your folder structure in FF prior to export, which ever  you prefer.
 Also note, it’s not neccessary to use the –debug command, I simply included it, as it may be nice to see something happen, and know when it’s done.  Working in Terminal, generally speaking, it doesn’t show anything happening, so a new user may not know what’s going on.  Seeing stuff scroll down the screen helps.  If you run into a problem, you can leave a comment, and I’ll do my best to help, but again, this is meant as a bare-bones-I-couldn’t-find-a-better-option way of doing this, and wanted to share, as I didn’t come across many other explanations.</p>
+            </div>
+            <footer class="entry-footer">
+              <div class="entry-meta">
+                <div class="auth-img">
+                  <img src="http://cdn.miklb.com/images/profile_4_16.jpg" alt="Michael Bishop" class="u-photo">
+                </div>
+                <div class="meta-wrap">
+                  <span class="entry-author">
+                    <a href="" class="entry-author-link" rel="author">
+                      <span class="entry-author-name"></span>
+                    </a>
+                  </span>
+                  <a href="">How to Export your FireFox Bookmarks to Del.icio.us on a Mac </a>was authored by 
+
+                  <a class="p-author h-card" href="">Michael Bishop</a>
+                  on <time datetime="2005-11-18T00:00:00+00:00" class="dt-time post-date">18 Nov 2005</time>.
+   This entry has been tagged with the keywords: <span class="tag">firefox </span><span class="tag">browsers </span><span class="tag">my-site </span><span class="tag">geek-life </span><span class="tag">delicious </span><span class="tag">python </span>
+                </div>
+              </div>
+            </footer>
+          </article>
+          <script id="webmention-hosted">
+            (function () {
+            var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+            url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+            url = url && url[0] ? url[0].href : false;
+            sn.type = "text/javascript"; sn.async = true;
+            sn.src = "//webmention.herokuapp.com/api/embed" + encodeURIComponent(url || window.location);
+            s.parentNode.insertBefore(sn, s);
+            }());
+          </script>
         </div>
-      </article>
-      <section id="webmentions" class="entry__comments">
-        <h1>Webmentions</h1>
-        <div class="webmentions">
-          <p class="webmentions__not-found">No webmentions were found</p>
-        </div>
-      </section>
-      <aside class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          <li>
-            <h3>
-              <a href="/rough-take-on-jekyll">
-                Rough Take on Jekyll
-            <small><time datetime="2016-04-12T00:00:00+00:00">12 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/solving-the-mysterious-relaunching-itunes">
-                Solving the Mysterious Relaunching iTunes
-            <small><time datetime="2016-04-05T14:57:00+00:00">05 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/building-a-twitterbot">
-                Building a Twitterbot
-            <small><time datetime="2016-04-03T00:00:00+00:00">03 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
-        </ul>
-      </aside>
-      <script src="/js/webmention_io.js"></script>
-    </main>
+      </main>
+    </div>
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+">IndieWeb principles</a>
+      </p>
+    </footer>
   </body>
 </html>

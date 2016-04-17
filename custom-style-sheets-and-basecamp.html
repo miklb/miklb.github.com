@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
-      Custom Style Sheets and Basecamp &middot; Miklb's Mindless Ramblings
-    
-  </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Style Sheets and Basecamp</title>
+    <meta name="description" content="I’ve mentioned that I primarily use BaseCamp these days with the company that I work with to manage the many sites they handle.  That’s all good, but wheneve...">
+    <link rel="stylesheet" href= "/css/main.css">
+    <link rel="canonical" href="https://miklb.com/custom-style-sheets-and-basecamp">
+    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
     <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- Feed -->
-    <link href="https://miklb.superfeedr.com" rel="hub"/>
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-    <!-- SEO/Twitter/FB -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
     <!-- Begin Jekyll SEO tag v1.3.3 -->
+    <title>Custom Style Sheets and Basecamp - Miklb’s Mindless Ramblings</title>
     <meta property="og:title" content="Custom Style Sheets and Basecamp" />
     <meta name="description" content="I’ve mentioned that I primarily use BaseCamp these days with the company that I work with to manage the many sites they handle.  That’s all good, but whenever I log in, I am overwhelmed with many, many, late milestones and upcoming milestones.  Sure, some of it’s relevant to me, however most is not.  Even what is relevant, I’m well aware of my tardiness.  I don’t need a constant reminder :)" />
     <meta property="og:description" content="I’ve mentioned that I primarily use BaseCamp these days with the company that I work with to manage the many sites they handle.  That’s all good, but whenever I log in, I am overwhelmed with many, many, late milestones and upcoming milestones.  Sure, some of it’s relevant to me, however most is not.  Even what is relevant, I’m well aware of my tardiness.  I don’t need a constant reminder :)" />
@@ -34,8 +23,6 @@
     <meta property="article:published_time" content="2007-07-16T00:00:00+00:00" />
     <link rel="next" href="https://miklb.com/site-maintenance" title="Site Maintenance" />
     <link rel="prev" href="https://miklb.com/tracking-time-spent-on-email" title="Tracking Time Spent on Email" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
     <script type="application/ld+json">
       {
           "@context": "http://schema.org",
@@ -49,77 +36,71 @@
     </script>
     <!-- End Jekyll SEO tag -->
   </head>
-  <body class="layout-reverse">
-    <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/">
-              Miklb's Mindless Ramblings
-        </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
-    </div>
-    <main class="container content">
-      <article class="post h-entry">
-        <h1 class="post-title p-name">Custom Style Sheets and Basecamp</h1>
-        <time datetime="2007-07-16T00:00:00+00:00" class="dt-time post-date">16 Jul 2007</time>
-        <div class="e-content">
-          <p class="lead p-bridgy-twitter-content">
-          </p>
-          <p>I’ve mentioned that I primarily use BaseCamp these days with the company that I work with to manage the many sites they handle.  That’s all good, but whenever I log in, I am overwhelmed with many, many, late milestones and upcoming milestones.  Sure, some of it’s relevant to me, however most is not.  Even what is relevant, I’m well aware of my tardiness.  I don’t need a constant reminder :)</p>
-          <p>Enter a handy little Firefox extentsion, <a href="https://addons.mozilla.org/en-US/firefox/addon/2108">Stylish</a>, that I became aware of after adopting Hicks Designs handy <a href="http://www.hicksdesign.co.uk/journal/google-reader-theme">Mac OS styled Google Reader style sheet</a>. (Note, there are instructions for using the style sheet with other browsers).</p>
-          <p>Another quick use of the <a href="https://addons.mozilla.org/en-US/firefox/addon/60">Web Developer extension</a> (I couldn’t live without this extension), I was able to determine the class of the milestones on the dashboard (.milestones - go figure), and add a quick display:none to a custom style for the company’s Basecamp dashboard.</p>
-          <p>The Stylish extension easily offers you the option of using the style for a URL, a domain, or a global style, so I can be sure that it’s only being used where and when I want.  The extension author recommends using the !important declaration, however I found no need for that with Basecamp.  Certainly worth checking out if you are looking to hide some annoying element of a site you often visit.</p>
-          <p><em>Edit</em>: I went ahead and changed my style to only drop the upcoming milestones, and left the overdue ones there, as that seemed more relevant to my job.  The class for that is .Dashcal.  That way, I can still see what’s overdue, and potentially avoid issues.  Upcoming milestones I’ll leave to the project manager to advise on.</p>
-        </div>
-      </article>
-      <section id="webmentions" class="entry__comments">
-        <h1>Webmentions</h1>
-        <div class="webmentions">
-          <p class="webmentions__not-found">No webmentions were found</p>
-        </div>
-      </section>
-      <aside class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          <li>
-            <h3>
-              <a href="/rough-take-on-jekyll">
-                Rough Take on Jekyll
-            <small><time datetime="2016-04-12T00:00:00+00:00">12 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/solving-the-mysterious-relaunching-itunes">
-                Solving the Mysterious Relaunching iTunes
-            <small><time datetime="2016-04-05T14:57:00+00:00">05 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/building-a-twitterbot">
-                Building a Twitterbot
-            <small><time datetime="2016-04-03T00:00:00+00:00">03 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
+  <body class="h-feed">
+    <header class="site-header" role="banner">
+      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li itemprop="url"><a  class="" href="/about/">About</a></li>
         </ul>
-      </aside>
-      <script src="/js/webmention_io.js"></script>
-    </main>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main role="main">
+        <div class="content">
+          <article class="post h-entry">
+            <header class="entry-header">
+              <h1 class="post-title p-name">
+                <a class="u-url" rel="bookmark" href="/custom-style-sheets-and-basecamp">
+                  Custom Style Sheets and Basecamp
+		  </a>
+              </h1>
+            </header>
+            <div class="e-content">
+              <p>I’ve mentioned that I primarily use BaseCamp these days with the company that I work with to manage the many sites they handle.  That’s all good, but whenever I log in, I am overwhelmed with many, many, late milestones and upcoming milestones.  Sure, some of it’s relevant to me, however most is not.  Even what is relevant, I’m well aware of my tardiness.  I don’t need a constant reminder :)</p>
+              <p>Enter a handy little Firefox extentsion, <a href="https://addons.mozilla.org/en-US/firefox/addon/2108">Stylish</a>, that I became aware of after adopting Hicks Designs handy <a href="http://www.hicksdesign.co.uk/journal/google-reader-theme">Mac OS styled Google Reader style sheet</a>. (Note, there are instructions for using the style sheet with other browsers).</p>
+              <p>Another quick use of the <a href="https://addons.mozilla.org/en-US/firefox/addon/60">Web Developer extension</a> (I couldn’t live without this extension), I was able to determine the class of the milestones on the dashboard (.milestones - go figure), and add a quick display:none to a custom style for the company’s Basecamp dashboard.</p>
+              <p>The Stylish extension easily offers you the option of using the style for a URL, a domain, or a global style, so I can be sure that it’s only being used where and when I want.  The extension author recommends using the !important declaration, however I found no need for that with Basecamp.  Certainly worth checking out if you are looking to hide some annoying element of a site you often visit.</p>
+              <p><em>Edit</em>: I went ahead and changed my style to only drop the upcoming milestones, and left the overdue ones there, as that seemed more relevant to my job.  The class for that is .Dashcal.  That way, I can still see what’s overdue, and potentially avoid issues.  Upcoming milestones I’ll leave to the project manager to advise on.</p>
+            </div>
+            <footer class="entry-footer">
+              <div class="entry-meta">
+                <div class="auth-img">
+                  <img src="http://cdn.miklb.com/images/profile_4_16.jpg" alt="Michael Bishop" class="u-photo">
+                </div>
+                <div class="meta-wrap">
+                  <span class="entry-author">
+                    <a href="" class="entry-author-link" rel="author">
+                      <span class="entry-author-name"></span>
+                    </a>
+                  </span>
+                  <a href="">Custom Style Sheets and Basecamp </a>was authored by 
+
+                  <a class="p-author h-card" href="">Michael Bishop</a>
+                  on <time datetime="2007-07-16T00:00:00+00:00" class="dt-time post-date">16 Jul 2007</time>.
+   This entry has been tagged with the keywords: <span class="tag">basecamp </span><span class="tag">css </span><span class="tag">milestones </span><span class="tag">stylish </span>
+                </div>
+              </div>
+            </footer>
+          </article>
+          <script id="webmention-hosted">
+            (function () {
+            var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+            url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+            url = url && url[0] ? url[0].href : false;
+            sn.type = "text/javascript"; sn.async = true;
+            sn.src = "//webmention.herokuapp.com/api/embed" + encodeURIComponent(url || window.location);
+            s.parentNode.insertBefore(sn, s);
+            }());
+          </script>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+">IndieWeb principles</a>
+      </p>
+    </footer>
   </body>
 </html>

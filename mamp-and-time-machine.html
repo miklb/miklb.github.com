@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <title>
-      Troubleshooting MAMP and Time Machine &middot; Miklb's Mindless Ramblings
-    
-  </title>
-    <!-- Webmentions -->
-    <link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css">
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Troubleshooting MAMP and Time Machine</title>
+    <meta name="description" content="Well, it’s taken me what seems like forever, but I finally determined that MAMP has been the cause of all of my Time Machine woes.  Basically Time Machine wo...">
+    <link rel="stylesheet" href= "/css/main.css">
+    <link rel="canonical" href="https://miklb.com/mamp-and-time-machine">
+    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
     <link rel="shortcut icon" href="/public/favicon.png">
-    <!-- Feed -->
-    <link href="https://miklb.superfeedr.com" rel="hub"/>
-    <link rel="alternate" type="application/atom+xml" title="Miklb's Mindless Ramblings" href="/atom.xml" rel="self">
-    <!-- SEO/Twitter/FB -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
     <!-- Begin Jekyll SEO tag v1.3.3 -->
+    <title>Troubleshooting MAMP and Time Machine - Miklb’s Mindless Ramblings</title>
     <meta property="og:title" content="Troubleshooting MAMP and Time Machine" />
     <meta name="description" content="Well, it’s taken me what seems like forever, but I finally determined that MAMP has been the cause of all of my Time Machine woes.  Basically Time Machine would get to a certain point, in my case it was around 29 GB, and simply stall, not allowing me to stop the backup process.  I would basically have to restart the machine to get it to stop.  I originally thought it was a problem with the formatting of the external drive, however I’d done all of the troubleshoot tips I’ve found on the web, to no avail.  Finally let me say, I’m not a Unix expert, nor am I that well versed in file permissions.  I know just enough to get myself in trouble, but I believe I understand this problem well enough at this point that I thought sharing my discoveries might help someone else avoid a similar headache." />
     <meta property="og:description" content="Well, it’s taken me what seems like forever, but I finally determined that MAMP has been the cause of all of my Time Machine woes.  Basically Time Machine would get to a certain point, in my case it was around 29 GB, and simply stall, not allowing me to stop the backup process.  I would basically have to restart the machine to get it to stop.  I originally thought it was a problem with the formatting of the external drive, however I’d done all of the troubleshoot tips I’ve found on the web, to no avail.  Finally let me say, I’m not a Unix expert, nor am I that well versed in file permissions.  I know just enough to get myself in trouble, but I believe I understand this problem well enough at this point that I thought sharing my discoveries might help someone else avoid a similar headache." />
@@ -34,8 +23,6 @@
     <meta property="article:published_time" content="2009-06-11T00:00:00+00:00" />
     <link rel="next" href="https://miklb.com/infinite-summer-bookmarks" title="Infinite Summer Bookmarks" />
     <link rel="prev" href="https://miklb.com/dark-nova-space-trader-for-the-iphone" title="Dark Nova: Space Trader for the iPhone" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@miklb" />
     <script type="application/ld+json">
       {
           "@context": "http://schema.org",
@@ -49,83 +36,77 @@
     </script>
     <!-- End Jekyll SEO tag -->
   </head>
-  <body class="layout-reverse">
-    <div class="sidebar">
-      <div class="container sidebar-sticky">
-        <div class="sidebar-about h-card">
-          <h1>
-            <a class="u-url"href="/">
-              Miklb's Mindless Ramblings
-        </a>
-          </h1>
-          <p class="lead">Hi. I'm <span class="p-name">Michael Bishop</span>. I'm from <span class="p-locality">Tampa, FL</span>
-            and this is my little slice of the web. </p>
-        </div>
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="/" rel="me">Home</a>
-          <a class="sidebar-nav-item" href="/about/">About</a>
-          <a class="sidebar-nav-item" href="https://twitter.com/miklb" rel="me">@miklb on Twitter</a>
-          <a class="sidebar-nav-item" href="https://github.com/miklb" rel="me">GitHub</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-      </div>
-    </div>
-    <main class="container content">
-      <article class="post h-entry">
-        <h1 class="post-title p-name">Troubleshooting MAMP and Time Machine</h1>
-        <time datetime="2009-06-11T00:00:00+00:00" class="dt-time post-date">11 Jun 2009</time>
-        <div class="e-content">
-          <p class="lead p-bridgy-twitter-content">
-          </p>
-          <p><img src="http://miklb.com/user/files/time_machine.png" class="right" alt="Time Machine" />Well, it’s taken me what seems like forever, but I finally determined that MAMP has been the cause of all of my Time Machine woes.  Basically Time Machine would get to a certain point, in my case it was around 29 GB, and simply stall, not allowing me to stop the backup process.  I would basically have to restart the machine to get it to stop.  I originally thought it was a problem with the formatting of the external drive, however I’d done all of the troubleshoot tips I’ve found on the web, to no avail.  Finally let me say, I’m not a Unix expert, nor am I that well versed in file permissions.  I know just enough to get myself in trouble, but I believe I understand this problem well enough at this point that I thought sharing my discoveries might help someone else avoid a similar headache.</p>
-          <p>In a nut shell, it seems that by default MAMP’s Apache instance doesn’t set a group owner for files created by the Apache server.  Time Machine chokes on these files, which results in a stalled backup.  After much Googling, I came across this <a href="http://blog.mirthlab.com/2008/04/05/mamp-might-break-your-time-machine-backups/">blog post about MAMP Pro and Time Machine</a>.  I then used the Time Machine options to exclude the directory that I created for my document root (I believe MAMP defaults to /Users/foo/Sites/).  Excluding my MAMP directory allowed Time Machine to completely backup my system.  In the aforementioned blog post about MAMP Pro, it appears there is a preference pane in the pro version to choose your user/group for the Apache server.  The free version of MAMP doesn’t offer this same preference, so I had to do a bit more digging.</p>
-          <p>What I found was that in the Apache httpd.conf file, around line 327, the group was indeed not set, rather it read “Group #-1”.  From what I understand of the Apache .conf file, using the # comments out what ever follows, which is why the cache files were being created as an unknown group, or “nogroup” as the post calls them.</p>
-          <p>I solved my issue by:</p>
-          <ul>
-            <li>changing "Group #-1" to "Group _www" on line 327 of the Apache httpd.conf found in Applications/MAMP/conf/apache</li>
-            <li>moving all the cache files that the Apache server had created in my MAMP document root to the trash</li>
-            <li>restarting Apache in MAMP (there's actually no "restart", you have to stop, then start the servers)</li>
-            <li>removing the MAMP directory exclusion from the Time Machine options</li>
-          </ul>
-          <p>By all means, if there is any misinformation in this post, or you can shed further light on the subject, please leave a comment, as I would like to fully understand the issue, and as I said, the information might be helpful to others, as I haven’t found much on the subject in my searches.</p>
-        </div>
-      </article>
-      <section id="webmentions" class="entry__comments">
-        <h1>Webmentions</h1>
-        <div class="webmentions">
-          <p class="webmentions__not-found">No webmentions were found</p>
-        </div>
-      </section>
-      <aside class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          <li>
-            <h3>
-              <a href="/rough-take-on-jekyll">
-                Rough Take on Jekyll
-            <small><time datetime="2016-04-12T00:00:00+00:00">12 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/solving-the-mysterious-relaunching-itunes">
-                Solving the Mysterious Relaunching iTunes
-            <small><time datetime="2016-04-05T14:57:00+00:00">05 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/building-a-twitterbot">
-                Building a Twitterbot
-            <small><time datetime="2016-04-03T00:00:00+00:00">03 Apr 2016</time></small>
-              </a>
-            </h3>
-          </li>
+  <body class="h-feed">
+    <header class="site-header" role="banner">
+      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li itemprop="url"><a  class="" href="/about/">About</a></li>
         </ul>
-      </aside>
-      <script src="/js/webmention_io.js"></script>
-    </main>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main role="main">
+        <div class="content">
+          <article class="post h-entry">
+            <header class="entry-header">
+              <h1 class="post-title p-name">
+                <a class="u-url" rel="bookmark" href="/mamp-and-time-machine">
+                  Troubleshooting MAMP and Time Machine
+		  </a>
+              </h1>
+            </header>
+            <div class="e-content">
+              <p><img src="http://miklb.com/user/files/time_machine.png" class="right" alt="Time Machine" />Well, it’s taken me what seems like forever, but I finally determined that MAMP has been the cause of all of my Time Machine woes.  Basically Time Machine would get to a certain point, in my case it was around 29 GB, and simply stall, not allowing me to stop the backup process.  I would basically have to restart the machine to get it to stop.  I originally thought it was a problem with the formatting of the external drive, however I’d done all of the troubleshoot tips I’ve found on the web, to no avail.  Finally let me say, I’m not a Unix expert, nor am I that well versed in file permissions.  I know just enough to get myself in trouble, but I believe I understand this problem well enough at this point that I thought sharing my discoveries might help someone else avoid a similar headache.</p>
+              <p>In a nut shell, it seems that by default MAMP’s Apache instance doesn’t set a group owner for files created by the Apache server.  Time Machine chokes on these files, which results in a stalled backup.  After much Googling, I came across this <a href="http://blog.mirthlab.com/2008/04/05/mamp-might-break-your-time-machine-backups/">blog post about MAMP Pro and Time Machine</a>.  I then used the Time Machine options to exclude the directory that I created for my document root (I believe MAMP defaults to /Users/foo/Sites/).  Excluding my MAMP directory allowed Time Machine to completely backup my system.  In the aforementioned blog post about MAMP Pro, it appears there is a preference pane in the pro version to choose your user/group for the Apache server.  The free version of MAMP doesn’t offer this same preference, so I had to do a bit more digging.</p>
+              <p>What I found was that in the Apache httpd.conf file, around line 327, the group was indeed not set, rather it read “Group #-1”.  From what I understand of the Apache .conf file, using the # comments out what ever follows, which is why the cache files were being created as an unknown group, or “nogroup” as the post calls them.</p>
+              <p>I solved my issue by:</p>
+              <ul>
+                <li>changing "Group #-1" to "Group _www" on line 327 of the Apache httpd.conf found in Applications/MAMP/conf/apache</li>
+                <li>moving all the cache files that the Apache server had created in my MAMP document root to the trash</li>
+                <li>restarting Apache in MAMP (there's actually no "restart", you have to stop, then start the servers)</li>
+                <li>removing the MAMP directory exclusion from the Time Machine options</li>
+              </ul>
+              <p>By all means, if there is any misinformation in this post, or you can shed further light on the subject, please leave a comment, as I would like to fully understand the issue, and as I said, the information might be helpful to others, as I haven’t found much on the subject in my searches.</p>
+            </div>
+            <footer class="entry-footer">
+              <div class="entry-meta">
+                <div class="auth-img">
+                  <img src="http://cdn.miklb.com/images/profile_4_16.jpg" alt="Michael Bishop" class="u-photo">
+                </div>
+                <div class="meta-wrap">
+                  <span class="entry-author">
+                    <a href="" class="entry-author-link" rel="author">
+                      <span class="entry-author-name"></span>
+                    </a>
+                  </span>
+                  <a href="">Troubleshooting MAMP and Time Machine </a>was authored by 
+
+                  <a class="p-author h-card" href="">Michael Bishop</a>
+                  on <time datetime="2009-06-11T00:00:00+00:00" class="dt-time post-date">11 Jun 2009</time>.
+   This entry has been tagged with the keywords: <span class="tag">leopard </span><span class="tag">time-machine </span><span class="tag">mamp </span><span class="tag">permissions </span><span class="tag">group </span><span class="tag">troubleshooting </span>
+                </div>
+              </div>
+            </footer>
+          </article>
+          <script id="webmention-hosted">
+            (function () {
+            var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+            url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+            url = url && url[0] ? url[0].href : false;
+            sn.type = "text/javascript"; sn.async = true;
+            sn.src = "//webmention.herokuapp.com/api/embed" + encodeURIComponent(url || window.location);
+            s.parentNode.insertBefore(sn, s);
+            }());
+          </script>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+">IndieWeb principles</a>
+      </p>
+    </footer>
   </body>
 </html>
