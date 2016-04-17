@@ -51,7 +51,7 @@ task :pingomatic do
   begin
     require 'xmlrpc/client'
     puts '* Pinging ping-o-matic'
-    XMLRPC::Client.new('rpc.pingomatic.com', '/').call('weblogUpdates.extendedPing', 'miklb.com.com' , 'http://miklb.com', 'http://miklb.com/atom.xml')
+    XMLRPC::Client.new('rpc.pingomatic.com', '/').call('weblogUpdates.extendedPing', 'miklb.com.com' , 'https://miklb.com', 'http://miklb.com/atom.xml')
   rescue LoadError
     puts '! Could not ping ping-o-matic, because XMLRPC::Client could not be found.'
   end
@@ -64,7 +64,7 @@ task :sitemapgoogle do
     require 'net/http'
     require 'uri'
     puts '* Pinging Google about our sitemap'
-    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('http://miklb.com/sitemap.xml'))
+    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('https://miklb.com/sitemap.xml'))
   rescue LoadError
     puts '! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found.'
   end
@@ -77,7 +77,7 @@ task :sitemapbing do
     require 'net/http'
     require 'uri'
     puts '* Pinging Bing about our sitemap'
-    Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + URI.escape('http://miklb.com/sitemap.xml'))
+    Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + URI.escape('https://miklb.com/sitemap.xml'))
   rescue LoadError
     puts '! Could not ping Bing about our sitemap, because Net::HTTP or URI could not be found.'
   end
@@ -90,7 +90,7 @@ task :pingpubsubhubbub do
     require 'cgi'
     require 'net/http'
     puts '* Pinging pubsubhubbub server'
-    data = 'hub.mode=publish&hub.url=' + CGI::escape("http://miklb.com/atom.xml")
+    data = 'hub.mode=publish&hub.url=' + CGI::escape("https://miklb.com/atom.xml")
     http = Net::HTTP.new('miklb.supperfeedr.com', 80)
     resp, data = http.post('http://miklb.superfeedr.com/publish',
                            data,
