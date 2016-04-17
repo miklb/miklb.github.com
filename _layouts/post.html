@@ -1,48 +1,37 @@
 ---
 layout: default
 ---
-
 <article class="post h-entry">
-  <h1 class="post-title p-name">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="dt-time post-date">{{ page.date | date_to_string }}</time>
+  <header class="entry-header">
+	  <h1 class="post-title p-name">
+		  <a class="u-url" rel="bookmark" href="{{ site.github.url }}{{ page.url }}">
+			  {{ page.title }}
+		  </a>
+	  </h1>
+  </header>
   <div class="e-content">
-    <p class="lead p-bridgy-twitter-content">
-      {{ page.summary }}
-    </p>
       {{ content }}
   </div>
+  <footer class="entry-footer">
+	  <div class="entry-meta">
+    {% if site.author_img %}
+      <div class="auth-img">
+        <img src="{{ site.author_img }}" alt="{{ site.author }}" class="u-photo">
+      </div>
+    {% endif %}
+      <div class="meta-wrap">
+        <span class="entry-author">
+		        <a href="{{ site.github.url }}" class="entry-author-link" rel="author">
+			           <span class="entry-author-name">{{ post.author }}</span>
+		        </a>
+        </span>
+        <a href="{{ post.url | prepend: site.github.url }}">{{ page.title }} </a>was authored by {% include author.html %} on <time datetime="{{ page.date | date_to_xmlschema }}" class="dt-time post-date">{{ page.date | date_to_string }}</time>.
+   This entry has been tagged with the keywords: {% for tags in page.tags %}<span class="tag">{{ tags }} </span>{% endfor %}
+    </div>
+  </div>
+</footer>
 </article>
 
-<section id="webmentions" class="entry__comments">
-
-				<h1>Webmentions</h1>
-      {% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
-      {% capture redirect %}{{ site.url }}{{ page.redirect_from }}{% endcapture %}
-
-      {% if redirect != site.url %}
-	    {% webmentions this_url redirect %}
-      {% else %}
-	   {% webmentions this_url %}
-     {% endif %}
-	</section>
-
-
-{% if site.related_posts != empty %}
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
+{% if site.webmentions %}
+{% include webmentions.html %}
 {% endif %}
-
-<script src="/js/webmention_io.js"></script>
