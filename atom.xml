@@ -5,13 +5,31 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-04-17T03:03:59Z</updated>
+  <updated>2016-04-17T22:49:52Z</updated>
   <id>/</id>
   <author>
     <name></name>
     <email></email>
   </author>
   <rights type="text">Copyright © 2016 Michael Bishop. All rights reserved.</rights>
+  
+  <entry>
+    <title>Dogfooding</title>
+    <link rel="alternate" type="text/html" href="/dogfooding/?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-04-17T17:27:00Z</published>
+    <updated>2016-04-17T17:27:00+00:00</updated>
+    <id>/dogfooding</id>
+    <content type="html"><![CDATA[ <p>Last night I switched over the <em>theme</em> for this site to a project I’ve been working on the last moth or so, <a href="https://github.com/miklb/jekyll-indieweb">Jekyll-IndieWeb</a>. While I have different design ideas, until I find other users interested in using it, I knew I needed to work out any kinks. I also wanted to have better microformat support until the design changes. Thus
+<a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food">dogfooding</a>.</p>
+
+<p>I will write more about the project once I have more documentation (and work out any more said kinks), but the gist is I wanted to provide someone new to Jekyll with a desire to be part of the
+<a href="https://indiewebcamp.com/">IndieWeb</a> a solid starting point. I rely heavily on the <code class="highlighter-rouge">_config.yml</code> file for options a user can set - profile pic, social media links, choice to include display of webmentions - to quickly get a personal site up and running. The biggest hurdle for me was providing a minimal design that was unopinionated yet still aesthetically appealing. Anyone familiar with HTML &amp; CSS can easily build upon or modify it, but if not, it shouldn’t look <em>ugly</em>.</p>
+
+<p>This has been the first solo project I’ve embarked on that was meant for public consumption from the start, which in itself has been a learning process. Now I just hope others can find it useful in some way. If the project interests you I encourage you to try it out, open any issues in the repo, or reach out on #indiewebcamp IRC, I tend to hang around there most days.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
   
   <entry>
     <title>Rough Take on Jekyll</title>
@@ -173,16 +191,6 @@ TextExpander.appendOutput(&quot;--- \n&quot;);
     <content type="html"><![CDATA[ <p>In my never ending quest to make this site all things “miklb”, one of the goals of the IndieWeb is to <a href="http://indiewebcamp.com/POSSE">POSSE</a>, that is, Publish on your own site, syndicate elsewhere. Breaking the habit of using Twitter without posting first on my site is going to be a hard one, but it’s a goal. While debates rage about extending character counts to 10,000 words, if we only were to use our blog for long form thoughts and link back to Twitter, this wouldn’t be an issue. Consider this an exercise in</p>
 
 <p><a href="https://brid.gy/publish/twitter"></a></p>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Testing Sending Webmentions</title>
-    <link rel="alternate" type="text/html" href="/testing-sending-webmentions/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-01-20T00:00:00Z</published>
-    <updated>2016-01-20T00:00:00+00:00</updated>
-    <id>/testing-sending-webmentions</id>
-    <content type="html"><![CDATA[ <p>This is either going to go well, or well, not so well. But we are getting there. Slowly.  Last one for the night. Take 2. Day 2.<a href="https://kartikprabhu.com/notes/test-note-totally-te" class="u-in-reply-to">Thanks for the help Kartik</a></p>
  ]]></content>
   </entry>
   

@@ -46,6 +46,21 @@
           <div class="posts">
             <article class="post h-entry">
               <h1 class="post-title p-name">
+                <a class="u-url" href="/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll">
+                  First Thoughts: Holy Grail of Blogging from iOS with Jekyll
+      </a>
+              </h1>
+              <time datetime="2015-05-04T00:00:00+00:00" class="dt-time post-date">04 May 2015</time>
+              <div class="e-content">
+                <p>I have been researching and thinking seriously about moving away from database driven blog engines to <em>static file</em> blogging for quite awhile. My extensive research has me convinced for my ideal workflow, <a href="http://jekyllrb.com">Jekyll</a> will be the answer—except for my goal to somewhat easily blog from my phone. All of the <a href="http://jekyllrb.com/docs/frontmatter/">front matter</a> could be handled by TextExpander snippets or custom keyboard shortcuts in Drafts or Editorial. The issue has been that with an iOS device, you are basically confined to using Dropbox or iCloud for the text/markdown files. Wanting to keep everything in a Git repo under version control, I hadn’t found a way to automagically push a Dropbox file to a Git repo without having an always on machine at home using some listening app like <a href="http://jekyllrb.com/docs/frontmatter/">Hazel</a> to do this. While that isn’t out of the question, I want something <strong>straight from the device</strong>.</p>
+                <p>Extensive Googling finally led me to Zappier. Similar to IFTTT, they have a <a href="https://zapier.com/zapbook/dropbox/github/">Github/Dropbox workflow</a> that allows you to send a pull request to Github when a new file is added to a directory in Dropbox. And while if I was simply using Github pages to host a Jekyll site, that would be the end to a simple solution.</p>
+                <p>However, I still want to host my own data on my own VPS (more on that later). Enter <a href="https://github.com/developmentseed/jekyll-hook">Jekyll Hook</a>, which, while not seemingly for the faint of heart, allows one to run their own “Github Pages” on their own server.</p>
+                <p>So, while all untested at this point, on paper it seems I can have a dedicated Dropbox folder synced with an iOS editor that when a markdown file is saved to it, Zapier will attempt to send a pull request and merge it to a Github hosted repo of my blog [footnote, possibly need to have iOS app to approve pull request but option is in the <em>recipe</em> for the workflow. I assume it will work save for any previous files by same name causing a merge conflict]. From that, the Jekyll Hook script/solution will fire and rebuild the the site, all without leaving the convenience of my iOS device.</p>
+                <p>Potential magic I tell you.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
                 <a class="u-url" href="/email-is-so-2015">
                   Email is so 2015
       </a>
@@ -118,19 +133,6 @@
                 <p>First, while they are on the right track on turning off power, but mentioning “flipping power switch off” is inaccurate. Also, it is obvious that this was written by someone from the north in only referencing “furnace”. Generally speaking, the breaker panel will have both an “AC” and either “heat” or “air handler” when it is not a furnace. These need to be off, as the 24 volt current is constant and if the heat/air handler isn’t off, then you can at the minimum blow a fuse, the worst, fry a transformer. By code, both items should have a disconnect for service, and pulling that is equally effective in making sure the power is off.</p>
                 <p>Second, while they mention taking a photo of the wiring on your thermostat, they ignore it and simply (and wrongly) state the colors on the new thermostat match the wire color. WRONG. The terminals relate to specific functionality, and I’ve seen every color under the sun wired to a terminal. Blue to the Y terminal isn’t uncommon. The O and B terminal? Those are used in heat pumps for the reversing valve and depending on the manufacturer, either one can be used. The B can be brown, or the orange wire can be used for either one. See where this is going? Also note that the C terminal is for common, and most new “smart” thermostats require this, so make sure you have a C wire before even making the purchase. And even if there is a wire (often blue if yellow is used for the Y terminal) that doesn’t mean that it is wired to the furnace/air handler. So while it’s not beyond DIY, there’s a lot more to it than just “matching colors”. And don’t get me started about what color wires may be wired into the furnace/air handler from the outdoor condensing unit. I haven’t touched on what happens if you have a two stage compressor or heat pump with backup emergency heat.</p>
                 <p>Bottom line, if you are going to spend hundreds of dollars for a smart thermostat, spend the extra money to hire a professional or at the minimum, do your homework regarding your specific unit and be damned sure that it will handle that $250 investment before attempting a DIY</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/apple-pay-currentc-and-profits">
-                  Apple Pay,  CurrentC and Profits
-      </a>
-              </h1>
-              <time datetime="2014-10-28T00:00:00+00:00" class="dt-time post-date">28 Oct 2014</time>
-              <div class="e-content">
-                <p>Earlier today over on <a href="last post on Apple Pay">Pencil Note</a> there was a post about Apple Pay and the author spoke to their opinion on how the CurrentC plan from retailers like CVS and Walmart would actually <em>benefit</em> consumers. Upon reading the post in my RSS reader, I quickly <a href="https://twitter.com/miklb/status/527099202103697408">tweeted a question</a> asking if he really though the retailers would pass the savings onto customers. Their response was &lt;blockquote&gt;&lt;p&gt;Yes. Less credit cards means lower prices.&lt;/p&gt;&lt;/blockquote&gt;
-—<cite> <a href="https://twitter.com/pencil_line/status/527176352794165248">Pencil Note</a> </cite></p>
-                <p>And then, in an old fashioned blogging style, they posted a more-than-140-character reply - <a href="http://www.pencilnote.com/pencilnote/2014/10/28/r2c95cwsnaoikrzdizm3ecyr6xynfd">Why fewer credit cards mean lower prices</a>. While my formal education on economics is limited to 101 level micro &amp; macro economics courses, I’ve been an informed consumer for long enough to follow the train of thought in that post. While it makes sense that the retailers are fueled by growth, and there is already a race to the bottom for pricing, the end result is still more profit for the owners/shareholders. If the price drops a few cents here or there, it is my opinion that is purely a by-product of profit growth and not the intention.</p>
               </div>
             </article>
           </div>
