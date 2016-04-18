@@ -18,3 +18,5 @@ years, we are proposing to remove the suggestion, and return to the model
 where elements `h1..h6` have a defined level of their own.
 <cite><a href="https://lists.w3.org/Archives/Public/public-html/2016Apr/0032.html">HTML WG</a></cite>
 </bockquote>
+
+<a href="https://brid.gy/publish/twitter"></a> 
