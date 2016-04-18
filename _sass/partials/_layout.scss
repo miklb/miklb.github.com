@@ -135,15 +135,16 @@
   flex-direction: row;
   width: 100%;
 
-  .auth-img {
+  .h-card {
     flex: 0 auto;
     padding: 1rem;
 
     .u-photo {
       border: $quiet-color 3px solid;
       border-radius: 50%;
+      display: block;
       height: 5rem;
-      overflow: hidden;
+      margin: auto;
       }
   }
 
@@ -180,8 +181,8 @@
     img {
       display: block;
       height: 4rem;
-      overflow: hidden;
-      padding-left: 25%;
+      margin: auto;
+
     }
 }
 
