@@ -89,7 +89,7 @@ Now, that I’ve grown, my interests and profession are taking another turn, and
             url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
             url = url && url[0] ? url[0].href : false;
             sn.type = "text/javascript"; sn.async = true;
-            sn.src = "//webmention.herokuapp.com/api/embed" + encodeURIComponent(url || window.location);
+            sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
             s.parentNode.insertBefore(sn, s);
             }());
           </script>
