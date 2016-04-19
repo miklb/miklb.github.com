@@ -46,6 +46,27 @@
           <div class="posts">
             <article class="post h-entry">
               <h1 class="post-title p-name">
+                <a class="u-url" href="/mamp-and-time-machine">
+                  Troubleshooting MAMP and Time Machine
+      </a>
+              </h1>
+              <time datetime="2009-06-11T00:00:00+00:00" class="dt-time post-date">11 Jun 2009</time>
+              <div class="e-content">
+                <p><img src="http://miklb.com/user/files/time_machine.png" class="right" alt="Time Machine" />Well, it’s taken me what seems like forever, but I finally determined that MAMP has been the cause of all of my Time Machine woes.  Basically Time Machine would get to a certain point, in my case it was around 29 GB, and simply stall, not allowing me to stop the backup process.  I would basically have to restart the machine to get it to stop.  I originally thought it was a problem with the formatting of the external drive, however I’d done all of the troubleshoot tips I’ve found on the web, to no avail.  Finally let me say, I’m not a Unix expert, nor am I that well versed in file permissions.  I know just enough to get myself in trouble, but I believe I understand this problem well enough at this point that I thought sharing my discoveries might help someone else avoid a similar headache.</p>
+                <p>In a nut shell, it seems that by default MAMP’s Apache instance doesn’t set a group owner for files created by the Apache server.  Time Machine chokes on these files, which results in a stalled backup.  After much Googling, I came across this <a href="http://blog.mirthlab.com/2008/04/05/mamp-might-break-your-time-machine-backups/">blog post about MAMP Pro and Time Machine</a>.  I then used the Time Machine options to exclude the directory that I created for my document root (I believe MAMP defaults to /Users/foo/Sites/).  Excluding my MAMP directory allowed Time Machine to completely backup my system.  In the aforementioned blog post about MAMP Pro, it appears there is a preference pane in the pro version to choose your user/group for the Apache server.  The free version of MAMP doesn’t offer this same preference, so I had to do a bit more digging.</p>
+                <p>What I found was that in the Apache httpd.conf file, around line 327, the group was indeed not set, rather it read “Group #-1”.  From what I understand of the Apache .conf file, using the # comments out what ever follows, which is why the cache files were being created as an unknown group, or “nogroup” as the post calls them.</p>
+                <p>I solved my issue by:</p>
+                <ul>
+                  <li>changing "Group #-1" to "Group _www" on line 327 of the Apache httpd.conf found in Applications/MAMP/conf/apache</li>
+                  <li>moving all the cache files that the Apache server had created in my MAMP document root to the trash</li>
+                  <li>restarting Apache in MAMP (there's actually no "restart", you have to stop, then start the servers)</li>
+                  <li>removing the MAMP directory exclusion from the Time Machine options</li>
+                </ul>
+                <p>By all means, if there is any misinformation in this post, or you can shed further light on the subject, please leave a comment, as I would like to fully understand the issue, and as I said, the information might be helpful to others, as I haven’t found much on the subject in my searches.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
                 <a class="u-url" href="/dark-nova-space-trader-for-the-iphone">
                   Dark Nova: Space Trader for the iPhone
       </a>
@@ -105,24 +126,6 @@
                 <p>I would recommend reading through all of the steps before uploading, including printing a second copy to practice.  My first attempt I didn’t pay attention to the guides, and the bottom of a few of the characters were cut off.</p>
                 <p>The possibilities of this service are endless.  I don’t see why one couldn’t use the second, optional page for creating your own custom dingbats.  I could also see it being a quite novel thing if you had children to have them write out their alphabet and save it for posterity.  Any family member for that matter.  Imagine having your parent’s or grandparent’s handwriting archived.</p>
                 <p>Anyway, I thought it was a super cool discovery, and well worth sharing.  If you create your own, I’d love to see it.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/habari-theme-aqueous">
-                  Habari Theme: Aqueous
-      </a>
-              </h1>
-              <time datetime="2009-03-03T00:00:00+00:00" class="dt-time post-date">03 Mar 2009</time>
-              <div class="e-content">
-                <h4><strong>Updated!</strong></h4>
-                <p>I inadvertently forgot to remove tracking code from the footer from when the theme was deployed on my previous site, so I’m removing the old download link and updating the release.  Apologies to anyone who’s already downloaded the theme, you can download the updated version (0.3.1), which also has <code>$theme-&gt;footer();</code> added, which can be a useful plugin hook.</p>
-                <p><img src="http://miklb.com/user/files/aqueous_ss.png" class="right" alt="Aqueous screen shot" />I’m proud to release my fourth Habari theme, the third port, Aqueous.  Based on an open source design by <a href="http://www.sixshootermedia.com/">Six Shooter Media</a>, this 3 column theme sports a fluid width middle column.  The original icons have been redone with custom icons that I created so there’s no issue with redistribution.  I also have restyled the comments and comment form from the original design, as well as a few other modifications for a working blog, but it still maintains the original integrity of the design, which I’ve always liked.  It has that clean, modern feel to it, despite being several years old now.</p>
-                <p>I had originally ported this theme for a personal site when I first switched over to Habari, and have just never gotten around to releasing it.  Now that I’m not using that site, it seemed only logical to make it available to other Habari users, especially with the lack of themes in the community.  I hope that changes sooner than later, hopefully after .6 gets released and .7 starts focusing more on the theme engine.  I’m curious to see what people have in mind for it, but that’s for another blog post.</p>
-                <p>I’m releasing this as an alpha release, because I really haven’t tested it in other browsers aside from Safari 4beta, but wanted to get it out and see if there was any real interest before putting too much more time into it.</p>
-                <p>One idea that I have for future a release is author comment styling, as it currently styles the comments all the same.  Again, this will happen if I see that’s there is actually any interest in the theme.</p>
-                <p>The original design was released under a Creative Commons license, so there’s no chance of the theme moving to the Habari extras repository, so any comments, bugs, feature requests should be left in the comments on this post.  Future posts about releases will direct comments to this post.  There’s nothing worse than a site having comments scattered about the same theme/plugin.</p>
-                <p><a href="http://miklb.com/downloads/Aqueous0.3.1.zip" onclick="javascript: pageTracker._trackPageview('/downloads/Aqueous0.3.1'); ">Download Aqueous 0.3.1 alpha now</a>.</p>
               </div>
             </article>
           </div>

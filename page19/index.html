@@ -46,6 +46,25 @@
           <div class="posts">
             <article class="post h-entry">
               <h1 class="post-title p-name">
+                <a class="u-url" href="/url-shorteners-http-referers-and-301-redirects">
+                  URL Shorteners, HTTP Referers and 301 Redirects
+      </a>
+              </h1>
+              <time datetime="2009-06-29T00:00:00+00:00" class="dt-time post-date">29 Jun 2009</time>
+              <div class="e-content">
+                <p>I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of <a href="http://mattread.com/">BigJibby</a> in the Habari IRC channel, I was able to get it working with Habari.</p>
+                <p>I more or less forgot about it, until a few people noticed it and asked if it was a plugin.  When I replied it wasn’t, they asked if I could make it into one.  So it went into a to-do list I keep of Habari related ideas.  This evening I began working on it, and while troubleshooting how to actually output something to the entry single template (that’s a whole other can of worms), I discovered the code snippet wasn’t working.  With the help of <a href="http://twofishcreative.com/michael/blog/">Michael</a>, we discovered the problem wasn’t with the code snippet, rather it was with the URL shorteners.  Twitter recently started defaulting to <a href="http://bit.ly">Bit.ly</a>, and I recently began experimenting with <a href="http://tr.im">Tr.im</a>,  <span class="pquote-r">both of which weren’t sending twitter.com as the referrer.  Rather, due to their 301 redirect they return <strong>NULL</strong>.  Which in a nut shell sucks. </span></p>
+                <p>Somehow Google Analytics is able to track referrals from Twitter, as last week when I had a huge upsurge in traffic from the popularity of the <a href="http://miklb.com/infinite-summer-bookmarks">Infinite Summer Bookmarks</a>, I’m seeing 50 visitors from Twitter the first day (of the 785, by far a record for this little weblog).</p>
+                <p>At this point, finishing the plugin seems moot, as the only way to be sure that visitors will actually see the message would be to use a URL shortener that doesn’t return NULL, of which, the only one we found that to not be the case was Owen’s <a href="http://pastoid.com">Pastoid</a>.  I didn’t test Tinyurl, nor was I interested in looking for others.  The disappointment had already set in.  Besides that, if you are auto posting to Twitter with a plugin, you wouldn’t have the option to use a different shortener.</p>
+                <p>So kind readers/stumble-uponers, if anyone has a solution to this problem, please enlighten me.  Meanwhile, I’ll work out the issue with Habari and my desire to output content on a single entry template within the content output, not above the body tag.</p>
+                <p>For anyone interested in the snippet of code I am using:</p>
+                <p><code>if ( parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) == 'twitter.com' ) {
+	    echo "&lt;h2 class='twittervisit'&gt;Welcome, Twitter visitor! If this post is useful, don't hesitate to retweet!&lt;/h2&gt;";
+                  </code></p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
                 <a class="u-url" href="/how-about-giving-me-some-credit-hosers">
                   How About Giving Me Some Credit Hosers
       </a>
@@ -103,27 +122,6 @@
                 <p><strong>UPDATE</strong>  Matthew contacted me and reminded me that in the reading guide, there’s a pivotal point in the book on page 223.  (No, I followed the guide and didn’t turn to the page to read it!)  What ever is contained within that page is apparently something that the reader will need to refer back to often and he asked if I could update the bookmark once we reach that point in the schedule, which is July 13th.  So on July 13th, check back for an updated copy of the bookmark for your main page that will contain that information.  I’ll remove the June calendar to make room, Matthew says the information is quite brief.</p>
                 <p>Thank you for all who’ve commented so far, I’m quite happy to see so many people interested in the bookmarks and participating in Infinite Summer.</p>
                 <p>Also, I’ll be writing up a post on how I’m using <a href="http://evernote.com/">Evernote</a> to organize my thoughts and keep notes as I read.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/mamp-and-time-machine">
-                  Troubleshooting MAMP and Time Machine
-      </a>
-              </h1>
-              <time datetime="2009-06-11T00:00:00+00:00" class="dt-time post-date">11 Jun 2009</time>
-              <div class="e-content">
-                <p><img src="http://miklb.com/user/files/time_machine.png" class="right" alt="Time Machine" />Well, it’s taken me what seems like forever, but I finally determined that MAMP has been the cause of all of my Time Machine woes.  Basically Time Machine would get to a certain point, in my case it was around 29 GB, and simply stall, not allowing me to stop the backup process.  I would basically have to restart the machine to get it to stop.  I originally thought it was a problem with the formatting of the external drive, however I’d done all of the troubleshoot tips I’ve found on the web, to no avail.  Finally let me say, I’m not a Unix expert, nor am I that well versed in file permissions.  I know just enough to get myself in trouble, but I believe I understand this problem well enough at this point that I thought sharing my discoveries might help someone else avoid a similar headache.</p>
-                <p>In a nut shell, it seems that by default MAMP’s Apache instance doesn’t set a group owner for files created by the Apache server.  Time Machine chokes on these files, which results in a stalled backup.  After much Googling, I came across this <a href="http://blog.mirthlab.com/2008/04/05/mamp-might-break-your-time-machine-backups/">blog post about MAMP Pro and Time Machine</a>.  I then used the Time Machine options to exclude the directory that I created for my document root (I believe MAMP defaults to /Users/foo/Sites/).  Excluding my MAMP directory allowed Time Machine to completely backup my system.  In the aforementioned blog post about MAMP Pro, it appears there is a preference pane in the pro version to choose your user/group for the Apache server.  The free version of MAMP doesn’t offer this same preference, so I had to do a bit more digging.</p>
-                <p>What I found was that in the Apache httpd.conf file, around line 327, the group was indeed not set, rather it read “Group #-1”.  From what I understand of the Apache .conf file, using the # comments out what ever follows, which is why the cache files were being created as an unknown group, or “nogroup” as the post calls them.</p>
-                <p>I solved my issue by:</p>
-                <ul>
-                  <li>changing "Group #-1" to "Group _www" on line 327 of the Apache httpd.conf found in Applications/MAMP/conf/apache</li>
-                  <li>moving all the cache files that the Apache server had created in my MAMP document root to the trash</li>
-                  <li>restarting Apache in MAMP (there's actually no "restart", you have to stop, then start the servers)</li>
-                  <li>removing the MAMP directory exclusion from the Time Machine options</li>
-                </ul>
-                <p>By all means, if there is any misinformation in this post, or you can shed further light on the subject, please leave a comment, as I would like to fully understand the issue, and as I said, the information might be helpful to others, as I haven’t found much on the subject in my searches.</p>
               </div>
             </article>
           </div>

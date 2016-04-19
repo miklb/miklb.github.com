@@ -5,13 +5,24 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-04-18T22:36:05Z</updated>
+  <updated>2016-04-19T18:30:15Z</updated>
   <id>/</id>
   <author>
     <name></name>
     <email></email>
   </author>
   <rights type="text">Copyright © 2016 Michael Bishop. All rights reserved.</rights>
+  
+  <entry>
+    <title>Interest in Tampa Homebrew Website Club?</title>
+    <link rel="alternate" type="text/html" href="/interest-in-tampa-homebrew-website-club/?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-04-19T14:00:00Z</published>
+    <updated>2016-04-19T14:00:00+00:00</updated>
+    <id>/interest-tampa-homebrew-website-club</id>
+    <content type="html"><![CDATA[ <p>Gauging interest in Tampa to see if anyone would be up for joining a
+<a href="https://indiewebcamp.com/events/2016-04-06-homebrew-website-club">Homebrew Website Club</a>. A lot of tech folks have vey neglected personal sites and this would give folks a chance to get together and talk tech and work on their personal site and pet proejcts. Platform agnostic (read, not another WordPress meetup) so open to anyone. If interested ping me on <a href="https://twitter.com/miklb">Twitter @miklb</a> for now and I’ll sort out finding a location and setting up a time. Only looking for a couple of people to get off the ground.</p>
+ ]]></content>
+  </entry>
   
   <entry>
     <title>Headings - What Was Old is New Again</title>
@@ -184,19 +195,6 @@ TextExpander.appendOutput(&quot;--- \n&quot;);
 <p>However, if I want to build any readership (isn’t that a part of blogging, sharing your thoughts with others?) I can’t be mixing in posts about forays into Python with posts about cooking vegetables sous-vide. Sure, there might be a readership that is interested in both topics as I am, but not enough to say “screw it.” So as I continue to work towards a true <a href="https://indiewebcamp.com">indieweb</a>, I’m pivoting a bit in my approach and will use this as domain, now 11 years old, as my base identifier and central clearing house. I’ve acquired several domains, 2 of which will be good to split the topics. Those too will be static Jekyll built sites, with links from this site to new posts.</p>
 
 <p>Certainly this is more me thinking out loud and putting it out there, as I intend for this domain to be, but my goal is to continue to do such here, rather than bottle  up my thoughts in my head.</p>
-
-<p><a href="https://brid.gy/publish/twitter"></a></p>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Finally Webmentions with Jekyll</title>
-    <link rel="alternate" type="text/html" href="/finally-webmentons-with-jekyll-part-duex/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-01-30T00:00:00Z</published>
-    <updated>2016-01-30T00:00:00+00:00</updated>
-    <id>/finally-webmentions-with-jekyll</id>
-    <content type="html"><![CDATA[ <p>If you can’t tell by previous posts, I’ve been working on getting
-<a href="https://indiewebcamp.com/Webmention">Webmentions</a> to work with my new Jekyll site. I <em>think</em> I’ve finally nailed. If you take a look at my initial post <a href="http://miklb.com/making-the-move-to-jekyll">on moving to Jekyll</a>, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s <a href="https://github.com/aarongustafson/jekyll-webmention_io">Webmention.io plugin</a> I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a <code class="highlighter-rouge">sleep 2m</code> in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.</p>
 
 <p><a href="https://brid.gy/publish/twitter"></a></p>
  ]]></content>
