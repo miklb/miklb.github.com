@@ -55,6 +55,8 @@
                   Using APC and Subversion Checkouts
 		  </a>
               </h1>
+              <h2 class="p-summary p-bridgy-twitter-content">
+              </h2>
             </header>
             <div class="e-content">
               <p>I am in the process of moving my sites from Slicehost to Linode, as most are aware Slicehost is being phased out for Rackspace Cloud.  Anyway, I upgraded my VPS at Linode last night to Debian “Squeeze” and installed APC, which created a problem with the WordPress installations I had there.  Basically, I couldn’t access the admin.  Through the power of Twitter and the invaluable help of <a href="http://markjaquith.com/">Mark Jaquith</a>, I learned that by default APC doesn’t play nice with files that are checked out via Subversion.  I think the root of my problem was a stray apc config for overriding include once, but certainly the subversion issue could have been at play too.</p>
