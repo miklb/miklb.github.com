@@ -1,6 +1,7 @@
 //Base colors
 $text-color: #333;
 $quiet-color: #ccc;
+$quiet-color-light: lighten($quiet-color, .8);
 $loud-color: #000;
 $white: #fff;
 $heading-color: #0b1a26;
