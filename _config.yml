@@ -26,6 +26,7 @@ gems:
  - jekyll-paginate
  - jekyll-seo-tag
  - jekyll-gist
+ - jekyll-archives
 
 # Assets
 # We specify the directory for Jekyll so we can use @imports.
@@ -34,3 +35,11 @@ sass:
   style:            :compressed
 
 highligher: rouge
+
+# Archives
+jekyll-archives:
+  enabled:
+    - tags
+  layout: archive
+  permalinks:
+    tags: '/tag/:name/'

@@ -7,3 +7,4 @@ gem "jekyll-gist"
 gem "jekyll-seo-tag"
 gem "html-proofer"
 gem "htmlbeautifier"
+gem 'jekyll-archives'
