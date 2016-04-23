@@ -40,16 +40,12 @@ layout: default
 <aside class="related-posts">
   {% if site.related_posts.size >= 1 %}
   <h3>You might also be interested in:</h3>
-  <ul class="post-list related-posts">
+  <ul class="post-list">
   {% for post in site.related_posts limit:3 %}
-    <li>
-      <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-        </a>
-      </h3>
-    </li>
+  <li>
+    <span class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}" class="dt-time post-date">{{ post.date | date_to_string }}</time></span>
+     <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
   {% endfor %}
 </ul>
 {% endif %}
