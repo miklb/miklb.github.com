@@ -27,6 +27,8 @@ gems:
  - jekyll-seo-tag
  - jekyll-gist
  - jekyll-archives
+ - jekyll/tagging
+ - jekyll-tagging-related_posts
 
 # Assets
 # We specify the directory for Jekyll so we can use @imports.

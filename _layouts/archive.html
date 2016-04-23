@@ -4,7 +4,7 @@ layout: default
 
 
 <h1 class="post title">Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
-<ul class="archive-tags">
+<ul class="post-list archive-tags">
   {% for post in page.posts %}
     <li>
       <span class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}" class="dt-time post-date">{{ post.date | date_to_string }}</time></span>

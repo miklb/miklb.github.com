@@ -37,6 +37,24 @@ layout: default
 </footer>
 </article>
 
+<aside class="related-posts">
+  {% if site.related_posts.size >= 1 %}
+  <h3>You might also be interested in:</h3>
+  <ul class="post-list related-posts">
+  {% for post in site.related_posts limit:3 %}
+    <li>
+      <h3>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+        </a>
+      </h3>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
+</aside>
+
 {% if site.webmentions %}
 {% include webmentions.html %}
 {% endif %}
