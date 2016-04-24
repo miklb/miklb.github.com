@@ -7,7 +7,7 @@ tags:
 published: true
 permalink: dogfooding
 date: 2016-4-17 17:27
-summary: Dogfooding my #IndieWeb Jekyll theme.
+summary: Dogfooding my IndieWeb Jekyll theme.
 ---
 
  Last night I switched over the *theme* for this site to a project I've been working on the last moth or so, [Jekyll-IndieWeb](https://github.com/miklb/jekyll-indieweb). While I have different design ideas, until I find other users interested in using it, I knew I needed to work out any kinks. I also wanted to have better microformat support until the design changes. Thus
@@ -18,4 +18,4 @@ I will write more about the project once I have more documentation (and work out
 
 This has been the first solo project I've embarked on that was meant for public consumption from the start, which in itself has been a learning process. Now I just hope others can find it useful in some way. If the project interests you I encourage you to try it out, open any issues in the repo, or reach out on #indiewebcamp IRC, I tend to hang around there most days.
 
-<a href="https://brid.gy/publish/twitter"></a> 
+<a href="https://brid.gy/publish/twitter"></a>

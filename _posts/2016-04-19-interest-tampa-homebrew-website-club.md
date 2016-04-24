@@ -8,7 +8,7 @@ tags:
 published: true
 permalink: interest-in-tampa-homebrew-website-club
 date: 2016-4-19 14:0
-summary:
+summary: Quick web survey gauging interest in a Tampa homebrew website club.
 ---
 
 Gauging interest in Tampa to see if anyone would be up for joining a

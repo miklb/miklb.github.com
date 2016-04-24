@@ -7,7 +7,7 @@ tags:
 published: true
 permalink: headings-what-was-old-is-new-again
 date: 2016-4-18 13:10
-summary: Headings - what was old is new again.
+summary: Seems the HTML WG has reversed course on how heading tags should be used.
 ---
 
 Seems HTML WG has reversed course on a previous recommendation that allowed `sections` to have their own `H1` tag, now recommending the previous norm of cascading H tags.
@@ -19,4 +19,4 @@ where elements `h1..h6` have a defined level of their own.
 <cite><a href="https://lists.w3.org/Archives/Public/public-html/2016Apr/0032.html">HTML WG</a></cite>
 </bockquote>
 
-<a href="https://brid.gy/publish/twitter"></a> 
+<a href="https://brid.gy/publish/twitter"></a>
