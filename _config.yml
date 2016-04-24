@@ -7,7 +7,7 @@ paginate: 5
 title: Miklb's Mindless Ramblings
 author: Michael Bishop
 author_img: http://cdn.miklb.com/images/profile_4_16.jpg
-description:  Chronicling life in a digital world, touching on web dev, food, and a little of everything in between.
+description:  Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.
 url: https://miklb.com
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 baseurl:             ""
