@@ -21,5 +21,7 @@ Either way, you could do much worse than to make your bit of the web fast.
 
 The context was more broad and I believe directed towards larger sites, but it has to start somewhere.
 
+Also, I plan on sharing how I implemented the changes to get to 100%, specifically the critical CSS. 
+
 
 <a href="https://brid.gy/publish/twitter"></a>
