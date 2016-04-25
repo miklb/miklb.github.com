@@ -91,6 +91,31 @@
           <div class="posts">
             <article class="post h-entry">
               <h1 class="post-title p-name">
+                <a class="u-url" href="/mzingi">
+                  Mzingi
+      </a>
+              </h1>
+              <time datetime="2007-09-15T00:00:00+00:00" class="dt-time post-date">15 Sep 2007</time>
+              <div class="e-content">
+                <p><strong>updated:</strong> New versions available.  See bottom of post for details.
+                  <strong>&lt;h2&gt;Mzingi development will no longer done on Bloggingmeta, as it’s now included in Habari’s core theme directory.  Any bugs, comments, or suggestions should be pointed to <a href="http://trac.habariproject.org/habari">Trac</a>&lt;/h2&gt;</strong></p>
+                <p>I have had the idea for a foundation type theme for Habari since I first started working with the platform earlier in the year.  After spending time converting k2 to the design for this site, as well as for my &lt;a href://cookingwith.miklb.com”&gt;cooking site&lt;/a&gt;, I knew that if I wanted to continue working on Habari theme design, I would need something else to work off of.  No offense at all intended for the developers and users of k2, I have extreme respect for what it has achieved, I simply feel that it’s conversion to Habari was a difficult task, considering the advanced features in k2, vs being adapted to Habari at such an early stage.  <a href="http://andrewdasilva.com/">Andrew (aka freakrz)</a>, has done great work in advancing k2 to catch up to where the rest of Habari development is, however, I still felt I wanted my own framework to work off of.</p>
+                <p><a href="http://miklb.com/user/images/mzingi_screenshot.jpg"><img src="http://miklb.com/user/images/screenshot_thumb.jpg" class="left" alt="screenshot" /></a>That said, I took the initial work I had done here on Blogging Meta, and started working on a purely CSS based theme, that could be used out of the box, as well as be flexible enough to be used as a framework.  I still have a long way to go in the design world, but trying to use all of the reading I’ve done, I think the markup is fairly semantic, HTML strict, and though the CSS validator chokes on the <a href="http://developer.yahoo.com/yui/fonts/">YUI font CSS</a>, it should be valid CSS as well.  I quite like the simple percentage based font sizing of the YUI CSS, as well as the built in font family cascading.  Again, still plenty to learn in this direction, and perhaps at some point I’ll drop it, but it’s a good building block (perhaps after getting some time to mature, as well allow me to spend some time with it, I’ll convert to the <a href="http://code.google.com/p/blueprintcss/">Blue Print CSS</a> framework).
+                  <!--more-->
+                  Aside from the YUI CSS, the only other borrowed code is from <a href="http://andybudd.com">Andy Budd’s</a> <a href="http://www.cssmastery.com/">CSS Mastery</a> chapter on forms.  However, this will soon be removed, as I want the license for the theme to be completely compatible with the Apache License that Habari ships with, and Andy’s code is licensed under a Creative Commons share-a-like one. (A completely different subject, which I intend to blog about soon enough.)  However, for the short term, the form is quite nice, and will suffice until I can write my own CSS for it.  There was also a subconscious nod to the excellent <a href="http://ifelse.co.uk/simpla">Simpla</a> WordPress theme by Phy Ly, though no conscious code borrowed from the design.</p>
+                <p>Also, many thanks to everyone on the #habari IRC channel for tips, tricks, and code help, particularly tinyau for helping with the comment form and ringmaster for help with the tag template code.</p>
+                <p>A few notes about the theme.  The theme assumes the use of the tag “aside” for the asides in the sidebar, if you want to change that tag, you would need to edit theme.php and sidebar.php to change the corresponding tag.  Likewise, if you want fewer or more asides or recent comments listed in the sidebar, you will need to edit those values in theme.php.  I tried to comment the file to outline what the various additions are.  There’s also the addition of the ability to an excerpt, as can be seen on the tag page.</p>
+                <p>So, without further ado, the first, alpha release of the theme is now available.  I’m sure minor updates will come soon, but my impatience overcomes my need for perfection.</p>
+                <p><strong>.2.  <a href="/mzingi-2">change log</a>.</strong></p>
+                <p><strong><a href="/mzingi-0-3/">0.3 change notes</a></strong></p>
+                <p><a href="http://miklb.com/user/downloads/mzingi_0.4.zip">Mzingi 0.4 Download</a></p>
+                <p><strong>Users of trunk &gt;r1574</strong></p>
+                <p><a href="http://miklb.com/user/downloads/mzingi_0.5.1.zip">Mzingi 0.5.1 Download</a></p>
+                <p><a href="http://themes.bloggingmetat.com">Demo</a></p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
                 <a class="u-url" href="/feeds-and-feedburner">
                   Feeds and Feedburner
       </a>
@@ -132,18 +157,6 @@
               <time datetime="2007-08-31T00:00:00+00:00" class="dt-time post-date">31 Aug 2007</time>
               <div class="e-content">
                 <p>Can someone please tell <a href="http://www.tuaw.com/">The Unofficial Apple Weblog</a> to start a new iPhone blog, and leave my feedreader free of half a dozen or more posts everyday about the iPhone?  I appreciate the need for constant updating, but certainly, you don’t have to post everytime someone who owns an iPhone coughs.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/differences-in-habari-development">
-                  Differences in Habari Development
-      </a>
-              </h1>
-              <time datetime="2007-08-29T00:00:00+00:00" class="dt-time post-date">29 Aug 2007</time>
-              <div class="e-content">
-                <p>It seems that there is quite the difference in how Habari is developed from a PHP standpoint to a design standpoint.  Code wise, most major changes that I’ve seen, a patch was sent out to the community, and comments were made about how it worked, and if it worked within the general scope of where the members and community saw development.</p>
-                <p>This has not been the  case, from what I can see, with a current movement to change the entire admin interface.  There was some discussion about the possibility of incorporating <a href="http://code.google.com/p/blueprintcss/">BluePrint CSS Framework</a> into the admin interface.  The general consensus was that it wasn’t a bad idea, but that there were concerns with it’s compatibilities with all browsers.  In that discussion however, there was no talk of a “live” redesign of the interface.  Meaning, the admin would be changed in trunk, at small increments, without any discussion of the changes, or the effects of those changes on the user experience.</p>
               </div>
             </article>
           </div>

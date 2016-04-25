@@ -91,6 +91,20 @@
           <div class="posts">
             <article class="post h-entry">
               <h1 class="post-title p-name">
+                <a class="u-url" href="/consolidating-focusing-and-rookie-mistakes">
+                  Consolidating, Focusing, and Rookie Mistakes
+      </a>
+              </h1>
+              <time datetime="2008-12-06T00:00:00+00:00" class="dt-time post-date">06 Dec 2008</time>
+              <div class="e-content">
+                <p>As my online endeavors grow, I find myself with different sites floating around, doing nothing, as I have so many ideas for each site, I wind up not posting to any of them.  I originally started Blogging Meta because I thought I wanted to have a personal site, and a site that I could focus on tech related blogging.  Well, as I’ve said, neither came to fruition, and I’ve found myself lately feeling as if I had some dual personality that were just spinning their wheels.</p>
+                <p>So tonight I decided to merge the two sites, and really try to gain some focus.  I still have my cooking site, which I still intend to further focus on, but hopefully by committing to using this site again for everything not cooking related, I just might be able to accomplish both.</p>
+                <p>The rookie mistakes came from the fact that since Habari doesn’t have an importer in place yet to import one Habari install into another, I was faced with the only option of deleting the existing database, which was basically an import from the original WordPress installation, then dumping the bloggingmeta database, doing a quick search and replace for urls, importing that file directly into the database, then re-importing the old wordpress database using the importer plugin.  What I failed to do was check what was active in the plugins.  I already had the twitter plugin installed, so I’m guessing that it kept the settings from the old site, thus upon import, all the new posts were twittered.  Complete…rookie…mistake.  Couple with that that I also left the pingback plugin active, it tried to ping all the posts while importing.  Another party foul.  So not only did I spam Twitter, my import royally failed, so I was faced with doing the whole process over again, albeit this time I deactivated the offending plugins, and the import went off mostly without a hitch.  I might have lost a few old posts and/or comments, but all in all, I’m pleased with the outcome considering I’m doing this at 2 a.m. in the morning, and my focus might not be what it should be.  I wish I could write it off as having had a few adult beverages, but alas, I would be lying.</p>
+                <p>Over the next few days I will be doing some tweaking here and there, and shutting down the other site (and doing a 301 redirect).  I really like the typography of Ali’s <a href="http://www.awhitebox.com/dark-autumn-a-new-habari-theme">theme</a>, so I most likely will try to find the custom image I had made for the bottom, and trick out a few plugins.  At least for now.</p>
+              </div>
+            </article>
+            <article class="post h-entry">
+              <h1 class="post-title p-name">
                 <a class="u-url" href="/roku-netflix-player-first-impressions">
                   Roku Netflix Player First Impressions
       </a>
@@ -149,19 +163,6 @@
               <div class="e-content">
                 <p><a href="http://lab.arc90.com/2008/04/svn_notifier.php">SVN Notifiier</a> is a handy little Mac Dashboard widget that, using Growl, will notify you when a local working copy is out of date.  I’ve not quite gotten the “sticky” notice to work, but I just might need to edit the actual Growl settings.</p>
                 <p>Still, it’s nice to be able at a glance check your dashboard, or see a little growl notice pop up.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/leaving-the-nest">
-                  Leaving the Nest
-      </a>
-              </h1>
-              <time datetime="2008-04-30T00:00:00+00:00" class="dt-time post-date">30 Apr 2008</time>
-              <div class="e-content">
-                <p>This past week it was proposed and not shot down in flames that my first foray into a Habari theme, <a href="http://miklb.com/mzingi">mzingi</a> , intended as a simple, image free theme to be used as a foundation for building proper themes, should be included into the core download of <a href="http://habariproject.org">Habari</a>.</p>
-                <p>I was humbled and honored to say the least, and so from here on out, all development for this project will be maintained by the community.</p>
-                <p>Thanks to all who’ve helped, and shared their appreciation for it’s intended purpose, and I trust the community will continue to use it for creating full fledged themes.  Feels a little odd, but satisfying at the same time.</p>
               </div>
             </article>
           </div>
