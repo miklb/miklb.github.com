@@ -7,7 +7,7 @@ tags:
 published: true
 permalink: performance-is-a-feature
 date: 2016-4-25 0:7
-summary:Performance as a feature one small blog at a time.
+summary: Performance as a feature one small blog at a time.
 ---
 
  I spent last evening making the necessary tweaks to this site to get a perfect 100% score on Google's
