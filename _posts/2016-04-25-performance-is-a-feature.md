@@ -19,8 +19,7 @@ Which is why when Aaron Gustafson [tweeted](https://twitter.com/AaronGustafson/s
 Either way, you could do much worse than to make your bit of the web fast.
 <cite><a href="https://peterchamberlin.com/fast.php">Peter Chamberlin</a></cite></blockquote>
 
-The context was more broad and I believe directed towards larger sites, but it has to start omewhere.
+The context was more broad and I believe directed towards larger sites, but it has to start somewhere.
 
-[Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/). Now this site is just a personal site, but at the root, understanding how to make this site fast will translate to helping bigger projects keep an eye out for potential bottle necks.
 
 <a href="https://brid.gy/publish/twitter"></a>
