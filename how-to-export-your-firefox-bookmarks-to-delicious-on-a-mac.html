@@ -1,186 +1,602 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>How to Export your FireFox Bookmarks to Del.icio.us on a Mac</title>
-    <meta name="description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>How to Export your FireFox Bookmarks to Del.icio.us on a Mac - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="How to Export your FireFox Bookmarks to Del.icio.us on a Mac" />
-    <meta name="description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV." />
-    <meta property="og:description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV." />
-    <link rel="canonical" href="https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac" />
-    <meta property="og:url" content="https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2005-11-18T00:00:00+00:00" />
-    <link rel="next" href="https://miklb.com/milk-for-oil" title="Milk for Oil?" />
-    <link rel="prev" href="https://miklb.com/who-hired-this-guy" title="Who Hired This Guy??" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "BlogPosting",
-          "headline": "How to Export your FireFox Bookmarks to Del.icio.us on a Mac",
-          "datePublished": "2005-11-18T00:00:00+00:00",
-          "description": "This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <article class="post h-entry">
-            <header class="entry-header">
-              <h1 class="post-title p-name">
-                <a class="u-url" rel="bookmark" href="/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac">
-                  How to Export your FireFox Bookmarks to Del.icio.us on a Mac
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>How to Export your FireFox Bookmarks to Del.icio.us on a Mac</title>
+	<meta name="description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>How to Export your FireFox Bookmarks to Del.icio.us on a Mac - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="How to Export your FireFox Bookmarks to Del.icio.us on a Mac" />
+<meta name="description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV." />
+<meta property="og:description" content="This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV." />
+<link rel="canonical" href="https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac" />
+<meta property="og:url" content="https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2005-11-18T00:00:00+00:00" />
+<link rel="next" href="https://miklb.com/milk-for-oil" title="Milk for Oil?" />
+<link rel="prev" href="https://miklb.com/who-hired-this-guy" title="Who Hired This Guy??" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Export your FireFox Bookmarks to Del.icio.us on a Mac",
+    "datePublished": "2005-11-18T00:00:00+00:00",
+    "description": "This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<article class="post h-entry">
+  <header class="entry-header">
+	  <h1 class="post-title p-name">
+		  <a class="u-url" rel="bookmark" href="/how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac">
+			  How to Export your FireFox Bookmarks to Del.icio.us on a Mac
 		  </a>
-              </h1>
-              <h2 class="p-summary p-bridgy-twitter-content">
-              </h2>
-            </header>
-            <div class="e-content">
-              <p>This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.</p>
-              <p>First, head over to SourceForge and grab this <a href="http://sourceforge.net/projects/bkmrk2dlcs/">script</a>.    This is assuming your downloads go to your desktop.  Second, export your FF bookmarks, for ease of explanation, to your desktop as well(make sure you select all the folders you want to export, by default, the Toolbar bookmarks are the only ones highlighted).  You should have a Folder then on your desktop BookmarksToDelicious and your bookmarks.html file (and what ever else you have on your desktop).  Now go to your Utilities folder, and open the Terminal application.  For those who are not familiar with it, you  are now officially venturing into the Unix core that you’ve heard about.
+	  </h1>
+
+    <h2 class="p-summary p-bridgy-twitter-content">
+      
+    </h2>
+
+  </header>
+  <div class="e-content">
+      <p>This is intended to be a simple tutorial for Mac OS X users.  I’m not a programmer, I didn’t even play one on TV.</p>
+
+<p>First, head over to SourceForge and grab this <a href="http://sourceforge.net/projects/bkmrk2dlcs/">script</a>.    This is assuming your downloads go to your desktop.  Second, export your FF bookmarks, for ease of explanation, to your desktop as well(make sure you select all the folders you want to export, by default, the Toolbar bookmarks are the only ones highlighted).  You should have a Folder then on your desktop BookmarksToDelicious and your bookmarks.html file (and what ever else you have on your desktop).  Now go to your Utilities folder, and open the Terminal application.  For those who are not familiar with it, you  are now officially venturing into the Unix core that you’ve heard about.
 Once the terminal is open, you should see a prompt that looks something like $miklb:~ miklb$.  Where miklb is the User name that you use on your machine.  The first step is to move to the actual directory where the python script is, which is your BookmarksToDelicious folder on the desktop.  Again, this is a bare bones explanation, for non-technical users, so feel free to comment if there’s a quicker way.
 To get to the folder, first type: cd Desktop.  The prompt should now be miklb$:~/Desktop miklb$. (Don’t forget, yours won’t be miklb, it will be what ever your user name is).
 Next, type cd BookmarksToDelicious.
 We are now in the folder the file is we want to execute.  Almost there.
 At this point you need to know your del.icio.us user name and password.  For example purposes, I’m going to use the fictional user name of Alice, and password of Wonderland.  Again, this is assuming your bookmarks are on the desktop.  If not, you need to know the full path to that file.  But if you’re following along, the next command to type into terminal is:
-                <strong>python BookmarksToDelicious.py – –username Alice – –password Wonderland –submit –debug /Users/miklb/Desktop/bookmarks.html</strong></p>
-              <p>Where miklb is again the username you have on your machine, which is going to be the same as your prompt in the terminal.
+<strong>python BookmarksToDelicious.py – –username Alice – –password Wonderland –submit –debug /Users/miklb/Desktop/bookmarks.html</strong></p>
+
+<p>Where miklb is again the username you have on your machine, which is going to be the same as your prompt in the terminal.
 If all goes well, you will begin to a lot of action scrolling down the page, and then the actual bookmarks going into del.icio.us, with a line saying “Getting”, then some code, then  	&#38; result code =”done” /,  	&#38; for each bookmark.
 The script will put tags on each bookmark with the folder name for that bookmark.  So if you have a folder called Apple in the folder toolbar-bookmarks, that will be the tag structure you get for the bookmark.  You can then edit that in del.icio.us, or, you can redo your folder structure in FF prior to export, which ever  you prefer.
 Also note, it’s not neccessary to use the –debug command, I simply included it, as it may be nice to see something happen, and know when it’s done.  Working in Terminal, generally speaking, it doesn’t show anything happening, so a new user may not know what’s going on.  Seeing stuff scroll down the screen helps.  If you run into a problem, you can leave a comment, and I’ll do my best to help, but again, this is meant as a bare-bones-I-couldn’t-find-a-better-option way of doing this, and wanted to share, as I didn’t come across many other explanations.</p>
-            </div>
-            <footer class="entry-footer">
-              <div class="entry-meta">
-                <div class="h-card">
-                  <a href="" class="entry-author-link" rel="author">
-                    <div class="auth-img">
-                      <img src="http://cdn.miklb.com/images/profile_4_16_sm.png" alt="Michael Bishop" class="u-photo">
-                    </div>
-                    <p>Author: <span class="p-author">Michael Bishop</span></p>
-                  </a>
-                </div>
-                <div class="meta-wrap">
-                  <p><a href="">How to Export your FireFox Bookmarks to Del.icio.us on a Mac </a> posted on <time datetime="2005-11-18T00:00:00+00:00" class="dt-time post-date">18 Nov 2005</time>.</p>
-                  <p>This entry has been tagged with the keywords: <a href="/tag/firefox" class="p-category" rel="tag">firefox </a><a href="/tag/browsers" class="p-category" rel="tag">browsers </a><a href="/tag/my-site" class="p-category" rel="tag">my-site </a><a href="/tag/geek-life" class="p-category" rel="tag">geek-life </a><a href="/tag/delicious" class="p-category" rel="tag">delicious </a><a href="/tag/python" class="p-category" rel="tag">python </a></p>
-                </div>
-              </div>
-            </footer>
-          </article>
-          <aside class="related-posts">
-            <h3>You might also be interested in:</h3>
-            <ul class="post-list">
-              <li>
-                <span class="post-date"><time datetime="2005-12-09T00:00:00+00:00" class="dt-time post-date">09 Dec 2005</time></span>
-                <a href="/delicious-yahoo">del.icio.us: y.ah.oo!</a>
-              </li>
-              <li>
-                <span class="post-date"><time datetime="2005-11-27T00:00:00+00:00" class="dt-time post-date">27 Nov 2005</time></span>
-                <a href="/site-submission-multitool-alans-marklet-maker">Site Submission MultiTool- Alan's Marklet Maker</a>
-              </li>
-              <li>
-                <span class="post-date"><time datetime="2006-11-04T00:00:00+00:00" class="dt-time post-date">04 Nov 2006</time></span>
-                <a href="/firefox-2-a-web-developers-friend">FireFox 2 A Web Developers Friend</a>
-              </li>
-            </ul>
-          </aside>
-          <script id="webmention-hosted">
-            (function () {
-            var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-            url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-            url = url && url[0] ? url[0].href : false;
-            sn.type = "text/javascript"; sn.async = true;
-            sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-            s.parentNode.insertBefore(sn, s);
-            }());
-          </script>
-        </div>
-      </main>
+
+  </div>
+  <footer class="entry-footer">
+	  <div class="entry-meta">
+      <div class="h-card">
+		        <a href="" class="entry-author-link" rel="author">
+                  
+                  <div class="auth-img">
+                    <img src="http://cdn.miklb.com/images/profile_4_16_sm.png" alt="Michael Bishop" class="u-photo">
+                  </div>
+                  
+                  
+
+<p>Author: <span class="p-author">Michael Bishop</span></p>
+
+            </a>
+      </div>
+      <div class="meta-wrap">
+        <p><a href="">How to Export your FireFox Bookmarks to Del.icio.us on a Mac </a> posted on <time datetime="2005-11-18T00:00:00+00:00" class="dt-time post-date">18 Nov 2005</time>.</p>
+        <p>This entry has been tagged with the keywords: <a href="/tag/firefox" class="p-category" rel="tag">firefox </a><a href="/tag/browsers" class="p-category" rel="tag">browsers </a><a href="/tag/my-site" class="p-category" rel="tag">my-site </a><a href="/tag/geek-life" class="p-category" rel="tag">geek-life </a><a href="/tag/delicious" class="p-category" rel="tag">delicious </a><a href="/tag/python" class="p-category" rel="tag">python </a></p>
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </div>
+</footer>
+</article>
+
+<aside class="related-posts">
+  
+  <h3>You might also be interested in:</h3>
+  <ul class="post-list">
+  
+  <li>
+    <span class="post-date"><time datetime="2005-12-09T00:00:00+00:00" class="dt-time post-date">09 Dec 2005</time></span>
+     <a href="/delicious-yahoo">del.icio.us: y.ah.oo!</a>
+  </li>
+  
+  <li>
+    <span class="post-date"><time datetime="2005-11-27T00:00:00+00:00" class="dt-time post-date">27 Nov 2005</time></span>
+     <a href="/site-submission-multitool-alans-marklet-maker">Site Submission MultiTool- Alan's Marklet Maker</a>
+  </li>
+  
+  <li>
+    <span class="post-date"><time datetime="2006-11-04T00:00:00+00:00" class="dt-time post-date">04 Nov 2006</time></span>
+     <a href="/firefox-2-a-web-developers-friend">FireFox 2 A Web Developers Friend</a>
+  </li>
+  
+</ul>
+
+</aside>
+
+
+<script id="webmention-hosted">
+(function () {
+var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+url = url && url[0] ? url[0].href : false;
+sn.type = "text/javascript"; sn.async = true;
+sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+s.parentNode.insertBefore(sn, s);
+}());
+</script>
+
+
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

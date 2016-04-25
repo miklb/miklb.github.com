@@ -1,179 +1,599 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page32/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page32/" />
-    <meta property="og:url" content="https://miklb.com/page32/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page32/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/redarry-theme">
-                  Redarry Theme
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page32/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page32/" />
+<meta property="og:url" content="https://miklb.com/page32/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page32/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/redarry-theme">
+        Redarry Theme
       </a>
-              </h1>
-              <time datetime="2008-02-11T00:00:00+00:00" class="dt-time post-date">11 Feb 2008</time>
-              <div class="e-content">
-                <p>If you are looking for an XHTML 1.1 valid mod of Habari’s k2, be sure to check out Harry’s <a href="http://codeb.us/redarry-theme">Redarry Theme</a>, complete with “Red-dy” goodness.  I really like the subtle gradient for the tabs in the header.</p>
-                <p>Welcome to the Habari community Harry, we look forward to seeing you around!</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/marsedit-take-101">
-                  Marsedit, take 101
-      </a>
-              </h1>
-              <time datetime="2008-02-09T00:00:00+00:00" class="dt-time post-date">09 Feb 2008</time>
-              <div class="e-content">
-                <p>Will this post, though I’m not seeing recent posts in MarsEdit?</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/firefox-3-beta">
-                  FireFox 3 beta
-      </a>
-              </h1>
-              <time datetime="2008-02-09T00:00:00+00:00" class="dt-time post-date">09 Feb 2008</time>
-              <div class="e-content">
-                <p>Testing out b2 of FF 3 (Mac OS X Leopard), and it seems snappier, though none of my normal extensions are available for the beta, so that might be part of it.  Certainly can’t use it for everyday browsing because of that reason.  It seems kinda odd using the native OS X theme, with Safari like buttons instead of the standard FF HTML buttons.</p>
-                <p>I kinda like the Smart bookmarks feature, though the recent bookmarks isn’t really useful to me.  I’ll be curious how that might be tied into del.icio.us bookmarks (however, seeing as Yahoo! is in turmoil, I will be exploring other bookmarking services, including checking on the status of <a href="http://sourceforge.net/projects/scuttle/">scuttle</a>, a GPL script for hosting your own bookmark library ala del.icio.us).  Any suggestions for similar services welcomed.</p>
-                <p>Another feature I’m not keen on just yet is when I click on the favicon, normally that would highlight the entire URL in the address bar, now it gives me some odd identity information.  Definitely a PITA.  I really use that feature for copy and pasting URLs, though there might be an easier method for that.</p>
-                <p>I’ll continue to run FF 3 on the laptop, and keep 2 on my main desktop, I understand a beta3 will be out Monday, and hopefully sooner than later a RC will be around, with most of the extensions being updated around that time.  I understand extension developers not trying to keep up with alpha and beta builds for official downloads, but at some point, they should be offering some kind of indication to users whether or not the extension will be available for the new version.  Nothing worse than upgrading only to find out your favorite extension isn’t being developed for the latest release.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/new-growl-theme">
-                  New Growl Theme
-      </a>
-              </h1>
-              <time datetime="2008-01-31T00:00:00+00:00" class="dt-time post-date">31 Jan 2008</time>
-              <div class="e-content">
-                <p>A nice <a href="http://macthemes2.net/forum/viewtopic.php?id=16783761">collection of iPhone-esque Growl themes.</a>  I’ve been a big fan of Growl for quite some time, and until now settled on the smoke theme.  Giving these a whirl, so far, looks nice.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/testing-marsedit-take-4">
-                  Testing MarsEdit, take 4
-      </a>
-              </h1>
-              <time datetime="2008-01-28T00:00:00+00:00" class="dt-time post-date">28 Jan 2008</time>
-              <div class="e-content">
-                <p>OK, testing without a tag.  Again, ignore this, I’m too lazy to use a test install for this.</p>
-                <p><em>now an edit - plugin updated to work without a tag being added</em></p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page33">Older</a>
-            <a class="pagination-item newer" href="/page31">Newer</a>
-          </div>
-        </div>
-      </main>
+    </h1>
+
+    <time datetime="2008-02-11T00:00:00+00:00" class="dt-time post-date">11 Feb 2008</time>
+    <div class="e-content">
+        <p>If you are looking for an XHTML 1.1 valid mod of Habari’s k2, be sure to check out Harry’s <a href="http://codeb.us/redarry-theme">Redarry Theme</a>, complete with “Red-dy” goodness.  I really like the subtle gradient for the tabs in the header.</p>
+
+<p>Welcome to the Habari community Harry, we look forward to seeing you around!</p>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/marsedit-take-101">
+        Marsedit, take 101
+      </a>
+    </h1>
+
+    <time datetime="2008-02-09T00:00:00+00:00" class="dt-time post-date">09 Feb 2008</time>
+    <div class="e-content">
+        <p>Will this post, though I’m not seeing recent posts in MarsEdit?</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/firefox-3-beta">
+        FireFox 3 beta
+      </a>
+    </h1>
+
+    <time datetime="2008-02-09T00:00:00+00:00" class="dt-time post-date">09 Feb 2008</time>
+    <div class="e-content">
+        <p>Testing out b2 of FF 3 (Mac OS X Leopard), and it seems snappier, though none of my normal extensions are available for the beta, so that might be part of it.  Certainly can’t use it for everyday browsing because of that reason.  It seems kinda odd using the native OS X theme, with Safari like buttons instead of the standard FF HTML buttons.</p>
+
+<p>I kinda like the Smart bookmarks feature, though the recent bookmarks isn’t really useful to me.  I’ll be curious how that might be tied into del.icio.us bookmarks (however, seeing as Yahoo! is in turmoil, I will be exploring other bookmarking services, including checking on the status of <a href="http://sourceforge.net/projects/scuttle/">scuttle</a>, a GPL script for hosting your own bookmark library ala del.icio.us).  Any suggestions for similar services welcomed.</p>
+
+<p>Another feature I’m not keen on just yet is when I click on the favicon, normally that would highlight the entire URL in the address bar, now it gives me some odd identity information.  Definitely a PITA.  I really use that feature for copy and pasting URLs, though there might be an easier method for that.</p>
+
+<p>I’ll continue to run FF 3 on the laptop, and keep 2 on my main desktop, I understand a beta3 will be out Monday, and hopefully sooner than later a RC will be around, with most of the extensions being updated around that time.  I understand extension developers not trying to keep up with alpha and beta builds for official downloads, but at some point, they should be offering some kind of indication to users whether or not the extension will be available for the new version.  Nothing worse than upgrading only to find out your favorite extension isn’t being developed for the latest release.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/new-growl-theme">
+        New Growl Theme
+      </a>
+    </h1>
+
+    <time datetime="2008-01-31T00:00:00+00:00" class="dt-time post-date">31 Jan 2008</time>
+    <div class="e-content">
+        <p>A nice <a href="http://macthemes2.net/forum/viewtopic.php?id=16783761">collection of iPhone-esque Growl themes.</a>  I’ve been a big fan of Growl for quite some time, and until now settled on the smoke theme.  Giving these a whirl, so far, looks nice.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/testing-marsedit-take-4">
+        Testing MarsEdit, take 4
+      </a>
+    </h1>
+
+    <time datetime="2008-01-28T00:00:00+00:00" class="dt-time post-date">28 Jan 2008</time>
+    <div class="e-content">
+        <p>OK, testing without a tag.  Again, ignore this, I’m too lazy to use a test install for this.</p>
+
+<p><em>now an edit - plugin updated to work without a tag being added</em></p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page33">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page31">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

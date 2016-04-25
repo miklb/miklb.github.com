@@ -1,188 +1,611 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Habari Plugin: Pull Quotes</title>
-    <meta name="description" content="UPDATE The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issue...">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/habari-plugin-pull-quotes">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Habari Plugin: Pull Quotes - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Habari Plugin: Pull Quotes" />
-    <meta name="description" content="UPDATE The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issues should be directed to the Extras Trac." />
-    <meta property="og:description" content="UPDATE The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issues should be directed to the Extras Trac." />
-    <link rel="canonical" href="https://miklb.com/habari-plugin-pull-quotes" />
-    <meta property="og:url" content="https://miklb.com/habari-plugin-pull-quotes" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2009-02-26T00:00:00+00:00" />
-    <link rel="next" href="https://miklb.com/habari-theme-swanky-05beta-released" title="Habari Theme: Swanky 0.5beta Released" />
-    <link rel="prev" href="https://miklb.com/excellent-design-bookmarklet-suite" title="Excellent Design Bookmarklet Suite" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "BlogPosting",
-          "headline": "Habari Plugin: Pull Quotes",
-          "datePublished": "2009-02-26T00:00:00+00:00",
-          "description": "UPDATE The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issues should be directed to the Extras Trac.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/habari-plugin-pull-quotes"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <article class="post h-entry">
-            <header class="entry-header">
-              <h1 class="post-title p-name">
-                <a class="u-url" rel="bookmark" href="/habari-plugin-pull-quotes">
-                  Habari Plugin: Pull Quotes
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Habari Plugin: Pull Quotes</title>
+	<meta name="description" content="UPDATE The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issue...">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/habari-plugin-pull-quotes">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Habari Plugin: Pull Quotes - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Habari Plugin: Pull Quotes" />
+<meta name="description" content="UPDATE The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issues should be directed to the Extras Trac." />
+<meta property="og:description" content="UPDATE The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issues should be directed to the Extras Trac." />
+<link rel="canonical" href="https://miklb.com/habari-plugin-pull-quotes" />
+<meta property="og:url" content="https://miklb.com/habari-plugin-pull-quotes" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2009-02-26T00:00:00+00:00" />
+<link rel="next" href="https://miklb.com/habari-theme-swanky-05beta-released" title="Habari Theme: Swanky 0.5beta Released" />
+<link rel="prev" href="https://miklb.com/excellent-design-bookmarklet-suite" title="Excellent Design Bookmarklet Suite" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Habari Plugin: Pull Quotes",
+    "datePublished": "2009-02-26T00:00:00+00:00",
+    "description": "UPDATE The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issues should be directed to the Extras Trac.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/habari-plugin-pull-quotes"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<article class="post h-entry">
+  <header class="entry-header">
+	  <h1 class="post-title p-name">
+		  <a class="u-url" rel="bookmark" href="/habari-plugin-pull-quotes">
+			  Habari Plugin: Pull Quotes
 		  </a>
-              </h1>
-              <h2 class="p-summary p-bridgy-twitter-content">
-              </h2>
-            </header>
-            <div class="e-content">
-              <p><strong><em>UPDATE</em></strong> The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issues should be directed to the <a href="http://trac.habariproject.org/habari-extras">Extras Trac</a>.</p>
-              <p>Unlike a blockquote, which is a HTML element meant to offset a quotation from the main text, a pull quote is a technique traditionally used in print to draw attention to a salient point in an article. <span class="pquote-r">Pull quotes generally take a small section of text and offset it from the article in a larger typeface.</span>  In addition to helping highlight a noteworthy point, a pull quote can add a graphic element by breaking up particularly long pieces of text.</p>
-              <p>Pull quotes were traditionally achieved in web publishing by appending the selected text to the end of the paragraph and then styling with CSS.  The downside to that is that in mediums that don’t adhere to the style sheet (like syndication feeds), you wind up with the duplicate content at the end of a paragraph, which can confuse the reader to say the least.</p>
-              <p>Fortunately, through the wonders of jquery, <a href="http://css-tricks.com/better-pull-quotes/">Chris Coyier</a> whipped up a way of simply wrapping the desired text in a span that clones the text and floats it.  The beauty of this technique is that you’re not duplicating markup.  Any medium that doesn’t recognize the class on the span simply ignores it, and the article reads normal.</p>
-              <p>With the help of <a href="http://www.twofishcreative.com/michael/blog/">Michael Harris</a> who reworked the javascript, I’m proud to announce my first full fledged Habari plugin, simple as it may be.  You can see it at work in this post and on another <a href="http://miklb.com/ie8-compatibility-mode">recent post</a>.</p>
-              <h4>Usage</h4>
-              <p>Upload pullquotes to your user/plugins directory and activate the plugin.  There is no configuration required.  To create a pullquote from existing content, wrap the desired text in a span with a class  of either <strong>pquote-r</strong> or <strong>pquote-l</strong>.</p>
-              <h4>Example</h4>
-              <p><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="pquote-r">Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;</code></p>
-              <h4>Customizing</h4>
-              <p>Pull Quotes has a default style included.  To customize the CSS, make sure in your theme’s header file that <code>$theme-&gt;header();</code> is called before the theme’s style sheet.  You can then add span.pull-left and span.pull-right to your theme’s style sheet and customize the pull quote to fit your design and tastes.</p>
-              <h4>Download</h4>
-              <p><a href="http://miklb.com/user/files/pullquote.zip">Pull Quote version 0.2</a></p>
-              <p><strong>Note:</strong> This plugin will eventually be handed over to the <a href="http://trac.habariproject.org/habari-extras/">Habari extras repository</a>, however in my exuberance of writing my first plugin, and desire to experience writing up a detailed post for one, I am releasing it on my personal site first.  Once I test it against 0.5.2 to determine if a separate version is required, I will add it to the repo, so any bugs or feature requests should be logged in the extras trac.  Comments certainly welcomed as well.</p>
-            </div>
-            <footer class="entry-footer">
-              <div class="entry-meta">
-                <div class="h-card">
-                  <a href="" class="entry-author-link" rel="author">
-                    <div class="auth-img">
-                      <img src="http://cdn.miklb.com/images/profile_4_16_sm.png" alt="Michael Bishop" class="u-photo">
-                    </div>
-                    <p>Author: <span class="p-author">Michael Bishop</span></p>
-                  </a>
-                </div>
-                <div class="meta-wrap">
-                  <p><a href="">Habari Plugin: Pull Quotes </a> posted on <time datetime="2009-02-26T00:00:00+00:00" class="dt-time post-date">26 Feb 2009</time>.</p>
-                  <p>This entry has been tagged with the keywords: <a href="/tag/habari" class="p-category" rel="tag">habari </a><a href="/tag/plugin" class="p-category" rel="tag">plugin </a><a href="/tag/pull-quote" class="p-category" rel="tag">pull-quote </a></p>
-                </div>
-              </div>
-            </footer>
-          </article>
-          <aside class="related-posts">
-            <h3>You might also be interested in:</h3>
-            <ul class="post-list">
-              <li>
-                <span class="post-date"><time datetime="2007-03-15T00:00:00+00:00" class="dt-time post-date">15 Mar 2007</time></span>
-                <a href="/gravatars-20-and-skippys-gravatars-plugin">Gravatars 2.0 and Skippy's Gravatars Plugin</a>
-              </li>
-              <li>
-                <span class="post-date"><time datetime="2006-09-09T00:00:00+00:00" class="dt-time post-date">09 Sep 2006</time></span>
-                <a href="/category-archives-plugin">Category Archives Plugin</a>
-              </li>
-              <li>
-                <span class="post-date"><time datetime="2013-01-08T00:00:00+00:00" class="dt-time post-date">08 Jan 2013</time></span>
-                <a href="/habari-1">Habari</a>
-              </li>
-            </ul>
-          </aside>
-          <script id="webmention-hosted">
-            (function () {
-            var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-            url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-            url = url && url[0] ? url[0].href : false;
-            sn.type = "text/javascript"; sn.async = true;
-            sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-            s.parentNode.insertBefore(sn, s);
-            }());
-          </script>
-        </div>
-      </main>
+	  </h1>
+
+    <h2 class="p-summary p-bridgy-twitter-content">
+      
+    </h2>
+
+  </header>
+  <div class="e-content">
+      <p><strong><em>UPDATE</em></strong> The plugin is now in the Habari Extras repository.  There is a branch and tag for 0.6, and a 0.7 branch for the new plugin XML format.  Any bugs/issues should be directed to the <a href="http://trac.habariproject.org/habari-extras">Extras Trac</a>.</p>
+
+<p>Unlike a blockquote, which is a HTML element meant to offset a quotation from the main text, a pull quote is a technique traditionally used in print to draw attention to a salient point in an article. <span class="pquote-r">Pull quotes generally take a small section of text and offset it from the article in a larger typeface.</span>  In addition to helping highlight a noteworthy point, a pull quote can add a graphic element by breaking up particularly long pieces of text.</p>
+
+<p>Pull quotes were traditionally achieved in web publishing by appending the selected text to the end of the paragraph and then styling with CSS.  The downside to that is that in mediums that don’t adhere to the style sheet (like syndication feeds), you wind up with the duplicate content at the end of a paragraph, which can confuse the reader to say the least.</p>
+
+<p>Fortunately, through the wonders of jquery, <a href="http://css-tricks.com/better-pull-quotes/">Chris Coyier</a> whipped up a way of simply wrapping the desired text in a span that clones the text and floats it.  The beauty of this technique is that you’re not duplicating markup.  Any medium that doesn’t recognize the class on the span simply ignores it, and the article reads normal.</p>
+
+<p>With the help of <a href="http://www.twofishcreative.com/michael/blog/">Michael Harris</a> who reworked the javascript, I’m proud to announce my first full fledged Habari plugin, simple as it may be.  You can see it at work in this post and on another <a href="http://miklb.com/ie8-compatibility-mode">recent post</a>.</p>
+
+<h4>Usage</h4>
+<p>Upload pullquotes to your user/plugins directory and activate the plugin.  There is no configuration required.  To create a pullquote from existing content, wrap the desired text in a span with a class  of either <strong>pquote-r</strong> or <strong>pquote-l</strong>.</p>
+<h4>Example</h4>
+
+<p><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="pquote-r">Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;</code></p>
+
+<h4>Customizing</h4>
+<p>Pull Quotes has a default style included.  To customize the CSS, make sure in your theme’s header file that <code>$theme-&gt;header();</code> is called before the theme’s style sheet.  You can then add span.pull-left and span.pull-right to your theme’s style sheet and customize the pull quote to fit your design and tastes.</p>
+
+<h4>Download</h4>
+<p><a href="http://miklb.com/user/files/pullquote.zip">Pull Quote version 0.2</a></p>
+
+<p><strong>Note:</strong> This plugin will eventually be handed over to the <a href="http://trac.habariproject.org/habari-extras/">Habari extras repository</a>, however in my exuberance of writing my first plugin, and desire to experience writing up a detailed post for one, I am releasing it on my personal site first.  Once I test it against 0.5.2 to determine if a separate version is required, I will add it to the repo, so any bugs or feature requests should be logged in the extras trac.  Comments certainly welcomed as well.</p>
+
+  </div>
+  <footer class="entry-footer">
+	  <div class="entry-meta">
+      <div class="h-card">
+		        <a href="" class="entry-author-link" rel="author">
+                  
+                  <div class="auth-img">
+                    <img src="http://cdn.miklb.com/images/profile_4_16_sm.png" alt="Michael Bishop" class="u-photo">
+                  </div>
+                  
+                  
+
+<p>Author: <span class="p-author">Michael Bishop</span></p>
+
+            </a>
+      </div>
+      <div class="meta-wrap">
+        <p><a href="">Habari Plugin: Pull Quotes </a> posted on <time datetime="2009-02-26T00:00:00+00:00" class="dt-time post-date">26 Feb 2009</time>.</p>
+        <p>This entry has been tagged with the keywords: <a href="/tag/habari" class="p-category" rel="tag">habari </a><a href="/tag/plugin" class="p-category" rel="tag">plugin </a><a href="/tag/pull-quote" class="p-category" rel="tag">pull-quote </a></p>
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </div>
+</footer>
+</article>
+
+<aside class="related-posts">
+  
+  <h3>You might also be interested in:</h3>
+  <ul class="post-list">
+  
+  <li>
+    <span class="post-date"><time datetime="2007-03-15T00:00:00+00:00" class="dt-time post-date">15 Mar 2007</time></span>
+     <a href="/gravatars-20-and-skippys-gravatars-plugin">Gravatars 2.0 and Skippy's Gravatars Plugin</a>
+  </li>
+  
+  <li>
+    <span class="post-date"><time datetime="2006-09-09T00:00:00+00:00" class="dt-time post-date">09 Sep 2006</time></span>
+     <a href="/category-archives-plugin">Category Archives Plugin</a>
+  </li>
+  
+  <li>
+    <span class="post-date"><time datetime="2013-01-08T00:00:00+00:00" class="dt-time post-date">08 Jan 2013</time></span>
+     <a href="/habari-1">Habari</a>
+  </li>
+  
+</ul>
+
+</aside>
+
+
+<script id="webmention-hosted">
+(function () {
+var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+url = url && url[0] ? url[0].href : false;
+sn.type = "text/javascript"; sn.async = true;
+sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+s.parentNode.insertBefore(sn, s);
+}());
+</script>
+
+
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

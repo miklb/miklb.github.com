@@ -1,179 +1,594 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page64/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page64/" />
-    <meta property="og:url" content="https://miklb.com/page64/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page64/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/hosting-my-own-rss-aggregator">
-                  Hosting My Own RSS aggregator
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page64/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page64/" />
+<meta property="og:url" content="https://miklb.com/page64/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page64/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/hosting-my-own-rss-aggregator">
+        Hosting My Own RSS aggregator
       </a>
-              </h1>
-              <time datetime="2006-03-07T00:00:00+00:00" class="dt-time post-date">07 Mar 2006</time>
-              <div class="e-content">
-                <p>When I first started using RSS, I choose <a href="http://ranchero.com/netnewswire/">NetNewsWire Lite</a> and was quite pleased with the functionality.  I then discovered <a href="http://www.opencommunity.co.uk/vienna2.html">Vienna</a> an open source, free, aggregator.  Which  I liked a little better than  NetNewsWire.  I then went on my merry way adding and subtracting feeds, and keeping up with multiple sites with no problems.  Then I got my new desktop computer, all snazzy with OS Tiger, and have begun using it much, much, more than I ever did the old one.  Thus a dilemma began, how to keep track of what has been read and what hasn’t when switching from desktop to laptop.  Enter <a href="http://gregarius.net/">Gregarious</a>.  I can host it on my server, and access it from both machines, and, voilá , no need to use a desktop aggregator, no need to deal with someone elses hosted aggregator, and ads, I’m sure.  It was quite easy to install (though I did have to manually import the sql database info), and easily imported my opml file from vienna, so all my feeds were picked up, and I never lossed a beat.  You can take a look at my feeds at <a href="http://www.miklb.com/rss">Miklb’s Feeds</a>.  Right now it’s the vanilla default install, but I intend to give it some customization (like I have free time right now…)
+    </h1>
+
+    <time datetime="2006-03-07T00:00:00+00:00" class="dt-time post-date">07 Mar 2006</time>
+    <div class="e-content">
+        <p>When I first started using RSS, I choose <a href="http://ranchero.com/netnewswire/">NetNewsWire Lite</a> and was quite pleased with the functionality.  I then discovered <a href="http://www.opencommunity.co.uk/vienna2.html">Vienna</a> an open source, free, aggregator.  Which  I liked a little better than  NetNewsWire.  I then went on my merry way adding and subtracting feeds, and keeping up with multiple sites with no problems.  Then I got my new desktop computer, all snazzy with OS Tiger, and have begun using it much, much, more than I ever did the old one.  Thus a dilemma began, how to keep track of what has been read and what hasn’t when switching from desktop to laptop.  Enter <a href="http://gregarius.net/">Gregarious</a>.  I can host it on my server, and access it from both machines, and, voilá , no need to use a desktop aggregator, no need to deal with someone elses hosted aggregator, and ads, I’m sure.  It was quite easy to install (though I did have to manually import the sql database info), and easily imported my opml file from vienna, so all my feeds were picked up, and I never lossed a beat.  You can take a look at my feeds at <a href="http://www.miklb.com/rss">Miklb’s Feeds</a>.  Right now it’s the vanilla default install, but I intend to give it some customization (like I have free time right now…)
 So, take a look, maybe you’ll find a feed worth adding to your reader of choice, or maybe you’ll decide to give Gregarius a shot yourself.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/added-now-listening">
-                  Added Now Listening
-      </a>
-              </h1>
-              <time datetime="2006-03-07T00:00:00+00:00" class="dt-time post-date">07 Mar 2006</time>
-              <div class="e-content">
-                <p>I just  caught on to the <a href="http://last.fm">last.fm</a> tip, and added some plugins to show what I’ve been listening to in the sidebar. Check the <a href="http://www.miklb.com/blog/about/">About</a> page to see the plugins used for last.fm, and all the other stuff I’m using.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/put-the-hammer-on-the-shelf">
-                  Put "The Hammer" on the Shelf
-      </a>
-              </h1>
-              <time datetime="2006-03-06T00:00:00+00:00" class="dt-time post-date">06 Mar 2006</time>
-              <div class="e-content">
-                <p><a href="http://www.washingtonpost.com/wp-dyn/content/article/2006/03/04/AR2006030401034.html?nav=rss_politics">DeLay Will Face Voters’ Verdict This Week</a>
-                  Please, if you live in the Houston area, go out and vote against DeLay tomorrow.  You don’t have to be a Republican to vote, so what better way for Democrats and independents to send Congress and the Bush White House a message than to vote out their man in a primary?</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/sure-harris-was-on-the-up-and-up-in-2000">
-                  Sure Harris Was on the Up and Up in 2000
-      </a>
-              </h1>
-              <time datetime="2006-03-02T00:00:00+00:00" class="dt-time post-date">02 Mar 2006</time>
-              <div class="e-content">
-                <p><a href="http://www.sptimes.com/2006/03/02/State/New_questions_dog_the.shtml">State: New questions dog the Harris campaign</a>
-                  <img class="alignleft" src="http://www.miklb.com/blog/wp-content/images/harris.gif" alt="harris" />The argument has been made over and over to defend the clown woman for her actions in handling the Election in 2000, and the events leading up to it (see Texas company hired to purge thousands of “felons” from voter roll, etc).  Now she’s seen clearly in bed with an admitted criminal who’s been found to illegally donate to her campaign, she’s been documented to have worked with/campaigned with/for ol’ Duke Cunningham, who’s admitted to taking kick backs/bribes.  If it looks like a circus clown, and talks like a circus clown…nah, that’s not fair to the memory of Emmitt Kelly.
-My only worry is that she won’t run this fall, and Bill Nelson will actually have to campaign against someone.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/and-i-thought-i-had-a-bad-night">
-                  And I Thought I Had a Bad Night
-      </a>
-              </h1>
-              <time datetime="2006-02-28T00:00:00+00:00" class="dt-time post-date">28 Feb 2006</time>
-              <div class="e-content">
-                <p>As much as I love food, and cooking, and know that real restaurants are out there with caring owners and concerned staff, the combination of my hard-headedness and bad luck, I’ve not worked in one in a long time.  I loathe working in a restaurant right now, and pray for the day that I discover that I really can make a living working with the web, or some other career opens up, but until then, I’m in it.
-And with that off my chest, I really had a bad night, and was looking forward to getting home, and watching my favorite hockey team take on their in-state rival. (yeah, another sports post, go figure).  So I settle in on the couch with some munchies and fire up the DVR, and no sooner than the game starts, it was over.  And it was <a href="http://www.tbo.com/sports/lightning/MGBDTF869KE.html">downhill from there.</a>  So thanks Lightning for reminding me that I might not have been the only one who had a bad day, and that you’ve got to put it behind you, learn what you can from your mistakes, and accept the fact that somedays, it’s just not your day.  Here’s to a better tomorrow, and a run for the Cup.</p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page65">Older</a>
-            <a class="pagination-item newer" href="/page63">Newer</a>
-          </div>
-        </div>
-      </main>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/added-now-listening">
+        Added Now Listening
+      </a>
+    </h1>
+
+    <time datetime="2006-03-07T00:00:00+00:00" class="dt-time post-date">07 Mar 2006</time>
+    <div class="e-content">
+        <p>I just  caught on to the <a href="http://last.fm">last.fm</a> tip, and added some plugins to show what I’ve been listening to in the sidebar. Check the <a href="http://www.miklb.com/blog/about/">About</a> page to see the plugins used for last.fm, and all the other stuff I’m using.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/put-the-hammer-on-the-shelf">
+        Put "The Hammer" on the Shelf
+      </a>
+    </h1>
+
+    <time datetime="2006-03-06T00:00:00+00:00" class="dt-time post-date">06 Mar 2006</time>
+    <div class="e-content">
+        <p><a href="http://www.washingtonpost.com/wp-dyn/content/article/2006/03/04/AR2006030401034.html?nav=rss_politics">DeLay Will Face Voters’ Verdict This Week</a>
+Please, if you live in the Houston area, go out and vote against DeLay tomorrow.  You don’t have to be a Republican to vote, so what better way for Democrats and independents to send Congress and the Bush White House a message than to vote out their man in a primary?</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/sure-harris-was-on-the-up-and-up-in-2000">
+        Sure Harris Was on the Up and Up in 2000
+      </a>
+    </h1>
+
+    <time datetime="2006-03-02T00:00:00+00:00" class="dt-time post-date">02 Mar 2006</time>
+    <div class="e-content">
+        <p><a href="http://www.sptimes.com/2006/03/02/State/New_questions_dog_the.shtml">State: New questions dog the Harris campaign</a>
+<img class="alignleft" src="http://www.miklb.com/blog/wp-content/images/harris.gif" alt="harris" />The argument has been made over and over to defend the clown woman for her actions in handling the Election in 2000, and the events leading up to it (see Texas company hired to purge thousands of “felons” from voter roll, etc).  Now she’s seen clearly in bed with an admitted criminal who’s been found to illegally donate to her campaign, she’s been documented to have worked with/campaigned with/for ol’ Duke Cunningham, who’s admitted to taking kick backs/bribes.  If it looks like a circus clown, and talks like a circus clown…nah, that’s not fair to the memory of Emmitt Kelly.
+My only worry is that she won’t run this fall, and Bill Nelson will actually have to campaign against someone.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/and-i-thought-i-had-a-bad-night">
+        And I Thought I Had a Bad Night
+      </a>
+    </h1>
+
+    <time datetime="2006-02-28T00:00:00+00:00" class="dt-time post-date">28 Feb 2006</time>
+    <div class="e-content">
+        <p>As much as I love food, and cooking, and know that real restaurants are out there with caring owners and concerned staff, the combination of my hard-headedness and bad luck, I’ve not worked in one in a long time.  I loathe working in a restaurant right now, and pray for the day that I discover that I really can make a living working with the web, or some other career opens up, but until then, I’m in it.
+And with that off my chest, I really had a bad night, and was looking forward to getting home, and watching my favorite hockey team take on their in-state rival. (yeah, another sports post, go figure).  So I settle in on the couch with some munchies and fire up the DVR, and no sooner than the game starts, it was over.  And it was <a href="http://www.tbo.com/sports/lightning/MGBDTF869KE.html">downhill from there.</a>  So thanks Lightning for reminding me that I might not have been the only one who had a bad day, and that you’ve got to put it behind you, learn what you can from your mistakes, and accept the fact that somedays, it’s just not your day.  Here’s to a better tomorrow, and a run for the Cup.</p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page65">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page63">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

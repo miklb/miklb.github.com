@@ -1,182 +1,605 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page39/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page39/" />
-    <meta property="og:url" content="https://miklb.com/page39/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page39/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/cleaning-house">
-                  Cleaning House
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page39/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page39/" />
+<meta property="og:url" content="https://miklb.com/page39/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page39/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/cleaning-house">
+        Cleaning House
       </a>
-              </h1>
-              <time datetime="2007-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2007</time>
-              <div class="e-content">
-                <p>Finally did a cleaning up, got the Lifestream page slightly adjusted, and styled comments, with a little help from <a href="http://www.willmayo.com/2007/02/10/css-speech-bubbles/">Will Mayo</a>.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/8apps-invites">
-                  8apps Invites
-      </a>
-              </h1>
-              <time datetime="2007-07-18T00:00:00+00:00" class="dt-time post-date">18 Jul 2007</time>
-              <div class="e-content">
-                <p>Though there are many ways to socialize on the net (too many), I recently revisited this invite only site, <a href="http://8apps.com/">8apps.</a>  They’ve added a few more apps to the planned 8, so there’s a few more things to check out.  Not meant as a review, as I honestly haven’t spent enough time on the site to give justice, suffice to say it’s a very slick site, with a lot of potential.  It’s simply up against stiff competition.</p>
-                <p>That said, if you’d like to check it out, I’ve got 40 odd invites available, just leave a comment and I’ll be sure to send one.  Only thing I ask is that you after sign up, look me up (miklb) and add me as a contact, as the system doesn’t automatically add invites to your contact list.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/site-maintenance">
-                  Site Maintenance
-      </a>
-              </h1>
-              <time datetime="2007-07-16T00:00:00+00:00" class="dt-time post-date">16 Jul 2007</time>
-              <div class="e-content">
-                <p>Note to self, clean up the lifestream template and turn error reporting off.  Adding comments now</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/custom-style-sheets-and-basecamp">
-                  Custom Style Sheets and Basecamp
-      </a>
-              </h1>
-              <time datetime="2007-07-16T00:00:00+00:00" class="dt-time post-date">16 Jul 2007</time>
-              <div class="e-content">
-                <p>I’ve mentioned that I primarily use BaseCamp these days with the company that I work with to manage the many sites they handle.  That’s all good, but whenever I log in, I am overwhelmed with many, many, late milestones and upcoming milestones.  Sure, some of it’s relevant to me, however most is not.  Even what is relevant, I’m well aware of my tardiness.  I don’t need a constant reminder :)</p>
-                <p>Enter a handy little Firefox extentsion, <a href="https://addons.mozilla.org/en-US/firefox/addon/2108">Stylish</a>, that I became aware of after adopting Hicks Designs handy <a href="http://www.hicksdesign.co.uk/journal/google-reader-theme">Mac OS styled Google Reader style sheet</a>. (Note, there are instructions for using the style sheet with other browsers).</p>
-                <p>Another quick use of the <a href="https://addons.mozilla.org/en-US/firefox/addon/60">Web Developer extension</a> (I couldn’t live without this extension), I was able to determine the class of the milestones on the dashboard (.milestones - go figure), and add a quick display:none to a custom style for the company’s Basecamp dashboard.</p>
-                <p>The Stylish extension easily offers you the option of using the style for a URL, a domain, or a global style, so I can be sure that it’s only being used where and when I want.  The extension author recommends using the !important declaration, however I found no need for that with Basecamp.  Certainly worth checking out if you are looking to hide some annoying element of a site you often visit.</p>
-                <p><em>Edit</em>: I went ahead and changed my style to only drop the upcoming milestones, and left the overdue ones there, as that seemed more relevant to my job.  The class for that is .Dashcal.  That way, I can still see what’s overdue, and potentially avoid issues.  Upcoming milestones I’ll leave to the project manager to advise on.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/tracking-time-spent-on-email">
-                  Tracking Time Spent on Email
-      </a>
-              </h1>
-              <time datetime="2007-07-10T00:00:00+00:00" class="dt-time post-date">10 Jul 2007</time>
-              <div class="e-content">
-                <p>So I work with a company that uses <a href="http://basecamphq.com/">BaseCamp</a>, which is great.  Each project is easily separated, has it’s own todos, writeboards, etc.  But as someone who works with all of the projects, I get cc’ed on every message posted.  Some require my attention immediately, some will require me to be familiar with the project at some point.  I’ve never been able to manage my time recording for this internal activity, and I know I’ve lost a few dollars because of this. SO today, I’m testing out a new system.  I’ve set my mail app (Apple Mail), to only check mail once an hour.  I then set up a mailbox just for these emails, got a timer on the dashboard, that can be started and stopped, and will start the timer, read the emails, follow up on BaseCamp on any immediate issues, pause the timer, and wash, rinse, repeat the rest of the business day.  At some point I’m going to have to decide that this company has business hours, (I work from home), and not read anymore messages until the next morning, where I can track the time.  I figure after a week or so, I’ll have a pretty good idea of how much time I’m spending on this, and might actually be more productive, as I’m not constantly logging into BaseCamp to see what new has been posted, and reading messages that have already been sent to my inbox.  I also hope that after a week or two, it will be a habit, and I’ll have a pretty good average of the time spent, so I can simply log those hours either weekly based on the experiment.</p>
-                <p>I read a ton of productivity blogs, (which can be counter-productive, go figure), and it seems little issues like this always trip people up.  I know that the GTD ethos is if you can do it in under 2 minutes, then do it, but that’s assuming you’re not getting 10 messages an hour, each with their own 2 minutes.</p>
-                <p>Hopefully in a week or two I can report back on how the little experiment went.</p>
-                <p><em>edit:</em>Funny one of those blogs I mentioned has a <a href="http://lifedev.net/2007/07/procrastination-email-deadly-combination/">little post about email and procrastination</a>, certainly appropriate.</p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page40">Older</a>
-            <a class="pagination-item newer" href="/page38">Newer</a>
-          </div>
-        </div>
-      </main>
+    </h1>
+
+    <time datetime="2007-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2007</time>
+    <div class="e-content">
+        <p>Finally did a cleaning up, got the Lifestream page slightly adjusted, and styled comments, with a little help from <a href="http://www.willmayo.com/2007/02/10/css-speech-bubbles/">Will Mayo</a>.</p>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/8apps-invites">
+        8apps Invites
+      </a>
+    </h1>
+
+    <time datetime="2007-07-18T00:00:00+00:00" class="dt-time post-date">18 Jul 2007</time>
+    <div class="e-content">
+        <p>Though there are many ways to socialize on the net (too many), I recently revisited this invite only site, <a href="http://8apps.com/">8apps.</a>  They’ve added a few more apps to the planned 8, so there’s a few more things to check out.  Not meant as a review, as I honestly haven’t spent enough time on the site to give justice, suffice to say it’s a very slick site, with a lot of potential.  It’s simply up against stiff competition.</p>
+
+<p>That said, if you’d like to check it out, I’ve got 40 odd invites available, just leave a comment and I’ll be sure to send one.  Only thing I ask is that you after sign up, look me up (miklb) and add me as a contact, as the system doesn’t automatically add invites to your contact list.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/site-maintenance">
+        Site Maintenance
+      </a>
+    </h1>
+
+    <time datetime="2007-07-16T00:00:00+00:00" class="dt-time post-date">16 Jul 2007</time>
+    <div class="e-content">
+        <p>Note to self, clean up the lifestream template and turn error reporting off.  Adding comments now</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/custom-style-sheets-and-basecamp">
+        Custom Style Sheets and Basecamp
+      </a>
+    </h1>
+
+    <time datetime="2007-07-16T00:00:00+00:00" class="dt-time post-date">16 Jul 2007</time>
+    <div class="e-content">
+        <p>I’ve mentioned that I primarily use BaseCamp these days with the company that I work with to manage the many sites they handle.  That’s all good, but whenever I log in, I am overwhelmed with many, many, late milestones and upcoming milestones.  Sure, some of it’s relevant to me, however most is not.  Even what is relevant, I’m well aware of my tardiness.  I don’t need a constant reminder :)</p>
+
+<p>Enter a handy little Firefox extentsion, <a href="https://addons.mozilla.org/en-US/firefox/addon/2108">Stylish</a>, that I became aware of after adopting Hicks Designs handy <a href="http://www.hicksdesign.co.uk/journal/google-reader-theme">Mac OS styled Google Reader style sheet</a>. (Note, there are instructions for using the style sheet with other browsers).</p>
+
+<p>Another quick use of the <a href="https://addons.mozilla.org/en-US/firefox/addon/60">Web Developer extension</a> (I couldn’t live without this extension), I was able to determine the class of the milestones on the dashboard (.milestones - go figure), and add a quick display:none to a custom style for the company’s Basecamp dashboard.</p>
+
+<p>The Stylish extension easily offers you the option of using the style for a URL, a domain, or a global style, so I can be sure that it’s only being used where and when I want.  The extension author recommends using the !important declaration, however I found no need for that with Basecamp.  Certainly worth checking out if you are looking to hide some annoying element of a site you often visit.</p>
+
+<p><em>Edit</em>: I went ahead and changed my style to only drop the upcoming milestones, and left the overdue ones there, as that seemed more relevant to my job.  The class for that is .Dashcal.  That way, I can still see what’s overdue, and potentially avoid issues.  Upcoming milestones I’ll leave to the project manager to advise on.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/tracking-time-spent-on-email">
+        Tracking Time Spent on Email
+      </a>
+    </h1>
+
+    <time datetime="2007-07-10T00:00:00+00:00" class="dt-time post-date">10 Jul 2007</time>
+    <div class="e-content">
+        <p>So I work with a company that uses <a href="http://basecamphq.com/">BaseCamp</a>, which is great.  Each project is easily separated, has it’s own todos, writeboards, etc.  But as someone who works with all of the projects, I get cc’ed on every message posted.  Some require my attention immediately, some will require me to be familiar with the project at some point.  I’ve never been able to manage my time recording for this internal activity, and I know I’ve lost a few dollars because of this. SO today, I’m testing out a new system.  I’ve set my mail app (Apple Mail), to only check mail once an hour.  I then set up a mailbox just for these emails, got a timer on the dashboard, that can be started and stopped, and will start the timer, read the emails, follow up on BaseCamp on any immediate issues, pause the timer, and wash, rinse, repeat the rest of the business day.  At some point I’m going to have to decide that this company has business hours, (I work from home), and not read anymore messages until the next morning, where I can track the time.  I figure after a week or so, I’ll have a pretty good idea of how much time I’m spending on this, and might actually be more productive, as I’m not constantly logging into BaseCamp to see what new has been posted, and reading messages that have already been sent to my inbox.  I also hope that after a week or two, it will be a habit, and I’ll have a pretty good average of the time spent, so I can simply log those hours either weekly based on the experiment.</p>
+
+<p>I read a ton of productivity blogs, (which can be counter-productive, go figure), and it seems little issues like this always trip people up.  I know that the GTD ethos is if you can do it in under 2 minutes, then do it, but that’s assuming you’re not getting 10 messages an hour, each with their own 2 minutes.</p>
+
+<p>Hopefully in a week or two I can report back on how the little experiment went.</p>
+
+<p><em>edit:</em>Funny one of those blogs I mentioned has a <a href="http://lifedev.net/2007/07/procrastination-email-deadly-combination/">little post about email and procrastination</a>, certainly appropriate.</p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page40">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page38">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

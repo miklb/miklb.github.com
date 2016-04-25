@@ -1,182 +1,604 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page3/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page3/" />
-    <meta property="og:url" content="https://miklb.com/page3/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page3/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/first-listen-luther-dickinson">
-                  First Listen: Luther Dickinson
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page3/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page3/" />
+<meta property="og:url" content="https://miklb.com/page3/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page3/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/first-listen-luther-dickinson">
+        First Listen: Luther Dickinson
       </a>
-              </h1>
-              <time datetime="2016-02-04T00:00:00+00:00" class="dt-time post-date">04 Feb 2016</time>
-              <div class="e-content">
-                <p><cite>Garden &amp; Gun</cite> have a <a href="http://gardenandgun.com/blog/first-listen-luther-dickinson-blues-ballads">first listen of Luther Dickinson’s</a> solo album <cite>Blues &amp; Ballads.</cite> If you’re not familiar with Dickinson, he was a founding member of the band North Missippi All-Stars, a raucous blues band hailing from their name sake Mississippi. Founded with his brother, they played a modern version of the blues soaked southern rock, with an emphasis on the former. I had the pleasure of seeing them both in a smaller outdoor club setting as well as a larger festival type setting, both times blowing the doors off the crowd. Not sure his vocals will ever be considered above average, but the accompanying vocals from the likes of Mavis Staples balances it out. The lyrics and guitars more than make up for his singing, and its obvious the apple didn’t fall from the tree, as you can tell he knows his way around the studio.</p>
-                <p>As first listens go, I’m enjoying it and will certainly be added to the rotation the next week.</p>
-                <p><a href="https://brid.gy/publish/twitter"></a></p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/focused-blogs">
-                  Focused Blogs
-      </a>
-              </h1>
-              <time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
-              <div class="e-content">
-                <p>In my ever revolving attempt to reboot my blog, one thing that has always slowed me down was my concern with being too esoteric in my topics. I want to talk about food, technology and everything in between.</p>
-                <p>However, if I want to build any readership (isn’t that a part of blogging, sharing your thoughts with others?) I can’t be mixing in posts about forays into Python with posts about cooking vegetables sous-vide. Sure, there might be a readership that is interested in both topics as I am, but not enough to say “screw it.” So as I continue to work towards a true <a href="https://indiewebcamp.com">indieweb</a>, I’m pivoting a bit in my approach and will use this as domain, now 11 years old, as my base identifier and central clearing house. I’ve acquired several domains, 2 of which will be good to split the topics. Those too will be static Jekyll built sites, with links from this site to new posts.</p>
-                <p>Certainly this is more me thinking out loud and putting it out there, as I intend for this domain to be, but my goal is to continue to do such here, rather than bottle  up my thoughts in my head.</p>
-                <p><a href="https://brid.gy/publish/twitter"></a></p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/finally-webmentons-with-jekyll-part-duex">
-                  Finally Webmentions with Jekyll
-      </a>
-              </h1>
-              <time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
-              <div class="e-content">
-                <p>If you can’t tell by previous posts, I’ve been working on getting
-                  <a href="https://indiewebcamp.com/Webmention">Webmentions</a> to work with my new Jekyll site. I <em>think</em> I’ve finally nailed. If you take a look at my initial post <a href="http://miklb.com/making-the-move-to-jekyll">on moving to Jekyll</a>, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s <a href="https://github.com/aarongustafson/jekyll-webmention_io">Webmention.io plugin</a> I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a <code class="highlighter-rouge">sleep 2m</code> in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.</p>
-                <p><a href="https://brid.gy/publish/twitter"></a></p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/breaking-out-of-the-silo">
-                  Breaking Out of the Silo
-      </a>
-              </h1>
-              <time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
-              <div class="e-content">
-                <p>In my never ending quest to make this site all things “miklb”, one of the goals of the IndieWeb is to <a href="http://indiewebcamp.com/POSSE">POSSE</a>, that is, Publish on your own site, syndicate elsewhere. Breaking the habit of using Twitter without posting first on my site is going to be a hard one, but it’s a goal. While debates rage about extending character counts to 10,000 words, if we only were to use our blog for long form thoughts and link back to Twitter, this wouldn’t be an issue. Consider this an exercise in</p>
-                <p><a href="https://brid.gy/publish/twitter"></a></p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/testing-sending-webmentions">
-                  Testing Sending Webmentions
-      </a>
-              </h1>
-              <time datetime="2016-01-20T00:00:00+00:00" class="dt-time post-date">20 Jan 2016</time>
-              <div class="e-content">
-                <p>This is either going to go well, or well, not so well. But we are getting there. Slowly.  Last one for the night. Take 2. Day 2.<a href="https://kartikprabhu.com/notes/test-note-totally-te" class="u-in-reply-to">Thanks for the help Kartik</a></p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page4">Older</a>
-            <a class="pagination-item newer" href="/page2">Newer</a>
-          </div>
-        </div>
-      </main>
+    </h1>
+
+    <time datetime="2016-02-04T00:00:00+00:00" class="dt-time post-date">04 Feb 2016</time>
+    <div class="e-content">
+        <p><cite>Garden &amp; Gun</cite> have a <a href="http://gardenandgun.com/blog/first-listen-luther-dickinson-blues-ballads">first listen of Luther Dickinson’s</a> solo album <cite>Blues &amp; Ballads.</cite> If you’re not familiar with Dickinson, he was a founding member of the band North Missippi All-Stars, a raucous blues band hailing from their name sake Mississippi. Founded with his brother, they played a modern version of the blues soaked southern rock, with an emphasis on the former. I had the pleasure of seeing them both in a smaller outdoor club setting as well as a larger festival type setting, both times blowing the doors off the crowd. Not sure his vocals will ever be considered above average, but the accompanying vocals from the likes of Mavis Staples balances it out. The lyrics and guitars more than make up for his singing, and its obvious the apple didn’t fall from the tree, as you can tell he knows his way around the studio.</p>
+
+<p>As first listens go, I’m enjoying it and will certainly be added to the rotation the next week.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/focused-blogs">
+        Focused Blogs
+      </a>
+    </h1>
+
+    <time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
+    <div class="e-content">
+        <p>In my ever revolving attempt to reboot my blog, one thing that has always slowed me down was my concern with being too esoteric in my topics. I want to talk about food, technology and everything in between.</p>
+
+<p>However, if I want to build any readership (isn’t that a part of blogging, sharing your thoughts with others?) I can’t be mixing in posts about forays into Python with posts about cooking vegetables sous-vide. Sure, there might be a readership that is interested in both topics as I am, but not enough to say “screw it.” So as I continue to work towards a true <a href="https://indiewebcamp.com">indieweb</a>, I’m pivoting a bit in my approach and will use this as domain, now 11 years old, as my base identifier and central clearing house. I’ve acquired several domains, 2 of which will be good to split the topics. Those too will be static Jekyll built sites, with links from this site to new posts.</p>
+
+<p>Certainly this is more me thinking out loud and putting it out there, as I intend for this domain to be, but my goal is to continue to do such here, rather than bottle  up my thoughts in my head.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/finally-webmentons-with-jekyll-part-duex">
+        Finally Webmentions with Jekyll
+      </a>
+    </h1>
+
+    <time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
+    <div class="e-content">
+        <p>If you can’t tell by previous posts, I’ve been working on getting
+<a href="https://indiewebcamp.com/Webmention">Webmentions</a> to work with my new Jekyll site. I <em>think</em> I’ve finally nailed. If you take a look at my initial post <a href="http://miklb.com/making-the-move-to-jekyll">on moving to Jekyll</a>, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s <a href="https://github.com/aarongustafson/jekyll-webmention_io">Webmention.io plugin</a> I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a <code class="highlighter-rouge">sleep 2m</code> in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/breaking-out-of-the-silo">
+        Breaking Out of the Silo
+      </a>
+    </h1>
+
+    <time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
+    <div class="e-content">
+        <p>In my never ending quest to make this site all things “miklb”, one of the goals of the IndieWeb is to <a href="http://indiewebcamp.com/POSSE">POSSE</a>, that is, Publish on your own site, syndicate elsewhere. Breaking the habit of using Twitter without posting first on my site is going to be a hard one, but it’s a goal. While debates rage about extending character counts to 10,000 words, if we only were to use our blog for long form thoughts and link back to Twitter, this wouldn’t be an issue. Consider this an exercise in</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/testing-sending-webmentions">
+        Testing Sending Webmentions
+      </a>
+    </h1>
+
+    <time datetime="2016-01-20T00:00:00+00:00" class="dt-time post-date">20 Jan 2016</time>
+    <div class="e-content">
+        <p>This is either going to go well, or well, not so well. But we are getting there. Slowly.  Last one for the night. Take 2. Day 2.<a href="https://kartikprabhu.com/notes/test-note-totally-te" class="u-in-reply-to">Thanks for the help Kartik</a></p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page4">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page2">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

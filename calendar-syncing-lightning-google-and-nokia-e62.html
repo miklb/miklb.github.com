@@ -1,184 +1,607 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calendar Syncing: Lightning, Google, iCal and Nokia e62</title>
-    <meta name="description" content="I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust ...">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/calendar-syncing-lightning-google-and-nokia-e62">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Calendar Syncing: Lightning, Google, iCal and Nokia e62 - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Calendar Syncing: Lightning, Google, iCal and Nokia e62" />
-    <meta name="description" content="I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust cell phone these days had me revive my Nokia e62.  All in all, it’s a pretty good phone, with a decent built in browser (based on Webkit if I recall) and works well with my existing pay as I go plan.  I even managed to coax an unlimited data plan out of AT&amp;T.  The e62 also plays pretty well with my Macs—bluetooth syncing of contacts and calendar, the Nokia Media manager will sync an iTunes folder directly to the phone, so a 2GB card gives me a decent amount of music for on the go." />
-    <meta property="og:description" content="I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust cell phone these days had me revive my Nokia e62.  All in all, it’s a pretty good phone, with a decent built in browser (based on Webkit if I recall) and works well with my existing pay as I go plan.  I even managed to coax an unlimited data plan out of AT&amp;T.  The e62 also plays pretty well with my Macs—bluetooth syncing of contacts and calendar, the Nokia Media manager will sync an iTunes folder directly to the phone, so a 2GB card gives me a decent amount of music for on the go." />
-    <link rel="canonical" href="https://miklb.com/calendar-syncing-lightning-google-and-nokia-e62" />
-    <meta property="og:url" content="https://miklb.com/calendar-syncing-lightning-google-and-nokia-e62" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2008-12-07T00:00:00+00:00" />
-    <link rel="next" href="https://miklb.com/favorite-album-of-2008-the-gaslight-anthems-the-59-sound" title="Favorite Album of 2008: The Gaslight Anthem&#39;s The &#39;59 Sound" />
-    <link rel="prev" href="https://miklb.com/twitter-productivity" title="Twitter Productivity" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "BlogPosting",
-          "headline": "Calendar Syncing: Lightning, Google, iCal and Nokia e62",
-          "datePublished": "2008-12-07T00:00:00+00:00",
-          "description": "I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust cell phone these days had me revive my Nokia e62.  All in all, it’s a pretty good phone, with a decent built in browser (based on Webkit if I recall) and works well with my existing pay as I go plan.  I even managed to coax an unlimited data plan out of AT&amp;T.  The e62 also plays pretty well with my Macs—bluetooth syncing of contacts and calendar, the Nokia Media manager will sync an iTunes folder directly to the phone, so a 2GB card gives me a decent amount of music for on the go.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/calendar-syncing-lightning-google-and-nokia-e62"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <article class="post h-entry">
-            <header class="entry-header">
-              <h1 class="post-title p-name">
-                <a class="u-url" rel="bookmark" href="/calendar-syncing-lightning-google-and-nokia-e62">
-                  Calendar Syncing: Lightning, Google, iCal and Nokia e62
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Calendar Syncing: Lightning, Google, iCal and Nokia e62</title>
+	<meta name="description" content="I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust ...">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/calendar-syncing-lightning-google-and-nokia-e62">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Calendar Syncing: Lightning, Google, iCal and Nokia e62 - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Calendar Syncing: Lightning, Google, iCal and Nokia e62" />
+<meta name="description" content="I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust cell phone these days had me revive my Nokia e62.  All in all, it’s a pretty good phone, with a decent built in browser (based on Webkit if I recall) and works well with my existing pay as I go plan.  I even managed to coax an unlimited data plan out of AT&amp;T.  The e62 also plays pretty well with my Macs—bluetooth syncing of contacts and calendar, the Nokia Media manager will sync an iTunes folder directly to the phone, so a 2GB card gives me a decent amount of music for on the go." />
+<meta property="og:description" content="I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust cell phone these days had me revive my Nokia e62.  All in all, it’s a pretty good phone, with a decent built in browser (based on Webkit if I recall) and works well with my existing pay as I go plan.  I even managed to coax an unlimited data plan out of AT&amp;T.  The e62 also plays pretty well with my Macs—bluetooth syncing of contacts and calendar, the Nokia Media manager will sync an iTunes folder directly to the phone, so a 2GB card gives me a decent amount of music for on the go." />
+<link rel="canonical" href="https://miklb.com/calendar-syncing-lightning-google-and-nokia-e62" />
+<meta property="og:url" content="https://miklb.com/calendar-syncing-lightning-google-and-nokia-e62" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2008-12-07T00:00:00+00:00" />
+<link rel="next" href="https://miklb.com/favorite-album-of-2008-the-gaslight-anthems-the-59-sound" title="Favorite Album of 2008: The Gaslight Anthem&#39;s The &#39;59 Sound" />
+<link rel="prev" href="https://miklb.com/twitter-productivity" title="Twitter Productivity" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Calendar Syncing: Lightning, Google, iCal and Nokia e62",
+    "datePublished": "2008-12-07T00:00:00+00:00",
+    "description": "I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust cell phone these days had me revive my Nokia e62.  All in all, it’s a pretty good phone, with a decent built in browser (based on Webkit if I recall) and works well with my existing pay as I go plan.  I even managed to coax an unlimited data plan out of AT&amp;T.  The e62 also plays pretty well with my Macs—bluetooth syncing of contacts and calendar, the Nokia Media manager will sync an iTunes folder directly to the phone, so a 2GB card gives me a decent amount of music for on the go.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/calendar-syncing-lightning-google-and-nokia-e62"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<article class="post h-entry">
+  <header class="entry-header">
+	  <h1 class="post-title p-name">
+		  <a class="u-url" rel="bookmark" href="/calendar-syncing-lightning-google-and-nokia-e62">
+			  Calendar Syncing: Lightning, Google, iCal and Nokia e62
 		  </a>
-              </h1>
-              <h2 class="p-summary p-bridgy-twitter-content">
-              </h2>
-            </header>
-            <div class="e-content">
-              <p><img src="http://miklb.com/user/files/sync.jpg" alt="sync" class="right" />I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust cell phone these days had me revive my Nokia e62.  All in all, it’s a pretty good phone, with a decent built in browser (based on Webkit if I recall) and works well with my existing pay as I go plan.  I even managed to coax an unlimited data plan out of AT&amp;T.  The e62 also plays pretty well with my Macs—bluetooth syncing of contacts and calendar, the Nokia Media manager will sync an iTunes folder directly to the phone, so a 2GB card gives me a decent amount of music for on the go.</p>
-              <p>Anyway, I recently began using Thunderbird 3.0, aka Shredder, which is still pre beta.  That meant to really use it, I had to use the nightly build of Lightning, 1.0pre.  As with any Mozilla alpha product, you can expect most extensions to not work, which certainly is the case with these two.  I really like the combination, despite the occasional glitches, and wanted to find a way to sync Lightning with the phone.  What an adventure that turned out to be.</p>
-              <p>Everything I found searching the web suggested using an extension for syncing the Google Calendar with Lightning, which obviously wasn’t compatible with these versions, and even testing it with the stable releases, I couldn’t get it to work, so off I searched for another way.  Enter <a href="http://gcaldaemon.sourceforge.net/">GCALDaemon</a>, something I’d seen written about on several ocassions but had never quite investigated.</p>
-              <p>Using the <a href="http://gcaldaemon.sourceforge.net/usage12.html">Mac OS X installation</a> guidelines (installing in Applications vs usr/local/sbin), and being sure to use the the shell script config-editor definitely is the simplest way.  I’m certainly not a black belt in unix-fu, but following the instructions for <a href="http://gcaldaemon.sourceforge.net/usage.html#top">syncing with Sunbird/Lightning</a> and the config-editor even I was able to get Lighting 1.0pre synced with a Google Apps calendar fairly effortlessly.</p>
-              <p>The next step was to sync iCal (or so I thought) with the Google Calendar so I could then sync it with my phone.  I briefly toyed with GCALDaemon for that too, however my impatience led me to give Google’s <a href="http://code.google.com/p/calaboration/">Calaboration</a> tool a spin. Fortunately it was quick and painless, and I was soon syncing the same Google Apps calendar with iCal that was synced with Lightning.</p>
-              <p>However (<em>there’s always a but, isn’t there</em>), I soon found out that you can’t sync from the phone’s calendar to a network calendar.  So anything I were to add to the phone, would need to be transferred to the network calendar.  I’m pretty lazy as it is, so adding a step like that seemed like a recipe for losing an important date.  For iPhone users, this also seems to be the case.  So now what?</p>
-              <p>Another search turned up <a href="http://thenokiablog.com/2008/09/29/how-to-sync-google-calendar-apple-ical-and-nokia-phone-calendar/">this post on syncing a Nokia calendar with iCal and Google</a>, and suggested <a href="http://www.goosync.com/">Goosnyc</a>. I wasn’t keen on using a 3rd party service, but I figured I’d test it out at least, and see where it goes.  Their SMS to automate the sync settings never arrived, so I followed the <a href="http://www.goosync-forum.com/showthread.php?t=8">Nokia e61/e62 manual syncing</a> instructions, which were spot on (once I figured out that I needed to look in “Office” for the Sync settings), and within a few minutes, my Nokia e62 was synced to my Google Apps calendar which was synced to LIghtning and iCal.</p>
-              <p>I still need to sort out a few minor issues with the phone now syncing with iCal, as I had some holiday calendars and what not synced to the phone, which then added the dates to the Google Calendar, so in iCal I was getting the same holidays showing up multiple times.  That’s easily remedied by not displaying those calendars, but conveniently gives me all of the holidays on the other calendars.  I also need to make sure that when I sync the phone to iCal, I don’t get duplicate entries in the local calendar, but again, I think I can get around that by simply creating a “phone” calendar, and hiding it in iCal.</p>
-              <p>Goosync does require a manual sync to Google Calendar, but that’s less of a hassle than migrating entries from one calendar to the other.  All in all, I’m quite pleased now that I can add items directly from an email into my calendar, or right into my phone, and it will conveniently appear in all of my calendars.</p>
-              <p>If anyone knows of a more seemless method, I’m all ears.</p>
-            </div>
-            <footer class="entry-footer">
-              <div class="entry-meta">
-                <div class="h-card">
-                  <a href="" class="entry-author-link" rel="author">
-                    <div class="auth-img">
-                      <img src="http://cdn.miklb.com/images/profile_4_16_sm.png" alt="Michael Bishop" class="u-photo">
-                    </div>
-                    <p>Author: <span class="p-author">Michael Bishop</span></p>
-                  </a>
-                </div>
-                <div class="meta-wrap">
-                  <p><a href="">Calendar Syncing: Lightning, Google, iCal and Nokia e62 </a> posted on <time datetime="2008-12-07T00:00:00+00:00" class="dt-time post-date">07 Dec 2008</time>.</p>
-                  <p>This entry has been tagged with the keywords: <a href="/tag/mac" class="p-category" rel="tag">mac </a><a href="/tag/ical" class="p-category" rel="tag">ical </a><a href="/tag/nokia" class="p-category" rel="tag">nokia </a><a href="/tag/calendar" class="p-category" rel="tag">calendar </a><a href="/tag/sync" class="p-category" rel="tag">sync </a><a href="/tag/google" class="p-category" rel="tag">google </a><a href="/tag/goosync" class="p-category" rel="tag">goosync </a></p>
-                </div>
-              </div>
-            </footer>
-          </article>
-          <aside class="related-posts">
-            <h3>You might also be interested in:</h3>
-            <ul class="post-list">
-              <li>
-                <span class="post-date"><time datetime="2009-02-10T00:00:00+00:00" class="dt-time post-date">10 Feb 2009</time></span>
-                <a href="/iphone-and-google-syncing">iPhone and Google Syncing</a>
-              </li>
-              <li>
-                <span class="post-date"><time datetime="2009-01-09T00:00:00+00:00" class="dt-time post-date">09 Jan 2009</time></span>
-                <a href="/99-dollar-iphone">Late to the Party—My 99 Dollar iPhone</a>
-              </li>
-              <li>
-                <span class="post-date"><time datetime="2007-08-26T00:00:00+00:00" class="dt-time post-date">26 Aug 2007</time></span>
-                <a href="/nokia-e62-and-the-mac">Nokia e62 and the Mac</a>
-              </li>
-            </ul>
-          </aside>
-          <script id="webmention-hosted">
-            (function () {
-            var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-            url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-            url = url && url[0] ? url[0].href : false;
-            sn.type = "text/javascript"; sn.async = true;
-            sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-            s.parentNode.insertBefore(sn, s);
-            }());
-          </script>
-        </div>
-      </main>
+	  </h1>
+
+    <h2 class="p-summary p-bridgy-twitter-content">
+      
+    </h2>
+
+  </header>
+  <div class="e-content">
+      <p><img src="http://miklb.com/user/files/sync.jpg" alt="sync" class="right" />I’m still railing against signing a contract with a cell carrier, so I haven’t purchased a new phone in some time, but the bigger need to have a more robust cell phone these days had me revive my Nokia e62.  All in all, it’s a pretty good phone, with a decent built in browser (based on Webkit if I recall) and works well with my existing pay as I go plan.  I even managed to coax an unlimited data plan out of AT&amp;T.  The e62 also plays pretty well with my Macs—bluetooth syncing of contacts and calendar, the Nokia Media manager will sync an iTunes folder directly to the phone, so a 2GB card gives me a decent amount of music for on the go.</p>
+
+<p>Anyway, I recently began using Thunderbird 3.0, aka Shredder, which is still pre beta.  That meant to really use it, I had to use the nightly build of Lightning, 1.0pre.  As with any Mozilla alpha product, you can expect most extensions to not work, which certainly is the case with these two.  I really like the combination, despite the occasional glitches, and wanted to find a way to sync Lightning with the phone.  What an adventure that turned out to be.</p>
+
+<p>Everything I found searching the web suggested using an extension for syncing the Google Calendar with Lightning, which obviously wasn’t compatible with these versions, and even testing it with the stable releases, I couldn’t get it to work, so off I searched for another way.  Enter <a href="http://gcaldaemon.sourceforge.net/">GCALDaemon</a>, something I’d seen written about on several ocassions but had never quite investigated.</p>
+
+<p>Using the <a href="http://gcaldaemon.sourceforge.net/usage12.html">Mac OS X installation</a> guidelines (installing in Applications vs usr/local/sbin), and being sure to use the the shell script config-editor definitely is the simplest way.  I’m certainly not a black belt in unix-fu, but following the instructions for <a href="http://gcaldaemon.sourceforge.net/usage.html#top">syncing with Sunbird/Lightning</a> and the config-editor even I was able to get Lighting 1.0pre synced with a Google Apps calendar fairly effortlessly.</p>
+
+<p>The next step was to sync iCal (or so I thought) with the Google Calendar so I could then sync it with my phone.  I briefly toyed with GCALDaemon for that too, however my impatience led me to give Google’s <a href="http://code.google.com/p/calaboration/">Calaboration</a> tool a spin. Fortunately it was quick and painless, and I was soon syncing the same Google Apps calendar with iCal that was synced with Lightning.</p>
+
+<p>However (<em>there’s always a but, isn’t there</em>), I soon found out that you can’t sync from the phone’s calendar to a network calendar.  So anything I were to add to the phone, would need to be transferred to the network calendar.  I’m pretty lazy as it is, so adding a step like that seemed like a recipe for losing an important date.  For iPhone users, this also seems to be the case.  So now what?</p>
+
+<p>Another search turned up <a href="http://thenokiablog.com/2008/09/29/how-to-sync-google-calendar-apple-ical-and-nokia-phone-calendar/">this post on syncing a Nokia calendar with iCal and Google</a>, and suggested <a href="http://www.goosync.com/">Goosnyc</a>. I wasn’t keen on using a 3rd party service, but I figured I’d test it out at least, and see where it goes.  Their SMS to automate the sync settings never arrived, so I followed the <a href="http://www.goosync-forum.com/showthread.php?t=8">Nokia e61/e62 manual syncing</a> instructions, which were spot on (once I figured out that I needed to look in “Office” for the Sync settings), and within a few minutes, my Nokia e62 was synced to my Google Apps calendar which was synced to LIghtning and iCal.</p>
+
+<p>I still need to sort out a few minor issues with the phone now syncing with iCal, as I had some holiday calendars and what not synced to the phone, which then added the dates to the Google Calendar, so in iCal I was getting the same holidays showing up multiple times.  That’s easily remedied by not displaying those calendars, but conveniently gives me all of the holidays on the other calendars.  I also need to make sure that when I sync the phone to iCal, I don’t get duplicate entries in the local calendar, but again, I think I can get around that by simply creating a “phone” calendar, and hiding it in iCal.</p>
+
+<p>Goosync does require a manual sync to Google Calendar, but that’s less of a hassle than migrating entries from one calendar to the other.  All in all, I’m quite pleased now that I can add items directly from an email into my calendar, or right into my phone, and it will conveniently appear in all of my calendars.</p>
+
+<p>If anyone knows of a more seemless method, I’m all ears.</p>
+
+  </div>
+  <footer class="entry-footer">
+	  <div class="entry-meta">
+      <div class="h-card">
+		        <a href="" class="entry-author-link" rel="author">
+                  
+                  <div class="auth-img">
+                    <img src="http://cdn.miklb.com/images/profile_4_16_sm.png" alt="Michael Bishop" class="u-photo">
+                  </div>
+                  
+                  
+
+<p>Author: <span class="p-author">Michael Bishop</span></p>
+
+            </a>
+      </div>
+      <div class="meta-wrap">
+        <p><a href="">Calendar Syncing: Lightning, Google, iCal and Nokia e62 </a> posted on <time datetime="2008-12-07T00:00:00+00:00" class="dt-time post-date">07 Dec 2008</time>.</p>
+        <p>This entry has been tagged with the keywords: <a href="/tag/mac" class="p-category" rel="tag">mac </a><a href="/tag/ical" class="p-category" rel="tag">ical </a><a href="/tag/nokia" class="p-category" rel="tag">nokia </a><a href="/tag/calendar" class="p-category" rel="tag">calendar </a><a href="/tag/sync" class="p-category" rel="tag">sync </a><a href="/tag/google" class="p-category" rel="tag">google </a><a href="/tag/goosync" class="p-category" rel="tag">goosync </a></p>
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </div>
+</footer>
+</article>
+
+<aside class="related-posts">
+  
+  <h3>You might also be interested in:</h3>
+  <ul class="post-list">
+  
+  <li>
+    <span class="post-date"><time datetime="2009-02-10T00:00:00+00:00" class="dt-time post-date">10 Feb 2009</time></span>
+     <a href="/iphone-and-google-syncing">iPhone and Google Syncing</a>
+  </li>
+  
+  <li>
+    <span class="post-date"><time datetime="2009-01-09T00:00:00+00:00" class="dt-time post-date">09 Jan 2009</time></span>
+     <a href="/99-dollar-iphone">Late to the Party—My 99 Dollar iPhone</a>
+  </li>
+  
+  <li>
+    <span class="post-date"><time datetime="2007-08-26T00:00:00+00:00" class="dt-time post-date">26 Aug 2007</time></span>
+     <a href="/nokia-e62-and-the-mac">Nokia e62 and the Mac</a>
+  </li>
+  
+</ul>
+
+</aside>
+
+
+<script id="webmention-hosted">
+(function () {
+var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+url = url && url[0] ? url[0].href : false;
+sn.type = "text/javascript"; sn.async = true;
+sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+s.parentNode.insertBefore(sn, s);
+}());
+</script>
+
+
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

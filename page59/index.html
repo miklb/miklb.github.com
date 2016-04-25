@@ -1,177 +1,593 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page59/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page59/" />
-    <meta property="og:url" content="https://miklb.com/page59/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page59/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/vitamin">
-                  Vitamin
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page59/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page59/" />
+<meta property="og:url" content="https://miklb.com/page59/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page59/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/vitamin">
+        Vitamin
       </a>
-              </h1>
-              <time datetime="2006-04-18T00:00:00+00:00" class="dt-time post-date">18 Apr 2006</time>
-              <div class="e-content">
-                <p><a href="http://www.thinkvitamin.com/">Vitamin</a>, a new site dedicated to web design and development.  Worth the read, and already in my RSS reader.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/pure-genius">
-                  Pure Genius 
-      </a>
-              </h1>
-              <time datetime="2006-04-16T00:00:00+00:00" class="dt-time post-date">16 Apr 2006</time>
-              <div class="e-content">
-                <p><a href="http://www.godhatesshrimp.com/about.php">God Hates Shrimp</a>  Pure genius.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/george-says">
-                  George Says...
-      </a>
-              </h1>
-              <time datetime="2006-04-16T00:00:00+00:00" class="dt-time post-date">16 Apr 2006</time>
-              <div class="e-content">
-                <p>This is great.  You too can <a href="http://george.says-it.com/">tell George what to say</a>
-                  <img class="big" src="http://www.miklb.com/blog/wp-content/images/georgesays.jpg" alt="Bush" /></p>
-                <p><img class="small" src="http://www.miklb.com/blog/wp-content/uploads/2006/04/georgesays.thumbnail.jpg" alt="bush" /></p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/firefox-1502">
-                  Firefox 1.5.0.2
-      </a>
-              </h1>
-              <time datetime="2006-04-15T00:00:00+00:00" class="dt-time post-date">15 Apr 2006</time>
-              <div class="e-content">
-                <p><a href="http://www.mozilla.com/firefox/">Firefox 1.5.0.2</a> is released, with native support for intel macs.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/bright-house-drops-the-ball-or-how-not-to-conduct-customer-service">
-                  Bright House Drops the Ball (or How Not to Conduct Customer Service)
-      </a>
-              </h1>
-              <time datetime="2006-04-15T00:00:00+00:00" class="dt-time post-date">15 Apr 2006</time>
-              <div class="e-content">
-                <p>So, I mentioned I’m getting a sweet deal on digital phone from Bright House.  In the time since, I’ve had about 6 telephone conversations getting to the bottom of the price.  The day after  I signed up, I received a letter offering me the service for $6.55 less than the night before.  Seems a simple 2 minute explanation that the price offered the night before <strong>included</strong> tax and fees, the lower price was before.  That they were one in the same.  Meanwhile, I reported to them that once again, I was experiencing poor picture quality on my living room television.<!--more-->  It only happens during the day, and only on the analog channels.  The two previous times I reported this, I was either blown off because at the moment the tech arrived, it wasn’t happening, and the second time I was told I had a ground problem in the house and that it wasn’t their issue.  This time I argued that it indeed had to be.  So they said they’d send out a supervisor.  I had an appointment scheduled for this past Monday.  Well, on my way out the door the Saturday before, the tech shows up.  I inform him my appointment was for Monday, between 11-2pm, that I’m on my way out and don’t have time to wait. No explanation on how the scheduling error occurred, and it took a phone call to get the appointment right.
-Monday arrives, the same guy shows up, takes a look at things, and says the problem is the modem and TV are on a splitter, that it should never be installed that way.  I then tell him that is exactly the way it’s been for 5 years, and never  has anyone said anything, including the 2 techs that had been here earlier in the year.  He says he’ll have to schedule someone else to come out and install a dedicated line for the modem.  Fine.  I tell him I have an appointment for the following Monday to have the digital phone installed.  If they can do it at the same time, that would be great.  He leaves, and never confirms any appointment scheduled.  I then have  to call again, to confirm the appointment.  They tell me the dedicated line is scheduled for that Monday, but 8am-2pm.  A different person than the phone.  I ask then if it can be done sooner.  They inform me that Wednesday from 11-2pm.  Fine.  Wednesday rolls around.  11am..12pm..1:15pm…Call comes from the subcontractor’s dispatch asking me to tell the tech that he left his cell phone behind at a previous install.  I inform them he’s not here, and ask where he is.  They don’t know, and don’t know when he’ll get there.  2pm…I call about a quarter past, get put on hold for 30 minutes to find out where he is.  I’m told a supervisor has to handle that.  After the half hour hold, they have no idea why I’m calling, and put me on hold another 15 minutes to find out what’s going on.  I’m told it will be another hour at least.  At this point I’m boiling.  Just as I’m told an hour, the tech shows up.  He runs into the house, and quickly installs the line.  Fortunately for him, the spot it’s being installed is close to the side of the home, so there’s very little crawling under the home.  Nothing changes.  The problem is still there.  Now I’m fuming.  I wait all day, all year for that matter, and still, no resolve.  I then call back and say I want to talk to a supervisor’s supervisor.  I get the head honcho finally.  Explain everything to him, he apologizes, but offers no real solution.  There is some exchange between him and the subcontractor over what is supposed to be done, and what the problem is.  The tech informs me that it’s the “T”, where my line ties into the main cable.  He leaves, I call the head tech support specialist, and leave a message asking when will things be addressed.  He calls back, and says it will take a day to get some info, that he will call me on Thursday to let me know what is going on.  He never calls.  So today a guy shows up, unannounced, to take a look at the line.  He doesn’t have to come in, so it’s not too big an inconvenience, just par for the course at this point.  He comes back and says the problem is in the main line, further to the East.  That all the houses West of me are effected.  Something about a bunch of splices.  At one point he said depending on where the problem is, that it might not be fixed until Monday.  He mentions something about a credit, which is the first time anyone’s said a word about that.  He doesn’t say how much, or when.  I’m still left wondering why the one TV is effected, and not the other, unless its the DVR box that is being effected by the low signal, and the other digital box not.  I have noticed some speed increases in my internet connection.  I used their download test, and the 50MB file settled in at 835Kb/s download.  I’ll be curious what that is after the upgrade Monday to 10Mb/s.  I’ll also be curious what the tech supervisor has to say about everything once it’s done.  I never want to see someone get in trouble or worse, lose their job, but the tech that told me it was my problem seriously needs to go back to school in troubleshooting.  He didn’t suggest a dedicated line, nor did he check the signal coming in at the “T”, to see the problem was outside my line.  Not to mention, when someone calls to say an appointment’s been missed, putting the person on hold for 30 minutes might not be the best way to handle things.  Verizon is busy putting fiber optic cable in this county, and will have cable and digital phone service soon enough.  My understanding is they are working on a contract with the city.  You can count on me being the first to sign up when that day comes.  Bright House, and Time Warner before them, have routinely been the worst experience I’ve had in dealing with monopoly companies.  It will come back to bite them in the behind, at leas I hope.</p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page60">Older</a>
-            <a class="pagination-item newer" href="/page58">Newer</a>
-          </div>
-        </div>
-      </main>
+    </h1>
+
+    <time datetime="2006-04-18T00:00:00+00:00" class="dt-time post-date">18 Apr 2006</time>
+    <div class="e-content">
+        <p><a href="http://www.thinkvitamin.com/">Vitamin</a>, a new site dedicated to web design and development.  Worth the read, and already in my RSS reader.</p>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/pure-genius">
+        Pure Genius 
+      </a>
+    </h1>
+
+    <time datetime="2006-04-16T00:00:00+00:00" class="dt-time post-date">16 Apr 2006</time>
+    <div class="e-content">
+        <p><a href="http://www.godhatesshrimp.com/about.php">God Hates Shrimp</a>  Pure genius.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/george-says">
+        George Says...
+      </a>
+    </h1>
+
+    <time datetime="2006-04-16T00:00:00+00:00" class="dt-time post-date">16 Apr 2006</time>
+    <div class="e-content">
+        <p>This is great.  You too can <a href="http://george.says-it.com/">tell George what to say</a>
+<img class="big" src="http://www.miklb.com/blog/wp-content/images/georgesays.jpg" alt="Bush" /></p>
+
+<p><img class="small" src="http://www.miklb.com/blog/wp-content/uploads/2006/04/georgesays.thumbnail.jpg" alt="bush" /></p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/firefox-1502">
+        Firefox 1.5.0.2
+      </a>
+    </h1>
+
+    <time datetime="2006-04-15T00:00:00+00:00" class="dt-time post-date">15 Apr 2006</time>
+    <div class="e-content">
+        <p><a href="http://www.mozilla.com/firefox/">Firefox 1.5.0.2</a> is released, with native support for intel macs.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/bright-house-drops-the-ball-or-how-not-to-conduct-customer-service">
+        Bright House Drops the Ball (or How Not to Conduct Customer Service)
+      </a>
+    </h1>
+
+    <time datetime="2006-04-15T00:00:00+00:00" class="dt-time post-date">15 Apr 2006</time>
+    <div class="e-content">
+        <p>So, I mentioned I’m getting a sweet deal on digital phone from Bright House.  In the time since, I’ve had about 6 telephone conversations getting to the bottom of the price.  The day after  I signed up, I received a letter offering me the service for $6.55 less than the night before.  Seems a simple 2 minute explanation that the price offered the night before <strong>included</strong> tax and fees, the lower price was before.  That they were one in the same.  Meanwhile, I reported to them that once again, I was experiencing poor picture quality on my living room television.<!--more-->  It only happens during the day, and only on the analog channels.  The two previous times I reported this, I was either blown off because at the moment the tech arrived, it wasn’t happening, and the second time I was told I had a ground problem in the house and that it wasn’t their issue.  This time I argued that it indeed had to be.  So they said they’d send out a supervisor.  I had an appointment scheduled for this past Monday.  Well, on my way out the door the Saturday before, the tech shows up.  I inform him my appointment was for Monday, between 11-2pm, that I’m on my way out and don’t have time to wait. No explanation on how the scheduling error occurred, and it took a phone call to get the appointment right.
+Monday arrives, the same guy shows up, takes a look at things, and says the problem is the modem and TV are on a splitter, that it should never be installed that way.  I then tell him that is exactly the way it’s been for 5 years, and never  has anyone said anything, including the 2 techs that had been here earlier in the year.  He says he’ll have to schedule someone else to come out and install a dedicated line for the modem.  Fine.  I tell him I have an appointment for the following Monday to have the digital phone installed.  If they can do it at the same time, that would be great.  He leaves, and never confirms any appointment scheduled.  I then have  to call again, to confirm the appointment.  They tell me the dedicated line is scheduled for that Monday, but 8am-2pm.  A different person than the phone.  I ask then if it can be done sooner.  They inform me that Wednesday from 11-2pm.  Fine.  Wednesday rolls around.  11am..12pm..1:15pm…Call comes from the subcontractor’s dispatch asking me to tell the tech that he left his cell phone behind at a previous install.  I inform them he’s not here, and ask where he is.  They don’t know, and don’t know when he’ll get there.  2pm…I call about a quarter past, get put on hold for 30 minutes to find out where he is.  I’m told a supervisor has to handle that.  After the half hour hold, they have no idea why I’m calling, and put me on hold another 15 minutes to find out what’s going on.  I’m told it will be another hour at least.  At this point I’m boiling.  Just as I’m told an hour, the tech shows up.  He runs into the house, and quickly installs the line.  Fortunately for him, the spot it’s being installed is close to the side of the home, so there’s very little crawling under the home.  Nothing changes.  The problem is still there.  Now I’m fuming.  I wait all day, all year for that matter, and still, no resolve.  I then call back and say I want to talk to a supervisor’s supervisor.  I get the head honcho finally.  Explain everything to him, he apologizes, but offers no real solution.  There is some exchange between him and the subcontractor over what is supposed to be done, and what the problem is.  The tech informs me that it’s the “T”, where my line ties into the main cable.  He leaves, I call the head tech support specialist, and leave a message asking when will things be addressed.  He calls back, and says it will take a day to get some info, that he will call me on Thursday to let me know what is going on.  He never calls.  So today a guy shows up, unannounced, to take a look at the line.  He doesn’t have to come in, so it’s not too big an inconvenience, just par for the course at this point.  He comes back and says the problem is in the main line, further to the East.  That all the houses West of me are effected.  Something about a bunch of splices.  At one point he said depending on where the problem is, that it might not be fixed until Monday.  He mentions something about a credit, which is the first time anyone’s said a word about that.  He doesn’t say how much, or when.  I’m still left wondering why the one TV is effected, and not the other, unless its the DVR box that is being effected by the low signal, and the other digital box not.  I have noticed some speed increases in my internet connection.  I used their download test, and the 50MB file settled in at 835Kb/s download.  I’ll be curious what that is after the upgrade Monday to 10Mb/s.  I’ll also be curious what the tech supervisor has to say about everything once it’s done.  I never want to see someone get in trouble or worse, lose their job, but the tech that told me it was my problem seriously needs to go back to school in troubleshooting.  He didn’t suggest a dedicated line, nor did he check the signal coming in at the “T”, to see the problem was outside my line.  Not to mention, when someone calls to say an appointment’s been missed, putting the person on hold for 30 minutes might not be the best way to handle things.  Verizon is busy putting fiber optic cable in this county, and will have cable and digital phone service soon enough.  My understanding is they are working on a contract with the city.  You can count on me being the first to sign up when that day comes.  Bright House, and Time Warner before them, have routinely been the worst experience I’ve had in dealing with monopoly companies.  It will come back to bite them in the behind, at leas I hope.</p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page60">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page58">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

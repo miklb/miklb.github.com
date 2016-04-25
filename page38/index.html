@@ -1,185 +1,611 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page38/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page38/" />
-    <meta property="og:url" content="https://miklb.com/page38/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page38/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/differences-in-habari-development">
-                  Differences in Habari Development
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page38/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page38/" />
+<meta property="og:url" content="https://miklb.com/page38/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page38/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/differences-in-habari-development">
+        Differences in Habari Development
       </a>
-              </h1>
-              <time datetime="2007-08-29T00:00:00+00:00" class="dt-time post-date">29 Aug 2007</time>
-              <div class="e-content">
-                <p>It seems that there is quite the difference in how Habari is developed from a PHP standpoint to a design standpoint.  Code wise, most major changes that I’ve seen, a patch was sent out to the community, and comments were made about how it worked, and if it worked within the general scope of where the members and community saw development.</p>
-                <p>This has not been the  case, from what I can see, with a current movement to change the entire admin interface.  There was some discussion about the possibility of incorporating <a href="http://code.google.com/p/blueprintcss/">BluePrint CSS Framework</a> into the admin interface.  The general consensus was that it wasn’t a bad idea, but that there were concerns with it’s compatibilities with all browsers.  In that discussion however, there was no talk of a “live” redesign of the interface.  Meaning, the admin would be changed in trunk, at small increments, without any discussion of the changes, or the effects of those changes on the user experience.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/nokia-e62-and-the-mac">
-                  Nokia e62 and the Mac
-      </a>
-              </h1>
-              <time datetime="2007-08-26T00:00:00+00:00" class="dt-time post-date">26 Aug 2007</time>
-              <div class="e-content">
-                <p>Recently, a friend with a slightly larger budget than I, bought an iPhone.  Subsequently, they gave me their “old” Nokia e62. I’ve been a big fan of Nokia, simply because most of their phones that I’ve owned were well constructed, worked well with Cingular, and, just <em>worked</em>.</p>
-                <p>So quickly I discovered I can now sync my address book and iCal with the phone, which is nice.  I then sought as many means as possible to use the phone with my mac.  One downfall with Nokia, is they do not have a native Mac desktop interface, as they do with PC, but at least they’ve recently added a <a href="http://europe.nokia.com/A4423135">Media Manager</a>, which allows for the addition of a folder in iTunes and iPhoto , in which anything added to that folder is added to your phone.  I won’t be using the phone much for these purposes, but it’s a nice addition.  Perhaps I can see myself using it for taking a podcast or two with me for listening to while out and about.</p>
-                <p>Another, not so familiar utility, is the Bluetooth File Exchange application in the Utilities folder.  When I was given the phone, I didn’t get a USB data transfer cable, so I was having difficulty adding applications to the phone.  One in particular, was a fix for sending SMS messages.  They were taking forever to send.  After discovering the File Exchange app however, I was able to navigate to the file on the harddrive, send it to device, chose the phone, and the app showed up as a text message.  Opening the application allowed me to easily install apps or add new themes (even with the new phone, I’m still suffering from iPhone envy, so I found an iPhone theme, which I actually like much better than the default theme, or any of the other included themes on the phone).</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/blogorlando">
-                  BlogOrlando
-      </a>
-              </h1>
-              <time datetime="2007-08-07T00:00:00+00:00" class="dt-time post-date">07 Aug 2007</time>
-              <div class="e-content">
-                <p>I just added a link in the sidebar to an upcoming blogger “unconference”, <a href="http://blogorlando.com">BlogOrlando</a>.  I’ve not been to any type of meetup/conference/gathering of other bloggers, and am really looking forward to it.  Not only to just get out of town for a day or two, but to actually meet and talk face to face with other bloggers and web geeks.  I’ll probably concentrate on the technology aspects of the gathering, though I suppose I can sit in on other sessions as they are added and interest me.  I’m also looking forward to being able to pimp <a href="http://habariproject.org/en/">Habari</a>.</p>
-                <p>If anyone else in the Central Florida area is going, I’d love to connect in advance, and possibly have someone to “know” in advance.  There are two dinners, one the night before, and one the night of, so having even a somewhat familiar person to break bread with would be nice, though I’m fairly good at making new acquaintances and meeting people.  (Probably from years of sitting in bars and chatting up the person next to me.)</p>
-                <p>Also, if anyone has advice for attending an event of this nature, I’m all ears.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/habari-dr2">
-                  Habari DR2
-      </a>
-              </h1>
-              <time datetime="2007-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2007</time>
-              <div class="e-content">
-                <p>I’ve already mentioned, this blog is powered by a new blogging engine, <a href="http://habariproject.org/en/">Habari</a>.  A second developer release is out the door, and can be <a href="http://code.google.com/p/habari/downloads/list">downloaded now</a>.</p>
-                <p>As a developer release, it’s still not guaranteed for everyday, production level blogging, however it’s stable enough that you can certainly install it and get a feel for how far it’s come, and where it’s going.  For the less faint of heart, you certainly can follow along using <a href="http://code.google.com/p/habari/source">SVN</a>.</p>
-                <p>This release among opening up many new features that have been in core for some time, also realizes a goal of having docs shipped with the release.  It was a primary goal of the project from the start, and recent discussion about using the aforementioned TiddlyWiki as a means of distributing the documentation brought me into the fold on that aspect.  Thanks to the initial work by <a href="http://www.brokenkode.com/">Khaled</a>, including customizing the CSS to match Habari’s proposed new admin interface, I was able to incorporate the basics from Habari’s wiki, and do some initial leg work on getting license agreements to use some TW community released plugins for future releases.</p>
-                <p>I must say it is quite satisfying to have contributed in some meaningful way to such a project, and certainly fueled the fires to more actively involve myself in documentation writing for the project, as well as any other positive contributions I can make.  I’d really like to thank all of the project members, and additional community members who’ve brought Habari this far, as well as in general thank them for creating such a welcoming community.  At this juncture in the development, it’s quite refreshing for there not to be a divide between users and coders, unlike an unnamed project I volunteered with in the past.  This certainly is a goal for Habari, and I sincerely believe them when they say it will continue in that fashion.  Alienation is the quickest, surefire way of loosing morale support and non code contributions to a community, and as I said, I whole heartedly believe the core of Habari understand that, and will avoid the culture of elitism that I’m sure permeates many other open source projects.</p>
-                <p>If you are looking for something new to get your thoughts onto the web, I’d seriously suggest considering Habari and getting involved in the community.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/experiences-with-tiddlywiki">
-                  Experiences with TiddlyWiki
-      </a>
-              </h1>
-              <time datetime="2007-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2007</time>
-              <div class="e-content">
-                <p>Recently it was suggested that the Habari project think about using <a href="http://www.tiddlywiki.com/">Tiddlywiki</a> as a means to ship documentation with new releases.  At first, I wasn’t sure about the idea, but after about 15 minutes of working with it, I was hooked.  For those not familiar with Tiddlywiki, it’s a very light weight (single file) mini wiki.  I’ve seen it described as “guerrilla” wiki, or the “ipod nano” of wikis.  It highly leverages javascript to hide and show “tiddlers”, or the individual entries.  With lots of available plugins and custom themes, not to mention a very active community, TW is certainly a great contribution to the web community, and something worth checking out.  Those that are into the Getting Things Done, there’s a couple of GTD inspired adaptation, <a href="http://shared.snapgrid.com/index.html">GTDTiddlyWiki, and <a href="http://monkeygtd.tiddlyspot.com/">MonkeyGTD.  There’s also a FireFox extension, <a href="http://tiddlysnip.com/#About">TiddlySnip</a> that allows you to save snippets to your TW as a scrapbook of sorts, though I haven’t tested this extension yet.</a></a></p>
-                <p>The formatting in TW is different than MediaWiki, though it’s fairly easy to get used to.  There’s also a <a href="http://martinswiki.com/prereleases.html#MediaWikiFormatterPlugin">MediaWiki formatter</a>, which allows you to use that formatting in your TW (which is handy if you are copying info from a MW page.  The same plugin author is working on an importer, which I am investigating, which actually allows you to scrape MW entries right into your TW.</p>
-                <p>All in all, I find TW a great tool, and something I will continue to work with for a variety of uses, and hopefully will open my eyes to learning more javascripting along the way.</p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page39">Older</a>
-            <a class="pagination-item newer" href="/page37">Newer</a>
-          </div>
-        </div>
-      </main>
+    </h1>
+
+    <time datetime="2007-08-29T00:00:00+00:00" class="dt-time post-date">29 Aug 2007</time>
+    <div class="e-content">
+        <p>It seems that there is quite the difference in how Habari is developed from a PHP standpoint to a design standpoint.  Code wise, most major changes that I’ve seen, a patch was sent out to the community, and comments were made about how it worked, and if it worked within the general scope of where the members and community saw development.</p>
+
+<p>This has not been the  case, from what I can see, with a current movement to change the entire admin interface.  There was some discussion about the possibility of incorporating <a href="http://code.google.com/p/blueprintcss/">BluePrint CSS Framework</a> into the admin interface.  The general consensus was that it wasn’t a bad idea, but that there were concerns with it’s compatibilities with all browsers.  In that discussion however, there was no talk of a “live” redesign of the interface.  Meaning, the admin would be changed in trunk, at small increments, without any discussion of the changes, or the effects of those changes on the user experience.</p>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/nokia-e62-and-the-mac">
+        Nokia e62 and the Mac
+      </a>
+    </h1>
+
+    <time datetime="2007-08-26T00:00:00+00:00" class="dt-time post-date">26 Aug 2007</time>
+    <div class="e-content">
+        <p>Recently, a friend with a slightly larger budget than I, bought an iPhone.  Subsequently, they gave me their “old” Nokia e62. I’ve been a big fan of Nokia, simply because most of their phones that I’ve owned were well constructed, worked well with Cingular, and, just <em>worked</em>.</p>
+
+<p>So quickly I discovered I can now sync my address book and iCal with the phone, which is nice.  I then sought as many means as possible to use the phone with my mac.  One downfall with Nokia, is they do not have a native Mac desktop interface, as they do with PC, but at least they’ve recently added a <a href="http://europe.nokia.com/A4423135">Media Manager</a>, which allows for the addition of a folder in iTunes and iPhoto , in which anything added to that folder is added to your phone.  I won’t be using the phone much for these purposes, but it’s a nice addition.  Perhaps I can see myself using it for taking a podcast or two with me for listening to while out and about.</p>
+
+<p>Another, not so familiar utility, is the Bluetooth File Exchange application in the Utilities folder.  When I was given the phone, I didn’t get a USB data transfer cable, so I was having difficulty adding applications to the phone.  One in particular, was a fix for sending SMS messages.  They were taking forever to send.  After discovering the File Exchange app however, I was able to navigate to the file on the harddrive, send it to device, chose the phone, and the app showed up as a text message.  Opening the application allowed me to easily install apps or add new themes (even with the new phone, I’m still suffering from iPhone envy, so I found an iPhone theme, which I actually like much better than the default theme, or any of the other included themes on the phone).</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/blogorlando">
+        BlogOrlando
+      </a>
+    </h1>
+
+    <time datetime="2007-08-07T00:00:00+00:00" class="dt-time post-date">07 Aug 2007</time>
+    <div class="e-content">
+        <p>I just added a link in the sidebar to an upcoming blogger “unconference”, <a href="http://blogorlando.com">BlogOrlando</a>.  I’ve not been to any type of meetup/conference/gathering of other bloggers, and am really looking forward to it.  Not only to just get out of town for a day or two, but to actually meet and talk face to face with other bloggers and web geeks.  I’ll probably concentrate on the technology aspects of the gathering, though I suppose I can sit in on other sessions as they are added and interest me.  I’m also looking forward to being able to pimp <a href="http://habariproject.org/en/">Habari</a>.</p>
+
+<p>If anyone else in the Central Florida area is going, I’d love to connect in advance, and possibly have someone to “know” in advance.  There are two dinners, one the night before, and one the night of, so having even a somewhat familiar person to break bread with would be nice, though I’m fairly good at making new acquaintances and meeting people.  (Probably from years of sitting in bars and chatting up the person next to me.)</p>
+
+<p>Also, if anyone has advice for attending an event of this nature, I’m all ears.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/habari-dr2">
+        Habari DR2
+      </a>
+    </h1>
+
+    <time datetime="2007-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2007</time>
+    <div class="e-content">
+        <p>I’ve already mentioned, this blog is powered by a new blogging engine, <a href="http://habariproject.org/en/">Habari</a>.  A second developer release is out the door, and can be <a href="http://code.google.com/p/habari/downloads/list">downloaded now</a>.</p>
+
+<p>As a developer release, it’s still not guaranteed for everyday, production level blogging, however it’s stable enough that you can certainly install it and get a feel for how far it’s come, and where it’s going.  For the less faint of heart, you certainly can follow along using <a href="http://code.google.com/p/habari/source">SVN</a>.</p>
+
+<p>This release among opening up many new features that have been in core for some time, also realizes a goal of having docs shipped with the release.  It was a primary goal of the project from the start, and recent discussion about using the aforementioned TiddlyWiki as a means of distributing the documentation brought me into the fold on that aspect.  Thanks to the initial work by <a href="http://www.brokenkode.com/">Khaled</a>, including customizing the CSS to match Habari’s proposed new admin interface, I was able to incorporate the basics from Habari’s wiki, and do some initial leg work on getting license agreements to use some TW community released plugins for future releases.</p>
+
+<p>I must say it is quite satisfying to have contributed in some meaningful way to such a project, and certainly fueled the fires to more actively involve myself in documentation writing for the project, as well as any other positive contributions I can make.  I’d really like to thank all of the project members, and additional community members who’ve brought Habari this far, as well as in general thank them for creating such a welcoming community.  At this juncture in the development, it’s quite refreshing for there not to be a divide between users and coders, unlike an unnamed project I volunteered with in the past.  This certainly is a goal for Habari, and I sincerely believe them when they say it will continue in that fashion.  Alienation is the quickest, surefire way of loosing morale support and non code contributions to a community, and as I said, I whole heartedly believe the core of Habari understand that, and will avoid the culture of elitism that I’m sure permeates many other open source projects.</p>
+
+<p>If you are looking for something new to get your thoughts onto the web, I’d seriously suggest considering Habari and getting involved in the community.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/experiences-with-tiddlywiki">
+        Experiences with TiddlyWiki
+      </a>
+    </h1>
+
+    <time datetime="2007-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2007</time>
+    <div class="e-content">
+        <p>Recently it was suggested that the Habari project think about using <a href="http://www.tiddlywiki.com/">Tiddlywiki</a> as a means to ship documentation with new releases.  At first, I wasn’t sure about the idea, but after about 15 minutes of working with it, I was hooked.  For those not familiar with Tiddlywiki, it’s a very light weight (single file) mini wiki.  I’ve seen it described as “guerrilla” wiki, or the “ipod nano” of wikis.  It highly leverages javascript to hide and show “tiddlers”, or the individual entries.  With lots of available plugins and custom themes, not to mention a very active community, TW is certainly a great contribution to the web community, and something worth checking out.  Those that are into the Getting Things Done, there’s a couple of GTD inspired adaptation, <a href="http://shared.snapgrid.com/index.html">GTDTiddlyWiki, and <a href="http://monkeygtd.tiddlyspot.com/">MonkeyGTD.  There’s also a FireFox extension, <a href="http://tiddlysnip.com/#About">TiddlySnip</a> that allows you to save snippets to your TW as a scrapbook of sorts, though I haven’t tested this extension yet.</a></a></p>
+
+<p>The formatting in TW is different than MediaWiki, though it’s fairly easy to get used to.  There’s also a <a href="http://martinswiki.com/prereleases.html#MediaWikiFormatterPlugin">MediaWiki formatter</a>, which allows you to use that formatting in your TW (which is handy if you are copying info from a MW page.  The same plugin author is working on an importer, which I am investigating, which actually allows you to scrape MW entries right into your TW.</p>
+
+<p>All in all, I find TW a great tool, and something I will continue to work with for a variety of uses, and hopefully will open my eyes to learning more javascripting along the way.</p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page39">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page37">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

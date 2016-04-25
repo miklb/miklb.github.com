@@ -1,189 +1,616 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page37/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page37/" />
-    <meta property="og:url" content="https://miklb.com/page37/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page37/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/mzingi">
-                  Mzingi
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page37/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page37/" />
+<meta property="og:url" content="https://miklb.com/page37/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page37/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/mzingi">
+        Mzingi
       </a>
-              </h1>
-              <time datetime="2007-09-15T00:00:00+00:00" class="dt-time post-date">15 Sep 2007</time>
-              <div class="e-content">
-                <p><strong>updated:</strong> New versions available.  See bottom of post for details.
-                  <strong>&lt;h2&gt;Mzingi development will no longer done on Bloggingmeta, as it’s now included in Habari’s core theme directory.  Any bugs, comments, or suggestions should be pointed to <a href="http://trac.habariproject.org/habari">Trac</a>&lt;/h2&gt;</strong></p>
-                <p>I have had the idea for a foundation type theme for Habari since I first started working with the platform earlier in the year.  After spending time converting k2 to the design for this site, as well as for my &lt;a href://cookingwith.miklb.com”&gt;cooking site&lt;/a&gt;, I knew that if I wanted to continue working on Habari theme design, I would need something else to work off of.  No offense at all intended for the developers and users of k2, I have extreme respect for what it has achieved, I simply feel that it’s conversion to Habari was a difficult task, considering the advanced features in k2, vs being adapted to Habari at such an early stage.  <a href="http://andrewdasilva.com/">Andrew (aka freakrz)</a>, has done great work in advancing k2 to catch up to where the rest of Habari development is, however, I still felt I wanted my own framework to work off of.</p>
-                <p><a href="http://miklb.com/user/images/mzingi_screenshot.jpg"><img src="http://miklb.com/user/images/screenshot_thumb.jpg" class="left" alt="screenshot" /></a>That said, I took the initial work I had done here on Blogging Meta, and started working on a purely CSS based theme, that could be used out of the box, as well as be flexible enough to be used as a framework.  I still have a long way to go in the design world, but trying to use all of the reading I’ve done, I think the markup is fairly semantic, HTML strict, and though the CSS validator chokes on the <a href="http://developer.yahoo.com/yui/fonts/">YUI font CSS</a>, it should be valid CSS as well.  I quite like the simple percentage based font sizing of the YUI CSS, as well as the built in font family cascading.  Again, still plenty to learn in this direction, and perhaps at some point I’ll drop it, but it’s a good building block (perhaps after getting some time to mature, as well allow me to spend some time with it, I’ll convert to the <a href="http://code.google.com/p/blueprintcss/">Blue Print CSS</a> framework).
-                  <!--more-->
-                  Aside from the YUI CSS, the only other borrowed code is from <a href="http://andybudd.com">Andy Budd’s</a> <a href="http://www.cssmastery.com/">CSS Mastery</a> chapter on forms.  However, this will soon be removed, as I want the license for the theme to be completely compatible with the Apache License that Habari ships with, and Andy’s code is licensed under a Creative Commons share-a-like one. (A completely different subject, which I intend to blog about soon enough.)  However, for the short term, the form is quite nice, and will suffice until I can write my own CSS for it.  There was also a subconscious nod to the excellent <a href="http://ifelse.co.uk/simpla">Simpla</a> WordPress theme by Phy Ly, though no conscious code borrowed from the design.</p>
-                <p>Also, many thanks to everyone on the #habari IRC channel for tips, tricks, and code help, particularly tinyau for helping with the comment form and ringmaster for help with the tag template code.</p>
-                <p>A few notes about the theme.  The theme assumes the use of the tag “aside” for the asides in the sidebar, if you want to change that tag, you would need to edit theme.php and sidebar.php to change the corresponding tag.  Likewise, if you want fewer or more asides or recent comments listed in the sidebar, you will need to edit those values in theme.php.  I tried to comment the file to outline what the various additions are.  There’s also the addition of the ability to an excerpt, as can be seen on the tag page.</p>
-                <p>So, without further ado, the first, alpha release of the theme is now available.  I’m sure minor updates will come soon, but my impatience overcomes my need for perfection.</p>
-                <p><strong>.2.  <a href="/mzingi-2">change log</a>.</strong></p>
-                <p><strong><a href="/mzingi-0-3/">0.3 change notes</a></strong></p>
-                <p><a href="http://miklb.com/user/downloads/mzingi_0.4.zip">Mzingi 0.4 Download</a></p>
-                <p><strong>Users of trunk &gt;r1574</strong></p>
-                <p><a href="http://miklb.com/user/downloads/mzingi_0.5.1.zip">Mzingi 0.5.1 Download</a></p>
-                <p><a href="http://themes.bloggingmetat.com">Demo</a></p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/feeds-and-feedburner">
-                  Feeds and Feedburner
-      </a>
-              </h1>
-              <time datetime="2007-09-14T00:00:00+00:00" class="dt-time post-date">14 Sep 2007</time>
-              <div class="e-content">
-                <p>Having some issues with feed after installing feedburner plugin.  The feed link in sidebar is to feedburner, if you so desire to subscribe, use that link for now, I’ll figure out what I’ve done wrong soon enough.</p>
-                <p><em>*edit</em>Still issues, so feedburner is deactive for now.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/userstyles">
-                  UserStyles
-      </a>
-              </h1>
-              <time datetime="2007-09-11T00:00:00+00:00" class="dt-time post-date">11 Sep 2007</time>
-              <div class="e-content">
-                <p>A few months ago, I came across <a href="http://www.hicksdesign.co.uk/journal/google-reader-theme">Jon Hicks’ Mac inspired Google Reader</a>, but recently noticed the version I was using was outdated, and Google Reader wasn’t looking so hot.  Off I went in search of an update, and subsequent posts on Jon’s site, found <a href="http://userstyles.org">User Styles</a>.  Though the site could use some better search functionality, I really like it in the sense that you can easily add styles via the <a href="https://addons.mozilla.org/en-US/firefox/addon/2108">Stylish</a> extension for Firefox.  I’ve employed <a href="http://miklb.com/custom-style-sheets-and-basecamp">Stylish for BaseCamp</a>, and have thought more about how it could be used, User Styles gives plenty to think about now.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/last-fm-and-itunes">
-                  Last.fm and iTunes
-      </a>
-              </h1>
-              <time datetime="2007-09-11T00:00:00+00:00" class="dt-time post-date">11 Sep 2007</time>
-              <div class="e-content">
-                <p>For many reasons, I have not used the streaming music from <a href="http://last.fm">Last.fm</a>.  That is, until today.  I first read a <a href="http://www.macosxhints.com/article.php?story=20060507110841475">hint</a> on how to use iTunes and Apple Scripts, however, that solution didn’t work.  Another comment on the hint pointed to <a href="http://amua.sourceforge.net/">Amua</a>, which basically streams the music via iTunes.  Excellent stuff.  I now can stream my last.fm music through my stereo, using the Airport Express.  If you are a last.fm user, by all means, <a href="http://www.last.fm/user/miklb">add me as a friend</a>, or at least check out my musical tastes.  Though still a bit buggy, my <a href="http://miklb.com/lifestream">Lifestream</a> also tracks my most currently played selections.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/apple-weblog-or-iphone-weblog">
-                  Apple Weblog or iPhone Weblog
-      </a>
-              </h1>
-              <time datetime="2007-08-31T00:00:00+00:00" class="dt-time post-date">31 Aug 2007</time>
-              <div class="e-content">
-                <p>Can someone please tell <a href="http://www.tuaw.com/">The Unofficial Apple Weblog</a> to start a new iPhone blog, and leave my feedreader free of half a dozen or more posts everyday about the iPhone?  I appreciate the need for constant updating, but certainly, you don’t have to post everytime someone who owns an iPhone coughs.</p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page38">Older</a>
-            <a class="pagination-item newer" href="/page36">Newer</a>
-          </div>
-        </div>
-      </main>
+    </h1>
+
+    <time datetime="2007-09-15T00:00:00+00:00" class="dt-time post-date">15 Sep 2007</time>
+    <div class="e-content">
+        <p><strong>updated:</strong> New versions available.  See bottom of post for details.
+<strong>&lt;h2&gt;Mzingi development will no longer done on Bloggingmeta, as it’s now included in Habari’s core theme directory.  Any bugs, comments, or suggestions should be pointed to <a href="http://trac.habariproject.org/habari">Trac</a>&lt;/h2&gt;</strong></p>
+
+<p>I have had the idea for a foundation type theme for Habari since I first started working with the platform earlier in the year.  After spending time converting k2 to the design for this site, as well as for my &lt;a href://cookingwith.miklb.com”&gt;cooking site&lt;/a&gt;, I knew that if I wanted to continue working on Habari theme design, I would need something else to work off of.  No offense at all intended for the developers and users of k2, I have extreme respect for what it has achieved, I simply feel that it’s conversion to Habari was a difficult task, considering the advanced features in k2, vs being adapted to Habari at such an early stage.  <a href="http://andrewdasilva.com/">Andrew (aka freakrz)</a>, has done great work in advancing k2 to catch up to where the rest of Habari development is, however, I still felt I wanted my own framework to work off of.</p>
+
+<p><a href="http://miklb.com/user/images/mzingi_screenshot.jpg"><img src="http://miklb.com/user/images/screenshot_thumb.jpg" class="left" alt="screenshot" /></a>That said, I took the initial work I had done here on Blogging Meta, and started working on a purely CSS based theme, that could be used out of the box, as well as be flexible enough to be used as a framework.  I still have a long way to go in the design world, but trying to use all of the reading I’ve done, I think the markup is fairly semantic, HTML strict, and though the CSS validator chokes on the <a href="http://developer.yahoo.com/yui/fonts/">YUI font CSS</a>, it should be valid CSS as well.  I quite like the simple percentage based font sizing of the YUI CSS, as well as the built in font family cascading.  Again, still plenty to learn in this direction, and perhaps at some point I’ll drop it, but it’s a good building block (perhaps after getting some time to mature, as well allow me to spend some time with it, I’ll convert to the <a href="http://code.google.com/p/blueprintcss/">Blue Print CSS</a> framework).
+<!--more-->
+Aside from the YUI CSS, the only other borrowed code is from <a href="http://andybudd.com">Andy Budd’s</a> <a href="http://www.cssmastery.com/">CSS Mastery</a> chapter on forms.  However, this will soon be removed, as I want the license for the theme to be completely compatible with the Apache License that Habari ships with, and Andy’s code is licensed under a Creative Commons share-a-like one. (A completely different subject, which I intend to blog about soon enough.)  However, for the short term, the form is quite nice, and will suffice until I can write my own CSS for it.  There was also a subconscious nod to the excellent <a href="http://ifelse.co.uk/simpla">Simpla</a> WordPress theme by Phy Ly, though no conscious code borrowed from the design.</p>
+
+<p>Also, many thanks to everyone on the #habari IRC channel for tips, tricks, and code help, particularly tinyau for helping with the comment form and ringmaster for help with the tag template code.</p>
+
+<p>A few notes about the theme.  The theme assumes the use of the tag “aside” for the asides in the sidebar, if you want to change that tag, you would need to edit theme.php and sidebar.php to change the corresponding tag.  Likewise, if you want fewer or more asides or recent comments listed in the sidebar, you will need to edit those values in theme.php.  I tried to comment the file to outline what the various additions are.  There’s also the addition of the ability to an excerpt, as can be seen on the tag page.</p>
+
+<p>So, without further ado, the first, alpha release of the theme is now available.  I’m sure minor updates will come soon, but my impatience overcomes my need for perfection.</p>
+
+<p><strong>.2.  <a href="/mzingi-2">change log</a>.</strong></p>
+
+<p><strong><a href="/mzingi-0-3/">0.3 change notes</a></strong></p>
+
+<p><a href="http://miklb.com/user/downloads/mzingi_0.4.zip">Mzingi 0.4 Download</a></p>
+
+<p><strong>Users of trunk &gt;r1574</strong></p>
+
+<p><a href="http://miklb.com/user/downloads/mzingi_0.5.1.zip">Mzingi 0.5.1 Download</a></p>
+
+<p><a href="http://themes.bloggingmetat.com">Demo</a></p>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/feeds-and-feedburner">
+        Feeds and Feedburner
+      </a>
+    </h1>
+
+    <time datetime="2007-09-14T00:00:00+00:00" class="dt-time post-date">14 Sep 2007</time>
+    <div class="e-content">
+        <p>Having some issues with feed after installing feedburner plugin.  The feed link in sidebar is to feedburner, if you so desire to subscribe, use that link for now, I’ll figure out what I’ve done wrong soon enough.</p>
+
+<p><em>*edit</em>Still issues, so feedburner is deactive for now.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/userstyles">
+        UserStyles
+      </a>
+    </h1>
+
+    <time datetime="2007-09-11T00:00:00+00:00" class="dt-time post-date">11 Sep 2007</time>
+    <div class="e-content">
+        <p>A few months ago, I came across <a href="http://www.hicksdesign.co.uk/journal/google-reader-theme">Jon Hicks’ Mac inspired Google Reader</a>, but recently noticed the version I was using was outdated, and Google Reader wasn’t looking so hot.  Off I went in search of an update, and subsequent posts on Jon’s site, found <a href="http://userstyles.org">User Styles</a>.  Though the site could use some better search functionality, I really like it in the sense that you can easily add styles via the <a href="https://addons.mozilla.org/en-US/firefox/addon/2108">Stylish</a> extension for Firefox.  I’ve employed <a href="http://miklb.com/custom-style-sheets-and-basecamp">Stylish for BaseCamp</a>, and have thought more about how it could be used, User Styles gives plenty to think about now.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/last-fm-and-itunes">
+        Last.fm and iTunes
+      </a>
+    </h1>
+
+    <time datetime="2007-09-11T00:00:00+00:00" class="dt-time post-date">11 Sep 2007</time>
+    <div class="e-content">
+        <p>For many reasons, I have not used the streaming music from <a href="http://last.fm">Last.fm</a>.  That is, until today.  I first read a <a href="http://www.macosxhints.com/article.php?story=20060507110841475">hint</a> on how to use iTunes and Apple Scripts, however, that solution didn’t work.  Another comment on the hint pointed to <a href="http://amua.sourceforge.net/">Amua</a>, which basically streams the music via iTunes.  Excellent stuff.  I now can stream my last.fm music through my stereo, using the Airport Express.  If you are a last.fm user, by all means, <a href="http://www.last.fm/user/miklb">add me as a friend</a>, or at least check out my musical tastes.  Though still a bit buggy, my <a href="http://miklb.com/lifestream">Lifestream</a> also tracks my most currently played selections.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/apple-weblog-or-iphone-weblog">
+        Apple Weblog or iPhone Weblog
+      </a>
+    </h1>
+
+    <time datetime="2007-08-31T00:00:00+00:00" class="dt-time post-date">31 Aug 2007</time>
+    <div class="e-content">
+        <p>Can someone please tell <a href="http://www.tuaw.com/">The Unofficial Apple Weblog</a> to start a new iPhone blog, and leave my feedreader free of half a dozen or more posts everyday about the iPhone?  I appreciate the need for constant updating, but certainly, you don’t have to post everytime someone who owns an iPhone coughs.</p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page38">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page36">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

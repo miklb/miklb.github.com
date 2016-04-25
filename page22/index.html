@@ -1,200 +1,635 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page22/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page22/" />
-    <meta property="og:url" content="https://miklb.com/page22/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page22/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/excellent-design-bookmarklet-suite">
-                  Excellent Design Bookmarklet Suite
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page22/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page22/" />
+<meta property="og:url" content="https://miklb.com/page22/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page22/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/excellent-design-bookmarklet-suite">
+        Excellent Design Bookmarklet Suite
       </a>
-              </h1>
-              <time datetime="2009-02-26T00:00:00+00:00" class="dt-time post-date">26 Feb 2009</time>
-              <div class="e-content">
-                <p>Lately I’ve been contemplating switching to Safari, as Firefox still seems to be a memory hog, especially since I tend to leave my desktop on for days at a time.  With the improvements to the developer tools in Safari 4, there’s less and less reason for me to hang on to Firefox.  Couple that with this <a href="http://www.sprymedia.co.uk/article/Design">bookmarklet suite of design/development tools</a> I just discovered, and the excuse of having to use Firefox for it’s superior developer tools flies right out the window.</p>
-                <p>The suite includes a configurable <strong>grid</strong> overlay, a <strong>ruler</strong> overlay, a <strong>measurement</strong> tool to determine distance between two points, and a cursor <strong>crosshair</strong> tool (I’ve not found how to use this one effectively, but it could be useful for figuring placement when using position: absolute).</p>
-                <p>I can’t speak to how Firebug and the Safari tools compare regarding javascript, as I don’t do much with javascript, save using various jquery plugins.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/ie8-compatibility-mode">
-                  IE8 Compatibility Mode
+    </h1>
+
+    <time datetime="2009-02-26T00:00:00+00:00" class="dt-time post-date">26 Feb 2009</time>
+    <div class="e-content">
+        <p>Lately I’ve been contemplating switching to Safari, as Firefox still seems to be a memory hog, especially since I tend to leave my desktop on for days at a time.  With the improvements to the developer tools in Safari 4, there’s less and less reason for me to hang on to Firefox.  Couple that with this <a href="http://www.sprymedia.co.uk/article/Design">bookmarklet suite of design/development tools</a> I just discovered, and the excuse of having to use Firefox for it’s superior developer tools flies right out the window.</p>
+
+<p>The suite includes a configurable <strong>grid</strong> overlay, a <strong>ruler</strong> overlay, a <strong>measurement</strong> tool to determine distance between two points, and a cursor <strong>crosshair</strong> tool (I’ve not found how to use this one effectively, but it could be useful for figuring placement when using position: absolute).</p>
+
+<p>I can’t speak to how Firebug and the Safari tools compare regarding javascript, as I don’t do much with javascript, save using various jquery plugins.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/ie8-compatibility-mode">
+        IE8 Compatibility Mode
       </a>
-              </h1>
-              <time datetime="2009-02-18T00:00:00+00:00" class="dt-time post-date">18 Feb 2009</time>
-              <div class="e-content">
-                <p>A post came through Twitter from <a href="http://www.sitepoint.com/blogs/2009/02/19/ie8-standards-mode-opt-in/">SitePoint</a> regarding a recent decision by Microsoft and the IE team to add a new compatibility mode to IE8.  The post they link to is from December, and the IE Blog has updated the blog with a <a href="http://blogs.msdn.com/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx">recap of the compatibility view</a>.  At first read, this sounded like a stupid idea.  Just another layer of crap that would keep sites from getting up to speed on standards compliance.</p>
-                <p>Upon a bit more thought, I think it’s not a bad idea.  One of the biggest reasons I found people didn’t adopt IE 7 was that sites that they regularly visited didn’t render properly in IE 7, so they reverted back to IE 6. <span class="pquote-r"> I think it’s still one of the biggest reasons people haven’t upgraded.  They upgraded once, a site didn’t work, so they stuck with 6.  A vicious cycle ensued</span>.  Sites saw the stats, saw a big IE 6 crowd, and kept support.  The reality of business is going to say that some numbers cruncher is going to say it’s not economically feasible to update the site for IE 8, regardless of the chorus from the web team.  These are the sites that compatibility mode is geared towards.</p>
-                <p>Adding this compatibility view will allow people to upgrade to 8, still visit sites that haven’t been updated, but get the standards compliance of 8 for sites that have.  Sure, getting blacklisted as incompatible is possible, but a single line of code in the header will remove the compatibility view from visitors, and for those of us that want to build sites that are strictly IE 8 compatible, ignoring 7 (6 is whole different can of worms) is possible.  It’s very easy to tell a client, “Just upgrade to 8, and click the compatibility view option, your old sites will still work the same”, versus having to make a site backward compatible to 7 because people won’t upgrade or are reluctant. Worse, having to have 2 or more conditional style sheets to accommodate multiple versions of IE.</p>
-                <p>I would say this compatibility mode list shouldn’t be built off of how a site renders in a beta version of a browser, and reading through the comments and glossing over the latest post I’m not sure if that’s the case, but again, I’d rather it be an opt in setting that allows people to view the rest of the web in a more standards compliant mode than having to wrestle as as a developer with yet another version of IE.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/whatthefont-for-iphone">
-                  WhatTheFont for iPhone
+    </h1>
+
+    <time datetime="2009-02-18T00:00:00+00:00" class="dt-time post-date">18 Feb 2009</time>
+    <div class="e-content">
+        <p>A post came through Twitter from <a href="http://www.sitepoint.com/blogs/2009/02/19/ie8-standards-mode-opt-in/">SitePoint</a> regarding a recent decision by Microsoft and the IE team to add a new compatibility mode to IE8.  The post they link to is from December, and the IE Blog has updated the blog with a <a href="http://blogs.msdn.com/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx">recap of the compatibility view</a>.  At first read, this sounded like a stupid idea.  Just another layer of crap that would keep sites from getting up to speed on standards compliance.</p>
+
+<p>Upon a bit more thought, I think it’s not a bad idea.  One of the biggest reasons I found people didn’t adopt IE 7 was that sites that they regularly visited didn’t render properly in IE 7, so they reverted back to IE 6. <span class="pquote-r"> I think it’s still one of the biggest reasons people haven’t upgraded.  They upgraded once, a site didn’t work, so they stuck with 6.  A vicious cycle ensued</span>.  Sites saw the stats, saw a big IE 6 crowd, and kept support.  The reality of business is going to say that some numbers cruncher is going to say it’s not economically feasible to update the site for IE 8, regardless of the chorus from the web team.  These are the sites that compatibility mode is geared towards.</p>
+
+<p>Adding this compatibility view will allow people to upgrade to 8, still visit sites that haven’t been updated, but get the standards compliance of 8 for sites that have.  Sure, getting blacklisted as incompatible is possible, but a single line of code in the header will remove the compatibility view from visitors, and for those of us that want to build sites that are strictly IE 8 compatible, ignoring 7 (6 is whole different can of worms) is possible.  It’s very easy to tell a client, “Just upgrade to 8, and click the compatibility view option, your old sites will still work the same”, versus having to make a site backward compatible to 7 because people won’t upgrade or are reluctant. Worse, having to have 2 or more conditional style sheets to accommodate multiple versions of IE.</p>
+
+<p>I would say this compatibility mode list shouldn’t be built off of how a site renders in a beta version of a browser, and reading through the comments and glossing over the latest post I’m not sure if that’s the case, but again, I’d rather it be an opt in setting that allows people to view the rest of the web in a more standards compliant mode than having to wrestle as as a developer with yet another version of IE.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/whatthefont-for-iphone">
+        WhatTheFont for iPhone
       </a>
-              </h1>
-              <time datetime="2009-02-11T00:00:00+00:00" class="dt-time post-date">11 Feb 2009</time>
-              <div class="e-content">
-                <p><a href="http://www.flickr.com/photos/37431362@N00/3271849725">&lt;img src=”http://farm4.static.flickr.com/3443/3271849725_c0bc1882e6_m.jpg”class=”right” alt=””/&gt;</a>Perhaps not perfect, but certainly works (I tested it by taking a pic of my latest AT&amp;T bill, it recognized the logo and returned Humanist 777 Bold Condensed).  I’ve often seen an advertisement while out and and about and wondered what the font face was, now I’ve got a fighting chance to find out.  Currently free and a .1 release,  one can only imagine it will improve.</p>
-                <p>The app basically allows you to take a pic, use your finger to crop the image to just highlight the text, and then it uploads the font to their server.  It then does what the web app does, compares the image with some kind of OCR and has you confirm that the corresponding characters are correct.  Once you approve the recognition, it returns the font(s).</p>
-                <p>Pretty nifty little app if you ask me.</p>
-                <p><em>Hat tip to <a href="http://www.shauninman.com/archive/2009/02/11/whatthefont_for_the_iphone">Inman</a></em></p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/tunesday-lucero">
-                  Tunesday: Lucero
+    </h1>
+
+    <time datetime="2009-02-11T00:00:00+00:00" class="dt-time post-date">11 Feb 2009</time>
+    <div class="e-content">
+        <p><a href="http://www.flickr.com/photos/37431362@N00/3271849725">&lt;img src=”http://farm4.static.flickr.com/3443/3271849725_c0bc1882e6_m.jpg”class=”right” alt=””/&gt;</a>Perhaps not perfect, but certainly works (I tested it by taking a pic of my latest AT&amp;T bill, it recognized the logo and returned Humanist 777 Bold Condensed).  I’ve often seen an advertisement while out and and about and wondered what the font face was, now I’ve got a fighting chance to find out.  Currently free and a .1 release,  one can only imagine it will improve.</p>
+
+<p>The app basically allows you to take a pic, use your finger to crop the image to just highlight the text, and then it uploads the font to their server.  It then does what the web app does, compares the image with some kind of OCR and has you confirm that the corresponding characters are correct.  Once you approve the recognition, it returns the font(s).</p>
+
+<p>Pretty nifty little app if you ask me.</p>
+
+<p><em>Hat tip to <a href="http://www.shauninman.com/archive/2009/02/11/whatthefont_for_the_iphone">Inman</a></em></p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/tunesday-lucero">
+        Tunesday: Lucero
       </a>
-              </h1>
-              <time datetime="2009-02-10T00:00:00+00:00" class="dt-time post-date">10 Feb 2009</time>
-              <div class="e-content">
-                <p>I skipped Tunesday last week as I was in a bit of mourning finding out that morning that Langerado, a huge music festival planned for next month had just been canceled.  I had been really looking forward to 3 days of getting away, and just seeing live music.  One of the bands that was scheduled to play is one of my all time favorites, <a href="http://www.emusic.com/artist/Lucero-MP3-Download/11573841.html">Lucero</a>.</p>
-                <p>I discovered Lucero via a jukebox.  One of those jukeboxes in a hip downtown bar: dark, smoky, someplace you can both go to hang with friends, or sit and drown your sorrows as you suffer a broken heart.  It was during one of those times of broken heartedness that I first heard them.  It was soon there after that they came through town, and the rest, as they say, is history.</p>
-                <p>I was sitting at the bar, throwing back a few whiskeys, and struck up a conversation with a guy at the bar.  We wound up buying each other a shot, listening to the opening act.  As the first band ended, he got up, we exchanged a few pleasantries, and he proceeds to head towards the stage.  Damned if it wasn’t Ben, the lead singer.  They proceeded to play one of those sets that you just never forget, and set the stage for me not missing another opportunity to see them live.</p>
-                <p>As with a lot of music I listen to, they have that Alt-Country/Americana edge, think&lt;blockquote&gt;somewhere between the Pogues, Johnny Cash, Gram Parsons, and Tom Waits,&lt;/blockquote&gt; with just enough punk influence to not just have a twangy Skynard cover band sound.  Their early cover of Jawbreaker’s <cite>Kiss the Bottle</cite> is a perfect example of that synergy.</p>
-                <p>I’m also a big fan of Ben’s lyrics, probably due to my propensity for finding myself in those melancholy introspective moments.  Lines like</p>
-                <blockquote>I think I'll stay right down here on this floor
+    </h1>
+
+    <time datetime="2009-02-10T00:00:00+00:00" class="dt-time post-date">10 Feb 2009</time>
+    <div class="e-content">
+        <p>I skipped Tunesday last week as I was in a bit of mourning finding out that morning that Langerado, a huge music festival planned for next month had just been canceled.  I had been really looking forward to 3 days of getting away, and just seeing live music.  One of the bands that was scheduled to play is one of my all time favorites, <a href="http://www.emusic.com/artist/Lucero-MP3-Download/11573841.html">Lucero</a>.</p>
+
+<p>I discovered Lucero via a jukebox.  One of those jukeboxes in a hip downtown bar: dark, smoky, someplace you can both go to hang with friends, or sit and drown your sorrows as you suffer a broken heart.  It was during one of those times of broken heartedness that I first heard them.  It was soon there after that they came through town, and the rest, as they say, is history.</p>
+
+<p>I was sitting at the bar, throwing back a few whiskeys, and struck up a conversation with a guy at the bar.  We wound up buying each other a shot, listening to the opening act.  As the first band ended, he got up, we exchanged a few pleasantries, and he proceeds to head towards the stage.  Damned if it wasn’t Ben, the lead singer.  They proceeded to play one of those sets that you just never forget, and set the stage for me not missing another opportunity to see them live.</p>
+
+<p>As with a lot of music I listen to, they have that Alt-Country/Americana edge, think&lt;blockquote&gt;somewhere between the Pogues, Johnny Cash, Gram Parsons, and Tom Waits,&lt;/blockquote&gt; with just enough punk influence to not just have a twangy Skynard cover band sound.  Their early cover of Jawbreaker’s <cite>Kiss the Bottle</cite> is a perfect example of that synergy.</p>
+
+<p>I’m also a big fan of Ben’s lyrics, probably due to my propensity for finding myself in those melancholy introspective moments.  Lines like</p>
+<blockquote>I think I'll stay right down here on this floor
 Cause if I get back up I'll only fall down more
 It ain't the liquor and it ain't the beer that keeps me down
 It ain't the sad songs or heartache it ain't even this town </blockquote>
-                <p>From the song <cite>I’ll Just Fall</cite></p>
-                <p>Or&lt;blockquote&gt;The beer tastes like blood, my mouth is numb
+
+<p>From the song <cite>I’ll Just Fall</cite></p>
+
+<p>Or&lt;blockquote&gt;The beer tastes like blood, my mouth is numb
 I can’t make the words I need to say</p>
-                <p>She had a weakness for writers
+
+<p>She had a weakness for writers
 And I I was never that good at the words anyways &lt;/blockquote&gt;</p>
-                <p>From <cite>Nights Like These</cite></p>
-                <p>If I were to suggest albums to start with, certainly <cite>Nobody’s Darlings</cite> and <cite>That Much Further West</cite> would top the list, but from my blinders on position, you can’t go wrong with any of their recordings, and as I’ve said, they are a can’t miss live outfit.</p>
-                <p>All of Lucero’s music is available on emusic.com.  If you’d like a invite to emusic for a trial membership and 50 free downloads (you’ll have to give a CC#, but they don’t charge until after the first month), leave a comment with the email address you’d like it sent to, and I”ll send one your way. <em> Shameless confession - you can do a trial membership without the invite from me, but if you were to sign up with emusic after the trial via invite, I’d get a 50 song credit</em></p>
-                <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/mIa3QTp34Sw&amp;hl=en&amp;fs=1&amp;ap=%2526fmt%3D18" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/mIa3QTp34Sw&amp;hl=en&amp;fs=1&amp;ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344" /></object>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/iphone-and-google-syncing">
-                  iPhone and Google Syncing
-      </a>
-              </h1>
-              <time datetime="2009-02-10T00:00:00+00:00" class="dt-time post-date">10 Feb 2009</time>
-              <div class="e-content">
-                <p>It’s been well documented on the web already, but I figured since I had a few posts on <a href="http://miklb.com/99-dollar-iphone">iphone</a> and <a href="http://miklb.com/calendar-syncing-lightning-google-and-nokia-e62">Nokia</a> syncing, I figured it was worth re-posting that <a href="http://googleblog.blogspot.com/2009/02/calendar-and-contact-syncing-for-iphone.html">Google announced yesterday</a> that they now supported <a href="http://www.google.com/mobile/apple/sync.html">mobile syncing with iPhones</a>, among other platforms.  I haven’t switched from my previous set up <em>yet</em>, but all indications are that it is the same procedure, simply skipping the 3rd party, which is always a plus.</p>
-                <p>3rd party web services come and go; there’s little doubt in my mind Google isn’t going anywhere.  It uses the same Exchange server technology, so the same caveat that the previous solution had still exists.  You are only allowed one Exchange server connection, so if for some reason you are using it with say, Exchange, you won’t be able to sync your Google calendar or contacts.</p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page23">Older</a>
-            <a class="pagination-item newer" href="/page21">Newer</a>
-          </div>
-        </div>
-      </main>
+
+<p>From <cite>Nights Like These</cite></p>
+
+<p>If I were to suggest albums to start with, certainly <cite>Nobody’s Darlings</cite> and <cite>That Much Further West</cite> would top the list, but from my blinders on position, you can’t go wrong with any of their recordings, and as I’ve said, they are a can’t miss live outfit.</p>
+
+<p>All of Lucero’s music is available on emusic.com.  If you’d like a invite to emusic for a trial membership and 50 free downloads (you’ll have to give a CC#, but they don’t charge until after the first month), leave a comment with the email address you’d like it sent to, and I”ll send one your way. <em> Shameless confession - you can do a trial membership without the invite from me, but if you were to sign up with emusic after the trial via invite, I’d get a 50 song credit</em></p>
+
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/mIa3QTp34Sw&amp;hl=en&amp;fs=1&amp;ap=%2526fmt%3D18" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/mIa3QTp34Sw&amp;hl=en&amp;fs=1&amp;ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344" /></object>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/iphone-and-google-syncing">
+        iPhone and Google Syncing
+      </a>
+    </h1>
+
+    <time datetime="2009-02-10T00:00:00+00:00" class="dt-time post-date">10 Feb 2009</time>
+    <div class="e-content">
+        <p>It’s been well documented on the web already, but I figured since I had a few posts on <a href="http://miklb.com/99-dollar-iphone">iphone</a> and <a href="http://miklb.com/calendar-syncing-lightning-google-and-nokia-e62">Nokia</a> syncing, I figured it was worth re-posting that <a href="http://googleblog.blogspot.com/2009/02/calendar-and-contact-syncing-for-iphone.html">Google announced yesterday</a> that they now supported <a href="http://www.google.com/mobile/apple/sync.html">mobile syncing with iPhones</a>, among other platforms.  I haven’t switched from my previous set up <em>yet</em>, but all indications are that it is the same procedure, simply skipping the 3rd party, which is always a plus.</p>
+
+<p>3rd party web services come and go; there’s little doubt in my mind Google isn’t going anywhere.  It uses the same Exchange server technology, so the same caveat that the previous solution had still exists.  You are only allowed one Exchange server connection, so if for some reason you are using it with say, Exchange, you won’t be able to sync your Google calendar or contacts.</p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page23">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page21">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

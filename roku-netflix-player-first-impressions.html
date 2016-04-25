@@ -1,176 +1,596 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roku Netflix Player First Impressions</title>
-    <meta name="description" content="I had read a few things about the Roku Netflix Player, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix...">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/roku-netflix-player-first-impressions">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Roku Netflix Player First Impressions - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Roku Netflix Player First Impressions" />
-    <meta name="description" content="I had read a few things about the Roku Netflix Player, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try." />
-    <meta property="og:description" content="I had read a few things about the Roku Netflix Player, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try." />
-    <link rel="canonical" href="https://miklb.com/roku-netflix-player-first-impressions" />
-    <meta property="og:url" content="https://miklb.com/roku-netflix-player-first-impressions" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2008-06-12T00:00:00+00:00" />
-    <link rel="next" href="https://miklb.com/consolidating-focusing-and-rookie-mistakes" title="Consolidating, Focusing, and Rookie Mistakes" />
-    <link rel="prev" href="https://miklb.com/obligatory-response-to-new-iphone" title="Obligatory Response to New iPhone" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "BlogPosting",
-          "headline": "Roku Netflix Player First Impressions",
-          "datePublished": "2008-06-12T00:00:00+00:00",
-          "description": "I had read a few things about the Roku Netflix Player, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/roku-netflix-player-first-impressions"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <article class="post h-entry">
-            <header class="entry-header">
-              <h1 class="post-title p-name">
-                <a class="u-url" rel="bookmark" href="/roku-netflix-player-first-impressions">
-                  Roku Netflix Player First Impressions
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Roku Netflix Player First Impressions</title>
+	<meta name="description" content="I had read a few things about the Roku Netflix Player, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix...">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/roku-netflix-player-first-impressions">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Roku Netflix Player First Impressions - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Roku Netflix Player First Impressions" />
+<meta name="description" content="I had read a few things about the Roku Netflix Player, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try." />
+<meta property="og:description" content="I had read a few things about the Roku Netflix Player, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try." />
+<link rel="canonical" href="https://miklb.com/roku-netflix-player-first-impressions" />
+<meta property="og:url" content="https://miklb.com/roku-netflix-player-first-impressions" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2008-06-12T00:00:00+00:00" />
+<link rel="next" href="https://miklb.com/consolidating-focusing-and-rookie-mistakes" title="Consolidating, Focusing, and Rookie Mistakes" />
+<link rel="prev" href="https://miklb.com/obligatory-response-to-new-iphone" title="Obligatory Response to New iPhone" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Roku Netflix Player First Impressions",
+    "datePublished": "2008-06-12T00:00:00+00:00",
+    "description": "I had read a few things about the Roku Netflix Player, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/roku-netflix-player-first-impressions"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<article class="post h-entry">
+  <header class="entry-header">
+	  <h1 class="post-title p-name">
+		  <a class="u-url" rel="bookmark" href="/roku-netflix-player-first-impressions">
+			  Roku Netflix Player First Impressions
 		  </a>
-              </h1>
-              <h2 class="p-summary p-bridgy-twitter-content">
-              </h2>
-            </header>
-            <div class="e-content">
-              <p><img src="http://miklb.com/user/images/roku_netflix.jpg" class="left" alt="Netflix Player" />I had read a few things about the <a href="http://www.roku.com/netflixplayer/">Roku Netflix Player</a>, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try.</p>
-              <p>This was last Thursday.  We were given an option of spending an extra $10 on 2-day Fedex (on top of the $10 ground), so be the anxious geek, I pony up the extra money, thinking I’d have it on Monday.  Well, Roku sent an email saying the player would be shipped from the warehouse in the next 7-10 days on Friday, which rubbed me the wrong way, as that wasn’t mentioned in the order process, but OK.  Nothing else to my knowledge was emailed out (we used her email address).  So I was resolved to not see it for 2 weeks.  However, when I returned from running errands today, there it was sitting on my porch.</p>
-              <p>Since ordering, I had done a bit more research, and the one downfall I have seen repeated over and over is the limited amount of content available, as Netflix has to obtain digital rights to the content before being able to offer it.  Consensus seemed to say that it is mostly older TV series, indie/foreign films, and few older major releases tossed in here and there.  I wasn’t too anxious to really look at the selection, as I wasn’t expecting to receive it for another week at least, but I’m more an indie/foreign film kinda fan than Spiderman 3 anyway, so as I said, I’ve got 30 days.</p>
-              <p>As other reviews mention, it’s nothing but a simple little black box, with an external power supply.  A small, boxy remote and RCA cables fill out the included items.  Again, as I wasn’t expecting it so soon now, I hadn’t obtained additional cables (like optical audio to connect to the receiver or component video, which are all supported, as well as HDMI and  s-video).  I admit right up front I’m not the techno-geek when it comes to these aspects, so I’m not really qualified to say one thing or the other about the supported connections, etc.  The player can connect via wireless or ethernet (however, as I understand it, it doesn’t support 802.11n).  I gave the wireless a shot first, but figured I might have to run an ethernet cable.</p>
-              <p>Set up was really easy, a simple onscreen walk through entering my WEP key, a quick connection to Netflix, update some (firmware??) and restart, it gives a code that you then enter into your Netflix account.  Maybe 5 minutes total, and my account was connected to the TV, any movies in my queue that were available for the Instant Viewing was added to that queue as well, and I could see them on the screen.  I poked around quickly on the site, looking for something to add.  Dexter season 1 was there, I never saw the first season, and figured it would be a good test.  I added it to my queue, and within 30 seconds or so, it showed up on the TV.  TV seasons only need the season added, all episodes are available, whereas with DVD’s you have to add each disc.  I navigated to episode one, clicked play, a few seconds later it starts downloading, I see <strong>•••• quality</strong> after it loads (still not sure what that means, but I think it has something to do with my connection.  I generally get 18Mb/s or better with my wireless connection, even faster wired).  All told, roughly a minute before the show started playing.</p>
-              <p>Episode played fine, no skipping, no jumping, quality was as good as my FIOS cable (even with the included RCA cables).  Fast forwarding is a bit different, as they break shows up into little chapters of sorts, with stills for each section.  I haven’t really paid close enough attention yet to see what the time frame of each are, but they seem like 1 minute or so apiece. Different, but easy enough to adapt to.</p>
-              <p>Being the TV junky that I am, I poked around a bit more, and found that a lot of Law and Order SVU/CI seasons were available.  I often find myself watching reruns on TNT and USA Network, as I never really watched the show during it’s first runs, and heck, why not just watch it in order without the annoying commercials on those networks?  I added SVU season one, and watched the first two episodes.  Again, quality was fine (once I switched the perspective back to 4:3 from 16:9), with no skipping/jumping.  One criticism I’ve read about the player is that there’s no hard drive and no real buffering.  ( A interview with a Roku exec I read said they did some research, and found people didn’t want to hear a fan/HD spinning, thus one  reason it doesn’t have one.  Plus, they wanted to hit a price point, as well as eliminate as many parts that could fail.  Regardless of the reasons, so far, I don’t see a need for any of that with the connection speed I have.)</p>
-              <p><strong>Final Thoughts</strong>
-                All in all, first day in, it seems like a fine investment.  I found several more movies quickly browsing through the instant available selections (this has to be done on the computer, you can’t search for movies from the TV), so not counting the TV shows, I have 7 films queued up.  Plus the 3 DVD’s collecting dust, so I think I’ll be fine for the short term, they seem to be actively adding more content, and I’m sure as the player(s) gain popularity, they will be in a better bargaining position to obtain more.  If your goal is to watch a lot of new releases,  don’t plan on dropping your regular subscription down anytime soon.  However,  at $100, the player seems like a fair investment if you are a TV/movie junkie.  Also, there seems to be quite a bit of children’s content as well as History channel type documentaries, so the cost might be enticing to parents as well.</p>
-              <p>I’m sure I’ll discover more as I use it, please don’t hesitate to ask questions if you are interested in the player.</p>
-            </div>
-            <footer class="entry-footer">
-              <div class="entry-meta">
-                <div class="h-card">
-                  <a href="" class="entry-author-link" rel="author">
-                    <div class="auth-img">
-                      <img src="http://cdn.miklb.com/images/profile_4_16_sm.png" alt="Michael Bishop" class="u-photo">
-                    </div>
-                    <p>Author: <span class="p-author">Michael Bishop</span></p>
-                  </a>
-                </div>
-                <div class="meta-wrap">
-                  <p><a href="">Roku Netflix Player First Impressions </a> posted on <time datetime="2008-06-12T00:00:00+00:00" class="dt-time post-date">12 Jun 2008</time>.</p>
-                  <p>This entry has been tagged with the keywords: <a href="/tag/fios" class="p-category" rel="tag">fios </a><a href="/tag/netflix" class="p-category" rel="tag">netflix </a><a href="/tag/roku" class="p-category" rel="tag">roku </a><a href="/tag/player" class="p-category" rel="tag">player </a><a href="/tag/movies" class="p-category" rel="tag">movies </a><a href="/tag/tv" class="p-category" rel="tag">tv </a></p>
-                </div>
-              </div>
-            </footer>
-          </article>
-          <aside class="related-posts">
-            <h3>You might also be interested in:</h3>
-            <ul class="post-list">
-              <li>
-                <span class="post-date"><time datetime="2008-04-02T00:00:00+00:00" class="dt-time post-date">02 Apr 2008</time></span>
-                <a href="/verizon-fios-experiences">Verizon Fios Experiences</a>
-              </li>
-            </ul>
-          </aside>
-          <script id="webmention-hosted">
-            (function () {
-            var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-            url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-            url = url && url[0] ? url[0].href : false;
-            sn.type = "text/javascript"; sn.async = true;
-            sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-            s.parentNode.insertBefore(sn, s);
-            }());
-          </script>
-        </div>
-      </main>
+	  </h1>
+
+    <h2 class="p-summary p-bridgy-twitter-content">
+      
+    </h2>
+
+  </header>
+  <div class="e-content">
+      <p><img src="http://miklb.com/user/images/roku_netflix.jpg" class="left" alt="Netflix Player" />I had read a few things about the <a href="http://www.roku.com/netflixplayer/">Roku Netflix Player</a>, but hadn’t given it much thought.  Then, while watching the 3 DVD’s we had sitting around from Netflix for over 2 weeks collect dust, I began to think more about the player.  The 3 DVD at a time subscription is $16.99 a month, and as I said, we really don’t watch that many movies (I’m more a a TV junkie really), so it really hasn’t been a very good deal for us.  The Roku player is $100+ shipping and handling (more about that in a bit), and requires the $8.99 a month subscription or greater, which allows one DVD at a time, plus unlimited streaming movies.  So my thinking was, I would almost pay for the player in the first year downgrading to the lower subscription, it’s a no-brainer.  Plus, there’s a 30 day money back guarantee, so worst case scenario, I get it, it sucks, I send it back, and simply rethink the subscription plan regardless.  So a quick discussion with the lady of the house, and we decided to order it and give it a try.</p>
+
+<p>This was last Thursday.  We were given an option of spending an extra $10 on 2-day Fedex (on top of the $10 ground), so be the anxious geek, I pony up the extra money, thinking I’d have it on Monday.  Well, Roku sent an email saying the player would be shipped from the warehouse in the next 7-10 days on Friday, which rubbed me the wrong way, as that wasn’t mentioned in the order process, but OK.  Nothing else to my knowledge was emailed out (we used her email address).  So I was resolved to not see it for 2 weeks.  However, when I returned from running errands today, there it was sitting on my porch.</p>
+
+<p>Since ordering, I had done a bit more research, and the one downfall I have seen repeated over and over is the limited amount of content available, as Netflix has to obtain digital rights to the content before being able to offer it.  Consensus seemed to say that it is mostly older TV series, indie/foreign films, and few older major releases tossed in here and there.  I wasn’t too anxious to really look at the selection, as I wasn’t expecting to receive it for another week at least, but I’m more an indie/foreign film kinda fan than Spiderman 3 anyway, so as I said, I’ve got 30 days.</p>
+
+<p>As other reviews mention, it’s nothing but a simple little black box, with an external power supply.  A small, boxy remote and RCA cables fill out the included items.  Again, as I wasn’t expecting it so soon now, I hadn’t obtained additional cables (like optical audio to connect to the receiver or component video, which are all supported, as well as HDMI and  s-video).  I admit right up front I’m not the techno-geek when it comes to these aspects, so I’m not really qualified to say one thing or the other about the supported connections, etc.  The player can connect via wireless or ethernet (however, as I understand it, it doesn’t support 802.11n).  I gave the wireless a shot first, but figured I might have to run an ethernet cable.</p>
+
+<p>Set up was really easy, a simple onscreen walk through entering my WEP key, a quick connection to Netflix, update some (firmware??) and restart, it gives a code that you then enter into your Netflix account.  Maybe 5 minutes total, and my account was connected to the TV, any movies in my queue that were available for the Instant Viewing was added to that queue as well, and I could see them on the screen.  I poked around quickly on the site, looking for something to add.  Dexter season 1 was there, I never saw the first season, and figured it would be a good test.  I added it to my queue, and within 30 seconds or so, it showed up on the TV.  TV seasons only need the season added, all episodes are available, whereas with DVD’s you have to add each disc.  I navigated to episode one, clicked play, a few seconds later it starts downloading, I see <strong>•••• quality</strong> after it loads (still not sure what that means, but I think it has something to do with my connection.  I generally get 18Mb/s or better with my wireless connection, even faster wired).  All told, roughly a minute before the show started playing.</p>
+
+<p>Episode played fine, no skipping, no jumping, quality was as good as my FIOS cable (even with the included RCA cables).  Fast forwarding is a bit different, as they break shows up into little chapters of sorts, with stills for each section.  I haven’t really paid close enough attention yet to see what the time frame of each are, but they seem like 1 minute or so apiece. Different, but easy enough to adapt to.</p>
+
+<p>Being the TV junky that I am, I poked around a bit more, and found that a lot of Law and Order SVU/CI seasons were available.  I often find myself watching reruns on TNT and USA Network, as I never really watched the show during it’s first runs, and heck, why not just watch it in order without the annoying commercials on those networks?  I added SVU season one, and watched the first two episodes.  Again, quality was fine (once I switched the perspective back to 4:3 from 16:9), with no skipping/jumping.  One criticism I’ve read about the player is that there’s no hard drive and no real buffering.  ( A interview with a Roku exec I read said they did some research, and found people didn’t want to hear a fan/HD spinning, thus one  reason it doesn’t have one.  Plus, they wanted to hit a price point, as well as eliminate as many parts that could fail.  Regardless of the reasons, so far, I don’t see a need for any of that with the connection speed I have.)</p>
+
+<p><strong>Final Thoughts</strong>
+All in all, first day in, it seems like a fine investment.  I found several more movies quickly browsing through the instant available selections (this has to be done on the computer, you can’t search for movies from the TV), so not counting the TV shows, I have 7 films queued up.  Plus the 3 DVD’s collecting dust, so I think I’ll be fine for the short term, they seem to be actively adding more content, and I’m sure as the player(s) gain popularity, they will be in a better bargaining position to obtain more.  If your goal is to watch a lot of new releases,  don’t plan on dropping your regular subscription down anytime soon.  However,  at $100, the player seems like a fair investment if you are a TV/movie junkie.  Also, there seems to be quite a bit of children’s content as well as History channel type documentaries, so the cost might be enticing to parents as well.</p>
+
+<p>I’m sure I’ll discover more as I use it, please don’t hesitate to ask questions if you are interested in the player.</p>
+
+  </div>
+  <footer class="entry-footer">
+	  <div class="entry-meta">
+      <div class="h-card">
+		        <a href="" class="entry-author-link" rel="author">
+                  
+                  <div class="auth-img">
+                    <img src="http://cdn.miklb.com/images/profile_4_16_sm.png" alt="Michael Bishop" class="u-photo">
+                  </div>
+                  
+                  
+
+<p>Author: <span class="p-author">Michael Bishop</span></p>
+
+            </a>
+      </div>
+      <div class="meta-wrap">
+        <p><a href="">Roku Netflix Player First Impressions </a> posted on <time datetime="2008-06-12T00:00:00+00:00" class="dt-time post-date">12 Jun 2008</time>.</p>
+        <p>This entry has been tagged with the keywords: <a href="/tag/fios" class="p-category" rel="tag">fios </a><a href="/tag/netflix" class="p-category" rel="tag">netflix </a><a href="/tag/roku" class="p-category" rel="tag">roku </a><a href="/tag/player" class="p-category" rel="tag">player </a><a href="/tag/movies" class="p-category" rel="tag">movies </a><a href="/tag/tv" class="p-category" rel="tag">tv </a></p>
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </div>
+</footer>
+</article>
+
+<aside class="related-posts">
+  
+  <h3>You might also be interested in:</h3>
+  <ul class="post-list">
+  
+  <li>
+    <span class="post-date"><time datetime="2008-04-02T00:00:00+00:00" class="dt-time post-date">02 Apr 2008</time></span>
+     <a href="/verizon-fios-experiences">Verizon Fios Experiences</a>
+  </li>
+  
+</ul>
+
+</aside>
+
+
+<script id="webmention-hosted">
+(function () {
+var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+url = url && url[0] ? url[0].href : false;
+sn.type = "text/javascript"; sn.async = true;
+sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+s.parentNode.insertBefore(sn, s);
+}());
+</script>
+
+
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

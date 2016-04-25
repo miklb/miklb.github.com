@@ -1,186 +1,611 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/page6/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/page6/" />
-    <meta property="og:url" content="https://miklb.com/page6/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebPage",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/page6/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <main role="main">
-        <div class="content">
-          <div class="posts">
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/why-you-frontin">
-                  Why You Frontin'?
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/page6/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/page6/" />
+<meta property="og:url" content="https://miklb.com/page6/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/page6/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/why-you-frontin">
+        Why You Frontin'?
       </a>
-              </h1>
-              <time datetime="2014-10-17T00:00:00+00:00" class="dt-time post-date">17 Oct 2014</time>
-              <div class="e-content">
-                <p>Brooklyn Brewery to David Chang: <a href="http://www.gq.com/life/food/201410/garret-oliver-crappy-beer">You’re the Snob</a></p>
-                <blockquote>“Why you frontin'? You spent your first three paragraphs insulting people just like you…is the cash, fame and luxury not working out?”</blockquote>
-                <p>Hipsters gonna hipst.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/classic-american-chefs-honored-on-us-postage-stamps">
-                  Classic American Chefs Honored  on US Postage Stamps
-      </a>
-              </h1>
-              <time datetime="2014-10-07T00:00:00+00:00" class="dt-time post-date">07 Oct 2014</time>
-              <div class="e-content">
-                <p><img src="http://cdn.miklb.com/images/celebrity_chefs_stamps.png" alt="Celebrity Chef Stamp" /></p>
-                <p>Stumbling around the web this evening, came across this limited edition set of <a href="https://store.usps.com/store/browse/uspsProductDetailMultiSkuDropDown.jsp?categoryNav=false&amp;navAction=push&amp;navCount=0&amp;productId=S_472304&amp;categoryId=buy-stamps">5 American chefs celebrated on US Postage stamps</a>. The one chef that stood out to me was Edna Lewis. I suppose there <em>isn’t</em> another American who personified Southern, low-country cooking more than Ms Lewis, but was still surprised to see her along side Julia Child, James Beard and others. Not surprised as though she doesn’t belong, just that she’s not as much a household name.</p>
-                <p>When I first started cooking, I stumbled onto her book, <a href="http://www.amazon.com/gp/product/B00B0LP5I0/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00B0LP5I0&amp;linkCode=as2&amp;tag=miklb-20&amp;linkId=FLKS4ZL23UX56HNY">In Pursuit of Flavor</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=miklb-20&amp;l=as2&amp;o=1&amp;a=B00B0LP5I0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />(note, it doesn’t appear to be still in print, but a Kindle version is available). Its less a book of recipes—though they are in the book—rather more a look into <em>how</em> she cooked. It would be an understatement to say her words in that book shaped the way I approach food even to this day.</p>
-                <p>I think the names Childs and Beard speak for themselves. I’m not familiar with Felipe Rojas-Lombardi, and am only slightly familiar with Joyce Chen, but if they were deemed to be contemporaries of of Lewis and Child for their cuisines, I will look to learn about their contributions to the American plate.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/tunesday-this-is-my-jam-jason-molina">
-                  Tunesday (THIS is my Jam): Jason Molina
-      </a>
-              </h1>
-              <time datetime="2014-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2014</time>
-              <div class="e-content">
-                <p>I used to do these posts, and well, I got lost in social media and life…this evening though listening to music on my back porch (Airplay is awesome!) I went down a rabbit hole of my music library and found myself listening to Jason Molina.</p>
-                <p>I’m not sure when/how I discovered him; might have been after seeing My Morning Jacket at the New World Brewery in Tampa and finding his band Songs: Ohio did a split EP with MMJ. However it went, I was a fan. Pretty sure I saw him with Songs: Ohio, but I know I saw him solo. At least twice.</p>
-                <p>I was sad to read that he lost a battle. Think I read there’s a tribute album out there, but too lazy to link to it. Suffice to say, if you didn’t experience him when he walked this Earth, you might want to put him in your queue.</p>
-                <iframe width="640" height="480" src="http://www.youtube.com/embed/LghRPODxqJQ" frameborder="0" allowfullscreen=""></iframe>
-                <p>I have no idea if this was a “sanctioned” video or not, but it’s quite well done. I almost want to make my own with the epic Florida summer storm clouds I see daily while driving in west central Florida.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/more-about-using-my-blog">
-                  More About Using My Blog
-      </a>
-              </h1>
-              <time datetime="2014-07-27T00:00:00+00:00" class="dt-time post-date">27 Jul 2014</time>
-              <div class="e-content">
-                <p>My work life has prevented me from doing anything much related to online life, or writing much in general. That however doesn’t mean that during the hundreds of miles a day I’ve been driving that I don’t think about it. While catching up on my RSS feeds, this post from the Pastry Box, <a href="https://the-pastry-box-project.net/federico-brigante/2014-july-25">You don’t have time for perfection</a> sums up a lot of why I didn’t use it more when I actually did web development.</p>
-                <blockquote>I’ve had enough of maybe-later, of I’m too busy right now, of after I’m done with this. I’ll be publishing anything I think others will benefit from. Ten non-perfect pieces are better than zero wannabe-perfect ones.</blockquote>
-                <p>Perhaps from where  I’m sitting, it won’t always be what I think others might benefit from, rather a benefit to me. Be it saving a snippet of code for posterity (which <em>could</em> benefit others), reflecting on a moment or just sharing thoughts about a band. Anything to have it centralized and outside the walls of Facebook, Twitter and the like.</p>
-              </div>
-            </article>
-            <article class="post h-entry">
-              <h1 class="post-title p-name">
-                <a class="u-url" href="/stop-me">
-                  Stop Me If…
-      </a>
-              </h1>
-              <time datetime="2014-07-20T00:00:00+00:00" class="dt-time post-date">20 Jul 2014</time>
-              <div class="e-content">
-                <p><img src="http://cdn.miklb.com/images/stop.jpg" alt="Stop Sign" />
-                  …you’ve heard this before. I’m going to try to use this damn blog more. I’ve been tweaking it behind the scenes in my rare spare time the last couple of months, and I think I’ve gotten enough of what I want to be able to use this little corner of the web as it was intended–my digital hub. While i have found myself using Facebook more and more due to keeping tabs on IRL friends, I’ve used Twitter less and less due to a busy schedule and finding it difficult to follow conversations. I’d love to find an interface that made it easy to see all of the accounts I follow and put them into lists (does that exist on twitter.com?), in the mean time, I simply want to start collecting everything back here and sharing it to social media as I see fit.</p>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <a class="pagination-item older" href="/page7">Older</a>
-            <a class="pagination-item newer" href="/page5">Newer</a>
-          </div>
-        </div>
-      </main>
+    </h1>
+
+    <time datetime="2014-10-17T00:00:00+00:00" class="dt-time post-date">17 Oct 2014</time>
+    <div class="e-content">
+        <p>Brooklyn Brewery to David Chang: <a href="http://www.gq.com/life/food/201410/garret-oliver-crappy-beer">You’re the Snob</a></p>
+
+<blockquote>“Why you frontin'? You spent your first three paragraphs insulting people just like you…is the cash, fame and luxury not working out?”</blockquote>
+
+<p>Hipsters gonna hipst.</p>
+
     </div>
-    <footer class="site-footer" role="contentinfo">
-      <p>
-        Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/classic-american-chefs-honored-on-us-postage-stamps">
+        Classic American Chefs Honored  on US Postage Stamps
+      </a>
+    </h1>
+
+    <time datetime="2014-10-07T00:00:00+00:00" class="dt-time post-date">07 Oct 2014</time>
+    <div class="e-content">
+        <p><img src="http://cdn.miklb.com/images/celebrity_chefs_stamps.png" alt="Celebrity Chef Stamp" /></p>
+
+<p>Stumbling around the web this evening, came across this limited edition set of <a href="https://store.usps.com/store/browse/uspsProductDetailMultiSkuDropDown.jsp?categoryNav=false&amp;navAction=push&amp;navCount=0&amp;productId=S_472304&amp;categoryId=buy-stamps">5 American chefs celebrated on US Postage stamps</a>. The one chef that stood out to me was Edna Lewis. I suppose there <em>isn’t</em> another American who personified Southern, low-country cooking more than Ms Lewis, but was still surprised to see her along side Julia Child, James Beard and others. Not surprised as though she doesn’t belong, just that she’s not as much a household name.</p>
+
+<p>When I first started cooking, I stumbled onto her book, <a href="http://www.amazon.com/gp/product/B00B0LP5I0/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00B0LP5I0&amp;linkCode=as2&amp;tag=miklb-20&amp;linkId=FLKS4ZL23UX56HNY">In Pursuit of Flavor</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=miklb-20&amp;l=as2&amp;o=1&amp;a=B00B0LP5I0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />(note, it doesn’t appear to be still in print, but a Kindle version is available). Its less a book of recipes—though they are in the book—rather more a look into <em>how</em> she cooked. It would be an understatement to say her words in that book shaped the way I approach food even to this day.</p>
+
+<p>I think the names Childs and Beard speak for themselves. I’m not familiar with Felipe Rojas-Lombardi, and am only slightly familiar with Joyce Chen, but if they were deemed to be contemporaries of of Lewis and Child for their cuisines, I will look to learn about their contributions to the American plate.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/tunesday-this-is-my-jam-jason-molina">
+        Tunesday (THIS is my Jam): Jason Molina
+      </a>
+    </h1>
+
+    <time datetime="2014-08-05T00:00:00+00:00" class="dt-time post-date">05 Aug 2014</time>
+    <div class="e-content">
+        <p>I used to do these posts, and well, I got lost in social media and life…this evening though listening to music on my back porch (Airplay is awesome!) I went down a rabbit hole of my music library and found myself listening to Jason Molina.</p>
+
+<p>I’m not sure when/how I discovered him; might have been after seeing My Morning Jacket at the New World Brewery in Tampa and finding his band Songs: Ohio did a split EP with MMJ. However it went, I was a fan. Pretty sure I saw him with Songs: Ohio, but I know I saw him solo. At least twice.</p>
+
+<p>I was sad to read that he lost a battle. Think I read there’s a tribute album out there, but too lazy to link to it. Suffice to say, if you didn’t experience him when he walked this Earth, you might want to put him in your queue.</p>
+
+<iframe width="640" height="480" src="http://www.youtube.com/embed/LghRPODxqJQ" frameborder="0" allowfullscreen=""></iframe>
+
+<p>I have no idea if this was a “sanctioned” video or not, but it’s quite well done. I almost want to make my own with the epic Florida summer storm clouds I see daily while driving in west central Florida.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/more-about-using-my-blog">
+        More About Using My Blog
+      </a>
+    </h1>
+
+    <time datetime="2014-07-27T00:00:00+00:00" class="dt-time post-date">27 Jul 2014</time>
+    <div class="e-content">
+        <p>My work life has prevented me from doing anything much related to online life, or writing much in general. That however doesn’t mean that during the hundreds of miles a day I’ve been driving that I don’t think about it. While catching up on my RSS feeds, this post from the Pastry Box, <a href="https://the-pastry-box-project.net/federico-brigante/2014-july-25">You don’t have time for perfection</a> sums up a lot of why I didn’t use it more when I actually did web development.</p>
+<blockquote>I’ve had enough of maybe-later, of I’m too busy right now, of after I’m done with this. I’ll be publishing anything I think others will benefit from. Ten non-perfect pieces are better than zero wannabe-perfect ones.</blockquote>
+
+<p>Perhaps from where  I’m sitting, it won’t always be what I think others might benefit from, rather a benefit to me. Be it saving a snippet of code for posterity (which <em>could</em> benefit others), reflecting on a moment or just sharing thoughts about a band. Anything to have it centralized and outside the walls of Facebook, Twitter and the like.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/stop-me">
+        Stop Me If…
+      </a>
+    </h1>
+
+    <time datetime="2014-07-20T00:00:00+00:00" class="dt-time post-date">20 Jul 2014</time>
+    <div class="e-content">
+        <p><img src="http://cdn.miklb.com/images/stop.jpg" alt="Stop Sign" />
+…you’ve heard this before. I’m going to try to use this damn blog more. I’ve been tweaking it behind the scenes in my rare spare time the last couple of months, and I think I’ve gotten enough of what I want to be able to use this little corner of the web as it was intended–my digital hub. While i have found myself using Facebook more and more due to keeping tabs on IRL friends, I’ve used Twitter less and less due to a busy schedule and finding it difficult to follow conversations. I’d love to find an interface that made it easy to see all of the accounts I follow and put them into lists (does that exist on twitter.com?), in the mean time, I simply want to start collecting everything back here and sharing it to social media as I see fit.</p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page7">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page5">Newer</a>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-      </p>
-    </footer>
-    <script>
-            var cb = function() {
-              var l = document.createElement('link'); l.rel = 'stylesheet';
-              l.href = '/css/main.css';
-              var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
-         
-    </script>
-  </body>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
 </html>

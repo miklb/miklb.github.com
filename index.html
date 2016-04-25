@@ -1,148 +1,572 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-    <style type="text/css">
-      .site-header{ padding: 3% 6%; }
-      @media (max-width: 1000px){
-      .site-header{ padding: 3%; }
-      }
-      .content, .banner{ padding: 2.5% 20%; }
-      @media (max-width: 1000px){
-      .content, .banner{ padding: 7.5% 12.5%; }
-      }
-      html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
-      article, header, nav{ display: block; }
-      body{ line-height: 1; }
-       ul{ list-style: none; }
-      *{ box-sizing: border-box; }
-      body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
-      .site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
-      a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
-      .post p{ font-size: 1.25rem; margin: 1rem 0px; }
-      h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
-      h1{ font-size: 3.125rem; }
-      h2{ font-size: 2.25rem; margin-top: 1rem; }
-      .u-url{ color: rgb(5, 7, 9); text-decoration: none; }
-      .post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
-      .h-card h2{ color: rgb(255, 255, 255); }
-      .soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
-      .soc li{ display: inline-block; margin: 1em; }
-      .soc a, .soc svg{ display: block; }
-      .soc a{ height: 4rem; position: relative; width: 4rem; }
-      svg{ height: 100%; width: 100%; }
-      .icon{ color: rgb(204, 204, 204); fill: #cccccc; }
-       img{ max-width: 100%; }
-      .site-header{ width: 100%; }
-      @media (max-width: 600px){
-      .site-header{ }
-      .site-header .site-nav{ text-align: center; }
-      .site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
-      }
-      .site-nav{ text-align: right; }
-      .site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
-      .site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
-      .content{ display: inline-block; width: 100%; }
-      .content .posts .post{ margin-bottom: 5rem; }
-      .post-title a{ color: rgb(11, 26, 38); }
-      .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
-      .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-    </style>
-    <link rel="canonical" href="https://miklb.com/">
-    <link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
-    <link rel="shortcut icon" href="/public/favicon.png">
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-    <!-- Begin Jekyll SEO tag v1.3.3 -->
-    <title>Home - Miklb’s Mindless Ramblings</title>
-    <meta property="og:title" content="Home" />
-    <meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
-    <link rel="canonical" href="https://miklb.com/" />
-    <meta property="og:url" content="https://miklb.com/" />
-    <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-    <script type="application/ld+json">
-      {
-          "@context": "http://schema.org",
-          "@type": "WebSite",
-          "name": "Miklb’s Mindless Ramblings",
-          "headline": "Home",
-          "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
-          "logo": "https://miklb.compublic/favicon.png",
-          "url": "https://miklb.com/"
-        }
-    </script>
-    <!-- End Jekyll SEO tag -->
-  </head>
-  <body class="h-feed">
-    <header class="site-header" role="banner">
-      <a class="site-title" href="/">Miklb's Mindless Ramblings</a>
-      <nav class="site-nav" role="navigation">
-        <ul>
-          <li itemprop="url"><a  class="" href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="banner h-card">
-      <img class="u-photo" src="http://cdn.miklb.com/images/profile_4_16_sm.png">
-      <h2>Welcome to the website of <span class="p-name">Michael Bishop</span></h2>
-      <p>Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.</p>
-      <ul class="soc">
-        <li>
-          <a href="https://twitter.com/miklb" class="icon twitter" title="Twitter" rel="me">
-            <svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/miklb" class="icon github" title="GitHub" rel="me">
-              <svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg>
-              </a>
-            </li>
-            <li><a href="https://miklb.com /feed.xml " class="icon rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg></a></li>
-            </ul>
-          </div>
-          <div id="wrapper">
-            <main role="main">
-              <div class="content">
-                <div class="posts">
-                  <article class="post h-entry">
-                    <h1 class="post-title p-name">
-                      <a class="u-url" href="/performance-is-a-feature">
-                        Performance is a Feature
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
+
+	<style type="text/css">
+    .site-header{ padding: 3% 6%; }
+@media (max-width: 1000px){
+.site-header{ padding: 3%; }
+}
+.content, .banner{ padding: 2.5% 20%; }
+@media (max-width: 1000px){
+.content, .banner{ padding: 7.5% 12.5%; }
+}
+html, body, div, span, h1, h2, p, a, img, ul, li, article, header, nav, time{ margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; vertical-align: baseline; }
+article, header, nav{ display: block; }
+body{ line-height: 1; }
+ ul{ list-style: none; }
+*{ box-sizing: border-box; }
+body{ color: rgb(5, 7, 9); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neu', Arial, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; }
+.site-title{ font-size: 1.875rem; color: rgb(11, 26, 38); text-decoration: none; }
+a{ color: rgb(198, 0, 0); font-weight: 600; text-decoration: none; }
+.post p{ font-size: 1.25rem; margin: 1rem 0px; }
+h1, h2{ color: rgb(5, 7, 9); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; text-rendering: optimizelegibility; }
+h1{ font-size: 3.125rem; }
+h2{ font-size: 2.25rem; margin-top: 1rem; }
+.u-url{ color: rgb(5, 7, 9); text-decoration: none; }
+.post-date{ font-size: 1.25rem; color: rgb(204, 204, 204); text-transform: uppercase; }
+.h-card h2{ color: rgb(255, 255, 255); }
+.soc{ display: block; font-size: 0px; list-style: none; margin: 0px; padding: 1.5rem; text-align: center; }
+.soc li{ display: inline-block; margin: 1em; }
+.soc a, .soc svg{ display: block; }
+.soc a{ height: 4rem; position: relative; width: 4rem; }
+svg{ height: 100%; width: 100%; }
+.icon{ color: rgb(204, 204, 204); fill: #cccccc; }
+ img{ max-width: 100%; }
+.site-header{ width: 100%; }
+@media (max-width: 600px){
+.site-header{ }
+.site-header .site-nav{ text-align: center; }
+.site-header .site-nav a{ font-size: 1.5rem; color: rgb(11, 26, 38); letter-spacing: 2px; text-decoration: none; }
+}
+.site-nav{ text-align: right; }
+.site-nav > ul{ list-style: none; margin: 0px; padding: 0px; }
+.site-nav a{ font-size: 1.125rem; display: inline-block; padding: 20px; text-decoration: none; text-transform: uppercase; }
+.content{ display: inline-block; width: 100%; }
+.content .posts .post{ margin-bottom: 5rem; }
+.post-title a{ color: rgb(11, 26, 38); }
+.banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
+.banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
+
+  </style>
+
+	<link rel="canonical" href="https://miklb.com/">
+	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
+	<link rel="shortcut icon" href="/public/favicon.png">
+	
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	
+	<!-- Begin Jekyll SEO tag v1.3.3 -->
+<title>Home - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Home" />
+<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<meta property="og:description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between." />
+<link rel="canonical" href="https://miklb.com/" />
+<meta property="og:url" content="https://miklb.com/" />
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Miklb’s Mindless Ramblings",
+    "headline": "Home",
+    "description": "Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.",
+    "logo": "https://miklb.compublic/favicon.png",
+    "url": "https://miklb.com/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body class="h-feed">
+
+	<header class="site-header" role="banner">
+		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				
+      	 
+         
+         
+          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+							
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+         
+         
+        
+      
+			</ul>
+		</nav>
+	</header>
+	
+		<div class="banner h-card">
+		<img class="u-photo" src="http://cdn.miklb.com/images/profile_4_16_sm.png">
+		<h2>Welcome to the website of <span class="p-name">Michael Bishop</span></h2>
+
+		<p>Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.</p>
+		<ul class="soc">
+			
+		 		<li>
+	<a href="https://twitter.com/miklb" class="icon twitter" title="Twitter" rel="me">
+		<svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
+	</a>
+</li>
+
+		 	
+		 	
+				<li>
+	<a href="https://github.com/miklb" class="icon github" title="GitHub" rel="me">
+		<svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg>
+	</a>
+</li>
+
+			
+			
+			
+			
+			
+			
+			
+			
+
+			<li><a href="https://miklb.com /feed.xml " class="icon rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg></a></li>
+
+		</ul>
+
+	</div>
+
+	
+	<div id="wrapper">
+		<main role="main">
+			<div class="content">
+				<div class="posts">
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/performance-is-a-feature">
+        Performance is a Feature
       </a>
-                    </h1>
-                    <time datetime="2016-04-25T00:07:00+00:00" class="dt-time post-date">25 Apr 2016</time>
-                    <div class="e-content">
-                      <p>I spent last evening making the necessary tweaks to this site to get a perfect 100% score on Google’s
-                        <a href="https://developers.google.com/speed/pagespeed/insights/">Pagespeed Insights</a>. I understand this is just a personal site, but at the root,understanding how to make this site fast will translate to helping bigger projects keep an eye out for potential bottle necks.</p>
-                      <p>Which is why when Aaron Gustafson <a href="https://twitter.com/AaronGustafson/status/724448660076027904">tweeted</a> tweeted this posts headline, it caught my eye.</p>
-                      <blockquote>
-                        Either way, you could do much worse than to make your bit of the web fast.
-                        <cite><a href="https://peterchamberlin.com/fast.php">Peter Chamberlin</a></cite></blockquote>
-                      <p>The context was more broad and I believe directed towards larger sites, but it has to start omewhere.</p>
-                      <p><a href="https://developers.google.com/speed/pagespeed/insights/">Pagespeed Insights</a>. Now this site is just a personal site, but at the root, understanding how to make this site fast will translate to helping bigger projects keep an eye out for potential bottle necks.</p>
-                      <p><a href="https://brid.gy/publish/twitter"></a></p>
-                    </div>
-                  </article>
-                  <article class="post h-entry">
-                    <h1 class="post-title p-name">
-                      <a class="u-url" href="/customizing-atom-editor">
-                        Customizing Atom Editor
+    </h1>
+
+    <time datetime="2016-04-25T00:07:00+00:00" class="dt-time post-date">25 Apr 2016</time>
+    <div class="e-content">
+        <p>I spent last evening making the necessary tweaks to this site to get a perfect 100% score on Google’s
+<a href="https://developers.google.com/speed/pagespeed/insights/">Pagespeed Insights</a>. I understand this is just a personal site, but at the root,understanding how to make this site fast will translate to helping bigger projects keep an eye out for potential bottle necks.</p>
+
+<p>Which is why when Aaron Gustafson <a href="https://twitter.com/AaronGustafson/status/724448660076027904">tweeted</a> tweeted this posts headline, it caught my eye.</p>
+
+<blockquote>
+Either way, you could do much worse than to make your bit of the web fast.
+<cite><a href="https://peterchamberlin.com/fast.php">Peter Chamberlin</a></cite></blockquote>
+
+<p>The context was more broad and I believe directed towards larger sites, but it has to start somewhere.</p>
+
+<p>Also, I plan on sharing how I implemented the changes to get to 100%, specifically the critical CSS.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/customizing-atom-editor">
+        Customizing Atom Editor
       </a>
-                    </h1>
-                    <time datetime="2016-04-22T03:15:00+00:00" class="dt-time post-date">22 Apr 2016</time>
-                    <div class="e-content">
-                      <p>I doubt anyone who writes code for a living or tinkers for that matter hasn’t spent more hours than they’d care to admit tweaking their editor of choice. Suffice to say, I’m in that boat all to well.</p>
-                      <p>My current editor of choice is <a href="http://atom.io">Atom</a>. It’s open source and more than fits the customization itch.</p>
-                      <p>Aside from deciding on which packages to use (I’ve
-                        <a href="https://atom.io/users/miklb/stars">starred the ones I use</a>) the other element I’ve gone back and forth with is theme &amp; syntax UI. I’ve long been a fan of both Solarized Light and Dark, but have finally settled on Atom Dark and <a href="https://atom.io/themes/oceanic-next">Oceanic Next</a>. I can also recommend <a href="https://olivermak.es">Oliver Pattison’s</a> <a href="https://atom.io/users/opattison">Newbound syntax themes</a> My dream font is Operator Mono, but until I can justify the purchase of that, I’m using <a href="http://input.fontbureau.com/info/">Input</a>.</p>
-                      <p>One tweak I just discovered is for adjusting the font size in the panel, or the sidebar. I’d been able to easily make the font larger for code/markdown, but sometimes had to break the readers out to discern what file was what in a nested folder. To the rescue I found <code class="highlighter-rouge">atom-panel.tool-panel</code> for just that. I’m currently using <code class="highlighter-rouge">1.4em</code>. Mind you this is on my old 11 inch Air. I’ve not had as much an issue on the iMac.</p>
-                      <p>Another tweak I’ve added to my custom <code class="highlighter-rouge">styles.less</code> file is to italicize attributes. I’m also a fan of italicized comment blocks, which is included in the snippet.</p>
-                      <div class="highlighter-rouge">
-                        <pre class="highlight"><code><span class="na">atom-text-editor</span><span class="p">:</span><span class="o">:</span><span class="n">shadow</span><span class="err">{</span>
+    </h1>
+
+    <time datetime="2016-04-22T03:15:00+00:00" class="dt-time post-date">22 Apr 2016</time>
+    <div class="e-content">
+        <p>I doubt anyone who writes code for a living or tinkers for that matter hasn’t spent more hours than they’d care to admit tweaking their editor of choice. Suffice to say, I’m in that boat all to well.</p>
+
+<p>My current editor of choice is <a href="http://atom.io">Atom</a>. It’s open source and more than fits the customization itch.</p>
+
+<p>Aside from deciding on which packages to use (I’ve
+<a href="https://atom.io/users/miklb/stars">starred the ones I use</a>) the other element I’ve gone back and forth with is theme &amp; syntax UI. I’ve long been a fan of both Solarized Light and Dark, but have finally settled on Atom Dark and <a href="https://atom.io/themes/oceanic-next">Oceanic Next</a>. I can also recommend <a href="https://olivermak.es">Oliver Pattison’s</a> <a href="https://atom.io/users/opattison">Newbound syntax themes</a> My dream font is Operator Mono, but until I can justify the purchase of that, I’m using <a href="http://input.fontbureau.com/info/">Input</a>.</p>
+
+<p>One tweak I just discovered is for adjusting the font size in the panel, or the sidebar. I’d been able to easily make the font larger for code/markdown, but sometimes had to break the readers out to discern what file was what in a nested folder. To the rescue I found <code class="highlighter-rouge">atom-panel.tool-panel</code> for just that. I’m currently using <code class="highlighter-rouge">1.4em</code>. Mind you this is on my old 11 inch Air. I’ve not had as much an issue on the iMac.</p>
+
+<p>Another tweak I’ve added to my custom <code class="highlighter-rouge">styles.less</code> file is to italicize attributes. I’m also a fan of italicized comment blocks, which is included in the snippet.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="na">atom-text-editor</span><span class="p">:</span><span class="o">:</span><span class="n">shadow</span><span class="err">{</span>
      <span class="nc">.entity.other.attribute-name</span> <span class="err">{</span>
          <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="err">;</span>
      <span class="err">}</span>
@@ -152,82 +576,107 @@
      <span class="err">}</span>
  <span class="err">}</span>
 </code></pre>
-                      </div>
-                      <p>I’m sure as I expand my development world, (I have a goal to learn python by <a href="https://miklb.com/building-a-twitterbot">Building a Twitterbot</a> ) I’ll continue to tweak Atom, but for now, I’m as close to happy with an editor as I have ever been. Feel free to share with me on Twitter <a href="https://twitter.com/miklb">@miklb</a> your tips and trick.
-                        <a href="https://brid.gy/publish/twitter"></a></p>
-                    </div>
-                  </article>
-                  <article class="post h-entry">
-                    <h1 class="post-title p-name">
-                      <a class="u-url" href="/interest-in-tampa-homebrew-website-club">
-                        Interest in Tampa Homebrew Website Club?
+</div>
+<p>I’m sure as I expand my development world, (I have a goal to learn python by <a href="https://miklb.com/building-a-twitterbot">Building a Twitterbot</a> ) I’ll continue to tweak Atom, but for now, I’m as close to happy with an editor as I have ever been. Feel free to share with me on Twitter <a href="https://twitter.com/miklb">@miklb</a> your tips and trick.
+<a href="https://brid.gy/publish/twitter"></a></p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/interest-in-tampa-homebrew-website-club">
+        Interest in Tampa Homebrew Website Club?
       </a>
-                    </h1>
-                    <time datetime="2016-04-19T14:00:00+00:00" class="dt-time post-date">19 Apr 2016</time>
-                    <div class="e-content">
-                      <p>Gauging interest in Tampa to see if anyone would be up for joining a
-                        <a href="https://indiewebcamp.com/events/2016-04-06-homebrew-website-club">Homebrew Website Club</a>. A lot of tech folks have vey neglected personal sites and this would give folks a chance to get together and talk tech and work on their personal site and pet proejcts. Platform agnostic (read, not another WordPress meetup) so open to anyone. If interested ping me on <a href="https://twitter.com/miklb">Twitter @miklb</a> for now and I’ll sort out finding a location and setting up a time. Only looking for a couple of people to get off the ground.</p>
-                    </div>
-                  </article>
-                  <article class="post h-entry">
-                    <h1 class="post-title p-name">
-                      <a class="u-url" href="/headings-what-was-old-is-new-again">
-                        Headings - What Was Old is New Again
+    </h1>
+
+    <time datetime="2016-04-19T14:00:00+00:00" class="dt-time post-date">19 Apr 2016</time>
+    <div class="e-content">
+        <p>Gauging interest in Tampa to see if anyone would be up for joining a
+<a href="https://indiewebcamp.com/events/2016-04-06-homebrew-website-club">Homebrew Website Club</a>. A lot of tech folks have vey neglected personal sites and this would give folks a chance to get together and talk tech and work on their personal site and pet proejcts. Platform agnostic (read, not another WordPress meetup) so open to anyone. If interested ping me on <a href="https://twitter.com/miklb">Twitter @miklb</a> for now and I’ll sort out finding a location and setting up a time. Only looking for a couple of people to get off the ground.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/headings-what-was-old-is-new-again">
+        Headings - What Was Old is New Again
       </a>
-                    </h1>
-                    <time datetime="2016-04-18T13:10:00+00:00" class="dt-time post-date">18 Apr 2016</time>
-                    <div class="e-content">
-                      <p>Seems HTML WG has reversed course on a previous recommendation that allowed <code class="highlighter-rouge">sections</code> to have their own <code class="highlighter-rouge">H1</code> tag, now recommending the previous norm of cascading H tags.</p>
-                      <blockquote>
-                        Given that this bug has been around, and not fixed in browsers, for many  
+    </h1>
+
+    <time datetime="2016-04-18T13:10:00+00:00" class="dt-time post-date">18 Apr 2016</time>
+    <div class="e-content">
+        <p>Seems HTML WG has reversed course on a previous recommendation that allowed <code class="highlighter-rouge">sections</code> to have their own <code class="highlighter-rouge">H1</code> tag, now recommending the previous norm of cascading H tags.</p>
+
+<blockquote>
+Given that this bug has been around, and not fixed in browsers, for many  
 years, we are proposing to remove the suggestion, and return to the model  
 where elements `h1..h6` have a defined level of their own.
-                        <cite><a href="https://lists.w3.org/Archives/Public/public-html/2016Apr/0032.html">HTML WG</a></cite>
-                        <a href="https://brid.gy/publish/twitter"></a>
-                      </blockquote>
-                    </div>
-                  </article>
-                  <article class="post h-entry">
-                    <h1 class="post-title p-name">
-                      <a class="u-url" href="/dogfooding">
-                        Dogfooding
+<cite><a href="https://lists.w3.org/Archives/Public/public-html/2016Apr/0032.html">HTML WG</a></cite>
+
+
+<a href="https://brid.gy/publish/twitter"></a>
+</blockquote>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
+      <a class="u-url" href="/dogfooding">
+        Dogfooding
       </a>
-                    </h1>
-                    <time datetime="2016-04-17T17:27:00+00:00" class="dt-time post-date">17 Apr 2016</time>
-                    <div class="e-content">
-                      <p>Last night I switched over the <em>theme</em> for this site to a project I’ve been working on the last moth or so, <a href="https://github.com/miklb/jekyll-indieweb">Jekyll-IndieWeb</a>. While I have different design ideas, until I find other users interested in using it, I knew I needed to work out any kinks. I also wanted to have better microformat support until the design changes. Thus
-                        <a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food">dogfooding</a>.</p>
-                      <p>I will write more about the project once I have more documentation (and work out any more said kinks), but the gist is I wanted to provide someone new to Jekyll with a desire to be part of the
-                        <a href="https://indiewebcamp.com/">IndieWeb</a> a solid starting point. I rely heavily on the <code class="highlighter-rouge">_config.yml</code> file for options a user can set - profile pic, social media links, choice to include display of webmentions - to quickly get a personal site up and running. The biggest hurdle for me was providing a minimal design that was unopinionated yet still aesthetically appealing. Anyone familiar with HTML &amp; CSS can easily build upon or modify it, but if not, it shouldn’t look <em>ugly</em>.</p>
-                      <p>This has been the first solo project I’ve embarked on that was meant for public consumption from the start, which in itself has been a learning process. Now I just hope others can find it useful in some way. If the project interests you I encourage you to try it out, open any issues in the repo, or reach out on #indiewebcamp IRC, I tend to hang around there most days.</p>
-                      <p><a href="https://brid.gy/publish/twitter"></a></p>
-                    </div>
-                  </article>
-                </div>
-                <div class="pagination">
-                  <a class="pagination-item older" href="/page2">Older</a>
-                  <span class="pagination-item newer">Newer</span>
-                </div>
-              </div>
-            </main>
-          </div>
-          <footer class="site-footer" role="contentinfo">
-            <p>
-              Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+    </h1>
+
+    <time datetime="2016-04-17T17:27:00+00:00" class="dt-time post-date">17 Apr 2016</time>
+    <div class="e-content">
+        <p>Last night I switched over the <em>theme</em> for this site to a project I’ve been working on the last moth or so, <a href="https://github.com/miklb/jekyll-indieweb">Jekyll-IndieWeb</a>. While I have different design ideas, until I find other users interested in using it, I knew I needed to work out any kinks. I also wanted to have better microformat support until the design changes. Thus
+<a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food">dogfooding</a>.</p>
+
+<p>I will write more about the project once I have more documentation (and work out any more said kinks), but the gist is I wanted to provide someone new to Jekyll with a desire to be part of the
+<a href="https://indiewebcamp.com/">IndieWeb</a> a solid starting point. I rely heavily on the <code class="highlighter-rouge">_config.yml</code> file for options a user can set - profile pic, social media links, choice to include display of webmentions - to quickly get a personal site up and running. The biggest hurdle for me was providing a minimal design that was unopinionated yet still aesthetically appealing. Anyone familiar with HTML &amp; CSS can easily build upon or modify it, but if not, it shouldn’t look <em>ugly</em>.</p>
+
+<p>This has been the first solo project I’ve embarked on that was meant for public consumption from the start, which in itself has been a learning process. Now I just hope others can find it useful in some way. If the project interests you I encourage you to try it out, open any issues in the repo, or reach out on #indiewebcamp IRC, I tend to hang around there most days.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+
+    </div>
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page2">Older</a>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
+			</div>
+		</main>
+
+	</div>
+	<footer class="site-footer" role="contentinfo">
+<p>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
-            </p>
-          </footer>
-          <script>
-                  var cb = function() {
-                    var l = document.createElement('link'); l.rel = 'stylesheet';
-                    l.href = '/css/main.css';
-                    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-                  };
-                  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                      webkitRequestAnimationFrame || msRequestAnimationFrame;
-                  if (raf) raf(cb);
-                  else window.addEventListener('load', cb);
-               
-          </script>
-        </body>
-      </html>
+</p>
+
+	</footer>
+	<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+</body>
+
+</html>
