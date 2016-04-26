@@ -5,13 +5,38 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-04-25T14:21:15Z</updated>
+  <updated>2016-04-26T01:37:21Z</updated>
   <id>/</id>
   <author>
     <name></name>
     <email></email>
   </author>
   <rights type="text">Copyright © 2016 Michael Bishop. All rights reserved.</rights>
+  
+  <entry>
+    <title>Productivity Status Early 2016</title>
+    <link rel="alternate" type="text/html" href="/productivity-status-early-2016/?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-04-25T19:45:00Z</published>
+    <updated>2016-04-25T19:45:00+00:00</updated>
+    <id>/productivity-status-early-2016</id>
+    <content type="html"><![CDATA[ <p>I broke one of my new rules today by tweeting out more than politics snark or sports and briefly outlined the direction I’m moving with my <em>productivity</em> this year. I’ve been toiling the past year or so trying to shoehorn my brain into Omnifocus to no avail, so at the beginning of the year I started exploring other methods. About 2 weeks ago, my brain just started to work in regard to using <a href="https://www.taskpaper.com">TaskPaper</a>. If you aren’t familiar with TaskPaper, it is a plain text method of tracking todos that has tools built around it to filter by tags and projects. I’ve owned the app for awhile, but not until 3.0 was in beta did things begin to click within the app in regard to organizing projects. I always wanted (wrongly) to keep separate files for each project. Maybe that is one thing I learned using Omnifocus was structuring projects. Now everything personal is one single text file. I do have a separate one for the free lance work I’m doing because that’s a different mode. I don’t want to be distracted by anything when I’m trying to mow through items for work.</p>
+
+<p>The other element of my productivity was how to keep and better use Reminders.app and Siri. I knew TaskPaper had Applescript support, so that was the first place I looked. Sure enough, I found a script that would import from Reminders to TaskPaper. Unfortunately, TP3 changed it’s scripting method to new JXA, so the old Applescripts were not compatible. Luckily, someone did the work before I fried synapses trying to learn more advanced methods of JXA. A thread in the support forums,
+<a href="http://support.hogbaysoftware.com/t/appending-items-to-a-taskpaper-file-using-siri/1456/9">Using Siri</a> covered exactly what I wanted.</p>
+
+<p>From there, I devised the idea of having an “Inbox” for Siri and a corresponding list for TP. I also have a Grocery List and my main reminders is for timed items. I prefer Apple’s reminders because it’s nag is truly a nag. If something <strong>must</strong> be done on a certain day, it will sit on the lock screen of my phone. I can snooze it for an hour if it’s not time sensitive, and if it really can wait, I can put off until next day.</p>
+
+<p>Now I can say, “Hey, Siri, add build a robot to my inbox” and she will. Later, I can run the script which will migrate (including deleting) the reminder to an Inbox in TaskPaper, which I can move to an appropriate project or create a new one if it is warranted. My next goal is to set up a cron job on the always-on iMac to run the script every night.</p>
+
+<p>For iOS, I’ve tried a few different apps for TaskPaper, but it seems <a href="https://geo.itunes.apple.com/us/app/editorial/id673907758?at=10lKmy">Editorial</a> is going to stick. Also, I’ve not given up on Omnifocus for long term project tracking or potentially work related where contexts and due dates might be necessary, something OF excels at. An upcoming update to <a href="https://geo.itunes.apple.com/us/app/omnifocus-2/id904071710?at=10lKmy">Omnifocus for iOS</a> will vastly expand on the URL schemes, and there is already a demo using <a href="https://geo.itunes.apple.com/us/app/workflow-powerful-automation/id915249334?at=10lKmy">WorkFlow</a> to build projects in OF from TaskPaper formatted lists in Editorial. Sounds snazzy.</p>
+
+<p>All in all my new system isn’t that fancy or original, but again, that’s the trap of chasing productivity, apps and systems. They become complicated and burdensome to the point you abandon them for the next shiny object, never truly doing the stuff you really wanted to keep track of in the first place.</p>
+
+<p>I hope when I visit this in the fall, I’ve not made many changes and can focus on what I’ve accomplished over the summer.</p>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
   
   <entry>
     <title>Performance is a Feature</title>
@@ -188,41 +213,6 @@ Only usable by developers. About as accessible as improv Klingon slam poetry to 
     </li>
   </ol>
 </div>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Text Expander snippet for Jekyll With Slug for Permalink</title>
-    <link rel="alternate" type="text/html" href="/text-expander-snippet-for-jekyll-with-slug-for-permalink/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-02-06T00:00:00Z</published>
-    <updated>2016-02-06T00:00:00+00:00</updated>
-    <id>/text-expander-snippet-for-jekyll-with-slug-for-permalink</id>
-    <content type="html"><![CDATA[ <p>There are plenty of TextExpander snippets floating around for creating Jekyll Front Matter, however, I wanted to take it a step further, and auto-create a slugified permalink with no additional work. The other part of the equation was that I wanted it to be able to use it on TE touch, which meant it had to be done in javascript. After a little Googling, some trial and error, I came up with one that takes a text input for the post title, generates a slug from that, and includes the current date. I understand that the date in the file can be used, however I may not always publish when the file was initially created. Not to mention, when I imported all of my posts from Habari, I needed to be able to use the original post date, not the date the file was created, so I continue to use that. You can certainly modify the snippet for your needs.</p>
-
-<p>Also note, I have a blank variable for <em>summary</em>. Since I’m using webmentions, I use the summary as the text for a tweet, which would be different than an excerpt. Some of this may change when I redo the site redesign, but for now, it’s how I roll.</p>
-
-<p>I would love feedback on how to make the snippet better as it’s my first javascript snippet. Just leave a comment on the gist.</p>
-
-<noscript><pre>var title = &#39;%filltext:name=Title%&#39;;
-slug = title.replace(/[^\w\s]/gi, &#39;&#39;);
-var newslug = title.split(&quot; &quot;).join(&quot;-&quot;);
-
-var dt = new Date();
-
-TextExpander.appendOutput(&quot;---\n&quot;);
-TextExpander.appendOutput(&quot;layout: post \n&quot;);
-TextExpander.appendOutput(&quot;title: &quot; + &#39;&quot;&#39; +title + &#39;&quot;&#39;+ &quot;\n&quot;);
-TextExpander.appendOutput(&quot;tags: \n&quot;);
-TextExpander.appendOutput(&quot;published: true \n&quot;);
-TextExpander.appendOutput(&quot;permalink: &quot;) +TextExpander.appendOutput(newslug.toLowerCase()); + TextExpander.appendOutput(&quot; \n&quot;);
-TextExpander.appendOutput(&quot;date: &quot;) + TextExpander.appendOutput(dt.getFullYear() + &quot;-&quot; +(dt.getMonth() +1) + &quot;-&quot; + dt.getDate()) + TextExpander.appendOutput(&quot;\n&quot;);
-TextExpander.appendOutput(&quot;summary: \n&quot;);
-TextExpander.appendOutput(&quot;--- \n&quot;);
-
-// %filltop%</pre></noscript>
-<script src="https://gist.github.com/miklb/53a93032fb8cc669b1fa.js"> </script>
-
-<p><a href="https://brid.gy/publish/twitter"></a></p>
  ]]></content>
   </entry>
   
