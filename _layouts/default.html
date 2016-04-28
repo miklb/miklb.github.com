@@ -11,6 +11,8 @@
 	{% if page.frontpage != null %}
     <link rel="self" href="{{ site.url }}" type="text/html" />
   	<link rel="micropub" href="http://miklb-micropub.herokuapp.com/micropub/miklb.com" />
+		<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+		<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
   {% endif %}
 
 	<style type="text/css">
