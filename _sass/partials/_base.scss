@@ -30,6 +30,21 @@ a {
   }
 }
 
+.footnote {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+.footnotes {
+
+  ol {
+
+    li {
+      margin-left: 1rem;
+    }
+  }
+}
+
 // Quotes
 blockquote {
   border-left: 5px solid $quiet-color;
