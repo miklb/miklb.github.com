@@ -5,13 +5,23 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-04-28T07:58:49Z</updated>
+  <updated>2016-04-28T15:26:45Z</updated>
   <id>/</id>
   <author>
     <name></name>
     <email></email>
   </author>
   <rights type="text">Copyright © 2016 Michael Bishop. All rights reserved.</rights>
+  
+  <entry>
+    <title>Testing MicroPub</title>
+    <link rel="alternate" type="text/html" href="/title/?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-04-28T15:24:16Z</published>
+    <updated>2016-04-28T15:24:16+00:00</updated>
+    <id>/testing-micro-pub</id>
+    <content type="html"><![CDATA[ <p>What is going to happen?</p>
+ ]]></content>
+  </entry>
   
   <entry>
     <title>Productivity Status Early 2016</title>
@@ -190,29 +200,6 @@ Only usable by developers. About as accessible as improv Klingon slam poetry to 
 <p>Stay tuned for more adventures.</p>
 
 <p><a href="https://brid.gy/publish/twitter"></a></p>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>A Few Thoughts About WordPress REST API and Core</title>
-    <link rel="alternate" type="text/html" href="/a-few-thoughts-about-wordpress-rest-api-and-core/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-02-12T00:00:00Z</published>
-    <updated>2016-02-12T00:00:00+00:00</updated>
-    <id>/a-few-thoughts-about-wordpress-rest-api-and-core</id>
-    <content type="html"><![CDATA[ <p>There has been much written about the ~drama~ discussions surrounding the <a href="http://v2.wp-api.org">WordPress REST API</a> and inclusion in core. Or exclusion, depending on who’s take you are reading. <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> Suffice to say, the gist I’ve gathered is that there are two competing perspectives, one side wants to incrementally add the API, the other wants a fully fleshed out, complete API before inclusion in core.</p>
-
-<p>I guess my 2¢ on the matter is this—the core tenet of the <a href="http://wordpressfoundation.org">WordPress Foundation</a> is “to democratize publishing through Open Source, GPL software.” From what I’ve gathered reading on the subject, the REST API team have the publishing portion of the API covered and ready for inclusion in core. The parts that would come (much) later would be things like the customizer, file editing, more site <strong>management</strong> tools, less about actually publishing.</p>
-
-<p>If democratized publishing is still the guiding principle for WordPress the project, then I don’t see how there is any debate. Opening up the methods to publish beyond what has been the only means available for basically the entire life of the project seems like a no brainer to this guy who’s been around it for 11 years this year. No one will truly know how much is opened up until it is in the hands of creative developers and then in the hands of content creators.</p>
-
-<p><a href="https://brid.gy/publish/twitter"></a></p>
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>I’m specifically not linking to any of the <em>hot takes</em> on the subject. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
  ]]></content>
   </entry>
   
