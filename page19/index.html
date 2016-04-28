@@ -493,6 +493,24 @@ svg{ height: 100%; width: 100%; }
   
   <article class="post h-entry">
     <h1 class="post-title p-name">
+      <a class="u-url" href="/14-days-of-jquery">
+        14 Days of jQuery
+      </a>
+    </h1>
+
+    <time datetime="2010-01-09T00:00:00+00:00" class="dt-time post-date">09 Jan 2010</time>
+    <div class="e-content">
+        <p><img class="right" alt="jquery-logo" src="http://miklb.com/user/files/jquery-logo.png" />I will never be a javascript ninja, but that doesn’t stop me from voraciously collecting bookmarks to jQuery plugins and tutorlals. I’ve vowed to myself to become better acquainted with the library this year, and what better way than to follow <a href="http://jquery14.com/">14 Days of jQuery</a>? 14 Days of jQuery is launching on, wait, for it January 14<sup>th</sup>, to celebrate the release of jQuery 1.4, which happens to also be the birthday of the incredibly useful, lightweight library.</p>
+
+<p>What is particularly nice about this event is that it it’s being managed by the actual jQuery team, and not just some people looking to cash in on its popularity, so I look forward to the new releases, videos and tutorials that will be announced over the two weeks.</p>
+
+<p>They are also doing a promotion where if you donate $20 or more to the project, you get your choice of one of several  jquery/javascript e-books.  Budget permitting, I may cash in on that, as donating to an open source project is always good karma, and a book would go far towards my goal of becoming more familiar with jQuery.  I’ve got my eye on the <cite>jQuery for Designers</cite>, which probably would cover what I’m most interested in learning.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
       <a class="u-url" href="/iphone-apps-on-the-cheap">
         iPhone Apps on the Cheap
       </a>
@@ -580,34 +598,6 @@ Perhaps I’m just a sucker for a reason to say things are going to change, but 
 <p>Merlin’s video touches on these down times, and explains them as necessary distractions for the creative worker.  They allow to be mentally occupied just enough, but not so much as to prevent some higher thinking to go on, which can very well be a bigger part of the process of thinking about the <strong>stuff</strong> you are going to make.</p>
 
 <p>And indeed, if I were to classify writing a post that probably no one is going to read, but is something I wanted to do, it could be seen a positive form of procrastination as it free me up to start updating the code on the site, and wireframing the new design stuck in my head.</p>
-
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/url-shorteners-http-referers-and-301-redirects">
-        URL Shorteners, HTTP Referers and 301 Redirects
-      </a>
-    </h1>
-
-    <time datetime="2009-06-29T00:00:00+00:00" class="dt-time post-date">29 Jun 2009</time>
-    <div class="e-content">
-        <p>I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of <a href="http://mattread.com/">BigJibby</a> in the Habari IRC channel, I was able to get it working with Habari.</p>
-
-<p>I more or less forgot about it, until a few people noticed it and asked if it was a plugin.  When I replied it wasn’t, they asked if I could make it into one.  So it went into a to-do list I keep of Habari related ideas.  This evening I began working on it, and while troubleshooting how to actually output something to the entry single template (that’s a whole other can of worms), I discovered the code snippet wasn’t working.  With the help of <a href="http://twofishcreative.com/michael/blog/">Michael</a>, we discovered the problem wasn’t with the code snippet, rather it was with the URL shorteners.  Twitter recently started defaulting to <a href="http://bit.ly">Bit.ly</a>, and I recently began experimenting with <a href="http://tr.im">Tr.im</a>,  <span class="pquote-r">both of which weren’t sending twitter.com as the referrer.  Rather, due to their 301 redirect they return <strong>NULL</strong>.  Which in a nut shell sucks. </span></p>
-
-<p>Somehow Google Analytics is able to track referrals from Twitter, as last week when I had a huge upsurge in traffic from the popularity of the <a href="http://miklb.com/infinite-summer-bookmarks">Infinite Summer Bookmarks</a>, I’m seeing 50 visitors from Twitter the first day (of the 785, by far a record for this little weblog).</p>
-
-<p>At this point, finishing the plugin seems moot, as the only way to be sure that visitors will actually see the message would be to use a URL shortener that doesn’t return NULL, of which, the only one we found that to not be the case was Owen’s <a href="http://pastoid.com">Pastoid</a>.  I didn’t test Tinyurl, nor was I interested in looking for others.  The disappointment had already set in.  Besides that, if you are auto posting to Twitter with a plugin, you wouldn’t have the option to use a different shortener.</p>
-
-<p>So kind readers/stumble-uponers, if anyone has a solution to this problem, please enlighten me.  Meanwhile, I’ll work out the issue with Habari and my desire to output content on a single entry template within the content output, not above the body tag.</p>
-
-<p>For anyone interested in the snippet of code I am using:</p>
-
-<p><code>if ( parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) == 'twitter.com' ) {
-	    echo "&lt;h2 class='twittervisit'&gt;Welcome, Twitter visitor! If this post is useful, don't hesitate to retweet!&lt;/h2&gt;";
-</code></p>
 
     </div>
   </article>

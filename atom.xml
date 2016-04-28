@@ -5,7 +5,7 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-04-28T18:53:05Z</updated>
+  <updated>2016-04-28T18:53:16Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -105,6 +105,16 @@ Either way, you could do much worse than to make your bit of the web fast.
   </entry>
   
   <entry>
+    <title></title>
+    <link rel="alternate" type="text/html" href="/title/?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-04-19T17:19:28Z</published>
+    <updated>2016-04-19T17:19:28+00:00</updated>
+    <id>/62368</id>
+    <content type="html"><![CDATA[ <p>World's most expensive scratching post</p>
+ ]]></content>
+  </entry>
+  
+  <entry>
     <title>Interest in Tampa Homebrew Website Club?</title>
     <link rel="alternate" type="text/html" href="/interest-in-tampa-homebrew-website-club/?utm_source=RSS&amp;utm_medium=RSS" />
     <published>2016-04-19T14:00:00Z</published>
@@ -180,24 +190,6 @@ Only usable by developers. About as accessible as improv Klingon slam poetry to 
     <content type="html"><![CDATA[ <p>I had been plagued by an issue on my Macbook Air the last couple of months where iTunes would relaunch mysteriously. Not random relaunch mysteriously, more like, as soon as I quit, it would relaunch. I tried force quit and restarts. I trashed cache files and rebuilt the library to no avail. I filed bug reports and feedback to iTunes. Finally I reached out to @AppleSupport on Twitter. Right after (mind you, I DM’ed the account as they asked and so far no further reply) my internet friend <a href="https://twitter.com/shep">@shep</a> linked to a blog post of his from 4 years ago with his own <a href="https://iamshep.net/2012/08/the-never-ending-saga-of-itunes-launching-itself/">saga of iTunes relaunching</a>. I read through, and while I didn’t have headphones plugged in, I have dozed off a few times with my headphones in, and maybe, as he read about the microswitch in the jack, maybe, just maybe the headphones pulled out slightly &amp; not depressing said microswitch. So I forcefully inserted some headphones and quickly pulled the plug out of the jack. I quit iTunes and <em>so far</em>, iTunes hasn’t relaunched.</p>
 
 <p>Did I mention @AppleSupport hasn’t followed up yet?</p>
-
-<p><a href="https://brid.gy/publish/twitter"></a></p>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Building a Twitterbot</title>
-    <link rel="alternate" type="text/html" href="/building-a-twitterbot/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-04-03T00:00:00Z</published>
-    <updated>2016-04-03T00:00:00+00:00</updated>
-    <id>/building-a-twitterbot</id>
-    <content type="html"><![CDATA[ <p>I had an interest to learn the programming language python for quite some time. I’ve played around with it a little using <a href="https://geo.itunes.apple.com/us/app/pythonista/id528579881?at=10lKmy">Pythonista</a> in iOS to <a href="https://miklb.com/use-pythonista-to-get-weather-of-current-location-into-drafts-app">build a fishing log</a>, but otherwise have only done some cursory reading. Since I do best learning by doing, I needed an idea to <strong>use</strong> python. I’ve seen some interesting Twitterbots built with it, <a href="https://twitter.com/pomological">@pomological</a> being my recent favorite, but wasn’t sure what to build. Ultimately, the idea came to me to build a bot that retrieves an image from Flickr and builds a color scheme from that and post the scheme and original image. I’ve done some basic research and found some libraries to connect (you didn’t think I was going to write the whole thing from scratch?).</p>
-
-<p>But I don’t just want a any random image, so once I get the bot <em>working</em>, I want to be able to try and pull outdoor/landscape images. In a perfect world, I would post 3 images a day—morning, noon, and night. The morning image would be a sunrise, noon/daytime image a normal image and, you guessed it, the night/evening image would be a sunset.</p>
-
-<p>I figured I needed a name for the Twitterbot, not only to make sure something would be available, but since I would need API keys, that has been my first tangible step to create the bot. Thus, @Flickolorbot has been officially conceived.</p>
-
-<p>Stay tuned for more adventures.</p>
 
 <p><a href="https://brid.gy/publish/twitter"></a></p>
  ]]></content>
