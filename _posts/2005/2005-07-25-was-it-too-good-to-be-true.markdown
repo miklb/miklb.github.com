@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Was It  Too Good To Be True"
-tags: politics supreme-court national
+tags:
+  - politics
+  - supreme court
 published: true
 permalink: was-it-too-good-to-be-true
 date: 2005-07-25

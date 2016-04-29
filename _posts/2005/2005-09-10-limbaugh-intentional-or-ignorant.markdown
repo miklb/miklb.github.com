@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Limbaugh - Intentional or Ignorant"
-tags: politics rants limbaugh
+tags:
+  - politics
+  - Limbaugh
 published: true
 permalink: limbaugh-intentional-or-ignorant
 date: 2005-09-10

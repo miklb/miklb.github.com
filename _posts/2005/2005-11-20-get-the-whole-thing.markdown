@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Get the Whole Thing"
-tags: aside internet naptster marketing
+tags:
+  - internet
+  - naptster
+  - marketing
 published: true
 permalink: get-the-whole-thing
 date: 2005-11-20

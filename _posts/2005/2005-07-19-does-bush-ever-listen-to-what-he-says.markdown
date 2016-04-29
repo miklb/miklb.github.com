@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Does Bush Ever Listen to What He Says?"
-tags: politics rants bush national rove
+tags:
+  - politics
+  - Bush
+  - Rove
 published: true
 permalink: does-bush-ever-listen-to-what-he-says
 date: 2005-07-19

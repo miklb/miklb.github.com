@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "\"Culture of Corruption\""
-tags: politics rants delay national
+tags:
+  - politics
+  - Delay
 published: true
 permalink: culture-of-corruption
 date: 2005-09-28

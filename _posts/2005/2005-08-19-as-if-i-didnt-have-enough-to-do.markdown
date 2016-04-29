@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "As if I Didn't Have Enough To Do"
-tags: my-site geek-life wordpress-1
+tags:
+  - WordPress
 published: true
 permalink: as-if-i-didnt-have-enough-to-do
 date: 2005-08-19

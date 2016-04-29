@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Who Hired This Guy??"
-tags: politics my-site rants iraq
+tags:
+  - politics
+  - Iraq
 published: true
 permalink: who-hired-this-guy
 date: 2005-11-17

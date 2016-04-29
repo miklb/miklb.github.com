@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "A Brewing Storm of a Different Nature"
-tags: politics national frist
+tags:
+  - politics
+  - Frist
 published: true
 permalink: a-brewing-storm-of-a-different-nature
 date: 2005-09-24

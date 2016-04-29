@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "Jacob Appelbaum?s weblog"
-tags: blogging politics the-world-at-large hurricanes
+title: "Jacob Appelbaum's weblog"
+tags:
+  - blogging
+  - politics
+  - hurricanes
 published: true
-permalink: jacob-appelbaum25e225802599s-weblog
+permalink: jacob-appelbaums-weblog
 date: 2005-09-08
 ---
 

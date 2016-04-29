@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Breaking! Scanlon pleads out, to testify against Abramoff"
-tags: politics delay abramoff
+tags:
+  - politics
+  - Delay
+  - Abramoff
 published: true
 permalink: breaking-scanlon-pleads-out-to-testify-against-abramoff
 date: 2005-11-21

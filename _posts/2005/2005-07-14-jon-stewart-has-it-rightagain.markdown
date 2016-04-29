@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "Jon Stewart Has it Right,Again"
-tags: politics rants bush national cheney rove
+tags:
+  - politics
+  - Bush
+  - Cheney
+  - Rove
 published: true
 permalink: jon-stewart-has-it-rightagain
 date: 2005-07-14

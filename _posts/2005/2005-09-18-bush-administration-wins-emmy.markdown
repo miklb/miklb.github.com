@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Bush Administration Wins Emmy"
-tags: the-world-at-large bush television jon-stewart
+tags:
+  - Bush
+  - television
+  - Jon Stewart
 published: true
 permalink: bush-administration-wins-emmy
 date: 2005-09-18

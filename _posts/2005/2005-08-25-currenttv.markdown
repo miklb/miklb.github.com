@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Current.tv"
-tags: geek-life the-world-at-large
+tags:
+  - news
+  - cable
 published: true
 permalink: currenttv
 date: 2005-08-25

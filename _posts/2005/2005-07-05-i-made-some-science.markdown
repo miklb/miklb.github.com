@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "I Made Some Science"
-tags: blogging my-site geek-life
+tags:
+ - blogging 
 published: true
 permalink: i-made-some-science
 date: 2005-07-05

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Delving into Asides"
-tags: aside
+tags:
 published: true
 permalink: delving-into-asides
 date: 2005-10-25

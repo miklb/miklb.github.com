@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "The Situation Room"
-tags: rants cnn
+tags:
+  - cnn
 published: true
 permalink: the-situation-room
 date: 2005-08-19

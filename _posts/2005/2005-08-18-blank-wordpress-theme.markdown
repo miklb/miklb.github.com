@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "&quot;Blank&quot; WordPress Theme"
-tags: blogging design my-site geek-life wordpress-1
+tags:
+  - blogging
+  - design
+  - WordPress
 published: true
 permalink: blank-wordpress-theme
 date: 2005-08-18
@@ -9,7 +12,7 @@ date: 2005-08-18
 
 <strong>I'm offering up an updated, beta version <a href="http://www.miklb.com/wordpress-blank-theme-v2beta/">here</a>.</strong>
 
-So, as I've begun designing WordPress themes, I found the tutorial over at <a href="http://www.urbangiraffe.com/themes/guides">Urban Giraffe</a> invaluable.  They walk you through the dissection of the default Kubrick theme, how to strip it down to bare bones, and start with a blank style sheet.  Now that I've done that a couple of times, I decided it would be nice to have all the work done, and be able to have all the template files cleaned, as well as a style sheet with all the divs and classes there, simply without the style. 
+So, as I've begun designing WordPress themes, I found the tutorial over at <a href="http://www.urbangiraffe.com/themes/guides">Urban Giraffe</a> invaluable.  They walk you through the dissection of the default Kubrick theme, how to strip it down to bare bones, and start with a blank style sheet.  Now that I've done that a couple of times, I decided it would be nice to have all the work done, and be able to have all the template files cleaned, as well as a style sheet with all the divs and classes there, simply without the style.
 <!--more-->
  So rather than changing an existing sheet, it's a blank canvass or sorts, but kinda like a paint by numbers as well.
 Bear in mind, I may have missed a few elements, and if you discover one missing, please comment.  My goal is to have as thorough a starting point as possible.  Also note, numerous additional divs and classes can be added, this is simply a starting point, but covers as much of the basics as possible.

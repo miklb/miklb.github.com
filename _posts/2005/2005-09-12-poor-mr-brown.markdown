@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Poor Mr Brown"
-tags: politics rants bush fema
+tags:
+  - politics
+  - Bush
+  - FEMA
 published: true
 permalink: poor-mr-brown
 date: 2005-09-12

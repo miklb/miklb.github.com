@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "WordPress 2.0 Beta"
-tags: blogging my-site blog 20-beta wordpress-1
+tags:
+  - blogging
+  - WordPress
 published: true
 permalink: wordpress-20-beta
 date: 2005-11-19

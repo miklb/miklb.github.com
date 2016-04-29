@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Don't Blink...Hurricane Irene"
-tags: tropical-weather hurricanes
+tags:
+  - tropical
+  - weather
+  - hurricanes
 published: true
 permalink: dont-blinkhurricane-irene
 date: 2005-08-11

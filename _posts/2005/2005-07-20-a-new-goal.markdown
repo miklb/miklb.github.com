@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "A New Goal?"
-tags: blogging my-site geek-life the-world-at-large cnn wordpress-1
+tags:
+  - blogging
+  - WordPress
 published: true
 permalink: a-new-goal
 date: 2005-07-20

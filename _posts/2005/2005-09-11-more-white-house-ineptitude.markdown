@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "More White House Ineptitude"
-tags: politics rants white-house hurricanes mclellan
+tags:
+  - politics
+  - White House
+  - hurricanes
+  - Mclellan
 published: true
 permalink: more-white-house-ineptitude
 date: 2005-09-11

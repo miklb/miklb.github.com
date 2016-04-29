@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Blogging with MarsEdit"
-tags: blogging apple my-site geek-life wordpress-1
+tags:
+  - blogging
+  - Apple
+  - WordPress
 published: true
 permalink: blogging-with-marsedit
 date: 2005-09-18

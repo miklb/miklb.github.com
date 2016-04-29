@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Just a test, move along..."
-tags: blogging apple my-site geek-life wordpress-1
+tags:
+  - blogging
+  - Apple
+  - WordPress
 published: true
 permalink: just-a-test-move-along
 date: 2005-09-18

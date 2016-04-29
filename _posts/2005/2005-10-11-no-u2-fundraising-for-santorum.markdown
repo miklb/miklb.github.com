@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "No U2 fundraising for Santorum"
-tags: politics rants national
+tags:
+  - politics
 published: true
 permalink: no-u2-fundraising-for-santorum
 date: 2005-10-11

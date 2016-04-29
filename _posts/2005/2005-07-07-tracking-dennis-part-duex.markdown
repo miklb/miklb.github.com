@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Tracking Dennis, part Duex"
-tags: tropical-weather hurricanes
+tags:
+  - tropical
+  - weather
+  - hurricanes
 published: true
 permalink: tracking-dennis-part-duex
 date: 2005-07-07

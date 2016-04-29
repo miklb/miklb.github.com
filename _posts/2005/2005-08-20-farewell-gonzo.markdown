@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Farewell Gonzo"
-tags: art the-world-at-large
+tags:
+  - art
 published: true
 permalink: farewell-gonzo
 date: 2005-08-20

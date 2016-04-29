@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "KATRINA TIMELINE"
-tags: politics rants hurricanes
+tags:
+  - politics
+  - hurricanes
 published: true
 permalink: katrina-timeline
 date: 2005-09-07

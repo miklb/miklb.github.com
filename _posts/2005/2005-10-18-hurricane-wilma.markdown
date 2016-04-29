@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Hurricane Wilma"
-tags: my-site tropical-weather hurricanes
+tags:
+  - tropical
+  - weather
+  - hurricanes
 published: true
 permalink: hurricane-wilma
 date: 2005-10-18

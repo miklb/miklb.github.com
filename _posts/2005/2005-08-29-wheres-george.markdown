@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Where's George?"
-tags: politics rants bush hurricanes
+tags:
+  - politics
+  - Bush
+  - hurricanes
 published: true
 permalink: wheres-george
 date: 2005-08-29

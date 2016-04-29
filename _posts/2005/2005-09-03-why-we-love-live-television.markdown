@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Why We Love Live Television"
-tags: politics rants television kanye-west
+tags:
+  - politics
+  - television
+  - Kanye West
 published: true
 permalink: why-we-love-live-television
 date: 2005-09-03

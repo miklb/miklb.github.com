@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Another Miss by the Hammer"
-tags: politics rants delay national
+tags:
+  - politics
+  - Delay
 published: true
 permalink: another-miss-by-the-hammer
 date: 2005-10-21

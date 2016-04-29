@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Pardon the dust"
-tags: blogging design my-site wordpress-1
+tags:
+  - blogging
+  - design
+  - WordPress
 published: true
 permalink: pardon-the-dust
 date: 2005-10-24

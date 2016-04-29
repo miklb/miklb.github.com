@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "No More Free NY Times"
-tags: my-site the-world-at-large ny-times
+tags:
+  - NY Times
 published: true
 permalink: no-more-free-ny-times
 date: 2005-09-18

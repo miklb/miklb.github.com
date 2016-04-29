@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Army Doing Combat Missions in Nawlins"
-tags: rants hurricanes
+tags:
+  - hurricanes
 published: true
 permalink: army-doing-combat-missions-in-nawlins
 date: 2005-09-06

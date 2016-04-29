@@ -1,7 +1,13 @@
 ---
 layout: post
 title: "Well, It's a Start"
-tags: blogging design my-site flickr moblog gallery wordpress-1
+tags:
+  - blogging
+  - design
+  - Flickr
+  - moblog
+  - gallery
+  - WordPress
 published: true
 permalink: well-its-a-start
 date: 2005-10-25

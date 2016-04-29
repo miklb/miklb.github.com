@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "To Gravatar or not?"
-tags: aside
+tags:
 published: true
 permalink: to-gravatar-or-not
 date: 2005-10-25

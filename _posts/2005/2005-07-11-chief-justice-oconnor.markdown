@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Chief Justice O'Connor?"
-tags: politics rants bush supreme-court national
+tags:
+  - politics
+  -  Bush
+  - supreme court
 published: true
 permalink: chief-justice-oconnor
 date: 2005-07-11

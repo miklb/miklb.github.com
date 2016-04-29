@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Corporate Money cause Bloggers Risk Their Rebel Reputation - New York Times"
-tags: blogging aside blog bloggers advertising
+tags:
+  - blogging
+  - advertising
 published: true
 permalink: corporate-money-cause-bloggers-risk-their-rebel-reputation-new-york-times
 date: 2005-11-25

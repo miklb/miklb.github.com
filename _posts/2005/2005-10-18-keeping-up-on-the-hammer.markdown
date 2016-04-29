@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Keeping Up on the Hammer"
-tags: politics rants delay national
+tags:
+  - politics
+  - Delay
 published: true
 permalink: keeping-up-on-the-hammer
 date: 2005-10-18

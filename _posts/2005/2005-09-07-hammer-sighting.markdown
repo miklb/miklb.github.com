@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Hammer Sighting..."
-tags: politics rants delay national
+tags:
+  - politics
+  - Delay
 published: true
 permalink: hammer-sighting
 date: 2005-09-07

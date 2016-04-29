@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "A Sheep in Wolf (Blitzer's) Clothing"
-tags: politics rants cnn
+tags:
+  - politics
+  - cnn
 published: true
 permalink: a-sheep-in-wolf-blitzers-clothing
 date: 2005-07-24

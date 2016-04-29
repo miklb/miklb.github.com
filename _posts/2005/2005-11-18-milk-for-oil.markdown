@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Milk for Oil?"
-tags: politics my-site national hastert milc dairy wisconsin food
+tags:
+  - politics
+  - Hastert
+  - Wisconsin
 published: true
 permalink: milk-for-oil
 date: 2005-11-18

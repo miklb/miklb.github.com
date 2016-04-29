@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Yet Another View on the Wilson's"
-tags: politics rants national rove
+tags:
+  - politics
+  - Rove
 published: true
 permalink: yet-another-view-on-the-wilsons
 date: 2005-07-24

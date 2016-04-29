@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "ZazzleStamps"
-tags: aside geek-life flickr zazzle
+tags:
+  - Flickr
+  - Zazzle
 published: true
 permalink: zazzlestamps
 date: 2005-11-09

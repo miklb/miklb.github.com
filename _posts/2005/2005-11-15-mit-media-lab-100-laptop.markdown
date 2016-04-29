@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "MIT Media Lab: $100 Laptop"
-tags: aside geek-life education united-nations technology
+tags:
+  - education
+  - United Nations
+  - technology
 published: true
 permalink: mit-media-lab-100-laptop
 date: 2005-11-15

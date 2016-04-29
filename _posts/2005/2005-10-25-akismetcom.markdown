@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Akismet.com"
-tags: aside spam akismet anti-spam wordpress-1
+tags:
+  - spam
+  - akismet
+  - WordPress
 published: true
 permalink: akismetcom
 date: 2005-10-25

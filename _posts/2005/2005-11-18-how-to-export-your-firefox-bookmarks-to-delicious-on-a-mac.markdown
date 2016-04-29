@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "How to Export your FireFox Bookmarks to Del.icio.us on a Mac"
-tags: firefox browsers my-site geek-life delicious python
+tags:
+  - Firefox
+  - browsers
+  - delicious
+  - python
 published: true
 permalink: how-to-export-your-firefox-bookmarks-to-delicious-on-a-mac
 date: 2005-11-18

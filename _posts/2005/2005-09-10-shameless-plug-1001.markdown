@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Shameless Plug #1001"
-tags: blogging my-site geek-life wordpress-1
+tags:
+  - blogging
+  - WordPress
 published: true
 permalink: shameless-plug-1001
 date: 2005-09-10

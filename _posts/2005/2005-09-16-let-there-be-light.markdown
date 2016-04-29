@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "Let There Be Light"
-tags: politics rants bush white-house hurricanes
+tags:
+  - politics
+  - Bush
+  - White House
+  - hurricanes
 published: true
 permalink: let-there-be-light
 date: 2005-09-16

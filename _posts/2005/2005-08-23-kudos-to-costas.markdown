@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Kudos to Costas "
-tags: politics the-world-at-large cnn
+tags:
+  - politics
+  - cnn
 published: true
 permalink: kudos-to-costas
 date: 2005-08-23

@@ -1,7 +1,11 @@
 ---
 layout: post
 title: " Bad Behavior 2 Roadmap"
-tags: blogging my-site geek-life spam akismet anti-spam wordpress-1
+tags:
+  - blogging
+  - spam
+  - akismet
+  - WordPress
 published: true
 permalink: bad-behavior-2-roadmap
 date: 2005-10-27

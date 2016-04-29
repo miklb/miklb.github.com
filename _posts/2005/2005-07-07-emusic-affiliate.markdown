@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Emusic Affiliate"
-tags: music my-site
+tags:
+ - music
 published: true
 permalink: emusic-affiliate
 date: 2005-07-07

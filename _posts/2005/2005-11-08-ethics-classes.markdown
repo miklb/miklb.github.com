@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Ethics Classes"
-tags: politics rants bush national white-house
+tags:
+  - politics
+  - Bush
+  - White House
 published: true
 permalink: ethics-classes
 date: 2005-11-08

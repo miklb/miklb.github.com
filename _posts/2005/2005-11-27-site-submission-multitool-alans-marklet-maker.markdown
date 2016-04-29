@@ -1,7 +1,12 @@
 ---
 layout: post
 title: "Site Submission MultiTool- Alan's Marklet Maker"
-tags: tags geek-life bookmarks delicious tagging blinklist webtools
+tags:
+  - bookmarks
+  - delicious
+  - tagging
+  - blinklist
+  - webtools
 published: true
 permalink: site-submission-multitool-alans-marklet-maker
 date: 2005-11-27

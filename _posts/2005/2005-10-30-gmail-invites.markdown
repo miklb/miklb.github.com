@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Gmail invites?"
-tags: aside gmail geek-life flock wordpress-1
+tags:
+  - gmail
+  - Flock
+  - WordPress
 published: true
 permalink: gmail-invites
 date: 2005-10-30

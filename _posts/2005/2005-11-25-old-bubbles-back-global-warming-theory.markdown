@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "Old bubbles back global warming theory"
-tags: aside politics environment bush global-warming
+tags:
+  - politics
+  - environment
+  - Bush
+  - global warming
 published: true
 permalink: old-bubbles-back-global-warming-theory
 date: 2005-11-25

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Frog March, Witch Hunt, or Much Ado About Nothing?"
-tags: politics rants national rove
+tags:
+  - politics
 published: true
 permalink: frog-march-witch-hunt-or-much-ado-about-nothing
 date: 2005-07-12

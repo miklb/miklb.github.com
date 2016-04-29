@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Rehnquist Passes"
-tags: politics rants bush supreme-court
+tags:
+  - politics
+  - Bush
+  - Supreme Court
 published: true
 permalink: rehnquist-passes-1
 date: 2005-09-03

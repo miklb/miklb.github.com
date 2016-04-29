@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "First Domino Falls "
-tags: politics delay national
+tags:
+  - politics
+  - Delay
 published: true
 permalink: first-domino-falls
 date: 2005-08-12

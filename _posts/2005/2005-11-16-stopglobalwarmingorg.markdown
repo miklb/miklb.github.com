@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Stopglobalwarming.org"
-tags: aside global-warming enviroment
+tags:
+  - global warming
+  - environment
 published: true
 permalink: stopglobalwarmingorg
 date: 2005-11-16

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "If I had been Bush..."
-tags: politics bush national
+tags:
+  - politics
+  - Bush
 published: true
 permalink: if-i-had-been-bush
 date: 2005-08-04

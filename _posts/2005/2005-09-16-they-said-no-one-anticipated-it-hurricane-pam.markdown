@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "They Said No One Anticipated It - Hurricane Pam"
-tags: politics rants hurricanes fema
+tags:
+ - politics
+ - hurricanes
+ - FEMA
 published: true
 permalink: they-said-no-one-anticipated-it-hurricane-pam
 date: 2005-09-16

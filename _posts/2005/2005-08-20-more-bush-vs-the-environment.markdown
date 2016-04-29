@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "More Bush vs the Environment"
-tags: politics rants bush national
+tags:
+  - politics
+  - Bush
 published: true
 permalink: more-bush-vs-the-environment
 date: 2005-08-20

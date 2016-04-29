@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "del.icio.us"
-tags: aside tags web social-bookmarking deliciousdelicious
+tags:
+  - tags  
+  - bookmarking
+  - delicious
 published: true
 permalink: delicious
 date: 2005-11-22

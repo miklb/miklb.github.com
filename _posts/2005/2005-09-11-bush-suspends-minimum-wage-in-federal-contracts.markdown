@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "Bush Suspends Minimum Wage in Federal Contracts"
-tags: politics rants bush hurricanes economics
+tags:
+  - politics
+  - Bush
+  - hurricanes
+  - economics
 published: true
 permalink: bush-suspends-minimum-wage-in-federal-contracts
 date: 2005-09-11

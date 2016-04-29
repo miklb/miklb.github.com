@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When Things Are Going Good..."
-tags: geek-life
+tags:
 published: true
 permalink: when-things-are-going-good
 date: 2005-08-24

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "High and Tight"
-tags: politics rants supreme-court
+tags:
+ - politics 
+ - Supreme Court
 published: true
 permalink: high-and-tight
 date: 2005-09-13

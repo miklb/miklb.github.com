@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "And for the Main Event..."
-tags: politics rants delay national television cnn
+tags:
+  - politics
+  - Delay
+  - television
+  - cnn
 published: true
 permalink: and-for-the-main-event
 date: 2005-09-28

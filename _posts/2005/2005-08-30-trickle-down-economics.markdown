@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Trickle Down Economics?"
-tags: politics rants bush economics
+tags:
+  - politics
+  - Bush
+  - economics
 published: true
 permalink: trickle-down-economics
 date: 2005-08-30

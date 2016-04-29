@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Plazes"
-tags: aside my-site geek-life plaze
+tags:
+  - Plaze
 published: true
 permalink: plazes
 date: 2005-11-08

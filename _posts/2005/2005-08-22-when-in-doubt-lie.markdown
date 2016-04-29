@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "When In Doubt, Lie"
-tags: politics rants iraq bush
+tags:
+  - politics
+  - Iraq
+  - Bush
 published: true
 permalink: when-in-doubt-lie
 date: 2005-08-22

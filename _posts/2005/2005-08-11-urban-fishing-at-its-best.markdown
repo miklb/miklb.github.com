@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Urban Fishing at its Best"
-tags: tampa fishing working
+tags:
+  - Tampa
+  - fishing
 published: true
 permalink: urban-fishing-at-its-best
 date: 2005-08-11

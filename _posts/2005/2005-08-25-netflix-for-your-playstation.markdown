@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Netflix for your Playstation"
-tags: geek-life
+tags:
+  - Gamefly
 published: true
 permalink: netflix-for-your-playstation
 date: 2005-08-25

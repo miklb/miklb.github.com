@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Rehnquist Passes"
-tags: 
+tags:
+ - Supreme Court 
 published: true
 permalink: rehnquist-passes
 date: 2005-09-03

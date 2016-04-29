@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Konfabulator Now Freeware"
-tags: apple geek-life
+tags:
+  - Apple
 published: true
 permalink: konfabulator-now-freeware
 date: 2005-07-25

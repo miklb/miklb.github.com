@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Eery.  Very Eery"
-tags: the-world-at-large tropical-weather hurricanes
+tags:
+  - tropical
+  - weather
+  - hurricanes
 published: true
 permalink: eery-very-eery
 date: 2005-08-30

@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "SlimStat "
-tags: aside web blog stats slimstat
+tags:  
+  - slimstat
+  - blogging
+  - analytics
 published: true
 permalink: slimstat
 date: 2005-11-21
