@@ -26,6 +26,7 @@ deploy:
   upload-dir: media
   skip_cleanup: true
   local-dir: media
+  acl: public_read
   on:
     branch: jekyll
 env:
