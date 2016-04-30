@@ -30,6 +30,8 @@ gems:
  - jekyll/tagging
  - jekyll-tagging-related_posts
 
+exclude:
+  - vendor
 # Assets
 # We specify the directory for Jekyll so we can use @imports.
 sass:
