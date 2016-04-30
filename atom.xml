@@ -5,7 +5,7 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-04-29T02:46:23Z</updated>
+  <updated>2016-04-30T06:24:07Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -15,10 +15,10 @@
   
   <entry>
     <title>Testing MicroPub</title>
-    <link rel="alternate" type="text/html" href="/title/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-04-28T15:24:16Z</published>
-    <updated>2016-04-28T15:24:16+00:00</updated>
-    <id>/testing-micro-pub</id>
+    <link rel="alternate" type="text/html" href="/2016/04/28/testing-micro-pub//?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-04-28T15:24:00Z</published>
+    <updated>2016-04-28T15:24:00+00:00</updated>
+    <id>/2016/04/28/testing-micro-pub</id>
     <content type="html"><![CDATA[ <p>What is going to happen?</p>
  ]]></content>
   </entry>
@@ -106,10 +106,10 @@ Either way, you could do much worse than to make your bit of the web fast.
   
   <entry>
     <title></title>
-    <link rel="alternate" type="text/html" href="/title/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-04-19T17:19:28Z</published>
-    <updated>2016-04-19T17:19:28+00:00</updated>
-    <id>/62368</id>
+    <link rel="alternate" type="text/html" href="/social/2016/04/19/62368//?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-04-19T17:19:00Z</published>
+    <updated>2016-04-19T17:19:00+00:00</updated>
+    <id>/social/2016/04/19/62368</id>
     <content type="html"><![CDATA[ <p>World's most expensive scratching post</p>
  ]]></content>
   </entry>
