@@ -1,6 +1,6 @@
 # Permalinks
 #
-permalink: title
+permalink: pretty
 paginate: 5
 
 # Setup
