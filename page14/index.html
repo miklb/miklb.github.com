@@ -493,6 +493,28 @@ svg{ height: 100%; width: 100%; }
   
   <article class="post h-entry">
     <h1 class="post-title p-name">
+      <a class="u-url" href="/towards-a-responsive-design">
+        Towards a Responsive Design
+      </a>
+    </h1>
+
+    <time datetime="2011-03-13T00:00:00+00:00" class="dt-time post-date">13 Mar 2011</time>
+    <div class="e-content">
+        <p>I am not sure I had really paid attention to the term <em>responsive design</em> when I started the redesign for this site. I just knew I wanted something that would be as readable on an iPhone as it was on my large desktop monitor.  I made some conscious decisions to remove a bunch of extraneous elements not for the mobile viewing, but I simply wanted to focus attention on what ever it was I was writing about.  Sidebars full of links, tweets, buttons and badges might have been novel 6 years ago when I started this site, but not so important to me now.</p>
+
+<p>I also wanted to learn more about HTML5 and CSS3.  For my own site, I’m completely not interested in supporting old browsers, save for using a HTML5 polyfill for &lt; IE 9.  If someone is using IE 6, they probably don’t have much interest in what I’m sharing anyway.  So I played with some max-widths and widths based on percentage until I found something that worked for me.  Perhaps that’s not the best way to approach it, as the site really should be about those visiting, but I guess <span class="pquote-r">I made an assumption my browsers/screen resolutions/mobile devices were common enough that if it looked OK to me, it should look OK to visitors.</span>  Up until today, I was fairly happy with what I had come up with, save for the Youtube videos I’ve been posting.  I have been experimenting with using the HTML5 iframe wrapper Youtube offers, and choosing a very large version of the video.  Which wasn’t working out for smaller screens.</p>
+
+<p>But as I’m studying more about the advanced concepts of responsive design and using media queries, I ran across Ethan Marcotte’s <a href="http://unstoppablerobotninja.com/entry/fluid-images/">fluid images</a> post.  Lo and behold, I set &lt;pre&gt;<code>iframe {max-width: 100%}</code>&lt;/pre&gt; and my video posts scale along with the surrounding content.</p>
+
+<p>I’m not sure I will mess with this site anytime soon code or design wise, but I do intend to experiment with using the <a href="http://lessframework.com/">Less Framework</a> and possibly the intriguing <a href="http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/">context aware responsive images</a> script over on my <a href="http://cookingwith.miklb.com">cooking site</a>, which is a blueprint based grid design spun off of the markup of this site.  I don’t think it would take much to convert the grid to the Less Framework.  I may think about a design that’s not quite as similar to this in the process.</p>
+
+<p>Regardless of the direction, I’d like to thank Kevin Zurawel for his <a href="http://arborwebsolutions.com/2011/03/wordcamp-miami-2011/">WordCamp Miami session on responsive design</a> and piquing my interest on the subject even more.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
       <a class="u-url" href="/speaking-of-twitter">
         Speaking of Twitter
       </a>
@@ -559,24 +581,6 @@ svg{ height: 100%; width: 100%; }
 <p><br /><small><a href="http://maps.google.com/maps?q=Harlingen&amp;oe=utf-8&amp;client=firefox-a&amp;ie=UTF8&amp;hq=&amp;hnear=Harlingen,+Cameron,+Texas&amp;gl=us&amp;ll=27.644606,-97.844238&amp;spn=6.809598,9.338379&amp;z=6&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
 
 <p>I’m guessing then that SW Air is offering cheap flights to a border town of Mexico because there’s a stampede of people looking to tempt fate and head into Monterrey to dodge banditos for some cheap black market Viagra.  (Actually, I’m guessing it’s really for spring breakers heading to South Padre Island.)</p>
-
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/tunesday-the-grammy-edition-arcade-fire">
-        Tunesday - The Grammy Edition: Arcade Fire
-      </a>
-    </h1>
-
-    <time datetime="2011-02-13T00:00:00+00:00" class="dt-time post-date">13 Feb 2011</time>
-    <div class="e-content">
-        <p>For those of you watching the Grammy’s (or just following along on Twitter) and not familiar with Arcade Fire, winner of the Grammy for best album (not to be confused with “record”) of the year, I give you the song that sold me off their first major <em>recording</em>.</p>
-
-<p>Also, I’d like to note and ask, I’m pretty sure it wasn’t planned they’d play another song to close out the show, and the quote from the lead singer after winning, “We’re going to play another song because we <strong>like</strong> music,” was one of the best digs at the Grammy’s I’ve heard.</p>
-
-<iframe title="YouTube video player" width="640" height="510" src="http://www.youtube.com/embed/zhiv_SnC5OQ" frameborder="0" allowfullscreen=""></iframe>
 
     </div>
   </article>

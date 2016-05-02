@@ -493,6 +493,26 @@ svg{ height: 100%; width: 100%; }
   
   <article class="post h-entry">
     <h1 class="post-title p-name">
+      <a class="u-url" href="/ie8-compatibility-mode">
+        IE8 Compatibility Mode
+      </a>
+    </h1>
+
+    <time datetime="2009-02-18T00:00:00+00:00" class="dt-time post-date">18 Feb 2009</time>
+    <div class="e-content">
+        <p>A post came through Twitter from <a href="http://www.sitepoint.com/blogs/2009/02/19/ie8-standards-mode-opt-in/">SitePoint</a> regarding a recent decision by Microsoft and the IE team to add a new compatibility mode to IE8.  The post they link to is from December, and the IE Blog has updated the blog with a <a href="http://blogs.msdn.com/ie/archive/2009/02/16/just-the-facts-recap-of-compatibility-view.aspx">recap of the compatibility view</a>.  At first read, this sounded like a stupid idea.  Just another layer of crap that would keep sites from getting up to speed on standards compliance.</p>
+
+<p>Upon a bit more thought, I think it’s not a bad idea.  One of the biggest reasons I found people didn’t adopt IE 7 was that sites that they regularly visited didn’t render properly in IE 7, so they reverted back to IE 6. <span class="pquote-r"> I think it’s still one of the biggest reasons people haven’t upgraded.  They upgraded once, a site didn’t work, so they stuck with 6.  A vicious cycle ensued</span>.  Sites saw the stats, saw a big IE 6 crowd, and kept support.  The reality of business is going to say that some numbers cruncher is going to say it’s not economically feasible to update the site for IE 8, regardless of the chorus from the web team.  These are the sites that compatibility mode is geared towards.</p>
+
+<p>Adding this compatibility view will allow people to upgrade to 8, still visit sites that haven’t been updated, but get the standards compliance of 8 for sites that have.  Sure, getting blacklisted as incompatible is possible, but a single line of code in the header will remove the compatibility view from visitors, and for those of us that want to build sites that are strictly IE 8 compatible, ignoring 7 (6 is whole different can of worms) is possible.  It’s very easy to tell a client, “Just upgrade to 8, and click the compatibility view option, your old sites will still work the same”, versus having to make a site backward compatible to 7 because people won’t upgrade or are reluctant. Worse, having to have 2 or more conditional style sheets to accommodate multiple versions of IE.</p>
+
+<p>I would say this compatibility mode list shouldn’t be built off of how a site renders in a beta version of a browser, and reading through the comments and glossing over the latest post I’m not sure if that’s the case, but again, I’d rather it be an opt in setting that allows people to view the rest of the web in a more standards compliant mode than having to wrestle as as a developer with yet another version of IE.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
       <a class="u-url" href="/whatthefont-for-iphone">
         WhatTheFont for iPhone
       </a>
@@ -548,7 +568,7 @@ And I I was never that good at the words anyways &lt;/blockquote&gt;</p>
 
 <p>All of Lucero’s music is available on emusic.com.  If you’d like a invite to emusic for a trial membership and 50 free downloads (you’ll have to give a CC#, but they don’t charge until after the first month), leave a comment with the email address you’d like it sent to, and I”ll send one your way. <em> Shameless confession - you can do a trial membership without the invite from me, but if you were to sign up with emusic after the trial via invite, I’d get a 50 song credit</em></p>
 
-<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/mIa3QTp34Sw&amp;hl=en&amp;fs=1&amp;ap=%2526fmt%3D18" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/mIa3QTp34Sw&amp;hl=en&amp;fs=1&amp;ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344" /></object>
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/mIa3QTp34Sw&amp;hl=en&amp;fs=1&amp;ap=%2526fmt%3D18" />&lt;/param&gt;<param name="allowFullScreen" value="true" />&lt;/param&gt;<param name="allowscriptaccess" value="always" />&lt;/param&gt;<embed src="http://www.youtube.com/v/mIa3QTp34Sw&amp;hl=en&amp;fs=1&amp;ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344" />&lt;/embed&gt;</object>
 
     </div>
   </article>
@@ -585,28 +605,6 @@ And I I was never that good at the words anyways &lt;/blockquote&gt;</p>
 <p>Download <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=289808579&amp;mt=8">LED football from the App Store</a>.</p>
 
 <p><em>hat tip <a href="http://macapper.com/2009/01/31/download-led-football-free-this-superbowl-weekend/">MacAppers</a></em></p>
-
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/consolidating-and-focusing">
-        Consolidating and Focusing
-      </a>
-    </h1>
-
-    <time datetime="2009-02-01T00:00:00+00:00" class="dt-time post-date">01 Feb 2009</time>
-    <div class="e-content">
-        <p>I’ve thoroughly enjoyed resurrecting this blog over the past 2 months, all the while trying to find the motivation to start food blogging again.  However, the more I search for that motivation, the more I’m drawn to the idea of further consolidating my blogging efforts to this single domain.  It’s not as if I get a huge amount of traffic on my cooking content anyway, and what little there is, should easily migrate over much like bloggingmeta’s traffic did with a permanent redirect.</p>
-
-<p>One idea I had was to see if I’d do more food blogging by simply posting them to this site first, without migrating the old content, but if I were to succeed in my experiment, I’d find myself in a similar predicament in that I’d have no way to migrate back to the food blog, not to mention I’d potentially be penalizing myself in regards to search engine <em>stuff</em>.</p>
-
-<p>The primary obstacle is how to migrate the content.  I highly doubt my code-fu would allow me to write a Habari-to-Habari importer by myself, though I’ve not even looked at any of the importers.  I’m not as worried about comments, so I’ve got some too-ashamed-to-disclose hacks I’m contemplating to overcome the importing dilemma.  If anyone wants to help with this goal, I’ll contribute as much as I can to making a formal Habari migration plugin.</p>
-
-<p>Once I were to overcome that obstacle, the goal then would be to design a magazine-ish style theme that would allow for sections based on tags.  As I find myself blogging more and more about the iPhone, I’ve been <a href="http://twitter.com/miklb/status/1157627875">concerned</a> that it might turn off the few readers I have.  Building on the tag based sections would also allow me to better offer tag based feeds—though I don’t know if it’s possible to create a feed by excluding a tag ;-).  I’m sure I could easily redirect the feed from the cooking site to a /atom/tag/food (or what ever the structure is).</p>
-
-<p>So I’m hoping that one of the 25 odd subscriber/readers might have an opinion on such a move in both how it might effect me search engine wise, and what your opinion would be on having such a diverse amount of content.</p>
 
     </div>
   </article>
