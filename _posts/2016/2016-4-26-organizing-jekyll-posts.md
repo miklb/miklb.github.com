@@ -15,7 +15,7 @@ summary: Sharing some recent discoveries on how you can organize Jekyll posts be
 
  tl;dr yes, you can arbitrarily organize under the `_posts` folder however you want. All Jekyll looks for are markdown files with FrontMatter.
 
- What I also learned, and isn't [well documented](https://twitter.com/jeffjarvis/status/725112338207105024) [^1] is that you can create top level folders each with their own `_posts` sub-folder and Jekyll will read from each one, appending that folder name to the generated url for the post, i.e. a folder `foo` with `_posts` with `2016-04-26-post-title` would yield a URL of `example.com/foo/post-title` (varying by your permalink structure). Those top level folders are then treated as categories, allowing for more filtration within your templates and site organization. I can see other ways of using them, especially as I continue to move towards a more indieweb way of doing things and more tweets originating from this site.
+ What I also learned, and isn't [well documented](https://jekyllrb.com/docs/variables/) [^1] is that you can create top level folders each with their own `_posts` sub-folder and Jekyll will read from each one, appending that folder name to the generated url for the post, i.e. a folder `foo` with `_posts` with `2016-04-26-post-title` would yield a URL of `example.com/foo/post-title` (varying by your permalink structure). Those top level folders are then treated as categories, allowing for more filtration within your templates and site organization. I can see other ways of using them, especially as I continue to move towards a more indieweb way of doing things and more tweets originating from this site.
 
  I intend to contribute my discoveries to the official documentation as soon as I can.
 
