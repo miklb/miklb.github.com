@@ -493,6 +493,38 @@ svg{ height: 100%; width: 100%; }
   
   <article class="post h-entry">
     <h1 class="post-title p-name">
+      <a class="u-url" href="/category-archives-plugin">
+        Category Archives Plugin
+      </a>
+    </h1>
+
+    <time datetime="2006-09-09T00:00:00+00:00" class="dt-time post-date">09 Sep 2006</time>
+    <div class="e-content">
+        <p><em>(disclaimer)</em>I’m not a coder, and this is my first attempt, I apologize if this isn’t properly documented or presented.</p>
+
+<p>My very first WordPress Plugin!  I’ve dabbled with a lot of areas of WP, but until this <a href="http://wordpress.org/support/topic/86463?replies=2">post</a> in the support forums, I never really had an idea or need to write one.  But after doing some reading, I found that there wasn’t a simple way to accomplish this task.  All of WP’s archive features  are based on date.</p>
+
+<p>So with the help of alphaoide via #wordpress on IRC, I put together this simple plugin to accomplish the task.  It worked fine on my test site, but may need some TLC before being good to go.  Basically it outputs categories by name in an h2 tag, then lists post titles with a permalink to the post.</p>
+
+<p>I tested this by creating a <a href="http://codex.wordpress.org/Pages#Page_Templates">Page Template</a>, then inserting the plugin code within the content div of the theme.
+The code to insert is
+ <code>&lt; ?php mb_cat_archive(); ?&gt;</code>
+(remove the space between the &lt; and ?, I’m not sure why that is getting reformatted in the post)
+I suppose this could be used in a sidebar, however it may create a very long list…
+So to summarize, download the file, unzip, and upload to your wp-content/plugins directory.
+Activate the plugin in the dashboard.  Create the page template, inserting the above code, save, and upload to your themes directory.
+Go to Write-&gt;Page, and choose the template you uploaded.
+The new page should now list your categories with their appropriate posts.
+I haven’t looked into how it handles posts with multiple categories, that will be on my todo list, I’m sure, if the plugin proves useful or popular.  I’d also like to add some AJAX to hide the posts until you click on the category (that would make it much more sidebar friendly), and the ability to change the h2 tag to whatever one likes.</p>
+
+<p>You can download the file via:
+<a href="http://www.miklb.com/blog/cat_archive.zip">http://www.miklb.com/blog/cat_archive.zip</a></p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
       <a class="u-url" href="/great-political-prank">
         Great Political Prank
       </a>
@@ -559,20 +591,6 @@ So here goes:</p>
 <li>Only he is free who cultivates his own thoughts, and strives without fear to do justice to them.
     Berthold Auerbach (1812 - 1882)</li>
 </ul>
-
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/talkin-about-the-weather">
-        Talkin' About the Weather
-      </a>
-    </h1>
-
-    <time datetime="2006-08-21T00:00:00+00:00" class="dt-time post-date">21 Aug 2006</time>
-    <div class="e-content">
-        <p>Stiffling hot, sticky muggy, and no hurricanes.  Bring it on.</p>
 
     </div>
   </article>

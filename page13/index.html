@@ -493,6 +493,28 @@ svg{ height: 100%; width: 100%; }
   
   <article class="post h-entry">
     <h1 class="post-title p-name">
+      <a class="u-url" href="/using-latest-dailybooth-image">
+        Using Latest DailyBooth Image
+      </a>
+    </h1>
+
+    <time datetime="2011-03-27T00:00:00+00:00" class="dt-time post-date">27 Mar 2011</time>
+    <div class="e-content">
+        <p>If you are not familiar with <a href="http://dailybooth.com/">Dailyboth</a>, at it’s core, it makes it easy to snap a picture of yourself and share it on the web.  They have a lot of other “social” aspects, like comments, following, etc, however I don’t really use any of those.  I started using it track my mustache growth for Movember, and then while I grew out a beard.  It’s easy and it can be fun.  I got to thinking today it would be cool if you could leverage that image else where besides within their network, and set off looking if they had an API and how might I do so.<img src="http://dailybooth.com/miklb/latest/medium.jpg" class="right" alt="miklb dailybooth" /></p>
+
+<p>I discovered they do have a <a href="http://blog.dailybooth.com/category/api/">basic API</a>, along with some sample code in GitHub.  All I really wanted for now was a to pull my latest picture.  A little more digging, I realized I didn’t need to leverage the API, rather you can reference that image in a simple HTML <code><img /></code> tag.</p>
+<pre><code><img src="http://dailybooth.com/username/latest/small.jpg" /></code></pre>
+<p>You can also swap small, with medium or large.  The one  downside is that their images are not square, rather they are rectangular, which doesn’t work in most ‘profile’ environments.  I experimented with taking it a step further and using that latest image link with Gravatar, however from what I can tell, while Gravatar will allow you to choose the latest image, for performance reasons, they cache the various size images and don’t ever check that source again.</p>
+
+<p>This may not be useful to many people, but in my case, with my ever changing long hair/short hair and various states of facial hair, I often find that I’ve had a photo on my about page that becomes outdated. When I meet someone in person, they hardly recognize me.  It happened when I met my current employer. Due to the nature of working on the web these days, in person meetings may not occur often or right away as most correspondences occur via email and the phone.  Having an outdated image that people are using as a visual reference isn’t necessarily bad, but it’s nice to be able to really put a face with a name, even if it’s from 2000 miles away.  Thus, I’ve updated my <a href="http://miklb.com/about">about me page</a> with my latest Dailybooth shot, so I don’t have to remember to change it.  I’m also experimenting with using it for the author bio pic at the bottom of posts, but as you can see, the aforementioned issue with rectangle vs square is an issue. I may investigate the CSS <code>clip</code> property for a short term solution.</p>
+
+<p>It would be nice if there was a mashup somewhere between a service like Dailybooth and Gravatar where you could keep an up-to-date profile pic handy.  Possibly even being able to update your Twitter avatar at the same time.</p>
+
+    </div>
+  </article>
+  
+  <article class="post h-entry">
+    <h1 class="post-title p-name">
       <a class="u-url" href="/firefox-4-html5-forms-input-types">
         Firefox 4 HTML5 Forms - Input Types
       </a>
@@ -579,24 +601,6 @@ This assertion does not mention a specific example. By contrast the authors of t
 &lt;/blockquote&gt;
 So Facebook prevails (again)?  God help us all.
 </table></code></blockquote>
-
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/miklbcom-turns-6">
-        Miklb.com Turns 6
-      </a>
-    </h1>
-
-    <time datetime="2011-03-14T00:00:00+00:00" class="dt-time post-date">14 Mar 2011</time>
-    <div class="e-content">
-        <p>I  <a href="http://www.flickr.com/photos/36112884@N07/3787346825/" title="Birthday Cake by Im a terrible photographer, on Flickr"><img src="http://farm3.static.flickr.com/2640/3787346825_57a6001c20.jpg" class="right" width="500" height="333" alt="Birthday Cake" /></a>knew it was right around this time, but it seems that this little slice of the web turned 6 this weekend, as did my twisting adventure of making a living building web sites.  Seems like yesterday still I was purchasing my first tiny plan from A Small Orange and installing WordPress 1.2.  Now I have 2 different VPS’s, manage 100’s of WordPress sites for work on a dedicated server (<em>managed</em>, I’m not that much a masochist), and moved onto Habari for my personal sites.  Ironically or not, those that started Habari were some of the very ones that welcomed me into WordPress and were the ones that probably have helped me the most to get where I’ve gotten today.</p>
-
-<p>So I’d like to share this virtual cake particularly with <a href="http://chrisjdavis.org/">Chis J Davis</a>, as the first theme I tore apart to customize was one of his (among many others down the road), <a href="http://asymptomatic.net/">Owen Winkler</a> for the many plugins I used to get started as well as the many hours of tutelage over the years on a variety of subjects, and <a href="http://skippy.net/">Scott Merrill</a>, because in addition to his many plugins and welcoming nature, his patience in helping walk me through setting up my first VPS.</p>
-
-<p>There are many, many more who’ve helped me through these past six years I couldn’t begin to name them all, but please know I’m eternally grateful to each and every one.</p>
 
     </div>
   </article>
