@@ -44,6 +44,8 @@ highligher: rouge
 imgix:
   source: cdn.miklb.com
 
+mapbox-token: pk.eyJ1IjoibWlrbGIiLCJhIjoiY2lvMHdva3EyMTl4eHU2bHlidjliazNidSJ9.pZrw_roD2lO_F89wTNRntg
+mapid: miklb.03b6j499
 # Archives
 jekyll-archives:
   enabled:
