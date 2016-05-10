@@ -1,3 +1,9 @@
+.alert {
+  background: $quiet-color;
+  color: $heading-color;
+  text-align: center;
+}
+
 .site-header {
   @extend %padding-small;
   align-items: center;
