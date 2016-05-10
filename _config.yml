@@ -29,6 +29,7 @@ gems:
  - jekyll-archives
  - jekyll/tagging
  - jekyll-tagging-related_posts
+ - jekyll/imgix
 
 exclude:
   - vendor
@@ -39,6 +40,9 @@ sass:
   style:            :compressed
 
 highligher: rouge
+
+imgix:
+  source: cdn.miklb.com
 
 # Archives
 jekyll-archives:
