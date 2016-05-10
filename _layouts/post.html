@@ -3,20 +3,32 @@ layout: default
 ---
 <article class="post h-entry">
   <header class="entry-header">
-	  <h1 class="post-title p-name">
-		  <a class="u-url" rel="bookmark" href="{{ site.github.url }}{{ page.url }}">
-			  {{ page.title }}
-		  </a>
-	  </h1>
+    {% if post.title != '' %}
+  	<h1 class="post-title p-name">
+  		{% if post.mf-bookmark %}
+  			<a class="u-bookmark-of" href="{{page.mf-bookmark | first}}">{{post.title}}</a>
+  		{% elsif post.mf-bookmark-of %}
+  			<a class="u-bookmark-of" href="{{page.mf-bookmark-of | first}}">{{post.title}}</a>
+  		{% elsif post.mf-repost-of %}
+  			<a class="u-repost-of" href="{{page.mf-repost-of | first}}">{{post.title}}</a>
+  		{% else %}
+  		<a class="u-url" href="{{ site.baseurl }}{{ page.url }}">
+  			{{ page.title }}
+  		</a>
+  		{% endif %}
+  	</h1>
+  {% endif %}
 
     <h2 class="p-summary p-bridgy-twitter-content">
       {{ page.summary }}
     </h2>
 
   </header>
-  <div class="e-content">
-      {{ content }}
-  </div>
+  {% if page.mf-like-of != null %}
+  {% include post-like.html post=post %}
+{% else %}
+  {% include post-content.html post=post %}
+{% endif %}
   <footer class="entry-footer">
 	  <div class="entry-meta">
       <div class="h-card p-author">
