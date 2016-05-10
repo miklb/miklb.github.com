@@ -91,6 +91,7 @@ svg{ height: 100%; width: 100%; }
 </head>
 
 <body class="h-feed">
+	<div class="alert"><strong>This site is going through an open redesign, so if things look weird, that is why.</strong></div>
 
 	<header class="site-header" role="banner">
 		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
@@ -491,18 +492,30 @@ svg{ height: 100%; width: 100%; }
 			<div class="content">
 				<article class="post h-entry">
   <header class="entry-header">
-	  <h1 class="post-title p-name">
-		  <a class="u-url" rel="bookmark" href="/url-shorteners-http-referers-and-301-redirects">
-			  URL Shorteners, HTTP Referers and 301 Redirects
-		  </a>
-	  </h1>
+    
+  	<h1 class="post-title p-name">
+  		
+  		<a class="u-url" href="/url-shorteners-http-referers-and-301-redirects">
+  			URL Shorteners, HTTP Referers and 301 Redirects
+  		</a>
+  		
+  	</h1>
+  
 
     <h2 class="p-summary p-bridgy-twitter-content">
       
     </h2>
 
   </header>
+  
+  
+
+  
+
+  
+
   <div class="e-content">
+    
       <p>I’ll start by saying I don’t know much about the subject, but am posting this in the hopes that someone who does can elucidate the issue.  My basic dilemma is that I have a short bit of code on my single page templates that checks to see if a visitor is from Twitter, and if so, show a little message.  (Not an original idea, I think I saw it on a post at Smashing Magazine).  The code they used didn’t work, but with the help of <a href="http://mattread.com/">BigJibby</a> in the Habari IRC channel, I was able to get it working with Habari.</p>
 
 <p>I more or less forgot about it, until a few people noticed it and asked if it was a plugin.  When I replied it wasn’t, they asked if I could make it into one.  So it went into a to-do list I keep of Habari related ideas.  This evening I began working on it, and while troubleshooting how to actually output something to the entry single template (that’s a whole other can of worms), I discovered the code snippet wasn’t working.  With the help of <a href="http://twofishcreative.com/michael/blog/">Michael</a>, we discovered the problem wasn’t with the code snippet, rather it was with the URL shorteners.  Twitter recently started defaulting to <a href="http://bit.ly">Bit.ly</a>, and I recently began experimenting with <a href="http://tr.im">Tr.im</a>,  <span class="pquote-r">both of which weren’t sending twitter.com as the referrer.  Rather, due to their 301 redirect they return <strong>NULL</strong>.  Which in a nut shell sucks. </span></p>
@@ -519,7 +532,17 @@ svg{ height: 100%; width: 100%; }
 	    echo "&lt;h2 class='twittervisit'&gt;Welcome, Twitter visitor! If this post is useful, don't hesitate to retweet!&lt;/h2&gt;";
 </code></p>
 
+    
   </div>
+
+  
+
+  
+
+  
+  
+
+
   <footer class="entry-footer">
 	  <div class="entry-meta">
       <div class="h-card p-author">

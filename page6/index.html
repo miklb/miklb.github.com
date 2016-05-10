@@ -91,6 +91,7 @@ svg{ height: 100%; width: 100%; }
 </head>
 
 <body class="h-feed">
+	<div class="alert"><strong>This site is going through an open redesign, so if things look weird, that is why.</strong></div>
 
 	<header class="site-header" role="banner">
 		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
@@ -491,38 +492,31 @@ svg{ height: 100%; width: 100%; }
 			<div class="content">
 				<div class="posts">
   
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll">
-        First Thoughts: Holy Grail of Blogging from iOS with Jekyll
-      </a>
-    </h1>
-
-    <time datetime="2015-05-04T00:00:00+00:00" class="dt-time post-date">04 May 2015</time>
-    <div class="e-content">
-        <p>I have been researching and thinking seriously about moving away from database driven blog engines to <em>static file</em> blogging for quite awhile. My extensive research has me convinced for my ideal workflow, <a href="http://jekyllrb.com">Jekyll</a> will be the answer—except for my goal to somewhat easily blog from my phone. All of the <a href="http://jekyllrb.com/docs/frontmatter/">front matter</a> could be handled by TextExpander snippets or custom keyboard shortcuts in Drafts or Editorial. The issue has been that with an iOS device, you are basically confined to using Dropbox or iCloud for the text/markdown files. Wanting to keep everything in a Git repo under version control, I hadn’t found a way to automagically push a Dropbox file to a Git repo without having an always on machine at home using some listening app like <a href="http://jekyllrb.com/docs/frontmatter/">Hazel</a> to do this. While that isn’t out of the question, I want something <strong>straight from the device</strong>.</p>
-
-<p>Extensive Googling finally led me to Zappier. Similar to IFTTT, they have a <a href="https://zapier.com/zapbook/dropbox/github/">Github/Dropbox workflow</a> that allows you to send a pull request to Github when a new file is added to a directory in Dropbox. And while if I was simply using Github pages to host a Jekyll site, that would be the end to a simple solution.</p>
-
-<p>However, I still want to host my own data on my own VPS (more on that later). Enter <a href="https://github.com/developmentseed/jekyll-hook">Jekyll Hook</a>, which, while not seemingly for the faint of heart, allows one to run their own “Github Pages” on their own server.</p>
-
-<p>So, while all untested at this point, on paper it seems I can have a dedicated Dropbox folder synced with an iOS editor that when a markdown file is saved to it, Zapier will attempt to send a pull request and merge it to a Github hosted repo of my blog [footnote, possibly need to have iOS app to approve pull request but option is in the <em>recipe</em> for the workflow. I assume it will work save for any previous files by same name causing a merge conflict]. From that, the Jekyll Hook script/solution will fire and rebuild the the site, all without leaving the convenience of my iOS device.</p>
-
-<p>Potential magic I tell you.</p>
-
-    </div>
-  </article>
   
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/email-is-so-2015">
-        Email is so 2015
-      </a>
-    </h1>
 
-    <time datetime="2014-12-02T00:00:00+00:00" class="dt-time post-date">02 Dec 2014</time>
-    <div class="e-content">
-        <div class="tldr">tl;dr Wouldn't it be nice if in the newfound popularity of email newsletters, the signup form had an option "I regularly consume your content via another means, but would love to win your cool thing"</div>
+
+<article class="post h-entry">
+	
+	<h1 class="post-title p-name">
+		
+		<a class="u-url" href="/email-is-so-2015">
+			Email is so 2015
+		</a>
+		
+	</h1>
+
+
+	<time datetime="2014-12-02T00:00:00+00:00" class="dt-time post-date">02 Dec 2014</time>
+
+  
+
+  
+
+  
+
+  <div class="e-content">
+    
+      <div class="tldr">tl;dr Wouldn't it be nice if in the newfound popularity of email newsletters, the signup form had an option "I regularly consume your content via another means, but would love to win your cool thing"</div>
 
 <p>Back in the dark days of the internet, websites would have simple sign up forms for users to get updates about the site. Unless you used RSS (or Atom) to read the sites. Even then, online marketers and brands would offer specials not advertised on their site to build the engagement via email. The size of your mailing list was a badge of honor for those marketers.</p>
 
@@ -534,19 +528,45 @@ svg{ height: 100%; width: 100%; }
 
 <p>Unfortunately, I’m afraid the new badge of honor is the hydra of social media followers guarding the treasure chest of email subscribers.</p>
 
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/engaging-users-vs-advertising">
-        Engaging Users Vs. Advertising
-      </a>
-    </h1>
+    
+  </div>
 
-    <time datetime="2014-11-15T00:00:00+00:00" class="dt-time post-date">15 Nov 2014</time>
-    <div class="e-content">
-        <p>I’ve seen the headline bandied about in social media all week, but over on <cite>Unapologetic</cite> Alex Guyot discusses his disagreement with <a href="http://unapologetic.io/posts/2014/11/14/facebook-makes-it-harder-again-for-brands-to-advertise-for-free/">Facebook making it harder (again) for brands to advertise for free.</a>. His basic argument is that brands most likely already bought the likes and shouldn’t have to pay to advertise again to those same customers. He also uses the argument that small businesses likely can’t afford to advertise.</p>
+  
+
+  
+
+  
+  
+
+
+</article>
+
+  
+  
+
+
+<article class="post h-entry">
+	
+	<h1 class="post-title p-name">
+		
+		<a class="u-url" href="/engaging-users-vs-advertising">
+			Engaging Users Vs. Advertising
+		</a>
+		
+	</h1>
+
+
+	<time datetime="2014-11-15T00:00:00+00:00" class="dt-time post-date">15 Nov 2014</time>
+
+  
+
+  
+
+  
+
+  <div class="e-content">
+    
+      <p>I’ve seen the headline bandied about in social media all week, but over on <cite>Unapologetic</cite> Alex Guyot discusses his disagreement with <a href="http://unapologetic.io/posts/2014/11/14/facebook-makes-it-harder-again-for-brands-to-advertise-for-free/">Facebook making it harder (again) for brands to advertise for free.</a>. His basic argument is that brands most likely already bought the likes and shouldn’t have to pay to advertise again to those same customers. He also uses the argument that small businesses likely can’t afford to advertise.</p>
 
 <p>I couldn’t disagree more with his take. From the Re/code article of the same name <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, the author quotes the Facebook release</p>
 <blockquote>The company announced today it will begin limiting the number of “promotional Page posts” in the News Feed starting in January. That means you’ll see fewer posts from brands asking you to buy products or “enter promotions and sweepstakes,” Facebook wrote in a blog post.</blockquote>
@@ -564,19 +584,45 @@ svg{ height: 100%; width: 100%; }
   </ol>
 </div>
 
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/technology-fatigue">
-        Technology Fatigue
-      </a>
-    </h1>
+    
+  </div>
 
-    <time datetime="2014-11-11T00:00:00+00:00" class="dt-time post-date">11 Nov 2014</time>
-    <div class="e-content">
-        <p>A piece at <cite>A List Apart</cite> today struck a nerve with a lot of developers today, myself included (if I can really call myself a developer these days.) <a href="http://alistapart.com/blog/post/overwhelmed-by-code">Overwhelmed by Code</a> touches on the constant bombardment to developers from new technologies popping up seemingly daily. The author discusses</p>
+  
+
+  
+
+  
+  
+
+
+</article>
+
+  
+  
+
+
+<article class="post h-entry">
+	
+	<h1 class="post-title p-name">
+		
+		<a class="u-url" href="/technology-fatigue">
+			Technology Fatigue
+		</a>
+		
+	</h1>
+
+
+	<time datetime="2014-11-11T00:00:00+00:00" class="dt-time post-date">11 Nov 2014</time>
+
+  
+
+  
+
+  
+
+  <div class="e-content">
+    
+      <p>A piece at <cite>A List Apart</cite> today struck a nerve with a lot of developers today, myself included (if I can really call myself a developer these days.) <a href="http://alistapart.com/blog/post/overwhelmed-by-code">Overwhelmed by Code</a> touches on the constant bombardment to developers from new technologies popping up seemingly daily. The author discusses</p>
 <blockquote>It used to be that knowing CSS and HTML was enough, then jQuery came along, then responsive techniques, then Node.js and then Angular, Ember, etc., etc., etc. That list, right there, it tires me out.</blockquote>
 <p>To that I can completely relate. When I stumbled into making websites, they were still teaching how to use Photoshop and tables to build sites at my local community college, not pure CSS. The big revelation at <cite>A List Apart</cite> was <a href="http://alistapart.com/article/fauxcolumns">Faux Columns</a>. So fast forward 10 years, take a sabbatical for 2 of those, and you can imagine how overwhelming stepping back into grunt, gulp, coffee script, node and Luce<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> is.</p>
 <blockquote>What do I want to focus on, what do I love about the web? What do I actually want to learn, versus what I think I should learn. </blockquote>
@@ -590,19 +636,45 @@ svg{ height: 100%; width: 100%; }
   </ol>
 </div>
 
-    </div>
-  </article>
-  
-  <article class="post h-entry">
-    <h1 class="post-title p-name">
-      <a class="u-url" href="/how-to-really-install-a-new-thermostat">
-        How to Really Install a New Thermostat
-      </a>
-    </h1>
+    
+  </div>
 
-    <time datetime="2014-10-31T00:00:00+00:00" class="dt-time post-date">31 Oct 2014</time>
-    <div class="e-content">
-        <p>Going through my RSS reader this morning, I came across this article at the Art of Manliness, <a href="http://www.artofmanliness.com/2014/10/30/how-to-replace-a-thermostat/">How to Install a New Thermostat</a>. I couldn’t disagree more with 80% of what that article instructs.</p>
+  
+
+  
+
+  
+  
+
+
+</article>
+
+  
+  
+
+
+<article class="post h-entry">
+	
+	<h1 class="post-title p-name">
+		
+		<a class="u-url" href="/how-to-really-install-a-new-thermostat">
+			How to Really Install a New Thermostat
+		</a>
+		
+	</h1>
+
+
+	<time datetime="2014-10-31T00:00:00+00:00" class="dt-time post-date">31 Oct 2014</time>
+
+  
+
+  
+
+  
+
+  <div class="e-content">
+    
+      <p>Going through my RSS reader this morning, I came across this article at the Art of Manliness, <a href="http://www.artofmanliness.com/2014/10/30/how-to-replace-a-thermostat/">How to Install a New Thermostat</a>. I couldn’t disagree more with 80% of what that article instructs.</p>
 
 <p>First, while they are on the right track on turning off power, but mentioning “flipping power switch off” is inaccurate. Also, it is obvious that this was written by someone from the north in only referencing “furnace”. Generally speaking, the breaker panel will have both an “AC” and either “heat” or “air handler” when it is not a furnace. These need to be off, as the 24 volt current is constant and if the heat/air handler isn’t off, then you can at the minimum blow a fuse, the worst, fry a transformer. By code, both items should have a disconnect for service, and pulling that is equally effective in making sure the power is off.</p>
 
@@ -610,8 +682,62 @@ svg{ height: 100%; width: 100%; }
 
 <p>Bottom line, if you are going to spend hundreds of dollars for a smart thermostat, spend the extra money to hire a professional or at the minimum, do your homework regarding your specific unit and be damned sure that it will handle that $250 investment before attempting a DIY</p>
 
-    </div>
-  </article>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+
+</article>
+
+  
+  
+
+
+<article class="post h-entry">
+	
+	<h1 class="post-title p-name">
+		
+		<a class="u-url" href="/apple-pay-currentc-and-profits">
+			Apple Pay,  CurrentC and Profits
+		</a>
+		
+	</h1>
+
+
+	<time datetime="2014-10-28T00:00:00+00:00" class="dt-time post-date">28 Oct 2014</time>
+
+  
+
+  
+
+  
+
+  <div class="e-content">
+    
+      <p>Earlier today over on <a href="last post on Apple Pay">Pencil Note</a> there was a post about Apple Pay and the author spoke to their opinion on how the CurrentC plan from retailers like CVS and Walmart would actually <em>benefit</em> consumers. Upon reading the post in my RSS reader, I quickly <a href="https://twitter.com/miklb/status/527099202103697408">tweeted a question</a> asking if he really though the retailers would pass the savings onto customers. Their response was &lt;blockquote&gt;&lt;p&gt;Yes. Less credit cards means lower prices.&lt;/p&gt;&lt;/blockquote&gt;
+—<cite> <a href="https://twitter.com/pencil_line/status/527176352794165248">Pencil Note</a> </cite></p>
+
+<p>And then, in an old fashioned blogging style, they posted a more-than-140-character reply - <a href="http://www.pencilnote.com/pencilnote/2014/10/28/r2c95cwsnaoikrzdizm3ecyr6xynfd">Why fewer credit cards mean lower prices</a>. While my formal education on economics is limited to 101 level micro &amp; macro economics courses, I’ve been an informed consumer for long enough to follow the train of thought in that post. While it makes sense that the retailers are fueled by growth, and there is already a race to the bottom for pricing, the end result is still more profit for the owners/shareholders. If the price drops a few cents here or there, it is my opinion that is purely a by-product of profit growth and not the intention.</p>
+
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+
+</article>
+
   
 </div>
 

@@ -91,6 +91,7 @@ svg{ height: 100%; width: 100%; }
 </head>
 
 <body class="h-feed">
+	<div class="alert"><strong>This site is going through an open redesign, so if things look weird, that is why.</strong></div>
 
 	<header class="site-header" role="banner">
 		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
@@ -491,18 +492,30 @@ svg{ height: 100%; width: 100%; }
 			<div class="content">
 				<article class="post h-entry">
   <header class="entry-header">
-	  <h1 class="post-title p-name">
-		  <a class="u-url" rel="bookmark" href="/firefox-4-html5-forms-input-types">
-			  Firefox 4 HTML5 Forms - Input Types
-		  </a>
-	  </h1>
+    
+  	<h1 class="post-title p-name">
+  		
+  		<a class="u-url" href="/firefox-4-html5-forms-input-types">
+  			Firefox 4 HTML5 Forms - Input Types
+  		</a>
+  		
+  	</h1>
+  
 
     <h2 class="p-summary p-bridgy-twitter-content">
       
     </h2>
 
   </header>
+  
+  
+
+  
+
+  
+
   <div class="e-content">
+    
       <p>Speaking of Firefox 4, I’ve gotten a few comments on my post about <a href="http://miklb.com/firefox-4-app-tab">Firefox 4 app tabs</a>, and while trying to respond, I discovered another new ‘feature’ in Firefox 4, support for HTML 5 input types.  Inadvertently I was using the same input for my URL field as my email. I had created some custom formcontrols for  <a href="http://wiki.habariproject.org/en/Dev:FormUI">Habari’s FormUI templates</a> for HTML5 support, which had the right input types, so at first I didn’t see why I was getting the error. However with help in Habari’s IRC channel from Mike Lietz, he pointed out in my theme.php file I was calling the email formcontrol for URL as well as Email.  Fixing that, I was able to submit my comment.</p>
 
 <p><img src="http://miklb.com/user/images/html5_input-type_email.png" alt="Firefox4 HTML 5 input type email error" class="right" />A quick Google search turned up that , indeed, <a href="https://developer.mozilla.org/en/HTML/HTML5/Forms_in_HTML5">Gecko 2 (Firefox 4) supports HTML5 input types</a>.  I had also checked in Chrome 10.x and it too gave the same error, which means it also supports the input types. IE 9 nor Safari 5 have support for the input types (Mac, ironically the Windows version seems to support it).  Finally, Opera 10 has supported this for a while, as well as iOS Safari.</p>
@@ -518,7 +531,17 @@ svg{ height: 100%; width: 100%; }
   <li>,<a href="http://wufoo.com/html5/">Wufoo - Current State of HTML5 Forms</a></li>
 </ul>
 
+    
   </div>
+
+  
+
+  
+
+  
+  
+
+
   <footer class="entry-footer">
 	  <div class="entry-meta">
       <div class="h-card p-author">

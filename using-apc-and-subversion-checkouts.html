@@ -91,6 +91,7 @@ svg{ height: 100%; width: 100%; }
 </head>
 
 <body class="h-feed">
+	<div class="alert"><strong>This site is going through an open redesign, so if things look weird, that is why.</strong></div>
 
 	<header class="site-header" role="banner">
 		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
@@ -491,18 +492,30 @@ svg{ height: 100%; width: 100%; }
 			<div class="content">
 				<article class="post h-entry">
   <header class="entry-header">
-	  <h1 class="post-title p-name">
-		  <a class="u-url" rel="bookmark" href="/using-apc-and-subversion-checkouts">
-			  Using APC and Subversion Checkouts
-		  </a>
-	  </h1>
+    
+  	<h1 class="post-title p-name">
+  		
+  		<a class="u-url" href="/using-apc-and-subversion-checkouts">
+  			Using APC and Subversion Checkouts
+  		</a>
+  		
+  	</h1>
+  
 
     <h2 class="p-summary p-bridgy-twitter-content">
       
     </h2>
 
   </header>
+  
+  
+
+  
+
+  
+
   <div class="e-content">
+    
       <p>I am in the process of moving my sites from Slicehost to Linode, as most are aware Slicehost is being phased out for Rackspace Cloud.  Anyway, I upgraded my VPS at Linode last night to Debian “Squeeze” and installed APC, which created a problem with the WordPress installations I had there.  Basically, I couldn’t access the admin.  Through the power of Twitter and the invaluable help of <a href="http://markjaquith.com/">Mark Jaquith</a>, I learned that by default APC doesn’t play nice with files that are checked out via Subversion.  I think the root of my problem was a stray apc config for overriding include once, but certainly the subversion issue could have been at play too.</p>
 
 <p>Anyway, a little Googling on the subject, I discovered there’s a configuration option for APC to use <a href="http://www.php.net/manual/en/apc.configuration.php#ini.apc.stat-ctime">ctime</a>  instead of the default mtime.  Adding <code class="highlighter-rouge">apc.stat_ctime=1</code> is all that is required.</p>
@@ -511,7 +524,17 @@ svg{ height: 100%; width: 100%; }
 
 <p><em>Addendum</em> To be clear, I install WordPress using Subversion and the appropriate tag. My Habari installs are also all Subversion checkouts from trunk.</p>
 
+    
   </div>
+
+  
+
+  
+
+  
+  
+
+
   <footer class="entry-footer">
 	  <div class="entry-meta">
       <div class="h-card p-author">
