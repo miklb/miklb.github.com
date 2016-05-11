@@ -3,10 +3,10 @@ source "https://rubygems.org"
 gem "rake"
 gem "jekyll"
 
-
-gem "jekyll-paginate"
-gem "jekyll-gist"
-gem "jekyll-seo-tag"
+ gem 'octopress-hooks', git: 'https://github.com/octopress/hooks.git'
+gem 'octopress-paginate'
+gem 'jekyll-gist'
+gem 'jekyll-seo-tag'
 gem 'jekyll-archives'
 gem 'jekyll-tagging-related_posts'
 gem 'rouge'
@@ -15,5 +15,4 @@ gem 'kramdown'
 gem 'jekyll-imgix'
 
 
-gem "html-proofer"
-gem "htmlbeautifier"
+gem 'htmlbeautifier'
