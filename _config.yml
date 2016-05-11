@@ -1,7 +1,6 @@
 # Permalinks
 #
 permalink: pretty
-paginate: 5
 
 # Setup
 title: Miklb's Mindless Ramblings
@@ -23,7 +22,7 @@ webmentions: yes
 
 # Plugins
 gems:
- - jekyll-paginate
+ - octopress-paginate
  - jekyll-seo-tag
  - jekyll-gist
  - jekyll-archives
