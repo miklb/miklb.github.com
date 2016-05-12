@@ -30,7 +30,7 @@ layout: default
   {% include post-content.html post=post %}
 {% endif %}
   <footer class="entry-footer">
-	  <div class="entry-meta">
+
       <div class="h-card p-author">
 		        <a href="{{ site.github.url }}" class="entry-author-link" rel="author">
                   {% if site.author_img %}
@@ -45,7 +45,6 @@ layout: default
         <p><a href="{{ post.url | prepend: site.github.url }}">{{ page.title }} </a> posted on <time datetime="{{ page.date | date_to_xmlschema }}" class="dt-time post-date">{{ page.date | date_to_string }}</time>.</p>
         <p>This entry has been tagged with the keywords: {% for tags in page.tags %}<a href="{{ site.github.url }}/tag/{{ tags }}" class="p-category" rel="tag">{{ tags }} </a>{% endfor %}</p>
     </div>
-  </div>
 </footer>
 </article>
 
