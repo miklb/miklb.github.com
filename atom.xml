@@ -5,13 +5,23 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-05-12T16:18:41Z</updated>
+  <updated>2016-05-12T16:20:31Z</updated>
   <id>/</id>
   <author>
     <name></name>
     <email></email>
   </author>
   <rights type="text">Copyright © 2016 Michael Bishop. All rights reserved.</rights>
+  
+  <entry>
+    <title></title>
+    <link rel="alternate" type="text/html" href="/social/2016/05/12/testing-micropub-note//?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-05-12T16:18:32Z</published>
+    <updated>2016-05-12T16:18:32+00:00</updated>
+    <id>/social/2016/05/12/testing-micropub-note</id>
+    <content type="html"><![CDATA[ <p>testing out new note so I can figure out UI and organization with Jekyll</p>
+ ]]></content>
+  </entry>
   
   <entry>
     <title></title>
@@ -168,17 +178,6 @@ Either way, you could do much worse than to make your bit of the web fast.
 </div>
 <p>I’m sure as I expand my development world, (I have a goal to learn python by <a href="https://miklb.com/building-a-twitterbot">Building a Twitterbot</a> ) I’ll continue to tweak Atom, but for now, I’m as close to happy with an editor as I have ever been. Feel free to share with me on Twitter <a href="https://twitter.com/miklb">@miklb</a> your tips and trick.
 <a href="https://brid.gy/publish/twitter"></a></p>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Interest in Tampa Homebrew Website Club?</title>
-    <link rel="alternate" type="text/html" href="/interest-in-tampa-homebrew-website-club/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-04-19T14:00:00Z</published>
-    <updated>2016-04-19T14:00:00+00:00</updated>
-    <id>/interest-tampa-homebrew-website-club</id>
-    <content type="html"><![CDATA[ <p>Gauging interest in Tampa to see if anyone would be up for joining a
-<a href="https://indiewebcamp.com/events/2016-04-06-homebrew-website-club">Homebrew Website Club</a>. A lot of tech folks have vey neglected personal sites and this would give folks a chance to get together and talk tech and work on their personal site and pet proejcts. Platform agnostic (read, not another WordPress meetup) so open to anyone. If interested ping me on <a href="https://twitter.com/miklb">Twitter @miklb</a> for now and I’ll sort out finding a location and setting up a time. Only looking for a couple of people to get off the ground.</p>
  ]]></content>
   </entry>
   
