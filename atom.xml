@@ -5,13 +5,32 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-05-12T17:26:32Z</updated>
+  <updated>2016-05-12T23:48:17Z</updated>
   <id>/</id>
   <author>
     <name></name>
     <email></email>
   </author>
   <rights type="text">Copyright © 2016 Michael Bishop. All rights reserved.</rights>
+  
+  <entry>
+    <title>Couch to 5k - Day 1 Week 1</title>
+    <link rel="alternate" type="text/html" href="/2016/05/12/Just-completed-day-1-week-1-of-couch-to-5k-&-it-was-bloody-awesome/?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-05-12T18:56:00Z</published>
+    <updated>2016-05-12T18:56:00+00:00</updated>
+    <id>/2016/05/12/Just completed day 1 week 1 of couch to 5k & it was bloody awesome.</id>
+    <content type="html"><![CDATA[ <p>I have been telling myself all year that I was going to start this, but my body was telling me something else. Today that changed. It was just day 1, walking for 12 minutes, jogging for 8, but it feels perfect and I can’t wait for day 2.</p>
+
+<p>Stats:</p>
+
+<ul>
+  <li>Distance 1.6 miles</li>
+  <li>Pace 12:29 min/mi</li>
+</ul>
+
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+ ]]></content>
+  </entry>
   
   <entry>
     <title></title>
@@ -169,26 +188,6 @@ Either way, you could do much worse than to make your bit of the web fast.
     <id>/interest-tampa-homebrew-website-club</id>
     <content type="html"><![CDATA[ <p>Gauging interest in Tampa to see if anyone would be up for joining a
 <a href="https://indiewebcamp.com/events/2016-04-06-homebrew-website-club">Homebrew Website Club</a>. A lot of tech folks have vey neglected personal sites and this would give folks a chance to get together and talk tech and work on their personal site and pet proejcts. Platform agnostic (read, not another WordPress meetup) so open to anyone. If interested ping me on <a href="https://twitter.com/miklb">Twitter @miklb</a> for now and I’ll sort out finding a location and setting up a time. Only looking for a couple of people to get off the ground.</p>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Headings - What Was Old is New Again</title>
-    <link rel="alternate" type="text/html" href="/headings-what-was-old-is-new-again/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-04-18T13:10:00Z</published>
-    <updated>2016-04-18T13:10:00+00:00</updated>
-    <id>/headings-what-was-old-is-new</id>
-    <content type="html"><![CDATA[ <p>Seems HTML WG has reversed course on a previous recommendation that allowed <code class="highlighter-rouge">sections</code> to have their own <code class="highlighter-rouge">H1</code> tag, now recommending the previous norm of cascading H tags.</p>
-
-<blockquote>
-Given that this bug has been around, and not fixed in browsers, for many  
-years, we are proposing to remove the suggestion, and return to the model  
-where elements `h1..h6` have a defined level of their own.
-<cite><a href="https://lists.w3.org/Archives/Public/public-html/2016Apr/0032.html">HTML WG</a></cite>
-&lt;/bockquote&gt;
-
-<a href="https://brid.gy/publish/twitter"></a>
-</blockquote>
  ]]></content>
   </entry>
   
