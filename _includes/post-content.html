@@ -11,13 +11,13 @@
   {% elsif post.mf-photo != null %}
     <div class="media">
       {% for photo in post.mf-photo %}
-        <img class="u-photo" src="{{photo}}" alt="" />
+        <img class="u-photo" src="http:/cdn.miklb.com/{{photo | remove: 'https://miklb.com/'}}" alt="" />
       {% endfor %}
     </div>
   {% endif %}
 
   {% if post.mf-in-reply-to != null %}
-      <h3{% if nonenglish == true %} lang="en"{% endif %}>In reply to:</h3>
+      <h3>In reply to:</h3>
     <ul>
       {% for reply in post.mf-in-reply-to %}
         <li><a class="u-in-reply-to" rel="in-reply-to" href="{{reply}}">{{reply}}</a></li>
