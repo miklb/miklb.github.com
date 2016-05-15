@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="twitter:site" content="@miklb" />
-	<title>Finally Webmentions with Jekyll</title>
-	<meta name="description" content="If you can’t tell by previous posts, I’ve been working on gettingWebmentions to work with my new Jekyll site. I think I’ve finally nailed. If you take a look...">
+	<title>Extraneous Whitespace in Jekyll HTML</title>
+	<meta name="description" content="One artifact of Jekyll that has bothered me is the redundant blank lines in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the ...">
 	
 
 	<style type="text/css">
@@ -58,33 +58,32 @@ svg{ height: 100%; width: 100%; }
 
   </style>
 
-	<link rel="canonical" href="https://miklb.com/finally-webmentons-with-jekyll-part-duex">
+	<link rel="canonical" href="https://miklb.com/extraneous-whitespace-in-jekyll-html">
 	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
 	<link rel="shortcut icon" href="/public/favicon.png">
 	
 	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
 	
 	<!-- Begin Jekyll SEO tag v1.4.0 -->
-<title>Finally Webmentions with Jekyll - Miklb’s Mindless Ramblings</title>
-<meta property="og:title" content="Finally Webmentions with Jekyll" />
-<meta name="description" content="If you can’t tell by previous posts, I’ve been working on gettingWebmentions to work with my new Jekyll site. I think I’ve finally nailed. If you take a look at my initial post on moving to Jekyll, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s Webmention.io plugin I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a sleep 2m in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site." />
-<meta property="og:description" content="If you can’t tell by previous posts, I’ve been working on gettingWebmentions to work with my new Jekyll site. I think I’ve finally nailed. If you take a look at my initial post on moving to Jekyll, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s Webmention.io plugin I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a sleep 2m in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site." />
-<link rel="canonical" href="https://miklb.com/finally-webmentons-with-jekyll-part-duex" />
-<meta property="og:url" content="https://miklb.com/finally-webmentons-with-jekyll-part-duex" />
+<title>Extraneous Whitespace in Jekyll HTML - Miklb’s Mindless Ramblings</title>
+<meta property="og:title" content="Extraneous Whitespace in Jekyll HTML" />
+<meta name="description" content="One artifact of Jekyll that has bothered me is the redundant blank lines in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been discussing the issue for 3 years without a solution." />
+<meta property="og:description" content="One artifact of Jekyll that has bothered me is the redundant blank lines in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been discussing the issue for 3 years without a solution." />
+<link rel="canonical" href="https://miklb.com/extraneous-whitespace-in-jekyll-html" />
+<meta property="og:url" content="https://miklb.com/extraneous-whitespace-in-jekyll-html" />
 <meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-01-30T00:00:00+00:00" />
-<link rel="next" href="https://miklb.com/focused-blogs" title="Focused Blogs" />
-<link rel="prev" href="https://miklb.com/breaking-out-of-the-silo" title="Breaking Out of the Silo" />
+<meta property="article:published_time" content="2016-05-14T21:03:00+00:00" />
+<link rel="prev" href="https://miklb.com/2016/05/12/couch-5k-d1w1/" title="Couch to 5k - Day 1 Week 1" />
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "Finally Webmentions with Jekyll",
-    "datePublished": "2016-01-30T00:00:00+00:00",
-    "description": "If you can’t tell by previous posts, I’ve been working on gettingWebmentions to work with my new Jekyll site. I think I’ve finally nailed. If you take a look at my initial post on moving to Jekyll, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s Webmention.io plugin I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a sleep 2m in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.",
+    "headline": "Extraneous Whitespace in Jekyll HTML",
+    "datePublished": "2016-05-14T21:03:00+00:00",
+    "description": "One artifact of Jekyll that has bothered me is the redundant blank lines in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been discussing the issue for 3 years without a solution.",
     "logo": "https://miklb.compublic/favicon.png",
-    "url": "https://miklb.com/finally-webmentons-with-jekyll-part-duex"
+    "url": "https://miklb.com/extraneous-whitespace-in-jekyll-html"
   }
 </script>
 <!-- End Jekyll SEO tag -->
@@ -143,15 +142,15 @@ svg{ height: 100%; width: 100%; }
     
   	<h1 class="post-title p-name">
   		
-  		<a class="u-url" href="/finally-webmentons-with-jekyll-part-duex">
-  			Finally Webmentions with Jekyll
+  		<a class="u-url" href="/extraneous-whitespace-in-jekyll-html">
+  			Extraneous Whitespace in Jekyll HTML
   		</a>
   		
   	</h1>
   
 
     <h2 class="p-summary p-bridgy-twitter-content">
-      I think I've finally nailed getting webmention working with Jekyll
+      Found a little Jekyll plugin to cleanup whitespace to produce better source code without overhead in build.
     </h2>
 
   </header>
@@ -164,10 +163,11 @@ svg{ height: 100%; width: 100%; }
 
   <div class="e-content">
     
-      <p>If you can’t tell by previous posts, I’ve been working on getting
-<a href="https://indiewebcamp.com/Webmention">Webmentions</a> to work with my new Jekyll site. I <em>think</em> I’ve finally nailed. If you take a look at my initial post <a href="http://miklb.com/making-the-move-to-jekyll">on moving to Jekyll</a>, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s <a href="https://github.com/aarongustafson/jekyll-webmention_io">Webmention.io plugin</a> I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a <code class="highlighter-rouge">sleep 2m</code> in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.</p>
+      <p>One artifact of Jekyll that has bothered me is the <a href="https://github.com/jekyll/jekyll/issues/1717">redundant blank lines</a> in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been <a href="https://github.com/Shopify/liquid/issues/216">discussing the issue</a> for 3 years without a solution.</p>
 
-<p><a href="https://brid.gy/publish/twitter"></a></p>
+<p>My first approach to solving this was to use a Ruby gem <a href="https://github.com/threedaymonk/htmlbeautifier">HTML Beautifier</a>. It works great, but for a site like mine with over 500 posts with a lot of tag pages, it increases the build time exponentially. To the point I’ve seen Travis time out due to the long process. Today I went looking for another solution and stumbled upon this <a href="https://gist.github.com/kerotaa/5788650">gist - remove empty lines</a>. It concerned me the plugin would increase the build time in Jekyll vs in Travis, but was pleasantly surprised it added no noticeable overhead and produces much cleaner HTML output.</p>
+
+<p>Now I get quick build times and cleaner source.</p>
 
     
   </div>
@@ -196,8 +196,8 @@ svg{ height: 100%; width: 100%; }
             </a>
       </div>
       <div class="meta-wrap">
-        <p><a href="">Finally Webmentions with Jekyll </a> posted on <time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>.</p>
-        <p>This entry has been tagged with the keywords: <a href="/tag/webmention" class="p-category" rel="tag">webmention </a><a href="/tag/Jekyll" class="p-category" rel="tag">Jekyll </a></p>
+        <p><a href="">Extraneous Whitespace in Jekyll HTML </a> posted on <time datetime="2016-05-14T21:03:00+00:00" class="dt-time post-date">14 May 2016</time>.</p>
+        <p>This entry has been tagged with the keywords: <a href="/tag/Jekyll" class="p-category" rel="tag">Jekyll </a><a href="/tag/HTML" class="p-category" rel="tag">HTML </a></p>
     </div>
 </footer>
 </article>
@@ -208,18 +208,18 @@ svg{ height: 100%; width: 100%; }
   <ul class="post-list">
   
   <li>
-    <span class="post-date"><time datetime="2016-01-20T00:00:00+00:00" class="dt-time post-date">20 Jan 2016</time></span>
-     <a href="/testing-sending-webmentions">Testing Sending Webmentions</a>
-  </li>
-  
-  <li>
-    <span class="post-date"><time datetime="2016-05-14T21:03:00+00:00" class="dt-time post-date">14 May 2016</time></span>
-     <a href="/extraneous-whitespace-in-jekyll-html">Extraneous Whitespace in Jekyll HTML</a>
+    <span class="post-date"><time datetime="2016-04-18T13:10:00+00:00" class="dt-time post-date">18 Apr 2016</time></span>
+     <a href="/headings-what-was-old-is-new-again">Headings - What Was Old is New Again</a>
   </li>
   
   <li>
     <span class="post-date"><time datetime="2016-04-12T00:00:00+00:00" class="dt-time post-date">12 Apr 2016</time></span>
      <a href="/rough-take-on-jekyll">Rough Take on Jekyll</a>
+  </li>
+  
+  <li>
+    <span class="post-date"><time datetime="2016-02-06T00:00:00+00:00" class="dt-time post-date">06 Feb 2016</time></span>
+     <a href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">Text Expander snippet for Jekyll With Slug for Permalink</a>
   </li>
   
 </ul>

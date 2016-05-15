@@ -5,13 +5,27 @@
   <title type="text" xml:lang="en"></title>
     <link type="application/atom+xml" href="/atom.xml" rel="self"/>
     <link href="/"/>
-  <updated>2016-05-15T00:56:44Z</updated>
+  <updated>2016-05-15T01:20:23Z</updated>
   <id>/</id>
   <author>
     <name></name>
     <email></email>
   </author>
   <rights type="text">Copyright © 2016 Michael Bishop. All rights reserved.</rights>
+  
+  <entry>
+    <title>Extraneous Whitespace in Jekyll HTML</title>
+    <link rel="alternate" type="text/html" href="/extraneous-whitespace-in-jekyll-html/?utm_source=RSS&amp;utm_medium=RSS" />
+    <published>2016-05-14T21:03:00Z</published>
+    <updated>2016-05-14T21:03:00+00:00</updated>
+    <id>/extraneous-whitespace-in-jekyll-html</id>
+    <content type="html"><![CDATA[ <p>One artifact of Jekyll that has bothered me is the <a href="https://github.com/jekyll/jekyll/issues/1717">redundant blank lines</a> in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been <a href="https://github.com/Shopify/liquid/issues/216">discussing the issue</a> for 3 years without a solution.</p>
+
+<p>My first approach to solving this was to use a Ruby gem <a href="https://github.com/threedaymonk/htmlbeautifier">HTML Beautifier</a>. It works great, but for a site like mine with over 500 posts with a lot of tag pages, it increases the build time exponentially. To the point I’ve seen Travis time out due to the long process. Today I went looking for another solution and stumbled upon this <a href="https://gist.github.com/kerotaa/5788650">gist - remove empty lines</a>. It concerned me the plugin would increase the build time in Jekyll vs in Travis, but was pleasantly surprised it added no noticeable overhead and produces much cleaner HTML output.</p>
+
+<p>Now I get quick build times and cleaner source.</p>
+ ]]></content>
+  </entry>
   
   <entry>
     <title>Couch to 5k - Day 1 Week 1</title>
@@ -177,17 +191,6 @@ Either way, you could do much worse than to make your bit of the web fast.
 </div>
 <p>I’m sure as I expand my development world, (I have a goal to learn python by <a href="https://miklb.com/building-a-twitterbot">Building a Twitterbot</a> ) I’ll continue to tweak Atom, but for now, I’m as close to happy with an editor as I have ever been. Feel free to share with me on Twitter <a href="https://twitter.com/miklb">@miklb</a> your tips and trick.
 <a href="https://brid.gy/publish/twitter"></a></p>
- ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Interest in Tampa Homebrew Website Club?</title>
-    <link rel="alternate" type="text/html" href="/interest-in-tampa-homebrew-website-club/?utm_source=RSS&amp;utm_medium=RSS" />
-    <published>2016-04-19T14:00:00Z</published>
-    <updated>2016-04-19T14:00:00+00:00</updated>
-    <id>/interest-tampa-homebrew-website-club</id>
-    <content type="html"><![CDATA[ <p>Gauging interest in Tampa to see if anyone would be up for joining a
-<a href="https://indiewebcamp.com/events/2016-04-06-homebrew-website-club">Homebrew Website Club</a>. A lot of tech folks have vey neglected personal sites and this would give folks a chance to get together and talk tech and work on their personal site and pet proejcts. Platform agnostic (read, not another WordPress meetup) so open to anyone. If interested ping me on <a href="https://twitter.com/miklb">Twitter @miklb</a> for now and I’ll sort out finding a location and setting up a time. Only looking for a couple of people to get off the ground.</p>
  ]]></content>
   </entry>
   
