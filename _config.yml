@@ -23,6 +23,7 @@ webmentions: yes
 # Plugins
 gems:
  - octopress-paginate
+ - jekyll-feed
  - jekyll-seo-tag
  - jekyll-gist
  - jekyll-archives

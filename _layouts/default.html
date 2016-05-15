@@ -19,7 +19,7 @@
   </style>
 
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url | prepend: site.url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.github.url | prepend: site.url }}">
+	{% feed_meta %}
 	<link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.png">
 	{% if site.webmentions %}
 	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
