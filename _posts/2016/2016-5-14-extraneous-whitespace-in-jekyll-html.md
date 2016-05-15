@@ -14,3 +14,5 @@ One artifact of Jekyll that has bothered me is the [redundant blank lines](https
 My first approach to solving this was to use a Ruby gem [HTML Beautifier](https://github.com/threedaymonk/htmlbeautifier). It works great, but for a site like mine with over 500 posts with a lot of tag pages, it increases the build time exponentially. To the point I've seen Travis time out due to the long process. Today I went looking for another solution and stumbled upon this [gist - remove empty lines](https://gist.github.com/kerotaa/5788650). It concerned me the plugin would increase the build time in Jekyll vs in Travis, but was pleasantly surprised it added no noticeable overhead and produces much cleaner HTML output.
 
 Now I get quick build times and cleaner source.
+
+<a href="https://brid.gy/publish/twitter"></a>
