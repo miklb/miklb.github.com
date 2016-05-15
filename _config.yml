@@ -24,6 +24,7 @@ webmentions: yes
 gems:
  - octopress-paginate
  - jekyll-feed
+ - jekyll-sitemap
  - jekyll-seo-tag
  - jekyll-gist
  - jekyll-archives
