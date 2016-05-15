@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +7,10 @@
 	<meta name="twitter:site" content="@miklb" />
 	<title>Michael Bishop - Miklb&#39;s Mindless Ramblings - page 3</title>
 	<meta name="description" content="Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.">
-	
     <link rel="self" href="https://miklb.com" type="text/html" />
   	<link rel="micropub" href="http://miklb-micropub.herokuapp.com/micropub/miklb.com" />
 		<link rel="authorization_endpoint" href="https://indieauth.com/auth">
 		<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-  
-
 	<style type="text/css">
     .site-header{ padding: 3% 6%; }
 @media (max-width: 1000px){
@@ -60,15 +56,11 @@ svg{ height: 100%; width: 100%; }
 .post-title a{ color: rgb(11, 26, 38); }
 .banner{ background-color: rgb(11, 26, 38); background-size: cover; color: rgb(255, 255, 255); display: inline-block; font-size: 1.2em; text-align: center; width: 100%; }
 .banner .u-photo{ border: 3px solid rgb(204, 204, 204); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; height: 10rem; overflow: hidden; width: 10rem; }
-
   </style>
-
 	<link rel="canonical" href="https://miklb.com/page3/">
 	<link rel="alternate" type="application/rss+xml" title="Miklb's Mindless Ramblings" href="https://miklb.com /feed.xml ">
 	<link rel="shortcut icon" href="/public/favicon.png">
-	
 	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-	
 	<!-- Begin Jekyll SEO tag v1.4.0 -->
 <title>Michael Bishop - Miklb’s Mindless Ramblings - page 3 - Miklb’s Mindless Ramblings</title>
 <meta property="og:title" content="Michael Bishop - Miklb’s Mindless Ramblings - page 3" />
@@ -89,316 +81,112 @@ svg{ height: 100%; width: 100%; }
 </script>
 <!-- End Jekyll SEO tag -->
 </head>
-
 <body class="h-feed">
 	<div class="alert"><strong>This site is going through an open redesign, so if things look weird, that is why.</strong></div>
-
 	<header class="site-header" role="banner">
 		<a class="site-title" href="/">Miklb's Mindless Ramblings</a>
 		<nav class="site-nav" role="navigation">
 			<ul>
-				
-      	 
-         
-         
           		<li itemprop="url"><a  class="" href="/about/">About</a></li>
-							
-        
-      
-         
-         
-        
-      
-         
-         
-        
-      
-         
-      
-         
-         
-        
-      
-         
-         
-        
-      
-         
-         
-        
-      
-         
-         
-        
-      
 			</ul>
 		</nav>
 	</header>
-	
 	<div id="wrapper">
 		<main role="main">
 			<div class="content">
 				<div class="posts">
-  
-  
-
-
 <article class="post h-entry">
-	
 	<h1 class="post-title p-name">
-		
 		<a class="u-url" href="/headings-what-was-old-is-new-again">
 			Headings - What Was Old is New Again
 		</a>
-		
 	</h1>
-
-
 	<time datetime="2016-04-18T13:10:00+00:00" class="dt-time post-date">18 Apr 2016</time>
-
-  
-
-  
-
-  
-
   <div class="e-content">
-    
       <p>Seems HTML WG has reversed course on a previous recommendation that allowed <code class="highlighter-rouge">sections</code> to have their own <code class="highlighter-rouge">H1</code> tag, now recommending the previous norm of cascading H tags.</p>
-
 <blockquote>
 Given that this bug has been around, and not fixed in browsers, for many  
 years, we are proposing to remove the suggestion, and return to the model  
 where elements `h1..h6` have a defined level of their own.
 <cite><a href="https://lists.w3.org/Archives/Public/public-html/2016Apr/0032.html">HTML WG</a></cite>
 &lt;/bockquote&gt;
-
 <a href="https://brid.gy/publish/twitter"></a>
 </blockquote>
-
-    
   </div>
-
-  
-
-  
-
-  
-  
-
-
 </article>
-
-  
-  
-
-
 <article class="post h-entry">
-	
 	<h1 class="post-title p-name">
-		
 		<a class="u-url" href="/dogfooding">
 			Dogfooding
 		</a>
-		
 	</h1>
-
-
 	<time datetime="2016-04-17T17:27:00+00:00" class="dt-time post-date">17 Apr 2016</time>
-
-  
-
-  
-
-  
-
   <div class="e-content">
-    
       <p>Last night I switched over the <em>theme</em> for this site to a project I’ve been working on the last moth or so, <a href="https://github.com/miklb/jekyll-indieweb">Jekyll-IndieWeb</a>. While I have different design ideas, until I find other users interested in using it, I knew I needed to work out any kinks. I also wanted to have better microformat support until the design changes. Thus
 <a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food">dogfooding</a>.</p>
-
 <p>I will write more about the project once I have more documentation (and work out any more said kinks), but the gist is I wanted to provide someone new to Jekyll with a desire to be part of the
 <a href="https://indiewebcamp.com/">IndieWeb</a> a solid starting point. I rely heavily on the <code class="highlighter-rouge">_config.yml</code> file for options a user can set - profile pic, social media links, choice to include display of webmentions - to quickly get a personal site up and running. The biggest hurdle for me was providing a minimal design that was unopinionated yet still aesthetically appealing. Anyone familiar with HTML &amp; CSS can easily build upon or modify it, but if not, it shouldn’t look <em>ugly</em>.</p>
-
 <p>This has been the first solo project I’ve embarked on that was meant for public consumption from the start, which in itself has been a learning process. Now I just hope others can find it useful in some way. If the project interests you I encourage you to try it out, open any issues in the repo, or reach out on #indiewebcamp IRC, I tend to hang around there most days.</p>
-
 <p><a href="https://brid.gy/publish/twitter"></a></p>
-
-    
   </div>
-
-  
-
-  
-
-  
-  
-
-
 </article>
-
-  
-  
-
-
 <article class="post h-entry">
-	
 	<h1 class="post-title p-name">
-		
 		<a class="u-url" href="/rough-take-on-jekyll">
 			Rough Take on Jekyll
 		</a>
-		
 	</h1>
-
-
 	<time datetime="2016-04-12T00:00:00+00:00" class="dt-time post-date">12 Apr 2016</time>
-
-  
-
-  
-
-  
-
   <div class="e-content">
-    
       <p>In a longer discussion about the recent pitch by Medium to content creators to move to their platform and options for new companies to build a site on, this nugget on whether Jekyll is an option:</p>
-
 <blockquote>
 Only usable by developers. About as accessible as improv Klingon slam poetry to anybody else.
-
 - <cite><a href="https://www.baldurbjarnason.com/notes/choosing-a-host">Baldur Bjarnason</a> </cite>
 </blockquote>
-
 <p><a href="https://brid.gy/publish/twitter"></a></p>
-
-    
   </div>
-
-  
-
-  
-
-  
-  
-
-
 </article>
-
-  
-  
-
-
 <article class="post h-entry">
-	
 	<h1 class="post-title p-name">
-		
 		<a class="u-url" href="/solving-the-mysterious-relaunching-itunes">
 			Solving the Mysterious Relaunching iTunes
 		</a>
-		
 	</h1>
-
-
 	<time datetime="2016-04-05T14:57:00+00:00" class="dt-time post-date">05 Apr 2016</time>
-
-  
-
-  
-
-  
-
   <div class="e-content">
-    
       <p>I had been plagued by an issue on my Macbook Air the last couple of months where iTunes would relaunch mysteriously. Not random relaunch mysteriously, more like, as soon as I quit, it would relaunch. I tried force quit and restarts. I trashed cache files and rebuilt the library to no avail. I filed bug reports and feedback to iTunes. Finally I reached out to @AppleSupport on Twitter. Right after (mind you, I DM’ed the account as they asked and so far no further reply) my internet friend <a href="https://twitter.com/shep">@shep</a> linked to a blog post of his from 4 years ago with his own <a href="https://iamshep.net/2012/08/the-never-ending-saga-of-itunes-launching-itself/">saga of iTunes relaunching</a>. I read through, and while I didn’t have headphones plugged in, I have dozed off a few times with my headphones in, and maybe, as he read about the microswitch in the jack, maybe, just maybe the headphones pulled out slightly &amp; not depressing said microswitch. So I forcefully inserted some headphones and quickly pulled the plug out of the jack. I quit iTunes and <em>so far</em>, iTunes hasn’t relaunched.</p>
-
 <p>Did I mention @AppleSupport hasn’t followed up yet?</p>
-
 <p><a href="https://brid.gy/publish/twitter"></a></p>
-
-    
   </div>
-
-  
-
-  
-
-  
-  
-
-
 </article>
-
-  
-  
-
-
 <article class="post h-entry">
-	
 	<h1 class="post-title p-name">
-		
 		<a class="u-url" href="/building-a-twitterbot">
 			Building a Twitterbot
 		</a>
-		
 	</h1>
-
-
 	<time datetime="2016-04-03T00:00:00+00:00" class="dt-time post-date">03 Apr 2016</time>
-
-  
-
-  
-
-  
-
   <div class="e-content">
-    
       <p>I had an interest to learn the programming language python for quite some time. I’ve played around with it a little using <a href="https://geo.itunes.apple.com/us/app/pythonista/id528579881?at=10lKmy">Pythonista</a> in iOS to <a href="https://miklb.com/use-pythonista-to-get-weather-of-current-location-into-drafts-app">build a fishing log</a>, but otherwise have only done some cursory reading. Since I do best learning by doing, I needed an idea to <strong>use</strong> python. I’ve seen some interesting Twitterbots built with it, <a href="https://twitter.com/pomological">@pomological</a> being my recent favorite, but wasn’t sure what to build. Ultimately, the idea came to me to build a bot that retrieves an image from Flickr and builds a color scheme from that and post the scheme and original image. I’ve done some basic research and found some libraries to connect (you didn’t think I was going to write the whole thing from scratch?).</p>
-
 <p>But I don’t just want a any random image, so once I get the bot <em>working</em>, I want to be able to try and pull outdoor/landscape images. In a perfect world, I would post 3 images a day—morning, noon, and night. The morning image would be a sunrise, noon/daytime image a normal image and, you guessed it, the night/evening image would be a sunset.</p>
-
 <p>I figured I needed a name for the Twitterbot, not only to make sure something would be available, but since I would need API keys, that has been my first tangible step to create the bot. Thus, @Flickolorbot has been officially conceived.</p>
-
 <p>Stay tuned for more adventures.</p>
-
 <p><a href="https://brid.gy/publish/twitter"></a></p>
-
-    
   </div>
-
-  
-
-  
-
-  
-  
-
-
 </article>
-
-  
 </div>
-
 <div class="pagination">
-  
     <a class="pagination-item older" href="/page4/">Older</a>
-  
-  
     <a class="pagination-item newer" href="/page2/">Newer</a>
-  
 </div>
-
 			</div>
 		</main>
-
 	</div>
 	<footer class="site-footer" role="contentinfo">
 <p>
 	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
 ">IndieWeb principles</a>
 </p>
-
 	</footer>
 	<script>
       var cb = function() {
@@ -412,5 +200,4 @@ Only usable by developers. About as accessible as improv Klingon slam poetry to 
       else window.addEventListener('load', cb);
     </script>
 </body>
-
 </html>
