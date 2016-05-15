@@ -36,6 +36,7 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (1.4.0)
       jekyll (~> 3.0)
+    jekyll-sitemap (0.10.0)
     jekyll-tagging (1.0.1)
       ruby-nuggets
     jekyll-tagging-related_posts (0.2.1)
@@ -79,6 +80,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-imgix
   jekyll-seo-tag
+  jekyll-sitemap
   jekyll-tagging-related_posts
   kramdown
   liquid

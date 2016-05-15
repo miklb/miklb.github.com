@@ -7,6 +7,7 @@ gem "jekyll"
 gem 'octopress-paginate'
 gem 'jekyll-gist'
 gem 'jekyll-feed'
+gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem 'jekyll-archives'
 gem 'jekyll-tagging-related_posts'
