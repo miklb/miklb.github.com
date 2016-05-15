@@ -1,263 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Miklb&#39;s Mindless Ramblings</title>
-    <description>A personal blog of Michael Bishop touching on web dev, food, and a little of everything in between.</description>
-    <link>miklb.com/</link>
-    <atom:link href="miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Feb 2016 01:26:43 +0000</pubDate>
-    <lastBuildDate>Sun, 28 Feb 2016 01:26:43 +0000</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
-    
-      <item>
-        <title>A Few Thoughts About WordPress REST API and Core</title>
-        <description>&lt;p&gt;There has been much written about the ~drama~ discussions surrounding the &lt;a href=&quot;http://v2.wp-api.org&quot;&gt;WordPress REST API&lt;/a&gt; and inclusion in core. Or exclusion, depending on who’s take you are reading. &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; Suffice to say, the gist I’ve gathered is that there are two competing perspectives, one side wants to incrementally add the API, the other wants a fully fleshed out, complete API before inclusion in core.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.3">Jekyll</generator><link href="https://miklb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://miklb.com/" rel="alternate" type="text/html" /><updated>2016-05-15T02:04:20+00:00</updated><id>https://miklb.com/</id><title>Miklb&#39;s Mindless Ramblings</title><subtitle>Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.</subtitle><author><name>Michael Bishop</name></author><entry><title>Extraneous Whitespace in Jekyll HTML</title><link href="https://miklb.com/extraneous-whitespace-in-jekyll-html" rel="alternate" type="text/html" title="Extraneous Whitespace in Jekyll HTML" /><published>2016-05-14T21:03:00+00:00</published><updated>2016-05-14T21:03:00+00:00</updated><id>https://miklb.com/extraneous-whitespace-in-jekyll-html</id><content type="html" xml:base="https://miklb.com/extraneous-whitespace-in-jekyll-html">&lt;p&gt;One artifact of Jekyll that has bothered me is the &lt;a href=&quot;https://github.com/jekyll/jekyll/issues/1717&quot;&gt;redundant blank lines&lt;/a&gt; in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been &lt;a href=&quot;https://github.com/Shopify/liquid/issues/216&quot;&gt;discussing the issue&lt;/a&gt; for 3 years without a solution.&lt;/p&gt;
 
-&lt;p&gt;I guess my 2¢ on the matter is this—the core tenet of the &lt;a href=&quot;http://wordpressfoundation.org&quot;&gt;WordPress Foundation&lt;/a&gt; is “to democratize publishing through Open Source, GPL software.” From what I’ve gathered reading on the subject, the REST API team have the publishing portion of the API covered and ready for inclusion in core. The parts that would come (much) later would be things like the customizer, file editing, more site &lt;strong&gt;management&lt;/strong&gt; tools, less about actually publishing.&lt;/p&gt;
+&lt;p&gt;My first approach to solving this was to use a Ruby gem &lt;a href=&quot;https://github.com/threedaymonk/htmlbeautifier&quot;&gt;HTML Beautifier&lt;/a&gt;. It works great, but for a site like mine with over 500 posts with a lot of tag pages, it increases the build time exponentially. To the point I’ve seen Travis time out due to the long process. Today I went looking for another solution and stumbled upon this &lt;a href=&quot;https://gist.github.com/kerotaa/5788650&quot;&gt;gist - remove empty lines&lt;/a&gt;. It concerned me the plugin would increase the build time in Jekyll vs in Travis, but was pleasantly surprised it added no noticeable overhead and produces much cleaner HTML output.&lt;/p&gt;
 
-&lt;p&gt;If democratized publishing is still the guiding principle for WordPress the project, then I don’t see how there is any debate. Opening up the methods to publish beyond what has been the only means available for basically the entire life of the project seems like a no brainer to this guy who’s been around it for 11 years this year. No one will truly know how much is opened up until it is in the hands of creative developers and then in the hands of content creators.&lt;/p&gt;
+&lt;p&gt;Now I get quick build times and cleaner source.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael Bishop</name></author><category term="Jekyll" /><category term="HTML" /><summary>One artifact of Jekyll that has bothered me is the redundant blank lines in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been discussing the issue for 3 years without a solution.</summary></entry><entry xml:lang="en"><title>Couch to 5k - Day 1 Week 1</title><link href="https://miklb.com/2016/05/12/couch-5k-d1w1/" rel="alternate" type="text/html" title="Couch to 5k - Day 1 Week 1" /><published>2016-05-12T18:56:00+00:00</published><updated>2016-05-12T18:56:00+00:00</updated><id>https://miklb.com/2016/05/12/couch-5k-d1w1</id><content type="html" xml:base="https://miklb.com/2016/05/12/couch-5k-d1w1/">&lt;p&gt;I have been telling myself all year that I was going to start this, but my body was telling me something else. Today that changed. It was just day 1, walking for 12 minutes, jogging for 8, but it feels perfect and I can’t wait for day 2.&lt;/p&gt;
+
+&lt;p&gt;Stats:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Distance 1.6 miles&lt;/li&gt;
+  &lt;li&gt;Pace 12:29 min/mi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael Bishop</name></author><summary>I have been telling myself all year that I was going to start this, but my body was telling me something else. Today that changed. It was just day 1, walking for 12 minutes, jogging for 8, but it feels perfect and I can’t wait for day 2.</summary></entry><entry xml:lang="en"><title></title><link href="https://miklb.com/social/2016/05/12/using-notes/" rel="alternate" type="text/html" title="" /><published>2016-05-12T16:16:28+00:00</published><updated>2016-05-12T16:16:28+00:00</updated><id>https://miklb.com/social/2016/05/12/using-notes</id><content type="html" xml:base="https://miklb.com/social/2016/05/12/using-notes/">&lt;p&gt;Need to start using notes on my site, but also need to determine UI and how they post to Jekyll.&lt;/p&gt;</content><author><name>Michael Bishop</name></author><category term="social" /><summary>Need to start using notes on my site, but also need to determine UI and how they post to Jekyll.</summary></entry><entry xml:lang="en"><title></title><link href="https://miklb.com/social/2016/05/08/1418/" rel="alternate" type="text/html" title="" /><published>2016-05-08T00:23:38+00:00</published><updated>2016-05-08T00:23:38+00:00</updated><id>https://miklb.com/social/2016/05/08/1418</id><content type="html" xml:base="https://miklb.com/social/2016/05/08/1418/">&lt;p&gt;This never gets old&lt;/p&gt;</content><author><name>Michael Bishop</name></author><category term="social" /><summary>This never gets old</summary></entry><entry><title>Free Resource: Combining Type</title><link href="https://miklb.com/free-resource-combining-type" rel="alternate" type="text/html" title="Free Resource: Combining Type" /><published>2016-05-02T04:07:00+00:00</published><updated>2016-05-02T04:07:00+00:00</updated><id>https://miklb.com/free-resource-combining-type</id><content type="html" xml:base="https://miklb.com/free-resource-combining-type">&lt;p&gt;One of the few design skills I would truly like to fully understand and be able to employ in my work is the ability to choose and use type properly. Tonight I stumbled upon a post on the TypeKit blog sharing a pdf of a previously for sale book on the subject. While it is unfortunate that publisher didn’t succeed, it is generous of the author to share it with the public. Head over to the blog to get a digital copy of &lt;a href=&quot;http://blog.typekit.com/2016/04/29/combining-typefaces-free-guide-to-great-typography/&quot;&gt;Pocket Guide to Combining Typefaces&lt;/a&gt;. If you have other resources, please send them my way.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael Bishop</name></author><category term="resources" /><category term="typography" /><summary>One of the few design skills I would truly like to fully understand and be able to employ in my work is the ability to choose and use type properly. Tonight I stumbled upon a post on the TypeKit blog sharing a pdf of a previously for sale book on the subject. While it is unfortunate that publisher didn’t succeed, it is generous of the author to share it with the public. Head over to the blog to get a digital copy of Pocket Guide to Combining Typefaces. If you have other resources, please send them my way.</summary></entry><entry xml:lang="en"><title>Testing MicroPub</title><link href="https://miklb.com/2016/04/28/testing-micro-pub/" rel="alternate" type="text/html" title="Testing MicroPub" /><published>2016-04-28T15:24:00+00:00</published><updated>2016-04-28T15:24:00+00:00</updated><id>https://miklb.com/2016/04/28/testing-micro-pub</id><content type="html" xml:base="https://miklb.com/2016/04/28/testing-micro-pub/">&lt;p&gt;What is going to happen?&lt;/p&gt;</content><author><name>Michael Bishop</name></author><summary>What is going to happen?</summary></entry><entry><title>Organizing Jekyll Posts</title><link href="https://miklb.com/organizing-jekyll-posts" rel="alternate" type="text/html" title="Organizing Jekyll Posts" /><published>2016-04-26T22:44:00+00:00</published><updated>2016-04-26T22:44:00+00:00</updated><id>https://miklb.com/organizing-jekyll-posts</id><content type="html" xml:base="https://miklb.com/organizing-jekyll-posts">&lt;p&gt;Until last night, I was under the impression you had to store all of your posts as markdown files in a single directory called &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; unless you changed that in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file (and even then, my assumption was it was still a single directory.) That said, I still sought out whether there was a way to organize them by at least year within that single folder. I’ve been blogging for 11 years this spring, and while sporadic at times, that is still a lot of posts. When I need to reference a new one, or look for something from the past, having them by year would be nice.&lt;/p&gt;
+
+&lt;p&gt;tl;dr yes, you can arbitrarily organize under the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder however you want. All Jekyll looks for are markdown files with FrontMatter.&lt;/p&gt;
+
+&lt;p&gt;What I also learned, and isn’t &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;well documented&lt;/a&gt; &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is that you can create top level folders each with their own &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; sub-folder and Jekyll will read from each one, appending that folder name to the generated url for the post, i.e. a folder &lt;code class=&quot;highlighter-rouge&quot;&gt;foo&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;2016-04-26-post-title&lt;/code&gt; would yield a URL of &lt;code class=&quot;highlighter-rouge&quot;&gt;example.com/foo/post-title&lt;/code&gt; (varying by your permalink structure). Those top level folders are then treated as categories, allowing for more filtration within your templates and site organization. I can see other ways of using them, especially as I continue to move towards a more indieweb way of doing things and more tweets originating from this site.&lt;/p&gt;
+
+&lt;p&gt;I intend to contribute my discoveries to the official documentation as soon as I can.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I’m specifically not linking to any of the &lt;em&gt;hot takes&lt;/em&gt; on the subject. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Hint: it’s hidden under &lt;code class=&quot;highlighter-rouge&quot;&gt;page.categories&lt;/code&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Michael Bishop</name></author><category term="jekyll" /><category term="categories" /><category term="organization" /><summary>Until last night, I was under the impression you had to store all of your posts as markdown files in a single directory called _posts unless you changed that in your _config.yml file (and even then, my assumption was it was still a single directory.) That said, I still sought out whether there was a way to organize them by at least year within that single folder. I’ve been blogging for 11 years this spring, and while sporadic at times, that is still a lot of posts. When I need to reference a new one, or look for something from the past, having them by year would be nice.</summary></entry><entry><title>Productivity Status Early 2016</title><link href="https://miklb.com/productivity-status-early-2016" rel="alternate" type="text/html" title="Productivity Status Early 2016" /><published>2016-04-25T19:45:00+00:00</published><updated>2016-04-25T19:45:00+00:00</updated><id>https://miklb.com/productivity-status-early-2016</id><content type="html" xml:base="https://miklb.com/productivity-status-early-2016">&lt;p&gt;I broke one of my new rules today by tweeting out more than politics snark or sports and briefly outlined the direction I’m moving with my &lt;em&gt;productivity&lt;/em&gt; this year. I’ve been toiling the past year or so trying to shoehorn my brain into Omnifocus to no avail, so at the beginning of the year I started exploring other methods. About 2 weeks ago, my brain just started to work in regard to using &lt;a href=&quot;https://www.taskpaper.com&quot;&gt;TaskPaper&lt;/a&gt;. If you aren’t familiar with TaskPaper, it is a plain text method of tracking todos that has tools built around it to filter by tags and projects. I’ve owned the app for awhile, but not until 3.0 was in beta did things begin to click within the app organizing projects. I always wanted (wrongly) to keep separate files for each project. Maybe that is one thing I learned using Omnifocus was structuring projects. Now everything personal is one single text file. I do have a separate one for the free lance work I’m doing because that’s a different mode. I don’t want to be distracted by anything when I’m trying to mow through items for work.&lt;/p&gt;
+
+&lt;p&gt;The other element of my productivity was how to keep and better use Reminders.app and Siri. I knew TaskPaper had Applescript support, so that was the first place I looked. Sure enough, I found a script that would import from Reminders to TaskPaper. Unfortunately, TP3 changed it’s scripting method to new JXA, so the old Applescripts were not compatible. Luckily, someone did the work before I fried synapses trying to learn more advanced methods of JXA. A thread in the support forums,
+&lt;a href=&quot;http://support.hogbaysoftware.com/t/appending-items-to-a-taskpaper-file-using-siri/1456/9&quot;&gt;Using Siri&lt;/a&gt; covered exactly what I wanted.&lt;/p&gt;
+
+&lt;p&gt;From there, I devised the idea of having an “Inbox” for Siri and a corresponding list for TP. I also have a Grocery List and my main reminders is for timed items. I prefer Apple’s reminders because it’s nag is truly a nag. If something &lt;strong&gt;must&lt;/strong&gt; be done on a certain day, it will sit on the lock screen of my phone. I can snooze it for an hour if it’s not time sensitive, and if it really can wait, I can put off until next day.&lt;/p&gt;
+
+&lt;p&gt;Now I can say, “Hey, Siri, add build a robot to my inbox” and she will. Later, I can run the script which will migrate (including deleting) the reminder to an Inbox in TaskPaper, which I can move to an appropriate project or create a new one if it is warranted. My next goal is to set up a cron job on the always-on iMac to run the script every night.&lt;/p&gt;
+
+&lt;p&gt;For iOS, I’ve tried a few different apps for TaskPaper, but it seems &lt;a href=&quot;https://geo.itunes.apple.com/us/app/editorial/id673907758?at=10lKmy&quot;&gt;Editorial&lt;/a&gt; is going to stick. Also, I’ve not given up on Omnifocus for long term project tracking or potentially work related where contexts and due dates might be necessary, something OF excels at. An upcoming update to &lt;a href=&quot;https://geo.itunes.apple.com/us/app/omnifocus-2/id904071710?at=10lKmy&quot;&gt;Omnifocus for iOS&lt;/a&gt; will vastly expand on the URL schemes, and there is already a demo using &lt;a href=&quot;https://geo.itunes.apple.com/us/app/workflow-powerful-automation/id915249334?at=10lKmy&quot;&gt;WorkFlow&lt;/a&gt; to build projects in OF from TaskPaper formatted lists in Editorial. Sounds snazzy.&lt;/p&gt;
+
+&lt;p&gt;All in all my new system isn’t that fancy or original, but again, that’s the trap of chasing productivity, apps and systems. They become complicated and burdensome to the point you abandon them for the next shiny object, never truly doing the stuff you really wanted to keep track of in the first place.&lt;/p&gt;
+
+&lt;p&gt;I hope when I visit this in the fall, I’ve not made many changes and can focus on what I’ve accomplished over the summer.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael Bishop</name></author><category term="productivity" /><category term="Mac" /><category term="TaskPaper" /><summary>I broke one of my new rules today by tweeting out more than politics snark or sports and briefly outlined the direction I’m moving with my productivity this year. I’ve been toiling the past year or so trying to shoehorn my brain into Omnifocus to no avail, so at the beginning of the year I started exploring other methods. About 2 weeks ago, my brain just started to work in regard to using TaskPaper. If you aren’t familiar with TaskPaper, it is a plain text method of tracking todos that has tools built around it to filter by tags and projects. I’ve owned the app for awhile, but not until 3.0 was in beta did things begin to click within the app organizing projects. I always wanted (wrongly) to keep separate files for each project. Maybe that is one thing I learned using Omnifocus was structuring projects. Now everything personal is one single text file. I do have a separate one for the free lance work I’m doing because that’s a different mode. I don’t want to be distracted by anything when I’m trying to mow through items for work.</summary></entry><entry><title>Performance is a Feature</title><link href="https://miklb.com/performance-is-a-feature" rel="alternate" type="text/html" title="Performance is a Feature" /><published>2016-04-25T00:07:00+00:00</published><updated>2016-04-25T00:07:00+00:00</updated><id>https://miklb.com/performance-is-a-feature</id><content type="html" xml:base="https://miklb.com/performance-is-a-feature">&lt;p&gt;I spent last evening making the necessary tweaks to this site to get a perfect 100% score on Google’s
+&lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/&quot;&gt;Pagespeed Insights&lt;/a&gt;. I understand this is just a personal site, but at the root,understanding how to make this site fast will translate to helping bigger projects keep an eye out for potential bottle necks.&lt;/p&gt;
+
+&lt;p&gt;Which is why when Aaron Gustafson &lt;a href=&quot;https://twitter.com/AaronGustafson/status/724448660076027904&quot;&gt;tweeted&lt;/a&gt; this posts headline, it caught my eye.&lt;/p&gt;
+
+&lt;blockquote&gt;
+Either way, you could do much worse than to make your bit of the web fast.
+&lt;cite&gt;&lt;a href=&quot;https://peterchamberlin.com/fast.php&quot;&gt;Peter Chamberlin&lt;/a&gt;&lt;/cite&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The context was more broad and I believe directed towards larger sites, but it has to start somewhere.&lt;/p&gt;
+
+&lt;p&gt;Also, I plan on sharing how I implemented the changes to get to 100%, specifically the critical CSS.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael Bishop</name></author><category term="Performance" /><category term="development" /><summary>I spent last evening making the necessary tweaks to this site to get a perfect 100% score on Google’s
+Pagespeed Insights. I understand this is just a personal site, but at the root,understanding how to make this site fast will translate to helping bigger projects keep an eye out for potential bottle necks.</summary></entry><entry><title>Customizing Atom Editor</title><link href="https://miklb.com/customizing-atom-editor" rel="alternate" type="text/html" title="Customizing Atom Editor" /><published>2016-04-22T03:15:00+00:00</published><updated>2016-04-22T03:15:00+00:00</updated><id>https://miklb.com/customizing-atom-editor</id><content type="html" xml:base="https://miklb.com/customizing-atom-editor">&lt;p&gt;I doubt anyone who writes code for a living or tinkers for that matter hasn’t spent more hours than they’d care to admit tweaking their editor of choice. Suffice to say, I’m in that boat all to well.&lt;/p&gt;
+
+&lt;p&gt;My current editor of choice is &lt;a href=&quot;http://atom.io&quot;&gt;Atom&lt;/a&gt;. It’s open source and more than fits the customization itch.&lt;/p&gt;
+
+&lt;p&gt;Aside from deciding on which packages to use (I’ve
+&lt;a href=&quot;https://atom.io/users/miklb/stars&quot;&gt;starred the ones I use&lt;/a&gt;) the other element I’ve gone back and forth with is theme &amp;amp; syntax UI. I’ve long been a fan of both Solarized Light and Dark, but have finally settled on Atom Dark and &lt;a href=&quot;https://atom.io/themes/oceanic-next&quot;&gt;Oceanic Next&lt;/a&gt;. I can also recommend &lt;a href=&quot;https://olivermak.es&quot;&gt;Oliver Pattison’s&lt;/a&gt; &lt;a href=&quot;https://atom.io/users/opattison&quot;&gt;Newbound syntax themes&lt;/a&gt; My dream font is Operator Mono, but until I can justify the purchase of that, I’m using &lt;a href=&quot;http://input.fontbureau.com/info/&quot;&gt;Input&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One tweak I just discovered is for adjusting the font size in the panel, or the sidebar. I’d been able to easily make the font larger for code/markdown, but sometimes had to break the readers out to discern what file was what in a nested folder. To the rescue I found &lt;code class=&quot;highlighter-rouge&quot;&gt;atom-panel.tool-panel&lt;/code&gt; for just that. I’m currently using &lt;code class=&quot;highlighter-rouge&quot;&gt;1.4em&lt;/code&gt;. Mind you this is on my old 11 inch Air. I’ve not had as much an issue on the iMac.&lt;/p&gt;
+
+&lt;p&gt;Another tweak I’ve added to my custom &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.less&lt;/code&gt; file is to italicize attributes. I’m also a fan of italicized comment blocks, which is included in the snippet.&lt;/p&gt;
+
+&lt;div class=&quot;language-sass highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;atom-text-editor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;nc&quot;&gt;.entity.other.attribute-name&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;italic&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+
+     &lt;span class=&quot;nc&quot;&gt;.comment&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;italic&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-</description>
-        <pubDate>Fri, 12 Feb 2016 00:00:00 +0000</pubDate>
-        <link>miklb.com/a-few-thoughts-about-wordpress-rest-api-and-core</link>
-        <guid isPermaLink="true">miklb.com/a-few-thoughts-about-wordpress-rest-api-and-core</guid>
-        
-        <category>WordPress,</category>
-        
-        <category>REST</category>
-        
-        <category>API</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Text Expander snippet for Jekyll With Slug for Permalink</title>
-        <description>&lt;p&gt;There are plenty of TextExpander snippets floating around for creating Jekyll Front Matter, however, I wanted to take it a step further, and auto-create a slugified permalink with no additional work. The other part of the equation was that I wanted it to be able to use it on TE touch, which meant it had to be done in javascript. After a little Googling, some trial and error, I came up with one that takes a text input for the post title, generates a slug from that, and includes the current date. I understand that the date in the file can be used, however I may not always publish when the file was initially created. Not to mention, when I imported all of my posts from Habari, I needed to be able to use the original post date, not the date the file was created, so I continue to use that. You can certainly modify the snippet for your needs.&lt;/p&gt;
-
-&lt;p&gt;Also note, I have a blank variable for &lt;em&gt;summary&lt;/em&gt;. Since I’m using webmentions, I use the summary as the text for a tweet, which would be different than an excerpt. Some of this may change when I redo the site redesign, but for now, it’s how I roll.&lt;/p&gt;
-
-&lt;p&gt;I would love feedback on how to make the snippet better as it’s my first javascript snippet. Just leave a comment on the gist.&lt;/p&gt;
-
-&lt;noscript&gt;&lt;pre&gt;var title = &amp;#39;%filltext:name=Title%&amp;#39;;
-slug = title.replace(/[^\w\s]/gi, &amp;#39;&amp;#39;);
-var newslug = title.split(&amp;quot; &amp;quot;).join(&amp;quot;-&amp;quot;);
-
-var dt = new Date();
-
-TextExpander.appendOutput(&amp;quot;---\n&amp;quot;);
-TextExpander.appendOutput(&amp;quot;layout: post \n&amp;quot;);
-TextExpander.appendOutput(&amp;quot;title: &amp;quot; + &amp;#39;&amp;quot;&amp;#39; +title + &amp;#39;&amp;quot;&amp;#39;+ &amp;quot;\n&amp;quot;);
-TextExpander.appendOutput(&amp;quot;tags: \n&amp;quot;);
-TextExpander.appendOutput(&amp;quot;published: true \n&amp;quot;);
-TextExpander.appendOutput(&amp;quot;permalink: &amp;quot;) +TextExpander.appendOutput(newslug.toLowerCase()); + TextExpander.appendOutput(&amp;quot; \n&amp;quot;);
-TextExpander.appendOutput(&amp;quot;date: &amp;quot;) + TextExpander.appendOutput(dt.getFullYear() + &amp;quot;-&amp;quot; +(dt.getMonth() +1) + &amp;quot;-&amp;quot; + dt.getDate()) + TextExpander.appendOutput(&amp;quot;\n&amp;quot;);
-TextExpander.appendOutput(&amp;quot;summary: \n&amp;quot;);
-TextExpander.appendOutput(&amp;quot;--- \n&amp;quot;);
-
-// %filltop%&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/miklb/53a93032fb8cc669b1fa.js&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
-        <link>miklb.com/text-expander-snippet-for-jekyll-with-slug-for-permalink</link>
-        <guid isPermaLink="true">miklb.com/text-expander-snippet-for-jekyll-with-slug-for-permalink</guid>
-        
-        <category>Jekyll,</category>
-        
-        <category>TextExpander,</category>
-        
-        <category>javascript</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>First Listen: Luther Dickinson</title>
-        <description>&lt;p&gt;&lt;cite&gt;Garden &amp;amp; Gun&lt;/cite&gt; have a &lt;a href=&quot;http://gardenandgun.com/blog/first-listen-luther-dickinson-blues-ballads&quot;&gt;first listen of Luther Dickinson’s&lt;/a&gt; solo album &lt;cite&gt;Blues &amp;amp; Ballads.&lt;/cite&gt; If you’re not familiar with Dickinson, he was a founding member of the band North Missippi All-Stars, a raucous blues band hailing from their name sake Mississippi. Founded with his brother, they played a modern version of the blues soaked southern rock, with an emphasis on the former. I had the pleasure of seeing them both in a smaller outdoor club setting as well as a larger festival type setting, both times blowing the doors off the crowd. Not sure his vocals will ever be considered above average, but the accompanying vocals from the likes of Mavis Staples balances it out. The lyrics and guitars more than make up for his singing, and its obvious the apple didn’t fall from the tree, as you can tell he knows his way around the studio.&lt;/p&gt;
-
-&lt;p&gt;As first listens go, I’m enjoying it and will certainly be added to the rotation the next week.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
-        <link>miklb.com/first-listen-luther-dickinson</link>
-        <guid isPermaLink="true">miklb.com/first-listen-luther-dickinson</guid>
-        
-        <category>music</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Focused Blogs</title>
-        <description>&lt;p&gt;In my ever revolving attempt to reboot my blog, one thing that has always slowed me down was my concern with being too esoteric in my topics. I want to talk about food, technology and everything in between.&lt;/p&gt;
-
-&lt;p&gt;However, if I want to build any readership (isn’t that a part of blogging, sharing your thoughts with others?) I can’t be mixing in posts about forays into Python with posts about cooking vegetables sous-vide. Sure, there might be a readership that is interested in both topics as I am, but not enough to say “screw it.” So as I continue to work towards a true &lt;a href=&quot;https://indiewebcamp.com&quot;&gt;indieweb&lt;/a&gt;, I’m pivoting a bit in my approach and will use this as domain, now 11 years old, as my base identifier and central clearing house. I’ve acquired several domains, 2 of which will be good to split the topics. Those too will be static Jekyll built sites, with links from this site to new posts.&lt;/p&gt;
-
-&lt;p&gt;Certainly this is more me thinking out loud and putting it out there, as I intend for this domain to be, but my goal is to continue to do such here, rather than bottle  up my thoughts in my head.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 30 Jan 2016 00:00:00 +0000</pubDate>
-        <link>miklb.com/focused-blogs</link>
-        <guid isPermaLink="true">miklb.com/focused-blogs</guid>
-        
-        <category>blogging</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Finally Webmentions with Jekyll</title>
-        <description>&lt;p&gt;If you can’t tell by previous posts, I’ve been working on getting
-&lt;a href=&quot;https://indiewebcamp.com/Webmention&quot;&gt;Webmentions&lt;/a&gt; to work with my new Jekyll site. I &lt;em&gt;think&lt;/em&gt; I’ve finally nailed. If you take a look at my initial post &lt;a href=&quot;http://miklb.com/making-the-move-to-jekyll&quot;&gt;on moving to Jekyll&lt;/a&gt;, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s &lt;a href=&quot;https://github.com/aarongustafson/jekyll-webmention_io&quot;&gt;Webmention.io plugin&lt;/a&gt; I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a &lt;code class=&quot;highlighter-rouge&quot;&gt;sleep 2m&lt;/code&gt; in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 30 Jan 2016 00:00:00 +0000</pubDate>
-        <link>miklb.com/finally-webmentons-with-jekyll-part-duex</link>
-        <guid isPermaLink="true">miklb.com/finally-webmentons-with-jekyll-part-duex</guid>
-        
-        <category>webmention,</category>
-        
-        <category>Jekyll</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Breaking Out of the Silo</title>
-        <description>&lt;p&gt;In my never ending quest to make this site all things “miklb”, one of the goals of the IndieWeb is to &lt;a href=&quot;http://indiewebcamp.com/POSSE&quot;&gt;POSSE&lt;/a&gt;, that is, Publish on your own site, syndicate elsewhere. Breaking the habit of using Twitter without posting first on my site is going to be a hard one, but it’s a goal. While debates rage about extending character counts to 10,000 words, if we only were to use our blog for long form thoughts and link back to Twitter, this wouldn’t be an issue. Consider this an exercise in&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 30 Jan 2016 00:00:00 +0000</pubDate>
-        <link>miklb.com/breaking-out-of-the-silo</link>
-        <guid isPermaLink="true">miklb.com/breaking-out-of-the-silo</guid>
-        
-        <category>twitter,</category>
-        
-        <category>indieweb,</category>
-        
-        <category>blogging</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Testing Sending Webmentions</title>
-        <description>&lt;p&gt;This is either going to go well, or well, not so well. But we are getting there. Slowly.  Last one for the night. Take 2. Day 2.&lt;a href=&quot;https://kartikprabhu.com/notes/test-note-totally-te&quot; class=&quot;u-in-reply-to&quot;&gt;Thanks for the help Kartik&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
-        <link>miklb.com/testing-sending-webmentions</link>
-        <guid isPermaLink="true">miklb.com/testing-sending-webmentions</guid>
-        
-        <category>test</category>
-        
-        <category>webmention</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Making the Move to Jekyll</title>
-        <description>&lt;p&gt;I’ve officially made the change from Habari to Jekyll. I will certainly have more to share on the move, both a post-mortem on Habari, as well as the process I’m using currently for using Jekyll.&lt;/p&gt;
-
-&lt;p&gt;My basic workflow currently is serving the page from GitHub pages, however I’m using Travis CI to build the site and  publish to master branch&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; , there by bypassing the restrictions of gh-pages (specifically, their need for using –safe mode and not up-to-date version of Jekyll). Currently my use case would probably work within their parameters, however I had already started using 3.x and at the time of writing GitHub is using 2.x.&lt;/p&gt;
-
-&lt;p&gt;More importantly to me, I want to be able to blog from my phone. It something that I feel has limited me in sharing interesting items I come across as well as stopping me from making time to put thoughts down as they come. I had originally wrote up &lt;a href=&quot;http://miklb.com/first-thoughts-holy-grail-of-blogging-from-ios-with-jekyll&quot;&gt;some thoughts on using iOS and Jekyll&lt;/a&gt;, but later came across a better workflow&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Finally, there are still some wonkiness around, I’m sure my Atom feed is broken and am not sure how to redirect that yet using GitHub. I doubt I had many subscribers, so if you stumble on this and previously read my random posts, you may need to update while I investigate options. Certainly there are some styling issues that I want to address as well as some under the hood improvements.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;This &lt;a href=&quot;http://eshepelyuk.github.io/2014/10/28/automate-github-pages-travisci.html&quot;&gt;tutorial&lt;/a&gt; was an invaluable starting point. A &lt;a href=&quot;http://mlota.github.io/2015/11/23/automating-deployment-github-pages-jekyll-travis.html&quot;&gt;follow up tutorial from the comments&lt;/a&gt; has great information as well. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;Since I already own Drafts, Workflow and Working Copy &lt;a href=&quot;http://www.matteocappadonna.org/Posting-with-Drafts,-Working-Copy-and-Workflow&quot;&gt;integrating all 3&lt;/a&gt; makes sense. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
-        <link>miklb.com/making-the-move-to-jekyll</link>
-        <guid isPermaLink="true">miklb.com/making-the-move-to-jekyll</guid>
-        
-        <category>blogging</category>
-        
-        <category>Jekyll</category>
-        
-        <category>Habari</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Embracing My Suckiness</title>
-        <description>&lt;p&gt;Some know I used to cook for a living. I’d like to think I was pretty good at it too. I started before the Food Network and all the other cooking shows on TV (save for old Julia Childs and Jacques Pepin shows on PBS and the like), before the internet blew up. Cooking in Tampa was almost like being in a vacuum.  You’d see what your peers were doing, maybe find a little time to travel to Miami or New Orleans, but otherwise, we were left to our own curiosity, a few books from some of the chefs on the cutting edge (Mark Miller and the staff at Coyote Cafe, Norma Van Aiken and his contemporaries like Allen Susser &amp;amp; Mark Militello) and the occasional &lt;em&gt;Food &amp;amp; Wine&lt;/em&gt; article.&lt;/p&gt;
-
-&lt;p&gt;We explored other cuisines via ethnic dining, scoured Oceanic Market for Asian ingredients, the markets of West Tampa for authentic Latin/Caribbean staples, and the open air markets outside the commercial produce market. We were then left to our imagination, creativity, and abilities to marry flavors together.&lt;/p&gt;
-
-&lt;p&gt;That was kinda like how it was when I first started building websites. You’d look at someone’s source code. Someone might have written a blog post, or shared a tip in a forum somewhere. You bought Zeldman’s book on HTML standards, or Andy Budd’s CSS Mastery. It was a path of discovery and learning.&lt;/p&gt;
-
-&lt;p&gt;Now, in this “age of information”, we (I), am bombarded with all of the latest tricks and best practices, cutting edge designs and techniques.  The external pressure to live up to these can be overwhelming. I’m no longer experimenting and discovering on my own, I’m drowning in information. It’s like having an elevator straight to the top of the mountain without experiencing the journey (I think that’s a paraphrase of something I read once about doing LSD, but I digress.)&lt;/p&gt;
-
-&lt;p&gt;So what I’m finding is that I’m a deer in the headlights, afraid that I’ll be judged for not using the latest markup techniques. That someone will see my code and think I suck. And rather than embrace my suckiness, learn from it, I freeze. I stare at blank pages in my text editor. Meanwhile, new and more information continues to bombard me from every angle, and the cycle perpetuates.&lt;/p&gt;
-
-&lt;p&gt;Today, when I cook at home, I’m not worried about having all the fancy ingredients or flashy sous vide machine. I’m confident in my skills and &lt;strong&gt;know&lt;/strong&gt; the finished dish will look appetizing and taste better. Or, I might &lt;em&gt;just&lt;/em&gt; miss the mark, but will recognize what I did wrong or forgot, storing it away in my memory bank or nowadays, jotted into a text file for the next time I make a similar dish. That’s not to say when time permits I don’t use those fancy ingredients or make my pasta from scratch but a good meal shouldn’t be passed up simply because I didn’t have artisanal cheese and didn’t make my pasta from scratch.&lt;/p&gt;
-
-&lt;p&gt;So while I struggle to reboot my personal site and convert it to Jekyll, I need to recognize that I don’t have to follow every new trend. So what if it wasn’t built in Sass. The work I put into making it responsive, and FAST is more important in the long run. There are plenty of sites/devs out there that have well structured Sass directories and all the right mixins, but load slow as hell. There is plenty of time in the future to revisit converting it. The end goal for this site isn’t about being a Sass master, but an outlet to share my thoughts and experiences on the web. Why create an artificial hurdle?&lt;/p&gt;
-
-&lt;p&gt;Which also means I need to document my failures, as well as successes. Whether that means publicly, or internally. Not only document them, but celebrate them. I need to reconnect with that ambitious kid who would spend every waking hour in the kitchen experimenting, enjoying the journey. Thus starts my journey of documenting this phase of my site.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 30 May 2015 00:00:00 +0000</pubDate>
-        <link>miklb.com/embracing-my-suckiness</link>
-        <guid isPermaLink="true">miklb.com/embracing-my-suckiness</guid>
-        
-        <category>cooking</category>
-        
-        <category>technology</category>
-        
-        <category>development</category>
-        
-        <category>growth</category>
-        
-        <category>Sass</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>The Web Ad Dilemma</title>
-        <description>&lt;p&gt;I’ve been thinking about this subject quite a bit lately. While tools like Safari’s &lt;em&gt;Reader View&lt;/em&gt; can help, the desire to support advertising on the web is impossible to square with the current implementation on most web sites.&lt;/p&gt;
-
-&lt;p&gt;Fortunately, &lt;a href=&quot;https://twitter.com/jimray&quot;&gt;Jim Ray&lt;/a&gt; breaks it down much more succinctly than I have been able to. &lt;a href=&quot;http://flickerfusion.com/blocking-ad-blockers-with-better-ads.html&quot;&gt;Blocking ad-blockers with better ads&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;The problem may be murky, but the solution is a bit more clear, if not exactly novel: build a better product. Not a fancier iPad app, a better ad product. For all the haranguing about native ads, they have the advantage of being immune to filters and, when done right, a genuinely better experience, certainly better than green double-underlines or the “content marketing platform” ads at the bottom of far too many web pages.&lt;/blockquote&gt;
-
-&lt;p&gt;Just give me a well designed, compelling advertisement. Hell, I’ll share my browsing history if that is what it takes to serve me something I’m genuinely interested in.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
-        <link>miklb.com/the-web-ad-dilemma</link>
-        <guid isPermaLink="true">miklb.com/the-web-ad-dilemma</guid>
-        
-        <category>web</category>
-        
-        <category>advertising</category>
-        
-        
-      </item>
-    
-  </channel>
-</rss>
+&lt;p&gt;I’m sure as I expand my development world, (I have a goal to learn python by &lt;a href=&quot;https://miklb.com/building-a-twitterbot&quot;&gt;Building a Twitterbot&lt;/a&gt; ) I’ll continue to tweak Atom, but for now, I’m as close to happy with an editor as I have ever been. Feel free to share with me on Twitter &lt;a href=&quot;https://twitter.com/miklb&quot;&gt;@miklb&lt;/a&gt; your tips and trick.
+&lt;a href=&quot;https://brid.gy/publish/twitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael Bishop</name></author><category term="development" /><category term="Atom" /><category term="productivity" /><summary>I doubt anyone who writes code for a living or tinkers for that matter hasn’t spent more hours than they’d care to admit tweaking their editor of choice. Suffice to say, I’m in that boat all to well.</summary></entry></feed>

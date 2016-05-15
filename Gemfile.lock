@@ -27,6 +27,7 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-archives (2.1.0)
       jekyll (>= 2.4)
+    jekyll-feed (0.5.1)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
     jekyll-imgix (1.1.0)
@@ -74,6 +75,7 @@ DEPENDENCIES
   htmlbeautifier
   jekyll
   jekyll-archives
+  jekyll-feed
   jekyll-gist
   jekyll-imgix
   jekyll-seo-tag
