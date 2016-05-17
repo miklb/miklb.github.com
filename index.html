@@ -191,7 +191,7 @@ svg{ height: 100%; width: 100%; }
 <p>A lot of the experiments I’ve been doing here might be overkill for a simple blog, but are great ways to expose myself to new technologies. I’ve long had an Amazon Web Services s3 bucket set up as a CDN, but had never found a workflow to efficiently use it. With the my current build/deploy process with Travis, a copy of the Instagram photo is saved to my GitHub repository via micropub. In the build script, the image is copied to the s3 bucket, then linked to the CDN.</p>
 <p>The primary reason to use the CDN was I went through the steps to get 100% on Google Pagespeed (last I checked). Since the site is primarily text and is already static it ranked pretty well, but I went ahead and configured loading critical CSS<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>. (I had set that up with my old Habari theme, but Google’s added a step to async load the remaining CSS). I also had to tweak caching in nginx, which while I was in there, I went ahead and set up http/2. The primary reason I moved back from GitHub pages to my VPS was to serve the site over https with a free LetsEncrypt SSL certificate.</p>
 <p>Finally, I went back and forth on analytics. I don’t <em>need</em> them, but it’s nice to see what visitors are looking for and at. I poked around at some self hosted options, ultimately decided for now that for the people who don’t want to share data with Google, there are browser tools to block sending the data, which I’m OK with, therefore using GA here isn’t forcing anyone into it.</p>
-<p>I still want to do a fresh design, but only after last few kinks in Jekyll-IndieWeb theme are fixed. I’ll still use the markup as the foundation, just present it differently. As always, if you have any questions, hit me on Twitter <a href="https://twitter.com/miklb">miklb</a> or leave a webmention and I’ll do my best to reply.</p>
+<p>I still want to do a fresh design, but only after last few kinks in Jekyll-IndieWeb theme are fixed. I’ll still use the markup as the foundation, just present it differently. As always, if you have any questions, hit me on Twitter <a href="https://twitter.com/miklb">@miklb</a> or leave a webmention and I’ll do my best to reply.</p>
 <p><a href="https://brid.gy/publish/twitter"></a></p>
 <div class="footnotes">
   <ol>
@@ -218,7 +218,7 @@ svg{ height: 100%; width: 100%; }
 	</div>
 	<footer class="site-footer" role="contentinfo">
 <p>
-	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com)
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com
 ">IndieWeb principles</a>
 </p>
 	</footer>
