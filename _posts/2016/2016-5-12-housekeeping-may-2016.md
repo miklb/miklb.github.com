@@ -23,7 +23,7 @@ The primary reason to use the CDN was I went through the steps to get 100% on Go
 
 Finally, I went back and forth on analytics. I don't *need* them, but it's nice to see what visitors are looking for and at. I poked around at some self hosted options, ultimately decided for now that for the people who don't want to share data with Google, there are browser tools to block sending the data, which I'm OK with, therefore using GA here isn't forcing anyone into it.
 
-I still want to do a fresh design, but only after last few kinks in Jekyll-IndieWeb theme are fixed. I'll still use the markup as the foundation, just present it differently. As always, if you have any questions, hit me on Twitter [miklb](https://twitter.com/miklb) or leave a webmention and I'll do my best to reply.
+I still want to do a fresh design, but only after last few kinks in Jekyll-IndieWeb theme are fixed. I'll still use the markup as the foundation, just present it differently. As always, if you have any questions, hit me on Twitter [@miklb](https://twitter.com/miklb) or leave a webmention and I'll do my best to reply.
 
 
 [^1]: Which was my first experience with both Heroku as well as a node app.
