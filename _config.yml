@@ -31,6 +31,7 @@ gems:
  - jekyll/tagging
  - jekyll-tagging-related_posts
  - jekyll/imgix
+ - searchyll
 
 exclude:
   - vendor
@@ -54,3 +55,11 @@ jekyll-archives:
   layout: archive
   permalinks:
     tags: '/tag/:name/'
+
+  # Search
+  elasticsearch:
+    url: https://36hq7dxycem:ok37sdiih0@jekyll-blog-416397024.us-east-1.bonsai.io
+    number_of_shards: 1
+    number_of_replicas: 1
+    index_name: "jekyll"
+    default_type: "post"

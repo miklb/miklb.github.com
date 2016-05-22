@@ -15,6 +15,7 @@ gem 'rouge'
 gem 'liquid'
 gem 'kramdown'
 gem 'jekyll-imgix'
+gem "searchyll"
 
 
 gem 'htmlbeautifier'
