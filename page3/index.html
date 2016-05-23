@@ -104,39 +104,6 @@ svg{ height: 100%; width: 100%; }
 				<div class="posts">
 <article class="post h-entry">
 	<h1 class="post-title p-name">
-		<a class="u-url" href="/2016/04/28/testing-micro-pub/">
-			Testing MicroPub
-		</a>
-	</h1>
-	<time datetime="2016-04-28T15:24:00+00:00" class="dt-time post-date">28 Apr 2016</time>
-  <div class="e-content">
-      <p>What is going to happen?</p>
-  </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
-		<a class="u-url" href="/organizing-jekyll-posts">
-			Organizing Jekyll Posts
-		</a>
-	</h1>
-	<time datetime="2016-04-26T22:44:00+00:00" class="dt-time post-date">26 Apr 2016</time>
-  <div class="e-content">
-      <p>Until last night, I was under the impression you had to store all of your posts as markdown files in a single directory called <code class="highlighter-rouge">_posts</code> unless you changed that in your <code class="highlighter-rouge">_config.yml</code> file (and even then, my assumption was it was still a single directory.) That said, I still sought out whether there was a way to organize them by at least year within that single folder. I’ve been blogging for 11 years this spring, and while sporadic at times, that is still a lot of posts. When I need to reference a new one, or look for something from the past, having them by year would be nice.</p>
-<p>tl;dr yes, you can arbitrarily organize under the <code class="highlighter-rouge">_posts</code> folder however you want. All Jekyll looks for are markdown files with FrontMatter.</p>
-<p>What I also learned, and isn’t <a href="https://jekyllrb.com/docs/variables/">well documented</a> <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> is that you can create top level folders each with their own <code class="highlighter-rouge">_posts</code> sub-folder and Jekyll will read from each one, appending that folder name to the generated url for the post, i.e. a folder <code class="highlighter-rouge">foo</code> with <code class="highlighter-rouge">_posts</code> with <code class="highlighter-rouge">2016-04-26-post-title</code> would yield a URL of <code class="highlighter-rouge">example.com/foo/post-title</code> (varying by your permalink structure). Those top level folders are then treated as categories, allowing for more filtration within your templates and site organization. I can see other ways of using them, especially as I continue to move towards a more Indieweb way of doing things and more tweets originating from this site.</p>
-<p>I intend to contribute my discoveries to the official documentation as soon as I can.</p>
-<p><a href="https://brid.gy/publish/twitter"></a></p>
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Hint: it’s hidden under <code class="highlighter-rouge">page.categories</code> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-  </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
 		<a class="u-url" href="/productivity-status-early-2016">
 			Productivity Status Early 2016
 		</a>
@@ -199,6 +166,37 @@ Either way, you could do much worse than to make your bit of the web fast.
 </code></pre></div>
 <p>I’m sure as I expand my development world, (I have a goal to learn python by <a href="https://miklb.com/building-a-twitterbot">Building a Twitterbot</a> ) I’ll continue to tweak Atom, but for now, I’m as close to happy with an editor as I have ever been. Feel free to share with me on Twitter <a href="https://twitter.com/miklb">@miklb</a> your tips and trick.
 <a href="https://brid.gy/publish/twitter"></a></p>
+  </div>
+</article>
+<article class="post h-entry">
+	<h1 class="post-title p-name">
+		<a class="u-url" href="/interest-in-tampa-homebrew-website-club">
+			Interest in Tampa Homebrew Website Club?
+		</a>
+	</h1>
+	<time datetime="2016-04-19T14:00:00+00:00" class="dt-time post-date">19 Apr 2016</time>
+  <div class="e-content">
+      <p>Gauging interest in Tampa to see if anyone would be up for joining a
+<a href="https://indiewebcamp.com/events/2016-04-06-homebrew-website-club">Homebrew Website Club</a>. A lot of tech folks have vey neglected personal sites and this would give folks a chance to get together and talk tech and work on their personal site and pet proejcts. Platform agnostic (read, not another WordPress meetup) so open to anyone. If interested ping me on <a href="https://twitter.com/miklb">Twitter @miklb</a> for now and I’ll sort out finding a location and setting up a time. Only looking for a couple of people to get off the ground.</p>
+  </div>
+</article>
+<article class="post h-entry">
+	<h1 class="post-title p-name">
+		<a class="u-url" href="/headings-what-was-old-is-new-again">
+			Headings - What Was Old is New Again
+		</a>
+	</h1>
+	<time datetime="2016-04-18T13:10:00+00:00" class="dt-time post-date">18 Apr 2016</time>
+  <div class="e-content">
+      <p>Seems HTML WG has reversed course on a previous recommendation that allowed <code class="highlighter-rouge">sections</code> to have their own <code class="highlighter-rouge">H1</code> tag, now recommending the previous norm of cascading H tags.</p>
+<blockquote>
+Given that this bug has been around, and not fixed in browsers, for many  
+years, we are proposing to remove the suggestion, and return to the model  
+where elements `h1..h6` have a defined level of their own.
+<cite><a href="https://lists.w3.org/Archives/Public/public-html/2016Apr/0032.html">HTML WG</a></cite>
+&lt;/bockquote&gt;
+<a href="https://brid.gy/publish/twitter"></a>
+</blockquote>
   </div>
 </article>
 </div>

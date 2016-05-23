@@ -104,42 +104,6 @@ svg{ height: 100%; width: 100%; }
 				<div class="posts">
 <article class="post h-entry">
 	<h1 class="post-title p-name">
-		<a class="u-url" href="/building-a-twitterbot">
-			Building a Twitterbot
-		</a>
-	</h1>
-	<time datetime="2016-04-03T00:00:00+00:00" class="dt-time post-date">03 Apr 2016</time>
-  <div class="e-content">
-      <p>I had an interest to learn the programming language python for quite some time. I’ve played around with it a little using <a href="https://geo.itunes.apple.com/us/app/pythonista/id528579881?at=10lKmy">Pythonista</a> in iOS to <a href="https://miklb.com/use-pythonista-to-get-weather-of-current-location-into-drafts-app">build a fishing log</a>, but otherwise have only done some cursory reading. Since I do best learning by doing, I needed an idea to <strong>use</strong> python. I’ve seen some interesting Twitterbots built with it, <a href="https://twitter.com/pomological">@pomological</a> being my recent favorite, but wasn’t sure what to build. Ultimately, the idea came to me to build a bot that retrieves an image from Flickr and builds a color scheme from that and post the scheme and original image. I’ve done some basic research and found some libraries to connect (you didn’t think I was going to write the whole thing from scratch?).</p>
-<p>But I don’t just want a any random image, so once I get the bot <em>working</em>, I want to be able to try and pull outdoor/landscape images. In a perfect world, I would post 3 images a day—morning, noon, and night. The morning image would be a sunrise, noon/daytime image a normal image and, you guessed it, the night/evening image would be a sunset.</p>
-<p>I figured I needed a name for the Twitterbot, not only to make sure something would be available, but since I would need API keys, that has been my first tangible step to create the bot. Thus, @Flickolorbot has been officially conceived.</p>
-<p>Stay tuned for more adventures.</p>
-<p><a href="https://brid.gy/publish/twitter"></a></p>
-  </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
-		<a class="u-url" href="/a-few-thoughts-about-wordpress-rest-api-and-core">
-			A Few Thoughts About WordPress REST API and Core
-		</a>
-	</h1>
-	<time datetime="2016-02-12T00:00:00+00:00" class="dt-time post-date">12 Feb 2016</time>
-  <div class="e-content">
-      <p>There has been much written about the ~drama~ discussions surrounding the <a href="http://v2.wp-api.org">WordPress REST API</a> and inclusion in core. Or exclusion, depending on who’s take you are reading. <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> Suffice to say, the gist I’ve gathered is that there are two competing perspectives, one side wants to incrementally add the API, the other wants a fully fleshed out, complete API before inclusion in core.</p>
-<p>I guess my 2¢ on the matter is this—the core tenet of the <a href="http://wordpressfoundation.org">WordPress Foundation</a> is “to democratize publishing through Open Source, GPL software.” From what I’ve gathered reading on the subject, the REST API team have the publishing portion of the API covered and ready for inclusion in core. The parts that would come (much) later would be things like the customizer, file editing, more site <strong>management</strong> tools, less about actually publishing.</p>
-<p>If democratized publishing is still the guiding principle for WordPress the project, then I don’t see how there is any debate. Opening up the methods to publish beyond what has been the only means available for basically the entire life of the project seems like a no brainer to this guy who’s been around it for 11 years this year. No one will truly know how much is opened up until it is in the hands of creative developers and then in the hands of content creators.</p>
-<p><a href="https://brid.gy/publish/twitter"></a></p>
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>I’m specifically not linking to any of the <em>hot takes</em> on the subject. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-  </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
 		<a class="u-url" href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
 			Text Expander snippet for Jekyll With Slug for Permalink
 		</a>
@@ -194,6 +158,31 @@ TextExpander.appendOutput(&quot;--- \n&quot;);
       <p>In my ever revolving attempt to reboot my blog, one thing that has always slowed me down was my concern with being too esoteric in my topics. I want to talk about food, technology and everything in between.</p>
 <p>However, if I want to build any readership (isn’t that a part of blogging, sharing your thoughts with others?) I can’t be mixing in posts about forays into Python with posts about cooking vegetables sous-vide. Sure, there might be a readership that is interested in both topics as I am, but not enough to say “screw it.” So as I continue to work towards a true <a href="https://indiewebcamp.com">indieweb</a>, I’m pivoting a bit in my approach and will use this as domain, now 11 years old, as my base identifier and central clearing house. I’ve acquired several domains, 2 of which will be good to split the topics. Those too will be static Jekyll built sites, with links from this site to new posts.</p>
 <p>Certainly this is more me thinking out loud and putting it out there, as I intend for this domain to be, but my goal is to continue to do such here, rather than bottle  up my thoughts in my head.</p>
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+  </div>
+</article>
+<article class="post h-entry">
+	<h1 class="post-title p-name">
+		<a class="u-url" href="/finally-webmentons-with-jekyll-part-duex">
+			Finally Webmentions with Jekyll
+		</a>
+	</h1>
+	<time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
+  <div class="e-content">
+      <p>If you can’t tell by previous posts, I’ve been working on getting
+<a href="https://indiewebcamp.com/Webmention">Webmentions</a> to work with my new Jekyll site. I <em>think</em> I’ve finally nailed. If you take a look at my initial post <a href="http://miklb.com/making-the-move-to-jekyll">on moving to Jekyll</a>, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s <a href="https://github.com/aarongustafson/jekyll-webmention_io">Webmention.io plugin</a> I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a <code class="highlighter-rouge">sleep 2m</code> in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.</p>
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+  </div>
+</article>
+<article class="post h-entry">
+	<h1 class="post-title p-name">
+		<a class="u-url" href="/breaking-out-of-the-silo">
+			Breaking Out of the Silo
+		</a>
+	</h1>
+	<time datetime="2016-01-30T00:00:00+00:00" class="dt-time post-date">30 Jan 2016</time>
+  <div class="e-content">
+      <p>In my never ending quest to make this site all things “miklb”, one of the goals of the IndieWeb is to <a href="http://indiewebcamp.com/POSSE">POSSE</a>, that is, Publish on your own site, syndicate elsewhere. Breaking the habit of using Twitter without posting first on my site is going to be a hard one, but it’s a goal. While debates rage about extending character counts to 10,000 words, if we only were to use our blog for long form thoughts and link back to Twitter, this wouldn’t be an issue. Consider this an exercise in</p>
 <p><a href="https://brid.gy/publish/twitter"></a></p>
   </div>
 </article>
