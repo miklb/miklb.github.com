@@ -20,3 +20,4 @@ vendor/
 _config_dev.yml
 _drafts/
 node_modules/*
+public
