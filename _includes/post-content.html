@@ -31,6 +31,9 @@
     {% else %}
       {{ content }}
     {% endif %}
+    {% if post.mf-syndicate-to != null %}
+    <a href="https://brid.gy/publish/twitter"></a>
+    {% endif %}
   </div>
 
   {% if post.mf-syndication != null %}
@@ -73,7 +76,4 @@
     	<img src="https://a.tiles.mapbox.com/v4/{{ site.mapid }}/pin-s-marker({% assign coordinates = post.mf-location | split: ',' %}{{ coordinates[1] | remove: ']' | remove:'"' }},{{ coordinates[0] | remove: 'geo:' | remove: '[' | remove:'"'}})/{{ coordinates[1] | remove: ']' | remove:'"' }},{{ coordinates[0] | remove: 'geo:' | remove: '[' | remove:'"'}},15/810x120.png?access_token={{ site.mapbox-token }}"  alt="" class="post-location-image">
       <p>🌎 {{ post.mf-place_name }}</p>
     </div>
-  {% endif %}
-  {% if post.mf-syndicate-to != null %}
-  <a href="https://brid.gy/publish/twitter"></a>
   {% endif %}
