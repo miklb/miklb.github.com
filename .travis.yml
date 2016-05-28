@@ -26,6 +26,7 @@ deploy:
   upload-dir: media
   skip_cleanup: true
   local-dir: media
+  cache_control: "max-age=31536000"
   acl: public_read
   on:
     branch: jekyll
