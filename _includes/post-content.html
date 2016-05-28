@@ -11,7 +11,7 @@
   {% elsif post.mf-photo != null %}
     <div class="media">
       {% for photo in post.mf-photo %}
-        <img class="u-photo" src="http:/cdn.miklb.com/{{photo | remove: 'https://miklb.com/'}}" alt="" />
+        <img class="u-photo" src="https://cdn.miklb.com/{{photo | remove: 'https://miklb.com/'}}" alt="" />
       {% endfor %}
     </div>
   {% endif %}
