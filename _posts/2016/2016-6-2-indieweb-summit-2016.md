@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title: "IndieWeb Summit 2016"
 tags:
@@ -7,7 +7,7 @@ published: true
 permalink: indieweb-summit-2016
 date: 2016-6-2 17:42
 summary:
- ---
+---
 
 This weekend is the [2016 IndieWeb Summit](http://2016.indieweb.org) in Portland Oregon. I would have loved to attend in person, but a cross country flight wasn't in the cards. Fortunately, the organizers have long had plans in place to accommodate remote attendance by providing live video feeds of demonstrations as well as covering a couple of the breakout sessions on Saturday. IWC also has a robust IRC channel which will facilitate participation on build day.
 
