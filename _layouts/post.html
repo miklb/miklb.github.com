@@ -62,6 +62,4 @@ layout: default
 {% endif %}
 </aside>
 
-{% if site.webmentions %}
-{% include webmentions.html %}
-{% endif %}
+{% webmentions site.url %}

@@ -21,9 +21,9 @@
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url | prepend: site.url }}">
 	{% feed_meta %}
 	<link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.png">
-	{% if site.webmentions %}
-	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-	{% endif %}
+	<link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+	<link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+
 	{% seo %}
 	<script>
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -82,6 +82,7 @@
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
     </script>
+	<script src="/js/webmention_io.js"></script>
 </body>
 
 </html>
