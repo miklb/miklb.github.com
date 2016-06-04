@@ -61,9 +61,9 @@ svg{ height: 100%; width: 100%; }
 	<link rel="canonical" href="https://miklb.com/iphone-apps-on-the-cheap">
 	<link type="application/atom+xml" rel="alternate" href="https://miklb.com/feed.xml" title="Miklb's Mindless Ramblings" />
 	<link rel="shortcut icon" href="/public/favicon.png">
-	
-	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-	
+	<link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
+	<link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+
 	<!-- Begin Jekyll SEO tag v2.0.0 -->
 <title>iPhone Apps on the Cheap - Miklb’s Mindless Ramblings</title>
 <meta property="og:title" content="iPhone Apps on the Cheap" />
@@ -230,19 +230,7 @@ svg{ height: 100%; width: 100%; }
 
 </aside>
 
-
-<script id="webmention-hosted">
-(function () {
-var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-url = url && url[0] ? url[0].href : false;
-sn.type = "text/javascript"; sn.async = true;
-sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-s.parentNode.insertBefore(sn, s);
-}());
-</script>
-
-
+<div class="webmentions"><p class="webmentions__not-found">No webmentions were found</p></div>
 
 			</div>
 		</main>
@@ -266,6 +254,7 @@ s.parentNode.insertBefore(sn, s);
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
     </script>
+	<script src="/js/webmention_io.js"></script>
 </body>
 
 </html>
