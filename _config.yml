@@ -5,7 +5,7 @@ permalink: pretty
 # Setup
 title: Miklb's Mindless Ramblings
 author: Michael Bishop
-author_img: http://cdn.miklb.com/images/profile_4_16_sm.png
+author_img: https://cdn.miklb.com/images/profile_4_16_sm.png
 description:  Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.
 url: https://miklb.com
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"

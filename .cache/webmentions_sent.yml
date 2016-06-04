@@ -2054,6 +2054,7 @@ https://miklb.com/mzingi:
 - http://miklb.com/user/downloads/mzingi_0.4.zip
 - http://miklb.com/user/downloads/mzingi_0.5.1.zip
 - http://themes.bloggingmetat.com
+- http://cookingwith.miklb.com
 https://miklb.com/scribefire:
 - http://www.scribefire.com/
 - http://scribefire.com/
@@ -2698,11 +2699,13 @@ https://miklb.com/use-pythonista-to-get-weather-of-current-location-into-drafts-
 - https://gist.github.com/omz/4076735
 - http://ioctocat.com
 - https://twitter.com/miklb
+- http://py_forecast?action=run&argv=[[draft]]`.
 https://miklb.com/i-choose-to:
 - http://davidseah.com/blog/2014/02/the-quest-for-productivity-enhancing-programming-pants/
 https://miklb.com/grand-ole-opry:
 - http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 - http://gardenandgun.com/blog/lordy-lordy-oprys-40
+- http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 https://miklb.com/new-but-not-new-laptop:
 - https://twitter.com/jptoto
 - http://eshop.macsales.com/articles/how-to-transfer-your-data-from-your-old-drive-to-a-new-drive
@@ -2785,4 +2788,83 @@ https://miklb.com/building-a-twitterbot:
 https://miklb.com/solving-the-mysterious-relaunching-itunes:
 - https://twitter.com/shep
 - https://iamshep.net/2012/08/the-never-ending-saga-of-itunes-launching-itself/
+- https://brid.gy/publish/twitter
+https://miklb.com/jacob-appelbaums-weblog:
+- http://jacob.wordpress.com/
+https://miklb.com/rough-take-on-jekyll:
+- https://www.baldurbjarnason.com/notes/choosing-a-host
+- https://brid.gy/publish/twitter
+https://miklb.com/dogfooding:
+- https://github.com/miklb/jekyll-indieweb
+- https://en.wikipedia.org/wiki/Eating_your_own_dog_food
+- https://indiewebcamp.com/
+- https://brid.gy/publish/twitter
+https://miklb.com/headings-what-was-old-is-new-again:
+- https://lists.w3.org/Archives/Public/public-html/2016Apr/0032.html
+- https://brid.gy/publish/twitter
+https://miklb.com/interest-in-tampa-homebrew-website-club:
+- https://indiewebcamp.com/events/2016-04-06-homebrew-website-club
+- https://twitter.com/miklb
+https://miklb.com/customizing-atom-editor:
+- http://atom.io
+- https://atom.io/users/miklb/stars
+- https://atom.io/themes/oceanic-next
+- https://olivermak.es
+- https://atom.io/users/opattison
+- http://input.fontbureau.com/info/
+- https://miklb.com/building-a-twitterbot
+- https://twitter.com/miklb
+- https://brid.gy/publish/twitter
+https://miklb.com/performance-is-a-feature:
+- https://developers.google.com/speed/pagespeed/insights/
+- https://twitter.com/AaronGustafson/status/724448660076027904
+- https://peterchamberlin.com/fast.php
+- https://brid.gy/publish/twitter
+https://miklb.com/productivity-status-early-2016:
+- https://www.taskpaper.com
+- http://support.hogbaysoftware.com/t/appending-items-to-a-taskpaper-file-using-siri/1456/9
+- https://geo.itunes.apple.com/us/app/editorial/id673907758?at=10lKmy
+- https://geo.itunes.apple.com/us/app/omnifocus-2/id904071710?at=10lKmy
+- https://geo.itunes.apple.com/us/app/workflow-powerful-automation/id915249334?at=10lKmy
+- https://brid.gy/publish/twitter
+https://miklb.com/organizing-jekyll-posts:
+- https://jekyllrb.com/docs/variables/
+- https://brid.gy/publish/twitter
+https://miklb.com/2016/04/28/testing-micro-pub/: []
+https://miklb.com/free-resource-combining-type:
+- http://blog.typekit.com/2016/04/29/combining-typefaces-free-guide-to-great-typography/
+- https://brid.gy/publish/twitter
+https://miklb.com/social/2016/05/08/1418/: []
+https://miklb.com/housekeeping-may-2016:
+- https://miklb.com/finally-webmentons-with-jekyll-part-duex
+- https://github.com/miklb/jekyll-indieweb
+- http://voxpelli.com/2016/03/my-2015-in-indieweb/
+- https://github.com/voxpelli/node-micropub-express
+- https://aaronparecki.com
+- https://quill.p3k.io
+- http://indiewebcamp.com/pesos
+- https://twitter.com/miklb
+- https://github.com/filamentgroup/criticalCSS
+- https://brid.gy/publish/twitter
+https://miklb.com/social/2016/05/12/using-notes/: []
+https://miklb.com/2016/05/12/couch-5k-d1w1/:
+- https://brid.gy/publish/twitter
+https://miklb.com/extraneous-whitespace-in-jekyll-html:
+- https://github.com/jekyll/jekyll/issues/1717
+- https://github.com/Shopify/liquid/issues/216
+- https://github.com/threedaymonk/htmlbeautifier
+- https://gist.github.com/kerotaa/5788650
+- https://brid.gy/publish/twitter
+https://miklb.com/couch-5k-d2w1:
+- https://brid.gy/publish/twitter
+https://miklb.com/couch-5k-d3w1:
+- https://brid.gy/publish/twitter
+https://miklb.com/social/2016/05/23/27314/: []
+https://miklb.com/github-is-my-view-source:
+- https://github.com/buunguyen/octotree
+- https://brid.gy/publish/twitter
+https://miklb.com/indieweb-summit-2016:
+- http://2016.indieweb.org
+- http://webmention.io
+- https://github.com/aarongustafson/jekyll-webmention_io
 - https://brid.gy/publish/twitter
