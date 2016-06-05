@@ -107,6 +107,22 @@ svg{ height: 100%; width: 100%; }
 				<div class="posts">
 <article class="post h-entry">
 	<h1 class="post-title p-name">
+		<a class="u-url" href="/dogfooding">
+			Dogfooding
+		</a>
+	</h1>
+	<time datetime="2016-04-17T17:27:00+00:00" class="dt-time post-date">17 Apr 2016</time>
+  <div class="e-content">
+      <p>Last night I switched over the <em>theme</em> for this site to a project I’ve been working on the last moth or so, <a href="https://github.com/miklb/jekyll-indieweb">Jekyll-IndieWeb</a>. While I have different design ideas, until I find other users interested in using it, I knew I needed to work out any kinks. I also wanted to have better microformat support until the design changes. Thus
+<a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food">dogfooding</a>.</p>
+<p>I will write more about the project once I have more documentation (and work out any more said kinks), but the gist is I wanted to provide someone new to Jekyll with a desire to be part of the
+<a href="https://indiewebcamp.com/">IndieWeb</a> a solid starting point. I rely heavily on the <code class="highlighter-rouge">_config.yml</code> file for options a user can set - profile pic, social media links, choice to include display of webmentions - to quickly get a personal site up and running. The biggest hurdle for me was providing a minimal design that was unopinionated yet still aesthetically appealing. Anyone familiar with HTML &amp; CSS can easily build upon or modify it, but if not, it shouldn’t look <em>ugly</em>.</p>
+<p>This has been the first solo project I’ve embarked on that was meant for public consumption from the start, which in itself has been a learning process. Now I just hope others can find it useful in some way. If the project interests you I encourage you to try it out, open any issues in the repo, or reach out on #indiewebcamp IRC, I tend to hang around there most days.</p>
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+  </div>
+</article>
+<article class="post h-entry">
+	<h1 class="post-title p-name">
 		<a class="u-url" href="/rough-take-on-jekyll">
 			Rough Take on Jekyll
 		</a>
@@ -168,38 +184,6 @@ Only usable by developers. About as accessible as improv Klingon slam poetry to 
     </li>
   </ol>
 </div>
-  </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
-		<a class="u-url" href="/text-expander-snippet-for-jekyll-with-slug-for-permalink">
-			Text Expander snippet for Jekyll With Slug for Permalink
-		</a>
-	</h1>
-	<time datetime="2016-02-06T00:00:00+00:00" class="dt-time post-date">06 Feb 2016</time>
-  <div class="e-content">
-      <p>There are plenty of TextExpander snippets floating around for creating Jekyll Front Matter, however, I wanted to take it a step further, and auto-create a slugified permalink with no additional work. The other part of the equation was that I wanted it to be able to use it on TE touch, which meant it had to be done in javascript. After a little Googling, some trial and error, I came up with one that takes a text input for the post title, generates a slug from that, and includes the current date. I understand that the date in the file can be used, however I may not always publish when the file was initially created. Not to mention, when I imported all of my posts from Habari, I needed to be able to use the original post date, not the date the file was created, so I continue to use that. You can certainly modify the snippet for your needs.</p>
-<p>Also note, I have a blank variable for <em>summary</em>. Since I’m using webmentions, I use the summary as the text for a tweet, which would be different than an excerpt. Some of this may change when I redo the site redesign, but for now, it’s how I roll.</p>
-<p>I would love feedback on how to make the snippet better as it’s my first javascript snippet. Just leave a comment on the gist.</p>
-<noscript><pre>var title = &#39;%filltext:name=Title%&#39;;
-slug = title.replace(/[^\w\s]/gi, &#39;&#39;);
-var newslug = title.split(&quot; &quot;).join(&quot;-&quot;);
-
-var dt = new Date();
-
-TextExpander.appendOutput(&quot;---\n&quot;);
-TextExpander.appendOutput(&quot;layout: post \n&quot;);
-TextExpander.appendOutput(&quot;title: &quot; + &#39;&quot;&#39; +title + &#39;&quot;&#39;+ &quot;\n&quot;);
-TextExpander.appendOutput(&quot;tags: \n&quot;);
-TextExpander.appendOutput(&quot;published: true \n&quot;);
-TextExpander.appendOutput(&quot;permalink: &quot;) +TextExpander.appendOutput(newslug.toLowerCase()); + TextExpander.appendOutput(&quot; \n&quot;);
-TextExpander.appendOutput(&quot;date: &quot;) + TextExpander.appendOutput(dt.getFullYear() + &quot;-&quot; +(dt.getMonth() +1) + &quot;-&quot; + dt.getDate()) + TextExpander.appendOutput(&quot;\n&quot;);
-TextExpander.appendOutput(&quot;summary: \n&quot;);
-TextExpander.appendOutput(&quot;--- \n&quot;);
-
-// %filltop%</pre></noscript>
-<script src="https://gist.github.com/miklb/53a93032fb8cc669b1fa.js"> </script>
-<p><a href="https://brid.gy/publish/twitter"></a></p>
   </div>
 </article>
 </div>
