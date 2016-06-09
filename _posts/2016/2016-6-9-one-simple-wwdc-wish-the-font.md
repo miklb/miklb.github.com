@@ -13,7 +13,7 @@ My feed reader and Twitter timeline are full of posts with wish lists for next w
 
 But all I want is for Apple to include the font from the [WWDC web site](https://developer.apple.com/wwdc/). When the site launched, it took me some time to realize the page is a giant image. A simple monospaced font on a background you'd find in a terminal or code editor app. It's beautiful and I want it for my own.
 
-<img src="http://cdn.miklb.com/images/WWDC_-_Apple_Developer_2016-06-09_03-30-35.png" alt="WWDC screenshot">
+<img class="u-photo" src="http://cdn.miklb.com/images/WWDC_-_Apple_Developer_2016-06-09_03-30-35.png" alt="WWDC screenshot">
 
 
 
