@@ -18,11 +18,11 @@ layout: default
   		{% endif %}
   	</h1>
   {% endif %}
-
+    {% if page.summary != null %}
     <h2 class="p-summary p-bridgy-twitter-content">
       {{ page.summary }}
     </h2>
-
+    {% endif %}
   </header>
   {% if page.mf-like-of != null %}
   {% include post-like.html post=post %}

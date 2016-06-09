@@ -17,8 +17,11 @@
 		{% endif %}
 	</h1>
 {% endif %}
-
+	{% if post.title == '' %}
+	<a class="u-url" href="{{ site.baseurl }}{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}" class="dt-time post-date">{{ post.date | date_to_string }}</time></a>
+	{% else %}
 	<time datetime="{{ post.date | date_to_xmlschema }}" class="dt-time post-date">{{ post.date | date_to_string }}</time>
+	{% endif %}
 {% if post.mf-like-of != null %}
   {% include post-like.html post=post %}
 {% else %}
