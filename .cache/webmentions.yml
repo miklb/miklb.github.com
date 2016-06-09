@@ -1460,7 +1460,8 @@ https://miklb.com/couch-5k-d2w1:
 - https://brid.gy/publish/twitter
 https://miklb.com/couch-5k-d3w1:
 - https://brid.gy/publish/twitter
-https://miklb.com/social/2016/05/23/27314/: []
+https://miklb.com/social/2016/05/23/27314/:
+- https://brid.gy/publish/twitter?bridgy_omit_link=true
 https://miklb.com/github-is-my-view-source:
 - https://github.com/buunguyen/octotree
 - https://brid.gy/publish/twitter
@@ -1470,3 +1471,5 @@ https://miklb.com/indieweb-summit-2016:
 - https://github.com/aarongustafson/jekyll-webmention_io
 - https://brid.gy/publish/twitter
 https://miklb.com/social/2016/06/05/52262/: []
+https://miklb.com/social/2016/06/05/75031/:
+- https://brid.gy/publish/twitter?bridgy_omit_link=true
