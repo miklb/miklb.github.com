@@ -29,6 +29,10 @@ layout: default
 {% else %}
   {% include post-content.html post=post %}
 {% endif %}
+     {% if post.mf-syndicate-to != null %}
+    <a href="https://brid.gy/publish/twitter"></a>
+    {% endif %}
+
   <footer class="entry-footer">
 
       <div class="h-card p-author">
