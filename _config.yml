@@ -34,6 +34,7 @@ gems:
 
 exclude:
   - vendor
+  - ignore_plugins
 # Assets
 # We specify the directory for Jekyll so we can use @imports.
 sass:
@@ -50,7 +51,14 @@ mapid: miklb.03b6j499
 # Archives
 jekyll-archives:
   enabled:
+    - year
+    - month
     - tags
-  layout: archive
+  layouts:
+    year: year_archive
+    month: month_archive
+    tags: archive
   permalinks:
+    year: '/archives/year/:year/'
+    month: '/archives/month/:year-:month/'
     tags: '/tag/:name/'
