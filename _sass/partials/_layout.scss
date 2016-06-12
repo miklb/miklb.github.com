@@ -203,6 +203,8 @@
 // Webmentions
 
 .webmentions {
+  margin-top: 2em;
+  
   ol li {
     list-style: none;
   }
@@ -213,7 +215,7 @@
     float: left;
     height: 5rem;
     margin: auto;
-    padding-right: 1em;
+    margin-right: 1em;
   }
 
   .webmention__title {
