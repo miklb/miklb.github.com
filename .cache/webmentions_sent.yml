@@ -2055,6 +2055,7 @@ https://miklb.com/mzingi:
 - http://miklb.com/user/downloads/mzingi_0.5.1.zip
 - http://themes.bloggingmetat.com
 - http://cookingwith.miklb.com
+- http://cookingwith.miklb.com
 https://miklb.com/scribefire:
 - http://www.scribefire.com/
 - http://scribefire.com/
@@ -2700,11 +2701,13 @@ https://miklb.com/use-pythonista-to-get-weather-of-current-location-into-drafts-
 - http://ioctocat.com
 - https://twitter.com/miklb
 - http://py_forecast?action=run&argv=[[draft]]`.
+- http://py_forecast?action=run&argv=[[draft]]`.
 https://miklb.com/i-choose-to:
 - http://davidseah.com/blog/2014/02/the-quest-for-productivity-enhancing-programming-pants/
 https://miklb.com/grand-ole-opry:
 - http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 - http://gardenandgun.com/blog/lordy-lordy-oprys-40
+- http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 - http://embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=
 https://miklb.com/new-but-not-new-laptop:
 - https://twitter.com/jptoto
@@ -2859,7 +2862,8 @@ https://miklb.com/couch-5k-d2w1:
 - https://brid.gy/publish/twitter
 https://miklb.com/couch-5k-d3w1:
 - https://brid.gy/publish/twitter
-https://miklb.com/social/2016/05/23/27314/: []
+https://miklb.com/social/2016/05/23/27314/:
+- https://brid.gy/publish/twitter?bridgy_omit_link=true
 https://miklb.com/github-is-my-view-source:
 - https://github.com/buunguyen/octotree
 - https://brid.gy/publish/twitter
@@ -2868,3 +2872,12 @@ https://miklb.com/indieweb-summit-2016:
 - http://webmention.io
 - https://github.com/aarongustafson/jekyll-webmention_io
 - https://brid.gy/publish/twitter
+https://miklb.com/social/2016/06/05/52262/: []
+https://miklb.com/social/2016/06/05/75031/:
+- https://brid.gy/publish/twitter?bridgy_omit_link=true
+https://miklb.com/one-simple-wwdc-wish-the-font:
+- https://developer.apple.com/wwdc/
+- http://cdn.miklb.com/images/WWDC_-_Apple_Developer_2016-06-09_03-30-35.png
+- https://brid.gy/publish/twitter
+https://miklb.com/social/2016/06/11/81194/:
+- https://brid.gy/publish/twitter?bridgy_omit_link=true

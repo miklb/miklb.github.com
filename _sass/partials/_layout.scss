@@ -206,13 +206,13 @@
   ol li {
     list-style: none;
   }
-  img {
-    float: left;
-    padding-right: 15px;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
 
+  img {
+    border-radius: 50%;
+    display: block;
+    float: left;
+    height: 5rem;
+    margin: auto;
   }
 
   .webmention__title {
