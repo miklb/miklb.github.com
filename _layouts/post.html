@@ -66,4 +66,6 @@ layout: default
 {% endif %}
 </aside>
 
-{% webmentions site.url %}
+{% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+
+	{% webmentions this_url %}
