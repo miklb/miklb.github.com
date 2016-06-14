@@ -38,6 +38,7 @@
     margin: 0;
     padding: 0;
   }
+
   a {
     @include font-size(18px);
     display: inline-block;
@@ -90,7 +91,6 @@
   }
 }
 
-
 .entry-header {
   margin-bottom: 1em;
 }
@@ -118,8 +118,8 @@
 // Pagination should float when space is plentiful
 @media (min-width: 990px) {
   .pagination {
-    margin-bottom: 60px;
     border: 1px solid $quiet-color;
+    margin-bottom: 60px;
   }
 }
 
@@ -156,7 +156,7 @@
       display: block;
       height: 5rem;
       margin: auto;
-      }
+    }
   }
 
   .meta-wrap {
@@ -164,11 +164,11 @@
 
     flex: 1;
     padding: 1rem;
-    }
+  }
 
   .post-date {
     text-transform: none;
-    }
+  }
 }
 
 .media {
@@ -189,7 +189,6 @@
 .post-map {
   height: 120px;
   width: 100%;
-  ;
 }
 
 .related-posts {
@@ -204,7 +203,7 @@
 
 .webmentions {
   margin-top: 2em;
-  
+
   ol li {
     list-style: none;
   }
@@ -243,7 +242,7 @@
 
     a {
       text-align: center;
-     }
+    }
 
     img {
       display: block;
@@ -251,17 +250,17 @@
       margin: auto;
 
     }
-}
+  }
 
   .webmention-summary {
     flex: 1;
     padding: 1rem;
-}
+  }
 }
 
 .site-footer {
   @extend %padding-regular;
   display: inline-block;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
