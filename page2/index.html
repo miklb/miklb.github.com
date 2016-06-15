@@ -108,6 +108,20 @@ svg{ height: 100%; width: 100%; }
 				<div class="posts">
 <article class="post h-entry">
 	<h1 class="post-title p-name">
+		<a class="u-url" href="/indieweb-summit-2016">
+			IndieWeb Summit 2016
+		</a>
+	</h1>
+	<time datetime="2016-06-02T17:42:00+00:00" class="dt-time post-date">02 Jun 2016</time>
+  <div class="e-content">
+      <p>This weekend is the <a href="http://2016.indieweb.org">2016 IndieWeb Summit</a> in Portland Oregon. I would have loved to attend in person, but a cross country flight wasn’t in the cards. Fortunately, the organizers have long had plans in place to accommodate remote attendance by providing live video feeds of demonstrations as well as covering a couple of the breakout sessions on Saturday. IWC also has a robust IRC channel which will facilitate participation on build day.</p>
+<p>My primary goals beyond furthering my understanding of the technologies behind the IndieWeb is to switch back to <a href="http://webmention.io">webmention.io</a> for receiving webmentions. Aaron Gustafson updated his <a href="https://github.com/aarongustafson/jekyll-webmention_io">Jekyll plugin</a> and I like the idea of cached mentions as well as the idea of using progressive enhancement in displaying them. This will entail taking the mentions from the current tool and formatting them to match Aaron’s cache file.</p>
+<p>Secondly, I want to wrap my head around syndicating from micropub and begin to use it more. I believe there is a workflow out there, I just need to fully understand how to wire them all the bits together. If time permits, also in the micropub realm, I want to get mobile publishing set up.</p>
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+  </div>
+</article>
+<article class="post h-entry">
+	<h1 class="post-title p-name">
 		<a class="u-url" href="/github-is-my-view-source">
 			GitHub is My View Source
 		</a>
@@ -158,20 +172,6 @@ svg{ height: 100%; width: 100%; }
   <li>Distance: 1.69 miles</li>
   <li>Pace: 11:46 min/mi</li>
 </ul>
-<p><a href="https://brid.gy/publish/twitter"></a></p>
-  </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
-		<a class="u-url" href="/extraneous-whitespace-in-jekyll-html">
-			Extraneous Whitespace in Jekyll HTML
-		</a>
-	</h1>
-	<time datetime="2016-05-14T21:03:00+00:00" class="dt-time post-date">14 May 2016</time>
-  <div class="e-content">
-      <p>One artifact of Jekyll that has bothered me is the <a href="https://github.com/jekyll/jekyll/issues/1717">redundant blank lines</a> in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been <a href="https://github.com/Shopify/liquid/issues/216">discussing the issue</a> for 3 years without a solution.</p>
-<p>My first approach to solving this was to use a Ruby gem <a href="https://github.com/threedaymonk/htmlbeautifier">HTML Beautifier</a>. It works great, but for a site like mine with over 500 posts with a lot of tag pages, it increases the build time exponentially. To the point I’ve seen Travis time out due to the long process. Today I went looking for another solution and stumbled upon this <a href="https://gist.github.com/kerotaa/5788650">gist - remove empty lines</a>. It concerned me the plugin would increase the build time in Jekyll vs in Travis, but was pleasantly surprised it added no noticeable overhead and produces much cleaner HTML output.</p>
-<p>Now I get quick build times and cleaner source.</p>
 <p><a href="https://brid.gy/publish/twitter"></a></p>
   </div>
 </article>
