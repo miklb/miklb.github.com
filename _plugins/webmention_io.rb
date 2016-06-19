@@ -555,7 +555,7 @@ module Jekyll
           source = "#{site.config['url']}#{post.url}"
           targets = []
           if post.data['mf-syndicate-to']
-            targets.push ('https://brid.gy/publish/twitter?bridgy_omit_link=true')
+            targets.push (post.data['mf-syndicate-to'])
           end
           if post.data['in_reply_to']
             targets.push(post.data['in_reply_to'])
