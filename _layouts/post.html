@@ -30,7 +30,9 @@ layout: default
   {% include post-content.html post=post %}
 {% endif %}
      {% if page.mf-syndicate-to != null %}
-    <a href="https://brid.gy/publish/twitter?bridgy_omit_link=true"></a>
+      {% for links in page.mf-syndicate-to %}
+        <a href="{{ links }}"></a>
+      {% endfor %}
     {% endif %}
 
   <footer class="entry-footer">
