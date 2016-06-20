@@ -108,6 +108,38 @@ svg{ height: 100%; width: 100%; }
 			<div class="content">
 				<div class="posts">
 <article class="post h-entry">
+	<h1 class="post-title p-name">
+		<a class="u-url" href="/housekeeping-may-2016">
+			Housekeeping May 2016
+		</a>
+	</h1>
+	<time datetime="2016-05-12T02:15:00+00:00" class="dt-time post-date">12 May 2016</time>
+  <div class="e-content">
+      <p>Figure for my own reference I should document the updates I’ve made to the site the last month.</p>
+<p>I’ve written before that my primary goal with the reboot of this site is to embrace IndieWeb. The first step was <a href="https://miklb.com/finally-webmentons-with-jekyll-part-duex">receiving webmentions</a>, then sending them. Also in the process I, started an indiewebified <a href="https://github.com/miklb/jekyll-indieweb">Jekyll theme</a> (which I’m using on this site at the time of writing.) Part of that was to have better microformats in the markup.</p>
+<p>The big itch that I wanted to scratch was implementing micropub to free myself from Twitter (something I’ve failed at thus far). With the help of <a href="http://voxpelli.com/2016/03/my-2015-in-indieweb/">Pelle Wessman</a> who shared n bit of yet to be public “glue” to pull together his <a href="https://github.com/voxpelli/node-micropub-express">other tools</a>, I set up my own micropub endpoint on a Heroku.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>  I still need to workout adding a syndication endpoint for Twitter so I can auto-tweet notes, but that is coming.</p>
+<p>Once that was in place, I was able to use the tools <a href="https://aaronparecki.com">Aaron Perecki</a> built, <a href="https://quill.p3k.io">Quill</a> and <a href="https://quill.p3k.io">OwnYourGram</a>. Quill is a web based micropub publishing app, and OwnYourGram is a service that helps you <a href="http://indiewebcamp.com/pesos">PESOS</a> your Instagram photos to your own site<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+<p>A lot of the experiments I’ve been doing here might be overkill for a simple blog, but are great ways to expose myself to new technologies. I’ve long had an Amazon Web Services s3 bucket set up as a CDN, but had never found a workflow to efficiently use it. With the my current build/deploy process with Travis, a copy of the Instagram photo is saved to my GitHub repository via micropub. In the build script, the image is copied to the s3 bucket, then linked to the CDN.</p>
+<p>The primary reason to use the CDN was I went through the steps to get 100% on Google Pagespeed (last I checked). Since the site is primarily text and is already static it ranked pretty well, but I went ahead and configured loading critical CSS<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>. (I had set that up with my old Habari theme, but Google’s added a step to async load the remaining CSS). I also had to tweak caching in nginx, which while I was in there, I went ahead and set up http/2. The primary reason I moved back from GitHub pages to my VPS was to serve the site over https with a free LetsEncrypt SSL certificate.</p>
+<p>Finally, I went back and forth on analytics. I don’t <em>need</em> them, but it’s nice to see what visitors are looking for and at. I poked around at some self hosted options, ultimately decided for now that for the people who don’t want to share data with Google, there are browser tools to block sending the data, which I’m OK with, therefore using GA here isn’t forcing anyone into it.</p>
+<p>I still want to do a fresh design, but only after last few kinks in Jekyll-IndieWeb theme are fixed. I’ll still use the markup as the foundation, just present it differently. As always, if you have any questions, hit me on Twitter <a href="https://twitter.com/miklb">@miklb</a> or leave a webmention and I’ll do my best to reply.</p>
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Which was my first experience with both Heroku as well as a node app. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Instagram has locked you out of pushing your images from your own site to Instagram. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>The command line tool in <a href="https://github.com/filamentgroup/criticalCSS">Filament Group’s CriticalCSS tool</a> made that pretty trivial. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+  </div>
+</article>
+<article class="post h-entry">
 	<a class="u-url" href="/social/2016/05/08/1418/"><time datetime="2016-05-08T00:23:38+00:00" class="dt-time post-date">08 May 2016</time></a>
     <div class="media">
         <img class="u-photo" src="https://cdn.miklb.com/media/2016-05-1418/ig0bei-nv.jpg" alt="" />
@@ -170,25 +202,6 @@ svg{ height: 100%; width: 100%; }
     </li>
   </ol>
 </div>
-  </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
-		<a class="u-url" href="/productivity-status-early-2016">
-			Productivity Status Early 2016
-		</a>
-	</h1>
-	<time datetime="2016-04-25T19:45:00+00:00" class="dt-time post-date">25 Apr 2016</time>
-  <div class="e-content">
-      <p>I broke one of my new rules today by tweeting out more than politics snark or sports and briefly outlined the direction I’m moving with my <em>productivity</em> this year. I’ve been toiling the past year or so trying to shoehorn my brain into Omnifocus to no avail, so at the beginning of the year I started exploring other methods. About 2 weeks ago, my brain just started to work in regard to using <a href="https://www.taskpaper.com">TaskPaper</a>. If you aren’t familiar with TaskPaper, it is a plain text method of tracking todos that has tools built around it to filter by tags and projects. I’ve owned the app for awhile, but not until 3.0 was in beta did things begin to click within the app organizing projects. I always wanted (wrongly) to keep separate files for each project. Maybe that is one thing I learned using Omnifocus was structuring projects. Now everything personal is one single text file. I do have a separate one for the free lance work I’m doing because that’s a different mode. I don’t want to be distracted by anything when I’m trying to mow through items for work.</p>
-<p>The other element of my productivity was how to keep and better use Reminders.app and Siri. I knew TaskPaper had Applescript support, so that was the first place I looked. Sure enough, I found a script that would import from Reminders to TaskPaper. Unfortunately, TP3 changed it’s scripting method to new JXA, so the old Applescripts were not compatible. Luckily, someone did the work before I fried synapses trying to learn more advanced methods of JXA. A thread in the support forums,
-<a href="http://support.hogbaysoftware.com/t/appending-items-to-a-taskpaper-file-using-siri/1456/9">Using Siri</a> covered exactly what I wanted.</p>
-<p>From there, I devised the idea of having an “Inbox” for Siri and a corresponding list for TP. I also have a Grocery List and my main reminders is for timed items. I prefer Apple’s reminders because it’s nag is truly a nag. If something <strong>must</strong> be done on a certain day, it will sit on the lock screen of my phone. I can snooze it for an hour if it’s not time sensitive, and if it really can wait, I can put off until next day.</p>
-<p>Now I can say, “Hey, Siri, add build a robot to my inbox” and she will. Later, I can run the script which will migrate (including deleting) the reminder to an Inbox in TaskPaper, which I can move to an appropriate project or create a new one if it is warranted. My next goal is to set up a cron job on the always-on iMac to run the script every night.</p>
-<p>For iOS, I’ve tried a few different apps for TaskPaper, but it seems <a href="https://geo.itunes.apple.com/us/app/editorial/id673907758?at=10lKmy">Editorial</a> is going to stick. Also, I’ve not given up on Omnifocus for long term project tracking or potentially work related where contexts and due dates might be necessary, something OF excels at. An upcoming update to <a href="https://geo.itunes.apple.com/us/app/omnifocus-2/id904071710?at=10lKmy">Omnifocus for iOS</a> will vastly expand on the URL schemes, and there is already a demo using <a href="https://geo.itunes.apple.com/us/app/workflow-powerful-automation/id915249334?at=10lKmy">WorkFlow</a> to build projects in OF from TaskPaper formatted lists in Editorial. Sounds snazzy.</p>
-<p>All in all my new system isn’t that fancy or original, but again, that’s the trap of chasing productivity, apps and systems. They become complicated and burdensome to the point you abandon them for the next shiny object, never truly doing the stuff you really wanted to keep track of in the first place.</p>
-<p>I hope when I visit this in the fall, I’ve not made many changes and can focus on what I’ve accomplished over the summer.</p>
-<p><a href="https://brid.gy/publish/twitter"></a></p>
   </div>
 </article>
 </div>
