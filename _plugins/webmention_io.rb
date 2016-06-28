@@ -555,7 +555,10 @@ module Jekyll
           source = "#{site.config['url']}#{post.url}"
           targets = []
           if post.data['mf-syndicate-to']
-            targets.push (post.data['mf-syndicate-to'])
+            all_links = post.data['mf-syndicate-to']
+            all_links.each do |link|
+                targets.push ("#{link}")
+            end
           end
           if post.data['in_reply_to']
             targets.push(post.data['in_reply_to'])
