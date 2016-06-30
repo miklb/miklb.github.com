@@ -31,7 +31,11 @@ layout: default
 {% endif %}
      {% if page.mf-syndicate-to != null %}
       {% for links in page.mf-syndicate-to %}
-        <a href="{{ links }}"></a>
+        {% if links == 'https://brid.gy/publish/twitter?bridgy_omit_link=true' %}
+          <a href="{{ links }}" class="u-bridgy-omit-link"></a>
+        {% else %}
+          <a href="{{ links }}"></a>
+        {% endif %}
       {% endfor %}
     {% endif %}
 
