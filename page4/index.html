@@ -109,6 +109,20 @@ svg{ height: 100%; width: 100%; }
 				<div class="posts">
 <article class="post h-entry">
 	<h1 class="post-title p-name">
+		<a class="u-url" href="/extraneous-whitespace-in-jekyll-html">
+			Extraneous Whitespace in Jekyll HTML
+		</a>
+	</h1>
+	<time datetime="2016-05-14T21:03:00+00:00" class="dt-time post-date">14 May 2016</time>
+  <div class="e-content">
+      <p>One artifact of Jekyll that has bothered me is the <a href="https://github.com/jekyll/jekyll/issues/1717">redundant blank lines</a> in the rendered HTML. In my case, I was seeing hundreds of blank lines creating the page navigation at the top of the page. It doesn’t affect what the visitor sees, but for developers who use Jekyll poor source is a bad practice. Also imagine someone new to Jekyll and HTML in general trying to view source to debug an issue. Turns out the problem is with the Liquid template language Jekyll uses. Seems the Liquid community have been <a href="https://github.com/Shopify/liquid/issues/216">discussing the issue</a> for 3 years without a solution.</p>
+<p>My first approach to solving this was to use a Ruby gem <a href="https://github.com/threedaymonk/htmlbeautifier">HTML Beautifier</a>. It works great, but for a site like mine with over 500 posts with a lot of tag pages, it increases the build time exponentially. To the point I’ve seen Travis time out due to the long process. Today I went looking for another solution and stumbled upon this <a href="https://gist.github.com/kerotaa/5788650">gist - remove empty lines</a>. It concerned me the plugin would increase the build time in Jekyll vs in Travis, but was pleasantly surprised it added no noticeable overhead and produces much cleaner HTML output.</p>
+<p>Now I get quick build times and cleaner source.</p>
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+  </div>
+</article>
+<article class="post h-entry">
+	<h1 class="post-title p-name">
 		<a class="u-url" href="/2016/05/12/couch-5k-d1w1/">
 			Couch to 5k - Day 1 Week 1
 		</a>
@@ -181,18 +195,6 @@ svg{ height: 100%; width: 100%; }
     	<img src="https://a.tiles.mapbox.com/v4/miklb.03b6j499/pin-s-marker(-82.846502073709,27.853912486572)/-82.846502073709,27.853912486572,15/810x120.png?access_token=pk.eyJ1IjoibWlrbGIiLCJhIjoiY2lvMHdva3EyMTl4eHU2bHlidjliazNidSJ9.pZrw_roD2lO_F89wTNRntg"  alt="" class="post-location-image">
       <p>🌎 Indian Shores Beach</p>
     </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
-		<a class="u-url" href="/free-resource-combining-type">
-			Free Resource: Combining Type
-		</a>
-	</h1>
-	<time datetime="2016-05-02T04:07:00+00:00" class="dt-time post-date">02 May 2016</time>
-  <div class="e-content">
-      <p>One of the few design skills I would truly like to fully understand and be able to employ in my work is the ability to choose and use type properly. Tonight I stumbled upon a post on the TypeKit blog sharing a pdf of a previously for sale book on the subject. While it is unfortunate that publisher didn’t succeed, it is generous of the author to share it with the public. Head over to the blog to get a digital copy of <a href="http://blog.typekit.com/2016/04/29/combining-typefaces-free-guide-to-great-typography/">Pocket Guide to Combining Typefaces</a>. If you have other resources, please send them my way.</p>
-<p><a href="https://brid.gy/publish/twitter"></a></p>
-  </div>
 </article>
 </div>
 <div class="pagination">
