@@ -19,4 +19,4 @@ I wasn't surprised then when I read his post from his recent talk &lt;A&gt;. He 
 I would like us all to spend more time in the garden of forking paths. I would like us all to continue to grow this garden of forking paths. Add your own website to this garden of forking paths. Use it to make more links.
 <cite><a href="https://adactio.com/articles/10887">Jeremy Keith &lt;A&gt;
  </a></cite>
-</blockquote>  
+</blockquote>
