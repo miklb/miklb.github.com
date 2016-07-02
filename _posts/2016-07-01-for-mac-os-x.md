@@ -1,7 +1,7 @@
 ---
 layout: micropubpost
 date: '2016-07-01T22:25:27.855Z'
-title: for Mac OS X
+title: Instant Translate for Mac OS X
 mf-bookmark-of:
   - 'https://insttranslate.com/mac'
 mf-syndicate-to:
@@ -10,4 +10,4 @@ slug: for-mac-os-x
 lang: en
 category: links
 ---
-Instant Translate  is a neat macOS menu bar app for doing translation on the fly https://insttranslate.com/mac
+ is a neat macOS menu bar app for doing translation on the fly [https://insttranslate.com/mac](Instant Translate).
