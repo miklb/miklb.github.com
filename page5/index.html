@@ -107,6 +107,21 @@ svg{ height: 100%; width: 100%; }
 			<div class="content">
 				<div class="posts">
 <article class="post h-entry">
+	<h1 class="post-title p-name">
+		<a class="u-url" href="/plans-for-jekyll-indieweb-project">
+			Plans for Jekyll IndieWeb Project
+		</a>
+	</h1>
+	<time datetime="2016-06-15T15:17:00+00:00" class="dt-time post-date">15 Jun 2016</time>
+  <div class="e-content">
+      <p>I started a project soon after I began embracing the IndieWeb for the Jekyll platform, <a href="https://github.com/miklb/jekyll-indieweb">Jekyll IndieWeb</a> (A less than inspiring project name I’m afraid to say.) My initial goals were to have a framework for myself that was fully microformats 2 compliant to build my own site off of and to share a starting point for anyone new to having their own website and wanting to embrace IndieWeb themselves.</p>
+<p>So far I know of one person who is using it, which is encouragement enough to continue looking at ways to improve it. In the upcoming release of Jekyll, themes will be supported. While considered a minor enhancement, I think its a major milestone for Jekyll. Previously, there was no simple way to change the look and feel of your site without manually copying files into your install. Most theme projects are packaged as standalone Jekyll builds.</p>
+<p>So that said, my plan moving forward to is to package the microformated theme, complete with the same config options as a Gem under the name “Crier” (as in town crier. Not sure it’s anymore imaginative than the original project.) The original GitHub project will switch to the Gem once the new version is released, but will stay as a standalone Jekyll install for anyone who wants to get started from scratch. Also, Tom began working implementing a webmention gem for sending while at <a href="https://herestomwiththeweather.com/2016/06/07/indieweb-summit-2016-demos/">IndieWeb Summit 2016</a>. With the help of Bear in the IndieWeb community, I hope to have a tutorial and example of using continuous integration to build and deploy a site back to GitHub allowing the sending of webmentions along with the already supported receiving.</p>
+<p>I would love to hear from anyone else interested in the project or using it, and what else you would like to see. Long term goal is micropub support.</p>
+<p><a href="https://brid.gy/publish/twitter"></a></p>
+  </div>
+</article>
+<article class="post h-entry">
 	<a class="u-url" href="/social/2016/06/11/81194/"><time datetime="2016-06-11T22:33:14+00:00" class="dt-time post-date">11 Jun 2016</time></a>
   <div class="e-content">
       <p>All the Jekyll archive solutions I've looked at don't take into account 11 years of content &amp; 100s of posts. Looking for inspiration.</p>
@@ -147,20 +162,6 @@ svg{ height: 100%; width: 100%; }
             Instagram</a></li>
       </ul>
     </div>
-</article>
-<article class="post h-entry">
-	<h1 class="post-title p-name">
-		<a class="u-url" href="/indieweb-summit-2016">
-			IndieWeb Summit 2016
-		</a>
-	</h1>
-	<time datetime="2016-06-02T17:42:00+00:00" class="dt-time post-date">02 Jun 2016</time>
-  <div class="e-content">
-      <p>This weekend is the <a href="http://2016.indieweb.org">2016 IndieWeb Summit</a> in Portland Oregon. I would have loved to attend in person, but a cross country flight wasn’t in the cards. Fortunately, the organizers have long had plans in place to accommodate remote attendance by providing live video feeds of demonstrations as well as covering a couple of the breakout sessions on Saturday. IWC also has a robust IRC channel which will facilitate participation on build day.</p>
-<p>My primary goals beyond furthering my understanding of the technologies behind the IndieWeb is to switch back to <a href="http://webmention.io">webmention.io</a> for receiving webmentions. Aaron Gustafson updated his <a href="https://github.com/aarongustafson/jekyll-webmention_io">Jekyll plugin</a> and I like the idea of cached mentions as well as the idea of using progressive enhancement in displaying them. This will entail taking the mentions from the current tool and formatting them to match Aaron’s cache file.</p>
-<p>Secondly, I want to wrap my head around syndicating from micropub and begin to use it more. I believe there is a workflow out there, I just need to fully understand how to wire them all the bits together. If time permits, also in the micropub realm, I want to get mobile publishing set up.</p>
-<p><a href="https://brid.gy/publish/twitter"></a></p>
-  </div>
 </article>
 </div>
 <div class="pagination">
