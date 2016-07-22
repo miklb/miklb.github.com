@@ -21,3 +21,5 @@ _config_dev.yml
 _drafts/
 node_modules/*
 public
+
+.gtm/
