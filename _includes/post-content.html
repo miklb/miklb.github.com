@@ -1,5 +1,5 @@
+{% assign post = include.post %}
 
-  {% if page.layout == 'micropubpost' %}
     {% if post.mf-video != null %}
     <div class="media">
       {% for video in page.mf-video %}
@@ -8,13 +8,13 @@
         </video>
       {% endfor %}
     </div>
-    {% elsif page.mf-photo != null %}
+
     <div class="media">
           {% for photo in page.mf-photo %}
             <img class="u-photo" src="https://cdn.miklb.com/{{photo | remove: 'https://miklb.com/'}}" alt="" />
           {% endfor %}
     </div>
-    {% endif %}
+    
   {% else %}
     {% if post.mf-video != null %}
       <div class="media">

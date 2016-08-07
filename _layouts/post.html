@@ -27,7 +27,7 @@ layout: default
   {% if page.mf-like-of != null %}
   {% include post-like.html post=post %}
 {% else %}
-  {% include post-content.html post=post %}
+  {% include post-content.html post=page %}
 {% endif %}
      {% if page.mf-syndicate-to != null %}
       {% for links in page.mf-syndicate-to %}
