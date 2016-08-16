@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,21 +60,21 @@ svg{ height: 100%; width: 100%; }
   </style>
 
 	<link rel="canonical" href="https://miklb.com/building-a-twitterbot">
-	<link type="application/atom+xml" rel="alternate" href="https://miklb.com/feed.xml" title="Miklb's Mindless Ramblings" />
+	<link type="application/atom+xml" rel="alternate" href="https://miklb.com/feed.xml" title="Miklb's Mindless Ramblings">
 	<link rel="shortcut icon" href="/public/favicon.png">
-	<link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-	<link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+	<link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc">
+	<link rel="webmention" href="https://webmention.io/miklb.com/webmention">
 
 	<!-- Begin Jekyll SEO tag v2.0.0 -->
 <title>Building a Twitterbot - Miklb’s Mindless Ramblings</title>
-<meta property="og:title" content="Building a Twitterbot" />
-<meta name="description" content="I had an interest to learn the programming language python for quite some time. I’ve played around with it a little using Pythonista in iOS to build a fishing log, but otherwise have only done some cursory reading. Since I do best learning by doing, I needed an idea to use python. I’ve seen some interesting Twitterbots built with it, @pomological being my recent favorite, but wasn’t sure what to build. Ultimately, the idea came to me to build a bot that retrieves an image from Flickr and builds a color scheme from that and post the scheme and original image. I’ve done some basic research and found some libraries to connect (you didn’t think I was going to write the whole thing from scratch?)." />
-<meta property="og:description" content="I had an interest to learn the programming language python for quite some time. I’ve played around with it a little using Pythonista in iOS to build a fishing log, but otherwise have only done some cursory reading. Since I do best learning by doing, I needed an idea to use python. I’ve seen some interesting Twitterbots built with it, @pomological being my recent favorite, but wasn’t sure what to build. Ultimately, the idea came to me to build a bot that retrieves an image from Flickr and builds a color scheme from that and post the scheme and original image. I’ve done some basic research and found some libraries to connect (you didn’t think I was going to write the whole thing from scratch?)." />
-<link rel="canonical" href="https://miklb.com/building-a-twitterbot" />
-<meta property="og:url" content="https://miklb.com/building-a-twitterbot" />
-<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-04-03T00:00:00+00:00" />
+<meta property="og:title" content="Building a Twitterbot">
+<meta name="description" content="I had an interest to learn the programming language python for quite some time. I’ve played around with it a little using Pythonista in iOS to build a fishing log, but otherwise have only done some cursory reading. Since I do best learning by doing, I needed an idea to use python. I’ve seen some interesting Twitterbots built with it, @pomological being my recent favorite, but wasn’t sure what to build. Ultimately, the idea came to me to build a bot that retrieves an image from Flickr and builds a color scheme from that and post the scheme and original image. I’ve done some basic research and found some libraries to connect (you didn’t think I was going to write the whole thing from scratch?).">
+<meta property="og:description" content="I had an interest to learn the programming language python for quite some time. I’ve played around with it a little using Pythonista in iOS to build a fishing log, but otherwise have only done some cursory reading. Since I do best learning by doing, I needed an idea to use python. I’ve seen some interesting Twitterbots built with it, @pomological being my recent favorite, but wasn’t sure what to build. Ultimately, the idea came to me to build a bot that retrieves an image from Flickr and builds a color scheme from that and post the scheme and original image. I’ve done some basic research and found some libraries to connect (you didn’t think I was going to write the whole thing from scratch?).">
+<link rel="canonical" href="https://miklb.com/building-a-twitterbot">
+<meta property="og:url" content="https://miklb.com/building-a-twitterbot">
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-04-03T00:00:00+00:00">
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -92,7 +93,7 @@ svg{ height: 100%; width: 100%; }
 	ga('send', 'pageview');
 	</script>
 	<!-- Google Analytics -->
-	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<script async src="https://www.google-analytics.com/analytics.js"></script>
 	<!-- End Google Analytics -->
 </head>
 
@@ -107,13 +108,13 @@ svg{ height: 100%; width: 100%; }
       	 
          
          
-          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+          		<li itemprop="url"><a class="" href="/about/">About</a></li>
 							
         
       
          
          
-          		<li itemprop="url"><a  class="" href="/archives/">Archives</a></li>
+          		<li itemprop="url"><a class="" href="/archives/">Archives</a></li>
 							
         
       
@@ -163,7 +164,7 @@ svg{ height: 100%; width: 100%; }
   
     
     <h2 class="p-summary p-bridgy-twitter-content">
-      In which I outline my desire to learn some python & build a Twitterbot.
+      In which I outline my desire to learn some python &amp; build a Twitterbot.
     </h2>
     
   </header>
@@ -181,7 +182,7 @@ svg{ height: 100%; width: 100%; }
 
 <p>But I don’t just want a any random image, so once I get the bot <em>working</em>, I want to be able to try and pull outdoor/landscape images. In a perfect world, I would post 3 images a day—morning, noon, and night. The morning image would be a sunrise, noon/daytime image a normal image and, you guessed it, the night/evening image would be a sunset.</p>
 
-<p>I figured I needed a name for the Twitterbot, not only to make sure something would be available, but since I would need API keys, that has been my first tangible step to create the bot. Thus, @Flickolorbot has been officially conceived.</p>
+<p>I figured I needed a name for the Twitterbot, not only to make sure something would be available, but since I would need API keys, that has been my first tangible step to create the bot. Thus, <a href="https://twitter.com/Flickolorbot" class="user-mention">@Flickolorbot</a> has been officially conceived.</p>
 
 <p>Stay tuned for more adventures.</p>
 
@@ -217,7 +218,7 @@ svg{ height: 100%; width: 100%; }
       </div>
       <div class="meta-wrap">
         <p><a href="/building-a-twitterbot">Building a Twitterbot </a> posted on <time datetime="2016-04-03T00:00:00+00:00" class="dt-time post-date">03 Apr 2016</time>.</p>
-        <p>This entry has been tagged with the keywords: <a href="/tag/Twitter, - Flickr - python" class="p-category" rel="tag">Twitter, - Flickr - python </a></p>
+        <p>This entry has been tagged with the keywords: <a href="/tag/Twitter,%20-%20Flickr%20-%20python" class="p-category" rel="tag">Twitter, - Flickr - python </a></p>
     </div>
 </footer>
 </article>
@@ -228,7 +229,8 @@ svg{ height: 100%; width: 100%; }
 
 
 
-	<div class="webmentions"><ol class="webmentions__list"><li id="webmention-344017" class="webmentions__item"><article class="h-cite webmention webmention--no-author webmention--title-only"> <div class="webmention__title p-name"><a href="https://miklb.com/customizing-atom-editor">Customizing Atom Editor</a></div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-06-04T22:58:07+00:00">4 June 2016</time></div></article></li></ol></div>
+	<div class="webmentions"><ol class="webmentions__list"><li id="webmention-344017" class="webmentions__item"><article class="h-cite webmention webmention--no-author webmention--title-only"> <div class="webmention__title p-name"><a href="https://miklb.com/customizing-atom-editor">Customizing Atom Editor</a></div>
+<div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-06-04T22:58:07+00:00">4 June 2016</time></div></article></li></ol></div>
 
 			</div>
 		</main>
@@ -236,8 +238,7 @@ svg{ height: 100%; width: 100%; }
 	</div>
 	<footer class="site-footer" role="contentinfo">
 <p>
-	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com
-">IndieWeb principles</a>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com%0A">IndieWeb principles</a>
 </p>
 
 	</footer>

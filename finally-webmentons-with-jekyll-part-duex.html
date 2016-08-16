@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,21 +60,21 @@ svg{ height: 100%; width: 100%; }
   </style>
 
 	<link rel="canonical" href="https://miklb.com/finally-webmentons-with-jekyll-part-duex">
-	<link type="application/atom+xml" rel="alternate" href="https://miklb.com/feed.xml" title="Miklb's Mindless Ramblings" />
+	<link type="application/atom+xml" rel="alternate" href="https://miklb.com/feed.xml" title="Miklb's Mindless Ramblings">
 	<link rel="shortcut icon" href="/public/favicon.png">
-	<link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc" />
-	<link rel="webmention" href="https://webmention.io/miklb.com/webmention" />
+	<link rel="pingback" href="https://webmention.io/miklb.com/xmlrpc">
+	<link rel="webmention" href="https://webmention.io/miklb.com/webmention">
 
 	<!-- Begin Jekyll SEO tag v2.0.0 -->
 <title>Finally Webmentions with Jekyll - Miklb’s Mindless Ramblings</title>
-<meta property="og:title" content="Finally Webmentions with Jekyll" />
-<meta name="description" content="If you can’t tell by previous posts, I’ve been working on gettingWebmentions to work with my new Jekyll site. I think I’ve finally nailed. If you take a look at my initial post on moving to Jekyll, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s Webmention.io plugin I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a sleep 2m in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site." />
-<meta property="og:description" content="If you can’t tell by previous posts, I’ve been working on gettingWebmentions to work with my new Jekyll site. I think I’ve finally nailed. If you take a look at my initial post on moving to Jekyll, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s Webmention.io plugin I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a sleep 2m in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site." />
-<link rel="canonical" href="https://miklb.com/finally-webmentons-with-jekyll-part-duex" />
-<meta property="og:url" content="https://miklb.com/finally-webmentons-with-jekyll-part-duex" />
-<meta property="og:site_name" content="Miklb’s Mindless Ramblings" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-01-30T00:00:00+00:00" />
+<meta property="og:title" content="Finally Webmentions with Jekyll">
+<meta name="description" content="If you can’t tell by previous posts, I’ve been working on gettingWebmentions to work with my new Jekyll site. I think I’ve finally nailed. If you take a look at my initial post on moving to Jekyll, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s Webmention.io plugin I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a sleep 2m in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.">
+<meta property="og:description" content="If you can’t tell by previous posts, I’ve been working on gettingWebmentions to work with my new Jekyll site. I think I’ve finally nailed. If you take a look at my initial post on moving to Jekyll, there’s a link for a tutorial on using Travis CI to build a branch and move the flat files into the mater branch to be served on GitHub. With the help of a Aaron Gustafson’s Webmention.io plugin I finally have it working. The trick was that the rakefile was firing in the build process too fast, so webmention.io couldn’t find the post on my domain, thus not sending the mention. My probably not so elegant solution was to put a sleep 2m in my shell script to slow things down and let GitHub catchup before firing the rakefile and sending the mentions. This post will be my final test. If all goes well, I will try and write up a more detailed explanation of what I’ve done since there’s still a lot missing for doing this with a Jekyll site.">
+<link rel="canonical" href="https://miklb.com/finally-webmentons-with-jekyll-part-duex">
+<meta property="og:url" content="https://miklb.com/finally-webmentons-with-jekyll-part-duex">
+<meta property="og:site_name" content="Miklb’s Mindless Ramblings">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-01-30T00:00:00+00:00">
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -92,7 +93,7 @@ svg{ height: 100%; width: 100%; }
 	ga('send', 'pageview');
 	</script>
 	<!-- Google Analytics -->
-	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<script async src="https://www.google-analytics.com/analytics.js"></script>
 	<!-- End Google Analytics -->
 </head>
 
@@ -107,13 +108,13 @@ svg{ height: 100%; width: 100%; }
       	 
          
          
-          		<li itemprop="url"><a  class="" href="/about/">About</a></li>
+          		<li itemprop="url"><a class="" href="/about/">About</a></li>
 							
         
       
          
          
-          		<li itemprop="url"><a  class="" href="/archives/">Archives</a></li>
+          		<li itemprop="url"><a class="" href="/archives/">Archives</a></li>
 							
         
       
@@ -229,7 +230,7 @@ svg{ height: 100%; width: 100%; }
   
   <li>
     <span class="post-date"><time datetime="2016-07-07T01:17:00+00:00" class="dt-time post-date">07 Jul 2016</time></span>
-     <a href="/jekyll-and-microblogging">Jekyll & Microblogging</a>
+     <a href="/jekyll-and-microblogging">Jekyll &amp; Microblogging</a>
   </li>
   
   <li>
@@ -243,7 +244,12 @@ svg{ height: 100%; width: 100%; }
 
 
 
-	<div class="webmentions"><ol class="webmentions__list"><li id="webmention-214332" class="webmentions__item"><article class="h-cite webmention webmention--author-starts webmention--author-starts webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://snarfed.org/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/secure.gravatar.com/feb5cf3e1e753f7c27d9796785cfa5c3ae792c503e1fe2b1fb261b5be706aa79.jpeg" alt="" title="Ryan Barrett"><b class="p-name">Ryan Barrett</b></a></div> <div class="webmention__title p-name"><a href="https://snarfed.org/">Ryan Barrett</a></div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-01-31T03:28:22+00:00">31 January 2016</time></div></article></li><li id="webmention-344019" class="webmentions__item"><article class="h-cite webmention webmention--no-author webmention--title-only"> <div class="webmention__title p-name"><a href="https://miklb.com/housekeeping-may-2016">Housekeeping May 2016</a></div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-06-04T22:58:36+00:00">4 June 2016</time></div></article></li></ol></div>
+	<div class="webmentions"><ol class="webmentions__list">
+<li id="webmention-214332" class="webmentions__item"><article class="h-cite webmention webmention--author-starts webmention--author-starts webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://snarfed.org/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/secure.gravatar.com/feb5cf3e1e753f7c27d9796785cfa5c3ae792c503e1fe2b1fb261b5be706aa79.jpeg" alt="" title="Ryan Barrett"><b class="p-name">Ryan Barrett</b></a></div> <div class="webmention__title p-name"><a href="https://snarfed.org/">Ryan Barrett</a></div>
+<div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-01-31T03:28:22+00:00">31 January 2016</time></div></article></li>
+<li id="webmention-344019" class="webmentions__item"><article class="h-cite webmention webmention--no-author webmention--title-only"> <div class="webmention__title p-name"><a href="https://miklb.com/housekeeping-may-2016">Housekeeping May 2016</a></div>
+<div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-06-04T22:58:36+00:00">4 June 2016</time></div></article></li>
+</ol></div>
 
 			</div>
 		</main>
@@ -251,8 +257,7 @@ svg{ height: 100%; width: 100%; }
 	</div>
 	<footer class="site-footer" role="contentinfo">
 <p>
-	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com
-">IndieWeb principles</a>
+	Built with <a href="https://github.com/miklb/jekyll-indieweb">Jekyll</a> on <a href="https://indiewebcamp.com%0A">IndieWeb principles</a>
 </p>
 
 	</footer>
