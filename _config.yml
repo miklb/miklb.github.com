@@ -30,7 +30,7 @@ gems:
  - jekyll-archives
  - jekyll/tagging
  - jekyll-tagging-related_posts
- - jekyll/imgix
+ - jekyll-mentions
 
 exclude:
   - vendor
@@ -43,8 +43,8 @@ sass:
 
 highligher: rouge
 
-imgix:
-  source: cdn.miklb.com
+jekyll-mentions:
+  base_url: https://twitter.com
 
 mapbox-token: pk.eyJ1IjoibWlrbGIiLCJhIjoiY2lvMHdva3EyMTl4eHU2bHlidjliazNidSJ9.pZrw_roD2lO_F89wTNRntg
 mapid: miklb.03b6j499

@@ -14,7 +14,7 @@ gem 'jekyll-tagging-related_posts'
 gem 'rouge'
 gem 'liquid'
 gem 'kramdown'
-gem 'jekyll-imgix'
+gem 'jekyll-mentions'
 
 
 gem 'htmlbeautifier'
