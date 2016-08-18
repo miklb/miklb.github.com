@@ -15,3 +15,10 @@ if [ $TRAVIS_BRANCH == 'jekyll' ] ; then
 else
     echo "Not deploying, since this branch isn't jekyll."
 fi
+# Push webmention changes back to GitHub
+git config user.email "miklb@miklb.com"
+git config user.name "miklb"
+cd ../
+git add -A .
+git commit -a -m "Webmentions Travis #$TRAVIS_BUILD_NUMBER"
+git push --quiet origin master > /dev/null 2>&1

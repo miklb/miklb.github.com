@@ -17,8 +17,3 @@ git config user.name "miklb"
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --quiet origin master > /dev/null 2>&1
-
-git checkout -b jekyll
-git add -A .
-git commit -a -m "Webmentions Travis #$TRAVIS_BUILD_NUMBER"
-git push --quiet origin master > /dev/null 2>&1	
