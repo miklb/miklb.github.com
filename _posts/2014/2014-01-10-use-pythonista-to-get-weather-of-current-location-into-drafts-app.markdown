@@ -19,6 +19,6 @@ The result?
 
 [original gist](https://gist.github.com/miklb/8346411)
 
-This version simply grabs the current weather summary and temperature from your current location, meant to be used with [@draftsapp](https://twitter.com/draftsapp) as a URL action `pythonista://py_forecast?action=run&argv=[[draft]]`. Dr. Drang suggests using [New From Gist](https://gist.github.com/omz/4076735), however I had better success using [iOctocat](http://ioctocat.com). There is an "open in…" dialog when viewing your gists or starred gists, and pick Pythonista.
+This version simply grabs the current weather summary and temperature from your current location, meant to be used with [@draftsapp](https://twitter.com/draftsapp) as a URL action `pythonista : / / py_forecast?action=run&argv=[[draft]]`. Dr. Drang suggests using [New From Gist](https://gist.github.com/omz/4076735), however I had better success using [iOctocat](http://ioctocat.com). There is an "open in…" dialog when viewing your gists or starred gists, and pick Pythonista.
 
 Certainly for my fishing log I am expanding on this to include wind, sunrise and set times as well as the recently added moon phase. I figured a more generic version would be best shared, but please do not hesitate to leave a comment or  ask me a question on Twitter [@miklb](https://twitter.com/miklb). I'll do my best to help, as I'm indebted to the aforementioned gents for sharing their code and helping in the first place.

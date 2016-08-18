@@ -7,9 +7,9 @@ permalink: grand-ole-opry
 date: 2014-03-14
 ---
 
-<iframe src="//embed.gettyimages.com/embed/74271425?et=ht32R6EbwkyaeGs71HvVrQ&sig=tWmB2UzMZ7MWHbGItFvTLX2ejTu7fz4egZc8hxw8mdk=" width="594" height="492" frameborder="0" scrolling="no"></iframe>
 
-I didn't grow up listening to the show, but I did listen to enough AM country growing up traveling around the country and out and about with my father to have a deep appreciation for what it meant to those who did. Visiting the Opry is still on my bucket list. 
+
+I didn't grow up listening to the show, but I did listen to enough AM country growing up traveling around the country and out and about with my father to have a deep appreciation for what it meant to those who did. Visiting the Opry is still on my bucket list.
 
 It appears the Opry house in its current incarnation turns 40 this month, and Garden & Gun's article [Lordy, Lordy, the Opry's 40!](http://gardenandgun.com/blog/lordy-lordy-oprys-40) has a few quotes from artists who've performed there over the years. My favorite is from Ricky Skaggs.
 
