@@ -21,4 +21,4 @@ git config user.name "miklb"
 cd ../
 git add -A .
 git commit -a -m "Webmentions Travis #$TRAVIS_BUILD_NUMBER"
-git push --quiet origin master > /dev/null 2>&1
+git push --quiet "https://${GH_TOKEN}@${GH_REF}" master:jekyll > /dev/null 2>&1
