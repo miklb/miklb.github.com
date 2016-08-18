@@ -19,6 +19,7 @@ fi
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_NAME"
 cd ../
+git checkout -b jekyll
 git status
 git add -A .
 git commit -a -m "Webmentions Travis #$TRAVIS_BUILD_NUMBER"
