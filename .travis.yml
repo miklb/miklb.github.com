@@ -14,8 +14,8 @@ before_install:
 script:
 - bash _scripts/build.sh
 after_success:
-- bash _scripts/server_deploy.sh
 - bundle exec rake webmention
+- bash _scripts/server_deploy.sh
 - bundle exec rake notify
 - bash _scripts/gh_deploy.sh
 deploy:
