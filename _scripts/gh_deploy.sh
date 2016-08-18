@@ -12,8 +12,8 @@ cp -R _site/* ../miklb.github.com.master
 # commit and push generated content to `master' branch
 # since repository was cloned in write mode with token auth - we can push there
 cd ../miklb.github.com.master
-git config user.email "miklb@miklb.com"
-git config user.name "miklb"
+git config --global user.email "$GIT_EMAIL"
+git config --global user.name "$GIT_NAME"
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --quiet origin master > /dev/null 2>&1
