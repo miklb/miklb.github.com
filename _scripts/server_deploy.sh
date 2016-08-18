@@ -23,4 +23,4 @@ git checkout jekyll
 git status
 git add --ignore-removal .
 git commit -a -m "Webmentions Travis #$TRAVIS_BUILD_NUMBER"
-git push --quiet > /dev/null 2>&1
+git push origin jekyl
