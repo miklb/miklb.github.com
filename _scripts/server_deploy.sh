@@ -19,7 +19,7 @@ fi
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_NAME"
 cd ../
-git checkout -b jekyll_new
+git checkout jekyll
 git status
 git show-ref
 git add --ignore-removal .
