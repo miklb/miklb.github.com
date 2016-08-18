@@ -19,8 +19,9 @@ fi
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_NAME"
 cd ../
-git checkout jekyll
+git checkout -b jekyll_new
 git status
+git show-ref
 git add --ignore-removal .
 git commit -a -m "Webmentions Travis #$TRAVIS_BUILD_NUMBER"
-git push "https://${GH_TOKEN}@${GH_REF}" origin:jekyll
+git push --quiet "https://${GH_TOKEN}@${GH_REF}" origin:jekyll > /dev/null 2>&1
