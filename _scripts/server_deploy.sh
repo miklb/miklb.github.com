@@ -23,7 +23,7 @@ cd ../
 git checkout -b jekyll_new
 git status
 git show-ref
-git add --ignore-removal .
+git add --no-all .
 git commit -a -m "Webmentions Travis #$TRAVIS_BUILD_NUMBER"
 git checkout jekyll
 git merge jekyll_new
