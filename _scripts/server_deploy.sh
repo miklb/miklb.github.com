@@ -16,8 +16,10 @@ else
     echo "Not deploying, since this branch isn't jekyll."
 fi
 # Push webmention changes back to GitHub
-git config user.email "miklb@miklb.com"
-git config user.name "miklb"
+git config --global user.email "$GIT_EMAIL"
+git config --global user.name "$GIT_NAME"
+
+
 cd ../
 git add -A .
 git commit -a -m "Webmentions Travis #$TRAVIS_BUILD_NUMBER"
