@@ -76,13 +76,10 @@ module Jekyll
     end
 
     def get_response(api_params)
-      api_uri = URI.parse(@api_endpoint + "?#{api_params}")
-      # print api_uri
-      # print "\r\n"
-      response = Net::HTTP.get(api_uri.host, api_uri.request_uri)
-      if response
-        # print response
-        JSON.parse(response)
+      source = get_uri_source(@api_endpoint + "?#{api_params}")
+      if source
+        # print source
+        JSON.parse(source)
       else
         ""
       end
@@ -119,8 +116,11 @@ module Jekyll
       original_uri = original_uri || uri
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
+        http = Net::HTTP.new(uri.host, uri.port)
+        http.read_timeout = 10
         begin
-          response = Net::HTTP.get_response(uri)
+          request = Net::HTTP::Get.new(uri.request_uri)
+          response = http.request(request)
           case response
             when Net::HTTPSuccess then
               return true
@@ -136,6 +136,9 @@ module Jekyll
         rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
           warn "Got an error checking #{original_uri}: #{e}"
           return false
+        rescue Exception => e
+          warn "Got an error: #{e}"
+
         end
       else
         if original_uri
@@ -157,8 +160,13 @@ module Jekyll
           http.ciphers = "ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:-LOW"
           http.verify_mode = OpenSSL::SSL::VERIFY_PEER
         end
-        request = Net::HTTP::Get.new(uri.request_uri)
-        response = http.request(request)
+        begin
+          request = Net::HTTP::Get.new(uri.request_uri)
+          response = http.request(request)
+        rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+          warn "Got an error checking #{original_uri}: #{e}"
+          return false
+        end
         case response
           when Net::HTTPSuccess then
             return response.body
