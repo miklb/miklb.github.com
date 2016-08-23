@@ -560,6 +560,12 @@ module Jekyll
                 targets.push ("#{link}")
             end
           end
+          if post.data['mf-in-reply-to']
+            all_replies = post.data['mf-in-reply-to']
+              all_replies.each do |reply|
+                targets.push ("#{reply}")
+              end
+          end
           if post.data['in_reply_to']
             targets.push(post.data['in_reply_to'])
           end
