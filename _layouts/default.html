@@ -35,7 +35,11 @@
 	<!-- End Google Analytics -->
 </head>
 
-<body class="h-feed">
+<body
+	{% if page.layout == "default" %}
+		class="h-feed"
+	{% endif %}
+>
 	<div class="alert"><strong>This site is going through an open redesign, so if things look weird, that is why.</strong></div>
 
 	<header class="site-header" role="banner">
