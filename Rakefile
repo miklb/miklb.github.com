@@ -49,11 +49,12 @@ task :webmention do
                   source_file = [source_slug, file_ext].join("")
                   source_path = File.join("_data", source_file)
                   File.write(source_path,JSON.pretty_generate(JSON.parse(response.body)))
+                  puts "data file created"
                 when (400..499)
                   p [:bad_request]
                 when (500..599)
                   p [:server_problems]
-              end    
+              end
             end
             sent_webmentions[source].push( target )
           end
