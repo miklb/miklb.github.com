@@ -3,9 +3,7 @@ set -ev
 # Push webmention changes back to GitHub
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_NAME"
-#cd ../ Maybe don't need to move up a directory?
-pwd
-git status
+
 git checkout -b jekyll_new
 git status
 git show-ref
