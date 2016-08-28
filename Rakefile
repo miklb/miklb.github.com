@@ -43,7 +43,7 @@ task :webmention do
               response = Net::HTTP.post_form(uri, 'target' => "#{target}", 'source' => "#{source}")
               puts response.code
               case response.code.to_i
-                when 200 || 201
+                when 201
                   source = "#{source}"
                   source_slug = source.split('/')[-1]
                   file_ext = '.json'
