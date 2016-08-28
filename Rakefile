@@ -41,6 +41,7 @@ task :webmention do
               #system command
               uri = URI("#{endpoint_url}")
               response = Net::HTTP.post_form(uri, 'target' => "#{target}", 'source' => "#{source}")
+              puts response.code
               case response.code.to_i
                 when 200 || 201
                   source = "#{source}"
