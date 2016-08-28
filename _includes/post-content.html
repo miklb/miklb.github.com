@@ -14,7 +14,7 @@
             <img class="u-photo" src="https://cdn.miklb.com/{{photo | remove: 'https://miklb.com/'}}" alt="" />
           {% endfor %}
     </div>
-    
+
   {% else %}
     {% if post.mf-video != null %}
       <div class="media">
@@ -60,6 +60,16 @@
       </ul>
     </div>
   {% endif %}
+  {% if post.mf-syndicate-to and site.data.[post.slug] %}
+  
+    <div class="elsewhere linklist">
+        <h3>Also posted on:</h3>
+      <ul>
+          <li><a href="{{ site.data.[post.slug].url }}" class="u-syndication" rel="syndication">Twitter</a></li>
+      </ul>
+    </div>
+  {% endif %}
+
 
   {% if post.persontags != null %}
     <div class="persons linklist">

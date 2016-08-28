@@ -2,6 +2,9 @@ require "rubygems"
 require "bundler/setup"
 require "json"
 require "yaml"
+require 'net/http'
+require 'uri'
+require 'openssl'
 # Caches
 # you may need to update this to point to the right folder
 cache = File.expand_path('../.cache', __FILE__)
@@ -33,9 +36,17 @@ task :webmention do
             endpoint.scan(/href="([^"]+)"/) do |endpoint_url|
               endpoint_url = endpoint_url[0]
               puts "Sending webmention of #{source} to #{endpoint_url}"
-              command =  "curl -s -i -d \"source=#{source}&target=#{target}\" -o /dev/null #{endpoint_url}"
+              #command =  "curl -s -i -d \"source=#{source}&target=#{target}\" -o /dev/null #{endpoint_url}"
               # puts command
-              system command
+              #system command
+              uri = URI("#{endpoint_url}")
+              response = Net::HTTP.post_form(uri, 'target' => "#{target}", 'source' => "#{source}")
+              source = "#{source}"
+              source_slug = source.split('/')[-1]
+              file_ext = '.json'
+              source_file = [source_slug, file_ext].join("")
+              source_path = File.join("_data", source_file)
+              File.write(source_path,JSON.pretty_generate(JSON.parse(response.body)
             end
             sent_webmentions[source].push( target )
           end
