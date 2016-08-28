@@ -41,12 +41,19 @@ task :webmention do
               #system command
               uri = URI("#{endpoint_url}")
               response = Net::HTTP.post_form(uri, 'target' => "#{target}", 'source' => "#{source}")
-              source = "#{source}"
-              source_slug = source.split('/')[-1]
-              file_ext = '.json'
-              source_file = [source_slug, file_ext].join("")
-              source_path = File.join("_data", source_file)
-              File.write(source_path,JSON.pretty_generate(JSON.parse(response.body)
+              case response.code.to_i
+                when 200 || 201
+                  source = "#{source}"
+                  source_slug = source.split('/')[-1]
+                  file_ext = '.json'
+                  source_file = [source_slug, file_ext].join("")
+                  source_path = File.join("_data", source_file)
+                  File.write(source_path,JSON.pretty_generate(JSON.parse(response.body)))
+                when (400..499)
+                  p [:bad_request]
+                when (500..599)
+                  p [:server_problems]
+              end    
             end
             sent_webmentions[source].push( target )
           end
