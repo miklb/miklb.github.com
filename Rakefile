@@ -52,6 +52,7 @@ task :webmention do
                   puts "data file created"
                 when (400..499)
                   p [:bad_request]
+                  puts response.body
                 when (500..599)
                   p [:server_problems]
               end
