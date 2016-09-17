@@ -4,7 +4,7 @@ gem "rake"
 gem "jekyll"
 
  gem 'octopress-hooks', git: 'https://github.com/octopress/hooks.git'
-gem 'octopress-paginate'
+gem 'octopress-paginate', git: 'git@github.com:octopress/paginate.git'
 gem 'jekyll-gist'
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
