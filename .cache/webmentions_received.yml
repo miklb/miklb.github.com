@@ -435,6 +435,16 @@ https://miklb.com/plans-for-jekyll-indieweb-project:
       <div class="webmention__title p-name"><a href="https://twitter.com/miklb/status/743172202195881985#favorited-by-961661">TomWithTheWeather
       favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-06-15T21:43:28+00:00">15 June 2016</time></div></article></li>
+  '1474869769':
+    381570: <li id="webmention-381570" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="http://herestomwiththeweather.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/avatars2.githubusercontent.com/05480ca445495933dad591936a52eeb027e7143200bd7ad0323ce04982c0e9e9.jpeg"
+      alt="" title="Tom"><b class="p-name">Tom</b></a></div> <div class="webmention__title
+      p-name"><a href="http://herestomwiththeweather.com/2016/09/26/you-can-favorite-an-indieweb-post-with-twitter/">You
+      can favorite an indieweb post with Twitter</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-09-26T06:02:49+00:00">26
+      September 2016</time></div></article></li>
 https://miklb.com/interest-in-tampa-homebrew-website-club:
   '1467881992':
     355892: <li id="webmention-355892" class="webmentions__item"><article class="h-cite
@@ -841,3 +851,12 @@ https://miklb.com/social/2016/09/04/29440/:
       class="webmention__title p-name"><a href="https://twitter.com/miklb/status/772347109211189248#favorited-by-187443">Randy
       Walker favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-09-04T16:29:06+00:00">4 September 2016</time></div></article></li>
+https://miklb.com/social/2016/09/19/82059/:
+  '1474379645':
+    '778230755872899073': |-
+      <li id="webmention-778230755872899073" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://jtsternberg.com/about"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/62606caddaca29c174f56638e63f56e9ff84603a7ac44f5dca433174b07fa125.jpeg" alt="" title="Justin Sternberg"><b class="p-name">Justin Sternberg</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/miklb">@miklb</a> Have you seen this guy? <a href="http://j.ustin.co/2cAkGcW">j.ustin.co/2cAkGcW</a> (select2, not selectize)</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-09-20T13:54:05+00:00">20 September 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/Jtsternberg/status/778230755872899073">Permalink</a></div></article></li>
+  '1474398734':
+    '778310819264270336': |-
+      <li id="webmention-778310819264270336" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://miklb.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/1e64a23de7967fb65288aaf4eb3371ac65c60665391a668148fd7ecb3d562cfa.jpeg" alt="" title="Michael Bishop"><b class="p-name">Michael Bishop</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/Jtsternberg">@Jtsternberg</a> I have, was going to use it as a blueprint. Thanks!</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-09-20T19:12:14+00:00">20 September 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/miklb/status/778310819264270336">Permalink</a></div></article></li>
