@@ -1,0 +1,110 @@
+{
+  "contributors": null,
+  "truncated": false,
+  "text": "Reading @TropicalTidbits and thinking about hand tracking storms as a kid on a little map from NHC given out at grocery stores",
+  "is_quote_status": false,
+  "in_reply_to_status_id": null,
+  "id": "783118192696631296",
+  "favorite_count": 0,
+  "source": "<a href=\"https://brid.gy/\" rel=\"nofollow\">Bridgy</a>",
+  "retweeted": false,
+  "coordinates": null,
+  "entities": {
+    "symbols": [
+
+    ],
+    "user_mentions": [
+      {
+        "id": 344425346,
+        "indices": [
+          8,
+          24
+        ],
+        "id_str": "344425346",
+        "screen_name": "TropicalTidbits",
+        "name": "Levi Cowan"
+      }
+    ],
+    "hashtags": [
+
+    ],
+    "urls": [
+
+    ]
+  },
+  "in_reply_to_screen_name": null,
+  "in_reply_to_user_id": null,
+  "retweet_count": 0,
+  "type": "post",
+  "id_str": "783118192696631296",
+  "favorited": false,
+  "user": {
+    "follow_request_sent": false,
+    "has_extended_profile": false,
+    "profile_use_background_image": true,
+    "default_profile_image": false,
+    "id": 6187652,
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/3112038/wood.jpg",
+    "verified": false,
+    "profile_text_color": "333333",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/714860146757922816/RiTM2Zv4_normal.jpg",
+    "profile_sidebar_fill_color": "EADEAA",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://t.co/NlTm1vxPN4",
+            "indices": [
+              0,
+              23
+            ],
+            "expanded_url": "http://miklb.com",
+            "display_url": "miklb.com"
+          }
+        ]
+      },
+      "description": {
+        "urls": [
+
+        ]
+      }
+    },
+    "followers_count": 689,
+    "profile_sidebar_border_color": "D9B17E",
+    "id_str": "6187652",
+    "profile_background_color": "8B542B",
+    "listed_count": 103,
+    "is_translation_enabled": false,
+    "utc_offset": -14400,
+    "statuses_count": 19336,
+    "description": "Chef, web mechanic, general mayhem maker. Proud #Tampa native. Sports fan, music lover. \n#IndieWeb proponent.",
+    "friends_count": 882,
+    "location": "Tampa, FL",
+    "profile_link_color": "9D582E",
+    "profile_image_url": "http://pbs.twimg.com/profile_images/714860146757922816/RiTM2Zv4_normal.jpg",
+    "following": false,
+    "geo_enabled": false,
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/6187652/1376923434",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/3112038/wood.jpg",
+    "screen_name": "miklb",
+    "lang": "en",
+    "profile_background_tile": true,
+    "favourites_count": 2199,
+    "name": "Michael Bishop",
+    "notifications": false,
+    "url": "https://t.co/NlTm1vxPN4",
+    "created_at": "Mon May 21 01:53:23 +0000 2007",
+    "contributors_enabled": false,
+    "time_zone": "Eastern Time (US & Canada)",
+    "protected": false,
+    "default_profile": false,
+    "is_translator": false
+  },
+  "geo": null,
+  "in_reply_to_user_id_str": null,
+  "lang": "en",
+  "url": "https://twitter.com/miklb/status/783118192696631296",
+  "created_at": "Tue Oct 04 01:35:01 +0000 2016",
+  "in_reply_to_status_id_str": null,
+  "place": null
+}
