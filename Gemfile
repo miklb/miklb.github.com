@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "rake"
 gem "jekyll"
 
- gem 'octopress-hooks', git: 'https://github.com/octopress/hooks.git'
+ gem 'octopress-hooks'
 gem 'octopress-paginate'
 gem 'jekyll-gist'
 gem 'jekyll-feed'
