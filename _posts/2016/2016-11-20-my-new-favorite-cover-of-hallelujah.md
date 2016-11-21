@@ -4,9 +4,9 @@ title: "My New Favorite Cover of Hallelujah"
 tags:
 published: true
 mf-syndicate-to:
-  - 'https://brid.gy/publish/twitter?bridgy_omit_link=true'
+  - 'https://brid.gy/publish/twitter'
   - 'https://brid.gy/publish/facebook'
-permalink: my-new-favorite-cover-of-hallelujah 
+permalink: my-new-favorite-cover-of-hallelujah
 date: 2016-11-20 19:1
 summary: I've heard a lot of covers of the infamous Leonard Cohen song, but this might be my new favorite.
 ---
