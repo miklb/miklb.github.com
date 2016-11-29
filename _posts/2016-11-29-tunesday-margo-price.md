@@ -15,5 +15,5 @@ I'm just now catching onto Margo Price, but if you are a fan of classic country 
 
 This selection from the [NPR Tinydesk series](https://www.npr.org/2016/11/22/503055186/margo-price-tiny-desk-concert?utm_medium=RSS&utm_campaign=music) is a perfect primer. I look forward to her making a trip to the Tampa area in 2017.
 <div class="video-container u-video">
-<iframe width="600" height="338" src="https://www.npr.org/templates/event/embeddedVideo.php?storyId=503055186&mediaId=503057042" frameborder="0" scrolling="no"></iframe>
+<iframe width="853" height="480" src="https://www.npr.org/templates/event/embeddedVideo.php?storyId=503055186&mediaId=503057042" frameborder="0" scrolling="no"></iframe>
 </div>
