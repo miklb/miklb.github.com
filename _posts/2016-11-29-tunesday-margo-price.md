@@ -14,6 +14,6 @@ summary:
 I'm just now catching onto Margo Price, but if you are a fan of classic country without the commercialization, then she is right up your alley. Calling her *classic country* probably isn't a fair characterization, but I've never been good with music genres anyway. However you slice it, she's a brilliant song writer with a sound that is both familiar and fresh at the same time.
 
 This selection from the [NPR Tinydesk series](http://www.npr.org/2016/11/22/503055186/margo-price-tiny-desk-concert?utm_medium=RSS&utm_campaign=music) is a perfect primer. I look forward to her making a trip to the Tampa area in 2017.
-<div class="video container u-video">
+<div class="video-container u-video">
 <iframe width="600" height="338" src="http://www.npr.org/templates/event/embeddedVideo.php?storyId=503055186&mediaId=503057042" frameborder="0" scrolling="no"></iframe>
 </div>
