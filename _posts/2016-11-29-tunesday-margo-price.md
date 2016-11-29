@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ":notes: Tunesday - Margo Price"
+title: "Tunesday - Margo Price"
 tags: tunesday
 published: true
 permalink: tunesday-margo-price
