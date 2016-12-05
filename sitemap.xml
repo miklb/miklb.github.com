@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://miklb.com/social/2016/12/05/6271/</loc>
+<lastmod>2016-12-05T01:44:31+00:00</lastmod>
+</url>
+<url>
 <loc>https://miklb.com/tunesday-margo-price</loc>
 <lastmod>2016-11-29T12:26:00+00:00</lastmod>
 </url>
@@ -4547,6 +4551,9 @@
 <loc>https://miklb.com/tag/tunesday/</loc>
 </url>
 <url>
+<loc>https://miklb.com/tag/notinboxzero/</loc>
+</url>
+<url>
 <loc>https://miklb.com/archives/year/2005/</loc>
 </url>
 <url>
@@ -4785,6 +4792,9 @@
 </url>
 <url>
 <loc>https://miklb.com/archives/year/2016/</loc>
+</url>
+<url>
+<loc>https://miklb.com/archives/month/2016-12/</loc>
 </url>
 <url>
 <loc>https://miklb.com/archives/month/2016-11/</loc>
