@@ -5,9 +5,22 @@
     <description>Chronicling life in a digital world. Touching on web dev, food, and a little of everything in between.</description>
     <link>https://miklb.com/</link>
     <atom:link href="https://miklb.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Dec 2016 19:30:05 +0000</pubDate>
-    <lastBuildDate>Thu, 08 Dec 2016 19:30:05 +0000</lastBuildDate>
+    <pubDate>Tue, 13 Dec 2016 02:23:37 +0000</pubDate>
+    <lastBuildDate>Tue, 13 Dec 2016 02:23:37 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;testing out a new micropub client that runs in the browser. https://inklings.io/inkstone. Looking forward to testing out on my phone for another way to go #indieweb&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Dec 2016 02:22:35 +0000</pubDate>
+        <link>https://miklb.com/social/2016/12/13/8555/</link>
+        <guid isPermaLink="true">https://miklb.com/social/2016/12/13/8555/</guid>
+        
+        
+        <category>social</category>
+        
+      </item>
     
       <item>
         <title></title>
