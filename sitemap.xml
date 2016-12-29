@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://miklb.com/social/2016/12/29/76346/</loc>
+<lastmod>2016-12-29T21:12:26+00:00</lastmod>
+</url>
+<url>
 <loc>https://miklb.com/social/2016/12/25/75256/</loc>
 <lastmod>2016-12-25T20:54:16+00:00</lastmod>
 </url>
@@ -4604,6 +4608,9 @@
 </url>
 <url>
 <loc>https://miklb.com/tag/notinboxzero/</loc>
+</url>
+<url>
+<loc>https://miklb.com/tag/ios/</loc>
 </url>
 <url>
 <loc>https://miklb.com/archives/year/2005/</loc>
