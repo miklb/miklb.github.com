@@ -12,7 +12,7 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-archives'
 gem 'jekyll-tagging-related_posts'
 gem 'rouge'
-gem 'liquid'
+gem 'liquid', '5.2.0'
 gem 'kramdown'
 gem 'jekyll-mentions'
 
